@@ -1,0 +1,9 @@
+build/
+tmp/
+__pycache__/
+report/*.aux
+report/*.log
+report/*.out
+sources/*.html
+sources/*.json
+!sources/retrieval.json

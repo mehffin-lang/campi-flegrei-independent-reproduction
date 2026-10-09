@@ -1,0 +1,80 @@
+{
+  "manuscript_panels_reproduced": 0,
+  "manuscript_panels_partial": 0,
+  "individual_panel_inventory_complete": false,
+  "scientific_reproduction_complete": false,
+  "attempts": [
+    {
+      "scope": "main manuscript",
+      "panel": "all; individual identifiers unresolved",
+      "quantity": "unresolved until captions are accessible",
+      "documentation": "abstract only; full text and supplement unavailable",
+      "parameters": "not recovered",
+      "data_command": "unavailable; no scientifically specified generation recipe",
+      "plot_command": "unavailable; no generated manuscript data",
+      "audit_command": "python3 scripts/audit.py",
+      "status": "not reproduced",
+      "reason": "B1/B2/B3/B4/B5; specification access attempted, numerical panel attempts blocked"
+    },
+    {
+      "scope": "supplementary",
+      "panel": "all; individual identifiers unresolved",
+      "quantity": "unresolved until captions are accessible",
+      "documentation": "abstract only; full text and supplement unavailable",
+      "parameters": "not recovered",
+      "data_command": "unavailable; no scientifically specified generation recipe",
+      "plot_command": "unavailable; no generated manuscript data",
+      "audit_command": "python3 scripts/audit.py",
+      "status": "not reproduced",
+      "reason": "B1/B2/B3/B4/B5; specification access attempted, numerical panel attempts blocked"
+    },
+    {
+      "scope": "validation",
+      "panel": "V1a",
+      "quantity": "synthetic stations and estimated epicenter",
+      "documentation": "report/report.tex; first-principles travel-time derivation",
+      "parameters": "config/validation.txt; synthetic station geometry in src/validation.cpp",
+      "data_command": "./build/validation config/validation.txt data",
+      "plot_command": "python3 scripts/plot.py",
+      "saved_data": "picks.csv and convergence.csv",
+      "status": "independently generated validation only",
+      "reason": "not a Tan et al. panel; excluded from reproduction counts"
+    },
+    {
+      "scope": "validation",
+      "panel": "V1b",
+      "quantity": "location error versus refinement spacing",
+      "documentation": "report/report.tex; first-principles travel-time derivation",
+      "parameters": "config/validation.txt; synthetic station geometry in src/validation.cpp",
+      "data_command": "./build/validation config/validation.txt data",
+      "plot_command": "python3 scripts/plot.py",
+      "saved_data": "convergence.csv",
+      "status": "independently generated validation only",
+      "reason": "not a Tan et al. panel; excluded from reproduction counts"
+    },
+    {
+      "scope": "validation",
+      "panel": "V1c",
+      "quantity": "exact synthetic arrival residuals",
+      "documentation": "report/report.tex; first-principles travel-time derivation",
+      "parameters": "config/validation.txt; synthetic station geometry in src/validation.cpp",
+      "data_command": "./build/validation config/validation.txt data",
+      "plot_command": "python3 scripts/plot.py",
+      "saved_data": "residuals.csv",
+      "status": "independently generated validation only",
+      "reason": "not a Tan et al. panel; excluded from reproduction counts"
+    },
+    {
+      "scope": "validation",
+      "panel": "V1d",
+      "quantity": "location error versus assumed velocity",
+      "documentation": "report/report.tex; first-principles travel-time derivation",
+      "parameters": "config/validation.txt; synthetic station geometry in src/validation.cpp",
+      "data_command": "./build/validation config/validation.txt data",
+      "plot_command": "python3 scripts/plot.py",
+      "saved_data": "sensitivity.csv",
+      "status": "independently generated validation only",
+      "reason": "not a Tan et al. panel; excluded from reproduction counts"
+    }
+  ]
+}

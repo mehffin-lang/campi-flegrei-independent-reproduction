@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40906779/",
+    "status": 203,
+    "bytes": 5590,
+    "file": "pubmed.html"
+  },
+  {
+    "url": "https://api.openalex.org/works/https://doi.org/10.1126/science.adw9038",
+    "status": 200,
+    "bytes": 19569,
+    "file": "openalex.json"
+  },
+  {
+    "url": "https://api.crossref.org/works/10.1126/science.adw9038",
+    "status": 200,
+    "bytes": 15767,
+    "file": "crossref.json"
+  },
+  {
+    "url": "https://www.iris.unina.it/handle/11588/1017961",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.science.org/doi/10.1126/science.adw9038",
+    "error": "HTTP Error 403: Forbidden",
+    "method": "direct urllib and web retrieval attempted"
+  },
+  {
+    "url": "https://www.science.org/doi/suppl/10.1126/science.adw9038/suppl_file/science.adw9038_sm.pdf",
+    "error": "HTTP Error 403: Forbidden",
+    "method": "direct urllib and web retrieval attempted"
+  }
+]

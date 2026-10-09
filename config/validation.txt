@@ -1,0 +1,3 @@
+# Synthetic validation only. These are not Tan et al. parameters.
+# velocity_m_s source_x_m source_y_m source_depth_m origin_time_s coarse_grid_m refinements
+4000 370 -630 1730 10 500 12

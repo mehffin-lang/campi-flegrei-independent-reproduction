@@ -1,0 +1,11 @@
+check,value,tolerance,pass
+zero_path_s,0,1e-14,1
+vertical_path_s,0,1e-14,1
+pythagorean_path_s,0,1e-14,1
+exact_location_error_m,0.5363986775335726,1,1
+exact_origin_error_s,8.568968304345503e-05,0.00025,1
+exact_arrival_rms_s,1.913888907899907e-05,0.0001,1
+origin_shift_location_m,0,1e-10,1
+origin_shift_time_s,0,1e-12,1
+station_permutation_location_m,0,1e-10,1
+depth_reflection_rms_s,4.818077998159378e-16,1e-12,1
