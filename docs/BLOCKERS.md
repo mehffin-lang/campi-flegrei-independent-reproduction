@@ -1,19 +1,20 @@
-# Scientific and access blockers
+# Current blockers: permitted inputs, not PDF access
 
-Target confirmed by the user: Tan et al., DOI 10.1126/science.adw9038. Keep the original data restrictions.
+Both uploaded PDFs are now readable. Their identity and checksums are recorded in `file_inventory.json`; all main captions and S1–S15 captions were read. The two ZIPs can be listed and pass CRC checks. The old HTTP-access failure is superseded and is not the current blocker.
 
-- B1 — Full article unavailable in this session. Publisher HTML, PDF, ePDF, and reader endpoints failed; direct HTML retrieval returned HTTP 403. The institutional record viewed through web search labels the manuscript restricted. OpenAlex returned closed access with no full-text repository location. This does not establish that no lawful copy exists.
-- B2 — Supplement unavailable. The conventional publisher supplemental PDF URL returned HTTP 403; its exact filename has not been verified against the article. Therefore the number, labels, captions, methods, and parameter tables of supplementary panels remain unknown.
-- B3 — Target mismatch. The accessible abstract describes empirical seismic detection and catalog construction, not a specified coupled physical forward problem. No complete coupled-model equations, numerical setup, or initial/boundary conditions were obtained. It would be inappropriate to invent them and attribute them to Tan et al.
-- B4 — Excluded observations. Original source data, catalogs, learned weights, authors' code and outputs cannot be used. The observed occurrence times, earthquake locations, and waveforms cannot be reconstructed uniquely from an abstract. Even access to written methods would not by itself remove this blocker.
-- B5 — Individual panel audit incomplete. Without captions, panel numbers cannot be responsibly enumerated. The two scope-level entries explicitly cover every main and supplementary panel; they are not a completed figure-by-figure inventory or evidence of individual numerical attempts.
+The task prohibits use of the authors' original source data and derived products as analysis inputs. Consequently:
 
-No permission or GitHub-credential blocker remains. Network and filesystem restrictions were handled through approved escalation. An initial system SSH configuration ownership error was avoided with `ssh -F /dev/null` while retaining known-host checking.
+- Main 1A/1C and S5 need the routine catalog used in the study; 1B needs the observed deformation series.
+- Main 2/3 and S6–S13 need waveforms, station metadata, picks, catalogs, covariance estimates, or derived event locations.
+- Main 4 needs polarities, amplitude ratios, observed waveforms, and focal solutions.
+- S1/S2 need the actual station metadata and availability records. S3/S4 need the authors' training/validation traces and original/retrained network outputs.
+- S8 needs matched observed magnitudes and the full event-magnitude sample.
+- S14/S15 need actual hybrid waveforms, template events, station responses, observed times, and cluster membership.
 
-## Work completed independently
+Data S1, S2, and S3 are exactly the kinds of excluded catalog/pick/focal-solution inputs. Interactive Plot S1 is an authored plot with embedded output and code; it was not run or mined. No numerical archive rows were read. Metadata and CRC inspection are not scientific input use.
 
-A first-principles homogeneous-medium travel-time consistency example in C++ with exact synthetic arrivals, origin-time invariance, station permutation, depth reflection ambiguity, grid refinement, and velocity sensitivity. This is validation groundwork, not a surrogate earthquake catalog or the complete Tan et al. method. No published figure is copied or digitized. No observed fault geometry is synthesized to resemble the publication.
+The permitted written equations support method checks on independently generated analytic fixtures. Those do not recreate the observations. Implementing a full neural-network workflow without its admissible training observations would not reproduce this study. No physical pressure/fault model is substituted.
 
-## Requirements to resume the scientific reproduction
+Additional specification limits: regularization strength and cross-correlation weight mapping for magnitude inversion; exact training splits/seeds and close-overlap rejection rule; complete relocation damping/iteration/cross-correlation settings; time bins and geographic polygons; spectral taper/PSD conventions; event-dependent gCAP bands; and KDE bandwidths are not fully given in the descriptions read. Table S1 is a documented parameter model; Table S2 contains observed event results and is not used as numerical fixture data.
 
-Obtain readable article and supplement text/captions through authorized access. Inventory their panels and classify observation-dependent, method-validation, and schematic content. Establish which documented numerical tests are possible without excluded inputs. Empirical manuscript panels will remain blocked under the current restrictions; a changed data scope would require an explicit user instruction. The DOI has already been confirmed and should not be changed.
+The report and panel record separate these specification limits from the stronger prohibited-input blocker. All manuscript and supplementary panels are marked not reproduced, not partially reproduced. The four M1 panels validate implemented equations only.

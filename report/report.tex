@@ -1,116 +1,118 @@
 \documentclass[11pt]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage{amsmath,graphicx,booktabs,longtable,array}
+\usepackage[margin=0.9in]{geometry}
 \usepackage[T1]{fontenc}
-\usepackage{hyperref}
-\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=blue}
-\setlength{\emergencystretch}{2em}
-\title{Seismic location consistency and the limits of an independent reproduction of Tan et al.}
-\author{Independent computational reproduction attempt}
+\usepackage{amsmath,graphicx,booktabs,longtable,array,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\setlength{\emergencystretch}{3em}
+\title{Independent method checks and reproduction limits for the Campi Flegrei earthquake catalog}
+\author{Source-verified computational assessment}
 \date{9 October 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
-The available description of Tan et al. (2025) concerns an observational earthquake catalog. It does not supply a coupled physical model from which the observed earthquake sequence can be generated. In this attempt, publisher access restrictions prevented retrieval of the full article and supplement, while the project instructions excluded the original observations and derived products. Consequently, no manuscript or supplementary panel is reproduced. I implement an independent C++ travel-time and hypocenter-location consistency example and save its numerical outputs before plotting them. Analytic path lengths, temporal invariance, station-order invariance, and a depth ambiguity provide numerical checks. These calculations establish limited numerical groundwork, not agreement with the published catalog. The panel inventory, complete workflow, and scientific reproduction remain incomplete.
+Tan et al. develop an observational earthquake catalog and analyze its space--time distribution, magnitudes, focal mechanisms, and shallow hybrid events. The paper does not prescribe a coupled physical forward model. Both supplied PDFs are readable, including the supplementary methods and all figure captions. The uploaded archives contain derived catalogs, picks, focal solutions, and an interactive plot; the project restrictions exclude these as analytical inputs. I independently implement the documented relative-amplitude, signal-to-noise, and frequency-index equations and test a stated least-squares magnitude convention. Analytic consistency tests pass, but no empirical manuscript or supplementary panel is reproduced. This report identifies every figure and caption-defined panel or view, records its input blocker, and distinguishes generated method checks from observational reproduction.
 \end{abstract}
 
-\section{Target and admissible evidence}
-The target is Tan et al., \emph{A clearer view of the current phase of unrest at Campi Flegrei caldera}, \emph{Science} 390, 70--75, DOI \href{https://doi.org/10.1126/science.adw9038}{10.1126/science.adw9038}. The user explicitly confirmed this target after the mismatch with the requested coupled physical model was identified. The accessible abstract describes continuous observations from 21 January 2022 to 20 March 2025 and a catalog expansion from roughly 12,000 to more than 54,000 events. It reports ring-shaped and shallow fault seismicity and no detected events deeper than 3.7 km on or within the ring. These are published statements, not numerical results obtained here.
+\section{Access, identity, and admissible inputs}
+The primary sources are the local files \texttt{tanmodel.pdf} and \texttt{tanmodelsupp.pdf}, supplied on the repository's main branch. The main document contains seven PDF pages, including the publication end page; the matching supplement contains 35 pages. Their title, authors, publication identifier, and supplementary contents agree. Main-text method descriptions and captions for Figures 1--4 were read, as were supplementary pages S2--S11, captions S1--S15, Tables S1--S2, and the archive descriptions on S28. Two font-weight warnings from the main PDF do not prevent text extraction; the supplementary text extracts without warnings.
 
-Crossref metadata and the PubMed abstract establish the target's identity and scope. Neither provides the complete equations, parameters, training details, station geometry, or figure captions. The publisher returned HTTP 403 for direct article and attempted supplemental access. OpenAlex reported closed access without an available repository full-text location; the institutional record labeled the manuscript restricted. The supplemental URL used the conventional Science naming pattern, but its filename could not be verified. These are limitations of this retrieval attempt; they do not establish that no accessible copy exists elsewhere.
+\begingroup\small\input{report/files_table.tex}\endgroup
 
-Only the two explicitly permitted files were retrieved from the guidance repository. No authors' model code, learned weights, simulation outputs, original catalogs, waveform data, plotting scripts, or figure files were downloaded as scientific inputs. A broad publication search incidentally returned repository-README and dataset-page snippets. Neither was opened or used to specify the implementation. The provenance record states this incidental exposure explicitly. No manuscript plot was digitized, and no published image appears in this report.
+The first ZIP lists three CSV files, \path{science.adw9038_data_s1.csv}, \path{science.adw9038_data_s2.csv}, and \path{science.adw9038_data_s3.csv}, together with macOS resource-fork metadata. The supplement identifies these as the earthquake catalog, associated phases, and focal-mechanism solutions. The second ZIP contains \path{interactive_plot_s1.html} and macOS metadata; the supplement describes it as a three-dimensional seismicity visualization. Both ZIPs pass CRC integrity checks. Neither archive was extracted; no archive entry was executed, and no numerical CSV rows or HTML code were consulted as analytical input.
 
-\section{Why the requested coupled calculation is unresolved}
-An empirical seismic catalog depends on measured signals and inference from those signals. Written descriptions of a detection method do not determine the particular observations. A complete forward physical model would require governing equations, constitutive laws, spatial material properties, forcing, and initial and boundary conditions. No such complete specification was recovered for the cited target. It would therefore be unjustified to choose a pressure source, fault law, or synthetic earthquake distribution and present its output as a recreation of Tan et al.
+The supplied archives do not remove the prohibition on original source data or derived products. The numerical workflow reads only independently chosen analytic fixtures. All four uploads are preserved unchanged, with exact SHA-256 values in \texttt{docs/file\_inventory.json}. Published spatial figures were used as reference views to check correspondence between captions and panel layouts, including the inconsistent S7 letter references. No plot values were digitized, no published image is included here, and no published figure file enters a calculation.
 
-There are two distinct blockers. Access to readable full text and supplementary captions is required even to enumerate and classify the panels. Access to written methods alone would still not authorize the excluded original data, nor would it uniquely determine their measured values. The requested complete detection/association/relocation system and complete coupled physical model are not implemented here. The calculation below is an explicitly assumed limiting example relevant to location consistency; it is not a substitute for either system.
+\section{Scientific premise and documented workflow}
+The observational target is the 21 January 2022--20 March 2025 seismic sequence. The study uses 23 broadband stations, nine short-period stations, and 16 accelerometers (supplement S2). A retrained PhaseNet picker supplies phase probabilities; GaMMA associates arrivals; VELEST and TomoDD refine locations. Subsequent analyses estimate magnitudes, focal mechanisms, and hybrid-event properties. Discussions of pressure, fluid migration, and ring-fault behavior are interpretations of these observations, not a system of coupled evolution equations with specified forcing and boundary conditions.
 
-\section{Independent numerical example}
-\subsection{Assumptions, equations, and units}
-I assume a homogeneous, isotropic medium with constant wave speed $v$, direct straight paths, and exact arrival picks from one impulsive point event. Cartesian coordinates have units of meters, with $z$ positive downward. All receivers lie at $z=0$. There is no topography, refraction, scattering, attenuation, station correction, or clock error. The observable is an arrival time; no waveform amplitudes or fault mechanics are predicted.
+The final retraining pools contain 24,547 local earthquake traces, 145,292 noise traces, and 102,620 STEAD traces. The methods specify 30-s windows, up to five overlapping events, mean-squared-error loss, 60 epochs, and learning rate 0.001. Detection uses a probability threshold of 0.3 and excludes S picks at CASE, CFB1, and CFB3. GaMMA requires at least six picks and yields 105,944 candidate events. These are documentary counts; none is recreated here.
 
-For event location $\mathbf{x}$, receiver location $\mathbf{s}_i$, and origin time $t_0$, the path length and arrival are
+VELEST calibration uses 373 selected events and two runs that refine the one-dimensional velocity model, locations, and then station corrections. Three further fixed-model runs relocate the catalog, with residual cutoffs of 0.4 s and 0.3 s. Final acceptance requires at least six picks, RMS at most 0.25 s, and azimuthal gap at most 300 degrees. The reported intermediate catalog has 61,809 events. Two TomoDD rounds use a fixed three-dimensional velocity model and both picked and cross-correlated differential times, yielding 54,319 events. The routine catalog has 12,083 events. Their count ratio is approximately 4.50, an arithmetic comparison of published totals rather than a measured detection gain from this implementation.
+
+Table S1 supplies a layered velocity parameter model. However, the three-dimensional field, actual picks, waveforms, and selected event subsets needed for the relocation results are excluded original inputs. Retraining without the study's admissible observations would not recreate its network weights or event detections. The complete detection, association, and relocation workflow is therefore not implemented or claimed as validated. The implementation below is limited to explicitly documented analysis equations and their consistency tests.
+
+\section{Independent implementation}
+\subsection{Amplitude, power, and magnitude}
+Supplementary equations S2 and S5 define a relative magnitude from positive amplitude ratios:
 \begin{equation}
- L_i=\|\mathbf{x}-\mathbf{s}_i\|,\qquad
- T_i=t_0+\frac{L_i}{v}.
+ d_{ij}=\log_{10}(A_i/A_j).
 \end{equation}
-This follows by integrating $dt=ds/v$ along a straight path in a uniform medium. It is a first-principles limiting relation, not an equation recovered from the inaccessible Tan et al. methods. Given arrivals $a_i$ and a trial location, least squares eliminates origin time analytically:
+Comparable propagation and station response are required for this difference to represent a magnitude difference. Equal amplitudes give zero; a common multiplicative station gain cancels. The absolute magnitude cannot be determined from these differences alone. Equation S1 includes attenuation and station corrections; its full coefficients and absolute calibration are not supplied as an independently executable specification here.
+
+Equation S3 defines the signal-to-noise ratio as
 \begin{equation}
- \widehat{t}_0(\mathbf{x})=\frac{1}{N}\sum_{i=1}^N
- \left(a_i-\frac{L_i(\mathbf{x})}{v}\right),\quad
- R(\mathbf{x})=\left[\frac{1}{N}\sum_i
- \left(a_i-\widehat{t}_0(\mathbf{x})-\frac{L_i(\mathbf{x})}{v}\right)^2\right]^{1/2}.
+ \mathrm{SNR}=10\log_{10}(P_{\mathrm{signal}}/P_{\mathrm{noise}}).
 \end{equation}
-The code minimizes $R$, whose units are seconds. Eliminating the common time offset prevents an arbitrary reference time from changing the inferred position. Equal weights are assumed; there is no noise model or uncertainty estimate.
+The written windows are 5 s after and 2 s before the actual or theoretical P arrival, with a 5 dB cutoff. I use mean-square power in each window. Integrated energy would introduce a spurious window-length ratio. The consistency test uses exact sinusoids with a factor-two amplitude difference, predicting $10\log_{10}4$ dB despite the unequal window lengths. No arrival time is inferred from a measured trace.
 
-The synthetic parameters are $v=4000$ m/s, $\mathbf{x}=[370,-630,1730]$ m, and $t_0=10$ s. Twelve receiver positions are generated with
+The magnitude methods describe a weighted least-squares inversion with duration-magnitude regularization, but not its complete objective or regularization strength. I test the explicit convention
 \begin{equation}
- \theta_j=\frac{2\pi j}{12},\quad r_j=1500+500(j\bmod 4)\ \mathrm{m},\quad
- \mathbf{s}_j=[r_j\cos\theta_j,r_j\sin\theta_j,0],\quad j=0,\ldots,11.
+ J(\mathbf m)=\sum_{i<j}w_{ij}(m_i-m_j-d_{ij})^2+
+ \lambda\sum_i(m_i-p_i)^2,
 \end{equation}
-These values are deliberately synthetic, not estimates for Campi Flegrei. The mixed radii provide path-length variation for depth sensitivity. No catalog-scale distribution is prescribed. The source time and position specify the initial event; the kinematic model has no temporal PDE initial state. It uses an unbounded uniform propagation medium and no reflective surface boundary condition. The receiver plane is solely a geometric constraint.
+where $p_i$ are assumed prior magnitudes. This is a documented implementation choice, not a claim about the exact authors' objective. The small graph-Laplacian normal system is solved by Gaussian elimination with partial pivoting in C++. The authors describe gradient descent; the exact linear solve here tests a specified quadratic problem instead.
 
-\subsection{Numerical search and its limits}
-The initial search covers $x,y\in[-4000,4000]$ m and $z\in[0,4000]$ m on a 500 m grid. Each subsequent search is centered on the best point within one previous grid interval in each direction, clipped to the initial domain. The interval halves after each of 12 levels, ending at approximately 0.244 m. The search bounds are arbitrary validation-domain choices, not geological boundaries. The restriction $z\geq0$ selects the buried branch explicitly: surface receivers alone cannot distinguish $z$ from $-z$ in this model.
+Four analytic test magnitudes are $[0,0.3,-0.2,0.8]$, with amplitudes $10^{m_i}$ and weights $w_{ij}=1/(j-i)$. With matching priors and $\lambda=1$, the solution should recover those magnitudes. A common prior shift must shift the solution equally. With $\lambda=0$, the global offset is undetermined, and the solver rejects the singular problem. A separate sensitivity calculation adds prior errors $[0.2,-0.1,0.1,-0.2]$ and varies $\lambda$ from 0.001 to 100. These arbitrary fixture values are not inferred from the publication and do not estimate its magnitude errors.
 
-At each point, the implementation evaluates the analytic origin time and RMS residual in double precision. Work scales with the number of receivers times the number of trial points. Local refinement is efficient, but it does not prove a global minimum for arbitrary geometry or noisy observations. The retained best candidate makes residual nonincrease possible across refinement. Finer grid spacing is a consistency diagnostic, not a proof of convergence for the published workflow.
+\subsection{Frequency index}
+Supplementary equation S4 defines
+\begin{equation}
+ \mathrm{FI}=\log_{10}(P_{8\text{--}15\,\mathrm{Hz}}/P_{2\text{--}5\,\mathrm{Hz}}).
+\end{equation}
+The paper specifies an 8-s CAAM waveform window and the two bands. Sampling, taper, spectral normalization, and endpoint conventions are not fully stated. For the consistency tests I choose 100 Hz sampling, a rectangular window, mean removal, and inclusive frequency-bin boundaries. A direct double-precision discrete Fourier transform gives one-sided powers, normalized by $N^2$ and doubled except at DC and Nyquist. The common normalization cancels in FI; Parseval's identity provides a separate power check.
 
-\section{Validation results}
-The tests evaluate a zero path, a vertical path, and a 3--4--5 distance triangle against analytic times. They also recover a source deliberately located off the coarsest grid, shift all arrivals by 17 s, reverse the station order, and reflect source depth across the receiver plane. The reflected source must fit the exact data as well as the buried source; this test exposes the geometric ambiguity instead of hiding it. Error tolerances and measured errors are read from the saved C++ output in Table~\ref{tab:validation}.
+For the analytic signal
+\begin{equation}
+ x(t)=\sin(2\pi\,3t)+r\sin(2\pi\,10t),\quad 0\leq t<8\ \mathrm{s},
+\end{equation}
+the two tones fall on exact Fourier bins, so $\mathrm{FI}=2\log_{10}r$. Their frequencies are test assumptions within the documented bands. The calculation does not generate an earthquake waveform. Common amplitude gain and circular time shifts must preserve FI. The 1--10 Hz display filter described for S14 is not imposed on the signal used to estimate the separate 8--15 Hz FI band.
 
-\begin{table}[ht]
-\centering\small
-\input{report/validation_table.tex}
-\caption{Numerical consistency checks. Names ending in \texttt{\_s} have units of seconds and those ending in \texttt{\_m} have units of meters. Tolerances are validation acceptance choices, not published uncertainty estimates.}\label{tab:validation}
-\end{table}
+There are no physical initial or boundary conditions: these are finite-window signal operations and a finite-dimensional inverse problem. No magma source, pressure history, fault law, or synthetic spatial earthquake distribution is imposed.
 
-Figure~\ref{fig:validation} contains four independently generated panels, labeled V1a--d to avoid confusion with the publication. The refinement example tests recovery of a prescribed source; the residuals test the same exact synthetic arrival set. Both forward and inverse calculations use the same assumed medium, so success is necessary but insufficient for performance on real measurements. The additional velocity sweep changes the inversion speed while retaining arrivals generated at 4000 m/s. Its errors illustrate sensitivity to a wrong medium; they are not estimates of error in Tan et al.
+\section{Validation and independently generated panels}
+\input{report/results.tex}
+The tests include exact ratios, ratio reversal, common-gain cancellation, invalid-amplitude rejection, spectral orthogonality, Parseval power conservation, FI shift/gain invariance, unequal-window SNR, pair-order invariance, and magnitude-offset ambiguity. Analytic tests constrain the implemented numerical operations; they do not validate performance on low-SNR field data, training, event association, relocation uncertainties, or a volcanic interpretation.
 
 \begin{figure}[p]
-\centering\includegraphics[width=0.90\textwidth]{figures/validation.pdf}
-\par\medskip\small\input{report/sensitivity_table.tex}\normalsize\par\medskip
-\caption{Independent validation only; no Tan et al. panel reproduced. (V1a) Synthetic surface receivers and inferred horizontal source position, in kilometers. (V1b) Three-dimensional location error versus grid spacing, in meters; refinement proceeds rightward. (V1c) Arrival residuals for the exact synthetic data, in microseconds. (V1d) Location error when the assumed speed differs from the generating speed. Every plotted point is read from saved C++ output. The station arrangement, source, and speed are assumptions of this example. The accompanying table gives speed ratio, location error, estimated depth, and arrival RMS for V1d; its generating speed is 4000 m/s.}\label{fig:validation}
+\centering\includegraphics[width=\textwidth]{figures/method_checks.pdf}
+\caption{Independent method consistency panels, not manuscript reproductions. M1a: computed relative magnitude versus amplitude ratio, with the analytic ratio prediction. M1b: computed SNR for amplitude ratios; the dotted line marks the written 5 dB cutoff. M1c: FI calculated from 8-s mixtures of 3 Hz and 10 Hz tones, compared with $2\log_{10}r$. M1d: magnitude RMSE versus the assumed regularization strength when the four priors are biased. All points are plotted from saved C++ outputs. No event, trace, or value from either ZIP enters these panels.}
 \end{figure}
 
+For each M1 panel, the data command is
+\begin{quote}\small\texttt{./build/method\_checks config/method\_checks.cfg data}\end{quote}
+and the plotting command is
+\begin{quote}\small\texttt{python3 scripts/plot\_methods.py}\end{quote}
+M1a and M1b read \path{data/scaling.csv}; M1c reads \path{data/frequency_index.csv}; M1d reads \path{data/regularization.csv}. The analytic test waveform is additionally saved as \path{data/waveform.csv}. These panels are counted as four independently generated method checks and zero reproduced publication panels.
 
+\section{Discrepancies in the written specification}
+The uncertainty discussion on S5 refers to S7 panel letters H and I, whereas the figure and its caption use A--G: B/D/F give pick count versus error, and C/E/G give error densities. The panel record follows the figure and caption. Figure S9's methods retain events with NCCP+NCCS equal to 100, whereas its caption states a strict greater-than condition. Both predicates are recorded at 99, 100, and 101 in \texttt{data/thresholds.csv}; neither is applied to the prohibited catalog. The interactive plot has a different documented threshold, NCCP+NCCS+NCTP+NCTS greater than 1000, which must not be substituted for the S9 condition.
+
+The focal-mechanism methods discuss 74 events, while the Data S3 caption describes 55 solutions. The archive was not mined to reconcile that difference. S15 uses the station spelling CCAM once, while the surrounding methods and normalization refer to CAAM. Remaining implementation gaps include exact magnitude-regularization strength, the cross-correlation weight convention, complete training splits/seeds and augmentation rejection rules, relocation damping and iteration settings, geographic polygons and time bins, event-dependent inversion bands, and kernel-density bandwidths. These are separate from the stronger excluded-input blocker.
+
+\section{Comparison with the publication}
+No empirical manuscript or supplementary panel is reproduced. No panel is classified as partially reproduced merely because its equation has been tested on analytic input. The complete main and supplementary figure inventory appears below. All rows have status \emph{not reproduced}; their data and plot commands are \emph{unavailable}, because no permitted empirical data-generation run could be specified. The JSON record retains these fields explicitly as null and records each stopped input assessment.
+
+Published targets include the 54,319-event total, 38,103 best-located events, a completeness magnitude of 0.4 and $b=0.97$, northern ring depths of 2.1--2.5 km, deeper southwestern activity to 3.7 km, and 70 identified hybrid events. These are documentary scales, not this implementation's outputs. The source specification also distinguishes a deeper 4.8-km cluster outside the ring; therefore the 3.7-km conclusion must not be presented as a universal depth cutoff for all surrounding seismicity.
+
+Catalog-count error, temporal alignment, spatial overlap, ring thickness, event-wise location error, focal-mechanism agreement, and hybrid-waveform similarity cannot be computed without permitted matched observations or results. Their absence is not zero error. FI errors and magnitude errors reported here are errors against analytic fixtures only. The generated figures do not test the reported FI range of $-3.32$ to $1.09$ or the paper's inferred temporal evolution.
+
+\section{Rebuild, replacement, and remaining work}
+Run \texttt{python3 scripts/rebuild.py --clean} from the repository root. Before removing any generated products, it verifies the checksums of all four uploads and confirms PDF text/caption readability. It then removes only named, generated products; compiles C++; runs the checks; saves the numerical data; plots those data; builds the panel and validation tables; and compiles this report twice. It checks numerical assertions, PDF content, and layout warnings. Actual commands and exit codes are saved in \texttt{data/build\_log.json}. Tool versions, verification results, and the separate scientific-incompletion status are in \texttt{data/build\_status.json}. File hashes are in \texttt{data/manifest.sha256}. No network access is required.
+
+The previous travel-time C++ example, its configuration, validation figures, numerical CSVs, plotting/audit scripts, and report tables were removed. The interrupted access-only report was superseded. New source, configuration, CSVs, method figures, panel inventory, documentation, LaTeX, and PDF replace those results. The exact replacement list is \texttt{docs/REPLACEMENTS.md}. The user-uploaded PDFs and ZIPs, permitted guidance files, repository identity, and all Git history remain intact. This is a corrected evidence-based assessment with validated method components, not a completed empirical reproduction.
+
+All project intermediates and caches remain within the repository: \texttt{tmp/}, \texttt{build/}, \texttt{data/}, \texttt{figures/}, and \texttt{report/}. Existing system Python/compiler/Poppler installations and TeX resources under \texttt{/usr/share/texlive} are used. No dependency installation or external project cache is created. Further empirical progress requires inputs compatible with the stated restrictions; the supplied original catalogs and interactive plot do not meet that condition.
 
 \clearpage
-\section{Figure and panel record}
-\textbf{Publication counts: zero independently reproduced panels; zero partially reproduced panels. All main and supplementary panels remain unreproduced. Their individual labels and count are unresolved.} Access attempts were made for the written specifications, but individual numerical attempts could not be specified. The scope rows below are explicit inventory gaps, not a claim to have completed the requested panel-by-panel reconstruction. No conceptual diagram was redrawn.
+\appendix
+\section{Numerical checks}
+Errors and tolerances are dimensionless for logarithmic quantities and magnitude units for magnitude recovery; Parseval compares normalized signal power. Zero-tolerance checks record whether invalid or singular inputs were correctly rejected. These tolerances are implementation acceptance criteria, not observational uncertainties.
+\begingroup\small\input{report/checks_table.tex}\endgroup
 
-\begin{longtable}{p{.14\textwidth}p{.24\textwidth}p{.24\textwidth}p{.26\textwidth}}
-\toprule Panel/scope & Quantity and specification & Data and plot commands & Status and reason\\\midrule
-\endhead
-All main panels; IDs unknown & Full captions unavailable. Quantities and parameters cannot be assigned per panel. & No defensible data or plot recipe. Audit: \texttt{python3 scripts/audit.py}. & Not reproduced. Access and observational-input blockers; no individual numerical attempt.\\\addlinespace
-All supplementary panels; IDs unknown & Supplement unavailable; panel number and content unresolved. & No defensible data or plot recipe. Same audit command. & Not reproduced. Specifications unavailable; no individual numerical attempt.\\\addlinespace
-V1a & Synthetic receiver geometry and estimated epicenter; equations above, configuration file. & D and P below; \texttt{picks.csv}, \texttt{convergence.csv}. & Independently generated validation; not a manuscript panel.\\\addlinespace
-V1b & Location error versus refinement; synthetic parameters above. & D and P; \texttt{convergence.csv}. & Independently generated validation; not a manuscript panel.\\\addlinespace
-V1c & Arrival residuals for exact synthetic picks. & D and P; \texttt{residuals.csv}. & Independently generated validation; not a manuscript panel.\\\addlinespace
-V1d & Position error versus assumed speed; ratios 0.90--1.10. & D and P; \texttt{sensitivity.csv}. & Independently generated validation; not a manuscript panel.\\
-\bottomrule
-\end{longtable}
-Data command D is \texttt{./build/validation config/validation.txt data}. Plot command P is \texttt{python3 scripts/plot.py}. The machine-readable record is \texttt{docs/panel\_record.json}; the audit writes \texttt{data/panel\_attempts.json}. It reports unresolved publication status without fabricating placeholder plot data.
+\section{Figure-by-figure record}
+Every main/supplementary figure and its caption-defined panels are represented, including unlettered spatial views. Waveform/spectrogram components are covered within their labeled example. S10 rows are identified by year, S11 by positional swarm number, and S14 by cluster because those descriptors are explicit in the captions. For \emph{every row}, status is \emph{not reproduced}, data command is \emph{unavailable}, and plot command is \emph{unavailable}. Only the M1 method-check panels have executable generation commands, given above. This distinction prevents a metadata audit from being counted as a numerical reproduction attempt.
+\begingroup\footnotesize\input{report/panels_table.tex}\endgroup
 
-\section{Comparison and discrepancies}
-No numerical agreement with a manuscript panel is established. The abstract's event-count scale, multiyear observation interval, and reported depth cutoff are potential future comparison targets, not inputs used to tune the validation example. The synthetic event at 1730 m is not evidence for the reported 3.7 km seismic limit. Its origin time of 10 s has no calendar meaning, and its synthetic receivers have no geographic registration. Consequently, catalog-count error, temporal alignment, hypocentral spatial error, ring thickness, and waveform similarity to the publication are undefined here. Assigning those metrics a value of zero would incorrectly imply agreement.
-
-The independently computed validation errors quantify only an idealized inverse problem. Recreating the published spatial pattern would require admissible observations and a documented processing procedure; the present source-data prohibition prevents that route. Full text might still permit independent reproduction of specified synthetic method checks or redrawing conceptual schematics, but their existence and details cannot be asserted without the supplement. The current result is therefore an incomplete reproduction attempt with a runnable numerical example and documented evidence gaps.
-
-\section{Build and provenance}
-Run \texttt{python3 scripts/rebuild.py} from the repository root. The procedure recompiles the C++17 program, regenerates CSV data, runs the numerical assertions, plots only those saved data, writes the panel audit, and invokes pdfLaTeX twice. It fails on any numerical or compilation error. It records actual commands, return codes, elapsed times, and tool output in \texttt{data/build\_log.json}; \texttt{data/build\_status.json} records versions and distinguishes build success from scientific completion. SHA-256 hashes are saved in \texttt{data/manifest.sha256}. The final report PDF is produced by this procedure. The procedure was executed successfully in the workspace: all ten numerical checks passed, and both LaTeX passes completed without errors. Scientific reproduction remained blocked. An initial Python-version compatibility failure was corrected before this successful run; the provenance file records it.
-
-Dependencies are an existing C++17 compiler, Python 3, NumPy, Matplotlib, and pdfLaTeX with standard packages. The full procedure writes compiler temporaries, plotting cache, TeX intermediate files, and final products inside the repository. Existing system libraries and user Git/SSH configuration remain outside it; no dependency installation or new external cache is required. The rebuild is offline. The repository contains the source, synthetic configuration and data, plots, report source, PDF, and explicit blockers. It does not contain the excluded author products.
-
-\section{Outstanding work}
-The scientific deliverable remains incomplete. The next prerequisite is readable main-text and supplemental specifications, including all captions. Those documents would allow a real individual-panel inventory and establish which method-validation calculations, if any, are possible under the existing restrictions. Empirical panels would still require a compatible, explicitly authorized input scope. No further question about the DOI is needed: the user has confirmed it.
-
-\small
-\begin{thebibliography}{9}
-\bibitem{tan} X. Tan, A. Tramelli, S. Gammaldi, G. C. Beroza, W. L. Ellsworth, and W. Marzocchi (2025). A clearer view of the current phase of unrest at Campi Flegrei caldera. \emph{Science} 390, 70--75. \href{https://doi.org/10.1126/science.adw9038}{doi:10.1126/science.adw9038}. Abstract and metadata consulted; full text not obtained.
-\bibitem{crossref} Crossref, \href{https://api.crossref.org/works/10.1126/science.adw9038}{metadata record for the target DOI}, accessed 9 October 2026.
-\bibitem{pubmed} PubMed, \href{https://pubmed.ncbi.nlm.nih.gov/40906779/}{PMID 40906779}, abstract consulted via the web tool; direct retrieval returned a browser challenge.
-\bibitem{oa} OpenAlex, \href{https://openalex.org/W4414003983}{work W4414003983}, access metadata consulted 9 October 2026.
-\bibitem{iris} Universit\`a degli Studi di Napoli Federico II, \href{https://www.iris.unina.it/handle/11588/1017961}{institutional publication record}, restricted-access description consulted via the web tool.
-\end{thebibliography}
+\section{Written sources}
+Tan, X., Tramelli, A., Gammaldi, S., Beroza, G. C., Ellsworth, W. L., and Marzocchi, W. (2025). \emph{A clearer view of the current phase of unrest at Campi Flegrei caldera}. Science 390, 70--75. Local source: \texttt{tanmodel.pdf}. Matching supplementary methods, equations, captions, and tables: \texttt{tanmodelsupp.pdf}. The archive descriptions on supplementary page S28 identify the prohibited derived products. No original author implementation was consulted. The preserved \texttt{AGENTS.md} and academic style guide govern the minimal implementation and restrained reporting.
 \end{document}

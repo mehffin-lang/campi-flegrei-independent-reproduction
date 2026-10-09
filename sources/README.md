@@ -1,14 +1,9 @@
-# Written sources and access record
+# Local scientific specifications
 
-- Target: https://www.science.org/doi/10.1126/science.adw9038
-- Bibliographic metadata and abstract: https://api.crossref.org/works/10.1126/science.adw9038
-- Abstract independently accessible through the web tool: https://pubmed.ncbi.nlm.nih.gov/40906779/
-- Access metadata: https://api.openalex.org/works/https://doi.org/10.1126/science.adw9038
-- Restricted manuscript record: https://www.iris.unina.it/handle/11588/1017961
-- Attempted supplement, exact filename unverified: https://www.science.org/doi/suppl/10.1126/science.adw9038/suppl_file/science.adw9038_sm.pdf
-- Permitted guidance: https://github.com/bradlipovsky/vdv-damage/blob/main/AGENTS.md
-- Permitted style: https://github.com/bradlipovsky/vdv-damage/blob/main/brad-lipovsky-academic-style-guide.md
+Use the tracked, user-uploaded `tanmodel.pdf` and `tanmodelsupp.pdf` at the repository root. Their title and publication identifier match. Both were read before outputs were replaced. The four uploaded files and ZIP entries are recorded in `docs/file_inventory.json`, including exact sizes and SHA-256 checksums.
 
-The accessible abstract describes continuous seismic observations between 21 January 2022 and 20 March 2025, an expansion from roughly 12,000 to more than 54,000 detected earthquakes, a narrow seismic ring, shallow northern faults, and shallow hybrid events. It reports no detected activity deeper than 3.7 km on or within the ring. These are published observational statements, not outputs reproduced here. The exact catalog size, panel labels, and complete processing settings are unresolved.
+The supplementary methods, equations S1–S5, captions S1–S15, and Tables S1–S2 are readable. This resolves the previous access blocker. No paper download is part of the build.
 
-See `docs/PROVENANCE.md` for incidental search exposure and exclusions. Raw metadata responses are locally retained inside this directory and ignored by Git; the offline rebuild needs no retrieved source file.
+The two ZIPs are retained unchanged as user uploads, not analysis inputs. Their identification relies on supplementS28: DataS1 is the derived catalog, S2 the associated phase picks, S3 focal solutions, and HTMLS1 the interactive seismicity plot. Neither archive was extracted or executed. No numerical rows or HTML code were used. Only our own analytic fixture outputs are plotted.
+
+The earlier failed web responses are obsolete; they are not scientific evidence for this run. Guidance is in the preserved root `AGENTS.md` and academic style guide. For limitations and discrepancies, see `docs/METHODS.md` and `docs/BLOCKERS.md`.

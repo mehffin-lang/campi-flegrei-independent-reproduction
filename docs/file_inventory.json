@@ -1,0 +1,124 @@
+[
+  {
+    "file": "tanmodel.pdf",
+    "bytes": 2140554,
+    "sha256": "9651e54e369eed320504ffe9b7a04807c90f687d0b479f806799e4608ded9740",
+    "pdfinfo": "Title:          A clearer view of the current phase of unrest at Campi Flegrei caldera\nSubject:        Science 2025.390:70-75\nProducer:       iText 4.2.0 by 1T3XT\nCreationDate:   Fri Oct  9 13:05:16 2026 PDT\nModDate:        Fri Oct  9 13:05:16 2026 PDT\nTagged:         no\nUserProperties: no\nSuspects:       no\nForm:           none\nJavaScript:     no\nPages:          7\nEncrypted:      no\nPage size:      594 x 756 pts\nPage rot:       0\nFile size:      2140554 bytes\nOptimized:      no\nPDF version:    1.4\n",
+    "text_extract_exit": 0,
+    "text_bytes": 58739,
+    "warnings": "Syntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\n"
+  },
+  {
+    "file": "tanmodelsupp.pdf",
+    "bytes": 62164947,
+    "sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "pdfinfo": "Creator:        TeX\nProducer:       pdfTeX-1.40.26\nCreationDate:   Sat Aug 30 13:55:11 2025 PDT\nModDate:        Tue Sep 30 06:53:38 2025 PDT\nTagged:         no\nUserProperties: no\nSuspects:       no\nForm:           AcroForm\nJavaScript:     no\nPages:          35\nEncrypted:      no\nPage size:      612 x 792 pts (letter)\nPage rot:       0\nFile size:      62164947 bytes\nOptimized:      yes\nPDF version:    1.7\n",
+    "text_extract_exit": 0,
+    "text_bytes": 56360,
+    "warnings": ""
+  },
+  {
+    "file": "science.adw9038_data_s1_to_s3.zip",
+    "bytes": 12960255,
+    "sha256": "6ce0a78029dddb36bffed3985d435ec5ab68ec173c47124a63235fa9d6e81186",
+    "members": [
+      {
+        "name": "science.adw9038_data_s1.csv",
+        "bytes": 9400054,
+        "compressed_bytes": 3704982,
+        "encrypted": false
+      },
+      {
+        "name": "science.adw9038_data_s2.csv",
+        "bytes": 58591381,
+        "compressed_bytes": 9244526,
+        "encrypted": false
+      },
+      {
+        "name": "science.adw9038_data_s3.csv",
+        "bytes": 17807,
+        "compressed_bytes": 8132,
+        "encrypted": false
+      },
+      {
+        "name": "__MACOSX/",
+        "bytes": 0,
+        "compressed_bytes": 0,
+        "encrypted": false
+      },
+      {
+        "name": "__MACOSX/._3d-27.html",
+        "bytes": 368,
+        "compressed_bytes": 214,
+        "encrypted": false
+      },
+      {
+        "name": "__MACOSX/._catalog.csv",
+        "bytes": 312,
+        "compressed_bytes": 178,
+        "encrypted": false
+      },
+      {
+        "name": "__MACOSX/._focal_mechanism-5.csv",
+        "bytes": 312,
+        "compressed_bytes": 175,
+        "encrypted": false
+      },
+      {
+        "name": "__MACOSX/._picking-2.csv",
+        "bytes": 822,
+        "compressed_bytes": 480,
+        "encrypted": false
+      }
+    ],
+    "crc_check": null,
+    "archive_valid": true,
+    "usage": "excluded: authors data/products; directory and integrity inspection only; no extraction or execution"
+  },
+  {
+    "file": "science.adw9038_interactive_plot_s1.zip",
+    "bytes": 8852485,
+    "sha256": "59a3c1e401d937feeb779b3ff77f2bbefc9b85abb4752906a0824f1e06874233",
+    "members": [
+      {
+        "name": "__MACOSX/",
+        "bytes": 0,
+        "compressed_bytes": 0,
+        "encrypted": false
+      },
+      {
+        "name": "__MACOSX/._3d-27.html",
+        "bytes": 368,
+        "compressed_bytes": 214,
+        "encrypted": false
+      },
+      {
+        "name": "__MACOSX/._catalog.csv",
+        "bytes": 312,
+        "compressed_bytes": 178,
+        "encrypted": false
+      },
+      {
+        "name": "__MACOSX/._focal_mechanism-5.csv",
+        "bytes": 312,
+        "compressed_bytes": 175,
+        "encrypted": false
+      },
+      {
+        "name": "__MACOSX/._picking-2.csv",
+        "bytes": 822,
+        "compressed_bytes": 480,
+        "encrypted": false
+      },
+      {
+        "name": "interactive_plot_s1.html",
+        "bytes": 24247307,
+        "compressed_bytes": 8850280,
+        "encrypted": false
+      }
+    ],
+    "crc_check": null,
+    "archive_valid": true,
+    "usage": "excluded: authors data/products; directory and integrity inspection only; no extraction or execution"
+  }
+]
