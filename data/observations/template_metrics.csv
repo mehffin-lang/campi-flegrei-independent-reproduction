@@ -1,0 +1,4 @@
+template,window_start,samples,FI,low_power,high_power,window_rule
+E1,2024-05-06T22:11:10.000000Z,800,-0.7861565376215781,7.726978987601985e-10,1.264308895617384e-10,written origin time to +8s; onset alignment uncertain
+E2,2024-03-08T17:40:54.000000Z,800,-0.42859528004772895,3.362915923179508e-11,1.2534895841133094e-11,written origin time to +8s; onset alignment uncertain
+E3,2025-02-17T08:06:48.000000Z,800,-1.0818682129494572,2.732701159700632e-09,2.2632051783953583e-10,written origin time to +8s; onset alignment uncertain

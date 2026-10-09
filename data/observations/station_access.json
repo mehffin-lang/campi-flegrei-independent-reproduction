@@ -1,0 +1,39 @@
+{
+  "metadata_available": [
+    "CAAM",
+    "CAWE",
+    "CBAC",
+    "CBAG",
+    "CCAP",
+    "CFB1",
+    "CFB2",
+    "CFB3",
+    "CFMN",
+    "CMIS",
+    "CMSN",
+    "CMTS",
+    "CNIS",
+    "COLB",
+    "CPIS",
+    "CPOZ",
+    "CQUE",
+    "CRUS",
+    "CSFT",
+    "CSOB",
+    "CSTH",
+    "CUMA",
+    "IBCM",
+    "IBRN",
+    "IOCA",
+    "IPSM",
+    "PTMR"
+  ],
+  "waveforms_retrieved": [
+    "CAAM",
+    "COLB",
+    "CSOB",
+    "CSTH"
+  ],
+  "coverage_file": "data/observations/coverage.csv",
+  "caution": "Metadata availability does not imply waveform availability. Other stations were not tested."
+}

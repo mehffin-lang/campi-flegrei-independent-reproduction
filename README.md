@@ -1,33 +1,39 @@
-# Independent assessment and method checks for Tan et al.
+# Campi Flegrei: independent observational processing
 
-**Written-source access is verified. Scientific reproduction remains incomplete: no empirical manuscript or supplementary panel is reproduced.**
+This run retrieves original INGV observations and generates new station, coverage, waveform, spectral and PhaseNet-pick outputs. **The full scientific reproduction remains incomplete. No main-manuscript panel is reproduced.** S1, S2 and S15C are partial reconstructions; all other publication panels remain unreproduced. The calendar-day pick figure is an additional validation result, not an earthquake catalog.
 
-[Compiled report](report/report.pdf) · [LaTeX](report/report.tex) · [Panel record](docs/panel_record.json) · [File inventory](docs/file_inventory.json) · [Replacements](docs/REPLACEMENTS.md)
+Read [the compiled report](report/report.pdf), [the full panel record](docs/panel_record.json), [input policy](docs/INPUT_POLICY.md), [access outcomes](docs/access_attempts.json) and [replacement record](docs/REPLACEMENTS.md).
 
-The sources are the user-uploaded `tanmodel.pdf` (7 pages) and `tanmodelsupp.pdf` (35 pages), preserved from main. Both are readable. The study develops an observational earthquake catalog using retrained PhaseNet, GaMMA, VELEST/TomoDD relocation, magnitude estimation, focal mechanisms, and hybrid-event analysis. It does not specify a coupled physical forward model.
+## Sources and restrictions
 
-The two uploaded ZIPs are readable and pass integrity checks. The Data S1–S3 ZIP contains the authors' catalog, associated picks, and focal solutions. The other ZIP contains an interactive HTML seismicity plot. They were listed and checked, not extracted or executed. Neither their CSV values nor their HTML/code/embedded data are used in the analysis. Both uploads are preserved unchanged because they were already committed by the user.
+The supplied `tanmodel.pdf` (2,140,554 bytes) and `tanmodelsupp.pdf` (62,164,947 bytes) are readable. Both supplied `science.adw9038` ZIPs were listed and CRC-checked. They contain author-derived results and an interactive plot; none is used as input. Their complete directory inventory and checksums are in `docs/file_inventory.json`.
 
-## What is implemented
-
-`src/method_checks.cpp` independently implements the relative amplitude/magnitude ratios (S2/S5), power SNR (S3), and frequency index (S4). It also tests an explicitly assumed regularized least-squares magnitude problem, including its offset ambiguity. Parameters are in `config/method_checks.cfg`; all numerical inputs are analytic test fixtures. Plots M1a–d are **method consistency checks**, not reproductions of S8 or S14/S15. They replace the previous unrelated location example.
-
-The full detection/training/association/relocation pipeline is not implemented. Its empirical inputs are excluded, and several numerical settings are incomplete in the written description. Every paper figure and caption-defined panel/view is accounted for in the report and JSON record. A stopped attempt is recorded where permitted inputs are unavailable; no fabricated earthquake sequence is substituted.
+Original FDSN waveforms and station metadata are permitted. The retrained PhaseNet tensor artifact is explicitly permitted; this run performs independent inference, not independent training. Authors' picks, catalogs, fitted velocity models, station corrections, scripts and figure products are excluded. The routine INGV catalog is comparison-only and was not consulted. The temporary archive contains author-event-selected cuts; no such cuts enter independent detection. RAN waveforms require credentials that are unavailable here.
 
 ## Rebuild
 
-Requirements: C++17 compiler, Python 3.6+, NumPy, Matplotlib, Poppler (`pdftotext`, `pdfinfo`), and pdfLaTeX with standard packages. This workspace already has them.
+Use the repository root. Requires Python 3.11, a C++17 compiler, curl, Poppler (`pdftotext`) and pdfLaTeX with the standard packages used in `report/report.tex`.
 
-```sh
-python3 scripts/rebuild.py
+```bash
+python3.11 -m venv .venv
+.venv/bin/pip install -r config/requirements-observations.txt --extra-index-url https://download.pytorch.org/whl/cpu
+.venv/bin/python scripts/retrieve_observations.py
+.venv/bin/python scripts/rebuild.py --clean
 ```
 
-The offline procedure verifies the four uploaded files, confirms text/caption extraction, recompiles C++, regenerates its CSV outputs and method plots, creates report tables from those saved outputs and the panel record, compiles the report twice, checks numerical assertions and PDF layout, and records versions, commands, outputs, and hashes. `data/build_status.json` distinguishes a successful build from **zero reproduced publication panels**. It does not execute anything from a ZIP or import original observational results.
+Retrieval requests a calendar-selected day (2024-01-01) at CAAM, COLB, CSOB and CSTH plus six short files for the three written-method templates, station metadata and the authorized model artifact. Requests are hourly, with four concurrent downloads and bounded retries. This is not a download of the full three-year archive. Inputs reside in ignored `inputs/`; URL/size/SHA256 receipts are in `docs/observation_inputs.json`. Preserve those hashes when placing files manually. A cached rebuild is offline and verifies every input hash before analysis. A new retrieval manifest should be reviewed if an upstream service returns changed bytes.
 
-For a clean rebuild, remove only generated build products (preserves all source files and uploads):
+Processing commands, individually:
 
-```sh
-python3 scripts/rebuild.py --clean
+```bash
+.venv/bin/python scripts/analyze_observations.py
+.venv/bin/python scripts/plot_observations.py
 ```
 
-All intermediates stay in `tmp/`, `build/`, `data/`, `figures/`, and `report/` inside this repository. `TMPDIR` and the Matplotlib cache are explicitly local. Existing system libraries and user Git/SSH configuration remain outside; no dependencies were installed or external project cache created. Exact versions are in the build status. No paper retrieval from a URL is required.
+Data products are under `data/observations/`, figures under `figures/`, and LaTeX/PDF under `report/`. `data/build_log.json` records actual commands and return codes. `data/build_status.json` separates computational success from scientific incompleteness; `data/manifest.sha256` records final file hashes. The C++ checks are retained solely as useful equation validation. Their synthetic fixtures are not publication reproductions.
+
+Project caches/intermediates remain in `.venv/`, `inputs/`, `tmp/` and `build/`. Pip uses `/home/mehffin/.cache/pip`; the initial dependency check created `/home/mehffin/.seisbench/config.json`, while analysis redirects SeisBench to `tmp/seisbench/`; TeX uses the installed system resources. Model architecture, filtering, normalization, FI windows, spectrum settings, coverage limitations and model artifact provenance are documented in the report and `config/observations.json`.
+
+## Remaining work
+
+The full multi-year association, velocity calibration, relocation, absolute-magnitude and focal-mechanism analyses are not implemented. Written defaults and permitted initial velocity inputs are incomplete; fitted author products cannot fill these gaps. The paper's duration-magnitude prior conflicts with the current comparison-only rule for the routine catalog. No arbitrary spatial model or synthetic earthquake catalog replaces those missing stages.

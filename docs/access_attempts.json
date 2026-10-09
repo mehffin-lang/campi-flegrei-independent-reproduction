@@ -1,0 +1,89 @@
+[
+  {
+    "name": "eida_page",
+    "url": "https://eida.ingv.it/it/network/IV",
+    "returncode": 60,
+    "http": "000",
+    "error": "curl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.haxx.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n",
+    "bytes": 0
+  },
+  {
+    "name": "station",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&minlatitude=40.7&maxlatitude=40.95&minlongitude=13.9&maxlongitude=14.3&starttime=2022-01-21&endtime=2025-03-21&level=channel&format=text",
+    "returncode": 0,
+    "http": "200",
+    "error": "",
+    "bytes": 22464
+  },
+  {
+    "name": "waveform",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-05-06T22:10:00&end=2024-05-06T22:13:00",
+    "returncode": 0,
+    "http": "200",
+    "error": "",
+    "bytes": 134144
+  },
+  {
+    "name": "local",
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/index.html",
+    "returncode": 0,
+    "http": "200",
+    "error": "",
+    "bytes": 1510
+  },
+  {
+    "name": "ran",
+    "url": "https://ran.protezionecivile.it/IT/index.php",
+    "returncode": 0,
+    "http": "200",
+    "error": "",
+    "bytes": 572789
+  },
+  {
+    "name": "model_tree",
+    "url": "https://api.github.com/repos/iamharrison2000/Campi-Flegrei-Earthquake-Monitoring/git/trees/main?recursive=1",
+    "returncode": 0,
+    "http": "200",
+    "error": "",
+    "bytes": 5964
+  },
+  {
+    "name": "phasenet",
+    "url": "https://api.github.com/repos/AI4EPS/PhaseNet",
+    "returncode": 0,
+    "http": "200",
+    "error": "",
+    "bytes": 6658
+  },
+  {
+    "name": "gamma",
+    "url": "https://api.github.com/repos/AI4EPS/GaMMA",
+    "returncode": 0,
+    "http": "200",
+    "error": "",
+    "bytes": 6534
+  },
+  {
+    "name": "temporary_archive_headers",
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/Tracce_AI_new.zip",
+    "http": "200",
+    "bytes_advertised": 3293243207,
+    "used": false,
+    "reason": "Author-event-selected raw cuts; not a continuous discovery input"
+  },
+  {
+    "name": "ran_login",
+    "url": "https://ran.protezionecivile.it/IT/autenticazione.php",
+    "http": "200",
+    "used": false,
+    "reason": "Login/registration required for waveform download; credentials unavailable"
+  },
+  {
+    "name": "availability_probe",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=CAAM,COLB,CSOB,CSTH&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "returncode": 28,
+    "http": "000",
+    "bytes": 0,
+    "error": "Operation timed out after 25001 milliseconds with 0 bytes received; endpoint support not established."
+  }
+]

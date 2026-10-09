@@ -25,7 +25,7 @@ Main pp.70–75 and supplementary S2–S11 describe an empirical seismic-monitor
 
 Table S1 documents interfaces at -0.30,0.50,1.00,1.50,2.00,3.00km; Vp=1.81,2.33,2.71,3.76,3.89,4.51km/s and Vs=1.02,1.02,1.46,2.21,2.49,2.96km/s. They are not used to invent a replacement location model. TableS2 event results and all archive data are excluded from numerical fixtures.
 
-## Implemented numerical methods
+## Retained C++ equation consistency tests
 
 Equations S2/S5: `delta_m=log10(A_i/A_j)`, valid for positive amplitudes with comparable propagation. Common gain cancels; absolute magnitude remains undetermined by pairwise differences.
 
@@ -47,4 +47,14 @@ No physical initial/boundary conditions apply: this is finite-window signal anal
 
 ## Validation scope
 
-Analytic ratios, spectral orthogonality, Parseval power conservation, invariance to common amplitude gain and circular time shift, unequal-window SNR, magnitude pair reversal, absolute-offset gauge freedom, and singular/invalid-input rejection are checked. These are independent consistency tests of implemented formulas. They do not validate event detection, relocation errors, empirical b values, or volcanic interpretation. All actual manuscript panels remain not reproduced.
+Analytic ratios, spectral orthogonality, Parseval power conservation, invariance to common amplitude gain and circular time shift, unequal-window SNR, magnitude pair reversal, absolute-offset gauge freedom, and singular/invalid-input rejection are checked. These are independent consistency tests of implemented formulas. They do not validate event detection, relocation errors, empirical b values, or volcanic interpretation. All main-manuscript panels remain not reproduced; S1, S2 and S15C now have partial observational reconstructions.
+
+## Current observational implementation
+
+Original observations and trained PhaseNet weights are permitted under the latest instruction. Own retrieval and processing scripts use official FDSN waveform/response metadata and the permitted model artifact. The calendar-selected validation day is independent of all catalogs. See report/report.tex and config/observations.json for exact operational settings.
+
+The template displays use CAAM/COLB HHE/HHZ, mean removal and sensitivity correction, a -2/+18-second display, component-specific CAAM normalization and Hann-window spectral density. FI uses an 800-sample unfiltered CAAM vertical window with the same band/Parseval conventions as the analytic checks. Observational computations use NumPy FFTs; analytic C++ checks retain their direct DFT implementation.
+
+PhaseNet inference uses ENZ, 100 Hz, 1 Hz highpass (four-pole causal), 1500-sample overlap, 250-sample blinding and probability threshold 0.3. SeisBench's architecture has 3001 samples (30.01 seconds); the paper describes nominal 30-second windows. Tensor loading is strict and weights-only. No missing waveform data are interpolated. Hourly-boundary blinding and the limited network/time coverage preclude completeness claims.
+
+The separate calendar-day template scan uses the three written templates, CAAM/COLB vertical channels, a 0.2–6 Hz four-pole causal filter, normalized sliding correlations averaged across stations, score >0.25 and 8-second peak spacing. Ten-second chunk edges are excluded. These spacing/filter details are implementation assumptions; unreviewed matches are not the paper's hybrid catalog. Current empirical products reside in data/observations/. Former synthetic method-check figures were removed.

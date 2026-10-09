@@ -1,0 +1,1072 @@
+[
+  {
+    "file": "inputs/metadata/channels.txt",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&minlatitude=40.7&maxlatitude=40.95&minlongitude=13.9&maxlongitude=14.3&starttime=2022-01-21&endtime=2025-03-21&level=channel&format=text",
+    "kind": "station metadata; epochs do not guarantee waveform coverage",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 22464,
+    "sha256": "1887b7c66625b2970ceb9aab426e17f767e0ffa80b2822a2d14c842f7581d2a1"
+  },
+  {
+    "file": "inputs/metadata/response.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CAAM,COLB,CSOB,CSTH&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "kind": "instrument metadata",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1730413,
+    "sha256": "e4a8c7a741e41ee86fdeaadf23c2af7fd447f403b8f067984a517c83cb5248d3"
+  },
+  {
+    "file": "inputs/models/phasenet_retrained.json",
+    "url": "https://raw.githubusercontent.com/iamharrison2000/Campi-Flegrei-Earthquake-Monitoring/f84c9c9dc6bb1501a95a833f6634199a63d4f3b3/models/phasenet_retrained.json",
+    "kind": "permitted model artifact",
+    "http": "cached",
+    "returncode": 0,
+    "error": "",
+    "bytes": 527,
+    "sha256": "75cd9e14d6f2927d84ec684b44d815abffc6649f6d7751488ae9b1a35da45958"
+  },
+  {
+    "file": "inputs/models/phasenet_retrained.pt",
+    "url": "https://raw.githubusercontent.com/iamharrison2000/Campi-Flegrei-Earthquake-Monitoring/f84c9c9dc6bb1501a95a833f6634199a63d4f3b3/models/phasenet_retrained.pt",
+    "kind": "permitted model artifact",
+    "http": "cached",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1117748,
+    "sha256": "7f2b2d4345b82232ded67ea554794f7ff148bee235d50b1772f3516833500059"
+  },
+  {
+    "file": "inputs/models/stations.csv",
+    "url": "https://raw.githubusercontent.com/iamharrison2000/Campi-Flegrei-Earthquake-Monitoring/f84c9c9dc6bb1501a95a833f6634199a63d4f3b3/models/stations.csv",
+    "kind": "station metadata",
+    "http": "cached",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1708,
+    "sha256": "46fd31e02a13a2a4d493cc6cdd7fb0e97487a498cfdebdfc4b0c4e8bf85aeb7a"
+  },
+  {
+    "file": "inputs/waveforms/E1_CAAM.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-05-06T22:10:00&end=2024-05-06T22:13:00",
+    "kind": "raw waveform; written-method template window",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 134144,
+    "sha256": "ccba37062237ac60eeac753fd866b73c93503d83a051e9d231662fc75a0ca656"
+  },
+  {
+    "file": "inputs/waveforms/E1_COLB.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-05-06T22:10:00&end=2024-05-06T22:13:00",
+    "kind": "raw waveform; written-method template window",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 133632,
+    "sha256": "36ba87e5240885fec99fa075432df96ebc4e48d01a57d19a40c88681f80e0ac4"
+  },
+  {
+    "file": "inputs/waveforms/E2_CAAM.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-03-08T17:40:00&end=2024-03-08T17:43:00",
+    "kind": "raw waveform; written-method template window",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 136192,
+    "sha256": "5d8bcf8c4cbb0a3caf1038877f7b7a050e25f2e8967d8a0ce9f180cc025bc9f2"
+  },
+  {
+    "file": "inputs/waveforms/E2_COLB.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-03-08T17:40:00&end=2024-03-08T17:43:00",
+    "kind": "raw waveform; written-method template window",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 135680,
+    "sha256": "d5d245e8f1133107ae73242b968dbbbdc0dcf6170ee216fdabc982bc8f0ba4c2"
+  },
+  {
+    "file": "inputs/waveforms/E3_CAAM.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2025-02-17T08:06:00&end=2025-02-17T08:09:00",
+    "kind": "raw waveform; written-method template window",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 137216,
+    "sha256": "9786cebcec2cd1bd81464ed84e0dded0e6b36f68b6349058d683d92bbb5b49c8"
+  },
+  {
+    "file": "inputs/waveforms/E3_COLB.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2025-02-17T08:06:00&end=2025-02-17T08:09:00",
+    "kind": "raw waveform; written-method template window",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 136192,
+    "sha256": "ffa33ef4a7ccdf5d32991880368855af674c0569da5b871716fbd158c054b422"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T00:00:00&end=2024-01-01T01:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2677248,
+    "sha256": "9dfb719890cfa26ebcfdd14cabd872688a3924be7fa4dc9eb9a91455445eb683"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_01.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T01:00:00&end=2024-01-01T02:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2680320,
+    "sha256": "ef99fffb43d2487eb826d18a76db0330421f0ed338a9b94dabed14e81ab3fc97"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T02:00:00&end=2024-01-01T03:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2675712,
+    "sha256": "4d4b44409bbf04dafcf2749ad26f4c1c984db046e729142e67e255297dd89a53"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_03.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T03:00:00&end=2024-01-01T04:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2667520,
+    "sha256": "1f1c6a6cd697577d95c54a94bffb9c94b055976fe8d4d09c802b39cca601a87b"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_04.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T04:00:00&end=2024-01-01T05:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2668032,
+    "sha256": "f7f48f167a9ba046992e8612d9199bc3bd553400c64b0b713a0729de42638c3a"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_05.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T05:00:00&end=2024-01-01T06:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2667520,
+    "sha256": "5ea60626b9a65b3a355a95c92911766e7a4aef26f2279aa04c7691c0df5f618b"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_06.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T06:00:00&end=2024-01-01T07:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2675200,
+    "sha256": "c0299460c3631877b44b97915b10fa4f4c395d81e1f3f0555724f2ca6e78f177"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_07.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T07:00:00&end=2024-01-01T08:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2675200,
+    "sha256": "3105cf7fa30e6364fa61828475c51c3ca050858df4a7a77c8c7a823e19dbc8a8"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_08.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T08:00:00&end=2024-01-01T09:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2676224,
+    "sha256": "1cf9802fca07de8067cc5e65fe075bf26bdd97057d9ff9a55d6805b81c05d63b"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_09.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T09:00:00&end=2024-01-01T10:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2676736,
+    "sha256": "54d498e49a84d6905ba3604e86244cdd1aefded85de15f5b9d2452d309d98bfa"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_10.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T10:00:00&end=2024-01-01T11:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2675712,
+    "sha256": "813c3b4a80b2dd08a086dff17dcd57e15f411bd8d2ac146df3a7acf6b569ed62"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_11.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T11:00:00&end=2024-01-01T12:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2676736,
+    "sha256": "5a77d1b8f9049fa37dc5da5c6ba44b68f24a1da0e780be9c10e3426dc2b7b099"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_12.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T12:00:00&end=2024-01-01T13:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2677248,
+    "sha256": "024260d8434cbf2acf00e69ba5c8fd3886779d9ee35df4249f0ce33ee0a22776"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_13.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T13:00:00&end=2024-01-01T14:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2667008,
+    "sha256": "a9ad1e9e92f26aa341ef352b7b845f72a3fc2c9bae861384a0b132202bb0f02f"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_14.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T14:00:00&end=2024-01-01T15:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2658816,
+    "sha256": "a32f755c36b6999eaae023c84bd706ba1bb5d7cc5550f422cb8e57702e399c1b"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_15.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T15:00:00&end=2024-01-01T16:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2664448,
+    "sha256": "0536191d239455d79c4ae42ad71af249fe5dc60c46a5d9defd7242d7c5491ad1"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_16.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T16:00:00&end=2024-01-01T17:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2669056,
+    "sha256": "d1d0840f731a9563bc21e882f50f85c46f653392f3e6298b2b062f05c80dee5f"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_17.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T17:00:00&end=2024-01-01T18:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2671616,
+    "sha256": "69389b82ad9a18472fdd6e644e31f00c3e1f53140a920c5585967b9a2c872309"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_18.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T18:00:00&end=2024-01-01T19:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2672128,
+    "sha256": "483ef285fa0649f638e400ec4de493a9ad64faf023041d6cb3dde87332044d25"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_19.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T19:00:00&end=2024-01-01T20:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2670080,
+    "sha256": "945a3b981724e4305a5d6cf3d06958179c43df98e0de0afe3fdda907b5edb53e"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_20.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T20:00:00&end=2024-01-01T21:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2669056,
+    "sha256": "744ecb558552cc741c34545ffbf852539798f137b52c6f2d6f8ee33eb8959fe0"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T21:00:00&end=2024-01-01T22:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2663936,
+    "sha256": "a36f28af3d0951ec957864e874f16e4ba98f253301e9a91da3d0c62a81fca486"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_22.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T22:00:00&end=2024-01-01T23:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2655744,
+    "sha256": "f73596dacca68e312aad6acaa392bc524752d9a55ab9912eeebd145341932397"
+  },
+  {
+    "file": "inputs/waveforms/day_CAAM_23.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=*&cha=HH?&start=2024-01-01T23:00:00&end=2024-01-02T00:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2643456,
+    "sha256": "9b1b9b24ee9ad617aaa47c9c3771be66e216bbe513cd68c2e6fe86119ea4c1ec"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T00:00:00&end=2024-01-01T01:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2676736,
+    "sha256": "a872b4a9d5da48bfd9e58974ff82514650bc61748ad66ee4d6f749b5bce7b7a2"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_01.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T01:00:00&end=2024-01-01T02:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2678784,
+    "sha256": "7d0f28d52144546a7fb0a07010ed9c0d303a4367c860595d7a59ef988063bf59"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T02:00:00&end=2024-01-01T03:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2670592,
+    "sha256": "cfe858383c4cb7384dd339b423adba9b1699842094dac8f17f8a7c2a98dd98cc"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_03.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T03:00:00&end=2024-01-01T04:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2668544,
+    "sha256": "5db18272176af1b1d6b9db08f0b3607dba06b52a79f28b2fefdd7a3e1a532b63"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_04.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T04:00:00&end=2024-01-01T05:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2664960,
+    "sha256": "997db3084bbc4df049b3a039d6dff135877b816f9c8e1c68889e10d7a4ab98d6"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_05.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T05:00:00&end=2024-01-01T06:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2659328,
+    "sha256": "3f310dbcbb12880d8911d30dcae8b5a571cdb55f9b0472b45308b2ba696e2ca8"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_06.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T06:00:00&end=2024-01-01T07:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2678272,
+    "sha256": "beac67a6df16370a6fedc287961092db75373516e2d066e1de5f188cf9086961"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_07.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T07:00:00&end=2024-01-01T08:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2678784,
+    "sha256": "6a582414beec71191564aeaa6f9965cb6ad09af3aab17582b1f20fe976af6bf4"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_08.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T08:00:00&end=2024-01-01T09:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2694656,
+    "sha256": "071403b2ff7b6c63076f5bf90dae6029a9390b04bd01a097febc1d6edeee98fb"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_09.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T09:00:00&end=2024-01-01T10:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2707456,
+    "sha256": "baf94ab828c2f7dd06030f9b1708d78554b24b69706a3f24f0e8b618f01a53d0"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_10.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T10:00:00&end=2024-01-01T11:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2711552,
+    "sha256": "4eb672df35ee272849d9631c9811e5dbffba2317a4cb28fca6cfffe5557873ac"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_11.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T11:00:00&end=2024-01-01T12:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2713600,
+    "sha256": "350450312232ef40ef4d693ad56df9fbca4d74916d697240c9e82e8f6b264ecf"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_12.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T12:00:00&end=2024-01-01T13:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2699264,
+    "sha256": "d53aeda8650fe5e89909a808b19e4c24a8c874379ab6a1625b7609223a185d6a"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_13.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T13:00:00&end=2024-01-01T14:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2685952,
+    "sha256": "ebebfcdee9991984f4c95198cf266d696bc29a33cfc9d8e18c8f16819f65cb44"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_14.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T14:00:00&end=2024-01-01T15:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2675200,
+    "sha256": "212a6235340ed082aa07b8e5eb9c69120733dceead526240e0c0a471f620bcc8"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_15.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T15:00:00&end=2024-01-01T16:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2696704,
+    "sha256": "f10ee87a01d78fbe9b3046d9fbe33bb8f4b28d3f8fc6d7dc4170df68aaeec4ed"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_16.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T16:00:00&end=2024-01-01T17:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2713600,
+    "sha256": "ec1ec2c3efba7f52298781797e1c7d1fde9e9795c31677462a80fc9cf6170458"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_17.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T17:00:00&end=2024-01-01T18:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2718208,
+    "sha256": "3a525a8be7c1b4920c53e5f8169d06c1a8842949fff8491ed1a9ed2161dcde81"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_18.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T18:00:00&end=2024-01-01T19:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2712576,
+    "sha256": "e6ca854849e198921beb51b29e937b605095cacf214445e0c74aad9dfe012c3a"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_19.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T19:00:00&end=2024-01-01T20:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2710528,
+    "sha256": "dfa8a95057f8d7b3062522772999e0f6e1080697899313ed0b1ab5077fd10534"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_20.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T20:00:00&end=2024-01-01T21:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2712064,
+    "sha256": "ece9433a85d984dd7c0eaae49ec9b38143c195ace1315e89bec90026acd1c31b"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T21:00:00&end=2024-01-01T22:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2697216,
+    "sha256": "5c13c2d3cc8be9a0547adef6dbae821c5405345276abd21c5ba9ffe624c20ad7"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_22.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T22:00:00&end=2024-01-01T23:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2667008,
+    "sha256": "a3eb22ec11a548bb8cf91782dc7bf91a125b4518d7c3bedda469020a1a6de7aa"
+  },
+  {
+    "file": "inputs/waveforms/day_COLB_23.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=*&cha=HH?&start=2024-01-01T23:00:00&end=2024-01-02T00:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2651648,
+    "sha256": "2f3c744e60330ba70de8f5eded0c86ed7be8e395a1102606585a0952515738f5"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T00:00:00&end=2024-01-01T01:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683392,
+    "sha256": "f1deacc394887e81f3b90675dfd06e98969d73353c6f8d2dc44e900c8a2e6e5e"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_01.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T01:00:00&end=2024-01-01T02:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683904,
+    "sha256": "4c85eb5e858da84e53b2a2ce79f1f3e590daa946d44da301cf487af4710cff68"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T02:00:00&end=2024-01-01T03:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683392,
+    "sha256": "cfc5cb03f96dce164b84e05c12b92d622b046dbb38ec635c5c153b77f100d056"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_03.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T03:00:00&end=2024-01-01T04:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2685440,
+    "sha256": "bb5d6221f66feca28d7a9be7b0de6e0f6bbabc6e98b94c057cfa1a0244f65d2e"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_04.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T04:00:00&end=2024-01-01T05:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2682880,
+    "sha256": "c80944ca8d441d3b2f0755a808768a7bfc0c5f342ae55e053ad85be52bd26bba"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_05.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T05:00:00&end=2024-01-01T06:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2684416,
+    "sha256": "e2f91e8deccceb39da2cc22b368868067faacbccc59c0112a2e2c5efe37f3361"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_06.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T06:00:00&end=2024-01-01T07:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683904,
+    "sha256": "bd4052066a17e5314ecee89f5452264f0158a85bd47029fd7a93953a10a24f7a"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_07.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T07:00:00&end=2024-01-01T08:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2682368,
+    "sha256": "61ac5ca6c7e136057260e82a7f050e4db5357b1da779ac507798837c9f82885f"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_08.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T08:00:00&end=2024-01-01T09:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2682880,
+    "sha256": "437ad813b1653f1d68aded309ad68c8771299f316f54de93d6eb34092d75ead9"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_09.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T09:00:00&end=2024-01-01T10:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2681344,
+    "sha256": "7e52c1c3d42129c4e6711fe9e93cfb1d6b86931dab193f5ff57e9e363707105c"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_10.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T10:00:00&end=2024-01-01T11:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683904,
+    "sha256": "9dae39721984f1b627e06042084396978e1b5fdfe252a521b67d4ef63a5d3e90"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_11.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T11:00:00&end=2024-01-01T12:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2685440,
+    "sha256": "3e570d8bb03310a6585c1e1ba81f9b7321a61b9b9a451d122120f433927e4259"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_12.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T12:00:00&end=2024-01-01T13:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2685440,
+    "sha256": "2633b952404bc8c7706714d79c6d4e8404c4719b340783540b8cce8f94031618"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_13.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T13:00:00&end=2024-01-01T14:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2681856,
+    "sha256": "5c7b955e565d49a5315fc092d45d9f5c11426f70898496a814d1787ddced3d33"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_14.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T14:00:00&end=2024-01-01T15:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2675712,
+    "sha256": "3a7cc88c8fc5046ca4974055c5ddd82a6c94b55b1934eaaa0f0746e82d183989"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_15.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T15:00:00&end=2024-01-01T16:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2675200,
+    "sha256": "cce97a8facf1e445d98e16333fad8f5c15dc3a5cffe23c598fc6c14e50c435b7"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_16.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T16:00:00&end=2024-01-01T17:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2676224,
+    "sha256": "55f3ea0151c70fa7e9042a2b49ff3430017afa1b9b14f5ed5998a178e2d8b584"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_17.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T17:00:00&end=2024-01-01T18:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2670592,
+    "sha256": "cbee3864b00eb76e59e715a2bb0cabc44aab53b9e84806b86299934af3566dff"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_18.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T18:00:00&end=2024-01-01T19:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2677248,
+    "sha256": "3a1e648e7c03dd68dd186bb1f79b235ae8dfb0bed65685cfb45aee5a2cc4eb06"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_19.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T19:00:00&end=2024-01-01T20:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2676224,
+    "sha256": "02305250d3420c075dbdc900363432254a2cdb1e06ebdb992f888b7de29cdb13"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_20.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T20:00:00&end=2024-01-01T21:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2676224,
+    "sha256": "f6b64693abc2a6b29e263e6d57460e7e795af9a551484284994fe53b9d1e85d6"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T21:00:00&end=2024-01-01T22:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2677248,
+    "sha256": "e772986c9231cb906d6a1040f33c52c80b49ac485b5029c556478c080f52d58c"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_22.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T22:00:00&end=2024-01-01T23:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2670080,
+    "sha256": "b2d279e927619300c92ebfec743bb59fe9833b7b27a8dd9f5a425496e984010a"
+  },
+  {
+    "file": "inputs/waveforms/day_CSOB_23.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-01-01T23:00:00&end=2024-01-02T00:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2671104,
+    "sha256": "c1144252e5c39e689dcbfae5ef4323441def7c182038950c908632781d0fa7a6"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T00:00:00&end=2024-01-01T01:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683392,
+    "sha256": "a05d86a0b2d14859dac6f3c9ff59e10974564cefc9f974dea81f22a769814d11"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_01.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T01:00:00&end=2024-01-01T02:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2684928,
+    "sha256": "5e19b0a18fb9566b788c6a5ee086293af3dd46af823cad1a1c6fa271641902b2"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T02:00:00&end=2024-01-01T03:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683392,
+    "sha256": "fc05facf7ba85538ef6c70adf1dd80e7547538b1d17f7ed4f013d11aba2361bf"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_03.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T03:00:00&end=2024-01-01T04:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2682880,
+    "sha256": "e51bafa35b2e595e88622356342315dd2fc62a04016971d67ae102673c5926f2"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_04.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T04:00:00&end=2024-01-01T05:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2681856,
+    "sha256": "5f13fc8f07643dec0d2c06f58bb381223b544befd6cf6904b4d04693eb0906c2"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_05.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T05:00:00&end=2024-01-01T06:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683904,
+    "sha256": "71224e374d171713d2b3f43adf59c9c4e08a65f89ea623b2cc5206891926142c"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_06.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T06:00:00&end=2024-01-01T07:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2684416,
+    "sha256": "521f60f24b66ab3529915bcb15ad20a7fe541a7bfdd9eeec927fe3e45e9debc9"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_07.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T07:00:00&end=2024-01-01T08:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2685952,
+    "sha256": "68163884aa55da6a583a9e26083fd915ed842d281aa7d779d57fb3ff60c79f2f"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_08.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T08:00:00&end=2024-01-01T09:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683904,
+    "sha256": "6408b46ca95b1c26d18ab076763d084ed9a690e696063ae78c7d4016518448f6"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_09.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T09:00:00&end=2024-01-01T10:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2684416,
+    "sha256": "a9030d13a4d6e8688e6dee5ef24a7491bd3e08f01ac1efa8e367cf07124904f9"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_10.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T10:00:00&end=2024-01-01T11:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2685952,
+    "sha256": "a9fa40ad01cd3fb93e1b3e75fa405e3c970b5faabe275189d6100233dd827e5e"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_11.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T11:00:00&end=2024-01-01T12:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2686464,
+    "sha256": "6ac1a4286eb2fea4fb2443ac081d5821b314c6016b85dab4fd127049acccd96d"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_12.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T12:00:00&end=2024-01-01T13:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2684928,
+    "sha256": "fd6749cd67d8785b6523c1951837ddb2308f66cd40e7477502fd7c888dbb8900"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_13.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T13:00:00&end=2024-01-01T14:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2685440,
+    "sha256": "4ea55d1d53cc1d5082f1c63bc4680492571a7712225a617be470fa5d01b47c8c"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_14.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T14:00:00&end=2024-01-01T15:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683392,
+    "sha256": "323c25de2eddd87dc1bda0562c6534b352c113ef98e358b58bb1e398d3149667"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_15.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T15:00:00&end=2024-01-01T16:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2684928,
+    "sha256": "1733d7c9ec0cdd300795ddfe8732b594a0e5512ee21dbb5f8498e3120e06243a"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_16.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T16:00:00&end=2024-01-01T17:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2684928,
+    "sha256": "bf52903929d8fcb81062fa704ab5cd7ade80c7e407167ebbf00052e6db9c66ca"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_17.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T17:00:00&end=2024-01-01T18:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2684416,
+    "sha256": "894f11c53304e9400dfc77c0831e0f8644a2f503da89e74094b1f65fea6699ea"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_18.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T18:00:00&end=2024-01-01T19:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683904,
+    "sha256": "d8c07f00e8fd66d4ed8778af769e447e71c69912e9c6ad127f56a570a796a1a1"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_19.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T19:00:00&end=2024-01-01T20:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2684416,
+    "sha256": "d4e6c8ffa937bec276c5177b9e3a1b8c0dac8c38f393f14371030a13fbd6ab46"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_20.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T20:00:00&end=2024-01-01T21:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2684416,
+    "sha256": "ec1e844b19c50f68cda76db6d7ee6fd5d68c441d1c77bf93bad58ebc22cdb66c"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T21:00:00&end=2024-01-01T22:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683392,
+    "sha256": "9f1ceed7a26f5fb91e224657283fb6d2917ac398ed78715403bec3ea1ac6b79e"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_22.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T22:00:00&end=2024-01-01T23:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2683392,
+    "sha256": "246ebd556e3404c0b72b08c75678e552fb1afba8a49b5533c751eba9a74c313e"
+  },
+  {
+    "file": "inputs/waveforms/day_CSTH_23.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=*&cha=HH?&start=2024-01-01T23:00:00&end=2024-01-02T00:00:00",
+    "kind": "raw continuous waveform; calendar-selected validation day",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2681344,
+    "sha256": "e52cf357eef5d762242047ee90abaaaadab12770abf3382a1b315825b0392179"
+  }
+]

@@ -1,9 +1,10 @@
 {
   "records": 63,
-  "reproduced": 0,
-  "partial": 0,
-  "numerically_executed_empirical_panels": 0,
-  "attempt_stage": "specification and allowed-input audit",
+  "counts": {
+    "independently reproduced": 0,
+    "partially reproduced": 3,
+    "not reproduced": 60
+  },
   "all_records": [
     {
       "panel": "1A",
@@ -14,9 +15,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "Routine catalog is allowed only for final comparison, not as plotted analytical input. No independent historical event catalog.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "1B",
@@ -27,9 +29,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed displacement series from cited monitoring sources.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "Historical displacement observations not retrieved; seismic waveform services do not supply this series.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "1C",
@@ -40,9 +43,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "Routine catalog is allowed only for final comparison, not as plotted analytical input. No independent historical event catalog.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "2A",
@@ -53,9 +57,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog. Exact regional polygons and time bin not tabulated.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "2B",
@@ -66,9 +71,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog. Hybrid-event dates and locations are observed outputs.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "3/map",
@@ -79,9 +85,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Views are not lettered in the caption."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Views are not lettered in the caption.",
+      "input_observation_files": []
     },
     {
       "panel": "3/northing-depth",
@@ -92,9 +99,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Views are not lettered in the caption."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Views are not lettered in the caption.",
+      "input_observation_files": []
     },
     {
       "panel": "3/easting-depth",
@@ -105,9 +113,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Views are not lettered in the caption."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Views are not lettered in the caption.",
+      "input_observation_files": []
     },
     {
       "panel": "4A",
@@ -118,9 +127,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded polarities, amplitude ratios, waveforms, and focal solutions.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "4B",
@@ -131,9 +141,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded polarities, amplitude ratios, waveforms, and focal solutions.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S1",
@@ -141,12 +152,16 @@
       "quantity": "Station data-availability timeline",
       "documentation": "Supplement S12 caption; S2 methods",
       "parameters": "48 stations; continuous-data availability",
-      "status": "not reproduced",
-      "data_command": null,
-      "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "status": "partially reproduced",
+      "data_command": ".venv/bin/python scripts/analyze_observations.py",
+      "plot_command": ".venv/bin/python scripts/plot_observations.py",
+      "blocker": "Actual retrieved intervals only; four stations and short windows, not full INGV/IDPC three-year coverage.",
+      "attempt": "Numerical processing executed from permitted observations/metadata; saved outputs plotted.",
+      "notes": "",
+      "input_observation_files": [
+        "inputs/waveforms/*.mseed"
+      ],
+      "generated_figure": "figures/coverage_partial.pdf"
     },
     {
       "panel": "S2",
@@ -154,12 +169,17 @@
       "quantity": "Station map",
       "documentation": "Supplement S13 caption; S2 methods",
       "parameters": "23 broadband, 9 short-period, 16 accelerometers",
-      "status": "not reproduced",
-      "data_command": null,
-      "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "status": "partially reproduced",
+      "data_command": ".venv/bin/python scripts/analyze_observations.py",
+      "plot_command": ".venv/bin/python scripts/plot_observations.py",
+      "blocker": "51-station permitted metadata inventory differs from the paper's 48-station description; exact epoch/membership and basemap not reproduced.",
+      "attempt": "Numerical processing executed from permitted observations/metadata; saved outputs plotted.",
+      "notes": "",
+      "input_observation_files": [
+        "inputs/metadata/channels.txt",
+        "inputs/models/stations.csv"
+      ],
+      "generated_figure": "figures/stations_partial.pdf"
     },
     {
       "panel": "S3A",
@@ -170,9 +190,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Training examples cannot be recreated without allowed waveform inputs.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "Exact training traces and labels not identified from permissible metadata. Retraining was not repeated; permitted trained weights used for inference only.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S3B",
@@ -183,9 +204,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Training examples cannot be recreated without allowed waveform inputs.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "Exact training traces and labels not identified from permissible metadata. Retraining was not repeated; permitted trained weights used for inference only.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S3C",
@@ -196,9 +218,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Training examples cannot be recreated without allowed waveform inputs.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "Exact training traces and labels not identified from permissible metadata. Retraining was not repeated; permitted trained weights used for inference only.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S3D",
@@ -209,9 +232,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Training examples cannot be recreated without allowed waveform inputs.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "Exact training traces and labels not identified from permissible metadata. Retraining was not repeated; permitted trained weights used for inference only.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S4A",
@@ -222,9 +246,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Original/retrained weights and outputs excluded.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "Exact comparison windows and original-network baseline not established. Validation-day picks are not this published example.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S4B",
@@ -235,9 +260,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Original/retrained weights and outputs excluded.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "Exact comparison windows and original-network baseline not established. Validation-day picks are not this published example.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S5/map",
@@ -248,9 +274,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized."
+      "blocker": "Routine catalog is allowed only for final comparison, not as plotted analytical input. No independent historical event catalog.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
+      "input_observation_files": []
     },
     {
       "panel": "S5/northing-depth",
@@ -261,9 +288,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized."
+      "blocker": "Routine catalog is allowed only for final comparison, not as plotted analytical input. No independent historical event catalog.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
+      "input_observation_files": []
     },
     {
       "panel": "S5/easting-depth",
@@ -274,9 +302,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized."
+      "blocker": "Routine catalog is allowed only for final comparison, not as plotted analytical input. No independent historical event catalog.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
+      "input_observation_files": []
     },
     {
       "panel": "S6/map",
@@ -287,9 +316,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
+      "input_observation_files": []
     },
     {
       "panel": "S6/northing-depth",
@@ -300,9 +330,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
+      "input_observation_files": []
     },
     {
       "panel": "S6/easting-depth",
@@ -313,9 +344,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
+      "input_observation_files": []
     },
     {
       "panel": "S7A/map",
@@ -326,9 +358,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Relocated subsets and error estimates excluded.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S7A/easting-depth",
@@ -339,9 +372,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Relocated subsets and error estimates excluded.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S7B",
@@ -352,9 +386,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog. HypoDD covariance outputs unavailable as permitted input.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Caption labeling retained; methods prose uses inconsistent letter references."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Caption labeling retained; methods prose uses inconsistent letter references.",
+      "input_observation_files": []
     },
     {
       "panel": "S7D",
@@ -365,9 +400,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog. HypoDD covariance outputs unavailable as permitted input.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Caption labeling retained; methods prose uses inconsistent letter references."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Caption labeling retained; methods prose uses inconsistent letter references.",
+      "input_observation_files": []
     },
     {
       "panel": "S7F",
@@ -378,9 +414,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog. HypoDD covariance outputs unavailable as permitted input.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Caption labeling retained; methods prose uses inconsistent letter references."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Caption labeling retained; methods prose uses inconsistent letter references.",
+      "input_observation_files": []
     },
     {
       "panel": "S7C",
@@ -391,9 +428,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog. HypoDD covariance outputs excluded.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Caption labeling retained; methods prose also refers to panels H/I."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Caption labeling retained; methods prose also refers to panels H/I.",
+      "input_observation_files": []
     },
     {
       "panel": "S7E",
@@ -404,9 +442,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog. HypoDD covariance outputs excluded.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Caption labeling retained; methods prose also refers to panels H/I."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Caption labeling retained; methods prose also refers to panels H/I.",
+      "input_observation_files": []
     },
     {
       "panel": "S7G",
@@ -417,9 +456,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog. HypoDD covariance outputs excluded.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Caption labeling retained; methods prose also refers to panels H/I."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Caption labeling retained; methods prose also refers to panels H/I.",
+      "input_observation_files": []
     },
     {
       "panel": "S8A",
@@ -430,9 +470,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Both magnitude catalogs excluded; regularization strength unspecified.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S8B",
@@ -443,9 +484,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S9/map",
@@ -456,9 +498,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
+      "input_observation_files": []
     },
     {
       "panel": "S9/northing-depth",
@@ -469,9 +512,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
+      "input_observation_files": []
     },
     {
       "panel": "S9/easting-depth",
@@ -482,9 +526,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
+      "input_observation_files": []
     },
     {
       "panel": "S10/2022",
@@ -495,9 +540,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S10/2023",
@@ -508,9 +554,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S10/2024",
@@ -521,9 +568,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S10/2025",
@@ -534,9 +582,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S11/swarm-1",
@@ -547,9 +596,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Positional identifiers for four maps; event windows not inferred from plotted data."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Positional identifiers for four maps; event windows not inferred from plotted data.",
+      "input_observation_files": []
     },
     {
       "panel": "S11/swarm-2",
@@ -560,9 +610,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Positional identifiers for four maps; event windows not inferred from plotted data."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Positional identifiers for four maps; event windows not inferred from plotted data.",
+      "input_observation_files": []
     },
     {
       "panel": "S11/swarm-3",
@@ -573,9 +624,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Positional identifiers for four maps; event windows not inferred from plotted data."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Positional identifiers for four maps; event windows not inferred from plotted data.",
+      "input_observation_files": []
     },
     {
       "panel": "S11/swarm-4",
@@ -586,9 +638,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Positional identifiers for four maps; event windows not inferred from plotted data."
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Positional identifiers for four maps; event windows not inferred from plotted data.",
+      "input_observation_files": []
     },
     {
       "panel": "S12A",
@@ -599,9 +652,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog. Exact boundary coordinates not tabulated.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S12B",
@@ -612,9 +666,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog. Exact boundary coordinates not tabulated.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S12C",
@@ -625,9 +680,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S12D",
@@ -638,9 +694,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S12E",
@@ -651,9 +708,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S12F",
@@ -664,9 +722,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S12G",
@@ -677,9 +736,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S12H",
@@ -690,9 +750,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S13A",
@@ -703,9 +764,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog. Published imagery not reused.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S13B",
@@ -716,9 +778,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded observed or author-derived earthquake catalog. Published imagery not reused.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": ""
+      "blocker": "No independent associated and relocated multi-year event catalog; author-derived catalogs and velocity estimates excluded. Downstream inversion not implemented.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "",
+      "input_observation_files": []
     },
     {
       "panel": "S14/1",
@@ -729,9 +792,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Event identities, correlations, FI and magnitudes are author-derived.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Cluster identifiers; not invented panel letters. No magnitude/correlation for unclustered events."
+      "blocker": "Full three-year template search and manual review not performed. Three method-specified templates alone do not reproduce cluster history.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Cluster identifiers; not invented panel letters. No magnitude/correlation for unclustered events.",
+      "input_observation_files": []
     },
     {
       "panel": "S14/2",
@@ -742,9 +806,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Event identities, correlations, FI and magnitudes are author-derived.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Cluster identifiers; not invented panel letters. No magnitude/correlation for unclustered events."
+      "blocker": "Full three-year template search and manual review not performed. Three method-specified templates alone do not reproduce cluster history.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Cluster identifiers; not invented panel letters. No magnitude/correlation for unclustered events.",
+      "input_observation_files": []
     },
     {
       "panel": "S14/3",
@@ -755,9 +820,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Event identities, correlations, FI and magnitudes are author-derived.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Cluster identifiers; not invented panel letters. No magnitude/correlation for unclustered events."
+      "blocker": "Full three-year template search and manual review not performed. Three method-specified templates alone do not reproduce cluster history.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Cluster identifiers; not invented panel letters. No magnitude/correlation for unclustered events.",
+      "input_observation_files": []
     },
     {
       "panel": "S14/unclustered",
@@ -768,9 +834,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata. Event identities, correlations, FI and magnitudes are author-derived.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Cluster identifiers; not invented panel letters. No magnitude/correlation for unclustered events."
+      "blocker": "Full three-year template search and manual review not performed. Three method-specified templates alone do not reproduce cluster history.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Cluster identifiers; not invented panel letters. No magnitude/correlation for unclustered events.",
+      "input_observation_files": []
     },
     {
       "panel": "S15A",
@@ -779,11 +846,17 @@
       "documentation": "Supplement S26 caption; S9-S10",
       "parameters": "CAAM/COLB HHZ/HHE; amplitudes normalized by CAAM maximum",
       "status": "not reproduced",
-      "data_command": null,
-      "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Caption spells CCAM once; interpreted as CAAM consistently with methods. Each entry covers the traces/spectrograms of that labeled example."
+      "data_command": ".venv/bin/python scripts/analyze_observations.py",
+      "plot_command": ".venv/bin/python scripts/plot_observations.py",
+      "blocker": "Post-generation visual comparison shows a different published example from the written-method template used here. The generated family-template figure is related analysis, not reproduction of this panel.",
+      "attempt": "Generated a related observational template example; exact published panel not reproduced.",
+      "notes": "Caption spells CCAM once; interpreted as CAAM consistently with methods. Each entry covers the traces/spectrograms of that labeled example.",
+      "input_observation_files": [
+        "inputs/waveforms/E1_CAAM.mseed",
+        "inputs/waveforms/E1_COLB.mseed",
+        "inputs/metadata/response.xml"
+      ],
+      "generated_figure": "figures/hybrid_E1.pdf"
     },
     {
       "panel": "S15B",
@@ -792,11 +865,17 @@
       "documentation": "Supplement S26 caption; S9-S10",
       "parameters": "CAAM/COLB HHZ/HHE; amplitudes normalized by CAAM maximum",
       "status": "not reproduced",
-      "data_command": null,
-      "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Caption spells CCAM once; interpreted as CAAM consistently with methods. Each entry covers the traces/spectrograms of that labeled example."
+      "data_command": ".venv/bin/python scripts/analyze_observations.py",
+      "plot_command": ".venv/bin/python scripts/plot_observations.py",
+      "blocker": "Post-generation visual comparison shows a different published example from the written-method template used here. The generated family-template figure is related analysis, not reproduction of this panel.",
+      "attempt": "Generated a related observational template example; exact published panel not reproduced.",
+      "notes": "Caption spells CCAM once; interpreted as CAAM consistently with methods. Each entry covers the traces/spectrograms of that labeled example.",
+      "input_observation_files": [
+        "inputs/waveforms/E2_CAAM.mseed",
+        "inputs/waveforms/E2_COLB.mseed",
+        "inputs/metadata/response.xml"
+      ],
+      "generated_figure": "figures/hybrid_E2.pdf"
     },
     {
       "panel": "S15C",
@@ -804,12 +883,18 @@
       "quantity": "Hybrid family 3: waveforms and spectrograms",
       "documentation": "Supplement S26 caption; S9-S10",
       "parameters": "CAAM/COLB HHZ/HHE; amplitudes normalized by CAAM maximum",
-      "status": "not reproduced",
-      "data_command": null,
-      "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Caption spells CCAM once; interpreted as CAAM consistently with methods. Each entry covers the traces/spectrograms of that labeled example."
+      "status": "partially reproduced",
+      "data_command": ".venv/bin/python scripts/analyze_observations.py",
+      "plot_command": ".venv/bin/python scripts/plot_observations.py",
+      "blocker": "Written template times used; exact published example alignment, display filtering and spectral settings incompletely specified. Sensitivity-corrected velocities and stated independent display settings used.",
+      "attempt": "Numerical processing executed from permitted observations/metadata; saved outputs plotted.",
+      "notes": "Caption spells CCAM once; interpreted as CAAM consistently with methods. Each entry covers the traces/spectrograms of that labeled example.",
+      "input_observation_files": [
+        "inputs/waveforms/E3_CAAM.mseed",
+        "inputs/waveforms/E3_COLB.mseed",
+        "inputs/metadata/response.xml"
+      ],
+      "generated_figure": "figures/hybrid_E3.pdf"
     },
     {
       "panel": "S15D",
@@ -820,9 +905,10 @@
       "status": "not reproduced",
       "data_command": null,
       "plot_command": null,
-      "blocker": "Excluded original waveforms/picks and station metadata.",
-      "attempt": "Written-specification and permitted-input audit; empirical numerical execution blocked before ingesting excluded inputs.",
-      "notes": "Caption spells CCAM once; interpreted as CAAM consistently with methods. Each entry covers the traces/spectrograms of that labeled example."
+      "blocker": "Exact shallow VT example not identified by written method alone; no author catalog or plot values used to select it.",
+      "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+      "notes": "Caption spells CCAM once; interpreted as CAAM consistently with methods. Each entry covers the traces/spectrograms of that labeled example.",
+      "input_observation_files": []
     }
   ]
 }
