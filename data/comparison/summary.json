@@ -1,0 +1,15 @@
+{
+  "role": "FINAL COMPARISON ONLY; not an input, target, filter or calibration for the independent workflow",
+  "reference_file": "science.adw9038_data_s1_to_s3.zip",
+  "reference_member": "science.adw9038_data_s1.csv",
+  "reference_sha256": "6ce0a78029dddb36bffed3985d435ec5ab68ec173c47124a63235fa9d6e81186",
+  "reference_rows": 54319,
+  "independent_events": 9,
+  "time_window_s": 2.0,
+  "unique_matches": 5,
+  "median_absolute_time_difference_s": 0.35000014305114746,
+  "median_horizontal_difference_km": 1.041550979294298,
+  "maximum_horizontal_difference_km": 1.7298257162037445,
+  "independent_input_sha256": "6d3b8c7f290703f06a3372578f106eb4281064dc6ab24ddf66dc2f7f73feca90",
+  "limitations": "Temporal coincidence is not identity proof. Unmatched events are not declared false detections. No author location changes a provisional location or panel."
+}

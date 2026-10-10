@@ -1,0 +1,178 @@
+{
+  "members": [
+    {
+      "name": "NeVoCGPS_Daily_Timeseries_Format.readme",
+      "bytes": 871
+    },
+    {
+      "name": "ACAE_daily.txt",
+      "bytes": 343736
+    },
+    {
+      "name": "AGR1_daily.txt",
+      "bytes": 284794
+    },
+    {
+      "name": "AQMO_daily.txt",
+      "bytes": 299554
+    },
+    {
+      "name": "ARFE_daily.txt",
+      "bytes": 330909
+    },
+    {
+      "name": "ASTR_daily.txt",
+      "bytes": 60657
+    },
+    {
+      "name": "BAGN_daily.txt",
+      "bytes": 123000
+    },
+    {
+      "name": "BAIA_daily.txt",
+      "bytes": 343156
+    },
+    {
+      "name": "BKE1_daily.txt",
+      "bytes": 224384
+    },
+    {
+      "name": "BKNO_daily.txt",
+      "bytes": 148562
+    },
+    {
+      "name": "CFBA_weekly.txt",
+      "bytes": 11116
+    },
+    {
+      "name": "CFBB_weekly.txt",
+      "bytes": 9706
+    },
+    {
+      "name": "CFBC_weekly.txt",
+      "bytes": 11041
+    },
+    {
+      "name": "CFSB_weekly.txt",
+      "bytes": 3613
+    },
+    {
+      "name": "CMIS_daily.txt",
+      "bytes": 75057
+    },
+    {
+      "name": "CUMA_daily.txt",
+      "bytes": 47355
+    },
+    {
+      "name": "FORI_daily.txt",
+      "bytes": 232665
+    },
+    {
+      "name": "FRUL_daily.txt",
+      "bytes": 262307
+    },
+    {
+      "name": "IPPO_daily.txt",
+      "bytes": 350143
+    },
+    {
+      "name": "IPRO_daily.txt",
+      "bytes": 258328
+    },
+    {
+      "name": "ISMO_daily.txt",
+      "bytes": 63257
+    },
+    {
+      "name": "LICO_daily.txt",
+      "bytes": 293029
+    },
+    {
+      "name": "MAFE_daily.txt",
+      "bytes": 176870
+    },
+    {
+      "name": "MEPO_daily.txt",
+      "bytes": 47136
+    },
+    {
+      "name": "MORU_daily.txt",
+      "bytes": 328745
+    },
+    {
+      "name": "NAMM_daily.txt",
+      "bytes": 66618
+    },
+    {
+      "name": "NISI_daily.txt",
+      "bytes": 171815
+    },
+    {
+      "name": "ONPI_daily.txt",
+      "bytes": 320041
+    },
+    {
+      "name": "OSCM_daily.txt",
+      "bytes": 153547
+    },
+    {
+      "name": "OSVE_daily.txt",
+      "bytes": 248548
+    },
+    {
+      "name": "PIS1_daily.txt",
+      "bytes": 79939
+    },
+    {
+      "name": "PRET_daily.txt",
+      "bytes": 312720
+    },
+    {
+      "name": "QUAR_daily.txt",
+      "bytes": 351232
+    },
+    {
+      "name": "RITE_daily.txt",
+      "bytes": 341390
+    },
+    {
+      "name": "SANA_daily.txt",
+      "bytes": 324098
+    },
+    {
+      "name": "SANT_daily.txt",
+      "bytes": 96138
+    },
+    {
+      "name": "SERR_daily.txt",
+      "bytes": 303617
+    },
+    {
+      "name": "SOLO_daily.txt",
+      "bytes": 193321
+    },
+    {
+      "name": "STRZ_daily.txt",
+      "bytes": 230681
+    },
+    {
+      "name": "TERZ_daily.txt",
+      "bytes": 234446
+    },
+    {
+      "name": "VICA_daily.txt",
+      "bytes": 207299
+    },
+    {
+      "name": "VOLL_daily.txt",
+      "bytes": 45736
+    },
+    {
+      "name": "MEDUSA_Weekly_Timeseries_Format.readme",
+      "bytes": 1412
+    }
+  ],
+  "classification": "External original published GNSS observations and readme; no code executed",
+  "CRC": "passed"
+}

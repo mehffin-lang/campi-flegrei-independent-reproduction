@@ -1,0 +1,22 @@
+[
+  {
+    "file": "inputs/extended/demartino2021.pdf",
+    "url": "https://mdpi-res.com/d_attachment/remotesensing/remotesensing-13-02725/article_deploy/remotesensing-13-02725.pdf",
+    "classification": "external original GPS method description",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 7529663,
+    "sha256": "9dc6986f870d1b7bf800b245ed460e2034b87f36d17b0c9838227673609a69b2"
+  },
+  {
+    "file": "inputs/extended/rite_unr.tenv3",
+    "url": "https://geodesy.unr.edu/gps_timeseries/tenv3/IGS14/RITE.tenv3",
+    "classification": "candidate independent GNSS observation series; verify provenance before use",
+    "http": "404",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 278,
+    "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n<hr>\n<address>Apache/2.4.58 (Ubuntu) Server at geodesy.unr.edu Port 443</address>\n</body></html>\n"
+  }
+]

@@ -1,17 +1,16 @@
-# Current limits
+# Remaining limits after resumed processing
 
-The PDFs and both supplied ZIPs are readable. Original observations are now permitted and INGV FDSN retrieval succeeds. Previous blanket statements that raw observations are prohibited are superseded by docs/INPUT_POLICY.md.
+The PDFs and ZIPs are readable. Machine-readable receipts and data/extended summaries supersede the previous one-day/four-station inventory.
 
-External access:
-- INGV landing page: curl TLS issuer verification error. Official webservices.ingv.it works with normal verification.
-- RAN: public pages accessible, waveform download requires registration/login; no credentials available.
-- Temporary/local archive: available, but contains -5/+55-second cuts around authors' event origins. Those windows encode prohibited derived event selection; no continuous counterpart established.
+- **Access problem:** all 26 full-period FDSN requests returned HTTP 413, specifying a one-billion-sample request limit. Chunking resolves this in principle; it does NOT establish that observations are inaccessible. Half-hour requests across four calendar dates succeeded. Most daily requests exceeded the 180-second client timeout; two completed. Full-period acquisition/processing remains unfinished.
+- **Access problem:** RAN requires login/registration and credentials were unavailable. The INGV landing page fails local TLS verification; official webservices.ingv.it works with normal verification. Individual HTTP 204 and 502 outcomes are recorded separately.
+- **Missing numerical input/specification:** the Calo--Tramelli (2018) supplement presents the initial layered profile graphically, without a numerical table found in the inspected material. Its article offers data on request. No plot was digitized. The released fixed 3D background permits a declared sensitivity alternative, not an exact GaMMA starting-model reproduction. Original-background byte provenance and precise averaging polygons remain incomplete.
+- **Insufficient independently processed calibration data:** only a few provisional candidates meet the generic VELEST geometry screen (>6 picks and gap <180 degrees), versus the paper's 373-event subset. Their waveforms require review. They do not adequately constrain the chosen layered P/S model and station corrections. VELEST compiles, but its inversion, TomoDD and HypoDD have not run. Full-period collection and association remain unfinished, not prohibited.
+- **Missing relative-magnitude equations:** response-corrected amplitude/SNR measurements were made, but no pair passed the location/separation, two-common-station and SNR criteria. Routine Md is now a permitted documented calibration input. No magnitude is copied from it alone. No calibrated magnitudes, completeness estimate or b-value are asserted.
+- **Dependent and unfinished focal processing:** no calibrated/relocated catalog, reviewed polarity set or complete event-specific gCAP configuration exists. Generic software is accessible. No SKHASH/gCAP inversion, FK calculation or Kagan comparison ran. The actual Data S3 has 74 rows and 58 gCAP solutions; the caption's 55 is inconsistent with the file.
+- **Training inputs/unfinished implementation:** both tested STEAD short links returned HTTP 403. The inspected SeisBench adapter requires locally obtained STEAD files. Exact local labels, manual cleaning, augmentation exclusions and split membership remain absent. Retraining and a labeled accuracy benchmark were not run. Both original and retrained weights were independently run on CSOB/CMIS calendar windows; these are not the exact S4 examples.
+- **Historical displacement:** the original 1905--2009 leveling table is accessible and processed (128 entries). The De Martino landing-page supplement returned HTTP 403, but its official static ZIP was found and read: 6,848 RITE daily GNSS observations through 2019 are now processed. Daily 2020--2023 observations remain missing. A separate December 2023 endpoint uses the official bulletin's written approximate 119 cm rise since November 2005; no curve fills the gap. A later interpolated compilation is excluded as a substitute.
+- **Hybrid search:** supported downloaded common CAAM/COLB intervals were scanned, covering about a day rather than three years. Candidate plots do not establish confirmed hybrid clusters. Catalog-wide FI/coda review, cluster amplitudes and temporal evolution remain incomplete.
+- **Written specification:** damping/iteration schedules, correlation weights, event-specific gCAP bands/windows, training selections and some geographic/time-bin choices are incompletely tabulated. Explicit assumptions support diagnostics, not exact reproduction.
 
-Scientific and implementation limits:
-- Only a calendar-selected day at four stations and written-method template windows processed. Other public channels and times are not assumed inaccessible.
-- Full association/VELEST/TomoDD and focal inversion not implemented. No permitted validated initial/fixed velocity inputs established; author fitted products excluded.
-- The documented magnitude inversion uses routine-catalog Md priors; comparison-only permission forbids this use. Relative magnitudes require another absolute anchor.
-- Unspecified iteration/damping, correlation weights, exact templates/onset alignment, spectral display choices, time bins and geographic polygons prevent an exact workflow specification.
-- Historic displacement observations for Fig.1B were not retrieved.
-
-Do not describe a successful bounded build as successful full reproduction. S1, S2 and S15C are partial; all other publication groups are not reproduced. Model scores are not event counts or location estimates.
+These limitations are not all imposed by the prompt. Most full-period acquisition and downstream implementation remain unfinished. A successful bounded rebuild does not change that fact.

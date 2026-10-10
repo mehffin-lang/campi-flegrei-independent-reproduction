@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://rebrand.ly/chunk2",
+    "status": 403,
+    "final_url": "https://rebrand.ly/chunk2",
+    "content_length": null,
+    "downloaded": false
+  },
+  {
+    "url": "https://rebrand.ly/chunk1",
+    "status": 403,
+    "final_url": "https://rebrand.ly/chunk1",
+    "content_length": null,
+    "downloaded": false
+  },
+  {
+    "url": "https://www.mdpi.com/2072-4292/13/14/2725/s1",
+    "status": 403,
+    "final_url": "https://www.mdpi.com/2072-4292/13/14/2725/s1",
+    "content_length": "409",
+    "downloaded": false
+  }
+]

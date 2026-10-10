@@ -1,0 +1,15 @@
+{
+  "events_evaluated": 9,
+  "calibration_eligible": 3,
+  "amplitude_measurements": 140,
+  "snr_passing": 23,
+  "event_pairs_checked": 36,
+  "pairs_with_two_snr_stations": 3,
+  "magnitude_edges": 0,
+  "calibrated_magnitudes": 0,
+  "routine_matches": 3,
+  "measurement_errors": [],
+  "focal_mechanisms": 0,
+  "relocated_events": 0,
+  "remaining": "VELEST inversion, TomoDD, HypoDD and focal processing not run. Quality-eligible observations and complete configurations required."
+}

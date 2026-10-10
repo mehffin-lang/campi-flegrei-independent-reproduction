@@ -1,0 +1,22 @@
+[
+  {
+    "file": "inputs/extended/level-data.txt",
+    "url": "https://zenodo.org/api/records/18413119/files/level-data.txt/content",
+    "classification": "candidate external displacement observations; provenance review required",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1874,
+    "sha256": "d9361daa748759e11614250c70065f68206cfae8cfa48e396e09c3d3718d8057"
+  },
+  {
+    "file": "inputs/extended/gps.dat",
+    "url": "https://zenodo.org/api/records/18413119/files/gps.dat/content",
+    "classification": "candidate external displacement observations; provenance review required",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 215966,
+    "sha256": "966eab050b60d9199a7e4d62518bf6a6d7d1f617db7d87ee5328c137efaace5f"
+  }
+]

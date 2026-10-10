@@ -1,0 +1,32 @@
+[
+  {
+    "file": "inputs/extended/delgaudio2010_table.doc",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0377027310001745-mmc1.doc",
+    "classification": "original published leveling observation table",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 199168,
+    "sha256": "78fbb98a658eea711902fba278b39d2e71f57ff54d8b2dd9ee53266fe044126b"
+  },
+  {
+    "file": "inputs/extended/local_archive_head.txt",
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/index.html",
+    "classification": "archive listing",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1510,
+    "sha256": "811c6f5ccf073bb67d180e058bc368473bfea6f55254f36beb79a8e7172e9c82"
+  },
+  {
+    "file": "inputs/extended/velest_guide.pdf",
+    "url": "https://ethz.ch/content/dam/ethz/special-interest/erdw/geophysics/seismology-and-geodynamics-dam/document/velest_guide.pdf",
+    "classification": "method documentation",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 151411,
+    "sha256": "06cea94a27ff916ab45bcabfdd29459167ebb623f1bec9e4cef8eac16b24204e"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "source_url": "https://ethz.ch/content/dam/ethz/special-interest/erdw/geophysics/seismology-and-geodynamics-dam/document/velest.tar",
+  "source_sha256": "d249d80ee3d0e36605d2395277eaaf50097bfa6a571fa95d1f423e5f25f80469",
+  "command": [
+    "gfortran",
+    "-std=legacy",
+    "-O2",
+    "-I",
+    "inputs/external/velest",
+    "build/velest-portable.f",
+    "-o",
+    "build/velest"
+  ],
+  "returncode": 0,
+  "output": "build/velest-portable.f:4384:25:\n\n       call RAYPATH(1,1,1,1.,1.,1.,1.,nl,thk,h,v,vsq,\n                         1\nWarning: Rank mismatch in argument \u2018x\u2019 at (1) (rank-1 and scalar) [-Wargument-mismatch]\n",
+  "changes": [
+    "Remove trailing comma in FORMAT",
+    "Replace SUN clock() with standard cpu_time",
+    "Replace SUN datetime with standard date_and_time"
+  ],
+  "scientific_execution": false
+}

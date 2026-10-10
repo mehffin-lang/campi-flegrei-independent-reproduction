@@ -1,0 +1,10 @@
+event_index,picks,stations,rms_s,azimuthal_gap_deg,calibration_eligible,reason
+1,6,4,0.24381328532601396,315.8719343203645,False,VELEST manual geometry screen: >6 picks and gap<180 degrees; candidates still require waveform review
+2,6,3,0.22176945922572958,330.6429730033291,False,VELEST manual geometry screen: >6 picks and gap<180 degrees; candidates still require waveform review
+3,6,5,0.15686201494032478,178.78234897928678,False,VELEST manual geometry screen: >6 picks and gap<180 degrees; candidates still require waveform review
+4,6,3,0.04080137883356676,183.9226132123892,False,VELEST manual geometry screen: >6 picks and gap<180 degrees; candidates still require waveform review
+5,7,5,0.7762838900244342,170.05980371580864,True,VELEST manual geometry screen: >6 picks and gap<180 degrees; candidates still require waveform review
+6,13,11,0.327341611114471,90.98625199685125,True,VELEST manual geometry screen: >6 picks and gap<180 degrees; candidates still require waveform review
+7,7,6,0.9122301737771691,130.2982898393043,True,VELEST manual geometry screen: >6 picks and gap<180 degrees; candidates still require waveform review
+8,6,4,0.21060746822161272,287.8698061901247,False,VELEST manual geometry screen: >6 picks and gap<180 degrees; candidates still require waveform review
+9,6,5,0.9163773792903501,201.77930548057296,False,VELEST manual geometry screen: >6 picks and gap<180 degrees; candidates still require waveform review

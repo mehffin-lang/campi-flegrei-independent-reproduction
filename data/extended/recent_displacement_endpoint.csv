@@ -1,0 +1,2 @@
+time,displacement_from_1905_m,uplift_since_nov2005_m,approximate,source
+2023-12-31,2.80154,1.19,True,"inputs/extended/monthly_2023_12.pdf; written deformation summary, not figure pixels"

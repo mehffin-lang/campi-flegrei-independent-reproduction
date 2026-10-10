@@ -1,0 +1,5 @@
+candidate,time,template,score,FI,status
+0,2025-03-20T12:21:07.840000Z,E1,0.2869655748315515,0.3477246401599489,Unconfirmed; candidate needs event and coda discrimination
+1,2025-03-20T12:27:10.100000Z,E1,0.2908300000247595,0.19452228247175302,Unconfirmed; candidate needs event and coda discrimination
+2,2025-03-20T12:18:04.260000Z,E2,0.2778032051395116,0.3420796309332585,Unconfirmed; candidate needs event and coda discrimination
+3,2025-03-20T12:20:31.130000Z,E3,0.265244825939977,0.1017162808518348,Unconfirmed; candidate needs event and coda discrimination

@@ -1,0 +1,5 @@
+time,template,score,reviewed,caam_file,colb_file
+2025-03-20T12:21:07.840000Z,E1,0.2869655748315515,False,inputs/extended/waveforms/IV_CAAM_2025-03-20T12:00:00_2025-03-20T12:30:00.mseed,inputs/extended/waveforms/IV_COLB_2025-03-20T12:00:00_2025-03-20T12:30:00.mseed
+2025-03-20T12:27:10.100000Z,E1,0.29083000002475956,False,inputs/extended/waveforms/IV_CAAM_2025-03-20T12:00:00_2025-03-20T12:30:00.mseed,inputs/extended/waveforms/IV_COLB_2025-03-20T12:00:00_2025-03-20T12:30:00.mseed
+2025-03-20T12:18:04.260000Z,E2,0.2778032051395116,False,inputs/extended/waveforms/IV_CAAM_2025-03-20T12:00:00_2025-03-20T12:30:00.mseed,inputs/extended/waveforms/IV_COLB_2025-03-20T12:00:00_2025-03-20T12:30:00.mseed
+2025-03-20T12:20:31.130000Z,E3,0.265244825939977,False,inputs/extended/waveforms/IV_CAAM_2025-03-20T12:00:00_2025-03-20T12:30:00.mseed,inputs/extended/waveforms/IV_COLB_2025-03-20T12:00:00_2025-03-20T12:30:00.mseed

@@ -1,0 +1,54 @@
+[
+  {
+    "stage": "1. Collection",
+    "status": "Executed calendar windows and whole-period requests; 26 stations retrieved. Full-period chunked download remains unfinished. RAN credentials unavailable."
+  },
+  {
+    "stage": "2. Phase picking",
+    "status": "Executed: 3637 picks; exclusions and merging checked. Full-period inference remains unfinished."
+  },
+  {
+    "stage": "3. Training / S3--S4",
+    "status": "Retraining not run. STEAD short links return 403; local labels and exact selections/splits missing. Original/retrained inference comparison executed on unlabeled CSOB/CMIS windows, not the exact S4 benchmark."
+  },
+  {
+    "stage": "4. Association",
+    "status": "Executed: 9 provisional events with an alternative external profile. Exact cited numerical starting profile missing; no author event seeds."
+  },
+  {
+    "stage": "5. VELEST",
+    "status": "Generic software compiled. 3 geometry-screened candidates do not resolve the chosen layered model/corrections; inversion not run."
+  },
+  {
+    "stage": "6. TomoDD",
+    "status": "Not run. Independent calibrated input catalog and complete differential-time/configuration workflow missing."
+  },
+  {
+    "stage": "7. HypoDD SVD",
+    "status": "Not run. Depends on independently relocated regional subsets and fitted model; generic software source accessible."
+  },
+  {
+    "stage": "8. Magnitudes",
+    "status": "Measurements executed; 0 qualifying pair equations, 0 calibrated magnitudes. Routine Md permission is resolved."
+  },
+  {
+    "stage": "9. Completeness / b",
+    "status": "Not calculated: no independently calibrated magnitude sample."
+  },
+  {
+    "stage": "10. Focal mechanisms",
+    "status": "Not run. Reviewed polarities, calibrated locations/model and gCAP configuration missing. Generic software accessible. Data S3 row-count discrepancy resolved."
+  },
+  {
+    "stage": "11. Location checks",
+    "status": "Residuals, gaps and internal S--P checks executed. Zero associated CPOZ P arrivals; relocated sector gathers, manual deep-event review and SVD validation unfinished."
+  },
+  {
+    "stage": "12. Hybrid search",
+    "status": "Executed on 24.298 available hours; 4 unconfirmed candidates. Three-year classification, clustering and catalog-wide FI review unfinished."
+  },
+  {
+    "stage": "13. Historical context",
+    "status": "Executed original leveling-table extraction (128 entries) and external routine-catalog context. Original RITE GNSS processed through 2019 with explicit overlap alignment; daily 2020--2023 continuation missing."
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "python": "3.11.9",
+  "system": "Linux",
+  "architecture": "x86_64",
+  "tools": [
+    {
+      "command": [
+        "g++",
+        "--version"
+      ],
+      "version": "g++ (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28)"
+    },
+    {
+      "command": [
+        "gfortran",
+        "--version"
+      ],
+      "version": "GNU Fortran (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28)"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "--version"
+      ],
+      "version": "pdfTeX 3.14159265-2.6-1.40.19 (TeX Live 2018)"
+    },
+    {
+      "command": [
+        "pdftotext",
+        "-v"
+      ],
+      "version": "pdftotext version 20.11.0"
+    },
+    {
+      "command": [
+        "antiword",
+        "-h"
+      ],
+      "version": "\tName: antiword.bin"
+    }
+  ],
+  "scope": "Tested existing environment; clean rebuild removes project-generated products, not the virtual environment."
+}

@@ -2,6 +2,10 @@
 from pathlib import Path
 import csv,json
 ROOT=Path(__file__).resolve().parents[1]
+from final_comparison import compare
+# This occurs only after all independent numerical processing has finished.
+# It reads the author catalog solely as a clearly labeled final reference.
+compare()
 def tex(s):
     m={'\\':r'\textbackslash{}','&':r'\&','%':r'\%','$':r'\$','#':r'\#','_':r'\_','{':r'\{','}':r'\}','~':r'\textasciitilde{}','^':r'\textasciicircum{}','<':r'$<$','>':r'$>$'}
     return ''.join(m.get(c,c) for c in str(s))

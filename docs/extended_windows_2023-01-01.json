@@ -1,0 +1,262 @@
+[
+  {
+    "file": "inputs/extended/waveforms/IV_CAAM_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1338880,
+    "sha256": "220a4724dd80074d28f46a70654cfc245bbfaa4388ae69a4edba9f26030113bd"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CAWE_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAWE&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CBAC_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAC&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1336832,
+    "sha256": "a7c4e1ba924c01108c2ede871f3f915f46e35d63eeee657a5a509ffeccd008c6"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CBAG_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAG&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CCAP_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CFB1_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 238080,
+    "sha256": "385ef87cfceebbc091bbf07162012f23cba9e83c081058f113c13b9965c56d24"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CFB3_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB3&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 363520,
+    "sha256": "0bdd8b8197624fe9294fa90cc0b594cfe8924fb2e6b5517a887f7251b1e372ad"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CFMN_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1344000,
+    "sha256": "a4e3fe981a4495982a8cc0bd0405e264f9f9fcfcb9e14f7d599a7b2728ea1ca3"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CMIS_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1154048,
+    "sha256": "5e6ab98259ab79f51ae708d1bd0f7837b939c8cd87f37f0419693c4afa11f241"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CMSN_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 915968,
+    "sha256": "0a9f5a4eb7b904ad1ffe0256496156ca8d092d08b3e503cd9d1e7e256028e6f0"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CMTS_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CNIS_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CNIS&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 734720,
+    "sha256": "60b0eab82793ecbea240a5c6af09236a8e7f2096cb25f3de724db9118a85fc6d"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_COLB_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CPIS_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPIS&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CPOZ_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CQUE_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CQUE&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CRUS_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CRUS&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CSFT_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1255424,
+    "sha256": "04be606515319d20639792f38cb12b6aaa1aa6f72cfe3942ce0006470c4204ee"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CSOB_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1342464,
+    "sha256": "0ddf37317867a9db0d5a508317f3b27f0d0461a8ccb40f5970e17b38fcaf959f"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CSTH_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2246144,
+    "sha256": "061df314a6eb210f3b7bbef5077e50d20ef16d92d01a30733be825c032e22008"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CUMA_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CUMA&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_PTMR_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=PTMR&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 941568,
+    "sha256": "27b6d970a9366f8719326e6675a5d078f35ccdd33fd20642a0f2b6389de63830"
+  },
+  {
+    "file": "inputs/extended/waveforms/2I_CGAU_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CGAU&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/2I_CLAC_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CLAC&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/2I_CREM_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CREM&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/2I_CSOC_2023-01-01T12:00:00_2023-01-01T12:30:00.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CSOC&loc=%2A&cha=HH%3F%2CEH%3F%2CSH%3F&start=2023-01-01T12%3A00%3A00&end=2023-01-01T12%3A30%3A00",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  }
+]

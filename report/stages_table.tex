@@ -1,0 +1,16 @@
+\begin{longtable}{p{.20\linewidth}p{.73\linewidth}}
+\toprule Stage & Actual execution and limitation\\\midrule\endhead
+1. Collection & Executed calendar windows and whole-period requests; 26 stations retrieved. Full-period chunked download remains unfinished. RAN credentials unavailable.\\[4pt]
+2. Phase picking & Executed: 3637 picks; exclusions and merging checked. Full-period inference remains unfinished.\\[4pt]
+3. Training / S3--S4 & Retraining not run. STEAD short links return 403; local labels and exact selections/splits missing. Original/retrained inference comparison executed on unlabeled CSOB/CMIS windows, not the exact S4 benchmark.\\[4pt]
+4. Association & Executed: 9 provisional events with an alternative external profile. Exact cited numerical starting profile missing; no author event seeds.\\[4pt]
+5. VELEST & Generic software compiled. 3 geometry-screened candidates do not resolve the chosen layered model/corrections; inversion not run.\\[4pt]
+6. TomoDD & Not run. Independent calibrated input catalog and complete differential-time/configuration workflow missing.\\[4pt]
+7. HypoDD SVD & Not run. Depends on independently relocated regional subsets and fitted model; generic software source accessible.\\[4pt]
+8. Magnitudes & Measurements executed; 0 qualifying pair equations, 0 calibrated magnitudes. Routine Md permission is resolved.\\[4pt]
+9. Completeness / b & Not calculated: no independently calibrated magnitude sample.\\[4pt]
+10. Focal mechanisms & Not run. Reviewed polarities, calibrated locations/model and gCAP configuration missing. Generic software accessible. Data S3 row-count discrepancy resolved.\\[4pt]
+11. Location checks & Residuals, gaps and internal S--P checks executed. Zero associated CPOZ P arrivals; relocated sector gathers, manual deep-event review and SVD validation unfinished.\\[4pt]
+12. Hybrid search & Executed on 24.298 available hours; 4 unconfirmed candidates. Three-year classification, clustering and catalog-wide FI review unfinished.\\[4pt]
+13. Historical context & Executed original leveling-table extraction (128 entries) and external routine-catalog context. Original RITE GNSS processed through 2019 with explicit overlap alignment; daily 2020--2023 continuation missing.\\[4pt]
+\bottomrule\end{longtable}

@@ -1,0 +1,245 @@
+[
+  {
+    "file": "inputs/extended/waveforms/IV_CAAM_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180001 milliseconds with 23284736 bytes received\n",
+    "incomplete_bytes": 23284736
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CAWE_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAWE&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CBAC_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAC&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180001 milliseconds with 23379456 bytes received\n",
+    "incomplete_bytes": 23379456
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CBAG_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAG&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180007 milliseconds with 23395328 bytes received\n",
+    "incomplete_bytes": 23395328
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CCAP_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180000 milliseconds with 24219648 bytes received\n",
+    "incomplete_bytes": 24219648
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CFB1_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 13083136,
+    "sha256": "99054d839bc2077bf2b429730b96eef0eb44899f92e720fc8a41f0667f199dea"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CFB3_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB3&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 13972992,
+    "sha256": "68fb7859c0db52b66c7a628e0b7acac23d5a3c13266ef991f0b16f7d6fa1d1ef"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CFMN_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180002 milliseconds with 22389248 bytes received\n",
+    "incomplete_bytes": 22389248
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CMIS_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180001 milliseconds with 22173184 bytes received\n",
+    "incomplete_bytes": 22173184
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CMSN_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180000 milliseconds with 29464576 bytes received\n",
+    "incomplete_bytes": 29464576
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CMTS_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180000 milliseconds with 29473280 bytes received\n",
+    "incomplete_bytes": 29473280
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CNIS_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CNIS&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180000 milliseconds with 25376985 bytes received\n",
+    "incomplete_bytes": 25376985
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_COLB_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180001 milliseconds with 25550336 bytes received\n",
+    "incomplete_bytes": 25550336
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CPIS_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPIS&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180000 milliseconds with 20605440 bytes received\n",
+    "incomplete_bytes": 20605440
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CPOZ_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180004 milliseconds with 20574208 bytes received\n",
+    "incomplete_bytes": 20574208
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CQUE_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CQUE&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180001 milliseconds with 26025472 bytes received\n",
+    "incomplete_bytes": 26025472
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CRUS_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CRUS&loc=%2A&cha=EH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CSFT_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180000 milliseconds with 25832993 bytes received\n",
+    "incomplete_bytes": 25832993
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CSOB_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180000 milliseconds with 31390720 bytes received\n",
+    "incomplete_bytes": 31390720
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CSTH_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180000 milliseconds with 31190016 bytes received\n",
+    "incomplete_bytes": 31190016
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CUMA_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CUMA&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_PTMR_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=PTMR&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "200",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 180000 milliseconds with 31333888 bytes received\n",
+    "incomplete_bytes": 31333888
+  },
+  {
+    "file": "inputs/extended/waveforms/2I_CGAU_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CGAU&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/2I_CLAC_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CLAC&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/2I_CREM_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CREM&loc=%2A&cha=HH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  },
+  {
+    "file": "inputs/extended/waveforms/2I_CSOC_2024-01-01_2024-01-02.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CSOC&loc=%2A&cha=EH%3F&start=2024-01-01&end=2024-01-02",
+    "classification": "continuous original waveforms",
+    "http": "204",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 0,
+    "response": ""
+  }
+]

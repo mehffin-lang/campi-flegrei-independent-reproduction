@@ -1,0 +1,262 @@
+[
+  {
+    "file": "inputs/extended/waveforms/IV_CAAM_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:15.942633\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CAWE_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAWE&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CAWE&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:16.049251\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CBAC_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAC&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CBAC&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:16.054381\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CBAG_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAG&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CBAG&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:16.052499\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CCAP_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:18.645799\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CFB1_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:18.640247\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CFB3_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB3&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CFB3&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:18.658432\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CFMN_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:18.654981\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CMIS_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:21.027368\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CMSN_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:21.031898\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CMTS_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 309,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:21.88277\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CNIS_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CNIS&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CNIS&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:21.886352\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_COLB_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 309,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:22.15836\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CPIS_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPIS&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CPIS&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:23.092974\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CPOZ_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:23.764882\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CQUE_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CQUE&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CQUE&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:24.272756\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CRUS_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CRUS&loc=%2A&cha=EH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CRUS&loc=%2A&cha=EH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:24.677726\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CSFT_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:25.021656\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CSOB_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:26.953233\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CSTH_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:26.979204\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_CUMA_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CUMA&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=CUMA&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:26.980738\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/IV_PTMR_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=PTMR&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=IV&sta=PTMR&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:27.374118\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/2I_CGAU_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CGAU&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 309,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=2I&sta=CGAU&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:28.88821\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/2I_CLAC_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CLAC&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=2I&sta=CLAC&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:28.889586\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/2I_CREM_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CREM&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=2I&sta=CREM&loc=%2A&cha=HH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:28.875385\n\nService Version:\n1.1.1\n"
+  },
+  {
+    "file": "inputs/extended/waveforms/2I_CSOC_2022-01-21_2025-03-21.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CSOC&loc=%2A&cha=EH%3F&start=2022-01-21&end=2025-03-21",
+    "classification": "continuous original waveforms",
+    "http": "413",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 310,
+    "response": "Error 413: Request Entity Too Large\n\nmaximum number of 1000.0M samples exceeded\n\nUsage details are available from /fdsnws/dataselect/1/\n\nRequest:\n/fdsnws/dataselect/1/query?net=2I&sta=CSOC&loc=%2A&cha=EH%3F&start=2022-01-21&end=2025-03-21\n\nRequest Submitted:\n2026-10-09T23:26:28.893416\n\nService Version:\n1.1.1\n"
+  }
+]

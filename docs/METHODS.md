@@ -42,12 +42,12 @@ No physical initial/boundary conditions apply: this is finite-window signal anal
 - S7 uncertainty discussion cites panelsC/E/H andD/F/I, while the figure/caption uses B/D/F for count-versus-error andC/E/G for densities. Inventory follows the figure and its caption.
 - FigS9 methods retain exactly100 differential correlations; its caption implies rejection at100. Both predicates are saved in `data/thresholds.csv`. No arbitrary choice is applied to a catalog.
 - HTMLS1 describes a distinct quality filter summing NCCP+NCCS+NCTP+NCTS>1000. It is not the S9 filter.
-- Methods discuss74 focal solutions; DataS3 caption describes55. The archive was not used to reconcile that difference.
+- Methods discuss 74 focal solutions; the Data S3 caption describes 55. The resumed final-comparison audit counts 74 CSV rows and 58 gCAP entries, agreeing with the methods rather than the caption. No solution values are used as inputs.
 - S15 spells a station CCAM once, whereas its normalization and methods identify CAAM. The record retains that discrepancy.
 
 ## Validation scope
 
-Analytic ratios, spectral orthogonality, Parseval power conservation, invariance to common amplitude gain and circular time shift, unequal-window SNR, magnitude pair reversal, absolute-offset gauge freedom, and singular/invalid-input rejection are checked. These are independent consistency tests of implemented formulas. They do not validate event detection, relocation errors, empirical b values, or volcanic interpretation. All main-manuscript panels remain not reproduced; S1, S2 and S15C now have partial observational reconstructions.
+Analytic ratios, spectral orthogonality, Parseval power conservation, invariance to common amplitude gain and circular time shift, unequal-window SNR, magnitude pair reversal, absolute-offset gauge freedom, and singular/invalid-input rejection are checked. These are independent consistency tests of implemented formulas. They do not validate event detection, relocation errors, empirical b values, or volcanic interpretation. Figure 1B, S1, S2 and S15C have partial observational reconstructions; all other publication panels remain unreproduced.
 
 ## Current observational implementation
 
@@ -58,3 +58,9 @@ The template displays use CAAM/COLB HHE/HHZ, mean removal and sensitivity correc
 PhaseNet inference uses ENZ, 100 Hz, 1 Hz highpass (four-pole causal), 1500-sample overlap, 250-sample blinding and probability threshold 0.3. SeisBench's architecture has 3001 samples (30.01 seconds); the paper describes nominal 30-second windows. Tensor loading is strict and weights-only. No missing waveform data are interpolated. Hourly-boundary blinding and the limited network/time coverage preclude completeness claims.
 
 The separate calendar-day template scan uses the three written templates, CAAM/COLB vertical channels, a 0.2–6 Hz four-pole causal filter, normalized sliding correlations averaged across stations, score >0.25 and 8-second peak spacing. Ten-second chunk edges are excluded. These spacing/filter details are implementation assumptions; unreviewed matches are not the paper's hybrid catalog. Current empirical products reside in data/observations/. Former synthetic method-check figures were removed.
+
+## Resumed-run additions (supersede earlier restriction statements)
+
+The current authoritative methods and assumptions are in `report/report.tex`, `docs/INPUT_POLICY.md`, `config/association.json`, and the extended scripts. The fixed external background is an explicitly labeled sensitivity input; the fitted author 1D model remains excluded. Routine Md may enter the paper's documented magnitude regularization after independent association. No measured amplitude equations passed the full pair screen, so no calibrated magnitude is reported.
+
+The generic VELEST geometry screen is >6 observations and azimuthal gap <180 degrees. The paper's 0.25 s RMS cutoff belongs after location and is not a prerequisite imposed on the provisional calibration candidates. The current insufficient independent sample is not replaced by the authors' 373-event subset. Generic software compilation is distinct from a scientific inversion.

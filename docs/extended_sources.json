@@ -1,0 +1,340 @@
+[
+  {
+    "file": "inputs/extended/ingv_landing.html",
+    "url": "https://eida.ingv.it/it/network/IV",
+    "classification": "source description",
+    "http": "000",
+    "returncode": 60,
+    "error": "curl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.haxx.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+  },
+  {
+    "file": "inputs/extended/ran.html",
+    "url": "https://ran.protezionecivile.it/IT/index.php",
+    "classification": "source description",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 572789,
+    "sha256": "4981c29e61fa75a032c479849284c475d344dc760fd9aaf02d88a0ed19553213"
+  },
+  {
+    "file": "inputs/extended/ran_login.html",
+    "url": "https://ran.protezionecivile.it/IT/autenticazione.php",
+    "classification": "access requirements",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 8260,
+    "sha256": "29de4c42cf65cf0d26d6107710bd2fe6e13df5f471f5fad61afff17d7472cfab"
+  },
+  {
+    "file": "inputs/extended/local.html",
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/index.html",
+    "classification": "observation archive description",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1510,
+    "sha256": "811c6f5ccf073bb67d180e058bc368473bfea6f55254f36beb79a8e7172e9c82"
+  },
+  {
+    "file": "inputs/extended/zenodo.json",
+    "url": "https://zenodo.org/api/records/16562216",
+    "classification": "release metadata; not analysis input",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 5649,
+    "sha256": "752bf48f2eaecd58828b0d1fa8f5b509775db630d599be41b60359c212133e5a"
+  },
+  {
+    "file": "inputs/extended/calo2018.html",
+    "url": "https://www.nature.com/articles/s41598-018-34456-x",
+    "classification": "external model written specification",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 449737,
+    "sha256": "a24fc5bb4b3290e2663d6aecdbf5f17764762b9cbf123683bacf76f6c20fddb6"
+  },
+  {
+    "file": "inputs/extended/demartino2021.html",
+    "url": "https://www.mdpi.com/2072-4292/13/14/2725",
+    "classification": "displacement source written specification",
+    "http": "403",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 402,
+    "response": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;mdpi&#46;com&#47;2072&#45;4292&#47;13&#47;14&#47;2725\" on this server.<P>\nReference&#32;&#35;18&#46;8415d617&#46;1791588359&#46;ec3a44aa\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;8415d617&#46;1791588359&#46;ec3a44aa</P>\n</BODY>\n</HTML>\n"
+  },
+  {
+    "file": "inputs/extended/delgaudio2010.html",
+    "url": "https://doi.org/10.1016/j.jvolgeores.2010.05.014",
+    "classification": "historical displacement source",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2719,
+    "sha256": "168f8d9f45cc0444438758ec57a9a894ab9053fe2354f5a9737fe6c86850d523"
+  },
+  {
+    "file": "inputs/extended/battaglia2008.html",
+    "url": "https://doi.org/10.1111/j.1365-2478.2007.00687.x",
+    "classification": "external background model source",
+    "http": "403",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 5564,
+    "response": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-16owGoHSsqzZXGdjDvqWLw&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+\");background-repeat:no-repeat;background-size:contain;padding-left:34px}</style><meta http-equiv=\"refresh\" content=\"360\"></head><body><div class=\"main-wrapper\" role=\"main\"><div class=\"main-content\"><noscript><div class=\"h2\"><span id=\"challenge-error-text\">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script nonce=\"16owGoHSsqzZXGdjDvqWLw\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: '4T39o7i.If.f9VcuSkBbvpDJw3zYL6c2upwyFi_dX0U-1791588359-1.2.1.1-m5KvHWyE5g_YrgTSOR4URJKmzJ.Rj0gLUe3AJCRlbAB2lpdjBmXUNnWfOn1xNr0E',cITimeS: '1791588359',cN: '16owGoHSsqzZXGdjDvqWLw',cRay: 'a48125d1b810c66f',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/doi/10.1111/j.1365-2478.2007.00687.x?__cf_chl_tk=61qk6qwXFvVl8LbvT.iIH.mtnmo2P6sVGsaCtu5B.Bk-1791588359-1.0.1.1-nUuj5JjS.oc3Avl7X3gSo.gUt3hJMdL4zZSPSvM6haE\",cvId: '3',cZone: 'onlinelibrary.wiley.com',fa:\"/doi/10.1111/j.1365-2478.2007.00687.x?__cf_chl_f_tk=61qk6qwXFvVl8LbvT.iIH.mtnmo2P6sVGsaCtu5B.Bk-1791588359-1.0.1.1-nUuj5JjS.oc3Avl7X3gSo.gUt3hJMdL4zZSPSvM6haE\",md: 'QrjfnkNbC4ADNohTfoYpRJ2T4YuNsf1t3Ymtd_VJZ08-1791588359-1.2.1.1-.k7QJlWRcoTzLSrBKjmO0rSC4pIyOjMVxoh.avK8wHJW97w.RK.77LMzU6noNUUR49R0xTdUv3di34YKzUUrckgiuETgKKoej0oP4BZayaRW_EMBfsz8nopqKtQl68KJ4Ceb2LJF6Vn15N8hJ5kjp9tmsKfE4p9zxAbBxzDCXBM7.s5dZIzLAj1RoVCEo8RKhCUIbsVUUBkh1nODA5ZcnS_Y7QPDq8eCIZFN0J0objp9tm7k6tIdzPprp7.kLYMx6eIDZ81hMsSA1vLnZ3b4AGZMuBmrpO4RfQlFe0xULTEmB0oBZ5SB379RQkIO3emrxPVBdPYYzGi1BJhSqaTJR66HawONG5HdBzA_vaw4EtnpemLs6AnU31paLp5DLEFAOa.uo5.55d8.OZ_NM6cyQGSzD4HD0kraFOqNJ4MedMJwHAaY.9x7g6aIE8WCoDn.dx_jkXi27NWVYboOapnUicYRCkDyFDIn9VkE63cwrKsoT636pKc3VlaAxi6wci5L1UzdpDBij8hYO3QThmEECpEXx69adOqtIIqgXcsU3UsIVxr4QeAty7HeQ4ht3w4nluGEA3vNlQRFCew77PcdBDrAdNg7vk9H7lF3nYPoIoOmAe64qs2BPyGN71XDyDFWItjeYWyPTJjwXYuhlFJioF49NWrs.R64d527h.UJ_Bnb6Km1Vwq4RMngCiskfPPw8Tq8PBrAY4ts13d.IeOLox4lKwmkIP6tfNoe6Qgv0SJ0uC_BS6JsnRC36iwrEzRRMBjfmVDbhWGtjjAJnv.i_GiNxRd9rdJCO8ZREN9t69ITTYbY6WCRDmECpA9DnKgqOd8NB_VpZJAYqHJPAEY2dwb_1dyuMshWPyDMNqC3it8zgkqJLYoj1rsrrlTk4JgR.trf.HHRSTltuqa7SrHRiWTDQ30nFfuD74luAVEZtvbAfXn4GC29muue72_.gkbpBHPDPC.MwR9ZjEuFvg6BBe_A9GqeeCTwx19E4bWaOEbXOubeohfesNeKQYEFMXZ8CdqtNlZr2YTrK9elKQMzR6IAHFIMVddw00Ngil_ZUQdn89W3BXO_1Vocorno.cmULw1dCyDCL_0F3X5d9QUagCxTDs3gCF0SQQIWLLem6R9QqMD8A3MOk6EYlHc9eq3u',mdrd: '.UDz1LFii59EEjn0oC7u44ERpj4wTv4C6p9ioO1wnWw-1791588359-1.2.1.1-uReuNg.mB8Afr6SKy0nO7RctiEdoSZ_sejlzu4Gv_Us3flXeVttWerVqozx1pL4feHwd4Xji308qKUVvS_4NzsOrO4szB1C8DavKX9VQURI3qLfvDDbYOUIU19VbQ0EmIUb2TEf15m8GOsJF55lVi9M.oInD3p7Py2efVOdDv2.eB_iaK9jpmggb81rdQtQvqpisYGQ.aXdm4ONozuMh4FFVfwcFvsAHoGfaOe2Hk.U',};var a = document.createElement('script');a.nonce = '16owGoHSsqzZXGdjDvqWLw';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a48125d1b810c66f';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/doi/10.1111/j.1365-2478.2007.00687.x?__cf_chl_rt_tk=61qk6qwXFvVl8LbvT.iIH.mtnmo2P6sVGsaCtu5B.Bk-1791588359-1.0.1.1-nUuj5JjS.oc3Avl7X3gSo.gUt3hJMdL4zZSPSvM6haE\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>"
+  },
+  {
+    "file": "inputs/extended/model_readme.md",
+    "url": "https://raw.githubusercontent.com/iamharrison2000/Campi-Flegrei-Earthquake-Monitoring/f84c9c9dc6bb1501a95a833f6634199a63d4f3b3/README.md",
+    "classification": "method artifact descriptions",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 3094,
+    "sha256": "63c8076481f1b50997d0a52f6bf0d5f1cf0473923bc701c9e0207df956e9a051"
+  },
+  {
+    "file": "inputs/extended/background_3d_vmod",
+    "url": "https://raw.githubusercontent.com/iamharrison2000/Campi-Flegrei-Earthquake-Monitoring/f84c9c9dc6bb1501a95a833f6634199a63d4f3b3/models/3d_vmod",
+    "classification": "candidate fixed external background model; provenance must be checked before use",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 122853,
+    "sha256": "dc36fe2a542fc7a3b6c473c48ec109c53ddd77a1721f509b920fea97fb0166f3"
+  },
+  {
+    "file": "inputs/extended/channels_IV.txt",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&minlatitude=40.7&maxlatitude=40.95&minlongitude=13.9&maxlongitude=14.3&starttime=2022-01-21&endtime=2025-03-21&level=channel&format=text",
+    "classification": "station metadata",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 22464,
+    "sha256": "1887b7c66625b2970ceb9aab426e17f767e0ffa80b2822a2d14c842f7581d2a1"
+  },
+  {
+    "file": "inputs/extended/channels_2I.txt",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=2I&minlatitude=40.7&maxlatitude=40.95&minlongitude=13.9&maxlongitude=14.3&starttime=2022-01-21&endtime=2025-03-21&level=channel&format=text",
+    "classification": "station metadata",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 4582,
+    "sha256": "61e43c7e9063cb7b763b0ed0af54159f3cfbf40dafcc0f9110e044a8eb39798b"
+  },
+  {
+    "file": "inputs/extended/routine_2005.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2005/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 119424,
+    "sha256": "866e26cfabcc30b1c7b24850c28cee517ef50917935f374f1da0a5cc04d49268"
+  },
+  {
+    "file": "inputs/extended/routine_2006.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2006/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 209290,
+    "sha256": "54a439481ce4fb7741b324b9998c39f849cfb94dac2243ff30ac964a12e492d2"
+  },
+  {
+    "file": "inputs/extended/routine_2007.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2007/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 14381,
+    "sha256": "3f2113805fdd7d61918cdddf405a691cbb9dbdd160f74979c39c07a4df90821b"
+  },
+  {
+    "file": "inputs/extended/routine_2008.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2008/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 89144,
+    "sha256": "f015589e7fb61e6116f3118fbca53e7b1b12c7c4e8345cf724be0e3c73f3dffc"
+  },
+  {
+    "file": "inputs/extended/routine_2009.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2009/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 247222,
+    "sha256": "b4769d0a152fd7ee8767a2ec3b62118f01c73c31991778a4e8f5428c93d1cc90"
+  },
+  {
+    "file": "inputs/extended/routine_2010.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2010/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 212792,
+    "sha256": "c615c6de11194c05c9925569c17b979a83f063bbf0726513909b8a77e335ac43"
+  },
+  {
+    "file": "inputs/extended/routine_2011.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2011/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 101680,
+    "sha256": "03b7d5ce20f4190aeda15b95930e469c6c7a355e3776b093e04faa8d62666362"
+  },
+  {
+    "file": "inputs/extended/routine_2012.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2012/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 393864,
+    "sha256": "e039bbf27bc2d207b2deb93a16ec07949e585b464cca9025b6b72522f80eaaeb"
+  },
+  {
+    "file": "inputs/extended/routine_2013.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2013/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 76561,
+    "sha256": "5118a1d7ad7c6eae32d989317dc4b3d7ee2c2d8275eb717b637f59066e9d6d54"
+  },
+  {
+    "file": "inputs/extended/routine_2014.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2014/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 263023,
+    "sha256": "9123d5924979583dfe6e650902cf51176af1955b2e23f5ce11034329a4dbdd43"
+  },
+  {
+    "file": "inputs/extended/routine_2015.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2015/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 265998,
+    "sha256": "11d0afbb6b5b8ae518eec10a16af2719d637d051b6986fd515fa2f60b4df7088"
+  },
+  {
+    "file": "inputs/extended/routine_2016.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2016/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 433771,
+    "sha256": "1da54c0c89c0c92c1134d9e32b924994ac0f842c9f8c976328e6459bf82f7d39"
+  },
+  {
+    "file": "inputs/extended/routine_2017.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2017/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 273399,
+    "sha256": "ddfd1104e36247f01c1071c1c6f2f0774a6908ef33d12f52ce68d0f9653d8751"
+  },
+  {
+    "file": "inputs/extended/routine_2018.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2018/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 569044,
+    "sha256": "a4526f3f54972505e1cd36d837b3f53eeb3653596f403c84a9b0bbef1ffd4b83"
+  },
+  {
+    "file": "inputs/extended/routine_2019.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2019/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1106118,
+    "sha256": "ad4784115e1bfc59a0b2f26a89df5545a53bbff493b6fd791d5ccf84389b185c"
+  },
+  {
+    "file": "inputs/extended/routine_2020.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2020/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2023994,
+    "sha256": "875fa93282c57d5b068518ee734672e5b1e078aad4dd608b4ab97520019df8b7"
+  },
+  {
+    "file": "inputs/extended/routine_2021.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2021/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 2972886,
+    "sha256": "2061e0696d0fe976913c49036971a81b983300be59cd82d457cccc48c8a92c32"
+  },
+  {
+    "file": "inputs/extended/routine_2022.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2022/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 4229121,
+    "sha256": "2727bfb5baa4f51c772d12c729d4bf8563bdadbc0b622c98b53297a87ea11c44"
+  },
+  {
+    "file": "inputs/extended/routine_2023.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2023/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 8117688,
+    "sha256": "c1c5a7763bd28883a48787cfede4cbe1b19b0267c7f6bb394e522df51e1d96b2"
+  },
+  {
+    "file": "inputs/extended/routine_2024.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2024/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 8963152,
+    "sha256": "5351272a1020110d5dab9b9747bea3fb1a5a0e75fd1aa4c0831cb2d50f3862be"
+  },
+  {
+    "file": "inputs/extended/routine_2025.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2025/index.html",
+    "classification": "external routine catalog: final comparison and documented Md calibration only",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 11793284,
+    "sha256": "4429f0f57a5175d659e3c83e7ab645483cd931a39518439428cfe6de46cdde12"
+  }
+]

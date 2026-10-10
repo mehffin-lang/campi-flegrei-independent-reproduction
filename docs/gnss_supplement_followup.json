@@ -1,0 +1,32 @@
+[
+  {
+    "file": "inputs/extended/demartino_supp.rar",
+    "url": "https://mdpi-res.com/d_attachment/remotesensing/remotesensing-13-02725/article_deploy/remotesensing-13-02725-s001.rar",
+    "classification": "candidate original external GNSS supplement; classify before use",
+    "http": "404",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 146,
+    "response": "<html>\n<head><title>404 Not Found</title></head>\n<body>\n<center><h1>404 Not Found</h1></center>\n<hr><center>nginx</center>\n</body>\n</html>\n"
+  },
+  {
+    "file": "inputs/extended/demartino_supp.zip",
+    "url": "https://mdpi-res.com/d_attachment/remotesensing/remotesensing-13-02725/article_deploy/remotesensing-13-02725-s001.zip",
+    "classification": "candidate original external GNSS supplement; classify before use",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1581647,
+    "sha256": "34d505013508f12d867cc022f6c909237bcf966e65c1715f3ea9e47889e62535"
+  },
+  {
+    "file": "inputs/extended/demartino_named.rar",
+    "url": "https://mdpi-res.com/d_attachment/remotesensing/remotesensing-13-02725/article_deploy/NeVoCGPS_MEDUSA_timeseries_2000_2019.rar",
+    "classification": "named original external GNSS supplement",
+    "http": "404",
+    "returncode": 0,
+    "error": "",
+    "incomplete_bytes": 146,
+    "response": "<html>\n<head><title>404 Not Found</title></head>\n<body>\n<center><h1>404 Not Found</h1></center>\n<hr><center>nginx</center>\n</body>\n</html>\n"
+  }
+]

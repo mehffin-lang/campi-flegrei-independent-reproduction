@@ -1,0 +1,52 @@
+[
+  {
+    "file": "inputs/extended/stead_README.md",
+    "url": "https://raw.githubusercontent.com/smousavi05/STEAD/master/README.md",
+    "classification": "training data source documentation",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 15490,
+    "sha256": "bba41644227937daa34e9c4ff427ed5513b72c7e0cafda6f673e616037c62942"
+  },
+  {
+    "file": "inputs/extended/skhash_README.md",
+    "url": "https://code.usgs.gov/esc/SKHASH/-/raw/main/README.md",
+    "classification": "generic method software documentation",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 3557,
+    "sha256": "3c75ef2d62167f0eb70c4878dc2809f7265351273a1f823670ecccd8928244c7"
+  },
+  {
+    "file": "inputs/extended/gcap.tar",
+    "url": "https://www.eas.slu.edu/People/LZhu/downloads/gcap1.0.tar",
+    "classification": "generic method software archive; not executed",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1146880,
+    "sha256": "342366d7e07a7608d959d53dcb51977d4e46b37c122ca8f36d98e6e3d3af2208"
+  },
+  {
+    "file": "inputs/extended/hypodd.tar.gz",
+    "url": "https://www.ldeo.columbia.edu/~felixw/HYPODD/HYPODD_1.3.tar.gz",
+    "classification": "generic method software archive; not executed",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 1393039,
+    "sha256": "103bd58994de23d3dcfe19855ec9bae1d5e9e0db0e84a6e1bc4c9b123b349a53"
+  },
+  {
+    "file": "inputs/extended/tomodd_manual.pdf",
+    "url": "https://zenodo.org/records/7953412/files/Column_Description_Data_Files.pdf",
+    "classification": "external MOD format documentation",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 149736,
+    "sha256": "ef5698a780eb2ca40aab9bf58c4203470e339981d05ce46a9b52b9645d57a01f"
+  }
+]

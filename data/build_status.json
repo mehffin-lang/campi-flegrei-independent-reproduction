@@ -3,6 +3,7 @@
   "scientific_reproduction_complete": false,
   "publication_panels_reproduced": 0,
   "publication_panels_partial": [
+    "1B",
     "S1",
     "S2",
     "S15C"
@@ -108,5 +109,66 @@
     "picker_window_samples": 3001
   },
   "python": "3.11.9 (main, Sep 24 2024, 09:39:15) [GCC 8.5.0 20210514 (Red Hat 8.5.0-22)]",
-  "clean": true
+  "clean": true,
+  "extended_summary": {
+    "picks": 3637,
+    "p_picks": 560,
+    "s_picks": 3077,
+    "events": 9,
+    "assigned_picks": 63,
+    "waveform_files": 69,
+    "waveform_stations": [
+      "CAAM",
+      "CAWE",
+      "CBAC",
+      "CBAG",
+      "CCAP",
+      "CFB1",
+      "CFB3",
+      "CFMN",
+      "CGAU",
+      "CLAC",
+      "CMIS",
+      "CMSN",
+      "CMTS",
+      "CNIS",
+      "COLB",
+      "CPIS",
+      "CPOZ",
+      "CQUE",
+      "CREM",
+      "CRUS",
+      "CSFT",
+      "CSOB",
+      "CSOC",
+      "CSTH",
+      "CUMA",
+      "PTMR"
+    ],
+    "checks": {
+      "pick_probability_bounds": true,
+      "excluded_s_absent": true,
+      "all_events_six_picks": true,
+      "picks_assigned_once": true,
+      "valid_assignment_indices": true
+    },
+    "status": "provisional association with alternative external profile; no VELEST/TomoDD relocation",
+    "numerical_starting_profile": "data/extended/background_averages.csv",
+    "source_3d_sha256": "dc36fe2a542fc7a3b6c473c48ec109c53ddd77a1721f509b920fea97fb0166f3"
+  },
+  "downstream_summary": {
+    "events_evaluated": 9,
+    "calibration_eligible": 3,
+    "amplitude_measurements": 140,
+    "snr_passing": 23,
+    "event_pairs_checked": 36,
+    "pairs_with_two_snr_stations": 3,
+    "magnitude_edges": 0,
+    "calibrated_magnitudes": 0,
+    "routine_matches": 3,
+    "measurement_errors": [],
+    "focal_mechanisms": 0,
+    "relocated_events": 0,
+    "remaining": "VELEST inversion, TomoDD, HypoDD and focal processing not run. Quality-eligible observations and complete configurations required."
+  }
 }

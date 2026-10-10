@@ -1,0 +1,20 @@
+[
+  {
+    "file": "inputs/models/original.json.v1",
+    "url": "https://hifis-storage.desy.de/Helmholtz/HelmholtzAI/SeisBench/models/v3/phasenet/original.json.v1",
+    "http": "200",
+    "returncode": 0,
+    "classification": "generic trained PhaseNet baseline artifact; no study-derived results",
+    "bytes": 614,
+    "sha256": "1479765420108672c0b0320ef8dc24c3d88776ae99f38455e0e92fa4b2bc9fef"
+  },
+  {
+    "file": "inputs/models/original.pt.v1",
+    "url": "https://hifis-storage.desy.de/Helmholtz/HelmholtzAI/SeisBench/models/v3/phasenet/original.pt.v1",
+    "http": "200",
+    "returncode": 0,
+    "classification": "generic trained PhaseNet baseline artifact; no study-derived results",
+    "bytes": 1112276,
+    "sha256": "184dd85b896eebf8d5967ee15a722a477fa2e4ce479a3b113ecbcb8a6419113f"
+  }
+]

@@ -1,39 +1,53 @@
-# Campi Flegrei: independent observational processing
+# Campi Flegrei: independent observational reproduction
 
-This run retrieves original INGV observations and generates new station, coverage, waveform, spectral and PhaseNet-pick outputs. **The full scientific reproduction remains incomplete. No main-manuscript panel is reproduced.** S1, S2 and S15C are partial reconstructions; all other publication panels remain unreproduced. The calendar-day pick figure is an additional validation result, not an earthquake catalog.
+This repository contains an executed but **incomplete scientific reproduction** of Tan et al. (2025). It independently processes original waveforms, performs provisional GaMMA association, measures response-corrected amplitudes, scans available hybrid-template windows, and extracts the original historical leveling table. It does not contain a reproduced multiyear relocated earthquake catalog or focal-mechanism solution set.
 
-Read [the compiled report](report/report.pdf), [the full panel record](docs/panel_record.json), [input policy](docs/INPUT_POLICY.md), [access outcomes](docs/access_attempts.json) and [replacement record](docs/REPLACEMENTS.md).
+Read [the PDF report](report/report.pdf), [panel record](docs/panel_record.json), [stage record](docs/stages.json), [input policy](docs/INPUT_POLICY.md), [remaining limits](docs/BLOCKERS.md), and [replacement record](docs/REPLACEMENTS.md). Actual execution counts are in [extended results](data/extended/summary.json), [downstream measurements](data/extended/downstream_summary.json), [hybrid search](data/extended/hybrid_summary.json), and [coverage](data/extended/access_summary.json).
 
-## Sources and restrictions
+No publication panel is fully independently reproduced. **Partial: 1B, S1, S2, S15C.** All other publication panels are unreproduced. The routine-catalog plots related to 1A/C and S5 are explicitly **external context**, not independently detected events. Provisional association and candidate-review plots are additional diagnostics, not substitutes for relocated or confirmed-hybrid figures.
 
-The supplied `tanmodel.pdf` (2,140,554 bytes) and `tanmodelsupp.pdf` (62,164,947 bytes) are readable. Both supplied `science.adw9038` ZIPs were listed and CRC-checked. They contain author-derived results and an interactive plot; none is used as input. Their complete directory inventory and checksums are in `docs/file_inventory.json`.
+## Rebuild the executed analysis
 
-Original FDSN waveforms and station metadata are permitted. The retrained PhaseNet tensor artifact is explicitly permitted; this run performs independent inference, not independent training. Authors' picks, catalogs, fitted velocity models, station corrections, scripts and figure products are excluded. The routine INGV catalog is comparison-only and was not consulted. The temporary archive contains author-event-selected cuts; no such cuts enter independent detection. RAN waveforms require credentials that are unavailable here.
-
-## Rebuild
-
-Use the repository root. Requires Python 3.11, a C++17 compiler, curl, Poppler (`pdftotext`) and pdfLaTeX with the standard packages used in `report/report.tex`.
+Use this repository as the working directory. Requirements: Python 3.11, g++, gfortran, curl, Git, antiword, pdftotext, and pdflatex with the packages used in `report/report.tex`.
 
 ```bash
+mkdir -p tmp
 python3.11 -m venv .venv
-.venv/bin/pip install -r config/requirements-observations.txt --extra-index-url https://download.pytorch.org/whl/cpu
-.venv/bin/python scripts/retrieve_observations.py
+TMPDIR="$PWD/tmp" .venv/bin/pip install --extra-index-url https://download.pytorch.org/whl/cpu -r config/requirements-resume.txt
+.venv/bin/python scripts/restore_inputs.py
 .venv/bin/python scripts/rebuild.py --clean
 ```
 
-Retrieval requests a calendar-selected day (2024-01-01) at CAAM, COLB, CSOB and CSTH plus six short files for the three written-method templates, station metadata and the authorized model artifact. Requests are hourly, with four concurrent downloads and bounded retries. This is not a download of the full three-year archive. Inputs reside in ignored `inputs/`; URL/size/SHA256 receipts are in `docs/observation_inputs.json`. Preserve those hashes when placing files manually. A cached rebuild is offline and verifies every input hash before analysis. A new retrieval manifest should be reviewed if an upstream service returns changed bytes.
+The four supplied PDFs/ZIPs are retained at the repository root and verified before generated products are removed. The exact external input snapshot is [docs/rebuild_inputs.json](docs/rebuild_inputs.json): URLs, byte counts, SHA-256 hashes, and placement paths. Inputs and generic software are ignored under `inputs/`. Restoration verifies existing files and retrieves missing ones. **Live catalog pages can change:** a changed hash causes a clear failure; provide the recorded snapshot or explicitly audit a new source version. No changed source is silently accepted.
 
-Processing commands, individually:
+The offline rebuild reruns C++ equation checks; original and extended waveform inference; provisional association; an analytic association test; original/retrained picker comparisons on unlabeled CSOB/CMIS windows; original leveling/GNSS and external catalog extraction; response correction, SNR/pair measurements, S–P and location quality checks; available-interval template scanning; candidate FI/waveform review; all plots and panel tables; and two LaTeX passes. Outcomes are saved in [data/build_log.json](data/build_log.json) and [data/build_status.json](data/build_status.json). The scientific-completion flag remains false even when the build passes.
+
+## Acquisition and limits
+
+The public INGV FDSN service supplies observations and instrument responses. Full-period requests for all 26 discovered study stations were executed and rejected with HTTP 413 (one-billion-sample limit). Half-hour requests across four calendar dates and daily requests were also executed; receipts distinguish successful records, HTTP 204, HTTP 502 and client timeouts. This is not full-period coverage. The remaining multiyear collection and processing are unfinished, not categorically inaccessible.
 
 ```bash
-.venv/bin/python scripts/analyze_observations.py
-.venv/bin/python scripts/plot_observations.py
+.venv/bin/python scripts/extend_inputs.py sources
+.venv/bin/python scripts/extend_inputs.py responses
+.venv/bin/python scripts/extend_inputs.py full-requests
+.venv/bin/python scripts/extend_inputs.py day --date 2024-01-01
+.venv/bin/python scripts/extend_inputs.py windows --date 2025-03-20
 ```
 
-Data products are under `data/observations/`, figures under `figures/`, and LaTeX/PDF under `report/`. `data/build_log.json` records actual commands and return codes. `data/build_status.json` separates computational success from scientific incompleteness; `data/manifest.sha256` records final file hashes. The C++ checks are retained solely as useful equation validation. Their synthetic fixtures are not publication reproductions.
+These commands acquire new data and update acquisition receipts; they are separate from rebuilding the frozen snapshot. The full-period command records the known large-request failure. Continued acquisition must use smaller chunks rather than repeating that failed request shape. Calendar windows are not chosen from author catalogs.
 
-Project caches/intermediates remain in `.venv/`, `inputs/`, `tmp/` and `build/`. Pip uses `/home/mehffin/.cache/pip`; the initial dependency check created `/home/mehffin/.seisbench/config.json`, while analysis redirects SeisBench to `tmp/seisbench/`; TeX uses the installed system resources. Model architecture, filtering, normalization, FI windows, spectrum settings, coverage limitations and model artifact provenance are documented in the report and `config/observations.json`.
+RAN needs unavailable registration credentials. Temporary/local traces were listed remotely and one miniSEED file verified; they are original observations cut around author-selected events and were not used to seed independent discovery. Four temporary 2I stations were reached through FDSN instead. Exact archive/source outcomes are in `docs/extended_*.json` and `docs/local_archive_inventory.json`.
 
-## Remaining work
+The original 1905--2009 leveling table was retrieved from the publisher, not digitized from a plot. The original RITE GNSS series through 2019 was also retrieved from the cited publisher supplement and aligned through overlapping observations; daily 2020--2023 observations remain missing. Routine INGV Md is now permitted as the specific external regularization reference required by supplementary S6, but no magnitude is copied into a missing result. No qualifying measured relative-amplitude pair was obtained in this sample.
 
-The full multi-year association, velocity calibration, relocation, absolute-magnitude and focal-mechanism analyses are not implemented. Written defaults and permitted initial velocity inputs are incomplete; fitted author products cannot fill these gaps. The paper's duration-magnitude prior conflicts with the current comparison-only rule for the routine catalog. No arbitrary spatial model or synthetic earthquake catalog replaces those missing stages.
+The cited Calo--Tramelli initial 1D model was found only graphically in its supplement. The released fixed 3D file permits explicitly labeled alternative regional averages. These are not Tan's fitted model or an asserted exact starting profile. Generic VELEST builds, but no resolved calibration, TomoDD/HypoDD relocation or focal inversion is claimed.
+
+## Integrity and provenance
+
+Neither science.adw9038 ZIP was executed. Data S1--S3 do not seed analysis. A final Data S3 row-count audit found **74 rows and 58 gCAP entries**, resolving the difference between the methods and the erroneous 55-event caption. No author solution values were inputs. No Tan analysis/plotting script or digitized published figure was used.
+
+After independent processing, `scripts/final_comparison.py` reads Data S1 solely for final time-match and horizontal-difference assessment. Its separate `data/comparison/` outputs never feed back into analysis; reference matching does not change the generated catalog or panels. This comparison is included when the rebuild generates report tables.
+
+Generic GaMMA is pinned to `80394dd4a4c29450da599f507916ecf1db6203dd`; the trained-artifact/background release is pinned in the input receipts. VELEST's generic upstream source is downloaded, inspected and built with documented platform-only repairs. Compiler warnings and outcomes are recorded separately from scientific execution.
+
+Project intermediates and SeisBench, matplotlib and numba caches live in `tmp/`; the environment is `.venv/`. Standard pip cache: `/home/mehffin/.cache/pip`. An earlier initial SeisBench import created `/home/mehffin/.seisbench`; current runs redirect its cache into the repository. The repository, Git history, uploaded source files and unrelated work are preserved.

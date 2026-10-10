@@ -27,3 +27,13 @@ After successful PDF/method/caption checks and ZIP inventory, the following prio
 - Added own retrieval, observational analysis, plotting and panel-update scripts; new input receipts, configuration, pinned dependencies and observational CSV/NPZ/figures.
 
 Preserved useful C++ equation checks, permitted guidance files, all four user-supplied files, Git history, repository identity and unrelated user work. Large raw observations/model inputs and environment are ignored locally, with retrieval URLs and SHA256 receipts committed. No author archive was executed or used as analytical input.
+
+## Resumed run, 9 October 2026
+
+The previous report source/PDF, station and coverage PDFs/PNGs, generated report tables, panel JSON records, build status/log/manifest, README, input policy, and blocker descriptions are replaced with this run's evidence. `scripts/rebuild.py` and `scripts/update_panel_record.py` now include the extended workflow. New processing scripts and `config/requirements-resume.txt` accompany it; `config/association.json` records the explicit alternative-profile assumptions. New numerical outputs live in `data/extended/` and new figures in `figures/`.
+
+The supplied PDFs/ZIPs, useful C++ validation source, original observational retrieval/processing and correctly labeled E1/E2/E3 template displays are preserved. The old four-station waveform outputs are recomputed as a retained validation subset, not mislabeled as the expanded analysis. No user source or unrelated work is deleted. Historical commits preserve superseded reports.
+
+Important corrections: the INGV Md calibration exception is now permitted; fixed external backgrounds are distinguished from Tan's fitted products; full-period HTTP 413 is a chunking limitation, not proof of inaccessible data; Data S3 actually has 74 rows/58 gCAP entries, not the caption's 55. A coverage-aggregation development bug caused by pandas' variable timestamp precision was corrected before delivery, with an explicit sample-duration consistency assertion.
+
+Added historical displacement outputs: original leveling-table extraction, original RITE GNSS through 2019, and a separately plotted written December 2023 monitoring estimate. Added original/retrained PhaseNet probability comparisons at CSOB/CMIS and an internal S–P consistency calculation. These additional diagnostics are not substituted for S4's exact benchmark or S12's relocated sector gathers. The magnitude attempt evaluates all provisional events, not only the smaller VELEST calibration subset.

@@ -1,0 +1,19 @@
+{
+  "leveling_rows": 128,
+  "leveling_start": "1905-03-15",
+  "leveling_end": "2009-07-15",
+  "leveling_min_m": -1.266,
+  "leveling_max_m": 2.541,
+  "gnss_rows": 6848,
+  "gnss_start": "2000-05-29 00:00:00+00:00",
+  "gnss_end": "2019-12-31 00:00:00+00:00",
+  "gnss_datum_offset_m": 1.7896000000000003,
+  "overlap_leveling_epochs": 23,
+  "overlap_offset_mad_m": 0.002280000000000504,
+  "dec2023_written_uplift_since_nov2005_m": 1.19,
+  "external_events": 26425,
+  "external_located": 16046,
+  "external_study_events": 19274,
+  "external_role": "Historical context/final comparison; Md may regularize independently measured magnitude differences under supplementary S6.",
+  "interpolated_gps_not_used": "gps.dat is a later interpolated compilation, not original GPS observations"
+}

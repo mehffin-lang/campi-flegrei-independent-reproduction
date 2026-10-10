@@ -1,0 +1,60 @@
+{
+  "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/Tracce_AI_new.zip",
+  "status": 206,
+  "bytes": 65536,
+  "directory_size": 37532178,
+  "directory_offset": 3255710931,
+  "entries": 65535,
+  "directory_http": 206,
+  "listed_entries": 319890,
+  "total_uncompressed_bytes": 3844805632,
+  "examples": [
+    "Tracce_AI_new/",
+    "Tracce_AI_new/20220121T014220_IV_CFB1_HHZ.mseed",
+    "Tracce_AI_new/20220121T032217_IV_CFB1_HHZ.mseed",
+    "Tracce_AI_new/20220121T032217_IV_CROS_EHE.mseed",
+    "Tracce_AI_new/20220121T032217_IV_CROS_EHN.mseed",
+    "Tracce_AI_new/20220121T032217_IV_CROS_EHZ.mseed",
+    "Tracce_AI_new/20220121T032217_IV_CROS_HHE.mseed",
+    "Tracce_AI_new/20220121T032217_IV_CROS_HHN.mseed",
+    "Tracce_AI_new/20220121T032217_IV_CROS_HHZ.mseed",
+    "Tracce_AI_new/20220121T034938_IV_CFB1_HHZ.mseed",
+    "Tracce_AI_new/20220121T034938_IV_CROS_EHE.mseed",
+    "Tracce_AI_new/20220121T034938_IV_CROS_EHN.mseed",
+    "Tracce_AI_new/20220121T034938_IV_CROS_EHZ.mseed",
+    "Tracce_AI_new/20220121T034938_IV_CROS_HHE.mseed",
+    "Tracce_AI_new/20220121T034938_IV_CROS_HHN.mseed"
+  ],
+  "extensions": {
+    "": 1,
+    ".mseed": 319889
+  },
+  "directory_sha256": "76073ca83cc4478bc20c1f56c130e76d65980890485580558a8c53f06dae8fbe",
+  "class_note": "Event-conditioned waveform observations; not independent continuous discovery. No members extracted or executed.",
+  "station_file_counts": {
+    "IV.CFB1": 30821,
+    "IV.CROS": 108356,
+    "IV.CFB3": 39184,
+    "IV.V0102": 34827,
+    "IV.V0105": 70254,
+    "IV.CRUS": 34434,
+    "IV.CMDP": 2013
+  },
+  "filename_time_min": "20220121T014220",
+  "filename_time_max": "20250320T235137",
+  "filename_times_are_author_selection_not_continuous_coverage": true,
+  "sample_inspection": {
+    "member": "Tracce_AI_new/20220121T014220_IV_CFB1_HHZ.mseed",
+    "uncompressed_bytes": 8192,
+    "sha256": "b8db3fd37dba5799a04a91d830b94065a1526fd8122a6d77f67e4d3b5fddbe18",
+    "records": [
+      {
+        "channel": "IV.CFB1..HHZ",
+        "start": "2022-01-21T01:42:14.998393Z",
+        "end": "2022-01-21T01:43:14.998393Z",
+        "samples": 6001
+      }
+    ],
+    "analysis_use": false
+  }
+}

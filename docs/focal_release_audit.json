@@ -1,0 +1,8 @@
+{
+  "purpose": "Final documentation consistency audit only; no values used in independent analysis",
+  "rows": 74,
+  "skhash_nonempty": 74,
+  "gcap_nonempty": 58,
+  "methods_events": 74,
+  "unexplained_difference": 0
+}

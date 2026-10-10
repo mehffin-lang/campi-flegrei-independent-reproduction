@@ -1,0 +1,10 @@
+{
+  "file": "inputs/extended/velest.tar",
+  "url": "https://ethz.ch/content/dam/ethz/special-interest/erdw/geophysics/seismology-and-geodynamics-dam/document/velest.tar",
+  "classification": "generic method software; inspect archive before extraction",
+  "http": "200",
+  "returncode": 0,
+  "error": "",
+  "bytes": 1097216,
+  "sha256": "d249d80ee3d0e36605d2395277eaaf50097bfa6a571fa95d1f423e5f25f80469"
+}

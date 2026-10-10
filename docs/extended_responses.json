@@ -1,0 +1,262 @@
+[
+  {
+    "file": "inputs/extended/responses/IV_CAAM.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CAAM&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 401305,
+    "sha256": "a28b304d85707fa19b1bf9c13b93d7a2ae10c3919cc2b61b82112954b19f9962"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CAWE.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CAWE&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 397880,
+    "sha256": "b3fb943fbb984880932af15dffb05aa8935c2f606e28d2fd2a93454b468981c2"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CBAC.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CBAC&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 249818,
+    "sha256": "48b9581c21e45cfb66b3c02d4b138e3330fadde10886e8c68714b11da264d3d2"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CBAG.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CBAG&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 55727,
+    "sha256": "82fe7b868c3c0913d06c6380b407b2f1834e738ee7472f1bbe2e858cfe325fdd"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CCAP.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CCAP&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 54980,
+    "sha256": "3957cfd8c4e3de35ee095ead9327146f5861868123671c00c34104cc2d3d52fe"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CFB1.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CFB1&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 32433,
+    "sha256": "9939f15e9849222acd58bb939952f31000633c73a986daa396b6c196ceb3645e"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CFB3.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CFB3&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 32431,
+    "sha256": "4390391c22cd37309f4e1c75f404bc61a44e8f4258e9af7f85ea7b9c9a17c2bf"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CFMN.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CFMN&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 346962,
+    "sha256": "7bb1a7c16f0b245637574f5cadd88a5b2fd55baab69fd0c63989a1ccdff396ee"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CMIS.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CMIS&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 346717,
+    "sha256": "21ebaedf08623e7e45dfe7325dca53baf2500a236f24d6c42d99b6fad7177d85"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CMSN.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CMSN&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 53988,
+    "sha256": "3958b09159bc4ed9c1109b1856953f33eb9f7cd16ef86f59c955acbee5cd4915"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CMTS.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CMTS&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 54982,
+    "sha256": "8ff93edce456858fe98a0aa9cbddabc5940245e8d51f256caf5fb76fe9231b72"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CNIS.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CNIS&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 482714,
+    "sha256": "c5e025919c219795b76b6c3e8b372403c88321bc471e3a5bfde65cd33e1af81d"
+  },
+  {
+    "file": "inputs/extended/responses/IV_COLB.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=COLB&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 399856,
+    "sha256": "d28df33d89027523424d77b48d7bc8806e6ad3b242048e70a9342dde069a0320"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CPIS.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CPIS&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 207519,
+    "sha256": "01e866c48fcca9d5a61ceab3a6afba01e27a7b4b468e79a1eda481fdf24b560c"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CPOZ.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CPOZ&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 421587,
+    "sha256": "0f27c2136dfa338daca52ad0f5c8cee5b7ef530da0a46a98e2217420912d7fa0"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CQUE.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CQUE&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 346920,
+    "sha256": "c953f93a8449fa958d82ed7d1437d11540abf7be124bdc1fcfd5a9fd949ebc4a"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CRUS.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CRUS&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 347362,
+    "sha256": "6f249ae88e5fcc5355c1978309c098d1db5b87bf01d7774541ffb6a374552e3b"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CSFT.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CSFT&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 55719,
+    "sha256": "2ca40ab7e9683ebe044f208eecb313fb4ef0551ce068a03bfda6e43bc74ffa8e"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CSOB.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CSOB&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 346909,
+    "sha256": "9bcf0f71988ed8ec010da9585a8a509b6baab9970e1e90886fc99a5388fbcb14"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CSTH.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CSTH&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 585325,
+    "sha256": "5b33fff4e6f8e80476e060cdf957d8e76d103e0c4f76ca87a8fac955a425a98b"
+  },
+  {
+    "file": "inputs/extended/responses/IV_CUMA.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CUMA&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 348217,
+    "sha256": "94041c5a81b7210bdec914d38d5628abe8f2ecc1ecbfdce0de2fc8b01f04906b"
+  },
+  {
+    "file": "inputs/extended/responses/IV_PTMR.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=PTMR&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 327212,
+    "sha256": "188674521f72cce81559d6bc2fac74df00916e9054fe31e034773ce2025b6cff"
+  },
+  {
+    "file": "inputs/extended/responses/2I_CGAU.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=2I&station=CGAU&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 121896,
+    "sha256": "0f4a37e08d84bfdcd2fa59c8f8bea8a8e0bf4914fb27324331e1b7d678a8488f"
+  },
+  {
+    "file": "inputs/extended/responses/2I_CLAC.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=2I&station=CLAC&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 41906,
+    "sha256": "348d526f9880e8a1db24b116e62090c0922761cb0deed221d98ea79f07671496"
+  },
+  {
+    "file": "inputs/extended/responses/2I_CREM.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=2I&station=CREM&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 122540,
+    "sha256": "05ac773ac0b086e90bdf1d9effe431caa9bf83a00797d3792d0d563948530f3d"
+  },
+  {
+    "file": "inputs/extended/responses/2I_CSOC.xml",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=2I&station=CSOC&starttime=2022-01-21&endtime=2025-03-21&level=response",
+    "classification": "instrument response",
+    "http": "200",
+    "returncode": 0,
+    "error": "",
+    "bytes": 82941,
+    "sha256": "a3a32d0f47a887f8c6f4e2e4594d5137cc1f6bb87f38b7c6b420d05794844ba4"
+  }
+]
