@@ -1,0 +1,12 @@
+{
+  "retrieved_utc": "2026-10-12T18:10:31.856182+00:00",
+  "tree_url": "https://api.github.com/repos/iamharrison2000/Campi-Flegrei-Earthquake-Monitoring/git/trees/f84c9c9dc6bb1501a95a833f6634199a63d4f3b3?recursive=1",
+  "starting_model": "Numerical Calo-Tramelli 2018 profile still absent; data on request from INGV",
+  "data_statement": "The data that support the findings of this study are available on request from the INGV.",
+  "fixed_background": "models/3d_vmod is explicitly attributed to Battaglia et al. 2008 in pinned release README; accepted as permitted fixed-background artifact, original-byte lineage unverified",
+  "fixed_sha256": "dc36fe2a542fc7a3b6c473c48ec109c53ddd77a1721f509b920fea97fb0166f3",
+  "excluded": [
+    "models/1d_vmod_velest.mod: Tan-fitted result",
+    "stations_velest.dat: includes author-fitted corrections"
+  ]
+}

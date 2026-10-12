@@ -1,0 +1,7 @@
+{
+  "url": "https://cuseistut.readthedocs.io/en/latest/_downloads/bddb170e1a6c5e0e4c9dea36044d36cc/USTC-tomoDD-SE-training2020.tar",
+  "file": "inputs/continuation/tomodd_training.tar",
+  "bytes": 56350720,
+  "sha256": "e618c6914d328c7dd9752bd105aa128fec051750144b8f1f17ea6353ee275fe1",
+  "classification": "Generic TomoDD training distribution; source and manual permitted. Example observations/results and plotting scripts are not project inputs."
+}

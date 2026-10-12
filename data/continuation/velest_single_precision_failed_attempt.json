@@ -1,0 +1,56 @@
+{
+  "calibration_events": 98,
+  "nonpositive_or_invalid_travel_times_removed": 41,
+  "eligible_whole_catalog_events": 708,
+  "selection": "Positive propagation times, more than six retained picks and azimuthal gap <180 deg (generic VELEST guidance). Positive-time filtering is an explicit additional consistency rule. Pilot subset lacks full-study coverage and independent manual review; not the published 373-event selection.",
+  "runs": [
+    {
+      "name": "caldera_round1",
+      "returncode": 0,
+      "valid_outputs": true,
+      "workdir": "tmp/continuation/velest/caldera_round1",
+      "console_tail": " >>> Start of program VELEST at 20261012 125418.027  <<<\n\n  finished Iteration #  0  at   20261012 125418.069      CPU-sec =     0.0\n  finished Iteration #  1  at   20261012 125418.139      CPU-sec =     0.1\n  finished Iteration #  2  at   20261012 125418.209      CPU-sec =     0.2\n  finished Iteration #  3  at   20261012 125418.318      CPU-sec =     0.2\n  finished Iteration #  4  at   20261012 125418.388      CPU-sec =     0.3\n  finished Iteration #  5  at   20261012 125418.498      CPU-sec =     0.4\n  finished Iteration #  6  at   20261012 125418.608      CPU-sec =     0.5\n  finished Iteration #  7  at   20261012 125418.608      CPU-sec =     0.5\n >>>   End of program VELEST at 20261012 125418.688  <<< [ CPU-sec :     0.6]\n"
+    },
+    {
+      "name": "caldera_round2",
+      "returncode": 0,
+      "valid_outputs": true,
+      "workdir": "tmp/continuation/velest/caldera_round2",
+      "console_tail": " >>> Start of program VELEST at 20261012 125418.707  <<<\n\n  finished Iteration #  0  at   20261012 125418.749      CPU-sec =     0.0\n  finished Iteration #  1  at   20261012 125418.821      CPU-sec =     0.1\n  finished Iteration #  2  at   20261012 125418.894      CPU-sec =     0.2\n  finished Iteration #  3  at   20261012 125418.966      CPU-sec =     0.3\n  finished Iteration #  4  at   20261012 125419.037      CPU-sec =     0.3\n  finished Iteration #  5  at   20261012 125419.111      CPU-sec =     0.4\n  finished Iteration #  6  at   20261012 125419.186      CPU-sec =     0.5\n  finished Iteration #  7  at   20261012 125419.186      CPU-sec =     0.5\n >>>   End of program VELEST at 20261012 125419.267  <<< [ CPU-sec :     0.5]\n"
+    },
+    {
+      "name": "central_round1",
+      "returncode": 0,
+      "valid_outputs": true,
+      "workdir": "tmp/continuation/velest/central_round1",
+      "console_tail": " >>> Start of program VELEST at 20261012 125419.864  <<<\n\n  finished Iteration #  0  at   20261012 125419.916      CPU-sec =     0.0\n  finished Iteration #  1  at   20261012 125419.986      CPU-sec =     0.1\n  finished Iteration #  2  at   20261012 125420.056      CPU-sec =     0.2\n  finished Iteration #  3  at   20261012 125420.161      CPU-sec =     0.2\n  finished Iteration #  4  at   20261012 125420.225      CPU-sec =     0.3\n  finished Iteration #  5  at   20261012 125420.326      CPU-sec =     0.4\n  finished Iteration #  6  at   20261012 125420.387      CPU-sec =     0.5\n  finished Iteration #  7  at   20261012 125420.387      CPU-sec =     0.5\n >>>   End of program VELEST at 20261012 125420.496  <<< [ CPU-sec :     0.6]\n"
+    },
+    {
+      "name": "central_round2",
+      "returncode": 0,
+      "valid_outputs": true,
+      "workdir": "tmp/continuation/velest/central_round2",
+      "console_tail": " >>> Start of program VELEST at 20261012 125420.506  <<<\n\n  finished Iteration #  0  at   20261012 125420.553      CPU-sec =     0.0\n  finished Iteration #  1  at   20261012 125420.680      CPU-sec =     0.2\n  finished Iteration #  2  at   20261012 125420.808      CPU-sec =     0.3\n  finished Iteration #  3  at   20261012 125420.808      CPU-sec =     0.5\n >>>   End of program VELEST at 20261012 125421.040  <<< [ CPU-sec :     0.5]\n"
+    }
+  ],
+  "completed": false,
+  "reference_station": "IV.CSOB.",
+  "chosen_region": "caldera",
+  "calibration_rms_s": 0.34817893593463034,
+  "model_checks": {
+    "positive_velocities": true,
+    "Vp_greater_than_Vs": true,
+    "ordered_interfaces": true,
+    "minimum_VpVs": 1.1787439613526571,
+    "maximum_VpVs": 5.054054054054054,
+    "between_starting_models_rms_Vp_km_s": 0.28580712777275913,
+    "between_starting_models_rms_Vs_km_s": 0.35100535879778516,
+    "independent_accuracy_validated": false
+  },
+  "error": "RuntimeError('{\"name\": \"whole_catalog_1\", \"returncode\": 0, \"valid_outputs\": false, \"workdir\": \"tmp/continuation/velest/whole_catalog_1\", \"console_tail\": \" >>> Start of program VELEST at 20261012 125423.101  <<<\\\\n\\\\n  finished Iteration #  0  at   20261012 125423.344      CPU-sec =     0.2\\\\n  finished Iteration #  1  at   20261012 125432.385      CPU-sec =     9.2\\\\n WARNING: error in ludecp     ier=  129\\\\nSTOP error in (damped) matrix G !!!\\\\n\"}')",
+  "status": "failed pilot; outputs must not be treated as calibrated results",
+  "single_precision_models": {
+    "velest_central_model.csv": "layer_top_km,Vp_km_s,Vs_km_s,VpVs\n-0.5,1.28,1.2,1.0666666666666667\n0.05,1.69,1.1,1.5363636363636362\n0.1,1.67,0.98,1.7040816326530612\n0.25,1.83,0.99,1.8484848484848486\n0.5,1.72,1.07,1.6074766355140186\n0.75,2.05,1.47,1.3945578231292517\n1.0,2.3,1.35,1.7037037037037035\n1.25,2.47,1.57,1.5732484076433122\n1.5,2.61,1.32,1.977272727272727\n1.75,2.79,1.52,1.8355263157894737\n2.0,3.08,1.96,1.5714285714285714\n2.5,3.64,2.76,1.318840579710145\n3.0,4.01,2.85,1.407017543859649\n3.5,4.79,2.98,1.6073825503355705\n4.0,4.59,3.48,1.3189655172413792\n4.5,5.03,3.81,1.3202099737532809\n5.0,5.45,4.42,1.2330316742081449\n5.5,5.83,3.6,1.6194444444444445\n6.0,6.15,3.62,1.6988950276243096\n6.5,6.19,3.67,1.686648501362398\n7.0,6.33,3.69,1.7154471544715448\n",
+    "velest_caldera_model.csv": "layer_top_km,Vp_km_s,Vs_km_s,VpVs\n-0.5,1.42,1.13,1.2566371681415929\n0.05,1.82,1.16,1.5689655172413794\n0.1,1.73,0.81,2.135802469135802\n0.25,1.87,0.37,5.054054054054054\n0.5,1.5,1.16,1.293103448275862\n0.75,1.86,0.89,2.0898876404494384\n1.0,1.99,1.04,1.9134615384615383\n1.25,2.22,1.29,1.7209302325581397\n1.5,2.81,1.35,2.0814814814814815\n1.75,3.05,1.53,1.9934640522875815\n2.0,2.82,2.09,1.3492822966507176\n2.5,4.15,2.84,1.461267605633803\n3.0,4.43,3.5,1.2657142857142856\n3.5,5.59,3.06,1.826797385620915\n4.0,4.88,4.14,1.1787439613526571\n4.5,5.21,3.63,1.4352617079889807\n5.0,5.56,3.58,1.5530726256983238\n5.5,5.8,3.5,1.657142857142857\n6.0,5.97,3.56,1.6769662921348314\n6.5,6.12,3.61,1.6952908587257618\n7.0,6.22,3.64,1.7087912087912087\n"
+  }
+}

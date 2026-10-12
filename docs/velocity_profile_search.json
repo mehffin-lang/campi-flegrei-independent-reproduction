@@ -1,0 +1,124 @@
+{
+  "exact_profile_found": false,
+  "availability_statement": "The data that support the findings of this study are available on request from the INGV.",
+  "exact_file_to_request": "Numerical layered Vp and Vs (or depth-dependent Vp/Vs) underlying Calo--Tramelli 2018 supplementary Figure S1.2a/b, including layer-top depths, interpolation-node version, units, depth datum, and confirmation of the version passed to Tan et al. GaMMA-1D. The 2018 supplement says Vp/Vs was updated using depth-dependent Wadati diagrams, so a constant-ratio routine model is not an exact substitute.",
+  "request_from": "INGV--Osservatorio Vesuviano / Anna Tramelli; corresponding author Marco Calo, calo@igeofisica.unam.mx, may identify the 2018 table. Nobody was contacted.",
+  "searches": [
+    {
+      "source": "https://www.nature.com/articles/s41598-018-34456-x",
+      "result": "Readable article; no numerical layer table; data available on request from INGV."
+    },
+    {
+      "source": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-018-34456-x/MediaObjects/41598_2018_34456_MOESM1_ESM.pdf",
+      "result": "Readable 14-page supplement. Section 2 and Figure S1.2 describe layered and interpolated profiles graphically; no numerical Vp/Vs table. No digitization."
+    },
+    {
+      "source": "https://www.earth-prints.org/entities/publication/c2867123-d4c1-41f5-b734-aef0cca8f40c",
+      "result": "Official INGV repository REST inventory: ORIGINAL bundle contains only Calo_2018.pdf, 13,415,524 bytes. Other bundles are thumbnail, extracted text and license; no model dataset."
+    },
+    {
+      "source": "https://github.com/iamharrison2000/Campi-Flegrei-Earthquake-Monitoring/tree/f84c9c9dc6bb1501a95a833f6634199a63d4f3b3/models",
+      "result": "Tree/README inspected. Released 1d_vmod_velest.mod is the Tan-fitted model and excluded. Fixed 3d_vmod and weights are permitted method artifacts, not proof of the exact association profile."
+    },
+    {
+      "source": "https://onlinelibrary.wiley.com/doi/full/10.1155/2012/505286",
+      "result": "Cited Priolo et al. blind-test model has numerical lithological-unit properties, but it is a synthetic 3D test, not the Calo--Tramelli 1D starting model; not substituted."
+    },
+    {
+      "source": "https://zenodo.org/records/14833402",
+      "result": "Citing dataset lists catalog, displacement and precipitation files, not a numerical velocity profile; derived seismic catalog excluded."
+    },
+    {
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8009907/",
+      "result": "Tramelli et al. 2021 Table 1 gives five layer-top depths and Vp values plus Vp/Vs=1.78. Verified and used only as labeled published alternative."
+    },
+    {
+      "source": "https://adgeo.copernicus.org/articles/52/75/2020/",
+      "result": "Nardone et al. 2020 Table 2 provides a different local near-surface inversion, four layers over a half-space, not the 2018 layered association profile. Cites Calo--Tramelli but does not reproduce that table. Not substituted."
+    },
+    {
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12102149/",
+      "result": "Citing 2025 tomography study identified in search; direct text retrieval encountered reCAPTCHA. No derived source-data model was downloaded or substituted."
+    }
+  ],
+  "alternative": "data/continuation/alternative_starting_profile.csv",
+  "provenance": "config/alternative_starting_profile.json",
+  "retrieved_utc": "2026-10-12",
+  "additional_search_queries": [
+    "\"Campi Flegrei\" \"Calo\" \"Tramelli\" \"velocity model\" table depths",
+    "\"s41598-018-34456-x\" data velocity model file",
+    "\"Campi Flegrei\" \"1D\" \"Wadati\" velocity Calo Tramelli"
+  ],
+  "rejected_numeric_candidate": {
+    "file": "inputs/continuation/nardone2020_table2.xlsx",
+    "url": "https://adgeo.copernicus.org/articles/52/75/2020/adgeo-52-75-2020-t02.xlsx",
+    "bytes": 7549,
+    "sha256": "bd7c57a3de922beca3481a4d364a79cf0588f518c8667988fd9f4a8c03b5a9df",
+    "zip_members": [
+      "[Content_Types].xml",
+      "_rels/.rels",
+      "xl/_rels/workbook.xml.rels",
+      "docProps/app.xml",
+      "docProps/core.xml",
+      "xl/theme/theme1.xml",
+      "xl/sharedStrings.xml",
+      "xl/styles.xml",
+      "xl/workbook.xml",
+      "xl/worksheets/sheet1.xml",
+      "xl/worksheets/sheet2.xml",
+      "xl/worksheets/_rels/sheet1.xml.rels",
+      "xl/worksheets/_rels/sheet2.xml.rels"
+    ],
+    "table_rows": [
+      [
+        "Depth",
+        "Thickness",
+        "Vp",
+        "Vs",
+        "Vp\u2215Vs"
+      ],
+      [
+        "(m)",
+        "(m)",
+        "(m\u2009s\u22121)",
+        "(m\u2009s\u22121)"
+      ],
+      [
+        "2.4",
+        "2.4",
+        "170",
+        "85",
+        "2"
+      ],
+      [
+        "25",
+        "23.6",
+        "570",
+        "280",
+        "2.03"
+      ],
+      [
+        "152",
+        "127",
+        "1015",
+        "520",
+        "1.95"
+      ],
+      [
+        "944",
+        "792",
+        "2240",
+        "1290",
+        "1.73"
+      ],
+      [
+        "\u2013",
+        "?",
+        "4400",
+        "2500",
+        "1.76"
+      ]
+    ],
+    "reason": "Different local shallow inversion, not the requested association starting profile. Not used."
+  }
+}

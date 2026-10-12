@@ -1,0 +1,9 @@
+event_index,ML,regularization_lambda,status,external_id,Md,time_difference_s,role
+64,0.7999999999999993,1.0,"provisional; alternative initial locations, no VELEST/TomoDD",44501,0.8,0.0079998970031738,final comparison; potential S6 calibration prior only
+114,-0.8374186504204774,1.0,"provisional; alternative initial locations, no VELEST/TomoDD",44504,-0.8,-0.9260001182556152,final comparison; potential S6 calibration prior only
+501,0.0039180699612677,1.0,"provisional; alternative initial locations, no VELEST/TomoDD",44527,0.1,0.4799997806549072,final comparison; potential S6 calibration prior only
+508,-0.6664994195407895,1.0,"provisional; alternative initial locations, no VELEST/TomoDD",44528,-0.8,-0.9210000038146972,final comparison; potential S6 calibration prior only
+333,0.3000000000000001,1.0,"provisional; alternative initial locations, no VELEST/TomoDD",44510,0.3,0.0099999904632568,final comparison; potential S6 calibration prior only
+393,-0.0819318310142387,1.0,"provisional; alternative initial locations, no VELEST/TomoDD",44513,-0.3,0.0119998455047607,final comparison; potential S6 calibration prior only
+517,0.6819318310142405,1.0,"provisional; alternative initial locations, no VELEST/TomoDD",44529,0.9,-0.0509998798370361,final comparison; potential S6 calibration prior only
+612,-0.3,1.0,"provisional; alternative initial locations, no VELEST/TomoDD",44542,-0.3,-1.621000051498413,final comparison; potential S6 calibration prior only

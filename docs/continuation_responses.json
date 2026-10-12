@@ -1,0 +1,59 @@
+[
+  {
+    "network": "IV",
+    "retrieved_utc": "2026-10-12T18:15:49.843222+00:00",
+    "http": 200,
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&station=CAAM%2CCASE%2CCAWE%2CCBAC%2CCBAG%2CCCAP%2CCDOV%2CCFB1%2CCFB3%2CCFMN%2CCMDP%2CCMIS%2CCMSN%2CCMTS%2CCNIS%2CCOLB%2CCPIS%2CCPOZ%2CCQUE%2CCROS%2CCRUS%2CCSFT%2CCSOB%2CCSTH%2CCUMA%2CPTMR%2CV0102%2CV0104%2CV0105%2CV0106&starttime=2022-01-21&endtime=2025-03-21&level=response&format=xml",
+    "bytes": 5875810,
+    "file": "inputs/continuation/IV_responses.xml",
+    "sha256": "07545b22de0f7b9030f2064467b52ce428365b213c136477b05a5768c4dd62a3",
+    "stations": [
+      "CAAM",
+      "CAWE",
+      "CBAC",
+      "CBAG",
+      "CCAP",
+      "CFB1",
+      "CFB3",
+      "CFMN",
+      "CMIS",
+      "CMSN",
+      "CMTS",
+      "CNIS",
+      "COLB",
+      "CPIS",
+      "CPOZ",
+      "CQUE",
+      "CRUS",
+      "CSFT",
+      "CSOB",
+      "CSTH",
+      "CUMA",
+      "PTMR"
+    ],
+    "channels": 134
+  },
+  {
+    "network": "2I",
+    "retrieved_utc": "2026-10-12T18:15:49.851181+00:00",
+    "http": 200,
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=2I&station=CGAU%2CCLAC%2CCREM%2CCSOC&starttime=2022-01-21&endtime=2025-03-21&level=response&format=xml",
+    "bytes": 366141,
+    "file": "inputs/continuation/2I_responses.xml",
+    "sha256": "91c213556e69c7934686d80a497d25f43f8281ffe2411b6d39a5df4e77b9a784",
+    "stations": [
+      "CGAU",
+      "CLAC",
+      "CREM",
+      "CSOC"
+    ],
+    "channels": 27
+  },
+  {
+    "network": "IT",
+    "retrieved_utc": "2026-10-12T18:15:49.854092+00:00",
+    "http": 204,
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IT&station=BAIP%2CBAN%2CBCLI%2CMPCD%2CNAAG%2CNABA%2CNACO%2CNAD%2CNAFG%2CNAP%2CPOZA%2CPOZB%2CPOZL%2CPOZM%2CPOZS%2CPOZT%2CPOZU&starttime=2022-01-21&endtime=2025-03-21&level=response&format=xml",
+    "bytes": 0
+  }
+]

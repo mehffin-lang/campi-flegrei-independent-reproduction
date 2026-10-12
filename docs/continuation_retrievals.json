@@ -1,0 +1,218 @@
+[
+  {
+    "file": "inputs/continuation/routine_2005.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2005/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:49.962500+00:00",
+    "http": 200,
+    "bytes": 119424,
+    "sha256": "5528c3fdcc3cab206f5310d8499f637771f1bffd7bdf9bcecd9080e36d38b6b3"
+  },
+  {
+    "file": "inputs/continuation/routine_2006.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2006/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:49.963565+00:00",
+    "http": 200,
+    "bytes": 209290,
+    "sha256": "ee08b9266b56bcb9dad66297c0642e6b7e2d233a3ace2b2d53c1aa9267720dff"
+  },
+  {
+    "file": "inputs/continuation/routine_2007.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2007/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:49.964600+00:00",
+    "http": 200,
+    "bytes": 14381,
+    "sha256": "0cdcc00a0a3dd782978c656418698a0dc4af2f5bbebdcd83cf650b1b2601c1e9"
+  },
+  {
+    "file": "inputs/continuation/routine_2008.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2008/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:49.966420+00:00",
+    "http": 200,
+    "bytes": 89144,
+    "sha256": "f6c40173c195a22eeafe246180a0f05fe01c07ff9d6af9b1949df427e33ea142"
+  },
+  {
+    "file": "inputs/continuation/routine_2009.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2009/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:51.501575+00:00",
+    "http": 200,
+    "bytes": 247222,
+    "sha256": "b1fc32336ce9adc147e433f31c8900c6588a7a6f6cd98ce35febcb815370cbb2"
+  },
+  {
+    "file": "inputs/continuation/routine_2010.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2010/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:51.509632+00:00",
+    "http": 200,
+    "bytes": 212792,
+    "sha256": "9f33af5e8a63b831a8ce4af9cfa6f6aab608e28c577de1b4f56b7732c8c3528b"
+  },
+  {
+    "file": "inputs/continuation/routine_2011.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2011/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:51.673140+00:00",
+    "http": 200,
+    "bytes": 101680,
+    "sha256": "6af4b8eda225b9a9e338bf89988aafcf51a898e89584307ff31efdf29b82f71d"
+  },
+  {
+    "file": "inputs/continuation/routine_2012.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2012/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:51.698179+00:00",
+    "http": 200,
+    "bytes": 393864,
+    "sha256": "b1d18ed4dcfbee28ae414958fe41e32b3a58feefc86034e2ee1b7894950e6774"
+  },
+  {
+    "file": "inputs/continuation/routine_2013.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2013/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:52.380101+00:00",
+    "http": 200,
+    "bytes": 76561,
+    "sha256": "9f84cc96a705991a6cc5487c287a8863c43a85b5306a4cb0d3d8f6daf6123366"
+  },
+  {
+    "file": "inputs/continuation/routine_2014.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2014/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:52.395058+00:00",
+    "http": 200,
+    "bytes": 263023,
+    "sha256": "2cea6be352a64c5fcc51725794b5186e381cbe8abf916629c0a317bd0799a343"
+  },
+  {
+    "file": "inputs/continuation/routine_2015.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2015/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:52.411115+00:00",
+    "http": 200,
+    "bytes": 265998,
+    "sha256": "afb091aaefe9e25c4a820ed09e1149c29a4cbea5307d618a0e32f12af51f5c1f"
+  },
+  {
+    "file": "inputs/continuation/routine_2016.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2016/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:52.769785+00:00",
+    "http": 200,
+    "bytes": 433771,
+    "sha256": "25efe231ad32cc8b013ff8b1141e9cd5aeff0b2290bccf74b284e2860dac490a"
+  },
+  {
+    "file": "inputs/continuation/routine_2017.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2017/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:53.080261+00:00",
+    "http": 200,
+    "bytes": 273399,
+    "sha256": "8a930af2b92ec046e45a13b883212f434976664d0cde1a51976ae3140f7ab461"
+  },
+  {
+    "file": "inputs/continuation/routine_2018.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2018/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:53.238444+00:00",
+    "http": 200,
+    "bytes": 569044,
+    "sha256": "bb8f6a5679f8a311c69284e3c5311cb2101d6e9157de563adc09b9faaa362e3f"
+  },
+  {
+    "file": "inputs/continuation/routine_2019.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2019/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:53.309168+00:00",
+    "http": 200,
+    "bytes": 1106118,
+    "sha256": "c837f773c0970fbcd7a13eccb67a13e3860a69caed1c33c9b94f6d28d212f3f1"
+  },
+  {
+    "file": "inputs/continuation/routine_2020.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2020/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:53.844159+00:00",
+    "http": 200,
+    "bytes": 2023994,
+    "sha256": "9ce997e506545c088efd18f48f51987cd912468636e2827033cbc15169ee6a4b"
+  },
+  {
+    "file": "inputs/continuation/routine_2021.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2021/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:53.953480+00:00",
+    "http": 200,
+    "bytes": 2972886,
+    "sha256": "0c7db543fd9ec7418e656a82c589d2f4425fe522a0e6581098ef21e6fe4d0ce1"
+  },
+  {
+    "file": "inputs/continuation/routine_2022.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2022/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:54.316118+00:00",
+    "http": 200,
+    "bytes": 4229121,
+    "sha256": "75b7996d42aa9bf75d5757fc481623c7772e49b8c2a5ecc453109907108faf07"
+  },
+  {
+    "file": "inputs/continuation/routine_2023.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2023/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:54.523665+00:00",
+    "http": 200,
+    "bytes": 8117688,
+    "sha256": "c8dd3cf0dec5381b455367951767624a6f85262861419137b1134c0ab328674f"
+  },
+  {
+    "file": "inputs/continuation/routine_2024.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2024/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:55.275811+00:00",
+    "http": 200,
+    "bytes": 8963152,
+    "sha256": "d37e3799fd481ffbb70bd4bd1c6a7bb724970f7248e495d9b02850938a75b642"
+  },
+  {
+    "file": "inputs/continuation/routine_2025.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/2025/index.html",
+    "role": "routine catalog: Fig1A/1C/S5 and post-detection Md calibration",
+    "retrieved_utc": "2026-10-12T18:09:55.357067+00:00",
+    "http": 200,
+    "bytes": 11793284,
+    "sha256": "c085d87dc87d12feaa5505946a19f627e7b6fa00ca25c04cc1b1b08cdace62ed"
+  },
+  {
+    "file": "inputs/continuation/RITE_IGS20.tenv3",
+    "url": "https://geodesy.unr.edu/gps_timeseries/tenv3/IGS20/RITE.tenv3",
+    "role": "potential GNSS observations; station identity unverified",
+    "retrieved_utc": "2026-10-12T18:09:55.889675+00:00",
+    "http": 404,
+    "bytes": 278,
+    "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n<hr>\n<address>Apache/2.4.58 (Ubuntu) Server at geodesy.unr.edu Port 4"
+  },
+  {
+    "file": "inputs/continuation/RITE_station.html",
+    "url": "https://geodesy.unr.edu/NGLStationPages/stations/RITE.sta",
+    "role": "GNSS station metadata",
+    "retrieved_utc": "2026-10-12T18:09:55.985904+00:00",
+    "http": 404,
+    "bytes": 278,
+    "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n<hr>\n<address>Apache/2.4.58 (Ubuntu) Server at geodesy.unr.edu Port 4"
+  },
+  {
+    "file": "inputs/continuation/webring.html",
+    "url": "https://webring.gm.ingv.it/",
+    "role": "GNSS access information",
+    "retrieved_utc": "2026-10-12T18:09:56.063401+00:00",
+    "http": 200,
+    "bytes": 198309,
+    "sha256": "3af3ce67de3b877116b87d10a9c37c011e970f030d7cbac92b44b632e518ac8f"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "url": "https://webring.gm.ingv.it:44324/products/POS/ITRF",
+    "http": 200,
+    "file": "inputs/continuation/gnss_pos_ITRF.html",
+    "links": 5516,
+    "rite_links": [
+      [
+        "RITE00ITA\n                    \n\n                    \n                        -\n                    \n\n                    \n                        24/04/2026 18:48:42",
+        "https://webring.gm.ingv.it:44324/products/POS/ITRF/RITE00ITA"
+      ]
+    ]
+  },
+  {
+    "url": "https://webring.gm.ingv.it:44324/products/POS/IGS2",
+    "http": 200,
+    "file": "inputs/continuation/gnss_pos_IGS2.html",
+    "links": 2962,
+    "rite_links": []
+  },
+  {
+    "url": "https://webring.gm.ingv.it:44324/products/POS/EURA",
+    "http": 200,
+    "file": "inputs/continuation/gnss_pos_EURA.html",
+    "links": 5454,
+    "rite_links": [
+      [
+        "RITE00ITA\n                    \n\n                    \n                        -\n                    \n\n                    \n                        24/09/2025 21:33:31",
+        "https://webring.gm.ingv.it:44324/products/POS/EURA/RITE00ITA"
+      ]
+    ]
+  },
+  {
+    "url": "https://webring.gm.ingv.it:44324/products/POS/BERN",
+    "http": 200,
+    "file": "inputs/continuation/gnss_pos_BERN.html",
+    "links": 6,
+    "rite_links": []
+  }
+]

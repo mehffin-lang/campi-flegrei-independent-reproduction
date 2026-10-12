@@ -70,16 +70,12 @@ def reference_crop(item, logs):
 
 def paper_figure(item):
     lines = [r'\begin{figure}[H]', r'\centering']
-    if item['figure'] == '1':
-        lines += [r'\missingresult{Panel A}{No valid independent historical seismicity map.}']
     if item['figure'] == 'S15':
         lines += [r'\missingresult{Panels A and B}{The retained E1/E2 templates are different published examples and are not substituted.}']
-    for panel, path in zip(item['partial_panels'], item['independent_files']):
+    for panel, path in zip(item.get('file_labels',item['partial_panels']), item['independent_files']):
         lines += [r'\par\smallskip\textbf{Panel ' + tex(panel) + r': partially reproduced}\par',
                   r'\includegraphics[width=.94\linewidth,height=.66\textheight,keepaspectratio]{' + path + '}']
-    if item['figure'] == '1':
-        lines += [r'\missingresult{Panel C}{No valid independent historical seismicity-rate reconstruction.}']
-    elif item['figure'] == 'S15':
+    if item['figure'] == 'S15':
         lines += [r'\missingresult{Panel D}{No independently selected matching shallow-event example.}']
     elif item['missing']:
         lines += [r'\missingresult{All panels/views}{' + tex(item['missing']) + '}']
@@ -98,7 +94,7 @@ def comparison_page(item):
              r'\par\smallskip{\footnotesize Tan et al. (2025), ' + tex(item['source']) + ', p. ' + str(item['page']) + r'.\par DOI: 10.1126/science.adw9038.}',
              r'\end{minipage}\hfill', r'\begin{minipage}[t]{.485\textwidth}\vspace{0pt}\centering',
              r'{\large\bfseries Independent result}\par\medskip']
-    for panel, path in zip(item['partial_panels'], item['independent_files']):
+    for panel, path in zip(item.get('file_labels',item['partial_panels']), item['independent_files']):
         lines += [r'\textbf{Panel ' + tex(panel) + r' --- partially reproduced}\par\smallskip',
                   r'\includegraphics[width=\linewidth,height=4.3in,keepaspectratio]{' + path + '}',
                   r'\par\smallskip{\small ' + tex(item['caption']) + r'}\par\medskip']
@@ -180,15 +176,22 @@ def main():
     os.environ.update(TMPDIR=str(ROOT / 'tmp'), SOURCE_DATE_EPOCH='1791763200',
                       PYTHONDONTWRITEBYTECODE='1')
     baseline = json.loads((REPORT / 'layout_baseline.json').read_text())
-    before = {p: digest(p) for p in baseline['files']}
-    historical_match = before == baseline['files']
+    baseline_now = {p: digest(p) for p in baseline['files'] if Path(p).exists()}
+    historical_match = baseline_now == baseline['files']
+    removed_since_baseline = sorted(set(baseline['files'])-set(baseline_now))
+    # The authorized continuation adds scientific products beyond the earlier
+    # presentation baseline. Protect the current scientific files too.
+    protected=set(baseline_now)
+    for directory in ['data','figures','scripts','config']:
+        protected.update(str(p) for p in Path(directory).rglob('*') if p.is_file() and '__pycache__' not in p.parts)
+    before = {p: digest(p) for p in sorted(protected)}
     layout = json.loads((REPORT / 'figure_layout.json').read_text())
     assert [item['figure'] for item in layout] == ORDER
     rows = json.loads((ROOT / 'docs/panel_record.json').read_text())
     assert sorted(panel for item in layout for panel in item['panels']) == sorted(r['panel'] for r in rows)
     partial = [r['panel'] for r in rows if r['status'] == 'partially reproduced']
     assert partial == [panel for item in layout for panel in item['partial_panels']]
-    assert partial == ['1B', 'S1', 'S2', 'S15C']
+    assert all((ROOT/path).exists() for item in layout for path in item['independent_files'])
     for item in json.loads((ROOT / 'docs/file_inventory.json').read_text()):
         if item['file'].endswith('.pdf'):
             assert digest(item['file']) == item['sha256'], item['file']
@@ -214,7 +217,7 @@ def main():
                     if 'Overfull' in line or 'LaTeX Warning' in line or 'pdfTeX warning' in line or 'Package hyperref Warning' in line]
         assert not warnings, '\n'.join(warnings)
     verification = verify(layout)
-    after = {p: digest(p) for p in baseline['files']}
+    after = {p: digest(p) for p in before}
     assert after == before, 'Document build changed protected analysis files.'
     outputs = {str(p.relative_to(ROOT)): digest(p) for p in REPORT.rglob('*')
                if p.is_file() and p.suffix in ['.tex', '.pdf', '.png', '.json']
@@ -222,6 +225,7 @@ def main():
     verification.update(build_passed=True, analysis_executed=False,
                         protected_files_checked=len(before), protected_files_unchanged=True,
                         matches_pre_edit_snapshot=historical_match,
+                        removed_since_historical_baseline=removed_since_baseline,
                         partial_panels=partial, independently_reproduced_panels=[],
                         panels_without_valid_independent_comparison=[r['panel'] for r in rows if r['status'] == 'not reproduced'],
                         source_and_output_sha256=outputs)

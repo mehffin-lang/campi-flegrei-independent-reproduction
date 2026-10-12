@@ -1,0 +1,9 @@
+{
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8009907/",
+  "citation": "Tramelli et al. (2021), Scientific Reports 11, 7211, Table 1, doi:10.1038/s41598-021-86506-6",
+  "retrieved_utc": "2026-10-12",
+  "source_sha256": "0e0bfebef717c272a8ed91ef63005a447e1e760dbbf4289ff25f8baa2957dad5",
+  "convention": "Piecewise constant layers; depths of tops in km below sea level, Vp and Vs in km/s. Vs=Vp/1.78. First layer extended above sea level for station elevations; last layer extended to the bottom of the computational domain.",
+  "status": "Published alternative, NOT verified as the exact Calo--Tramelli 2018 GaMMA starting model",
+  "use": "Association sensitivity alternative only. VELEST starts from independently averaged fixed external 3D model."
+}

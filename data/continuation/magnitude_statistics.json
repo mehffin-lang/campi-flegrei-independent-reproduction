@@ -1,0 +1,11 @@
+{
+  "magnitudes": 22,
+  "matched_Md": 8,
+  "bin_width": 0.1,
+  "Mc": 0.30000000000000115,
+  "b": null,
+  "status": "Pilot maximum-curvature estimate; acquisition and magnitude selection incomplete",
+  "full_catalog_completeness": false,
+  "events_ge_Mc": 8,
+  "b_blocker": "Fewer than 20 magnitudes above pilot Mc; do not report a stable b estimate."
+}

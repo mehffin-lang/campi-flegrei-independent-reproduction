@@ -1,13 +1,19 @@
 """Final comparison only: never imported by observation processing or inversion."""
 from pathlib import Path
-import json,hashlib,zipfile
+import json,hashlib,zipfile,argparse
 import pandas as pd
 import numpy as np
 from pyproj import Geod
 ROOT=Path(__file__).resolve().parents[1]
 
-def compare():
-    ownfile=ROOT/'data/extended/initial_events.csv'
+def compare(dataset='extended'):
+    ownfile=ROOT/('data/continuation/velest_filtered.csv' if dataset=='continuation' else 'data/extended/initial_events.csv')
+    if dataset=='continuation' and not json.loads((ROOT/'data/continuation/velest_summary.json').read_text()).get('completed'):
+        summary=dict(status='Not run: no successful current VELEST pilot for final comparison')
+        out=ROOT/'data/comparison_continuation';out.mkdir(exist_ok=True)
+        (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
+        (ROOT/'report/continuation_final_comparison.tex').write_text('The current VELEST pilot did not complete; no comparison is reported.\n')
+        return summary
     digest=hashlib.sha256(ownfile.read_bytes()).hexdigest()
     own=pd.read_csv(ownfile)
     archive=ROOT/'science.adw9038_data_s1_to_s3.zip'
@@ -28,7 +34,7 @@ def compare():
     frame=pd.DataFrame(rows)
     dup=frame.loc[frame.matched,'reference_event_index'].duplicated(keep=False)
     frame.loc[dup[dup].index,'matched']=False
-    out=ROOT/'data/comparison';out.mkdir(exist_ok=True)
+    out=ROOT/('data/comparison_continuation' if dataset=='continuation' else 'data/comparison');out.mkdir(exist_ok=True)
     frame.to_csv(out/'tan_s1_final_comparison.csv',index=False)
     selected=frame[frame.matched]
     summary=dict(role='FINAL COMPARISON ONLY; not an input, target, filter or calibration for the independent workflow',
@@ -43,8 +49,11 @@ def compare():
     text=(f"A strictly downstream comparison against supplied Data S1 ({len(ref):,} events) finds {len(selected)} unique temporal matches within two seconds among {len(own)} provisional events. ")
     if len(selected):
         text+=f"For these matches, the median absolute origin-time difference is {summary['median_absolute_time_difference_s']:.3f} s and median horizontal difference is {summary['median_horizontal_difference_km']:.3f} km (maximum {summary['maximum_horizontal_difference_km']:.3f} km). "
-    text+='These differences describe an initial, uncalibrated sample. Temporal proximity alone does not prove event identity, and unmatched events are not declared false detections. The comparison changes no independent data or setting.\n'
-    (ROOT/'report/final_comparison.tex').write_text(text)
+    text+=('These differences describe a limited VELEST pilot without TomoDD or manual phase review. ' if dataset=='continuation' else 'These differences describe an initial, uncalibrated sample. ')
+    text+='Temporal proximity alone does not prove event identity, and unmatched events are not declared false detections. The comparison changes no independent data or setting.\n'
+    (ROOT/('report/continuation_final_comparison.tex' if dataset=='continuation' else 'report/final_comparison.tex')).write_text(text)
     return summary
 
-if __name__=='__main__':print(json.dumps(compare(),indent=2))
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--dataset',choices=['extended','continuation'],default='extended');args=parser.parse_args()
+    print(json.dumps(compare(args.dataset),indent=2))

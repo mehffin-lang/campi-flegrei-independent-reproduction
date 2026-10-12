@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://zenodo.org/api/records/22259337/files/RITE_2000_2025.txt/content",
+    "file": "inputs/continuation/RITE_2000_2025.txt",
+    "bytes": 445869,
+    "md5": "8cf4a7a3d3563c30d0ef4400cff0040b",
+    "sha256": "e4b4344a94e88e547603c25e2bef78dd951e158e975d39230d3349896a15ff02",
+    "retrieved_utc": "2026-10-12T18:29:26.201229+00:00"
+  },
+  {
+    "url": "https://zenodo.org/api/records/22259337/files/Time_Series_Format.txt/content",
+    "file": "inputs/continuation/Time_Series_Format.txt",
+    "bytes": 750,
+    "md5": "bd980c42aa0eb114156b70e810485045",
+    "sha256": "5414e7a117ff541a7a795145fa4fe903e25444ad00f62705c0dad14b36c55a42",
+    "retrieved_utc": "2026-10-12T18:29:26.930758+00:00"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://webring.gm.ingv.it:44324",
+    "http": 200,
+    "final_url": "https://webring.gm.ingv.it:44324/",
+    "bytes": 3359,
+    "file": "inputs/continuation/followup_0.txt"
+  },
+  {
+    "url": "https://www.earth-prints.org/server/api/core/bitstreams/4cb33e81-a06f-4dfc-96ba-8556006ef9c2/bundle",
+    "http": 200,
+    "final_url": "https://www.earth-prints.org/server/api/core/bitstreams/4cb33e81-a06f-4dfc-96ba-8556006ef9c2/bundle",
+    "bytes": 907,
+    "file": "inputs/continuation/followup_1.txt"
+  },
+  {
+    "url": "https://ran.protezionecivile.it/IT/index.php",
+    "http": 200,
+    "final_url": "https://ran.protezionecivile.it/IT/quakelive.php",
+    "bytes": 468067,
+    "file": "inputs/continuation/followup_2.txt"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "obsolete_stems": {
+    "historical_leveling_partial": "figure_1B_displacement",
+    "historical_catalog_context": "figure_1_combined",
+    "routine_catalog_context": "figure_S5_routine",
+    "coverage_partial": "continuation_coverage",
+    "stations_partial": "continuation_stations"
+  },
+  "removed_this_build": [],
+  "preserved": "Source scripts, saved baseline data, useful diagnostics, original uploads and Git history"
+}

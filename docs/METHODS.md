@@ -1,3 +1,5 @@
+> Historical baseline record. The current continuation updates are in [CONTINUATION.md](CONTINUATION.md), the post-supplement report documentation, and `data/continuation/`. Preserve the settings below as provenance for the earlier independent subset; they are not the current completion record.
+
 # Scientific specification and implementation limits
 
 ## Actual study

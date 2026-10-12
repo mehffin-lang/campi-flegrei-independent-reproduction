@@ -1,0 +1,185 @@
+[
+  {
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-O3",
+      "-Wall",
+      "-Wextra",
+      "-pedantic",
+      "src/method_checks.cpp",
+      "-o",
+      "build/method_checks"
+    ],
+    "returncode": 0,
+    "elapsed_s": 4.169260152964853,
+    "output": ""
+  },
+  {
+    "command": [
+      "./build/method_checks",
+      "config/method_checks.cfg",
+      "data"
+    ],
+    "returncode": 0,
+    "elapsed_s": 0.3109230779809877,
+    "output": "Documented-equation checks: PASS; failed checks=0\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/build_velest.py"
+    ],
+    "returncode": 0,
+    "elapsed_s": 11.428185457945801,
+    "output": "{'source_url': 'https://ethz.ch/content/dam/ethz/special-interest/erdw/geophysics/seismology-and-geodynamics-dam/document/velest.tar', 'source_sha256': 'd249d80ee3d0e36605d2395277eaaf50097bfa6a571fa95d1f423e5f25f80469', 'command': ['gfortran', '-std=legacy', '-O2', '-I', 'inputs/external/velest', 'build/velest-portable.f', '-o', 'build/velest'], 'returncode': 0, 'output': 'build/velest-portable.f:4384:25:\\n\\n       call RAYPATH(1,1,1,1.,1.,1.,1.,nl,thk,h,v,vsq,\\n                         1\\nWarning: Rank mismatch in argument \u2018x\u2019 at (1) (rank-1 and scalar) [-Wargument-mismatch]\\n', 'changes': ['Remove trailing comma in FORMAT', 'Replace SUN clock() with standard cpu_time', 'Replace SUN datetime with standard date_and_time'], 'scientific_execution': False}\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/plot_observations.py"
+    ],
+    "returncode": 0,
+    "elapsed_s": 17.572837216081098,
+    "output": ""
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/prepare_continuation.py"
+    ],
+    "returncode": 0,
+    "elapsed_s": 0.966371851041913,
+    "output": "Verified five layer tops, Vp (km/s), Vs=Vp/1.78; published alternative only.\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/continue_context.py"
+    ],
+    "returncode": 0,
+    "elapsed_s": 23.118562298011966,
+    "output": "{\n  \"gnss_rows\": 8743,\n  \"gnss_start\": \"2000-05-29 00:00:00+00:00\",\n  \"gnss_end\": \"2025-03-20 00:00:00+00:00\",\n  \"gnss_missing_calendar_days\": 319,\n  \"gnss_datum_offset_m\": 1.6114999999999997,\n  \"overlap_leveling_epochs\": 23,\n  \"overlap_offset_mad_m\": 0.002500000000000613,\n  \"old_release_common_days\": 6848,\n  \"old_release_median_datum_difference_m\": 0.17799,\n  \"old_release_demeaned_difference_rms_m\": 0.000290463646043523,\n  \"gnss_end_displacement_from_1905_m\": 3.0504,\n  \"historical_leveling_reference_m\": 3.464,\n  \"gnss2025_extension_rows\": 79,\n  \"gnss2025_release_rows\": 9025,\n  \"gnss2025_release_end\": \"2025-12-31 00:00:00+00:00\",\n  \"gnss2025_overlap_days\": 8664,\n  \"gnss2025_datum_offset_m\": 1.7895099999999997,\n  \"gnss2025_overlap_demeaned_rms_m\": 0.0002947320057560612,\n  \"leveling_rows\": 128,\n  \"routine_events\": 26425,\n  \"routine_located\": 16046,\n  \"routine_study_all\": 19274,\n  \"routine_study_located\": 12503,\n  \"published_study_located\": 12083,\n  \"located_count_difference_from_publication\": 420,\n  \"routine_Md_ge4\": 5,\n  \"published_Md_ge4\": 5,\n  \"figure_1C_cumulative_Md_gt02\": 7218,\n  \"routine_snapshot\": \"Retrieved 2026-10-12; live reviewed catalog, historical snapshot used by Tan not supplied\",\n  \"count_difference_explanation\": \"The current live catalog differs from the published snapshot. Revisions and unspecified selection may contribute; their separate effects cannot be established without the historical snapshot. No count matching/filter tuning was applied.\",\n  \"selection\": \"1A: located 2005-01-01 <= time < 2025-03-21; stars Md >=4. 1C: all monthly counts, cumulative strictly Md >0.2. S5: located 2022-01-21 <= time < 2025-03-21. No additional geographic or quality filter stated in these captions.\",\n  \"role\": \"External routine catalog expressly permitted for 1A,1C,S5 and documented post-detection Md calibration; isolated from picking and association.\"\n}\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_continuous.py",
+      "all",
+      "--workers",
+      "6",
+      "--frozen"
+    ],
+    "returncode": 0,
+    "elapsed_s": 1155.0350681749405,
+    "output": "Processing 0 new waveform files on 6 workers.\nEikonal Solver: \nIter 0, error = 999.941\nIter 1, error = 0.000\nTime: 5.994\nEikonal Solver: \nIter 0, error = 999.895\nIter 1, error = 0.000\nTime: 0.093\n\nClustering (eps=8.33):   0%|          | 0/31 [00:00<?, ?it/s]\nClustering (eps=8.33): 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 31/31 [00:00<00:00, 50889.79it/s]\nAssociating 30 clusters with 6 CPUs\n2022-01-21 picks 935 events 0\nEikonal Solver: \nIter 0, error = 999.941\nIter 1, error = 0.000\nTime: 0.102\nEikonal Solver: \nIter 0, error = 999.895\nIter 1, error = 0.000\nTime: 0.093\n\nClustering (eps=8.33):   0%|          | 0/13 [00:00<?, ?it/s]\nClustering (eps=8.33): 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 13/13 [00:00<00:00, 43069.47it/s]\nAssociating 12 clusters with 6 CPUs\n2023-01-01 picks 215 events 0\nEikonal Solver: \nIter 0, error = 999.941\nIter 1, error = 0.000\nTime: 0.092\nEikonal Solver: \nIter 0, error = 999.895\nIter 1, error = 0.000\nTime: 0.092\n\nClustering (eps=8.33):   0%|          | 0/53 [00:00<?, ?it/s]\nClustering (eps=8.33): 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 53/53 [00:00<00:00, 55435.94it/s]\nAssociating 52 clusters with 6 CPUs\n2024-01-01 picks 2219 events 4\nEikonal Solver: \nIter 0, error = 999.941\nIter 1, error = 0.000\nTime: 0.091\nEikonal Solver: \nIter 0, error = 999.895\nIter 1, error = 0.000\nTime: 0.091\n\nClustering (eps=8.33):   0%|          | 0/604 [00:00<?, ?it/s]\nClustering (eps=8.33): 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 604/604 [00:00<00:00, 16307.96it/s]\nAssociating 603 clusters with 6 CPUs\n2025-03-19 picks 18335 events 208\nEikonal Solver: \nIter 0, error = 999.941\nIter 1, error = 0.000\nTime: 0.093\nEikonal Solver: \nIter 0, error = 999.895\nIter 1, error = 0.000\nTime: 0.092\n\nClustering (eps=8.33):   0%|          | 0/1057 [00:00<?, ?it/s]\nClustering (eps=8.33):  41%|\u2588\u2588\u2588\u2588\u258f     | 437/1057 [00:00<00:00, 3776.85it/s]\nClustering (eps=8.33): 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1057/1057 [00:00<00:00, 6228.31it/s]\n\nClustering (eps=6.94):   0%|          | 0/1062 [00:00<?, ?it/s]\nClustering (eps=6.94): 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1062/1062 [00:00<00:00, 11975.48it/s]\nAssociating 1061 clusters with 6 CPUs\n2025-03-20 picks 41332 events 528\n{\n  \"picks\": 63036,\n  \"p_picks\": 8894,\n  \"s_picks\": 54142,\n  \"events\": 740,\n  \"assigned_picks\": 5240,\n  \"processed_channel_hours\": 2955.8238833335367,\n  \"stations\": [\n    \"CAAM\",\n    \"CAWE\",\n    \"CBAC\",\n    \"CBAG\",\n    \"CCAP\",\n    \"CFB1\",\n    \"CFB3\",\n    \"CFMN\",\n    \"CGAU\",\n    \"CLAC\",\n    \"CMIS\",\n    \"CMSN\",\n    \"CMTS\",\n    \"CNIS\",\n    \"COLB\",\n    \"CPIS\",\n    \"CPOZ\",\n    \"CQUE\",\n    \"CREM\",\n    \"CRUS\",\n    \"CSFT\",\n    \"CSOB\",\n    \"CSOC\",\n    \"CSTH\",\n    \"CUMA\",\n    \"PTMR\"\n  ],\n  \"files\": 318,\n  \"checks\": {\n    \"probability_bounds\": true,\n    \"excluded_s_absent\": true,\n    \"minimum_six_picks\": true,\n    \"unique_assigned_picks\": true,\n    \"valid_pick_indices\": true\n  },\n  \"status\": \"Partial: published alternative starting profile, incomplete continuous acquisition, no VELEST/TomoDD final catalog.\",\n  \"alternative_profile\": \"Tramelli et al. (2021), Table 1; not asserted identical to Calo--Tramelli (2018).\",\n  \"settings\": {\n    \"highpass_hz\": 1,\n    \"corners\": 4,\n    \"zerophase\": false,\n    \"P_threshold\": 0.3,\n    \"S_threshold\": 0.3,\n    \"core_s\": 1800,\n    \"context_s\": 30,\n    \"merge_tolerance_s\": 0.25,\n    \"exclude_s\": [\n      \"CASE\",\n      \"CFB1\",\n      \"CFB3\"\n    ]\n  }\n}\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/check_starting_profile.py"
+    ],
+    "returncode": 0,
+    "elapsed_s": 16.764898355002515,
+    "output": "Eikonal Solver: \nIter 0, error = 999.941\nIter 1, error = 0.000\nTime: 5.880\nEikonal Solver: \nIter 0, error = 999.895\nIter 1, error = 0.000\nTime: 0.093\nEikonal Solver: \nIter 0, error = 999.971\nIter 1, error = 0.000\nTime: 0.371\nEikonal Solver: \nIter 0, error = 999.948\nIter 1, error = 0.000\nTime: 0.372\n{'checks': {'p_grid_error_bound': True, 'p_refinement': True, 's_grid_error_bound': True, 's_refinement': True}, 'max_coarse_P_error_s': np.float64(0.040641717307283054), 'max_coarse_S_error_s': np.float64(0.07234235455858107), 'max_fine_P_error_s': np.float64(0.02032082497329868), 'max_fine_S_error_s': np.float64(0.036171156667345716), 'scope': 'Numerical vertical layered-ray consistency and refinement only; does not establish the alternative profile as the exact 2018 model or validate earthquake locations.'}\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/audit_continuation.py"
+    ],
+    "returncode": 0,
+    "elapsed_s": 7.383230117964558,
+    "output": "{'stations': 26, 'channels': 83, 'response_covered_channel_hours': 2955.823883333537, 'missing_response_channel_hours': 0.0, 'missing_response_intervals': 0, 'maximum_metadata_coordinate_difference_m': 16.906168732523646, 'note': 'Only actual returned intervals count. A response must have sensitivity and stages with overlapping epoch. This does not independently validate instrument calibration. Unobserved intervals are gaps in this retrieval, not assertions that the archive has no data.'}\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/downstream_checks.py",
+      "--dataset",
+      "continuation"
+    ],
+    "returncode": 0,
+    "elapsed_s": 679.3052521380596,
+    "output": "Eikonal Solver: \nIter 0, error = 999.941\nIter 1, error = 0.000\nTime: 6.042\nEikonal Solver: \nIter 0, error = 999.895\nIter 1, error = 0.000\nTime: 0.096\nMeasured events 1 of 740\nMeasured events 26 of 740\nMeasured events 51 of 740\nMeasured events 76 of 740\nMeasured events 101 of 740\nMeasured events 126 of 740\nMeasured events 151 of 740\nMeasured events 176 of 740\nMeasured events 201 of 740\nMeasured events 226 of 740\nMeasured events 251 of 740\nMeasured events 276 of 740\nMeasured events 301 of 740\nMeasured events 326 of 740\nMeasured events 351 of 740\nMeasured events 376 of 740\nMeasured events 401 of 740\nMeasured events 426 of 740\nMeasured events 451 of 740\nMeasured events 476 of 740\nMeasured events 501 of 740\nMeasured events 526 of 740\nMeasured events 551 of 740\nMeasured events 576 of 740\nMeasured events 601 of 740\nMeasured events 626 of 740\nMeasured events 651 of 740\nMeasured events 676 of 740\nMeasured events 701 of 740\nMeasured events 726 of 740\nEikonal Solver: \nIter 0, error = 999.941\nIter 1, error = 0.000\nTime: 6.157\nEikonal Solver: \nIter 0, error = 999.895\nIter 1, error = 0.000\nTime: 0.095\nEikonal Solver: \nIter 0, error = 999.941\nIter 1, error = 0.000\nTime: 6.023\nEikonal Solver: \nIter 0, error = 999.895\nIter 1, error = 0.000\nTime: 0.095\nEikonal Solver: \nIter 0, error = 999.941\nIter 1, error = 0.000\nTime: 6.271\nEikonal Solver: \nIter 0, error = 999.895\nIter 1, error = 0.000\nTime: 0.096\nEikonal Solver: \nIter 0, error = 999.941\nIter 1, error = 0.000\nTime: 6.247\nEikonal Solver: \nIter 0, error = 999.895\nIter 1, error = 0.000\nTime: 0.095\n{'events_evaluated': 740, 'calibration_eligible': 101, 'amplitude_measurements': 12473, 'snr_passing': 2043, 'event_pairs_checked': 273430, 'pairs_with_two_snr_stations': 2313, 'magnitude_edges': 377, 'calibrated_magnitudes': 22, 'routine_matches': 15, 'ambiguous_reference_claims_rejected': 20, 'measurement_errors': [], 'focal_mechanisms': 0, 'relocated_events': 0, 'remaining': 'This magnitude pilot uses initial associations. See the separate VELEST record for its later inversion. TomoDD, HypoDD and focal processing remain unfinished; these magnitudes are not final relocated-catalog values.'}\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/run_velest.py"
+    ],
+    "returncode": 0,
+    "elapsed_s": 8.619858062942512,
+    "output": "{'name': 'caldera_round1', 'returncode': 0, 'valid_outputs': True, 'workdir': 'tmp/continuation/velest/caldera_round1', 'console_tail': ' >>> Start of program VELEST at 20261012 124639.300  <<<\\n\\n  finished Iteration #  0  at   20261012 124639.336      CPU-sec =     0.0\\n  finished Iteration #  1  at   20261012 124639.388      CPU-sec =     0.1\\n  finished Iteration #  2  at   20261012 124639.439      CPU-sec =     0.1\\n  finished Iteration #  3  at   20261012 124639.518      CPU-sec =     0.2\\n  finished Iteration #  4  at   20261012 124639.569      CPU-sec =     0.3\\n  finished Iteration #  5  at   20261012 124639.649      CPU-sec =     0.3\\n  finished Iteration #  6  at   20261012 124639.728      CPU-sec =     0.4\\n  finished Iteration #  7  at   20261012 124639.728      CPU-sec =     0.5\\n >>>   End of program VELEST at 20261012 124639.789  <<< [ CPU-sec :     0.5]\\n'}\n{'name': 'caldera_round2', 'returncode': 0, 'valid_outputs': True, 'workdir': 'tmp/continuation/velest/caldera_round2', 'console_tail': ' >>> Start of program VELEST at 20261012 124639.798  <<<\\n\\n  finished Iteration #  0  at   20261012 124639.836      CPU-sec =     0.0\\n  finished Iteration #  1  at   20261012 124639.898      CPU-sec =     0.1\\n  finished Iteration #  2  at   20261012 124639.960      CPU-sec =     0.2\\n  finished Iteration #  3  at   20261012 124640.021      CPU-sec =     0.2\\n  finished Iteration #  4  at   20261012 124640.083      CPU-sec =     0.3\\n  finished Iteration #  5  at   20261012 124640.144      CPU-sec =     0.3\\n  finished Iteration #  6  at   20261012 124640.206      CPU-sec =     0.4\\n  finished Iteration #  7  at   20261012 124640.206      CPU-sec =     0.5\\n >>>   End of program VELEST at 20261012 124640.277  <<< [ CPU-sec :     0.5]\\n'}\n{'name': 'central_round1', 'returncode': 0, 'valid_outputs': True, 'workdir': 'tmp/continuation/velest/central_round1', 'console_tail': ' >>> Start of program VELEST at 20261012 124640.608  <<<\\n\\n  finished Iteration #  0  at   20261012 124640.643      CPU-sec =     0.0\\n  finished Iteration #  1  at   20261012 124640.695      CPU-sec =     0.1\\n  finished Iteration #  2  at   20261012 124640.747      CPU-sec =     0.1\\n  finished Iteration #  3  at   20261012 124640.827      CPU-sec =     0.2\\n  finished Iteration #  4  at   20261012 124640.878      CPU-sec =     0.3\\n  finished Iteration #  5  at   20261012 124640.958      CPU-sec =     0.3\\n  finished Iteration #  6  at   20261012 124641.010      CPU-sec =     0.4\\n  finished Iteration #  7  at   20261012 124641.010      CPU-sec =     0.5\\n >>>   End of program VELEST at 20261012 124641.100  <<< [ CPU-sec :     0.5]\\n'}\n{'name': 'central_round2', 'returncode': 0, 'valid_outputs': True, 'workdir': 'tmp/continuation/velest/central_round2', 'console_tail': ' >>> Start of program VELEST at 20261012 124641.108  <<<\\n\\n  finished Iteration #  0  at   20261012 124641.147      CPU-sec =     0.0\\n  finished Iteration #  1  at   20261012 124641.242      CPU-sec =     0.1\\n  finished Iteration #  2  at   20261012 124641.337      CPU-sec =     0.2\\n  finished Iteration #  3  at   20261012 124641.337      CPU-sec =     0.4\\n >>>   End of program VELEST at 20261012 124641.532  <<< [ CPU-sec :     0.4]\\n'}\n{'name': 'whole_catalog_1', 'returncode': -11, 'valid_outputs': False, 'workdir': 'tmp/continuation/velest/whole_catalog_1', 'console_tail': ' >>> Start of program VELEST at 20261012 124643.622  <<<\\n\\n WARNING:  Station: >>>S001<<< not found in stationlist!\\n Phase therefore skipped\\n\\n\\nProgram received signal SIGSEGV: Segmentation fault - invalid memory reference.\\n\\nBacktrace for this error:\\n#0  0x7efeb8de4171 in ???\\n#1  0x7efeb8de3313 in ???\\n#2  0x7efeb82625af in ???\\n#3  0x41760b in ???\\n#4  0x42b6d1 in ???\\n#5  0x40123c in ???\\n#6  0x7efeb824e7e4 in ???\\n#7  0x40127d in ???\\n#8  0xffffffffffffffff in ???\\n'}\n{\n  \"calibration_events\": 98,\n  \"nonpositive_or_invalid_travel_times_removed\": 41,\n  \"eligible_whole_catalog_events\": 708,\n  \"selection\": \"Positive propagation times, more than six retained picks and azimuthal gap <180 deg (generic VELEST guidance). Positive-time filtering is an explicit additional consistency rule. Pilot subset lacks full-study coverage and independent manual review; not the published 373-event selection.\",\n  \"runs\": [\n    {\n      \"name\": \"caldera_round1\",\n      \"returncode\": 0,\n      \"valid_outputs\": true,\n      \"workdir\": \"tmp/continuation/velest/caldera_round1\",\n      \"console_tail\": \" >>> Start of program VELEST at 20261012 124639.300  <<<\\n\\n  finished Iteration #  0  at   20261012 124639.336      CPU-sec =     0.0\\n  finished Iteration #  1  at   20261012 124639.388      CPU-sec =     0.1\\n  finished Iteration #  2  at   20261012 124639.439      CPU-sec =     0.1\\n  finished Iteration #  3  at   20261012 124639.518      CPU-sec =     0.2\\n  finished Iteration #  4  at   20261012 124639.569      CPU-sec =     0.3\\n  finished Iteration #  5  at   20261012 124639.649      CPU-sec =     0.3\\n  finished Iteration #  6  at   20261012 124639.728      CPU-sec =     0.4\\n  finished Iteration #  7  at   20261012 124639.728      CPU-sec =     0.5\\n >>>   End of program VELEST at 20261012 124639.789  <<< [ CPU-sec :     0.5]\\n\"\n    },\n    {\n      \"name\": \"caldera_round2\",\n      \"returncode\": 0,\n      \"valid_outputs\": true,\n      \"workdir\": \"tmp/continuation/velest/caldera_round2\",\n      \"console_tail\": \" >>> Start of program VELEST at 20261012 124639.798  <<<\\n\\n  finished Iteration #  0  at   20261012 124639.836      CPU-sec =     0.0\\n  finished Iteration #  1  at   20261012 124639.898      CPU-sec =     0.1\\n  finished Iteration #  2  at   20261012 124639.960      CPU-sec =     0.2\\n  finished Iteration #  3  at   20261012 124640.021      CPU-sec =     0.2\\n  finished Iteration #  4  at   20261012 124640.083      CPU-sec =     0.3\\n  finished Iteration #  5  at   20261012 124640.144      CPU-sec =     0.3\\n  finished Iteration #  6  at   20261012 124640.206      CPU-sec =     0.4\\n  finished Iteration #  7  at   20261012 124640.206      CPU-sec =     0.5\\n >>>   End of program VELEST at 20261012 124640.277  <<< [ CPU-sec :     0.5]\\n\"\n    },\n    {\n      \"name\": \"central_round1\",\n      \"returncode\": 0,\n      \"valid_outputs\": true,\n      \"workdir\": \"tmp/continuation/velest/central_round1\",\n      \"console_tail\": \" >>> Start of program VELEST at 20261012 124640.608  <<<\\n\\n  finished Iteration #  0  at   20261012 124640.643      CPU-sec =     0.0\\n  finished Iteration #  1  at   20261012 124640.695      CPU-sec =     0.1\\n  finished Iteration #  2  at   20261012 124640.747      CPU-sec =     0.1\\n  finished Iteration #  3  at   20261012 124640.827      CPU-sec =     0.2\\n  finished Iteration #  4  at   20261012 124640.878      CPU-sec =     0.3\\n  finished Iteration #  5  at   20261012 124640.958      CPU-sec =     0.3\\n  finished Iteration #  6  at   20261012 124641.010      CPU-sec =     0.4\\n  finished Iteration #  7  at   20261012 124641.010      CPU-sec =     0.5\\n >>>   End of program VELEST at 20261012 124641.100  <<< [ CPU-sec :     0.5]\\n\"\n    },\n    {\n      \"name\": \"central_round2\",\n      \"returncode\": 0,\n      \"valid_outputs\": true,\n      \"workdir\": \"tmp/continuation/velest/central_round2\",\n      \"console_tail\": \" >>> Start of program VELEST at 20261012 124641.108  <<<\\n\\n  finished Iteration #  0  at   20261012 124641.147      CPU-sec =     0.0\\n  finished Iteration #  1  at   20261012 124641.242      CPU-sec =     0.1\\n  finished Iteration #  2  at   20261012 124641.337      CPU-sec =     0.2\\n  finished Iteration #  3  at   20261012 124641.337      CPU-sec =     0.4\\n >>>   End of program VELEST at 20261012 124641.532  <<< [ CPU-sec :     0.4]\\n\"\n    }\n  ],\n  \"completed\": false,\n  \"reference_station\": \"IV.CSOB.\",\n  \"chosen_region\": \"caldera\",\n  \"calibration_rms_s\": 0.34817893593463034,\n  \"model_checks\": {\n    \"positive_velocities\": true,\n    \"Vp_greater_than_Vs\": true,\n    \"ordered_interfaces\": true,\n    \"minimum_VpVs\": 1.1787439613526571,\n    \"maximum_VpVs\": 5.054054054054054,\n    \"between_starting_models_rms_Vp_km_s\": 0.28580712777275913,\n    \"between_starting_models_rms_Vs_km_s\": 0.35100535879778516,\n    \"independent_accuracy_validated\": false\n  },\n  \"error\": \"RuntimeError('{\\\"name\\\": \\\"whole_catalog_1\\\", \\\"returncode\\\": -11, \\\"valid_outputs\\\": false, \\\"workdir\\\": \\\"tmp/continuation/velest/whole_catalog_1\\\", \\\"console_tail\\\": \\\" >>> Start of program VELEST at 20261012 124643.622  <<<\\\\\\\\n\\\\\\\\n WARNING:  Station: >>>S001<<< not found in stationlist!\\\\\\\\n Phase therefore skipped\\\\\\\\n\\\\\\\\n\\\\\\\\nProgram received signal SIGSEGV: Segmentation fault - invalid memory reference.\\\\\\\\n\\\\\\\\nBacktrace for this error:\\\\\\\\n#0  0x7efeb8de4171 in ???\\\\\\\\n#1  0x7efeb8de3313 in ???\\\\\\\\n#2  0x7efeb82625af in ???\\\\\\\\n#3  0x41760b in ???\\\\\\\\n#4  0x42b6d1 in ???\\\\\\\\n#5  0x40123c in ???\\\\\\\\n#6  0x7efeb824e7e4 in ???\\\\\\\\n#7  0x40127d in ???\\\\\\\\n#8  0xffffffffffffffff in ???\\\\\\\\n\\\"}')\",\n  \"status\": \"failed pilot; outputs must not be treated as calibrated results\"\n}\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/magnitude_statistics.py"
+    ],
+    "returncode": 0,
+    "elapsed_s": 0.9415237510111183,
+    "output": "{'magnitudes': 22, 'matched_Md': 8, 'bin_width': 0.1, 'Mc': 0.30000000000000115, 'b': None, 'status': 'Pilot maximum-curvature estimate; acquisition and magnitude selection incomplete', 'full_catalog_completeness': False, 'events_ge_Mc': 8, 'b_blocker': 'Fewer than 20 magnitudes above pilot Mc; do not report a stable b estimate.'}\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/location_consistency.py",
+      "--dataset",
+      "continuation"
+    ],
+    "returncode": 0,
+    "elapsed_s": 28.81264663708862,
+    "output": "Eikonal Solver: \nIter 0, error = 999.941\nIter 1, error = 0.000\nTime: 6.118\nEikonal Solver: \nIter 0, error = 999.895\nIter 1, error = 0.000\nTime: 0.095\n{'paired_observations': 1043, 'nonpositive_sp': 36, 'rms_sp_residual_s': 0.665688396733891, 'associated_cpoz_p_picks': 40, 'sector_gathers_generated': 0, 'scope': 'Same independently fitted provisional travel-time model: internal consistency only, not independent location accuracy. No author picks or locations used. Relocated ring sectors are not established.'}\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/extend_hybrid_scan.py",
+      "--dataset",
+      "continuation"
+    ],
+    "returncode": 0,
+    "elapsed_s": 55.78661302803084,
+    "output": "{'intervals': 32, 'valid_hours': 59.75701388888888, 'candidates': 702, 'reviewed_hybrid_events': 0, 'full_study_search_complete': False}\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/plot_continuation.py"
+    ],
+    "returncode": 0,
+    "elapsed_s": 24.244418515008874,
+    "output": ""
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/final_comparison.py",
+      "--dataset",
+      "continuation"
+    ],
+    "returncode": 0,
+    "elapsed_s": 1.0916869629872963,
+    "output": "{\n  \"status\": \"Not run: no successful current VELEST pilot for final comparison\"\n}\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/continuation_report.py"
+    ],
+    "returncode": 0,
+    "elapsed_s": 0.9877545059425756,
+    "output": "{'independently reproduced': 0, 'partially reproduced': 11, 'not reproduced': 52}\n"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/build_documents.py",
+      "--clean"
+    ],
+    "returncode": 1,
+    "elapsed_s": 49.05853094207123,
+    "output": "Compiling report pass 1\nCompiling report pass 2\nTraceback (most recent call last):\n  File \"/home/mehffin/campi-flegrei-independent-reproduction/scripts/build_documents.py\", line 237, in <module>\n    main()\n  File \"/home/mehffin/campi-flegrei-independent-reproduction/scripts/build_documents.py\", line 218, in main\n    assert not warnings, '\\n'.join(warnings)\n           ^^^^^^^^^^^^\nAssertionError: Overfull \\hbox (83.84262pt too wide) in paragraph at lines 1--46\nOverfull \\hbox (63.45203pt too wide) in paragraph at lines 86--43\n"
+  }
+]

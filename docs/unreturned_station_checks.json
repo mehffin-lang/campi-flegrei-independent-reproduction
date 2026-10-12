@@ -1,0 +1,98 @@
+[
+  {
+    "network": "IV",
+    "station": "V0106",
+    "role": "Access check only; not processed coverage",
+    "retrieved_utc": "2026-10-12T19:16:23.115094+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=V0106&channel=HH%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 204,
+    "bytes": 0,
+    "file": "inputs/continuation/access_checks/IV_V0106_availability.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data_rows": 0
+  },
+  {
+    "network": "IV",
+    "station": "CDOV",
+    "role": "Access check only; not processed coverage",
+    "retrieved_utc": "2026-10-12T19:16:23.124152+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CDOV&channel=EH%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 204,
+    "bytes": 0,
+    "file": "inputs/continuation/access_checks/IV_CDOV_availability.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data_rows": 0
+  },
+  {
+    "network": "IV",
+    "station": "CROS",
+    "role": "Access check only; not processed coverage",
+    "retrieved_utc": "2026-10-12T19:16:23.129339+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CROS&channel=HH%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 204,
+    "bytes": 0,
+    "file": "inputs/continuation/access_checks/IV_CROS_availability.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data_rows": 0
+  },
+  {
+    "network": "IV",
+    "station": "CASE",
+    "role": "Access check only; not processed coverage",
+    "retrieved_utc": "2026-10-12T19:16:23.134601+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CASE&channel=EH%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 204,
+    "bytes": 0,
+    "file": "inputs/continuation/access_checks/IV_CASE_availability.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data_rows": 0
+  },
+  {
+    "network": "IV",
+    "station": "V0102",
+    "role": "Access check only; not processed coverage",
+    "retrieved_utc": "2026-10-12T19:16:23.860937+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=V0102&channel=EH%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 204,
+    "bytes": 0,
+    "file": "inputs/continuation/access_checks/IV_V0102_availability.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data_rows": 0
+  },
+  {
+    "network": "IV",
+    "station": "V0105",
+    "role": "Access check only; not processed coverage",
+    "retrieved_utc": "2026-10-12T19:16:23.889340+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=V0105&channel=EH%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 204,
+    "bytes": 0,
+    "file": "inputs/continuation/access_checks/IV_V0105_availability.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data_rows": 0
+  },
+  {
+    "network": "IV",
+    "station": "V0104",
+    "role": "Access check only; not processed coverage",
+    "retrieved_utc": "2026-10-12T19:16:23.905248+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=V0104&channel=HH%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 204,
+    "bytes": 0,
+    "file": "inputs/continuation/access_checks/IV_V0104_availability.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data_rows": 0
+  },
+  {
+    "network": "IV",
+    "station": "CMDP",
+    "role": "Access check only; not processed coverage",
+    "retrieved_utc": "2026-10-12T19:16:23.923791+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CMDP&channel=HH%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 204,
+    "bytes": 0,
+    "file": "inputs/continuation/access_checks/IV_CMDP_availability.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data_rows": 0
+  }
+]

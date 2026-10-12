@@ -1,3 +1,5 @@
+> Historical baseline record. The current continuation updates are in [CONTINUATION.md](CONTINUATION.md), the post-supplement report documentation, and `data/continuation/`. Preserve the settings below as provenance for the earlier independent subset; they are not the current completion record.
+
 # Current provenance
 
 Primary specifications are the unchanged local `tanmodel.pdf` and `tanmodelsupp.pdf`. The source gate verified text, methods, captions, sizes and hashes before replacing outputs. Both uploaded ZIPs were listed and CRC-tested without execution. `docs/resumed_source_check.json` records the inventory. Data S3 was read only for a final count audit: 74 rows and 58 gCAP entries. No supplied solution is an analysis input.

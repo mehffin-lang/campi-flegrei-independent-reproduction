@@ -1,0 +1,262 @@
+[
+  {
+    "network": "IV",
+    "station": "CAAM",
+    "retrieved_utc": "2026-10-12T18:12:40.150304+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CAAM&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 1272793,
+    "file": "inputs/continuation/availability/IV_CAAM.txt",
+    "sha256": "9876e0347899ebc457e1708e5bba9853d0aad9ab9bfcb5d1c3e7b654417e4fd3"
+  },
+  {
+    "network": "IV",
+    "station": "CAWE",
+    "retrieved_utc": "2026-10-12T18:12:40.151162+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CAWE&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 150856,
+    "file": "inputs/continuation/availability/IV_CAWE.txt",
+    "sha256": "d422f11cb56e7737fa5726f0454515f02c9b14d1e93b75a9d01fef757bfe285e"
+  },
+  {
+    "network": "IV",
+    "station": "CBAC",
+    "retrieved_utc": "2026-10-12T18:12:40.151708+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CBAC&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 208190,
+    "file": "inputs/continuation/availability/IV_CBAC.txt",
+    "sha256": "e102064a27f232f01b087f4949804fd33329d3eb7a6c768da5e58ebbebad9b2e"
+  },
+  {
+    "network": "IV",
+    "station": "CBAG",
+    "retrieved_utc": "2026-10-12T18:12:40.152463+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CBAG&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 1812343,
+    "file": "inputs/continuation/availability/IV_CBAG.txt",
+    "sha256": "cfd7a9cbf8bbfd0d031ded802fa7b34139f372a7874bd8753e96d4865850adad"
+  },
+  {
+    "network": "IV",
+    "station": "CCAP",
+    "retrieved_utc": "2026-10-12T18:12:42.708340+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CCAP&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 559824,
+    "file": "inputs/continuation/availability/IV_CCAP.txt",
+    "sha256": "f5ab03fca8b2b7da3a8ad2d56e9bc66d843c778b1c7635ff5eda2d5b626df5d7"
+  },
+  {
+    "network": "IV",
+    "station": "CFB1",
+    "retrieved_utc": "2026-10-12T18:12:44.824380+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CFB1&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 153472,
+    "file": "inputs/continuation/availability/IV_CFB1.txt",
+    "sha256": "f22f2194e66eca42f6bf7b9e1ba5d45b036b43961520c9efd7160579efb3b38d"
+  },
+  {
+    "network": "IV",
+    "station": "CFB3",
+    "retrieved_utc": "2026-10-12T18:12:46.068992+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CFB3&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 15914,
+    "file": "inputs/continuation/availability/IV_CFB3.txt",
+    "sha256": "a41727295267bd5f8fc7f776fa66bbdc202d8904c4d4b37451efd676ce414782"
+  },
+  {
+    "network": "IV",
+    "station": "CFMN",
+    "retrieved_utc": "2026-10-12T18:12:46.309264+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CFMN&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 932931,
+    "file": "inputs/continuation/availability/IV_CFMN.txt",
+    "sha256": "1d4ad76a54d582f24fea6d52d3bd4326c8c998e696f545d15800ec6cd84a4c66"
+  },
+  {
+    "network": "IV",
+    "station": "CMIS",
+    "retrieved_utc": "2026-10-12T18:12:46.880312+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CMIS&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 39567,
+    "file": "inputs/continuation/availability/IV_CMIS.txt",
+    "sha256": "1ff52532110f1800262b12bf11864ba75c6f355ef615e6561d53245b515a9fc4"
+  },
+  {
+    "network": "IV",
+    "station": "CMSN",
+    "retrieved_utc": "2026-10-12T18:12:49.056591+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CMSN&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 1265708,
+    "file": "inputs/continuation/availability/IV_CMSN.txt",
+    "sha256": "5d6a72fb934b40c154035369e1874ceb6e91e4db276d27eeb4f301bf5575198d"
+  },
+  {
+    "network": "IV",
+    "station": "CMTS",
+    "retrieved_utc": "2026-10-12T18:12:50.754405+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CMTS&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 160775,
+    "file": "inputs/continuation/availability/IV_CMTS.txt",
+    "sha256": "12bed138daa7352af86dc891b0843676de791a8bafea43968505e8793dd86845"
+  },
+  {
+    "network": "IV",
+    "station": "CNIS",
+    "retrieved_utc": "2026-10-12T18:12:50.972346+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CNIS&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 127421,
+    "file": "inputs/continuation/availability/IV_CNIS.txt",
+    "sha256": "63a9b247ddc88c2bd565bbb03fff615247bcff1d3f36e2c3c301d0d9a09f0168"
+  },
+  {
+    "network": "IV",
+    "station": "COLB",
+    "retrieved_utc": "2026-10-12T18:12:52.109720+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=COLB&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 37788447,
+    "file": "inputs/continuation/availability/IV_COLB.txt",
+    "sha256": "5a2e35cc4f31ca0b4a19fd9b9726588bc39b36487832b3062a950b21f4ff533f"
+  },
+  {
+    "network": "IV",
+    "station": "CPIS",
+    "retrieved_utc": "2026-10-12T18:12:52.400739+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CPIS&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 100062,
+    "file": "inputs/continuation/availability/IV_CPIS.txt",
+    "sha256": "ec78062034b3920ee7e71b38f53b3b4dc7f94958b1d385dc23d4c3ec46dca297"
+  },
+  {
+    "network": "IV",
+    "station": "CPOZ",
+    "retrieved_utc": "2026-10-12T18:12:53.774206+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CPOZ&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 540640,
+    "file": "inputs/continuation/availability/IV_CPOZ.txt",
+    "sha256": "2590bed03b26766467c5b36ba66f5bdbcca750c367c152b6e549afa4f16fb2e1"
+  },
+  {
+    "network": "IV",
+    "station": "CQUE",
+    "retrieved_utc": "2026-10-12T18:12:55.131464+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CQUE&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 67580,
+    "file": "inputs/continuation/availability/IV_CQUE.txt",
+    "sha256": "9a1646b6f0760acd1688a3004e2c7959723d839280e63512f692c789d5e08b41"
+  },
+  {
+    "network": "IV",
+    "station": "CRUS",
+    "retrieved_utc": "2026-10-12T18:12:55.889959+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CRUS&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 8938,
+    "file": "inputs/continuation/availability/IV_CRUS.txt",
+    "sha256": "05f42210e396f93de51adaa29d2e46f1db9fda4e4fa14202b870e7b0cf452865"
+  },
+  {
+    "network": "IV",
+    "station": "CSFT",
+    "retrieved_utc": "2026-10-12T18:12:56.633485+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CSFT&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 472733,
+    "file": "inputs/continuation/availability/IV_CSFT.txt",
+    "sha256": "828e53c70a2d74520baf11170a14c57a04bf232a348550169c79e3feaaf575b5"
+  },
+  {
+    "network": "IV",
+    "station": "CSOB",
+    "retrieved_utc": "2026-10-12T18:12:56.646465+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CSOB&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 375069,
+    "file": "inputs/continuation/availability/IV_CSOB.txt",
+    "sha256": "a0e3dc8e6a7d30af64a203115a4e84f376b22ecf133560f5f2ad414afe92ea51"
+  },
+  {
+    "network": "IV",
+    "station": "CSTH",
+    "retrieved_utc": "2026-10-12T18:12:59.946272+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CSTH&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 262908,
+    "file": "inputs/continuation/availability/IV_CSTH.txt",
+    "sha256": "e3ab3c60e28d947814f97e2d755ca9719edc78719afce232a1f8633fc7c2c936"
+  },
+  {
+    "network": "IV",
+    "station": "CUMA",
+    "retrieved_utc": "2026-10-12T18:13:03.346310+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CUMA&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 5450,
+    "file": "inputs/continuation/availability/IV_CUMA.txt",
+    "sha256": "e4e67ea382cca3ecefd613110b4f3909028c988f948e8a1ad1b872a569e77ca9"
+  },
+  {
+    "network": "IV",
+    "station": "PTMR",
+    "retrieved_utc": "2026-10-12T18:13:03.948217+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=PTMR&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 286561,
+    "file": "inputs/continuation/availability/IV_PTMR.txt",
+    "sha256": "b5c68919ef8fd5627904bd8494f0c65a72fdb2c4003932c7afad6dc1ab93f7d1"
+  },
+  {
+    "network": "2I",
+    "station": "CGAU",
+    "retrieved_utc": "2026-10-12T18:13:07.340961+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=2I&station=CGAU&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 507613,
+    "file": "inputs/continuation/availability/2I_CGAU.txt",
+    "sha256": "7d5b5726e642dc3dd22de064fc76278375f16fcf15efcd4d80c84cf7aa96a050"
+  },
+  {
+    "network": "2I",
+    "station": "CLAC",
+    "retrieved_utc": "2026-10-12T18:13:08.950128+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=2I&station=CLAC&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 361771,
+    "file": "inputs/continuation/availability/2I_CLAC.txt",
+    "sha256": "790830f777a08a31bd6b804c1bd53cce7d0ac19896cb3c458a963c492006c007"
+  },
+  {
+    "network": "2I",
+    "station": "CREM",
+    "retrieved_utc": "2026-10-12T18:13:09.171479+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=2I&station=CREM&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 29539,
+    "file": "inputs/continuation/availability/2I_CREM.txt",
+    "sha256": "ac667f8e389f4e6356632c26894d646bd17d9cd633496cc7cc50099b28cdea8c"
+  },
+  {
+    "network": "2I",
+    "station": "CSOC",
+    "retrieved_utc": "2026-10-12T18:13:09.899063+00:00",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=2I&station=CSOC&channel=HH%3F%2CEH%3F%2CSH%3F%2CHN%3F%2CEN%3F&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "http": 200,
+    "bytes": 214185,
+    "file": "inputs/continuation/availability/2I_CSOC.txt",
+    "sha256": "d335a3cddc2112f5452f66f06246c2b6f678c8354034b6d4f0ff89faac45cdb3"
+  }
+]

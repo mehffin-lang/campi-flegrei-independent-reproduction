@@ -1,0 +1,52 @@
+{
+  "calibration_events": 98,
+  "nonpositive_or_invalid_travel_times_removed": 41,
+  "eligible_whole_catalog_events": 708,
+  "selection": "Positive propagation times, more than six retained picks and azimuthal gap <180 deg (generic VELEST guidance). Positive-time filtering is an explicit additional consistency rule. Pilot subset lacks full-study coverage and independent manual review; not the published 373-event selection.",
+  "runs": [
+    {
+      "name": "caldera_round1",
+      "returncode": 0,
+      "valid_outputs": true,
+      "workdir": "tmp/continuation/velest/caldera_round1",
+      "console_tail": " >>> Start of program VELEST at 20261012 124639.300  <<<\n\n  finished Iteration #  0  at   20261012 124639.336      CPU-sec =     0.0\n  finished Iteration #  1  at   20261012 124639.388      CPU-sec =     0.1\n  finished Iteration #  2  at   20261012 124639.439      CPU-sec =     0.1\n  finished Iteration #  3  at   20261012 124639.518      CPU-sec =     0.2\n  finished Iteration #  4  at   20261012 124639.569      CPU-sec =     0.3\n  finished Iteration #  5  at   20261012 124639.649      CPU-sec =     0.3\n  finished Iteration #  6  at   20261012 124639.728      CPU-sec =     0.4\n  finished Iteration #  7  at   20261012 124639.728      CPU-sec =     0.5\n >>>   End of program VELEST at 20261012 124639.789  <<< [ CPU-sec :     0.5]\n"
+    },
+    {
+      "name": "caldera_round2",
+      "returncode": 0,
+      "valid_outputs": true,
+      "workdir": "tmp/continuation/velest/caldera_round2",
+      "console_tail": " >>> Start of program VELEST at 20261012 124639.798  <<<\n\n  finished Iteration #  0  at   20261012 124639.836      CPU-sec =     0.0\n  finished Iteration #  1  at   20261012 124639.898      CPU-sec =     0.1\n  finished Iteration #  2  at   20261012 124639.960      CPU-sec =     0.2\n  finished Iteration #  3  at   20261012 124640.021      CPU-sec =     0.2\n  finished Iteration #  4  at   20261012 124640.083      CPU-sec =     0.3\n  finished Iteration #  5  at   20261012 124640.144      CPU-sec =     0.3\n  finished Iteration #  6  at   20261012 124640.206      CPU-sec =     0.4\n  finished Iteration #  7  at   20261012 124640.206      CPU-sec =     0.5\n >>>   End of program VELEST at 20261012 124640.277  <<< [ CPU-sec :     0.5]\n"
+    },
+    {
+      "name": "central_round1",
+      "returncode": 0,
+      "valid_outputs": true,
+      "workdir": "tmp/continuation/velest/central_round1",
+      "console_tail": " >>> Start of program VELEST at 20261012 124640.608  <<<\n\n  finished Iteration #  0  at   20261012 124640.643      CPU-sec =     0.0\n  finished Iteration #  1  at   20261012 124640.695      CPU-sec =     0.1\n  finished Iteration #  2  at   20261012 124640.747      CPU-sec =     0.1\n  finished Iteration #  3  at   20261012 124640.827      CPU-sec =     0.2\n  finished Iteration #  4  at   20261012 124640.878      CPU-sec =     0.3\n  finished Iteration #  5  at   20261012 124640.958      CPU-sec =     0.3\n  finished Iteration #  6  at   20261012 124641.010      CPU-sec =     0.4\n  finished Iteration #  7  at   20261012 124641.010      CPU-sec =     0.5\n >>>   End of program VELEST at 20261012 124641.100  <<< [ CPU-sec :     0.5]\n"
+    },
+    {
+      "name": "central_round2",
+      "returncode": 0,
+      "valid_outputs": true,
+      "workdir": "tmp/continuation/velest/central_round2",
+      "console_tail": " >>> Start of program VELEST at 20261012 124641.108  <<<\n\n  finished Iteration #  0  at   20261012 124641.147      CPU-sec =     0.0\n  finished Iteration #  1  at   20261012 124641.242      CPU-sec =     0.1\n  finished Iteration #  2  at   20261012 124641.337      CPU-sec =     0.2\n  finished Iteration #  3  at   20261012 124641.337      CPU-sec =     0.4\n >>>   End of program VELEST at 20261012 124641.532  <<< [ CPU-sec :     0.4]\n"
+    }
+  ],
+  "completed": false,
+  "reference_station": "IV.CSOB.",
+  "chosen_region": "caldera",
+  "calibration_rms_s": 0.34817893593463034,
+  "model_checks": {
+    "positive_velocities": true,
+    "Vp_greater_than_Vs": true,
+    "ordered_interfaces": true,
+    "minimum_VpVs": 1.1787439613526571,
+    "maximum_VpVs": 5.054054054054054,
+    "between_starting_models_rms_Vp_km_s": 0.28580712777275913,
+    "between_starting_models_rms_Vs_km_s": 0.35100535879778516,
+    "independent_accuracy_validated": false
+  },
+  "error": "RuntimeError('{\"name\": \"whole_catalog_1\", \"returncode\": -11, \"valid_outputs\": false, \"workdir\": \"tmp/continuation/velest/whole_catalog_1\", \"console_tail\": \" >>> Start of program VELEST at 20261012 124643.622  <<<\\\\n\\\\n WARNING:  Station: >>>S001<<< not found in stationlist!\\\\n Phase therefore skipped\\\\n\\\\n\\\\nProgram received signal SIGSEGV: Segmentation fault - invalid memory reference.\\\\n\\\\nBacktrace for this error:\\\\n#0  0x7efeb8de4171 in ???\\\\n#1  0x7efeb8de3313 in ???\\\\n#2  0x7efeb82625af in ???\\\\n#3  0x41760b in ???\\\\n#4  0x42b6d1 in ???\\\\n#5  0x40123c in ???\\\\n#6  0x7efeb824e7e4 in ???\\\\n#7  0x40127d in ???\\\\n#8  0xffffffffffffffff in ???\\\\n\"}')",
+  "status": "failed pilot; outputs must not be treated as calibrated results"
+}

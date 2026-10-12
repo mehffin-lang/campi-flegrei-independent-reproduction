@@ -1,0 +1,18 @@
+[
+  {
+    "file": "inputs/continuation/RITE_daily.txt",
+    "url": "https://zenodo.org/records/17132077/files/RITE_daily.txt?download=1",
+    "retrieved_utc": "2026-10-12T18:08:57.331327+00:00",
+    "bytes": 156474,
+    "sha256": "c67c6c6f4b3e062623308f2a51be1e7ae703067a68aa7b576204cc960a1ffa8a",
+    "md5": "0b252ef70fb716f21e57e12bf603b8d2"
+  },
+  {
+    "file": "inputs/continuation/RITE_Timeseries_Format.readme",
+    "url": "https://zenodo.org/records/17132077/files/RITE_Timeseries_Format.readme?download=1",
+    "retrieved_utc": "2026-10-12T18:08:57.876109+00:00",
+    "bytes": 676,
+    "sha256": "6079e6230bd5c8e086f9c2fef4cd6c6250b3311b0a20fce1640e664ab2446475",
+    "md5": "bc68f6e97bdc517b9fa369c8fa2c9f7f"
+  }
+]

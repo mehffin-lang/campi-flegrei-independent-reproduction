@@ -1,0 +1,9 @@
+[
+  {
+    "time_utc": "2026-10-12T19:11:22.912700+00:00",
+    "command": "scripts/rebuild_continuation.py --fresh",
+    "status": "Restarted during association after 147/147 fresh inference files completed",
+    "reason": "Added explicit global study-boundary clipping and response-epoch/ray validation. Preserve fresh picks and restart the latest full checkpoint procedure without repeating identical inference.",
+    "fresh_inference_log": "data/continuation/fresh_inference_log.json"
+  }
+]

@@ -16,13 +16,18 @@
       "1C"
     ],
     "partial_panels": [
-      "1B"
+      "1A",
+      "1B",
+      "1C"
     ],
     "independent_files": [
-      "figures/historical_leveling_partial.pdf"
+      "figures/figure_1_combined.pdf"
     ],
-    "missing": "Panels 1A and 1C have no valid independent counterpart; existing routine-catalog plots are external context.",
-    "caption": "Panel 1B is partial: original leveling through 2009 and daily GNSS through 2019, with a separate written December 2023 monitoring endpoint. The vertical datum is relative to March 1905; daily observations for 2020--2023 are missing."
+    "missing": "",
+    "caption": "Partial reconstruction from permitted original displacement observations and external routine-catalog records. A: 16,046 located routine events and five Md>=4 stars. B: historical leveling datum; daily GNSS through 20 March 2025, with the extension beyond 2023 shaded. C: all monthly counts and exact-time cumulative Md>0.2; March includes days 1--20 only. This is not the independently detected catalog. The basemap and live catalog snapshot differ from the publication.",
+    "file_labels": [
+      "1A--C"
+    ]
   },
   {
     "figure": "2",
@@ -41,7 +46,7 @@
     ],
     "partial_panels": [],
     "independent_files": [],
-    "missing": "Panels A and B require a multiyear calibrated, relocated catalog and magnitudes. Only nine provisional associations exist.",
+    "missing": "Panels A and B need multiyear calibrated/relocated events and magnitudes. The current 740 initial associations remain provisional.",
     "caption": "Seismicity rates by region and depth versus time are not reproduced."
   },
   {
@@ -103,10 +108,10 @@
       "S1"
     ],
     "independent_files": [
-      "figures/coverage_partial.pdf"
+      "figures/continuation_coverage.pdf"
     ],
     "missing": "",
-    "caption": "Partial: actual returned waveform intervals from 171 files and 26 station names. Short retrieved windows are marked without implying continuous coverage between them; channel-hours are not full network-years."
+    "caption": "Partial: 318 processed files, 26 station names and 2955.824 channel-hours after union of overlapping intervals. Empty intervals are not connected or counted as coverage."
   },
   {
     "figure": "S2",
@@ -126,7 +131,7 @@
       "S2"
     ],
     "independent_files": [
-      "figures/stations_partial.pdf"
+      "figures/continuation_stations.pdf"
     ],
     "missing": "",
     "caption": "Partial: released station coordinates and retrieved IV/2I response metadata. Exact membership of the original 48 instruments, station epochs and the basemap are not fully reconciled."
@@ -189,10 +194,19 @@
       "S5/northing-depth",
       "S5/easting-depth"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "Current INGV routine-catalog plots are external context. The saved panel record contains no valid independent counterpart to these three views; the published selection/version is unresolved.",
-    "caption": "Map and two cross sections retain their not-reproduced status; external catalog plots are documented separately."
+    "partial_panels": [
+      "S5/map",
+      "S5/northing-depth",
+      "S5/easting-depth"
+    ],
+    "independent_files": [
+      "figures/figure_S5_routine.pdf"
+    ],
+    "missing": "",
+    "caption": "External routine-catalog data, independently selected and plotted: 12,503 located events, 21 January 2022--20 March 2025. This is 420 more than the published historical snapshot. No author-derived catalog is used to adjust that difference; these are not independent detections.",
+    "file_labels": [
+      "S5, all views"
+    ]
   },
   {
     "figure": "S6",
@@ -210,10 +224,19 @@
       "S6/northing-depth",
       "S6/easting-depth"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "The map and both cross sections require scientific VELEST location and velocity/station-correction runs. Compilation alone did not produce these results.",
-    "caption": "Initial-location map and cross sections are not reproduced."
+    "partial_panels": [
+      "S6/map",
+      "S6/northing-depth",
+      "S6/easting-depth"
+    ],
+    "independent_files": [
+      "figures/figure_S6_pilot.pdf"
+    ],
+    "missing": "",
+    "caption": "Partial independent VELEST pilot: 122 events pass the final six-pick, 0.25 s RMS and 300-degree gap filters. This limited, unreviewed sample is not the published 61,809-event catalog. The initial association model and regional averaging choices differ or are assumed; no TomoDD refinement is implied.",
+    "file_labels": [
+      "S6, all views"
+    ]
   },
   {
     "figure": "S7",
@@ -256,10 +279,18 @@
       "S8A",
       "S8B"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "Panels A and B require qualifying relative-amplitude equations and calibrated magnitudes. Zero qualifying equations were obtained; completeness and b-value were not estimated.",
-    "caption": "Local-versus-duration magnitude comparison and magnitude-frequency distribution are not reproduced."
+    "partial_panels": [
+      "S8A",
+      "S8B"
+    ],
+    "independent_files": [
+      "figures/figure_S8_pilot.pdf"
+    ],
+    "missing": "",
+    "caption": "Partial amplitude-ratio pilot: 22 provisional magnitudes from independent observations, with routine Md as the documented calibration prior. A is not an independent validation of that prior. B is a limited-sample histogram, not the full-period completeness or b-value result. Locations are initial associations, before final relocation.",
+    "file_labels": [
+      "S8A--B"
+    ]
   },
   {
     "figure": "S9",
@@ -349,7 +380,7 @@
     ],
     "partial_panels": [],
     "independent_files": [],
-    "missing": "Panels A--H require relocated sector selections and independently associated CPOZ P arrivals. The current associations contain zero CPOZ P arrivals.",
+    "missing": "Panels A--H need relocated sector selections and manual depth review. 40 independent CPOZ P arrivals now exist, but the required sector gathers remain unfinished.",
     "caption": "Sector views and six arrival-aligned waveform gathers are not reproduced."
   },
   {
@@ -391,7 +422,7 @@
     ],
     "partial_panels": [],
     "independent_files": [],
-    "missing": "The three clusters and unclustered group require a multiyear scan, confirmed events, frequency indices and cluster-relative magnitudes. Four current candidates are unconfirmed.",
+    "missing": "The cluster histories require three-year exposure, confirmed events and relative magnitudes. The present 59.757 hour scan produced 702 unconfirmed threshold crossings, not reviewed families.",
     "caption": "Cluster histories and annotated waveform collections are not reproduced."
   },
   {

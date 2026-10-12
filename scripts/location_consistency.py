@@ -1,6 +1,6 @@
 """S--P consistency of own provisional associations, not relocated-sector validation."""
 from pathlib import Path
-import os,json
+import os,json,argparse
 ROOT=Path(__file__).resolve().parents[1];os.chdir(ROOT)
 os.environ.update(NUMBA_CACHE_DIR=str(ROOT/'tmp/numba'),OMP_NUM_THREADS='2',MPLCONFIGDIR=str(ROOT/'tmp/matplotlib'))
 import numpy as np
@@ -10,11 +10,12 @@ from gamma.seismic_ops import initialize_eikonal,calc_time
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-OUT=Path('data/extended')
+ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--dataset',choices=['extended','continuation'],default='extended');args=ap.parse_args()
+OUT=Path('data')/args.dataset
 picks=pd.read_csv(OUT/'picks.csv');assign=pd.read_csv(OUT/'associations.csv')
 events=pd.read_csv(OUT/'initial_events.csv').set_index('event_index')
 stations=pd.read_csv(OUT/'stations.csv').set_index('id')
-config=json.loads(Path('config/association.json').read_text());eik=initialize_eikonal(config['eikonal'])
+config=json.loads(Path('config/continuation_association.json' if args.dataset=='continuation' else 'config/association.json').read_text());eik=initialize_eikonal(config['eikonal'])
 paired=assign.merge(picks,left_on='pick_index',right_index=True)
 rows=[]
 for (event,station),g in paired.groupby(['event_index','trace_id']):
@@ -28,12 +29,13 @@ for (event,station),g in paired.groupby(['event_index','trace_id']):
 table=pd.DataFrame(rows);table.to_csv(OUT/'sp_consistency.csv',index=False)
 eligible=paired[(paired.trace_id.str.split('.').str[1]=='CPOZ')&(paired.phase=='P')]
 summary=dict(paired_observations=len(rows),nonpositive_sp=int((table.observed_sp_s<=0).sum()),rms_sp_residual_s=float(np.sqrt(np.mean(table.residual_s**2))),associated_cpoz_p_picks=len(eligible),sector_gathers_generated=0,
-    scope='Same independently fitted provisional travel-time model: internal consistency only, not independent location accuracy. No author picks or locations used. No associated CPOZ P arrivals exist in this sample.')
+    scope='Same independently fitted provisional travel-time model: internal consistency only, not independent location accuracy. No author picks or locations used. Relocated ring sectors are not established.')
 (OUT/'location_consistency.json').write_text(json.dumps(summary,indent=2)+'\n')
 # Plot the saved table, including failed/large-residual observations.
 saved=pd.read_csv(OUT/'sp_consistency.csv');fig,ax=plt.subplots(figsize=(5,4))
 ax.scatter(saved.calculated_sp_s,saved.observed_sp_s,c='#176b6c',s=24)
 limits=[min(0,saved.observed_sp_s.min(),saved.calculated_sp_s.min()),max(saved.observed_sp_s.max(),saved.calculated_sp_s.max())*1.05]
 ax.plot(limits,limits,c='#777',ls=':');ax.set(xlabel='Calculated S–P (s)',ylabel='Observed S–P (s)',xlim=limits,ylim=limits,title='Provisional associations: S–P consistency\nNot the relocated S12 sector validation')
-fig.tight_layout();fig.savefig('figures/sp_consistency.pdf');fig.savefig('figures/sp_consistency.png',dpi=160);plt.close(fig)
+prefix='figures/sp_consistency' if args.dataset=='extended' else 'figures/continuation_sp_diagnostic'
+fig.tight_layout();fig.savefig(prefix+'.pdf');fig.savefig(prefix+'.png',dpi=160);plt.close(fig)
 print(summary)

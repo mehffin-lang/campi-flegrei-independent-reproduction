@@ -1,0 +1,8 @@
+{
+  "url": "https://webring.gm.ingv.it:44324/products/POS/ITRF/RITE00ITA/RITE00ITA.gamit.itrf14.pos",
+  "http": 200,
+  "bytes": 1077815,
+  "sha256": "b8ad9cdf9ceef59b1a4eb1ed74e3edf6cec802c9e5e6cf7d965d1a31c70ac476",
+  "retrieved_utc": "2026-10-12",
+  "file": "inputs/continuation/RITE00ITA.gamit.itrf14.pos"
+}

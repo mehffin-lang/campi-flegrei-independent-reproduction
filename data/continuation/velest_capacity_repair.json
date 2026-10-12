@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+    "scripts/build_velest.py"
+  ],
+  "returncode": 0,
+  "elapsed_s": 14.09130449895747,
+  "output": "{'source_url': 'https://ethz.ch/content/dam/ethz/special-interest/erdw/geophysics/seismology-and-geodynamics-dam/document/velest.tar', 'source_sha256': 'd249d80ee3d0e36605d2395277eaaf50097bfa6a571fa95d1f423e5f25f80469', 'command': ['gfortran', '-std=legacy', '-O2', '-fcheck=bounds', '-I', 'build', 'build/velest-portable.f', '-o', 'build/velest'], 'returncode': 0, 'output': 'build/velest-portable.f:4384:25:\\n\\n       call RAYPATH(1,1,1,1.,1.,1.,1.,nl,thk,h,v,vsq,\\n                         1\\nWarning: Rank mismatch in argument \u2018x\u2019 at (1) (rank-1 and scalar) [-Wargument-mismatch]\\n', 'changes': ['Remove trailing comma in FORMAT', 'Replace SUN clock() with standard cpu_time', 'Replace SUN datetime with standard date_and_time', 'Increase declared simultaneous-event capacity from 658 to 1024; no equation change', 'Enable runtime array bounds checks'], 'event_capacity': 1024, 'scientific_execution': False}\n",
+  "reason": "Repair verified 658-event array-capacity overflow at 708 input events; preserve equations and enable bounds checks"
+}

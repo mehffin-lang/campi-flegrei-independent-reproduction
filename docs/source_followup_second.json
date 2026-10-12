@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://webring.gm.ingv.it:44324/products",
+    "file": "inputs/continuation/gnss_products.txt",
+    "http": 200,
+    "final_url": "https://webring.gm.ingv.it:44324/products",
+    "bytes": 4107
+  },
+  {
+    "url": "https://ran.protezionecivile.it/IT/sharing.php",
+    "file": "inputs/continuation/ran_sharing.txt",
+    "http": 200,
+    "final_url": "https://ran.protezionecivile.it/IT/sharing.php",
+    "bytes": 20377
+  },
+  {
+    "url": "https://www.earth-prints.org/server/api/core/items/c2867123-d4c1-41f5-b734-aef0cca8f40c/bundles",
+    "file": "inputs/continuation/calo_bundles.txt",
+    "http": 200,
+    "final_url": "https://www.earth-prints.org/server/api/core/items/c2867123-d4c1-41f5-b734-aef0cca8f40c/bundles",
+    "bytes": 4389
+  },
+  {
+    "url": "https://www.earth-prints.org/server/api/core/bundles/e3b35e58-da65-49a9-8f8b-39e95afea8c5/bitstreams",
+    "file": "inputs/continuation/calo_files.txt",
+    "http": 200,
+    "final_url": "https://www.earth-prints.org/server/api/core/bundles/e3b35e58-da65-49a9-8f8b-39e95afea8c5/bitstreams",
+    "bytes": 2353
+  }
+]

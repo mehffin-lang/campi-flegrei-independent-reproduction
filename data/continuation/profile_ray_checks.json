@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "p_grid_error_bound": true,
+    "p_refinement": true,
+    "s_grid_error_bound": true,
+    "s_refinement": true
+  },
+  "max_coarse_P_error_s": 0.040641717307283054,
+  "max_coarse_S_error_s": 0.07234235455858107,
+  "max_fine_P_error_s": 0.02032082497329868,
+  "max_fine_S_error_s": 0.036171156667345716,
+  "scope": "Numerical vertical layered-ray consistency and refinement only; does not establish the alternative profile as the exact 2018 model or validate earthquake locations."
+}

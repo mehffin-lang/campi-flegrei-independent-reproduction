@@ -1,0 +1,23 @@
+[
+  {
+    "name": "availability",
+    "url": "https://webservices.ingv.it/fdsnws/availability/1/query?network=IV&station=CAAM&channel=HH?&starttime=2022-01-21&endtime=2025-03-21&format=text",
+    "retrieved_utc": "2026-10-12T18:12:00.696015+00:00",
+    "http": 200,
+    "bytes": 643645
+  },
+  {
+    "name": "routing",
+    "url": "https://www.orfeus-eu.org/eidaws/routing/1/query?service=dataselect&network=IV&station=CAAM&starttime=2022-01-21&endtime=2025-03-21&format=get",
+    "retrieved_utc": "2026-10-12T18:12:00.697093+00:00",
+    "http": 200,
+    "bytes": 119
+  },
+  {
+    "name": "coastline",
+    "url": "https://naturalearth.s3.amazonaws.com/10m_physical/ne_10m_coastline.zip",
+    "retrieved_utc": "2026-10-12T18:12:00.707162+00:00",
+    "http": 200,
+    "bytes": 3069451
+  }
+]

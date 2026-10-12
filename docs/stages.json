@@ -1,11 +1,11 @@
 [
   {
     "stage": "1. Collection",
-    "status": "Executed calendar windows and whole-period requests; 26 stations retrieved. Full-period chunked download remains unfinished. RAN credentials unavailable."
+    "status": "Partial: 144 six-hour chunks downloaded; 74301 pending. 318 total processed files, 2955.824 channel-hours, 26 stations. RAN credentials missing."
   },
   {
     "stage": "2. Phase picking",
-    "status": "Executed: 3637 picks; exclusions and merging checked. Full-period inference remains unfinished."
+    "status": "Executed: 63036 merged picks; exclusions/probability bounds checked. Full-period inference unfinished."
   },
   {
     "stage": "3. Training / S3--S4",
@@ -13,15 +13,15 @@
   },
   {
     "stage": "4. Association",
-    "status": "Executed: 9 provisional events with an alternative external profile. Exact cited numerical starting profile missing; no author event seeds."
+    "status": "Executed: 740 provisional GaMMA events, 5240 assigned picks. Explicit Tramelli 2021 alternative; exact 2018 numerical profile still missing."
   },
   {
     "stage": "5. VELEST",
-    "status": "Generic software compiled. 3 geometry-screened candidates do not resolve the chosen layered model/corrections; inversion not run."
+    "status": "Partial VELEST pilot: completed=True; 98 calibration events, 9 successful runs, 122 quality-passing locations. Exact subset/model validity not established."
   },
   {
     "stage": "6. TomoDD",
-    "status": "Not run. Independent calibrated input catalog and complete differential-time/configuration workflow missing."
+    "status": "Generic TomoDD source retrieved, classified and compiled. Scientific differential-time pairing and both relocation rounds remain unfinished, not executed."
   },
   {
     "stage": "7. HypoDD SVD",
@@ -29,11 +29,11 @@
   },
   {
     "stage": "8. Magnitudes",
-    "status": "Measurements executed; 0 qualifying pair equations, 0 calibrated magnitudes. Routine Md permission is resolved."
+    "status": "Executed: 12473 amplitudes, 2043 SNR passes, 377 amplitude-ratio equations, 22 provisional magnitudes. Initial locations; final relocated-catalog calibration unfinished."
   },
   {
     "stage": "9. Completeness / b",
-    "status": "Not calculated: no independently calibrated magnitude sample."
+    "status": "Pilot histogram and maximum-curvature calculation executed on 22 values. Full-period completeness/b not established; Fewer than 20 magnitudes above pilot Mc; do not report a stable b estimate."
   },
   {
     "stage": "10. Focal mechanisms",
@@ -41,14 +41,14 @@
   },
   {
     "stage": "11. Location checks",
-    "status": "Residuals, gaps and internal S--P checks executed. Zero associated CPOZ P arrivals; relocated sector gathers, manual deep-event review and SVD validation unfinished."
+    "status": "Internal S-P checks: 1043 pairs, 36 nonpositive. 40 CPOZ P arrivals. Relocated sector gathers and manual deep-event review unfinished."
   },
   {
     "stage": "12. Hybrid search",
-    "status": "Executed on 24.298 available hours; 4 unconfirmed candidates. Three-year classification, clustering and catalog-wide FI review unfinished."
+    "status": "Executed 59.757 common CAAM/COLB scan hours; 702 unconfirmed crossings. Three-year review, clustering and catalog-wide FI incomplete."
   },
   {
     "stage": "13. Historical context",
-    "status": "Executed original leveling-table extraction (128 entries) and external routine-catalog context. Original RITE GNSS processed through 2019 with explicit overlap alignment; daily 2020--2023 continuation missing."
+    "status": "Executed: 128 original leveling observations, 8743 daily GNSS through 2025-03-20, 16046 historical and 12503 study-period located routine events. External catalog roles explicitly permitted; historical count difference unresolved."
   }
 ]

@@ -28,8 +28,11 @@ s=s[:start]+'''      subroutine DATETIME(dattim)
       end
 '''+s[end:]
 Path('build/velest-portable.f').write_text(s)
-cmd=['gfortran','-std=legacy','-O2','-I','inputs/external/velest','build/velest-portable.f','-o','build/velest']
+header=Path('inputs/external/velest/vel_com.f').read_text()
+assert 'parameter(ieq=658)' in header
+Path('build/vel_com.f').write_text(header.replace('parameter(ieq=658)','parameter(ieq=1024)'))
+cmd=['gfortran','-std=legacy','-O2','-fcheck=bounds','-fdefault-real-8','-fdefault-double-8','-I','build','build/velest-portable.f','-o','build/velest']
 r=subprocess.run(cmd,capture_output=True,text=True)
-record=dict(source_url='https://ethz.ch/content/dam/ethz/special-interest/erdw/geophysics/seismology-and-geodynamics-dam/document/velest.tar',source_sha256=hashlib.sha256(archive.read_bytes()).hexdigest(),command=cmd,returncode=r.returncode,output=r.stdout+r.stderr,changes=['Remove trailing comma in FORMAT','Replace SUN clock() with standard cpu_time','Replace SUN datetime with standard date_and_time'],scientific_execution=False)
+record=dict(source_url='https://ethz.ch/content/dam/ethz/special-interest/erdw/geophysics/seismology-and-geodynamics-dam/document/velest.tar',source_sha256=hashlib.sha256(archive.read_bytes()).hexdigest(),command=cmd,returncode=r.returncode,output=r.stdout+r.stderr,changes=['Remove trailing comma in FORMAT','Replace SUN clock() with standard cpu_time','Replace SUN datetime with standard date_and_time','Increase declared simultaneous-event capacity from 658 to 1024; no equation change','Enable runtime array bounds checks','Use 64-bit real arithmetic after a recorded single-precision positive-definiteness failure; equations and damping unchanged'],event_capacity=1024,real_bits=64,scientific_execution=False)
 Path('data/extended/velest_build.json').write_text(json.dumps(record,indent=2)+'\n')
 print(record);r.check_returncode()

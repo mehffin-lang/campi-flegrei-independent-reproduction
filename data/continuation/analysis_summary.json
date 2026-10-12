@@ -1,0 +1,61 @@
+{
+  "picks": 63036,
+  "p_picks": 8894,
+  "s_picks": 54142,
+  "events": 740,
+  "assigned_picks": 5240,
+  "processed_channel_hours": 2955.8238833335367,
+  "stations": [
+    "CAAM",
+    "CAWE",
+    "CBAC",
+    "CBAG",
+    "CCAP",
+    "CFB1",
+    "CFB3",
+    "CFMN",
+    "CGAU",
+    "CLAC",
+    "CMIS",
+    "CMSN",
+    "CMTS",
+    "CNIS",
+    "COLB",
+    "CPIS",
+    "CPOZ",
+    "CQUE",
+    "CREM",
+    "CRUS",
+    "CSFT",
+    "CSOB",
+    "CSOC",
+    "CSTH",
+    "CUMA",
+    "PTMR"
+  ],
+  "files": 318,
+  "checks": {
+    "probability_bounds": true,
+    "excluded_s_absent": true,
+    "minimum_six_picks": true,
+    "unique_assigned_picks": true,
+    "valid_pick_indices": true
+  },
+  "status": "Partial: published alternative starting profile, incomplete continuous acquisition, no VELEST/TomoDD final catalog.",
+  "alternative_profile": "Tramelli et al. (2021), Table 1; not asserted identical to Calo--Tramelli (2018).",
+  "settings": {
+    "highpass_hz": 1,
+    "corners": 4,
+    "zerophase": false,
+    "P_threshold": 0.3,
+    "S_threshold": 0.3,
+    "core_s": 1800,
+    "context_s": 30,
+    "merge_tolerance_s": 0.25,
+    "exclude_s": [
+      "CASE",
+      "CFB1",
+      "CFB3"
+    ]
+  }
+}

@@ -1,12 +1,13 @@
 """Scan every downloaded common CAAM/COLB continuous interval, without a catalog."""
 from pathlib import Path
-import os,json
+import os,json,argparse
 ROOT=Path(__file__).resolve().parents[1];os.chdir(ROOT)
 import numpy as np
 import pandas as pd
 from obspy import read,UTCDateTime
 from scipy.signal import fftconvolve,find_peaks
-OUT=Path('data/extended');cfg=json.loads(Path('config/observations.json').read_text())
+ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--dataset',choices=['extended','continuation'],default='extended');args=ap.parse_args()
+OUT=Path('data')/args.dataset;cfg=json.loads(Path('config/observations.json').read_text())
 def corr(x,y):
     y=y-y.mean();n=len(y);s=np.r_[0.,np.cumsum(x)];ss=np.r_[0.,np.cumsum(x*x)]
     den=np.sqrt(np.maximum(ss[n:]-ss[:-n]-(s[n:]-s[:-n])**2/n,0))*np.linalg.norm(y)
@@ -20,6 +21,10 @@ for label,time in cfg['template_times'].items():
         templates[label][sta]=y
 index={s:[] for s in ['CAAM','COLB']}
 files=list(Path('inputs/waveforms').glob('day_*.mseed'))+list(Path('inputs/extended/waveforms').glob('*.mseed'))
+if args.dataset=='continuation':
+    # Reuse the exact observation checkpoint; later downloads must not silently
+    # change the exposure of an offline rebuild.
+    files += [Path(r['file']) for r in json.loads(Path('docs/continuation_processed_inputs.json').read_text())]
 for f in files:
     if not any(s in f.name for s in index):continue
     for tr in read(str(f),headonly=True).select(component='Z'):

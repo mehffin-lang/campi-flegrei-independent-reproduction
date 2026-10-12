@@ -1,0 +1,42 @@
+{
+  "study_start": "2022-01-21T00:00:00.000000Z",
+  "study_end_exclusive": "2025-03-21T00:00:00.000000Z",
+  "request_hours": 6,
+  "priority": "reverse chronological by study dates; no event catalog",
+  "jobs_by_status": {
+    "downloaded": 144,
+    "pending": 74301
+  },
+  "full_collection_complete": false,
+  "downloaded_bytes": 1874296832,
+  "files": 144,
+  "channel_hours": 2519.462533333633,
+  "stations": [
+    "CAAM",
+    "CBAC",
+    "CBAG",
+    "CCAP",
+    "CFB3",
+    "CFMN",
+    "CGAU",
+    "CLAC",
+    "CMIS",
+    "CMSN",
+    "CMTS",
+    "CNIS",
+    "COLB",
+    "CPIS",
+    "CPOZ",
+    "CQUE",
+    "CREM",
+    "CRUS",
+    "CSFT",
+    "CSOB",
+    "CSOC",
+    "CSTH",
+    "CUMA",
+    "PTMR"
+  ],
+  "accounting": "Union of clipped, successfully read sample intervals. Availability metadata and failed requests do not count as coverage.",
+  "checkpoint_utc": "2026-10-12T18:53:10.931107+00:00"
+}
