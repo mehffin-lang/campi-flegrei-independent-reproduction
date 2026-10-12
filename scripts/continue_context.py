@@ -29,10 +29,19 @@ def main():
         parts = [s.strip() for s in line.split('|')]
         if len(parts) > 6 and re.fullmatch(r'\d\d\??/\d{4}', parts[1]):
             month, year = map(int, parts[1].replace('?', '').split('/'))
-            levels.append(dict(date=f'{year:04d}-{month:02d}-15', month_uncertain='?' in parts[1], elevation_m=float(parts[2]), source=parts[6]))
+            levels.append(dict(date=f'{year:04d}-{month:02d}-15', source_month_year=parts[1],
+                               date_convention='15th is display placement; original reports month only',
+                               month_uncertain='?' in parts[1], elevation_m=float(parts[2]),
+                               source_uncertainty_text=parts[3], source=parts[6]))
         elif levels and len(parts) > 6 and not parts[1]:
             levels[-1]['source'] += ' ' + parts[6]
     lev = pd.DataFrame(levels)
+    lev['source'] = lev.source.str.replace(r'\s+', ' ', regex=True).str.strip()
+    lev['provenance_class'] = np.where(lev.source.str.contains('reconstruction',case=False),
+        'source-provided reconstruction',np.where(lev.source.str.contains('estimate',case=False),
+        'source-provided estimate','leveling survey'))
+    lev['source_file']='inputs/extended/delgaudio2010_table.doc'
+    lev['uncertainty_note']='Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.'
     lev['displacement_from_1905_m'] = lev.elevation_m - lev.elevation_m.iloc[0]
     lev.to_csv(OUT/'historical_leveling.csv', index=False)
     gnss = pd.read_csv(ROOT/'inputs/continuation/RITE_daily.txt', sep=r'\s+', header=None, names=['mjd', 'up_m', 'up_sigma_m'])
@@ -134,7 +143,8 @@ def main():
                    gnss2025_extension_rows=len(extension),gnss2025_release_rows=len(newer),gnss2025_release_end=str(newer.time.max()),
                    gnss2025_overlap_days=len(joint),gnss2025_datum_offset_m=extension_offset,
                    gnss2025_overlap_demeaned_rms_m=float(np.sqrt(np.mean((shift-extension_offset)**2))),
-                   leveling_rows=len(lev), routine_events=len(cat), routine_located=len(located),
+                   leveling_rows=len(lev), historical_provenance_counts=lev.provenance_class.value_counts().to_dict(),
+                   routine_events=len(cat), routine_located=len(located),
                    routine_study_all=int((times>=pd.Timestamp('2022-01-21',tz='UTC')).sum()),
                    routine_study_located=len(study), published_study_located=12083,
                    located_count_difference_from_publication=len(study)-12083,

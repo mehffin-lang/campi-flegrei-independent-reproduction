@@ -1,4 +1,16 @@
-# Validation and failed attempts
+# Current validation and execution records
+
+The current scientific checkpoint remains provisional. Authoritative outcomes are `data/continuation/rebuild_status.json`, `rebuild_log.json`, `provenance_validation.json`, and `report/document_build.json`; these distinguish executed checks from scientific completion. Earlier results below are superseded historical records, not the current CPOZ, displacement, magnitude or coverage findings.
+
+The continuation procedure checks both readable PDFs and ZIP integrity, frozen input hashes, probability bounds and prescribed S exclusions, unique associations with at least six picks, actual interval unions, and response-epoch coverage. It runs 27 C++ equation assertions, layered vertical-ray refinement checks, a known-event homogeneous association test, and 60 observed-window read-equivalence checks. Synthetic and analytic inputs/results stay in `tests/`; they are not empirical detections or figures.
+
+Current saved-result checks verify partial-panel file/command chains, exclusion of quarantined and comparison/test material from those chains, weighted magnitude normal equations, and agreement between station frequency indices and their saved event means. Document checks verify section/figure order, all 19 comparison pages, and comparison-only use of published images. These checks do not prove that unexamined or hidden inputs were never used, or establish observational event accuracy.
+
+Both VELEST real precisions are tested separately under `data/exploratory/velest_stability`. Numerical agreement is not physical validation; no experimental fit is accepted for S6 or relocation. CPOZ gathers and low-frequency screening remain unreviewed diagnostics. Counts come from the current saved summaries, not the historical values below.
+
+The current fresh build required repairs to SQLite ledger compatibility and null handling. An amplitude attempt was intentionally interrupted for bounded file caching. A later completed measurement pass failed while serializing a NumPy Boolean in the inversion-check record; the explicit Boolean conversion was repaired and the stage rerun with sixteen spawned workers; it was not an access failure. Failed/interrupted attempts and hash-verified resumption are retained in `data/continuation/rebuild_attempts.json`.
+
+## Historical validation records (superseded)
 
 Source gate: both local PDFs extracted, all main and supplementary captions identified, source checksums unchanged; both supplied ZIPs directory-listed and CRC-checked without execution. Retrieved inputs verified by SHA256 before processing.
 

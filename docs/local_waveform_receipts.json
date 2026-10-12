@@ -1,0 +1,261 @@
+[
+  {
+    "station": "CFB1",
+    "member": "Tracce_AI_new/20220121T014220_IV_CFB1_HHZ.mseed",
+    "method": 8,
+    "crc32": 718307430,
+    "compressed": 6987,
+    "uncompressed": 8192,
+    "offset": 76,
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/Tracce_AI_new.zip",
+    "retrieved_utc": "2026-10-12T21:19:16.118040+00:00",
+    "classification": "Original observations, author-event-selected 60-second windows; access inspection only",
+    "used_in_empirical_analysis": false,
+    "file": "inputs/local_inspection/20220121T014220_IV_CFB1_HHZ.mseed",
+    "bytes": 8192,
+    "sha256": "b8db3fd37dba5799a04a91d830b94065a1526fd8122a6d77f67e4d3b5fddbe18",
+    "http": 206,
+    "read_ok": true,
+    "request_ranges": [
+      [
+        76,
+        105
+      ],
+      [
+        185,
+        7171
+      ]
+    ],
+    "traces": [
+      {
+        "channel": "IV.CFB1..HHZ",
+        "start": "2022-01-21T01:42:14.998393Z",
+        "end": "2022-01-21T01:43:14.998393Z",
+        "samples": 6001,
+        "sample_rate": 100.0
+      }
+    ]
+  },
+  {
+    "station": "CROS",
+    "member": "Tracce_AI_new/20220121T032217_IV_CROS_EHE.mseed",
+    "method": 8,
+    "crc32": 2237446153,
+    "compressed": 8918,
+    "uncompressed": 10240,
+    "offset": 14313,
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/Tracce_AI_new.zip",
+    "retrieved_utc": "2026-10-12T21:19:16.129698+00:00",
+    "classification": "Original observations, author-event-selected 60-second windows; access inspection only",
+    "used_in_empirical_analysis": false,
+    "file": "inputs/local_inspection/20220121T032217_IV_CROS_EHE.mseed",
+    "bytes": 10240,
+    "sha256": "03e56d7c465f852d28bd07076d14ee9808140aecd45b2f688bad409a93e62bd6",
+    "http": 206,
+    "read_ok": true,
+    "request_ranges": [
+      [
+        14313,
+        14342
+      ],
+      [
+        14422,
+        23339
+      ]
+    ],
+    "traces": [
+      {
+        "channel": "IV.CROS..EHE",
+        "start": "2022-01-21T03:22:12.000000Z",
+        "end": "2022-01-21T03:23:12.000000Z",
+        "samples": 6001,
+        "sample_rate": 100.0
+      }
+    ]
+  },
+  {
+    "station": "CFB3",
+    "member": "Tracce_AI_new/20220316T101444_IV_CFB3_HHZ.mseed",
+    "method": 8,
+    "crc32": 2380795033,
+    "compressed": 8054,
+    "uncompressed": 9216,
+    "offset": 64153452,
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/Tracce_AI_new.zip",
+    "retrieved_utc": "2026-10-12T21:19:16.140724+00:00",
+    "classification": "Original observations, author-event-selected 60-second windows; access inspection only",
+    "used_in_empirical_analysis": false,
+    "file": "inputs/local_inspection/20220316T101444_IV_CFB3_HHZ.mseed",
+    "bytes": 9216,
+    "sha256": "2cbc38c903758f30d8c7138751343dfd8808086fc564fecc9d1e95bff3069f6a",
+    "http": 206,
+    "read_ok": true,
+    "request_ranges": [
+      [
+        64153452,
+        64153481
+      ],
+      [
+        64153561,
+        64161614
+      ]
+    ],
+    "traces": [
+      {
+        "channel": "IV.CFB3..HHZ",
+        "start": "2022-03-16T10:14:38.998393Z",
+        "end": "2022-03-16T10:15:38.998393Z",
+        "samples": 6001,
+        "sample_rate": 100.0
+      }
+    ]
+  },
+  {
+    "station": "V0102",
+    "member": "Tracce_AI_new/20230714T110024_IV_V0102_EHE.mseed",
+    "method": 8,
+    "crc32": 1721772781,
+    "compressed": 13057,
+    "uncompressed": 15360,
+    "offset": 537693651,
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/Tracce_AI_new.zip",
+    "retrieved_utc": "2026-10-12T21:19:17.730809+00:00",
+    "classification": "Original observations, author-event-selected 60-second windows; access inspection only",
+    "used_in_empirical_analysis": false,
+    "file": "inputs/local_inspection/20230714T110024_IV_V0102_EHE.mseed",
+    "bytes": 15360,
+    "sha256": "f25d3087243cc3861f9c0f3848cb38b733ffeb8ac1b66df31d7ed262de1f846a",
+    "http": 206,
+    "read_ok": true,
+    "request_ranges": [
+      [
+        537693651,
+        537693680
+      ],
+      [
+        537693761,
+        537706817
+      ]
+    ],
+    "traces": [
+      {
+        "channel": "IV.V0102.00.EHE",
+        "start": "2023-07-14T11:00:19.000000Z",
+        "end": "2023-07-14T11:01:19.000000Z",
+        "samples": 12001,
+        "sample_rate": 200.0
+      }
+    ]
+  },
+  {
+    "station": "V0105",
+    "member": "Tracce_AI_new/20240314T162713_IV_V0105_EHE.mseed",
+    "method": 8,
+    "crc32": 504712825,
+    "compressed": 10773,
+    "uncompressed": 13312,
+    "offset": 1345210104,
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/Tracce_AI_new.zip",
+    "retrieved_utc": "2026-10-12T21:19:17.745254+00:00",
+    "classification": "Original observations, author-event-selected 60-second windows; access inspection only",
+    "used_in_empirical_analysis": false,
+    "file": "inputs/local_inspection/20240314T162713_IV_V0105_EHE.mseed",
+    "bytes": 13312,
+    "sha256": "9383408e65e653f7e7cf3bdea07ded8ea95a73e9e4bcbfd9fb824c69a89ceea7",
+    "http": 206,
+    "read_ok": true,
+    "request_ranges": [
+      [
+        1345210104,
+        1345210133
+      ],
+      [
+        1345210214,
+        1345220986
+      ]
+    ],
+    "traces": [
+      {
+        "channel": "IV.V0105.00.EHE",
+        "start": "2024-03-14T16:27:08.000000Z",
+        "end": "2024-03-14T16:28:08.000000Z",
+        "samples": 6001,
+        "sample_rate": 100.0
+      }
+    ]
+  },
+  {
+    "station": "CRUS",
+    "member": "Tracce_AI_new/20240513T131843_IV_CRUS_EHE.mseed",
+    "method": 8,
+    "crc32": 1076552952,
+    "compressed": 3853,
+    "uncompressed": 4608,
+    "offset": 1728999578,
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/Tracce_AI_new.zip",
+    "retrieved_utc": "2026-10-12T21:19:17.768062+00:00",
+    "classification": "Original observations, author-event-selected 60-second windows; access inspection only",
+    "used_in_empirical_analysis": false,
+    "file": "inputs/local_inspection/20240513T131843_IV_CRUS_EHE.mseed",
+    "bytes": 4608,
+    "sha256": "a9a0b892cb8cfae56a0a9570581b12aaa3e7f9f0f85585eb34f0e955c746018d",
+    "http": 206,
+    "read_ok": true,
+    "request_ranges": [
+      [
+        1728999578,
+        1728999607
+      ],
+      [
+        1728999687,
+        1729003539
+      ]
+    ],
+    "traces": [
+      {
+        "channel": "IV.CRUS..EHE",
+        "start": "2024-05-13T13:18:38.000000Z",
+        "end": "2024-05-13T13:19:38.000000Z",
+        "samples": 6001,
+        "sample_rate": 100.0
+      }
+    ]
+  },
+  {
+    "station": "CMDP",
+    "member": "Tracce_AI_new/20250313T100251_IV_CMDP_HHE.mseed",
+    "method": 8,
+    "crc32": 3406323116,
+    "compressed": 10324,
+    "uncompressed": 12800,
+    "offset": 3190349104,
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/Tracce_AI_new.zip",
+    "retrieved_utc": "2026-10-12T21:19:19.143963+00:00",
+    "classification": "Original observations, author-event-selected 60-second windows; access inspection only",
+    "used_in_empirical_analysis": false,
+    "file": "inputs/local_inspection/20250313T100251_IV_CMDP_HHE.mseed",
+    "bytes": 12800,
+    "sha256": "827d57df3a3a4dea0a301f287411eb9d498b31436497f01e2e84480212e009be",
+    "http": 206,
+    "read_ok": true,
+    "request_ranges": [
+      [
+        3190349104,
+        3190349133
+      ],
+      [
+        3190349213,
+        3190359536
+      ]
+    ],
+    "traces": [
+      {
+        "channel": "IV.CMDP..HHE",
+        "start": "2025-03-13T10:02:46.000000Z",
+        "end": "2025-03-13T10:03:46.000000Z",
+        "samples": 6001,
+        "sample_rate": 100.0
+      }
+    ]
+  }
+]

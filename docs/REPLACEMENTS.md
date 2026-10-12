@@ -1,3 +1,25 @@
+# Current provenance correction and observational expansion
+
+This revision supersedes the provisional checkpoint at `ff7586a3bb8c8b24bbb06b47f167cce6bbc89d11`. Git history and useful source observations are retained. Earlier entries below describe earlier runs, not the current acceptance status.
+
+- Replaced `figures/continuation_stations.pdf` and `data/continuation/figure_S2.csv`: audited every candidate identifier/epoch, corrected official coordinates, masked distant coastline vertices, applied a local projection and readable numbered labels. New per-identifier QA/epoch tables preserve unresolved metadata.
+- Replaced `data/continuation/historical_leveling.csv`, Figure 1B and the combined Figure 1: added original date/uncertainty strings and separate survey, estimate and reconstruction classes. The numerical source elevations and GNSS observations are unchanged; no digitization was performed.
+- Withdrew `figures/figure_S6_pilot.pdf`, `data/continuation/figure_S6.csv`, previous fitted regional models/corrections and locations. Moved the unverified grid, regional averages, old grid-dependent associations and downstream results to `quarantine/unverified_background`; its manifest records exact previous paths, sizes and SHA-256 hashes. Neither those data nor their PNG diagnostics remain current empirical results.
+- Moved synthetic/analytic CSV/JSON/LaTeX fixtures to `tests/results`; moved injected-waveform assertions to `tests/template_assertions.py`. They remain software checks, not observations.
+- Quarantined old `data/comparison*` products and their LaTeX text. Removed author-result-table statistics from the scientific report and disabled the old result-table comparison entry point. Published reference crops remain comparison-only.
+- Regenerated the frozen input manifests, request/coverage ledgers, picks, initial associations, amplitude/magnitude calculations, statistical outputs and current figures after expanding observations. Pending/failed/no-data requests are never filled. Magnitude measurements now include available stations without associated picks and retain conditional formal uncertainties and rank checks.
+- Added public RAN metadata for 17 station codes (860-member archive inventoried; selected XMLs/HTML frozen). S2 now has 42 exact metadata matches and nine unresolved identifiers; no RAN waveform credentials were supplied.
+- Added separate alternative-profile VELEST precision/physical-validity experiments, CPOZ diagnostic gathers, template-candidate spectra and provisional catalog station-averaged frequency indices. These diagnostics do not complete S6/S7/S12/S14 or focal processing.
+- Replaced `report/report.pdf`, `report/comparison.pdf`, their generated figure fragments, panel records and supporting tables. Removed placeholder figure boxes from the scientific paper, retaining text notices and original numbering. The 19-page comparison-only document retains explicit missing-result placeholders. Both PDFs remain provisional.
+- Disabled superseded grid-dependent build/plot/table entry points. `scripts/rebuild_continuation.py` is the current clean procedure. Original PDFs, uploaded ZIPs, eligible waveforms/metadata, Git history and unrelated work are preserved.
+- Replaced repeated amplitude-stage file decoding with bounded, unmodified waveform caches in sixteen spawned workers. A 60-window sample/time equivalence check precedes execution. The direct-read attempt was intentionally stopped for this performance change; its failed-stage record is retained, and passed inference/association hashes were checked before resumption.
+
+The exact current changed-file inventory is `docs/revision_changes.json`. Access/source receipts, local ZIP waveform inspection and grid provenance are recorded separately in `docs/revision_access.json`, `local_waveform_receipts.json` and `background_grid_provenance.json`. Final build checks are `data/continuation/rebuild_status.json`, `provenance_validation.json` and `report/document_build.json`.
+
+---
+
+## Earlier replacement records (superseded)
+
 # Replaced and preserved files
 
 The first-run commit `df8c8c7` remains in Git history. The interrupted source-access-only attempt was uncommitted and is superseded. Replacement began only after all four uploads were available and the two PDFs' methods/captions had been read.
@@ -34,7 +56,7 @@ The previous report source/PDF, station and coverage PDFs/PNGs, generated report
 
 The supplied PDFs/ZIPs, useful C++ validation source, original observational retrieval/processing and correctly labeled E1/E2/E3 template displays are preserved. The old four-station waveform outputs are recomputed as a retained validation subset, not mislabeled as the expanded analysis. No user source or unrelated work is deleted. Historical commits preserve superseded reports.
 
-Important corrections: the INGV Md calibration exception is now permitted; fixed external backgrounds are distinguished from Tan's fitted products; full-period HTTP 413 is a chunking limitation, not proof of inaccessible data; Data S3 actually has 74 rows/58 gCAP entries, not the caption's 55. A coverage-aggregation development bug caused by pandas' variable timestamp precision was corrected before delivery, with an explicit sample-duration consistency assertion.
+Important corrections: the INGV Md calibration exception is now permitted; fixed external backgrounds are distinguished from Tan's fitted products; full-period HTTP 413 is a chunking limitation, not proof of inaccessible data. The historical Data S3 count assessment is now quarantined, not retained as a current scientific claim. A coverage-aggregation development bug caused by pandas' variable timestamp precision was corrected before delivery, with an explicit sample-duration consistency assertion.
 
 Added historical displacement outputs: original leveling-table extraction, original RITE GNSS through 2019, and a separately plotted written December 2023 monitoring estimate. Added original/retrained PhaseNet probability comparisons at CSOB/CMIS and an internal S–P consistency calculation. These additional diagnostics are not substituted for S4's exact benchmark or S12's relocated sector gathers. The magnitude attempt evaluates all provisional events, not only the smaller VELEST calibration subset.
 

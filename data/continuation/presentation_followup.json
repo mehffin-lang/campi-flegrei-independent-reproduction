@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "reason": "Final visual S2 label/legend clearance; no analytical change.",
+  "commands": [
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/plot_continuation.py"
+      ],
+      "returncode": 0,
+      "elapsed_s": 30.167626023991033,
+      "output": ""
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/continuation_report.py"
+      ],
+      "returncode": 0,
+      "elapsed_s": 1.0218500919872895,
+      "output": "{'independently reproduced': 0, 'partially reproduced': 11, 'not reproduced': 52}\n"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/build_documents.py",
+        "--clean"
+      ],
+      "returncode": 0,
+      "elapsed_s": 47.06427767104469,
+      "output": "Compiling report pass 1\nCompiling report pass 2\nCompiling comparison pass 1\nCompiling comparison pass 2\n{\n  \"main_section_order\": [\n    \"The current phase of unrest\",\n    \"Improving the earthquake catalog\",\n    \"A clearer view of the current phase of unrest\",\n    \"Implications for the physical process driving the unrest\",\n    \"New perspectives for improved seismic risk assessment\"\n  ],\n  \"supplement_section_order\": [\n    \"Building the Campi Flegrei high-resolution earthquake catalog\",\n    \"Validation of earthquake locations\",\n    \"Template Matching to Detect Hybrid Events\"\n  ],\n  \"publication_figure_order\": [\n    \"1\",\n    \"S1\",\n    \"S2\",\n    \"S5\",\n    \"S8\",\n    \"S15\"\n  ],\n  \"comparison_pages\": 19,\n  \"report_pages\": 30,\n  \"section_pages\": {\n    \"Main paper\": 1,\n    \"Reproduced supplement\": 4,\n    \"Reproduction documentation\": 12\n  },\n  \"published_images_only_in_comparison\": true,\n  \"unrelated_comparison_figures\": false,\n  \"build_passed\": true,\n  \"analysis_executed\": false,\n  \"protected_files_checked\": 225,\n  \"protected_files_unchanged\": true,\n  \"matches_pre_edit_snapshot\": false,\n  \"removed_since_historical_baseline\": [\n    \"config/association.json\",\n    \"data/build_log.json\",\n    \"data/build_status.json\",\n    \"data/checks.csv\",\n    \"data/comparison/summary.json\",\n    \"data/comparison/tan_s1_final_comparison.csv\",\n    \"data/extended/amplitude_measurements.csv\",\n    \"data/extended/association_validation.json\",\n    \"data/extended/associations.csv\",\n    \"data/extended/background_averages.csv\",\n    \"data/extended/downstream_summary.json\",\n    \"data/extended/initial_events.csv\",\n    \"data/extended/location_consistency.json\",\n    \"data/extended/location_quality.csv\",\n    \"data/extended/magnitude_edges.csv\",\n    \"data/extended/magnitude_pair_audit.csv\",\n    \"data/extended/magnitudes.csv\",\n    \"data/extended/routine_matches.csv\",\n    \"data/extended/sp_consistency.csv\",\n    \"data/extended/summary.json\",\n    \"data/frequency_index.csv\",\n    \"data/manifest.sha256\",\n    \"data/panel_attempts.json\",\n    \"data/regularization.csv\",\n    \"data/scaling.csv\",\n    \"data/thresholds.csv\",\n    \"data/validation_summary.json\",\n    \"data/waveform.csv\",\n    \"figures/association_diagnostic.pdf\",\n    \"figures/association_diagnostic.png\",\n    \"figures/background_profiles.pdf\",\n    \"figures/background_profiles.png\",\n    \"figures/coverage_partial.pdf\",\n    \"figures/coverage_partial.png\",\n    \"figures/historical_catalog_context.pdf\",\n    \"figures/historical_catalog_context.png\",\n    \"figures/historical_leveling_partial.pdf\",\n    \"figures/historical_leveling_partial.png\",\n    \"figures/routine_catalog_context.pdf\",\n    \"figures/routine_catalog_context.png\",\n    \"figures/sp_consistency.pdf\",\n    \"figures/sp_consistency.png\",\n    \"figures/stations_partial.pdf\",\n    \"figures/stations_partial.png\",\n    \"report/checks_table.tex\",\n    \"report/final_comparison.tex\",\n    \"report/observations.tex\",\n    \"report/results.tex\",\n    \"report/resume_access.tex\",\n    \"report/resume_results.tex\",\n    \"report/stages_table.tex\"\n  ],\n  \"partial_panels\": [\n    \"1A\",\n    \"1B\",\n    \"1C\",\n    \"S1\",\n    \"S2\",\n    \"S5/map\",\n    \"S5/northing-depth\",\n    \"S5/easting-depth\",\n    \"S8A\",\n    \"S8B\",\n    \"S15C\"\n  ],\n  \"independently_reproduced_panels\": [],\n  \"panels_without_valid_independent_comparison\": [\n    \"2A\",\n    \"2B\",\n    \"3/map\",\n    \"3/northing-depth\",\n    \"3/easting-depth\",\n    \"4A\",\n    \"4B\",\n    \"S3A\",\n    \"S3B\",\n    \"S3C\",\n    \"S3D\",\n    \"S4A\",\n    \"S4B\",\n    \"S6/map\",\n    \"S6/northing-depth\",\n    \"S6/easting-depth\",\n    \"S7A/map\",\n    \"S7A/easting-depth\",\n    \"S7B\",\n    \"S7D\",\n    \"S7F\",\n    \"S7C\",\n    \"S7E\",\n    \"S7G\",\n    \"S9/map\",\n    \"S9/northing-depth\",\n    \"S9/easting-depth\",\n    \"S10/2022\",\n    \"S10/2023\",\n    \"S10/2024\",\n    \"S10/2025\",\n    \"S11/swarm-1\",\n    \"S11/swarm-2\",\n    \"S11/swarm-3\",\n    \"S11/swarm-4\",\n    \"S12A\",\n    \"S12B\",\n    \"S12C\",\n    \"S12D\",\n    \"S12E\",\n    \"S12F\",\n    \"S12G\",\n    \"S12H\",\n    \"S13A\",\n    \"S13B\",\n    \"S14/1\",\n    \"S14/2\",\n    \"S14/3\",\n    \"S14/unclustered\",\n    \"S15A\",\n    \"S15B\",\n    \"S15D\"\n  ]\n}\n"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/verify_current_outputs.py"
+      ],
+      "returncode": 0,
+      "elapsed_s": 6.521205730037764,
+      "output": "Associating 1 clusters with 6 CPUs\n{'events': 1, 'assignments': 16, 'location_error_km': 4.2038885264547735e-06, 'origin_error_s': 0.0010000000000000009, 'passed': True, 'scope': 'Analytic homogeneous-medium association check, not observational accuracy or validation of alternative 1D profile'}\nPASS: current partial-panel chains, provenance boundaries and saved numerical consistency.\n\nClustering (eps=8.33):   0%|          | 0/1 [00:00<?, ?it/s]\nClustering (eps=8.33): 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1/1 [00:00<00:00, 4815.50it/s]\n/home/mehffin/campi-flegrei-independent-reproduction/scripts/verify_current_outputs.py:49: DtypeWarning: Columns (13: error) have mixed types. Specify dtype option on import or set low_memory=False.\n  requests=pd.read_csv(D/'request_ledger.csv.gz');assert (requests.loc[~requests.status.eq('downloaded'),'returned_channel_hours']==0).all()\n"
+    }
+  ],
+  "numerical_csv_npz_files_checked": 90,
+  "numerical_csv_npz_hashes_unchanged": true
+}

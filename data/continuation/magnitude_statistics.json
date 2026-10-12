@@ -1,13 +1,13 @@
 {
-  "magnitudes": 22,
-  "matched_Md": 8,
+  "magnitudes": 53,
+  "matched_Md": 19,
   "bin_width": 0.1,
-  "Mc": 0.30000000000000115,
-  "b": 1.2408413768664375,
+  "Mc": 0.3999999999999997,
+  "b": 1.0077551513777105,
   "status": "Pilot maximum-curvature estimate; acquisition and magnitude selection incomplete",
   "full_catalog_completeness": false,
-  "events_ge_Mc": 8,
-  "b_sigma": 0.6097059039497472,
+  "events_ge_Mc": 21,
+  "b_sigma": 0.19249391628319867,
   "estimator": "Aki--Utsu maximum likelihood with half-bin correction; Shi--Bolt sampling error; does not include coverage/systematic errors",
-  "b_caveat": "Conditional descriptive estimate from only 8 selected pilot magnitudes. Neither population completeness nor the regional b-value is established; the formal error excludes selection, magnitude calibration and coverage bias."
+  "b_caveat": "Conditional descriptive estimate from only 21 selected pilot magnitudes. Neither population completeness nor the regional b-value is established; the formal error excludes selection, magnitude calibration and coverage bias."
 }

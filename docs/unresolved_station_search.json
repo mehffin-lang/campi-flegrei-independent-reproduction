@@ -1,0 +1,9 @@
+{
+  "url": "https://webservices.ingv.it/fdsnws/station/1/query?net=%2A&sta=V0106%2CCDOV%2CCROS%2CCASE%2CV0102%2CV0105%2CV0104%2CCMDP&starttime=2022-01-21&endtime=2025-03-21&level=response&format=xml",
+  "http": 204,
+  "bytes": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "retrieved_utc": "2026-10-12T21:51:23.744518+00:00",
+  "file": "inputs/revision/unresolved_station_all_networks.xml",
+  "interpretation": "All-network metadata query for the eight unresolved IV identifiers; a no-data response is specific to this service/query, not proof of absence elsewhere."
+}

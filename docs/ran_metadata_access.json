@@ -1,0 +1,20 @@
+[
+  {
+    "file": "inputs/revision/RAN_stations.html",
+    "url": "https://ran.protezionecivile.it/IT/stazioni.php",
+    "http": 200,
+    "bytes": 1283032,
+    "sha256": "fff394da3a96d8a4eabad2e4892865c21b8bf4eb34384bb4e1bd8e452839d677",
+    "retrieved_utc": "2026-10-12T21:43:16.426551+00:00"
+  },
+  {
+    "file": "inputs/revision/RAN_metadata_response",
+    "url": "https://ran.protezionecivile.it/IT/download_metadata.php?tipo_file=XML&net=IT",
+    "http": 200,
+    "bytes": 10103086,
+    "content_type": "application/zip",
+    "content_disposition": null,
+    "sha256": "89229c3fb7787c9ec71821b7dc53ae363f2f1eddce04794bc553651dc4d9a6e9",
+    "retrieved_utc": "2026-10-12T21:43:44.902363+00:00"
+  }
+]

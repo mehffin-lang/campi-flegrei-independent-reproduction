@@ -1,23 +1,54 @@
-event_index,ML,regularization_lambda,status
-64,0.7999999999999993,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-338,0.30182031034224416,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-339,0.4386278929652085,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-343,1.6672116763063776,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-479,0.34858769830421704,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-72,-0.6306965581611864,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-73,-1.1152555259197157,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-114,-0.8374186504204774,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-158,-0.10519482641939834,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-501,0.003918069961267745,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-508,-0.6664994195407895,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-518,-0.011474712234384708,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-533,-1.1454953149049305,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-333,0.3000000000000001,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-335,0.3008185971314102,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-371,-0.384601964261777,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-393,-0.0819318310142387,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-395,-0.14989101713662148,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-401,-0.18970501499608547,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-517,0.6819318310142405,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-408,-0.32326911436226724,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
-612,-0.3,1.0,"provisional; alternative initial locations, no VELEST/TomoDD"
+event_index,ML,formal_sigma_ML,residual_dof,regularization_lambda,status
+15,-0.7599999999999993,0.011969021602512574,14,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+24,-0.7879399615321143,0.06416036090745134,14,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+61,-0.5797912892575678,0.07651548300322199,14,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+22,1.0518233080298747,0.1699814497716438,34,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+81,0.4228235683784949,0.3615951799063736,34,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+84,1.100000000000001,0.018210980937446702,34,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+228,1.0251000886265893,0.03717948115502632,34,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+612,0.6512266702175173,0.05851022402331152,34,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+837,0.12650112823520349,0.29138522493818597,34,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+28,1.3300000000000003,0.03278820811061408,4,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+46,0.8808541177775646,0.14705442228995297,4,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+36,0.4038670170063654,0.030896553414694702,8,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+39,-0.27,0.012036225887300068,8,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+38,-0.4899999999999997,0.008649526736016008,8,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+40,-0.0069223534886044685,0.03983952167386287,8,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+86,1.041186849395648,0.046494264391807635,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+92,-0.1772750919471464,0.05870877259831714,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+146,-0.7517120758960686,0.48409865039313577,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+251,-0.4453416271588158,0.08075708275825946,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+252,-0.6355080097728415,0.2026236280267234,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+259,0.5239994896415413,0.8206019536009318,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+346,0.386806241027976,0.04040455085753331,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+431,-0.021631734208352224,0.21728588903776833,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+588,-0.7472954237695094,0.8778150538421418,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+672,0.23559340915377702,0.05928183495525534,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+679,0.08326182576153256,0.0541390998061004,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+685,-0.4877249391232197,0.04816592757985043,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+696,0.4181517057314286,0.03998911271693671,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+712,-0.4845035053662457,0.1112252816296464,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+866,-0.9366598318495275,0.22420333415368485,154,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+88,-1.0069340875066595,1.1325087555364417,10,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+123,-0.4769751650060367,0.14262491349470144,10,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+236,-0.30000000000000004,0.05039821331297773,10,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+875,-0.9228470327077274,0.11070357465519068,10,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+154,0.3937356984766081,0.1037615852624934,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+180,0.7660734151935994,0.09179847843730436,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+336,0.44995901601193194,0.18937526204102545,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+514,0.2962987750182028,0.033958499974800514,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+516,0.3048942322226814,0.10333367235201261,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+551,-0.38376422131840365,0.0386755343232299,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+570,-0.07672716713545671,0.02791915313979315,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+572,-0.16532711733883912,0.04804145218265669,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+579,-0.18126931931988594,0.03228155599320729,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+587,-0.5018514242254708,0.37131086543008335,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+694,0.6843972448732208,0.027841376862578864,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+715,0.7908071584707356,0.16363001138961178,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+786,-0.30396885275596747,0.034147798588488515,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+852,0.050753276932229044,0.25193197406421236,200,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+239,0.8629531773336995,0.035502636088800534,39,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+520,0.5597706512840008,0.05452696835804294,39,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+521,0.2892412818700665,0.3390416783677072,39,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+524,1.9370468226662985,0.03550263608880052,39,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions
+660,0.6713735066555602,0.09766450521681352,39,1.0,provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions

@@ -1,0 +1,95 @@
+{
+  "components": [
+    {
+      "component": 2,
+      "events": 3,
+      "equations": 17,
+      "rank": 3,
+      "residual_dof": 14,
+      "calibration_priors": 1,
+      "weighted_residual_sum_squares": 0.0020056046936997775,
+      "accepted": true
+    },
+    {
+      "component": 3,
+      "events": 6,
+      "equations": 40,
+      "rank": 6,
+      "residual_dof": 34,
+      "calibration_priors": 1,
+      "weighted_residual_sum_squares": 0.011275754107937597,
+      "accepted": true
+    },
+    {
+      "component": 4,
+      "events": 2,
+      "equations": 6,
+      "rank": 2,
+      "residual_dof": 4,
+      "calibration_priors": 1,
+      "weighted_residual_sum_squares": 0.004300266364419756,
+      "accepted": true
+    },
+    {
+      "component": 5,
+      "events": 2,
+      "equations": 10,
+      "rank": 2,
+      "residual_dof": 8,
+      "calibration_priors": 1,
+      "weighted_residual_sum_squares": 0.0011589658688808987,
+      "accepted": true
+    },
+    {
+      "component": 6,
+      "events": 2,
+      "equations": 10,
+      "rank": 2,
+      "residual_dof": 8,
+      "calibration_priors": 1,
+      "weighted_residual_sum_squares": 0.000598514502056446,
+      "accepted": true
+    },
+    {
+      "component": 8,
+      "events": 15,
+      "equations": 169,
+      "rank": 15,
+      "residual_dof": 154,
+      "calibration_priors": 7,
+      "weighted_residual_sum_squares": 0.605113100060997,
+      "accepted": true
+    },
+    {
+      "component": 9,
+      "events": 4,
+      "equations": 14,
+      "rank": 4,
+      "residual_dof": 10,
+      "calibration_priors": 1,
+      "weighted_residual_sum_squares": 0.025399799051404097,
+      "accepted": true
+    },
+    {
+      "component": 10,
+      "events": 14,
+      "equations": 214,
+      "rank": 14,
+      "residual_dof": 200,
+      "calibration_priors": 4,
+      "weighted_residual_sum_squares": 0.23623200111494524,
+      "accepted": true
+    },
+    {
+      "component": 14,
+      "events": 5,
+      "equations": 44,
+      "rank": 5,
+      "residual_dof": 39,
+      "calibration_priors": 2,
+      "weighted_residual_sum_squares": 0.059624819637481195,
+      "accepted": true
+    }
+  ],
+  "uncertainty": "Residual-scaled inverse normal matrix of the weighted amplitude/prior system. Conditional on unit Md prior weight and independent homoscedastic weighted errors; excludes absolute calibration, response, association, location and exposure errors. Undefined when residual degrees of freedom are zero."
+}

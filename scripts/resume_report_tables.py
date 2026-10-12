@@ -1,3 +1,5 @@
+# Superseded workflow retained for provenance; not an eligible current entry point.
+raise SystemExit('Use scripts/rebuild_continuation.py; the legacy grid-dependent workflow is quarantined.')
 """Report actual resumed-run outputs; never infer scientific completion from code."""
 from pathlib import Path
 import json

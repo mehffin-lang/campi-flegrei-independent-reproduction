@@ -1,0 +1,18 @@
+station,state_at_retrieval,latitude,longitude,elevation_source_string,installed,removed,source
+BCLI,ATTIVA,40.7968,14.0777,0.015,2019-10-17,---,inputs/revision/RAN_stations.html
+BAIP,ATTIVA,40.8183,14.0705,0.008,2023-10-10,---,inputs/revision/RAN_stations.html
+BAN,ATTIVA,40.8138,14.1652,0.051,2016-06-30,---,inputs/revision/RAN_stations.html
+MPCD,ATTIVA,40.7944,14.0552,0.088,2019-12-13,---,inputs/revision/RAN_stations.html
+NAAG,ATTIVA,40.8334,14.1657,0.032,2024-03-07,---,inputs/revision/RAN_stations.html
+NABA,ATTIVA,40.8188,14.1611,0.071,2024-02-29,---,inputs/revision/RAN_stations.html
+NACO,ATTIVA,40.8049,14.1744,0.007,2023-11-30,---,inputs/revision/RAN_stations.html
+NAD,ATTIVA,40.8717,14.28,0.146,2003-06-06,---,inputs/revision/RAN_stations.html
+NAFG,ATTIVA,40.8202,14.1786,0.134,2024-02-28,---,inputs/revision/RAN_stations.html
+NAP,ATTIVA,40.7992,14.1796,0.203,2003-06-18,---,inputs/revision/RAN_stations.html
+POZA,NON ATTIVA,40.8341,14.1167,0.073,2023-11-30,2025-01-15,inputs/revision/RAN_stations.html
+POZL,ATTIVA,40.8321,14.0843,0.041,2023-11-30,---,inputs/revision/RAN_stations.html
+POZT,ATTIVA,40.8208,14.121,0.036,2019-10-17,---,inputs/revision/RAN_stations.html
+POZM,ATTIVA,40.8239,14.1435,0.151,2024-02-28,---,inputs/revision/RAN_stations.html
+POZB,ATTIVA,40.8401,14.1012,0.073,2024-03-06,---,inputs/revision/RAN_stations.html
+POZS,ATTIVA,40.8288,14.13,0.093,2019-10-17,---,inputs/revision/RAN_stations.html
+POZU,ATTIVA,40.8558,14.1208,0.073,2024-03-07,---,inputs/revision/RAN_stations.html

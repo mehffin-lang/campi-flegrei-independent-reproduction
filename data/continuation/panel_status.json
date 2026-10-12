@@ -1,8 +1,8 @@
 {
   "counts": {
     "independently reproduced": 0,
-    "partially reproduced": 14,
-    "not reproduced": 49
+    "partially reproduced": 11,
+    "not reproduced": 52
   },
   "partial": [
     "1A",
@@ -13,9 +13,6 @@
     "S5/map",
     "S5/northing-depth",
     "S5/easting-depth",
-    "S6/map",
-    "S6/northing-depth",
-    "S6/easting-depth",
     "S8A",
     "S8B",
     "S15C"
@@ -34,6 +31,9 @@
     "S3D",
     "S4A",
     "S4B",
+    "S6/map",
+    "S6/northing-depth",
+    "S6/easting-depth",
     "S7A/map",
     "S7A/easting-depth",
     "S7B",

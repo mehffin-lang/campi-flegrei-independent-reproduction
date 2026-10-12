@@ -227,4 +227,5 @@ def main():
     (D/'velest_summary.json').write_text(json.dumps(record,indent=2)+'\n');print(json.dumps(record,indent=2))
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    raise SystemExit('Independent VELEST stage is blocked: background provenance unverified. Use scripts/velest_stability.py only for the labeled alternative-profile experiment.')

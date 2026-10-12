@@ -1,0 +1,54 @@
+{
+  "scope": "Exploratory alternative-profile precision experiment; not S6 or Table S1",
+  "accepted_independent_result": false,
+  "starting_profile": "data/continuation/alternative_starting_profile.csv",
+  "selection": "Positive travel time; >6 picks and initial azimuthal gap <180 degrees; not manually reviewed",
+  "events": 120,
+  "runs": [
+    {
+      "bits": 32,
+      "command": [
+        "gfortran",
+        "-std=legacy",
+        "-O2",
+        "-fcheck=bounds",
+        "-I",
+        "build",
+        "build/velest-portable.f",
+        "-o",
+        "/home/mehffin/campi-flegrei-independent-reproduction/build/velest32"
+      ],
+      "workdir": "tmp/continuation/velest_stability_32",
+      "returncode": 0,
+      "physical_velocity_check": true,
+      "rms_s": 0.38923000912057126
+    },
+    {
+      "bits": 64,
+      "command": [
+        "gfortran",
+        "-std=legacy",
+        "-O2",
+        "-fcheck=bounds",
+        "-fdefault-real-8",
+        "-fdefault-double-8",
+        "-I",
+        "build",
+        "build/velest-portable.f",
+        "-o",
+        "/home/mehffin/campi-flegrei-independent-reproduction/build/velest64"
+      ],
+      "workdir": "tmp/continuation/velest_stability_64",
+      "returncode": 0,
+      "physical_velocity_check": true,
+      "rms_s": 0.38923000912057126
+    }
+  ],
+  "maximum_velocity_difference_km_s": {
+    "Vp_km_s": 0.0,
+    "Vs_km_s": 0.0
+  },
+  "maximum_depth_difference_km": 0.0,
+  "numerically_agrees_at_output_resolution": true,
+  "interpretation": "Precision agreement tests numerical reproducibility only; physical velocity checks are separate. Exact profile, independently reviewed phases and validated regional calibration remain missing; these fits cannot authorize TomoDD/S7 or be used as S6 results."
+}

@@ -1,3 +1,5 @@
+# Superseded workflow retained for provenance; not an eligible current entry point.
+raise SystemExit('Use scripts/rebuild_continuation.py; the legacy grid-dependent workflow is quarantined.')
 """Offline verified rebuild of bounded observational analysis, figures and both PDFs."""
 from pathlib import Path
 import os,sys,json,hashlib,zipfile,subprocess,time

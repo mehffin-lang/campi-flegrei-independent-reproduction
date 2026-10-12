@@ -18,7 +18,7 @@
     },
     {
       "source": "https://github.com/iamharrison2000/Campi-Flegrei-Earthquake-Monitoring/tree/f84c9c9dc6bb1501a95a833f6634199a63d4f3b3/models",
-      "result": "Tree/README inspected. Released 1d_vmod_velest.mod is the Tan-fitted model and excluded. Fixed 3d_vmod and weights are permitted method artifacts, not proof of the exact association profile."
+      "result": "Tree/README inspected. Weights remain permitted; Tan-fitted models/corrections excluded. The fixed grid is now quarantined: its numerical original provenance and modifications are unverified."
     },
     {
       "source": "https://onlinelibrary.wiley.com/doi/full/10.1155/2012/505286",
@@ -120,5 +120,6 @@
       ]
     ],
     "reason": "Different local shallow inversion, not the requested association starting profile. Not used."
-  }
+  },
+  "revision_access_receipts": "docs/revision_access.json"
 }

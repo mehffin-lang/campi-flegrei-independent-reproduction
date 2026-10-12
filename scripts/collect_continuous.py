@@ -138,7 +138,7 @@ def run(args):
                 print('STOP: fewer than 20 GiB free on the shared filesystem.', flush=True)
                 break
             while len(active) < args.workers and (args.max_jobs is None or completed+len(active) < args.max_jobs):
-                job = conn.execute("SELECT * FROM jobs WHERE status='pending' ORDER BY start DESC, CASE WHEN station IN ('CAAM','COLB') THEN 0 ELSE 1 END,station LIMIT 1").fetchone()
+                job = conn.execute("SELECT * FROM jobs WHERE status='pending' ORDER BY (end-start), start, CASE WHEN station IN ('CAAM','COLB') THEN 0 ELSE 1 END,station LIMIT 1").fetchone()
                 if job is None:
                     break
                 conn.execute("UPDATE jobs SET status='running', attempts=attempts+1 WHERE id=?", (job['id'],))
@@ -179,7 +179,7 @@ def summarize():
         coverage.append(dict(channel=channel, intervals=merged, hours=sum(b-a for a,b in merged)/3600))
     statuses=dict(conn.execute('SELECT status,count(*) FROM jobs GROUP BY status').fetchall())
     summary=dict(study_start=str(UTCDateTime(START)),study_end_exclusive=str(UTCDateTime(END)),
-                 request_hours=6,priority='reverse chronological by study dates; no event catalog',
+                 request_hours='6-hour full-period queue plus 0.5-hour calendar coverage checks',priority='short requests first, then chronological; no event catalog',
                  jobs_by_status=statuses,full_collection_complete=not any(statuses.get(k,0) for k in ['pending','running','failed']),
                  downloaded_bytes=sum(row['bytes'] for row in rows if row['status']=='downloaded'),
                  files=statuses.get('downloaded',0),channel_hours=sum(row['hours'] for row in coverage),
@@ -196,12 +196,35 @@ def summarize():
     return summary
 
 
+def spread():
+    """Probe all available study stations at calendar dates across the interval.
+
+    This bounded diagnostic batch does not replace the full six-hour queue.
+    It avoids spending every early acquisition batch on the last study days.
+    """
+    conn=connect();times=[START]
+    for year in [2022,2023,2024,2025]:
+        for month in [1,4,7,10]:
+            t=float(UTCDateTime(f'{year}-{month:02d}-01'))
+            if START<t<END:times.append(t)
+    times.append(float(UTCDateTime('2025-03-01')))
+    inserted=0
+    for t in times:
+        stations=conn.execute('SELECT DISTINCT network,station,channel FROM jobs WHERE start<=? AND end>=?',(t,t+1800)).fetchall()
+        for net,sta,band in stations:
+            ident=f'{net}_{sta}_{UTCDateTime(t).strftime("%Y%m%dT%H%M%S")}_{UTCDateTime(t+1800).strftime("%Y%m%dT%H%M%S")}'
+            cursor=conn.execute('INSERT OR IGNORE INTO jobs(id,network,station,channel,start,end) VALUES(?,?,?,?,?,?)',(ident,net,sta,band,t,t+1800))
+            inserted+=cursor.rowcount
+    conn.commit();conn.close();print('Added',inserted,'half-hour calendar checks; full-period queue remains pending.')
+
+
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('mode',choices=['plan','run','summary'])
+    parser.add_argument('mode',choices=['plan','run','summary','spread'])
     parser.add_argument('--workers',type=int,default=6)
     parser.add_argument('--max-jobs',type=int)
     args=parser.parse_args()
     if args.mode=='plan': plan()
+    elif args.mode=='spread':spread()
     elif args.mode=='run': run(args)
     else: print(json.dumps(summarize(),indent=2))

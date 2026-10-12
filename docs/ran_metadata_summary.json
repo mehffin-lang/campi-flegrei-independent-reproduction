@@ -1,0 +1,117 @@
+{
+  "source": "https://ran.protezionecivile.it/IT/stazioni.php",
+  "archive_members": 860,
+  "selected_xml": [
+    {
+      "file": "inputs/revision/ran_stationxml/BAIP.IT.xml",
+      "archive_member": "BAIP.IT.xml",
+      "bytes": 137257,
+      "sha256": "30fecb061ae40e6818ed33aadd690a060e931aa6cbd09f3c619ecbbd78574862"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/BAN.IT.xml",
+      "archive_member": "BAN.IT.xml",
+      "bytes": 193650,
+      "sha256": "96b20565feb671a44877a333ad75dfa75ac8c46659eaf8c041cd93d18af5b061"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/BCLI.IT.xml",
+      "archive_member": "BCLI.IT.xml",
+      "bytes": 283157,
+      "sha256": "c24dcabc1e1e55636cc2cc7287d67398eabb0d8e658969d40356fa7e6a5d74ca"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/MPCD.IT.xml",
+      "archive_member": "MPCD.IT.xml",
+      "bytes": 273339,
+      "sha256": "646840b7015dedd6cbb54c0d26f049fe4f0cf91d3d6f7c16085f7d8533561729"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NAAG.IT.xml",
+      "archive_member": "NAAG.IT.xml",
+      "bytes": 283164,
+      "sha256": "bc063b4349f4f6d590b6bc7edb816a7fe8977fb552b7a0c6178ed56695ec42b9"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NABA.IT.xml",
+      "archive_member": "NABA.IT.xml",
+      "bytes": 137236,
+      "sha256": "ebfbd4dbad83ed0ac1417d6027d7c05fb3ca624de494b29897a3230c654c2dbe"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NACO.IT.xml",
+      "archive_member": "NACO.IT.xml",
+      "bytes": 283147,
+      "sha256": "437e4c72c6e76d9a20e6fff17af8a3adaabeb47047905c876ed480dc303fcb4a"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NAD.IT.xml",
+      "archive_member": "NAD.IT.xml",
+      "bytes": 362883,
+      "sha256": "357df96f7524405a3f78449168bbaf0a988f1bb4ae11c4c951c0edcd7e93cd5b"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NAFG.IT.xml",
+      "archive_member": "NAFG.IT.xml",
+      "bytes": 137244,
+      "sha256": "19bf0fc4c8eda388388064816ad4e7ffb19f387f7ccbe14c018b5b90ed634f18"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NAP.IT.xml",
+      "archive_member": "NAP.IT.xml",
+      "bytes": 362987,
+      "sha256": "af1c0a49a7dbf3b4742c9751226ecf3732574f3f75007a9a741f02ebca6b6b51"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZA.IT.xml",
+      "archive_member": "POZA.IT.xml",
+      "bytes": 142166,
+      "sha256": "ff97356ba233141bb8397326f90f37c3cb8df5b6a31afca1274b45120375d8fe"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZB.IT.xml",
+      "archive_member": "POZB.IT.xml",
+      "bytes": 137248,
+      "sha256": "bee00ca086a1e137bf92c6c524c0cb644ba2b65c43837be4dfe3303e99cb42ca"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZL.IT.xml",
+      "archive_member": "POZL.IT.xml",
+      "bytes": 137238,
+      "sha256": "efd21e046f0bb6dc7c155fd0d2a96feabc41cedbf25712c5e807da318f3eb442"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZM.IT.xml",
+      "archive_member": "POZM.IT.xml",
+      "bytes": 283206,
+      "sha256": "5414b8856c7bb8fca2fd24078cb199702ada4182e804eaf22a01aeacb1fdd860"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZS.IT.xml",
+      "archive_member": "POZS.IT.xml",
+      "bytes": 281441,
+      "sha256": "7e9249daa1267b3a79a6871ebe1e72cb9026ed6e736878eacf016d074ce14b13"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZT.IT.xml",
+      "archive_member": "POZT.IT.xml",
+      "bytes": 273343,
+      "sha256": "2ab9a7e9a6e9543cc39e79d032458e19d46c24c3bec82883eeca9d6142309136"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZU.IT.xml",
+      "archive_member": "POZU.IT.xml",
+      "bytes": 137246,
+      "sha256": "d94fb59725b61911be07005713696f3c15505c703a5ecb5a0372a0f361047182"
+    }
+  ],
+  "stations": 17,
+  "study_acceleration_channel_epochs": 57,
+  "responses_present": 57,
+  "geometry_units": "XML latitude/longitude degrees, elevation/depth metres; HTML altitude string retained without assumed conversion.",
+  "parser_warnings": [
+    "'b'<Azimuth xmlns=\"http://www.fdsn.org/xml/station/1\" xmlns:xsi=\"http://www.w3.org/2011/XMLSchema-instance\" xmlns:css30=\"http://www.brtt.com/xml/station/css30\"><!--null-->0.0</Azimuth>\\n       '' could not be converted to a float. Will be skipped. Please contact to report this issue.",
+    "'b'<Dip xmlns=\"http://www.fdsn.org/xml/station/1\" xmlns:xsi=\"http://www.w3.org/2011/XMLSchema-instance\" xmlns:css30=\"http://www.brtt.com/xml/station/css30\"><!--null-->0.0</Dip>\\n       '' could not be converted to a float. Will be skipped. Please contact to report this issue."
+  ],
+  "note": "Warnings concern ancillary channels with null orientation comments; acceleration-channel orientations are retained explicitly. NAP has HG channels, unlike the released HN identifier; it is not silently renamed. Metadata access is public. Waveform download credentials remain unavailable. POZA closes on 2025-01-15; all 17 overlap part of the study. This does not prove the paper used precisely these instruments."
+}

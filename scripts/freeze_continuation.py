@@ -1,6 +1,6 @@
 """Freeze an auditable input checkpoint; no requested interval becomes coverage."""
 from pathlib import Path
-import datetime,hashlib,json,zipfile
+import datetime,gzip,hashlib,json,sqlite3,zipfile
 import process_continuous as workflow
 from collect_continuous import summarize
 ROOT=Path(__file__).resolve().parents[1]
@@ -19,6 +19,13 @@ jobs=[dict(file=f,start=a,end=b,sha256=h) for f,a,b,h in workflow.jobs()]
 (ROOT/'docs/continuation_processed_inputs.json').write_text(json.dumps(jobs,indent=2)+'\n')
 summary=summarize();summary['checkpoint_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()
 (ROOT/'data/continuation/acquisition_checkpoint.json').write_text(json.dumps(summary,indent=2)+'\n')
+database=sqlite3.connect(ROOT/'inputs/continuation/acquisition.sqlite')
+snapshot=ROOT/'tmp/continuation/acquisition_checkpoint.sqlite'
+target=sqlite3.connect(snapshot);database.backup(target);target.execute('PRAGMA journal_mode=DELETE');target.close();database.close()
+bundle_db=ROOT/'sources/acquisition_checkpoint.sqlite.gz'
+bundle_db.write_bytes(gzip.compress(snapshot.read_bytes(),mtime=0))
+(ROOT/'docs/acquisition_database_snapshot.json').write_text(json.dumps(dict(file=str(bundle_db.relative_to(ROOT)),bytes=bundle_db.stat().st_size,sha256=hashlib.sha256(bundle_db.read_bytes()).hexdigest(),
+    role='Frozen request/response administrative ledger, including pending jobs; not evidence that pending intervals were observed.'),indent=2)+'\n')
 # Preserve the small textual/context inputs as a compressed source snapshot.
 # Live routine pages change, so a future download may not reproduce their hash.
 # Large continuous waveform observations remain outside Git, with exact URLs.

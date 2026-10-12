@@ -1,0 +1,27 @@
+{
+  "command": ".venv/bin/python scripts/restore_inputs.py --continuation",
+  "returncode": 0,
+  "verified_input_entries": 724,
+  "log_sha256": "d1e6f326e3610292415b52709c29648a754585884646db5c1cb2a8e149c21dda",
+  "log_local_path": "tmp/continuation/restore_revision_final.log",
+  "checked_utc": "2026-10-12T22:36:07.753923+00:00",
+  "quarantined_grid_required": false,
+  "note": "Successful restoration/hash verification with existing local observations; not a claim that every live URL was redownloaded.",
+  "revision_source_bundle_sha256": "c34a4f162d0a55f102e0fa7373ecbca6be745132a29db906243e1d86e28a4a18",
+  "revision_source_bundle_members": 33,
+  "external_written_sources": 1,
+  "previous_checks": [
+    {
+      "command": ".venv/bin/python scripts/restore_inputs.py --continuation",
+      "returncode": 0,
+      "verified_input_entries": 723,
+      "log_sha256": "375fcdb7b8f1253379b25cff7ab75d65c8716a48b5e0f1cf645594a6c59cac67",
+      "log_local_path": "tmp/continuation/restore_revision.log",
+      "checked_utc": "2026-10-12T22:00:19.919227+00:00",
+      "quarantined_grid_required": false,
+      "note": "Successful restoration/hash verification with existing local observations; not a claim that every live URL was redownloaded.",
+      "revision_source_bundle_sha256": "6b2aa0dbc6c4995741cd13b7adb34e9c41cc9d5f23e52730c7d98c6a315f416b",
+      "revision_source_bundle_members": 34
+    }
+  ]
+}

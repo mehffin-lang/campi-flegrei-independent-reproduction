@@ -1,0 +1,9 @@
+{
+  "candidates": 822,
+  "measured": 822,
+  "failures": [],
+  "confirmed_hybrids": 0,
+  "negative_FI_candidates": 258,
+  "method": "CAAM Z, response-corrected velocity; 8 s at template alignment, FFT band power 8--15 Hz / 2--5 Hz; 8 s preceding noise. No taper or coda rejection, no manual onset review.",
+  "limitations": "Negative FI and correlation crossings do not establish hybrid events. No confirmed clusters or cluster-relative magnitudes are produced."
+}

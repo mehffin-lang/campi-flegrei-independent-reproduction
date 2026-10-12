@@ -9,9 +9,13 @@ import rebuild_state
 ROOT=Path(__file__).resolve().parents[1];os.chdir(ROOT)
 ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--fresh',action='store_true',help='Recompute all inference, including the earlier independent inputs.');ap.add_argument('--resume',action='store_true',help='Resume a failed stage only if completed dependencies retain their hashes.');args=ap.parse_args()
 if args.fresh and args.resume:ap.error('--fresh and --resume are mutually exclusive')
+if args.resume:
+    prior=rebuild_state.verify()
+    # Preserve the original fresh-build command sequence when resuming it.
+    args.fresh=any('scripts/analyze_observations.py' in row for row in prior['passed_commands'])
 os.environ.update(TMPDIR=str(ROOT/'tmp'),MPLCONFIGDIR=str(ROOT/'tmp/matplotlib'),SEISBENCH_CACHE_ROOT=str(ROOT/'tmp/seisbench'),NUMBA_CACHE_DIR=str(ROOT/'tmp/numba'),SOURCE_DATE_EPOCH='1791763200',PYTHONDONTWRITEBYTECODE='1',OPENBLAS_NUM_THREADS='2',OMP_NUM_THREADS='2',MKL_NUM_THREADS='2')
 D=ROOT/'data/continuation'
-for folder in [D,ROOT/'build',ROOT/'tmp/continuation']:folder.mkdir(parents=True,exist_ok=True)
+for folder in [D,ROOT/'build',ROOT/'tmp/continuation',ROOT/'tests/results']:folder.mkdir(parents=True,exist_ok=True)
 # Access/identity checks precede any product replacement.
 for row in json.loads(Path('docs/file_inventory.json').read_text()):
     p=Path(row['file']);assert p.stat().st_size==row['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest()==row['sha256']
@@ -23,17 +27,25 @@ assert all('Figure S'+str(i)+':' in Path('tmp/continuation/tanmodelsupp.txt').re
 for manifest in ['docs/rebuild_inputs.json','docs/continuation_rebuild_inputs.json']:
     for row in json.loads(Path(manifest).read_text()):
         p=Path(row['file']);assert p.exists() and p.stat().st_size==row['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest()==row['sha256'],row['file']
-commands=[['g++','-std=c++17','-O3','-Wall','-Wextra','-pedantic','src/method_checks.cpp','-o','build/method_checks'],['./build/method_checks','config/method_checks.cfg','data'],[sys.executable,'scripts/build_velest.py']]
+commands=[['g++','-std=c++17','-O3','-Wall','-Wextra','-pedantic','src/method_checks.cpp','-o','build/method_checks'],['./build/method_checks','config/method_checks.cfg','tests/results'],[sys.executable,'scripts/build_velest.py']]
 if args.fresh:commands += [[sys.executable,'scripts/'+s+'.py'] for s in ['analyze_observations','extended_analysis']]
-commands += [[sys.executable,'scripts/'+s+'.py'] for s in ['plot_observations','prepare_continuation','continue_context']]
+commands += [[sys.executable,'scripts/'+s+'.py'] for s in ['plot_observations','prepare_continuation','continue_context','station_geometry','acquisition_ledger']]
 commands.append([sys.executable,'scripts/process_continuous.py','all','--workers','6','--frozen']+(['--fresh'] if args.fresh else []))
 commands.append([sys.executable,'scripts/check_starting_profile.py'])
-commands += [[sys.executable,'scripts/audit_continuation.py'],[sys.executable,'scripts/downstream_checks.py','--dataset','continuation'],[sys.executable,'scripts/run_velest.py'],[sys.executable,'scripts/magnitude_statistics.py'],[sys.executable,'scripts/location_consistency.py','--dataset','continuation'],[sys.executable,'scripts/extend_hybrid_scan.py','--dataset','continuation'],[sys.executable,'scripts/plot_continuation.py'],[sys.executable,'scripts/final_comparison.py','--dataset','continuation'],[sys.executable,'scripts/continuation_report.py'],[sys.executable,'scripts/build_documents.py','--clean']]
+commands += [[sys.executable,'scripts/audit_continuation.py'],[sys.executable,'scripts/downstream_checks.py','--dataset','continuation'],[sys.executable,'scripts/velest_stability.py'],[sys.executable,'scripts/magnitude_statistics.py'],[sys.executable,'scripts/location_consistency.py','--dataset','continuation'],[sys.executable,'scripts/cpoz_gathers.py'],[sys.executable,'scripts/extend_hybrid_scan.py','--dataset','continuation'],[sys.executable,'scripts/hybrid_candidate_metrics.py'],[sys.executable,'scripts/plot_continuation.py'],[sys.executable,'scripts/continuation_report.py'],[sys.executable,'scripts/build_documents.py','--clean']]
+commands.insert(next(i for i,c in enumerate(commands) if c[-1]=='scripts/plot_continuation.py'),[sys.executable,'scripts/catalog_frequency_index.py'])
+commands.insert(next(i for i,c in enumerate(commands) if 'scripts/downstream_checks.py' in c),[sys.executable,'tests/check_window_reads.py'])
+commands.append([sys.executable,'scripts/verify_current_outputs.py'])
 logs=[];started=time.monotonic();resumed_stages=0
 if args.resume:
     state=rebuild_state.verify();previous=json.loads((D/'rebuild_log.json').read_text())
     resumed_stages=len(state['passed_commands'])
     assert commands[:resumed_stages]==state['passed_commands'], 'Completed command sequence changed'
+    attempts_path=D/'rebuild_attempts.json'
+    attempts=json.loads(attempts_path.read_text()) if attempts_path.exists() else []
+    old_attempt=D/'rebuild_failed_attempt.json'
+    if old_attempt.exists() and not attempts:attempts.append(json.loads(old_attempt.read_text()))
+    attempts.append(previous);attempts_path.write_text(json.dumps(attempts,indent=2)+'\n')
     (D/'rebuild_failed_attempt.json').write_text(json.dumps(previous,indent=2)+'\n')
     logs=previous[:resumed_stages];commands=commands[resumed_stages:]
     print('RESUME after',resumed_stages,'hash-verified successful stages',flush=True)

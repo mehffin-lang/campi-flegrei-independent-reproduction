@@ -1,0 +1,25 @@
+{
+  "failure": "TypeError: NumPy Boolean in magnitude inversion-check JSON; measurement/equation/magnitude CSVs were saved before serialization failed.",
+  "failed_script_sha256": "8877a213bccae66ddf76c06a976b3af0b48b00da423f3ca092fd2f47f7186bc6",
+  "saved_csv_sha256": {
+    "data/continuation/amplitude_measurements.csv": "c4138a69b3ee6afceb84ea486eb8207751ea0b2420dfcc3c4b87fd69424d89c4",
+    "data/continuation/location_quality.csv": "7031b805b65fbeb3ce02dd08981c52dcadd5308a0ec38ba193e852d402d9f715",
+    "data/continuation/magnitude_pair_audit.csv": "84ba3b6e592c02575ac4a91b154f8a4a9e0a1d043cf258626ac0bc745444b915",
+    "data/continuation/magnitude_edges.csv": "42e6a315155ebe5635e029e5f31bd288d09688052413d0b373219fd500a4a300",
+    "data/continuation/routine_matches.csv": "12add08f42c367e22ca29a43d200e5961c4de233bf438cffbba57b0fa808eaa3",
+    "data/continuation/ambiguous_routine_matches.csv": "f8f75aebc7f61e129f46de1f5faeb056df17bdccfdfaba732b80e6c310d696e3",
+    "data/continuation/magnitudes.csv": "848e890d0823d309ddec21ce1b61d98779fef11f1627e1945c2f34e0680ad9c2"
+  },
+  "action": "Convert rank acceptance to a Python bool and rerun the failed stage from observations with 16 workers. These pre-failure files are not substituted for a passed stage.",
+  "rerun_csv_hashes_match": {
+    "data/continuation/amplitude_measurements.csv": false,
+    "data/continuation/location_quality.csv": true,
+    "data/continuation/magnitude_pair_audit.csv": true,
+    "data/continuation/magnitude_edges.csv": true,
+    "data/continuation/routine_matches.csv": true,
+    "data/continuation/ambiguous_routine_matches.csv": true,
+    "data/continuation/magnitudes.csv": true
+  },
+  "rerun_outcome": "Passed full measurement/inversion rerun from original observations; 16 workers; Python bool conversion only in inversion-check serialization.",
+  "comparison_limit": "Six saved downstream CSVs are byte-identical; amplitude_measurements.csv has a different byte hash. A pre-failure CSV copy was not retained, so numerical values versus ordering/formatting could not be distinguished. Current amplitude measurements were fully regenerated in the passed run, with 60,092 measurements, 3,868 SNR passes and no recorded measurement exceptions; all saved magnitude equations and estimates are byte-identical."
+}

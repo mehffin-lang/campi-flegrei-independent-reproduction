@@ -44,7 +44,7 @@ No physical initial/boundary conditions apply: this is finite-window signal anal
 - S7 uncertainty discussion cites panelsC/E/H andD/F/I, while the figure/caption uses B/D/F for count-versus-error andC/E/G for densities. Inventory follows the figure and its caption.
 - FigS9 methods retain exactly100 differential correlations; its caption implies rejection at100. Both predicates are saved in `data/thresholds.csv`. No arbitrary choice is applied to a catalog.
 - HTMLS1 describes a distinct quality filter summing NCCP+NCCS+NCTP+NCTS>1000. It is not the S9 filter.
-- Methods discuss 74 focal solutions; the Data S3 caption describes 55. The resumed final-comparison audit counts 74 CSV rows and 58 gCAP entries, agreeing with the methods rather than the caption. No solution values are used as inputs.
+- Methods discuss 74 focal solutions; the Data S3 caption describes 55. A superseded table-count comparison is quarantined. The current scientific report does not make claims from supplied mechanism rows.
 - S15 spells a station CCAM once, whereas its normalization and methods identify CAAM. The record retains that discrepancy.
 
 ## Validation scope
@@ -63,6 +63,6 @@ The separate calendar-day template scan uses the three written templates, CAAM/C
 
 ## Resumed-run additions (supersede earlier restriction statements)
 
-The current authoritative methods and assumptions are in `report/report.tex`, `docs/INPUT_POLICY.md`, `config/association.json`, and the extended scripts. The fixed external background is an explicitly labeled sensitivity input; the fitted author 1D model remains excluded. Routine Md may enter the paper's documented magnitude regularization after independent association. No measured amplitude equations passed the full pair screen, so no calibrated magnitude is reported.
+For that historical baseline, methods were recorded in `config/association.json` and the extended scripts; the configuration and grid-dependent results are now quarantined. Current authoritative methods are in `docs/CONTINUATION.md` and the post-supplement report documentation. The fixed external background is an explicitly labeled sensitivity input; the fitted author 1D model remains excluded. Routine Md may enter the paper's documented magnitude regularization after independent association. No measured amplitude equations passed the full pair screen, so no calibrated magnitude is reported.
 
 The generic VELEST geometry screen is >6 observations and azimuthal gap <180 degrees. The paper's 0.25 s RMS cutoff belongs after location and is not a prerequisite imposed on the provisional calibration candidates. The current insufficient independent sample is not replaced by the authors' 373-event subset. Generic software compilation is distinct from a scientific inversion.

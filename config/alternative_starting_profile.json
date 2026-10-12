@@ -5,5 +5,5 @@
   "source_sha256": "0e0bfebef717c272a8ed91ef63005a447e1e760dbbf4289ff25f8baa2957dad5",
   "convention": "Piecewise constant layers; depths of tops in km below sea level, Vp and Vs in km/s. Vs=Vp/1.78. First layer extended above sea level for station elevations; last layer extended to the bottom of the computational domain.",
   "status": "Published alternative, NOT verified as the exact Calo--Tramelli 2018 GaMMA starting model",
-  "use": "Association sensitivity alternative only. VELEST starts from independently averaged fixed external 3D model."
+  "use": "Exploratory GaMMA association and separate VELEST precision experiment only. The unverified fixed 3D grid and previous regional averages are quarantined; no independent regional calibration accepted."
 }

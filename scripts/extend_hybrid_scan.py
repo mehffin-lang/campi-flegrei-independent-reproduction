@@ -32,7 +32,7 @@ for f in files:
 intervals=[];candidates=[];covered=[]
 for a0,a1,af in sorted(index['CAAM']):
     for b0,b1,bf in sorted(index['COLB']):
-        start=max(a0,b0);end=min(a1,b1)
+        start=max(a0,b0,UTCDateTime('2022-01-21'));end=min(a1,b1,UTCDateTime('2025-03-21'))
         if end-start<30:continue
         # Partition against already scanned intervals to avoid duplicate exposure.
         chunks=[(start,end)]

@@ -1,0 +1,5 @@
+panel,saved_input,selected_events,in_view,outside_view,first_axis,first_min,first_max,second_axis,second_min,second_max,units,role
+1A,data/continuation/figure_1A.csv,16046,16038,8,x_km,-9,9,y_km,-6,7,km,Display extent only; excluded points remain in the selected numerical table
+S5/map,data/continuation/figure_S5.csv,12503,12500,3,x_km,-9,9,y_km,-6,7,km,Display extent only; excluded points remain in the selected numerical table
+S5/northing-depth,data/continuation/figure_S5.csv,12503,12500,3,depth_km,0,7,y_km,-6,7,km,Display extent only; excluded points remain in the selected numerical table
+S5/easting-depth,data/continuation/figure_S5.csv,12503,12503,0,x_km,-9,9,depth_km,0,7,km,Display extent only; excluded points remain in the selected numerical table

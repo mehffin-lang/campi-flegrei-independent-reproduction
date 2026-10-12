@@ -1,8 +1,8 @@
 {
   "events": 1,
   "assignments": 16,
-  "location_error_km": 5.958820557126873e-07,
-  "origin_error_s": 0.0,
+  "location_error_km": 4.2038885264547735e-06,
+  "origin_error_s": 0.0010000000000000009,
   "passed": true,
   "scope": "Analytic homogeneous-medium association check, not observational accuracy or validation of alternative 1D profile"
 }

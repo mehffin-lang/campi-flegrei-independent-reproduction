@@ -1,0 +1,7 @@
+{
+  "frozen_caches_checked": 437,
+  "all_current_caches_valid": true,
+  "effect_on_current_results": "None: every current cache passes the added assembly guard; no current picks, coverage or associations changed.",
+  "purpose": "Exclude incompatible old caches if replacement inference fails, and exclude caches outside the selected acquisition jobs.",
+  "script_sha256": "e31d49f9227c9cab2086697935b58f262eddc76b5b583498c546c49a9099d5f1"
+}

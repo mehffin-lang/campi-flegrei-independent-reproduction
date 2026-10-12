@@ -1,16 +1,44 @@
 event_index,external_id,Md,time_difference_s,role
-0,32065,-0.3,-0.16100001335144043,final comparison; potential S6 calibration prior only
-1,32066,-0.5,-1.0769999027252197,final comparison; potential S6 calibration prior only
-2,32069,-0.1,0.11099982261657715,final comparison; potential S6 calibration prior only
-61,44500,-0.3,-1.5970001220703125,final comparison; potential S6 calibration prior only
-64,44501,0.8,0.007999897003173828,final comparison; potential S6 calibration prior only
-114,44504,-0.8,-0.9260001182556152,final comparison; potential S6 calibration prior only
-132,44505,0.3,0.29599976539611816,final comparison; potential S6 calibration prior only
-329,44509,,-1.0429999828338623,final comparison; potential S6 calibration prior only
-333,44510,0.3,0.009999990463256836,final comparison; potential S6 calibration prior only
-393,44513,-0.3,0.011999845504760742,final comparison; potential S6 calibration prior only
-491,44526,0.2,-0.023000001907348633,final comparison; potential S6 calibration prior only
-501,44527,0.1,0.4799997806549072,final comparison; potential S6 calibration prior only
-508,44528,-0.8,-0.9210000038146973,final comparison; potential S6 calibration prior only
-517,44529,0.9,-0.05099987983703613,final comparison; potential S6 calibration prior only
-612,44542,-0.3,-1.621000051498413,final comparison; potential S6 calibration prior only
+1,15748,-0.49,-1.0159997940063477,external routine duration-magnitude calibration prior; not an independent detection or validation
+7,15747,,-0.9300000667572021,external routine duration-magnitude calibration prior; not an independent detection or validation
+8,15746,-0.08,-0.505000114440918,external routine duration-magnitude calibration prior; not an independent detection or validation
+10,6594,0.77,0.18799996376037598,external routine duration-magnitude calibration prior; not an independent detection or validation
+11,6588,-0.49,-0.4270000457763672,external routine duration-magnitude calibration prior; not an independent detection or validation
+15,15744,-0.76,-1.803999900817871,external routine duration-magnitude calibration prior; not an independent detection or validation
+16,6596,,-0.3840000629425049,external routine duration-magnitude calibration prior; not an independent detection or validation
+17,6590,-0.08,0.42599987983703613,external routine duration-magnitude calibration prior; not an independent detection or validation
+18,15743,-0.76,-1.2730000019073486,external routine duration-magnitude calibration prior; not an independent detection or validation
+23,15742,-0.49,-0.6439998149871826,external routine duration-magnitude calibration prior; not an independent detection or validation
+28,6597,1.33,0.16900014877319336,external routine duration-magnitude calibration prior; not an independent detection or validation
+33,6598,0.23,-0.4960000514984131,external routine duration-magnitude calibration prior; not an independent detection or validation
+35,15739,-0.08,-0.37999987602233887,external routine duration-magnitude calibration prior; not an independent detection or validation
+38,15738,-0.49,-0.2239999771118164,external routine duration-magnitude calibration prior; not an independent detection or validation
+39,6600,-0.27,0.1380002498626709,external routine duration-magnitude calibration prior; not an independent detection or validation
+44,6602,-0.49,-1.183000087738037,external routine duration-magnitude calibration prior; not an independent detection or validation
+47,15737,-0.49,-1.6000001430511475,external routine duration-magnitude calibration prior; not an independent detection or validation
+48,6604,-0.27,0.80299973487854,external routine duration-magnitude calibration prior; not an independent detection or validation
+52,15414,-0.08,0.9700000286102295,external routine duration-magnitude calibration prior; not an independent detection or validation
+55,32065,-0.3,-0.16100001335144043,external routine duration-magnitude calibration prior; not an independent detection or validation
+56,32066,-0.5,-1.0769999027252197,external routine duration-magnitude calibration prior; not an independent detection or validation
+57,32069,-0.1,0.11099982261657715,external routine duration-magnitude calibration prior; not an independent detection or validation
+80,44475,0.5,-0.09099984169006348,external routine duration-magnitude calibration prior; not an independent detection or validation
+84,44476,1.1,-0.1660001277923584,external routine duration-magnitude calibration prior; not an independent detection or validation
+86,44477,1.3,-0.032000064849853516,external routine duration-magnitude calibration prior; not an independent detection or validation
+89,44478,0.3,-0.2560000419616699,external routine duration-magnitude calibration prior; not an independent detection or validation
+90,44479,0.1,-0.8900001049041748,external routine duration-magnitude calibration prior; not an independent detection or validation
+92,44793,-0.3,-1.3559999465942383,external routine duration-magnitude calibration prior; not an independent detection or validation
+129,44481,-1.1,-0.13200020790100098,external routine duration-magnitude calibration prior; not an independent detection or validation
+236,44500,-0.3,-1.5990002155303955,external routine duration-magnitude calibration prior; not an independent detection or validation
+239,44501,0.8,-0.01399993896484375,external routine duration-magnitude calibration prior; not an independent detection or validation
+319,44505,0.3,0.2969999313354492,external routine duration-magnitude calibration prior; not an independent detection or validation
+346,44507,0.6,-0.09800004959106445,external routine duration-magnitude calibration prior; not an independent detection or validation
+510,44509,,-1.2809998989105225,external routine duration-magnitude calibration prior; not an independent detection or validation
+514,44510,0.3,0.009000062942504883,external routine duration-magnitude calibration prior; not an independent detection or validation
+524,44511,2.0,-0.13899993896484375,external routine duration-magnitude calibration prior; not an independent detection or validation
+570,44513,-0.3,0.010999917984008789,external routine duration-magnitude calibration prior; not an independent detection or validation
+672,44526,0.2,-0.02200007438659668,external routine duration-magnitude calibration prior; not an independent detection or validation
+679,44527,0.1,0.4799997806549072,external routine duration-magnitude calibration prior; not an independent detection or validation
+685,44528,-0.8,-0.932999849319458,external routine duration-magnitude calibration prior; not an independent detection or validation
+694,44529,0.9,-0.05299997329711914,external routine duration-magnitude calibration prior; not an independent detection or validation
+696,44530,0.4,0.24899983406066895,external routine duration-magnitude calibration prior; not an independent detection or validation
+786,44542,-0.3,-1.6010000705718994,external routine duration-magnitude calibration prior; not an independent detection or validation

@@ -28,7 +28,21 @@ def coast(ax):
         for shape in reader.iterShapes(bbox=[13.9,40.65,14.4,41.]):
             p=np.asarray(shape.points)
             for part,end in zip(shape.parts,list(shape.parts[1:])+[len(p)]):
-                a=p[part:end];x,y=PROJ.transform(a[:,0],a[:,1]);ax.plot(x,y,color='.45',lw=.6,zorder=1)
+                a=p[part:end].copy()
+                outside=(a[:,0]<13.9)|(a[:,0]>14.4)|(a[:,1]<40.65)|(a[:,1]>41.)
+                a[outside]=np.nan
+                x,y=PROJ.transform(a[:,0],a[:,1]);ax.plot(x,y,color='.45',lw=.6,zorder=1)
+
+
+def historical(ax,lev):
+    # Source reconstructions are contextual estimates, never raw surveys.
+    styles=[('leveling survey','o','.35','Leveling surveys'),
+            ('source-provided estimate','^','#b67720','Source estimates'),
+            ('source-provided reconstruction','x','#9b3370','Source reconstruction')]
+    for kind,marker,color,label in styles:
+        subset=lev[lev.provenance_class==kind]
+        ax.plot(pd.to_datetime(subset.date),subset.elevation_m,linestyle='none',marker=marker,
+                ms=3.3 if kind!='leveling survey' else 1.8,color=color,label=label)
 
 
 def spatial(ax,cat,title):
@@ -37,6 +51,8 @@ def spatial(ax,cat,title):
     large=cat[cat.Md>=4]
     ax.scatter(large.x_km,large.y_km,marker='*',s=75,color='crimson',edgecolor='white',linewidth=.4,zorder=3,label=r'$M_d\geq4$')
     ax.set(xlim=(-9,9),ylim=(-6,7),xlabel='Easting from reference (km)',ylabel='Northing from reference (km)',title=title)
+    outside=int((~(cat.x_km.between(-9,9)&cat.y_km.between(-6,7))).sum())
+    if outside:ax.text(.02,.02,f'{outside} selected routine events outside this map view',transform=ax.transAxes,fontsize=7,va='bottom')
     ax.set_aspect('equal')
     return sc
 
@@ -45,16 +61,26 @@ def main():
     F.mkdir(exist_ok=True)
     for name in ['figure_S6_pilot.pdf','figure_S8_pilot.pdf']:(F/name).unlink(missing_ok=True)
     c=pd.read_csv(D/'figure_1A.csv')
+    scope=[]
+    for panel,source,first,second,limits1,limits2 in [
+        ('1A','figure_1A.csv','x_km','y_km',(-9,9),(-6,7)),
+        ('S5/map','figure_S5.csv','x_km','y_km',(-9,9),(-6,7)),
+        ('S5/northing-depth','figure_S5.csv','depth_km','y_km',(0,7),(-6,7)),
+        ('S5/easting-depth','figure_S5.csv','x_km','depth_km',(-9,9),(0,7))]:
+        values=pd.read_csv(D/source);inside=values[first].between(*limits1)&values[second].between(*limits2)
+        scope.append(dict(panel=panel,saved_input='data/continuation/'+source,selected_events=len(values),in_view=int(inside.sum()),outside_view=int((~inside).sum()),
+                          first_axis=first,first_min=limits1[0],first_max=limits1[1],second_axis=second,second_min=limits2[0],second_max=limits2[1],units='km',role='Display extent only; excluded points remain in the selected numerical table'))
+    pd.DataFrame(scope).to_csv(D/'routine_plot_scope.csv',index=False)
     fig,ax=plt.subplots(figsize=(7,4.8),layout='constrained')
     sc=spatial(ax,c,'1A · Routine-catalog data, 2005–20 March 2025')
-    ax.legend(loc='upper right');fig.colorbar(sc,ax=ax,label='Depth below sea level (km)')
+    ax.legend(loc='upper right');fig.colorbar(sc,ax=ax,label='Depth below sea level (km)',extend='max')
     fig.savefig(F/'figure_1A_routine.pdf');plt.close(fig)
 
     lev=pd.read_csv(D/'historical_leveling.csv');g=pd.read_csv(D/'rite_gnss.csv')
     t=pd.to_datetime(g.time,utc=True,format='ISO8601')
     y=g.leveling_datum_m.copy();y.loc[t.diff()>pd.Timedelta(days=7)]=np.nan
     fig,axes=plt.subplots(1,2,figsize=(10,3.3),gridspec_kw={'width_ratios':[1.6,1]},layout='constrained')
-    axes[0].plot(pd.to_datetime(lev.date),lev.elevation_m,'o-',ms=1.5,lw=.7,color='.35',label='Published leveling observations')
+    historical(axes[0],lev)
     for ax in axes:
         ax.plot(t,y,color='#176b9a',lw=.6,label='RITE daily GNSS observations')
         ax.fill_between(t,y-g.up_sigma_m,y+g.up_sigma_m,color='#176b9a',alpha=.25,lw=0)
@@ -88,29 +114,17 @@ def main():
     fig.colorbar(sc,ax=key,orientation='horizontal',label='Depth (km)',fraction=.18)
     fig.savefig(F/'figure_S5_routine.pdf');plt.close(fig)
 
-    # S6 is specifically the pre-double-difference, VELEST-filtered catalog.
-    # A limited independently inverted subset is a valid partial counterpart.
-    if (D/'velest_summary.json').exists() and json.loads((D/'velest_summary.json').read_text()).get('completed') and (D/'velest_filtered.csv').exists():
-        v=pd.read_csv(D/'velest_filtered.csv')
-        if len(v):
-            v['x_km'],v['y_km']=PROJ.transform(v.longitude.to_numpy(),v.latitude.to_numpy())
-            v.to_csv(D/'figure_S6.csv',index=False)
-            fig=plt.figure(figsize=(9,7),layout='constrained');grid=fig.add_gridspec(2,2)
-            a=fig.add_subplot(grid[0,0]);b=fig.add_subplot(grid[0,1]);d=fig.add_subplot(grid[1,0]);key=fig.add_subplot(grid[1,1]);key.axis('off')
-            coast(a);sc=a.scatter(v.x_km,v.y_km,c=v.depth_km,s=22,cmap='viridis_r',vmin=0,vmax=6)
-            xlim=(min(-9,v.x_km.min()-.3),max(9,v.x_km.max()+.3));ylim=(min(-6,v.y_km.min()-.3),max(7,v.y_km.max()+.3));zlim=(min(0,v.depth_km.min()-.2),max(8,v.depth_km.max()+.3))
-            a.set(xlabel='Easting (km)',ylabel='Northing (km)',xlim=xlim,ylim=ylim,aspect='equal',title='S6 · Independent VELEST pilot')
-            b.scatter(v.depth_km,v.y_km,c=v.depth_km,s=22,cmap='viridis_r',vmin=0,vmax=6);b.set(xlabel='Depth below sea level (km)',ylabel='Northing (km)',xlim=zlim,ylim=ylim)
-            d.scatter(v.x_km,v.depth_km,c=v.depth_km,s=22,cmap='viridis_r',vmin=0,vmax=6);d.set(xlabel='Easting (km)',ylabel='Depth below sea level (km)',xlim=xlim,ylim=zlim[::-1])
-            key.text(0,.95,f'{len(v)} events passing final filters\n≥6 picks; RMS ≤0.25 s; gap ≤300°\n\nPartial: limited retrieved intervals,\nalternative association model,\nphases not manually reviewed.\nNo TomoDD relocation.\n\nMarker size is uniform;\nno final magnitude is implied.',va='top',linespacing=1.5,fontsize=9)
-            fig.colorbar(sc,ax=key,orientation='horizontal',label='Depth (km)',fraction=.18,extend='both')
-            fig.savefig(F/'figure_S6_pilot.pdf');plt.close(fig)
+    # S6 is withdrawn. Its unverified-grid plotting recipe remains in Git
+    # history; arithmetic experiments cannot reactivate it as a paper result.
 
     if (D/'figure_S8A.csv').exists() and len(pd.read_csv(D/'magnitudes.csv')):
         v=pd.read_csv(D/'figure_S8A.csv');hist=pd.read_csv(D/'figure_S8B.csv') if (D/'figure_S8B.csv').exists() else pd.DataFrame()
         fig,axes=plt.subplots(1,2,figsize=(9,3.8),layout='constrained')
         if len(v):
             axes[0].scatter(v.Md,v.ML,s=30,color='#176b9a')
+            if 'formal_sigma_ML' in v:
+                subset=v[v.formal_sigma_ML.notna()]
+                axes[0].errorbar(subset.Md,subset.ML,yerr=subset.formal_sigma_ML,fmt='none',color='#176b9a',lw=.6,capsize=2)
             lo=min(v.Md.min(),v.ML.min())-.1;hi=max(v.Md.max(),v.ML.max())+.1
             axes[0].plot([lo,hi],[lo,hi],color='.7',lw=.8)
         axes[0].set(xlabel='Routine duration magnitude Md',ylabel='Independent provisional ML',title=f'S8A · {len(v)} calibrated matches')
@@ -134,8 +148,8 @@ def main():
     cat=pd.read_csv(D/'figure_1A.csv');counts=pd.read_csv(D/'figure_1C.csv')
     fig=plt.figure(figsize=(11,6),layout='constrained');grid=fig.add_gridspec(2,2,width_ratios=[1,1.3])
     a=fig.add_subplot(grid[:,0]);b=fig.add_subplot(grid[0,1]);cax=fig.add_subplot(grid[1,1])
-    sc=spatial(a,cat,'A · Routine-catalog locations');fig.colorbar(sc,ax=a,orientation='horizontal',fraction=.08,label='Depth (km)')
-    b.plot(pd.to_datetime(lev.date),lev.elevation_m,'o-',ms=1.3,lw=.7,color='.35',label='Leveling')
+    sc=spatial(a,cat,'A · Routine-catalog locations');fig.colorbar(sc,ax=a,orientation='horizontal',fraction=.08,label='Depth (km)',extend='max')
+    historical(b,lev)
     b.plot(pd.to_datetime(g.time,utc=True,format='ISO8601'),y,lw=.7,color='#176b9a',label='Daily GNSS')
     b.axvspan(pd.Timestamp('2024-01-01'),pd.Timestamp('2025-03-21'),color='#e1a63b',alpha=.2)
     b.set(ylabel='Vertical deformation (m)',title='B · Displacement, extended through March 2025');b.legend(fontsize=7,ncol=2)
@@ -159,14 +173,35 @@ def main():
         ax.set(xlim=(pd.Timestamp('2022-01-21'),pd.Timestamp('2025-03-21')),title='S1 · Actual processed intervals; gaps are not filled',xlabel='UTC date')
         fig.savefig(F/'continuation_coverage.pdf');plt.close(fig)
 
-    stations=pd.read_csv(ROOT/'inputs/models/stations.csv').rename(columns={'Unnamed: 0':'id'})
-    stations['x_km'],stations['y_km']=PROJ.transform(stations.longitude.to_numpy(),stations.latitude.to_numpy())
-    stations.to_csv(D/'figure_S2.csv',index=False)
-    fig,ax=plt.subplots(figsize=(8,6),layout='constrained');coast(ax)
-    for network,group in stations.groupby(stations.id.str.split('.').str[0]):
-        ax.scatter(group.x_km,group.y_km,marker='^',s=24,label=network)
-        for row in group.itertuples():ax.annotate(row.id.split('.')[1],(row.x_km,row.y_km),xytext=(3,3),textcoords='offset points',fontsize=5)
-    ax.set(xlabel='Easting (km)',ylabel='Northing (km)',title=f'S2 · Released metadata: {len(stations)} station identifiers',aspect='equal');ax.legend()
+    stations=pd.read_csv(D/'figure_S2.csv').sort_values('id').reset_index(drop=True)
+    fig=plt.figure(figsize=(13,8),layout='constrained');grid=fig.add_gridspec(1,2,width_ratios=[1.7,1])
+    ax=fig.add_subplot(grid[0]);key=fig.add_subplot(grid[1]);key.axis('off');coast(ax)
+    verified=stations.coordinate_status.eq('verified official epoch')
+    for keep,color,fill,label in [(verified,'#176b9a',True,'Official coordinates / epochs'),(~verified,'#b67720',False,'Released coordinates; unresolved epoch')]:
+        g=stations[keep];ax.scatter(g.x_km,g.y_km,marker='^',s=32,facecolors=color if fill else 'none',edgecolors=color,label=label,zorder=3)
+    ax.set(xlabel='Easting from 14.14°E (km)',ylabel='Northing from 40.82°N (km)',xlim=(-10,13),ylim=(-8,9),aspect='equal',
+           title='S2 · Audited candidate stations; membership remains partial')
+    ax.set_title(ax.get_title(),fontsize=14);ax.set_xlabel(ax.get_xlabel(),fontsize=14);ax.set_ylabel(ax.get_ylabel(),fontsize=14)
+    ax.tick_params(labelsize=13);ax.legend(fontsize=12,loc='lower right');fig.canvas.draw()
+    # Numbered labels with leader lines and a full identifier key avoid aliases
+    # and overlapping station names in the densely instrumented central area.
+    placed=[];marker_points=ax.transData.transform(stations[['x_km','y_km']].to_numpy())
+    for i,r in stations.iterrows():
+        point=ax.transData.transform((r.x_km,r.y_km));target=None
+        for radius in [22,34,48,64,82,104,128,156]:
+            for angle in np.linspace(0,2*np.pi,32,endpoint=False):
+                candidate=point+radius*np.array([np.cos(angle),np.sin(angle)])
+                inside=ax.bbox.x0+17<candidate[0]<ax.bbox.x1-17 and ax.bbox.y0+13<candidate[1]<ax.bbox.y1-13
+                clear_markers=all(abs(candidate[0]-q[0])>17 or abs(candidate[1]-q[1])>13 for q in marker_points)
+                if inside and clear_markers and all(abs(candidate[0]-q[0])>32 or abs(candidate[1]-q[1])>24 for q in placed):
+                    target=candidate;break
+            if target is not None:break
+        placed.append(target);xy=ax.transData.inverted().transform(target)
+        ax.annotate(str(i+1),(r.x_km,r.y_km),xytext=xy,fontsize=13,ha='center',va='center',zorder=4,
+                    bbox=dict(facecolor='white',edgecolor='none',pad=.2),arrowprops=dict(arrowstyle='-',lw=.4,color='.4'))
+        col=i//26;line=i%26
+        key.text(col*.51,.98-line*.031,f'{i+1:2d}  {r.id}',family='monospace',fontsize=13,color='#176b9a' if verified.iloc[i] else '#996118',va='top')
+    key.text(0,.12,f'{int(verified.sum())} official epoch matches; {int((~verified).sum())} unresolved.\n{len(stations)} identifiers ≠ verified 48 instruments.\nTwo coordinate-coincident pairs are retained.\nSee station_geometry_qa.csv for every entry.',fontsize=11,va='top',linespacing=1.6)
     fig.savefig(F/'continuation_stations.pdf');plt.close(fig)
 
 

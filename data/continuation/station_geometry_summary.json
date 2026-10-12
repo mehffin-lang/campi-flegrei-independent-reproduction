@@ -1,0 +1,116 @@
+{
+  "identifiers": 51,
+  "published_instruments": 48,
+  "verified_identifiers": 42,
+  "unresolved_identifiers": [
+    "IV.V0106..HH",
+    "IV.CDOV..EH",
+    "IV.CROS..HH",
+    "IV.CASE..EH",
+    "IV.V0102..EH",
+    "IV.V0105..EH",
+    "IV.V0104..HH",
+    "IT.NAP..HN",
+    "IV.CMDP..HH"
+  ],
+  "verified_outliers": [],
+  "released_coincident_identifiers": [
+    [
+      "IV.V0106..HH",
+      "2I.CLAC..HH"
+    ],
+    [
+      "2I.CGAU..HH",
+      "IV.V0104..HH"
+    ]
+  ],
+  "maximum_coordinate_correction_m": 138.83536792205027,
+  "projection": "WGS84 azimuthal equidistant, lon_0=14.14, lat_0=40.82; km; always_xy=True",
+  "map_extent_km": [
+    -10,
+    13,
+    -8,
+    9
+  ],
+  "membership_verified": false,
+  "explanation": "51 identifiers are not 51 verified distinct instruments. Two pairs share released coordinates; no deployment/alias evidence establishes that collapsing them, or removing any other identifier, yields the published 48.",
+  "map_error": "Natural Earth bounding-box filtering selected whole coastline geometries. Distant vertices expanded the axes; station coordinates themselves were local. Coast vertices are now masked before projection and map limits follow the coordinate audit.",
+  "sources": [
+    {
+      "file": "inputs/continuation/2I_responses.xml",
+      "sha256": "91c213556e69c7934686d80a497d25f43f8281ffe2411b6d39a5df4e77b9a784"
+    },
+    {
+      "file": "inputs/continuation/IV_responses.xml",
+      "sha256": "07545b22de0f7b9030f2064467b52ce428365b213c136477b05a5768c4dd62a3"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/BAIP.IT.xml",
+      "sha256": "30fecb061ae40e6818ed33aadd690a060e931aa6cbd09f3c619ecbbd78574862"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/BAN.IT.xml",
+      "sha256": "96b20565feb671a44877a333ad75dfa75ac8c46659eaf8c041cd93d18af5b061"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/BCLI.IT.xml",
+      "sha256": "c24dcabc1e1e55636cc2cc7287d67398eabb0d8e658969d40356fa7e6a5d74ca"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/MPCD.IT.xml",
+      "sha256": "646840b7015dedd6cbb54c0d26f049fe4f0cf91d3d6f7c16085f7d8533561729"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NAAG.IT.xml",
+      "sha256": "bc063b4349f4f6d590b6bc7edb816a7fe8977fb552b7a0c6178ed56695ec42b9"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NABA.IT.xml",
+      "sha256": "ebfbd4dbad83ed0ac1417d6027d7c05fb3ca624de494b29897a3230c654c2dbe"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NACO.IT.xml",
+      "sha256": "437e4c72c6e76d9a20e6fff17af8a3adaabeb47047905c876ed480dc303fcb4a"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NAD.IT.xml",
+      "sha256": "357df96f7524405a3f78449168bbaf0a988f1bb4ae11c4c951c0edcd7e93cd5b"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NAFG.IT.xml",
+      "sha256": "19bf0fc4c8eda388388064816ad4e7ffb19f387f7ccbe14c018b5b90ed634f18"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NAP.IT.xml",
+      "sha256": "af1c0a49a7dbf3b4742c9751226ecf3732574f3f75007a9a741f02ebca6b6b51"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZA.IT.xml",
+      "sha256": "ff97356ba233141bb8397326f90f37c3cb8df5b6a31afca1274b45120375d8fe"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZB.IT.xml",
+      "sha256": "bee00ca086a1e137bf92c6c524c0cb644ba2b65c43837be4dfe3303e99cb42ca"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZL.IT.xml",
+      "sha256": "efd21e046f0bb6dc7c155fd0d2a96feabc41cedbf25712c5e807da318f3eb442"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZM.IT.xml",
+      "sha256": "5414b8856c7bb8fca2fd24078cb199702ada4182e804eaf22a01aeacb1fdd860"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZS.IT.xml",
+      "sha256": "7e9249daa1267b3a79a6871ebe1e72cb9026ed6e736878eacf016d074ce14b13"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZT.IT.xml",
+      "sha256": "2ab9a7e9a6e9543cc39e79d032458e19d46c24c3bec82883eeca9d6142309136"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZU.IT.xml",
+      "sha256": "d94fb59725b61911be07005713696f3c15505c703a5ecb5a0372a0f361047182"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "file": "sources/revision_written_sources.zip",
+  "bytes": 1290449,
+  "sha256": "c34a4f162d0a55f102e0fa7373ecbca6be745132a29db906243e1d86e28a4a18",
+  "members": [
+    {
+      "file": "inputs/revision/RAN.html",
+      "bytes": 468067,
+      "sha256": "2ed1ec989186dccf7331a8f5d571378d3cf5bf86040961ec46e71c455bdc7db4"
+    },
+    {
+      "file": "inputs/revision/RAN_authentication.html",
+      "bytes": 8260,
+      "sha256": "29de4c42cf65cf0d26d6107710bd2fe6e13df5f471f5fad61afff17d7472cfab"
+    },
+    {
+      "file": "inputs/revision/RAN_registration.html",
+      "bytes": 10117,
+      "sha256": "6c28eab422ddb942bc7adaee9895cb317dc80d91613e678c3c2269413b899c7f"
+    },
+    {
+      "file": "inputs/revision/RAN_stations.html",
+      "bytes": 1283032,
+      "sha256": "fff394da3a96d8a4eabad2e4892865c21b8bf4eb34384bb4e1bd8e452839d677"
+    },
+    {
+      "file": "inputs/revision/battaglia2008_bitstream.json",
+      "bytes": 1815,
+      "sha256": "1670f46fe959bc45208561d2f4f15a4d02bf685eaefb5bfa7e7e88477dc82198"
+    },
+    {
+      "file": "inputs/revision/battaglia2008_bundle.json",
+      "bytes": 907,
+      "sha256": "53fef04e7c41db26cf13c2d05928df811310e8aa0f6c1c7f593035882ca662c8"
+    },
+    {
+      "file": "inputs/revision/battaglia2008_files.json",
+      "bytes": 2366,
+      "sha256": "ec0a98543339ab82c1d8b4294a623e43166a48ddb6a630049b4472a9461ae46d"
+    },
+    {
+      "file": "inputs/revision/battaglia2008_institution.html",
+      "bytes": 24410,
+      "sha256": "09fc6b7cfc17da788cd1b9a421dee902948d022aa715d86e65c0ad10fc93972f"
+    },
+    {
+      "file": "inputs/revision/battaglia2008_publisher.html",
+      "bytes": 5618,
+      "sha256": "ab5b324c9cbb8cf74ed8b6879943edd6556f3bf044e2d33e7a182b666ccb4afc"
+    },
+    {
+      "file": "inputs/revision/battaglia_hal.json",
+      "bytes": 350,
+      "sha256": "eeab75111b8e1deb642f7eea773c5a232a7cba28eacef782adfe7156a80bbb86"
+    },
+    {
+      "file": "inputs/revision/calo2018_earthprints.json",
+      "bytes": 2353,
+      "sha256": "7a0d144555651dd1efac500fc7e15572718a249c0cbc6ef08778dacba99c6419"
+    },
+    {
+      "file": "inputs/revision/calo2018_publisher.html",
+      "bytes": 449205,
+      "sha256": "c0247703ae806bf686bba441a2329a677879de10e651e5ba09c5deb84c3b268f"
+    },
+    {
+      "file": "inputs/revision/local_traces.html",
+      "bytes": 1510,
+      "sha256": "811c6f5ccf073bb67d180e058bc368473bfea6f55254f36beb79a8e7172e9c82"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/BAIP.IT.xml",
+      "bytes": 137257,
+      "sha256": "30fecb061ae40e6818ed33aadd690a060e931aa6cbd09f3c619ecbbd78574862"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/BAN.IT.xml",
+      "bytes": 193650,
+      "sha256": "96b20565feb671a44877a333ad75dfa75ac8c46659eaf8c041cd93d18af5b061"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/BCLI.IT.xml",
+      "bytes": 283157,
+      "sha256": "c24dcabc1e1e55636cc2cc7287d67398eabb0d8e658969d40356fa7e6a5d74ca"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/MPCD.IT.xml",
+      "bytes": 273339,
+      "sha256": "646840b7015dedd6cbb54c0d26f049fe4f0cf91d3d6f7c16085f7d8533561729"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NAAG.IT.xml",
+      "bytes": 283164,
+      "sha256": "bc063b4349f4f6d590b6bc7edb816a7fe8977fb552b7a0c6178ed56695ec42b9"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NABA.IT.xml",
+      "bytes": 137236,
+      "sha256": "ebfbd4dbad83ed0ac1417d6027d7c05fb3ca624de494b29897a3230c654c2dbe"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NACO.IT.xml",
+      "bytes": 283147,
+      "sha256": "437e4c72c6e76d9a20e6fff17af8a3adaabeb47047905c876ed480dc303fcb4a"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NAD.IT.xml",
+      "bytes": 362883,
+      "sha256": "357df96f7524405a3f78449168bbaf0a988f1bb4ae11c4c951c0edcd7e93cd5b"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NAFG.IT.xml",
+      "bytes": 137244,
+      "sha256": "19bf0fc4c8eda388388064816ad4e7ffb19f387f7ccbe14c018b5b90ed634f18"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/NAP.IT.xml",
+      "bytes": 362987,
+      "sha256": "af1c0a49a7dbf3b4742c9751226ecf3732574f3f75007a9a741f02ebca6b6b51"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZA.IT.xml",
+      "bytes": 142166,
+      "sha256": "ff97356ba233141bb8397326f90f37c3cb8df5b6a31afca1274b45120375d8fe"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZB.IT.xml",
+      "bytes": 137248,
+      "sha256": "bee00ca086a1e137bf92c6c524c0cb644ba2b65c43837be4dfe3303e99cb42ca"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZL.IT.xml",
+      "bytes": 137238,
+      "sha256": "efd21e046f0bb6dc7c155fd0d2a96feabc41cedbf25712c5e807da318f3eb442"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZM.IT.xml",
+      "bytes": 283206,
+      "sha256": "5414b8856c7bb8fca2fd24078cb199702ada4182e804eaf22a01aeacb1fdd860"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZS.IT.xml",
+      "bytes": 281441,
+      "sha256": "7e9249daa1267b3a79a6871ebe1e72cb9026ed6e736878eacf016d074ce14b13"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZT.IT.xml",
+      "bytes": 273343,
+      "sha256": "2ab9a7e9a6e9543cc39e79d032458e19d46c24c3bec82883eeca9d6142309136"
+    },
+    {
+      "file": "inputs/revision/ran_stationxml/POZU.IT.xml",
+      "bytes": 137246,
+      "sha256": "d94fb59725b61911be07005713696f3c15505c703a5ecb5a0372a0f361047182"
+    },
+    {
+      "file": "inputs/revision/routine_current.html",
+      "bytes": 11793284,
+      "sha256": "affc9da3b20cb8687cdcf8ecc4a0c147fd39944d9ad14abc885bcea63a011f36"
+    },
+    {
+      "file": "inputs/revision/routine_history_availability.json",
+      "bytes": 113,
+      "sha256": "9c826bd05af5bdd097131ba621d5e45b685447eb1f1397a3316b25901bd9b3ef"
+    },
+    {
+      "file": "inputs/revision/station_epoch_metadata.txt",
+      "bytes": 23657,
+      "sha256": "8d14d064c8cbdd0216360877b35bc690acf0041adb2c04236257d4871d87db5f"
+    }
+  ],
+  "role": "Written methods, official metadata and access evidence only; no Tan-derived result tables or model grid.",
+  "external_sources": [
+    {
+      "file": "inputs/revision/battaglia2008.pdf",
+      "bytes": 1519251,
+      "sha256": "8c1c95beb1c8230f41c481a2bf140bfa7c8c3d9168ebd47a196e80bd3cd58f72",
+      "url": "https://www.earth-prints.org/server/api/core/bitstreams/ba5fb65d-7273-4c4e-9a22-dda62cb50c67/content",
+      "role": "Written specification only; retained locally and retrieved from the institutional source, not redistributed in this bundle."
+    }
+  ]
+}

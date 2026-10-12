@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-12T21:09:57.026072+00:00",
+  "reason": "Continue study-wide access checks before concentrating further downloads at the study endpoint. Six-hour full-coverage queue retained.",
+  "interrupted_requests": [
+    {
+      "id": "2I_CREM_20250319T000000_20250319T060000",
+      "network": "2I",
+      "station": "CREM",
+      "start": 1742342400.0,
+      "end": 1742364000.0,
+      "attempts": 1
+    },
+    {
+      "id": "IV_CNIS_20250319T000000_20250319T060000",
+      "network": "IV",
+      "station": "CNIS",
+      "start": 1742342400.0,
+      "end": 1742364000.0,
+      "attempts": 1
+    },
+    {
+      "id": "IV_CPIS_20250319T000000_20250319T060000",
+      "network": "IV",
+      "station": "CPIS",
+      "start": 1742342400.0,
+      "end": 1742364000.0,
+      "attempts": 1
+    },
+    {
+      "id": "IV_CPOZ_20250319T000000_20250319T060000",
+      "network": "IV",
+      "station": "CPOZ",
+      "start": 1742342400.0,
+      "end": 1742364000.0,
+      "attempts": 1
+    },
+    {
+      "id": "IV_CQUE_20250319T000000_20250319T060000",
+      "network": "IV",
+      "station": "CQUE",
+      "start": 1742342400.0,
+      "end": 1742364000.0,
+      "attempts": 1
+    },
+    {
+      "id": "IV_CRUS_20250319T000000_20250319T060000",
+      "network": "IV",
+      "station": "CRUS",
+      "start": 1742342400.0,
+      "end": 1742364000.0,
+      "attempts": 1
+    }
+  ],
+  "partial_files_count_as_coverage": false
+}

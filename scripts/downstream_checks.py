@@ -1,7 +1,7 @@
 """Evaluate independent locations and attempt documented magnitude measurements.
 
 No supplied Tan result file is read. Routine Md is used only after independent
-association, as the external regularization input explicitly required by S6.
+association, as the external regularization input described by the magnitude methods.
 Unanchored components, events without amplitude-difference equations, and
 unqualified locations do not receive fabricated calibrated magnitudes.
 """
@@ -9,6 +9,7 @@ from pathlib import Path
 import os,json,itertools,argparse,concurrent.futures,multiprocessing,faulthandler
 faulthandler.enable()
 from collections import Counter
+from functools import lru_cache
 ROOT=Path(__file__).resolve().parents[1];os.chdir(ROOT)
 os.environ.update(OPENBLAS_NUM_THREADS='2',OMP_NUM_THREADS='2',NUMBA_CACHE_DIR=str(ROOT/'tmp/numba'))
 import numpy as np
@@ -17,12 +18,20 @@ from obspy import read,read_inventory,UTCDateTime
 from gamma.seismic_ops import initialize_eikonal,calc_time
 ap=argparse.ArgumentParser(description=__doc__)
 ap.add_argument('--dataset',choices=['extended','continuation'],default='extended')
+ap.add_argument('--workers',type=int,default=16)
 args=ap.parse_args()
 OUT=Path('data')/args.dataset
 events=pd.read_csv(OUT/'initial_events.csv');picks=pd.read_csv(OUT/'picks.csv')
 assign=pd.read_csv(OUT/'associations.csv');stations=pd.read_csv(OUT/'stations.csv').set_index('id')
+coverage=pd.read_csv(OUT/'processed_coverage.csv') if args.dataset=='continuation' else None
 config=json.loads(Path('config/continuation_association.json' if args.dataset=='continuation' else 'config/association.json').read_text());eik=initialize_eikonal(config['eikonal'])
 quality=[];measurements=[];waveforms={};errors=[];inventories={}
+@lru_cache(maxsize=32)
+def original_stream(source):
+    # Per-worker cache of unchanged observations. Every measured window is copied
+    # before detrending or response removal, so the cached samples stay original.
+    return read(source)
+
 def evaluate_event(e):
     quality=[];measurements=[];waveforms={};errors=[]
     ep=picks.iloc[assign.loc[assign.event_index==e['event_index'],'pick_index'].to_numpy(int)].copy()
@@ -38,13 +47,21 @@ def evaluate_event(e):
     eligible=len(ep)>6 and gap<180
     quality.append(dict(event_index=e['event_index'],picks=len(ep),stations=len(unique_xyz),rms_s=rms,azimuthal_gap_deg=gap,
         calibration_eligible=eligible,reason='VELEST manual geometry screen: >6 picks and gap<180 degrees; candidates still require waveform review'))
-    for ident,g in ep.groupby('trace_id'):
+    grouped={ident:g for ident,g in ep.groupby('trace_id')}
+    # Include recorded stations even when the picker/association has no phase
+    # there; the written method explicitly permits theoretical P arrivals.
+    for ident in (stations.index if coverage is not None else grouped):
+        g=grouped.get(ident,ep.iloc[:0])
         pp=g[g.phase=='P']
         point=stations.loc[[ident],['x(km)','y(km)','z(km)']].to_numpy()
         ptime=UTCDateTime(pp.time.iloc[0]) if len(pp) else UTCDateTime(e['time'])+float(calc_time(loc,point,np.array(['p']),eikonal=eik)[0,0])
-        source=g.source.iloc[0]
+        if len(g):source=g.source.iloc[0]
+        else:
+            spans=coverage[(coverage.channel.str.startswith(ident+'.'))&(coverage.start<=float(ptime)-2)&(coverage.end>=float(ptime)+5)]
+            if spans.empty:continue
+            source=spans.sort_values('file').iloc[0].file
         try:
-            st=read(source,starttime=ptime-30,endtime=ptime+30).select(network=ident.split('.')[0],station=ident.split('.')[1],location=ident.split('.')[2])
+            st=original_stream(source).select(network=ident.split('.')[0],station=ident.split('.')[1],location=ident.split('.')[2]).slice(ptime-30,ptime+30).copy()
             st.merge(method=0);st=st.split()
             response=Path('inputs/continuation')/(ident.split('.')[0]+'_responses.xml') if args.dataset=='continuation' else Path('inputs/extended/responses')/('_'.join(ident.split('.')[:2])+'.xml')
             if not response.exists():response=Path('inputs/extended/responses')/('_'.join(ident.split('.')[:2])+'.xml')
@@ -64,9 +81,9 @@ def evaluate_event(e):
 
 def main():
     quality=[];measurements=[];waveforms={};errors=[]
-    # Independent event measurements share read-only input tables. Four processes
+    # Independent event measurements share read-only input tables. Spawned processes
     # keep response removal and miniSEED decoding practical for the larger sample.
-    with concurrent.futures.ProcessPoolExecutor(max_workers=4,mp_context=multiprocessing.get_context('spawn')) as pool:
+    with concurrent.futures.ProcessPoolExecutor(max_workers=args.workers,mp_context=multiprocessing.get_context('spawn')) as pool:
         for i,(qr,mr,wr,er) in enumerate(pool.map(evaluate_event,events.to_dict('records'))):
             quality.extend(qr);measurements.extend(mr);waveforms.update(wr);errors.extend(er)
             if i%25==0:print('Measured events',i+1,'of',len(events),flush=True)
@@ -107,7 +124,7 @@ def main():
         near=external[abs(external.epoch-float(UTCDateTime(e['time'])))<=2]
         if len(near)==1:
             r=near.iloc[0]
-            matches.append(dict(event_index=e['event_index'],external_id=r.id,Md=r.Md,time_difference_s=float(UTCDateTime(e['time']))-r.epoch,role='final comparison; potential S6 calibration prior only'))
+            matches.append(dict(event_index=e['event_index'],external_id=r.id,Md=r.Md,time_difference_s=float(UTCDateTime(e['time']))-r.epoch,role='external routine duration-magnitude calibration prior; not an independent detection or validation'))
     # A unique candidate for one event can still be claimed by several independent
     # events. Do not turn that ambiguous coincidence into multiple calibration
     # anchors. This changes no detected event or location.
@@ -119,7 +136,7 @@ def main():
     # Solve only components containing measured relative-amplitude equations.
     from scipy.sparse.csgraph import connected_components
     from scipy.sparse import coo_matrix
-    estimates=[]
+    estimates=[];inversion_checks=[]
     if edges:
         ids=sorted({r['event_a'] for r in edges}|{r['event_b'] for r in edges});index={v:i for i,v in enumerate(ids)}
         graph=coo_matrix((np.ones(len(edges)),([index[r['event_a']] for r in edges],[index[r['event_b']] for r in edges])),shape=(len(ids),len(ids)))
@@ -134,9 +151,17 @@ def main():
                 row=np.zeros(len(nodes));w=np.sqrt(r['weight']);row[ix[r['event_a']]]=w;row[ix[r['event_b']]]=-w;A.append(row);b.append(w*r['delta_M'])
             for r in priors:
                 row=np.zeros(len(nodes));row[ix[r['event_index']]]=1.;A.append(row);b.append(r['Md'])
-            sol=np.linalg.lstsq(A,b,rcond=None)[0]
-            estimates.extend(dict(event_index=v,ML=float(sol[ix[v]]),regularization_lambda=1.,status='provisional; alternative initial locations, no VELEST/TomoDD') for v in nodes)
-    pd.DataFrame(estimates,columns=['event_index','ML','regularization_lambda','status']).to_csv(OUT/'magnitudes.csv',index=False)
+            A=np.asarray(A);b=np.asarray(b)
+            sol,_,rank,singular=np.linalg.lstsq(A,b,rcond=None)
+            dof=len(b)-rank;residual=A@sol-b
+            check=dict(component=int(group),events=len(nodes),equations=len(b),rank=int(rank),residual_dof=int(dof),calibration_priors=len(priors),weighted_residual_sum_squares=float(residual@residual),accepted=bool(rank==len(nodes)))
+            inversion_checks.append(check)
+            if rank!=len(nodes):continue
+            sigma=np.sqrt(np.maximum(np.diag(np.linalg.pinv(A.T@A))*(residual@residual)/dof,0)) if dof>0 else np.full(len(nodes),np.nan)
+            estimates.extend(dict(event_index=v,ML=float(sol[ix[v]]),formal_sigma_ML=float(sigma[ix[v]]),residual_dof=int(dof),regularization_lambda=1.,status='provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions') for v in nodes)
+    pd.DataFrame(estimates,columns=['event_index','ML','formal_sigma_ML','residual_dof','regularization_lambda','status']).to_csv(OUT/'magnitudes.csv',index=False)
+    (OUT/'magnitude_inversion_checks.json').write_text(json.dumps(dict(components=inversion_checks,
+        uncertainty='Residual-scaled inverse normal matrix of the weighted amplitude/prior system. Conditional on unit Md prior weight and independent homoscedastic weighted errors; excludes absolute calibration, response, association, location and exposure errors. Undefined when residual degrees of freedom are zero.'),indent=2)+'\n')
     summary=dict(events_evaluated=len(events),calibration_eligible=len(eligible),amplitude_measurements=len(m),snr_passing=int(m.snr_pass.sum()) if len(m) else 0,event_pairs_checked=len(pair_audit),pairs_with_two_snr_stations=sum(r['snr_common_stations']>=2 for r in pair_audit),magnitude_edges=len(edges),calibrated_magnitudes=len(estimates),routine_matches=len(matches),ambiguous_reference_claims_rejected=len(ambiguous),measurement_errors=errors,
         focal_mechanisms=0,relocated_events=0,remaining='This magnitude pilot uses initial associations. See the separate VELEST record for its later inversion. TomoDD, HypoDD and focal processing remain unfinished; these magnitudes are not final relocated-catalog values.')
     (OUT/'downstream_summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(summary)

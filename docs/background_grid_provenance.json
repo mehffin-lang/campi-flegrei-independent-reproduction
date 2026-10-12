@@ -1,0 +1,40 @@
+{
+  "status": "unverified; quarantined",
+  "source_paper": {
+    "file": "inputs/revision/battaglia2008.pdf",
+    "sha256": "8c1c95beb1c8230f41c481a2bf140bfa7c8c3d9168ebd47a196e80bd3cd58f72",
+    "url": "https://www.earth-prints.org/server/api/core/bitstreams/ba5fb65d-7273-4c4e-9a22-dda62cb50c67/content",
+    "citation": "Battaglia et al. (2008), Geophysical Prospecting 56, 555-573; doi:10.1111/j.1365-2478.2007.00687.x"
+  },
+  "original_written_geometry": {
+    "volume_km": [
+      18,
+      18,
+      9
+    ],
+    "top_km_above_sea_level": 0.5,
+    "spacing_km": 0.5,
+    "documentation": "Procedure section, journal p.558; written text, not digitized figure"
+  },
+  "distributed_grid": {
+    "file": "quarantine/unverified_background/inputs/extended/background_3d_vmod",
+    "sha256": "dc36fe2a542fc7a3b6c473c48ec109c53ddd77a1721f509b920fea97fb0166f3",
+    "shape": [
+      23,
+      14,
+      27
+    ],
+    "coordinates": "longitude degrees, latitude degrees, irregular depth nodes; header 0.01; presumed Vp then Vp/Vs TomoDD encoding",
+    "depth_min": -0.5,
+    "depth_max": 200.0,
+    "interior_horizontal_step_degrees": 0.01
+  },
+  "conclusion": "Distributed geometry differs from the regular 0.5-km, 18x18x9-km original written specification. Regridding, padded boundaries and/or other modifications must have occurred; their numerical mapping and values are not verified. Matching citation alone cannot authorize this grid as an independently sourced input.",
+  "searched": [
+    "Publisher DOI (403)",
+    "fedOA 7315 (metadata only, no full text)",
+    "HAL insu-00354755v1 (metadata, no fileMain)",
+    "INGV Earth-prints original bundle (only GeoProsp_Battaglia.pdf)"
+  ],
+  "needed": "Original 2008 numerical Vp/Vs or Vp and Vs grid, coordinate axes/units/depth datum/version and any regridding/padding transformation to models/3d_vmod; request from Battaglia/Zollo or the distributing institution. Nobody contacted."
+}

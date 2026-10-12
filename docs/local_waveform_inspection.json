@@ -1,0 +1,32 @@
+{
+  "listed_stations": [
+    "CFB1",
+    "CFB3",
+    "CGAU",
+    "CLAC",
+    "CMDP",
+    "CREM",
+    "CROS",
+    "CRUS",
+    "CSOC",
+    "V0102",
+    "V0105"
+  ],
+  "stations_with_mseed_members": [
+    "CFB1",
+    "CFB3",
+    "CMDP",
+    "CROS",
+    "CRUS",
+    "V0102",
+    "V0105"
+  ],
+  "missing_from_saved_directory": [
+    "CGAU",
+    "CLAC",
+    "CREM",
+    "CSOC"
+  ],
+  "readable_examples": 7,
+  "selection": "First miniSEED member per available station, solely for access/format inspection. Not an event seed or empirical result; author-event-selected 60-second cuts cannot establish continuous exposure."
+}

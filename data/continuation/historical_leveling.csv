@@ -1,129 +1,129 @@
-date,month_uncertain,elevation_m,source,displacement_from_1905_m
-1905-03-15,True,3.464,Leveling Surveys Istituto Geografico Militare (IGM),0.0
-1907-03-15,True,3.441,Leveling Surveys IGM,-0.02300000000000013
-1913-06-15,True,3.491,Estimate from direct measure            of sea level,0.027000000000000135
-1919-08-15,False,3.278,Leveling Surveys IGM,-0.18599999999999994
-1922-08-15,True,3.221,Leveling Surveys IGM,-0.24299999999999988
-1924-08-15,True,3.066,Estimate from direct measure            of sea level,-0.39800000000000013
-1928-12-15,True,2.787,Estimate from photo,-0.677
-1933-07-15,False,2.864,Levelling Surveys  (E. Maio),-0.6000000000000001
-1940-05-15,False,2.611,Estimate from photo,-0.8529999999999998
-1945-08-15,False,2.36,Levelling Surveys (L. Ranieri),-1.104
-1946-05-15,False,2.346,Estimate from photo,-1.1179999999999999
-1947-05-15,False,2.294,Estimate from photo and direct measure of sea level,-1.17
-1950-04-15,False,2.198,Graphical reconstruction,-1.266
-1950-12-15,False,2.418,Estimate from photo and direct measure of sea level,-1.0459999999999998
-1951-08-15,False,2.788,Levelling Surveys  (L. Ranieri),-0.6760000000000002
-1952-01-15,False,2.867,Estimate from photo,-0.597
-1952-05-15,False,2.934,Estimate from photo,-0.5299999999999998
-1952-10-15,False,2.927,Estimate from photo,-0.5369999999999999
-1953-08-15,False,2.847,Levelling Surveys IGM,-0.617
-1957-06-15,False,2.741,Estimate from photo,-0.7229999999999999
-1960-06-15,True,2.764,Estimate from direct measure of sea level,-0.7000000000000002
-1961-06-15,True,2.846,Estimate from photo,-0.6179999999999999
-1968-06-15,True,2.661,Leveling Surveys G. Corrado et al,-0.8029999999999999
-1970-02-15,False,3.714,Leveling Surveys Genio Civile (GGCC),0.25
-1970-03-15,False,3.731,Levelling Surveys IGM,0.2669999999999999
-1970-04-15,False,3.776,Leveling Surveys GGCC,0.31199999999999983
-1970-05-15,False,3.838,Leveling Surveys GGCC,0.3740000000000001
-1970-06-15,False,3.892,Leveling Surveys GGCC,0.42799999999999994
-1970-07-15,False,3.928,Leveling Surveys GGCC,0.46399999999999997
-1970-08-15,False,3.954,Leveling Surveys GGCC,0.4900000000000002
-1970-09-15,False,3.978,Leveling Surveys GGCC,0.5140000000000002
-1970-10-15,False,4.002,Leveling Surveys GGCC,0.5379999999999998
-1970-11-15,False,4.017,Leveling Surveys GGCC,0.5530000000000004
-1970-12-15,False,4.044,Leveling Surveys GGCC,0.5799999999999996
-1971-01-15,False,4.081,Leveling Surveys GGCC,0.6170000000000004
-1971-02-15,False,4.098,Leveling Surveys GGCC,0.6339999999999999
-1971-03-15,False,4.132,Leveling Surveys GGCC,0.6679999999999997
-1971-04-15,False,4.151,Leveling Surveys GGCC,0.6869999999999998
-1971-05-15,False,4.188,Leveling Surveys GGCC,0.7239999999999998
-1971-06-15,False,4.235,Leveling Surveys GGCC,0.7710000000000004
-1971-07-15,False,4.26,Leveling Surveys GGCC,0.7959999999999998
-1971-09-15,False,4.285,Leveling Surveys IGM,0.8210000000000002
-1971-10-15,False,4.299,Leveling Surveys GGCC,0.8350000000000004
-1971-12-15,False,4.316,Leveling Surveys GGCC,0.8519999999999999
-1972-03-15,False,4.384,Leveling Surveys GGCC,0.9200000000000004
-1972-06-15,False,4.427,Leveling Surveys GGCC,0.9629999999999996
-1972-09-15,False,4.412,Leveling Surveys GGCC,0.948
-1972-11-15,False,4.404,Leveling Surveys GGCC,0.94
-1972-12-15,False,4.39,Leveling Surveys GGCC,0.9259999999999997
-1975-05-15,False,4.212,Leveling Surveys OV - Istituto di Fisica Terrestre NA (IFT),0.7479999999999998
-1975-10-15,False,4.189,Leveling Surveys OV – IFT,0.7250000000000001
-1976-11-15,False,4.265,Leveling Surveys OV – IFT,0.8009999999999997
-1977-05-15,False,4.29,Leveling Surveys OV – IFT,0.8260000000000001
-1978-01-15,False,4.23,Leveling Surveys OV – IFT,0.7660000000000005
-1979-03-15,False,4.264,Leveling Surveys OV – IFT,0.8000000000000003
-1980-01-15,False,4.232,Leveling Surveys OV – IFT,0.7680000000000002
-1981-01-15,False,4.276,Leveling Surveys OV – IFT,0.8119999999999998
-1982-01-15,False,4.217,Leveling Surveys OV – IFT,0.7529999999999997
-1983-01-15,False,4.561,Leveling Surveys OV – IFT,1.097
-1983-03-15,False,4.617,Leveling Surveys OV – IFT,1.153
-1983-04-15,False,4.678,Leveling Surveys OV – IFT,1.214
-1983-05-15,False,4.746,Leveling Surveys OV – IFT,1.2820000000000005
-1983-06-15,False,4.852,Leveling Surveys OV – IFT,1.3880000000000003
-1983-09-15,False,5.08,Leveling Surveys OV – IFT,1.616
-1983-10-15,False,5.225,Leveling Surveys OV – IFT,1.7609999999999997
-1983-12-15,False,5.314,Leveling Surveys OV – IFT,1.85
-1984-03-15,False,5.632,Leveling Surveys OV – IFT,2.1679999999999997
-1984-06-15,False,5.8,Leveling Surveys OV – IFT,2.336
-1984-10-15,False,5.971,Leveling Surveys OV – IFT,2.507
-1985-01-15,False,6.005,Leveling Surveys OV – IFT,2.541
-1985-03-15,False,5.976,Leveling Surveys OV – IFT,2.512
-1985-07-15,False,5.924,Leveling Surveys OV – IFT,2.4600000000000004
-1985-11-15,False,5.858,Leveling Surveys OV – IFT,2.3939999999999997
-1986-04-15,False,5.799,Levelling Surveys OV,2.3350000000000004
-1986-10-15,False,5.727,Levelling Surveys OV,2.2630000000000003
-1987-06-15,False,5.641,Levelling Surveys OV,2.177
-1988-06-15,False,5.541,Levelling Surveys OV,2.0770000000000004
-1988-12-15,False,5.497,Levelling Surveys OV,2.033
-1989-06-15,False,5.57,Levelling Surveys OV,2.1060000000000003
-1989-07-15,False,5.566,Levelling Surveys OV,2.102
-1989-09-15,False,5.55,Levelling Surveys OV,2.086
-1989-12-15,False,5.52,Levelling Surveys OV,2.0559999999999996
-1990-06-15,False,5.495,Levelling Surveys OV,2.031
-1990-12-15,False,5.464,Levelling Surveys OV,2.0000000000000004
-1991-07-15,False,5.42,Levelling Surveys OV,1.956
-1992-06-15,False,5.374,Levelling Surveys OV,1.9099999999999997
-1992-12-15,False,5.361,Levelling Surveys OV,1.8969999999999998
-1994-01-15,False,5.344,Levelling Surveys OV,1.8800000000000003
-1994-04-15,False,5.351,Levelling Surveys OV,1.887
-1994-05-15,False,5.355,Levelling Surveys OV,1.8910000000000005
-1994-07-15,False,5.353,Levelling Surveys OV,1.8889999999999998
-1994-09-15,False,5.348,Leveling Surveys OV,1.884
-1994-12-15,False,5.326,Leveling Surveys OV,1.8619999999999997
-1995-03-15,False,5.31,Leveling Surveys OV,1.8459999999999996
-1995-07-15,False,5.294,Leveling Surveys OV,1.8299999999999996
-1995-11-15,False,5.268,Leveling Surveys OV,1.8039999999999998
-1996-03-15,False,5.253,Leveling Surveys OV,1.7890000000000001
-1996-12-15,False,5.248,Levelling Surveys OV,1.7840000000000003
-1997-01-15,False,5.24,Levelling Surveys OV,1.7760000000000002
-1997-09-15,False,5.205,Levelling Surveys OV,1.741
-1998-02-15,False,5.184,Levelling Surveys OV,1.7200000000000002
-1998-10-15,False,5.152,Levelling Surveys OV,1.6880000000000002
-1999-03-15,False,5.13,Levelling Surveys OV,1.666
-1999-09-15,False,5.116,Levelling Surveys OV,1.6519999999999997
-2000-03-15,False,5.101,Levelling Surveys OV,1.637
-2000-05-15,False,5.126,Levelling Surveys OV,1.6620000000000004
-2000-06-15,False,5.134,Levelling Surveys OV,1.6700000000000004
-2000-07-15,False,5.147,Levelling Surveys OV,1.6830000000000003
-2000-08-15,False,5.153,Levelling Surveys OV,1.6889999999999996
-2000-10-15,False,5.153,Levelling Surveys OV,1.6889999999999996
-2000-12-15,False,5.151,Levelling Surveys OV,1.6869999999999998
-2001-03-15,False,5.136,Levelling Surveys INGV-NA OV,1.6720000000000002
-2001-11-15,False,5.111,Levelling Surveys INGV-NA OV,1.6469999999999998
-2002-07-15,False,5.091,Levelling Surveys INGV-NA OV,1.6270000000000002
-2002-12-15,False,5.081,Levelling Surveys INGV-NA OV,1.6170000000000004
-2003-03-15,False,5.08,Levelling Surveys INGV-NA OV,1.616
-2003-11-15,False,5.078,Levelling Surveys INGV-NA OV,1.6140000000000003
-2004-05-15,False,5.071,Levelling Surveys INGV-NA OV,1.6069999999999998
-2004-11-15,False,5.063,Levelling Surveys INGV-NA OV,1.5989999999999998
-2005-05-15,False,5.073,Levelling Surveys INGV-NA OV,1.6090000000000004
-2005-10-15,False,5.074,Levelling Surveys INGV-NA OV,1.6099999999999999
-2006-03-15,False,5.086,Levelling Surveys INGV-NA OV,1.6220000000000003
-2006-07-15,False,5.096,Levelling Surveys INGV-NA OV,1.6320000000000001
-2006-09-15,False,5.107,Levelling Surveys INGV-NA OV,1.6430000000000002
-2006-12-15,False,5.114,Levelling Surveys INGV-NA OV,1.65
-2007-12-15,False,5.092,Levelling Surveys INGV-NA OV,1.6279999999999997
-2008-09-15,False,5.091,Levelling Surveys INGV-NA OV,1.6270000000000002
-2009-07-15,False,5.11,Levelling Surveys INGV-NA OV,1.6460000000000004
+date,source_month_year,date_convention,month_uncertain,elevation_m,source_uncertainty_text,source,provenance_class,source_file,uncertainty_note,displacement_from_1905_m
+1905-03-15,03?/1905,15th is display placement; original reports month only,True,3.464,±0.005,Leveling Surveys Istituto Geografico Militare (IGM),leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.0
+1907-03-15,03?/1907,15th is display placement; original reports month only,True,3.441,±0.010,Leveling Surveys IGM,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.02300000000000013
+1913-06-15,06?/1913,15th is display placement; original reports month only,True,3.491,±0.125,Estimate from direct measure of sea level,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.027000000000000135
+1919-08-15,08/1919,15th is display placement; original reports month only,False,3.278,±0.005,Leveling Surveys IGM,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.18599999999999994
+1922-08-15,08?/1922,15th is display placement; original reports month only,True,3.221,±0.010,Leveling Surveys IGM,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.24299999999999988
+1924-08-15,08?/1924,15th is display placement; original reports month only,True,3.066,±0.150,Estimate from direct measure of sea level,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.39800000000000013
+1928-12-15,12?/1928,15th is display placement; original reports month only,True,2.787,±0.200,Estimate from photo,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.677
+1933-07-15,07/1933,15th is display placement; original reports month only,False,2.864,±0.125,Levelling Surveys (E. Maio),leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.6000000000000001
+1940-05-15,05/1940,15th is display placement; original reports month only,False,2.611,±0.190,Estimate from photo,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.8529999999999998
+1945-08-15,08/1945,15th is display placement; original reports month only,False,2.36,±0.125,Levelling Surveys (L. Ranieri),leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-1.104
+1946-05-15,05/1946,15th is display placement; original reports month only,False,2.346,±0.180,Estimate from photo,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-1.1179999999999999
+1947-05-15,05/1947,15th is display placement; original reports month only,False,2.294,±0.180,Estimate from photo and direct measure of sea level,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-1.17
+1950-04-15,04/1950,15th is display placement; original reports month only,False,2.198,±0.180,Graphical reconstruction,source-provided reconstruction,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-1.266
+1950-12-15,12/1950,15th is display placement; original reports month only,False,2.418,±0.200,Estimate from photo and direct measure of sea level,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-1.0459999999999998
+1951-08-15,08/1951,15th is display placement; original reports month only,False,2.788,±0.125,Levelling Surveys (L. Ranieri),leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.6760000000000002
+1952-01-15,01/1952,15th is display placement; original reports month only,False,2.867,±0.170,Estimate from photo,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.597
+1952-05-15,05/1952,15th is display placement; original reports month only,False,2.934,±0.180,Estimate from photo,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.5299999999999998
+1952-10-15,10/1952,15th is display placement; original reports month only,False,2.927,±0.200,Estimate from photo,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.5369999999999999
+1953-08-15,08/1953,15th is display placement; original reports month only,False,2.847,±0.005,Levelling Surveys IGM,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.617
+1957-06-15,06/1957,15th is display placement; original reports month only,False,2.741,±0.190,Estimate from photo,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.7229999999999999
+1960-06-15,06?/1960,15th is display placement; original reports month only,True,2.764,±0.125,Estimate from direct measure of sea level,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.7000000000000002
+1961-06-15,06?/1961,15th is display placement; original reports month only,True,2.846,±0.200,Estimate from photo,source-provided estimate,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.6179999999999999
+1968-06-15,06?/1968,15th is display placement; original reports month only,True,2.661,±0.010,Leveling Surveys G. Corrado et al,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",-0.8029999999999999
+1970-02-15,02/1970,15th is display placement; original reports month only,False,3.714,±0.006,Leveling Surveys Genio Civile (GGCC),leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.25
+1970-03-15,03/1970,15th is display placement; original reports month only,False,3.731,±0.004,Levelling Surveys IGM,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.2669999999999999
+1970-04-15,04/1970,15th is display placement; original reports month only,False,3.776,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.31199999999999983
+1970-05-15,05/1970,15th is display placement; original reports month only,False,3.838,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.3740000000000001
+1970-06-15,06/1970,15th is display placement; original reports month only,False,3.892,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.42799999999999994
+1970-07-15,07/1970,15th is display placement; original reports month only,False,3.928,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.46399999999999997
+1970-08-15,08/1970,15th is display placement; original reports month only,False,3.954,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.4900000000000002
+1970-09-15,09/1970,15th is display placement; original reports month only,False,3.978,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.5140000000000002
+1970-10-15,10/1970,15th is display placement; original reports month only,False,4.002,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.5379999999999998
+1970-11-15,11/1970,15th is display placement; original reports month only,False,4.017,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.5530000000000004
+1970-12-15,12/1970,15th is display placement; original reports month only,False,4.044,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.5799999999999996
+1971-01-15,01/1971,15th is display placement; original reports month only,False,4.081,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.6170000000000004
+1971-02-15,02/1971,15th is display placement; original reports month only,False,4.098,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.6339999999999999
+1971-03-15,03/1971,15th is display placement; original reports month only,False,4.132,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.6679999999999997
+1971-04-15,04/1971,15th is display placement; original reports month only,False,4.151,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.6869999999999998
+1971-05-15,05/1971,15th is display placement; original reports month only,False,4.188,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.7239999999999998
+1971-06-15,06/1971,15th is display placement; original reports month only,False,4.235,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.7710000000000004
+1971-07-15,07/1971,15th is display placement; original reports month only,False,4.26,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.7959999999999998
+1971-09-15,09/1971,15th is display placement; original reports month only,False,4.285,±0.004,Leveling Surveys IGM,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.8210000000000002
+1971-10-15,10/1971,15th is display placement; original reports month only,False,4.299,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.8350000000000004
+1971-12-15,12/1971,15th is display placement; original reports month only,False,4.316,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.8519999999999999
+1972-03-15,03/1972,15th is display placement; original reports month only,False,4.384,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.9200000000000004
+1972-06-15,06/1972,15th is display placement; original reports month only,False,4.427,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.9629999999999996
+1972-09-15,09/1972,15th is display placement; original reports month only,False,4.412,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.948
+1972-11-15,11/1972,15th is display placement; original reports month only,False,4.404,±0.006,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.94
+1972-12-15,12/1972,15th is display placement; original reports month only,False,4.39,±0.004,Leveling Surveys GGCC,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.9259999999999997
+1975-05-15,05/1975,15th is display placement; original reports month only,False,4.212,±0.004,Leveling Surveys OV - Istituto di Fisica Terrestre NA (IFT),leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.7479999999999998
+1975-10-15,10/1975,15th is display placement; original reports month only,False,4.189,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.7250000000000001
+1976-11-15,11/1976,15th is display placement; original reports month only,False,4.265,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.8009999999999997
+1977-05-15,05/1977,15th is display placement; original reports month only,False,4.29,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.8260000000000001
+1978-01-15,01/1978,15th is display placement; original reports month only,False,4.23,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.7660000000000005
+1979-03-15,03/1979,15th is display placement; original reports month only,False,4.264,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.8000000000000003
+1980-01-15,01/1980,15th is display placement; original reports month only,False,4.232,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.7680000000000002
+1981-01-15,01/1981,15th is display placement; original reports month only,False,4.276,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.8119999999999998
+1982-01-15,01/1982,15th is display placement; original reports month only,False,4.217,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",0.7529999999999997
+1983-01-15,01/1983,15th is display placement; original reports month only,False,4.561,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.097
+1983-03-15,03/1983,15th is display placement; original reports month only,False,4.617,±0.005,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.153
+1983-04-15,04/1983,15th is display placement; original reports month only,False,4.678,±0.005,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.214
+1983-05-15,05/1983,15th is display placement; original reports month only,False,4.746,±0.005,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.2820000000000005
+1983-06-15,06/1983,15th is display placement; original reports month only,False,4.852,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.3880000000000003
+1983-09-15,09/1983,15th is display placement; original reports month only,False,5.08,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.616
+1983-10-15,10/1983,15th is display placement; original reports month only,False,5.225,±0.005,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.7609999999999997
+1983-12-15,12/1983,15th is display placement; original reports month only,False,5.314,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.85
+1984-03-15,03/1984,15th is display placement; original reports month only,False,5.632,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.1679999999999997
+1984-06-15,06/1984,15th is display placement; original reports month only,False,5.8,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.336
+1984-10-15,10/1984,15th is display placement; original reports month only,False,5.971,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.507
+1985-01-15,01/1985,15th is display placement; original reports month only,False,6.005,±0.004,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.541
+1985-03-15,03/1985,15th is display placement; original reports month only,False,5.976,±0.005,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.512
+1985-07-15,07/1985,15th is display placement; original reports month only,False,5.924,±0.005,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.4600000000000004
+1985-11-15,11/1985,15th is display placement; original reports month only,False,5.858,±0.006,Leveling Surveys OV – IFT,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.3939999999999997
+1986-04-15,04/1986,15th is display placement; original reports month only,False,5.799,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.3350000000000004
+1986-10-15,10/1986,15th is display placement; original reports month only,False,5.727,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.2630000000000003
+1987-06-15,06/1987,15th is display placement; original reports month only,False,5.641,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.177
+1988-06-15,06/1988,15th is display placement; original reports month only,False,5.541,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.0770000000000004
+1988-12-15,12/1988,15th is display placement; original reports month only,False,5.497,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.033
+1989-06-15,06/1989,15th is display placement; original reports month only,False,5.57,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.1060000000000003
+1989-07-15,07/1989,15th is display placement; original reports month only,False,5.566,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.102
+1989-09-15,09/1989,15th is display placement; original reports month only,False,5.55,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.086
+1989-12-15,12/1989,15th is display placement; original reports month only,False,5.52,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.0559999999999996
+1990-06-15,06/1990,15th is display placement; original reports month only,False,5.495,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.031
+1990-12-15,12/1990,15th is display placement; original reports month only,False,5.464,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",2.0000000000000004
+1991-07-15,07/1991,15th is display placement; original reports month only,False,5.42,±0.005,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.956
+1992-06-15,06/1992,15th is display placement; original reports month only,False,5.374,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.9099999999999997
+1992-12-15,12/1992,15th is display placement; original reports month only,False,5.361,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.8969999999999998
+1994-01-15,01/1994,15th is display placement; original reports month only,False,5.344,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.8800000000000003
+1994-04-15,04/1994,15th is display placement; original reports month only,False,5.351,±0.005,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.887
+1994-05-15,05/1994,15th is display placement; original reports month only,False,5.355,±0.005,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.8910000000000005
+1994-07-15,07/1994,15th is display placement; original reports month only,False,5.353,±0.005,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.8889999999999998
+1994-09-15,09/1994,15th is display placement; original reports month only,False,5.348,±0.004,Leveling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.884
+1994-12-15,12/1994,15th is display placement; original reports month only,False,5.326,±0.004,Leveling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.8619999999999997
+1995-03-15,03/1995,15th is display placement; original reports month only,False,5.31,±0.004,Leveling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.8459999999999996
+1995-07-15,07/1995,15th is display placement; original reports month only,False,5.294,±0.004,Leveling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.8299999999999996
+1995-11-15,11/1995,15th is display placement; original reports month only,False,5.268,±0.004,Leveling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.8039999999999998
+1996-03-15,03/1996,15th is display placement; original reports month only,False,5.253,±0.004,Leveling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.7890000000000001
+1996-12-15,12/1996,15th is display placement; original reports month only,False,5.248,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.7840000000000003
+1997-01-15,01/1997,15th is display placement; original reports month only,False,5.24,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.7760000000000002
+1997-09-15,09/1997,15th is display placement; original reports month only,False,5.205,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.741
+1998-02-15,02/1998,15th is display placement; original reports month only,False,5.184,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.7200000000000002
+1998-10-15,10/1998,15th is display placement; original reports month only,False,5.152,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6880000000000002
+1999-03-15,03/1999,15th is display placement; original reports month only,False,5.13,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.666
+1999-09-15,09/1999,15th is display placement; original reports month only,False,5.116,±0.004,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6519999999999997
+2000-03-15,03/2000,15th is display placement; original reports month only,False,5.101,±0.005,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.637
+2000-05-15,05/2000,15th is display placement; original reports month only,False,5.126,±0.005,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6620000000000004
+2000-06-15,06/2000,15th is display placement; original reports month only,False,5.134,±0.005,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6700000000000004
+2000-07-15,07/2000,15th is display placement; original reports month only,False,5.147,±0.005,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6830000000000003
+2000-08-15,08/2000,15th is display placement; original reports month only,False,5.153,±0.005,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6889999999999996
+2000-10-15,10/2000,15th is display placement; original reports month only,False,5.153,±0.005,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6889999999999996
+2000-12-15,12/2000,15th is display placement; original reports month only,False,5.151,±0.005,Levelling Surveys OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6869999999999998
+2001-03-15,03/2001,15th is display placement; original reports month only,False,5.136,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6720000000000002
+2001-11-15,11/2001,15th is display placement; original reports month only,False,5.111,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6469999999999998
+2002-07-15,07/2002,15th is display placement; original reports month only,False,5.091,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6270000000000002
+2002-12-15,12/2002,15th is display placement; original reports month only,False,5.081,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6170000000000004
+2003-03-15,03/2003,15th is display placement; original reports month only,False,5.08,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.616
+2003-11-15,11/2003,15th is display placement; original reports month only,False,5.078,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6140000000000003
+2004-05-15,05/2004,15th is display placement; original reports month only,False,5.071,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6069999999999998
+2004-11-15,11/2004,15th is display placement; original reports month only,False,5.063,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.5989999999999998
+2005-05-15,05/2005,15th is display placement; original reports month only,False,5.073,±0.005,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6090000000000004
+2005-10-15,10/2005,15th is display placement; original reports month only,False,5.074,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6099999999999999
+2006-03-15,03/2006,15th is display placement; original reports month only,False,5.086,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6220000000000003
+2006-07-15,07/2006,15th is display placement; original reports month only,False,5.096,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6320000000000001
+2006-09-15,09/2006,15th is display placement; original reports month only,False,5.107,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6430000000000002
+2006-12-15,12/2006,15th is display placement; original reports month only,False,5.114,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.65
+2007-12-15,12/2007,15th is display placement; original reports month only,False,5.092,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6279999999999997
+2008-09-15,09/2008,15th is display placement; original reports month only,False,5.091,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6270000000000002
+2009-07-15,07/2009,15th is display placement; original reports month only,False,5.11,±0.004,Levelling Surveys INGV-NA OV,leveling survey,inputs/extended/delgaudio2010_table.doc,"Source heading says sigma(mm) but entries are decimal; retained verbatim, not converted or used as weights.",1.6460000000000004

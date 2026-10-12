@@ -69,16 +69,15 @@ def reference_crop(item, logs):
 
 
 def paper_figure(item):
-    lines = [r'\begin{figure}[H]', r'\centering']
-    if item['figure'] == 'S15':
-        lines += [r'\missingresult{Panels A and B}{The retained E1/E2 templates are different published examples and are not substituted.}']
+    if not item['independent_files']:
+        return r'\paragraph{Figure '+item['figure']+r' --- not reproduced.} '+tex(item['missing'])+'\n'
+    number=int(item['figure'].replace('S',''))
+    lines = [r'\setcounter{figure}{'+str(number-1)+'}',r'\begin{figure}[H]', r'\centering']
     for panel, path in zip(item.get('file_labels',item['partial_panels']), item['independent_files']):
         lines += [r'\par\smallskip\textbf{Panel ' + tex(panel) + r': partially reproduced}\par',
                   r'\includegraphics[width=.94\linewidth,height=.66\textheight,keepaspectratio]{' + path + '}']
-    if item['figure'] == 'S15':
-        lines += [r'\missingresult{Panel D}{No independently selected matching shallow-event example.}']
-    elif item['missing']:
-        lines += [r'\missingresult{All panels/views}{' + tex(item['missing']) + '}']
+    if item['missing']:
+        lines += [r'\par\small '+tex(item['missing'])]
     lines += [r'\caption{' + tex(item['title'] + '. ' + item['caption']) + '}',
               r'\label{publication:' + item['figure'] + '}', r'\end{figure}']
     return '\n'.join(lines) + '\n'
@@ -123,8 +122,10 @@ def verify(layout):
     positions = [flat.index(s, supplement) for s in supplemental_sections]
     assert positions == sorted(positions) and positions[-1] < documentation
     captions = re.findall(r'Figure\s+(S?\d+):', flat[:documentation])
-    assert captions == ORDER, captions
-    assert re.findall(r'Figure\s+(S?\d+):', flat[:supplement]) == ORDER[:4]
+    expected=[item['figure'] for item in layout if item['independent_files']]
+    assert captions == expected, captions
+    assert re.findall(r'Figure\s+(S?\d+):', flat[:supplement]) == [f for f in expected if not f.startswith('S')]
+    assert r'\missingresult' not in ''.join((REPORT/'figure_sections'/('F'+f+'.tex')).read_text() for f in ORDER)
     assert 'Table S1:' in flat[supplement:documentation] and 'Table S2:' in flat[supplement:documentation]
     for audit in ['Scientific specification and input verification', 'Data access and actual coverage',
                   'Independent processing and explicit departures', 'Figure-by-figure record',

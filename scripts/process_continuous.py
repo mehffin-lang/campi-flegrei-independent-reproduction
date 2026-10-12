@@ -15,6 +15,8 @@ import copy
 import hashlib
 import json
 import multiprocessing
+import inspect
+import importlib.metadata
 import sqlite3
 import numpy as np
 import pandas as pd
@@ -24,6 +26,13 @@ OUT=ROOT/'data/continuation'
 CACHE=ROOT/'inputs/continuation/pick_cache'
 SETTINGS=dict(highpass_hz=1,corners=4,zerophase=False,P_threshold=.3,S_threshold=.3,core_s=1800,context_s=30,merge_tolerance_s=.25,exclude_s=['CASE','CFB1','CFB3'])
 FROZEN=False
+
+
+def inference_identity():
+    return dict(artifacts={p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in
+                ['inputs/models/phasenet_retrained.pt','inputs/models/phasenet_retrained.json']},
+                software={p:importlib.metadata.version(p) for p in ['torch','seisbench','obspy']},
+                implementation_sha256=hashlib.sha256((inspect.getsource(pick)+inspect.getsource(initialize_worker)).encode()).hexdigest())
 
 
 def initialize_worker():
@@ -55,7 +64,7 @@ def pick(job):
                 if not(t<=float(p.peak_time)<min(t+1800,end)):continue
                 if p.phase=='S' and p.trace_id.split('.')[1] in SETTINGS['exclude_s']:continue
                 picks.append(dict(source=source,trace_id=p.trace_id,phase=p.phase,time=str(p.peak_time),probability=float(p.peak_value)))
-        record=dict(file=source,input_sha256=digest,picks=picks,coverage=coverage,settings=SETTINGS)
+        record=dict(file=source,input_sha256=digest,picks=picks,coverage=coverage,settings=SETTINGS,inference_identity=inference_identity(),core_start=job[1],core_end=job[2])
         path=CACHE/(hashlib.sha256(source.encode()).hexdigest()[:20]+'.json')
         path.with_suffix('.tmp').write_text(json.dumps(record));path.with_suffix('.tmp').replace(path)
         return dict(file=source,picks=len(picks),status='processed')
@@ -83,7 +92,12 @@ def infer(workers):
         file=CACHE/(hashlib.sha256(job[0].encode()).hexdigest()[:20]+'.json')
         if file.exists():
             old=json.loads(file.read_text())
-            if old.get('input_sha256')==job[3] and old.get('settings')==SETTINGS:continue
+            if (old.get('input_sha256')==job[3] and old.get('settings')==SETTINGS
+                and old.get('inference_identity')==inference_identity()
+                and old.get('core_start')==job[1] and old.get('core_end')==job[2]):continue
+            # A failed replacement must not leave an incompatible old cache
+            # available for assembly as if inference had succeeded.
+            file.unlink()
         pending.append(job)
     print(f'Processing {len(pending)} new waveform files on {workers} workers.',flush=True)
     log=[]
@@ -108,10 +122,14 @@ def assemble():
     if p.exists():
         for r in pd.read_csv(p).to_dict('records'):
             coverage.append(dict(file=r['file'],channel=r.get('channel',r.get('id')),start=float(UTCDateTime(r['start'])),end=float(UTCDateTime(r['end']))+1/r.get('sample_rate',100),sample_rate=r.get('sample_rate',100)))
-    selected={j[0] for j in jobs()} if FROZEN else None
+    selected={j[0]:j for j in jobs()};identity=inference_identity()
     for file in sorted(CACHE.glob('*.json')):
         c=json.loads(file.read_text())
-        if selected is not None and c['file'] not in selected:continue
+        job=selected.get(c['file'])
+        if job is None:continue
+        if not (c.get('input_sha256')==job[3] and c.get('settings')==SETTINGS
+                and c.get('inference_identity')==identity
+                and c.get('core_start')==job[1] and c.get('core_end')==job[2]):continue
         frames.append(pd.DataFrame(c['picks']));coverage.extend(c['coverage'])
     allp=pd.concat(frames,ignore_index=True).sort_values('probability',ascending=False)
     # Processing margins are context, not extra study-period observations.

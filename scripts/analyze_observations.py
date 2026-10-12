@@ -111,9 +111,10 @@ for label,time in cfg['template_times'].items():
   selfscore=float(normalized_correlation(y,y)[0]);assert abs(selfscore-1)<1e-10
   assert abs(float(normalized_correlation(3*y,y)[0])-1)<1e-10
   templates[label][station]=y
-  injected=np.zeros(3000);injected[1200:2000]=y
-  scores=normalized_correlation(injected,y)
-  assert np.argmax(scores)==1200 and abs(scores[1200]-1)<1e-10
+  import sys
+  sys.path.insert(0,str(ROOT/'tests'))
+  from template_assertions import check_injected_alignment
+  check_injected_alignment(normalized_correlation,y)
 candidates=[];scan_intervals=[]
 for hour in range(24):
  traces={};requested_start=UTCDateTime(cfg['independent_calendar_day'])+hour*3600

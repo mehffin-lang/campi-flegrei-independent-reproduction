@@ -17,7 +17,7 @@ for spacing in [.1,.05]:
             exact=float(np.sum(np.maximum(0,np.minimum(depth,bottoms)-tops)/table[column].to_numpy()))
             actual=float(calc_time(np.array([[0.,0.,depth,0.]]),np.array([[0.,0.,0.]]),np.array([phase]),eikonal=eik)[0,0])
             rows.append(dict(grid_km=spacing,phase=phase,depth_km=depth,analytic_s=exact,numerical_s=actual,error_s=actual-exact))
-frame=pd.DataFrame(rows);frame.to_csv(D/'profile_ray_checks.csv',index=False)
+frame=pd.DataFrame(rows);frame.to_csv(ROOT/'tests/results/profile_ray_checks.csv',index=False)
 maxerr=frame.groupby(['grid_km','phase']).error_s.apply(lambda x:float(abs(x).max()))
 checks={}
 for phase,column in [('p','vp_km_s'),('s','vs_km_s')]:
@@ -29,4 +29,4 @@ for phase,column in [('p','vp_km_s'),('s','vs_km_s')]:
 assert all(checks.values()),checks
 summary=dict(checks=checks,max_coarse_P_error_s=maxerr.loc[(.1,'p')],max_coarse_S_error_s=maxerr.loc[(.1,'s')],max_fine_P_error_s=maxerr.loc[(.05,'p')],max_fine_S_error_s=maxerr.loc[(.05,'s')],
     scope='Numerical vertical layered-ray consistency and refinement only; does not establish the alternative profile as the exact 2018 model or validate earthquake locations.')
-(D/'profile_ray_checks.json').write_text(json.dumps(summary,indent=2)+'\n');print(summary)
+(ROOT/'tests/results/profile_ray_checks.json').write_text(json.dumps(summary,indent=2)+'\n');print(summary)

@@ -1,3 +1,5 @@
+# Superseded result-table comparison retained for audit, not executed by this run.
+raise SystemExit('Current comparisons use published images only in report/comparison.pdf. The old result-table comparison is disabled.')
 """Final comparison only: never imported by observation processing or inversion."""
 from pathlib import Path
 import json,hashlib,zipfile,argparse

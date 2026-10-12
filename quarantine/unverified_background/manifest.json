@@ -1,0 +1,248 @@
+{
+  "base_commit": "ff7586a3bb8c8b24bbb06b47f167cce6bbc89d11",
+  "reason": "Author-distributed fixed grid lacks independently verified original 2008 numerical provenance. All listed dependent products are superseded and excluded from current results.",
+  "grid_author_commit": "f84c9c9dc6bb1501a95a833f6634199a63d4f3b3",
+  "grid_author_path": "models/3d_vmod",
+  "files": [
+    {
+      "original": "data/continuation/figure_S6.csv",
+      "quarantined": "quarantine/unverified_background/data/continuation/figure_S6.csv",
+      "bytes": 13179,
+      "sha256": "4e638b0c3c2809b00f992e456caa31f25cffc503f95948e7d41a0d359aab7ba2"
+    },
+    {
+      "original": "data/continuation/independent_station_corrections.sta",
+      "quarantined": "quarantine/unverified_background/data/continuation/independent_station_corrections.sta",
+      "bytes": 2107,
+      "sha256": "6f55e127640cd9e94a45bfbb76a000c8ee41d0a71777c09fd3437257cb0377ce"
+    },
+    {
+      "original": "data/continuation/independent_velest_model.csv",
+      "quarantined": "quarantine/unverified_background/data/continuation/independent_velest_model.csv",
+      "bytes": 692,
+      "sha256": "a5591005fe0ea548e520313a3a09401a682957f3ec21937f507debf39468d1ef"
+    },
+    {
+      "original": "data/continuation/independent_velest_model.mod",
+      "quarantined": "quarantine/unverified_background/data/continuation/independent_velest_model.mod",
+      "bytes": 1203,
+      "sha256": "24a5d73b116e0b2a87dea4e6b529dd17ff4b198e1d6c598fdfd130d7278a9658"
+    },
+    {
+      "original": "data/continuation/velest_caldera_calibration.csv",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_caldera_calibration.csv",
+      "bytes": 6080,
+      "sha256": "a9ddfda4a767f5af6362c952344b293fd716d79685cc81cd4c5249f298a87c99"
+    },
+    {
+      "original": "data/continuation/velest_caldera_model.csv",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_caldera_model.csv",
+      "bytes": 692,
+      "sha256": "a5591005fe0ea548e520313a3a09401a682957f3ec21937f507debf39468d1ef"
+    },
+    {
+      "original": "data/continuation/velest_calibration_selection.csv",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_calibration_selection.csv",
+      "bytes": 16425,
+      "sha256": "6e5012948224a9e70ded8ce36a096e9017dbec66bed51acd77732abe7c3b9207"
+    },
+    {
+      "original": "data/continuation/velest_capacity_failed_attempt.json",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_capacity_failed_attempt.json",
+      "bytes": 5163,
+      "sha256": "cb338721602e7e838604e3ae28e57fadef7650d90067fbdd75391f7c0fc0a09c"
+    },
+    {
+      "original": "data/continuation/velest_capacity_repair.json",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_capacity_repair.json",
+      "bytes": 1258,
+      "sha256": "2904cab5f73f67155568d45af30e5ab66e23b073a1186524e5e1f58fa841d6a2"
+    },
+    {
+      "original": "data/continuation/velest_central_calibration.csv",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_central_calibration.csv",
+      "bytes": 6066,
+      "sha256": "8d0c2b430565edf16cd68fc34afb318fe8b24d2b6f8242db769db21c6fa58743"
+    },
+    {
+      "original": "data/continuation/velest_central_model.csv",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_central_model.csv",
+      "bytes": 726,
+      "sha256": "bce023dbf9701cc07f888055cbdfea31f2630a48e7d1059d4b1128acdc36bfd7"
+    },
+    {
+      "original": "data/continuation/velest_filtered.csv",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_filtered.csv",
+      "bytes": 8465,
+      "sha256": "26a8d45d3a006463cf905f8ef818249803f8d61a2a527b71eb231f2da3353dc0"
+    },
+    {
+      "original": "data/continuation/velest_final.cnv",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_final.cnv",
+      "bytes": 52946,
+      "sha256": "419319ead3cd0294642ab1115d10593ee3ce0183da9f0a5626e54b3af44daf17"
+    },
+    {
+      "original": "data/continuation/velest_locations.csv",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_locations.csv",
+      "bytes": 25511,
+      "sha256": "c43542fb64ebccda2b533a46728610346821bb5bf7baac149c89ab8745373e8d"
+    },
+    {
+      "original": "data/continuation/velest_locations_before_rejection.csv",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_locations_before_rejection.csv",
+      "bytes": 43531,
+      "sha256": "f705a113de24c1408e7ba8a78cc3ee9f09efa112313a2f32c044006f826b37b6"
+    },
+    {
+      "original": "data/continuation/velest_precision_repair.json",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_precision_repair.json",
+      "bytes": 47588,
+      "sha256": "0da99caeaf87ca365e3c874912a942cedecacbb0f154aa6a0c354fd0d3807512"
+    },
+    {
+      "original": "data/continuation/velest_rejected_input_picks.csv",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_rejected_input_picks.csv",
+      "bytes": 2065,
+      "sha256": "1464398fa363fe637a68a4d5282e88abb1964c94fbc72e5e40be4863c9719856"
+    },
+    {
+      "original": "data/continuation/velest_single_precision_failed_attempt.json",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_single_precision_failed_attempt.json",
+      "bytes": 6533,
+      "sha256": "8a36904b90f32d47f3cda72a1bec69c3dc31dcdf15e7e74f31e428b22171cf3a"
+    },
+    {
+      "original": "data/continuation/velest_station_aliases.csv",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_station_aliases.csv",
+      "bytes": 359,
+      "sha256": "acd34c9c10d467b023c430268fda7c6a57d21576039cc1828093ba3498e9e329"
+    },
+    {
+      "original": "data/continuation/velest_summary.json",
+      "quarantined": "quarantine/unverified_background/data/continuation/velest_summary.json",
+      "bytes": 12906,
+      "sha256": "b2eb12f70b144d06d04689180ece013173c52333cbb215444a292a1ab6ec5a03"
+    },
+    {
+      "original": "data/extended/associations.csv",
+      "quarantined": "quarantine/unverified_background/data/extended/associations.csv",
+      "bytes": 1750,
+      "sha256": "44bdcd5b6773c89be44cf1ebae930179f9b7e802f824f8e036fa5de2b5a8ad0e"
+    },
+    {
+      "original": "data/extended/background_averages.csv",
+      "quarantined": "quarantine/unverified_background/data/extended/background_averages.csv",
+      "bytes": 2684,
+      "sha256": "7bf8ec523ec0a76db2a79060bd64133483e0322256ec49d5bb32bf6dc2acb817"
+    },
+    {
+      "original": "figures/association_diagnostic.pdf",
+      "quarantined": "quarantine/unverified_background/figures/association_diagnostic.pdf",
+      "bytes": 23793,
+      "sha256": "d9241b9a51edaa293c5e5dd4b31c4e354c7e35f2761c6c40dbd271bd11d31ac7"
+    },
+    {
+      "original": "figures/background_profiles.pdf",
+      "quarantined": "quarantine/unverified_background/figures/background_profiles.pdf",
+      "bytes": 15773,
+      "sha256": "76e4280b8fb61aa7b737d6a8f375a29593a34deb5fc5d04fd59f2bef79062f5b"
+    },
+    {
+      "original": "figures/figure_S6_pilot.pdf",
+      "quarantined": "quarantine/unverified_background/figures/figure_S6_pilot.pdf",
+      "bytes": 33016,
+      "sha256": "36f0a7e629aba66a01cef2bf1d722205fc48232d13a16b2ef5aa54d089b9042f"
+    },
+    {
+      "original": "inputs/extended/background_3d_vmod",
+      "quarantined": "quarantine/unverified_background/inputs/extended/background_3d_vmod",
+      "bytes": 122853,
+      "sha256": "dc36fe2a542fc7a3b6c473c48ec109c53ddd77a1721f509b920fea97fb0166f3"
+    },
+    {
+      "original": "data/extended/initial_events.csv",
+      "quarantined": "quarantine/unverified_background/data/extended/initial_events.csv",
+      "bytes": 1570,
+      "sha256": "6d3b8c7f290703f06a3372578f106eb4281064dc6ab24ddf66dc2f7f73feca90"
+    },
+    {
+      "original": "data/extended/summary.json",
+      "quarantined": "quarantine/unverified_background/data/extended/summary.json",
+      "bytes": 917,
+      "sha256": "e6009940bc2855fe3ef8c32b45b40f207c0358056868f635a1861a09b655e401"
+    },
+    {
+      "original": "data/extended/amplitude_measurements.csv",
+      "quarantined": "quarantine/unverified_background/data/extended/amplitude_measurements.csv",
+      "bytes": 24656,
+      "sha256": "184ac30bba9da1ceee37d2b4981ddec3540dc3763e00dfd4a8ca82e0f99bafb1"
+    },
+    {
+      "original": "data/extended/location_quality.csv",
+      "quarantined": "quarantine/unverified_background/data/extended/location_quality.csv",
+      "bytes": 1444,
+      "sha256": "ce5046b0e52b5e65cefba7aabd0a45970cc235ce29680051107327defef1540e"
+    },
+    {
+      "original": "data/extended/magnitude_pair_audit.csv",
+      "quarantined": "quarantine/unverified_background/data/extended/magnitude_pair_audit.csv",
+      "bytes": 1250,
+      "sha256": "9a88d27050c6bc7bd850df55257dd3878dbd056327934211d30d4163a2ddf48e"
+    },
+    {
+      "original": "data/extended/magnitude_edges.csv",
+      "quarantined": "quarantine/unverified_background/data/extended/magnitude_edges.csv",
+      "bytes": 47,
+      "sha256": "75251d5e570c97d1bbf721472803b0442298fb835124159979bfb35f56628413"
+    },
+    {
+      "original": "data/extended/location_consistency.json",
+      "quarantined": "quarantine/unverified_background/data/extended/location_consistency.json",
+      "bytes": 382,
+      "sha256": "93216d3be25ccf90bacee726b06ac9f744baff95274dd3651130421d67e3be7e"
+    },
+    {
+      "original": "data/extended/sp_consistency.csv",
+      "quarantined": "quarantine/unverified_background/data/extended/sp_consistency.csv",
+      "bytes": 2917,
+      "sha256": "da8cbcf5419ad15b98c203477c2cdbd1a6ee6c1ed243b32e2d5655a5b4a62496"
+    },
+    {
+      "original": "data/extended/downstream_summary.json",
+      "quarantined": "quarantine/unverified_background/data/extended/downstream_summary.json",
+      "bytes": 481,
+      "sha256": "10e513dfe305d11528acd118a94e6301e6607847973b9b67656218c1cbac0230"
+    },
+    {
+      "original": "data/extended/magnitudes.csv",
+      "quarantined": "quarantine/unverified_background/data/extended/magnitudes.csv",
+      "bytes": 44,
+      "sha256": "7cf1e3d3be00adc26626420a60182df243b9dcab7021550dd2afbafdd7eb85a5"
+    },
+    {
+      "original": "data/extended/routine_matches.csv",
+      "quarantined": "quarantine/unverified_background/data/extended/routine_matches.csv",
+      "bytes": 312,
+      "sha256": "947e2d59ed93fff1bff9cc346dd2441618bb770867e6dc312d13bb2c401114f5"
+    },
+    {
+      "original": "config/association.json",
+      "quarantined": "quarantine/unverified_background/config/association.json",
+      "bytes": 2436,
+      "sha256": "318fa1594a6d62ad0289bc8688ac93cc901a8cc7c9b82b322ce1f249e3e07f7c"
+    },
+    {
+      "original": "figures/sp_consistency.pdf",
+      "quarantined": "quarantine/unverified_background/figures/sp_consistency.pdf",
+      "bytes": 14198,
+      "sha256": "a3ce25fb282707949b6dbed0aef6e9ac93ba0fb2e01bb57dc2931d900ef96519"
+    },
+    {
+      "original": "figures/sp_consistency.png",
+      "quarantined": "quarantine/unverified_background/figures/sp_consistency.png",
+      "bytes": 48675,
+      "sha256": "dfd3e8f6ff628bbe076bf7cc57708c63758cf72dccb5ddb86cd22862ceaa13e7"
+    }
+  ]
+}

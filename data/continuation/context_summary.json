@@ -18,6 +18,11 @@
   "gnss2025_datum_offset_m": 1.7895099999999997,
   "gnss2025_overlap_demeaned_rms_m": 0.0002947320057560612,
   "leveling_rows": 128,
+  "historical_provenance_counts": {
+    "leveling survey": 114,
+    "source-provided estimate": 13,
+    "source-provided reconstruction": 1
+  },
   "routine_events": 26425,
   "routine_located": 16046,
   "routine_study_all": 19274,

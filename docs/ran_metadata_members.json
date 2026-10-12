@@ -1,0 +1,5165 @@
+{
+  "classification": "Public station and response metadata; no execution",
+  "members": [
+    {
+      "name": "0CAM.IT.xml",
+      "bytes": 97461,
+      "compressed_bytes": 4181,
+      "crc": 2663480577
+    },
+    {
+      "name": "0CAN.IT.xml",
+      "bytes": 250179,
+      "compressed_bytes": 10842,
+      "crc": 2925330356
+    },
+    {
+      "name": "0EQT.IT.xml",
+      "bytes": 57563,
+      "compressed_bytes": 2941,
+      "crc": 2796783654
+    },
+    {
+      "name": "0FRA.IT.xml",
+      "bytes": 57552,
+      "compressed_bytes": 2937,
+      "crc": 2181204413
+    },
+    {
+      "name": "0LAI.IT.xml",
+      "bytes": 57553,
+      "compressed_bytes": 2932,
+      "crc": 1746166722
+    },
+    {
+      "name": "0MAG.IT.xml",
+      "bytes": 57561,
+      "compressed_bytes": 2940,
+      "crc": 284365064
+    },
+    {
+      "name": "0MBT.IT.xml",
+      "bytes": 113419,
+      "compressed_bytes": 4271,
+      "crc": 396622659
+    },
+    {
+      "name": "0MIN.IT.xml",
+      "bytes": 97454,
+      "compressed_bytes": 4182,
+      "crc": 2505874133
+    },
+    {
+      "name": "0MOR.IT.xml",
+      "bytes": 57560,
+      "compressed_bytes": 2939,
+      "crc": 61412013
+    },
+    {
+      "name": "0ORS.IT.xml",
+      "bytes": 57556,
+      "compressed_bytes": 2936,
+      "crc": 1306966334
+    },
+    {
+      "name": "0PAP.IT.xml",
+      "bytes": 56982,
+      "compressed_bytes": 2916,
+      "crc": 6912238
+    },
+    {
+      "name": "0PDR.IT.xml",
+      "bytes": 57578,
+      "compressed_bytes": 2954,
+      "crc": 1330580592
+    },
+    {
+      "name": "0PIN.IT.xml",
+      "bytes": 57572,
+      "compressed_bytes": 2948,
+      "crc": 2493936094
+    },
+    {
+      "name": "0PIO.IT.xml",
+      "bytes": 57564,
+      "compressed_bytes": 2941,
+      "crc": 4056737502
+    },
+    {
+      "name": "0REN.IT.xml",
+      "bytes": 193657,
+      "compressed_bytes": 11091,
+      "crc": 2126287492
+    },
+    {
+      "name": "0SIL.IT.xml",
+      "bytes": 97457,
+      "compressed_bytes": 4183,
+      "crc": 1741241115
+    },
+    {
+      "name": "0TER.IT.xml",
+      "bytes": 57562,
+      "compressed_bytes": 2939,
+      "crc": 604856114
+    },
+    {
+      "name": "0UM8.IT.xml",
+      "bytes": 57562,
+      "compressed_bytes": 2940,
+      "crc": 1593686542
+    },
+    {
+      "name": "ACC.IT.xml",
+      "bytes": 57549,
+      "compressed_bytes": 2926,
+      "crc": 2633553048
+    },
+    {
+      "name": "ACQ.IT.xml",
+      "bytes": 386355,
+      "compressed_bytes": 8840,
+      "crc": 2206071289
+    },
+    {
+      "name": "ACQT.IT.xml",
+      "bytes": 97447,
+      "compressed_bytes": 4171,
+      "crc": 311070345
+    },
+    {
+      "name": "ACR.IT.xml",
+      "bytes": 193641,
+      "compressed_bytes": 11078,
+      "crc": 3555861317
+    },
+    {
+      "name": "ACT.IT.xml",
+      "bytes": 153297,
+      "compressed_bytes": 5800,
+      "crc": 4223603304
+    },
+    {
+      "name": "AGL.IT.xml",
+      "bytes": 70627,
+      "compressed_bytes": 3051,
+      "crc": 1735518251
+    },
+    {
+      "name": "AGNN.IT.xml",
+      "bytes": 70624,
+      "compressed_bytes": 3044,
+      "crc": 2939684130
+    },
+    {
+      "name": "AGR.IT.xml",
+      "bytes": 193646,
+      "compressed_bytes": 11086,
+      "crc": 2278471785
+    },
+    {
+      "name": "ALBC.IT.xml",
+      "bytes": 97431,
+      "compressed_bytes": 4157,
+      "crc": 4274874336
+    },
+    {
+      "name": "ALBL.IT.xml",
+      "bytes": 137240,
+      "compressed_bytes": 9430,
+      "crc": 721211582
+    },
+    {
+      "name": "ALC.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2990,
+      "crc": 38455617
+    },
+    {
+      "name": "ALD.IT.xml",
+      "bytes": 426058,
+      "compressed_bytes": 25366,
+      "crc": 2505344622
+    },
+    {
+      "name": "ALF.IT.xml",
+      "bytes": 68887,
+      "compressed_bytes": 2989,
+      "crc": 3415088419
+    },
+    {
+      "name": "ALFD.IT.xml",
+      "bytes": 80903,
+      "compressed_bytes": 3719,
+      "crc": 1995428075
+    },
+    {
+      "name": "ALLM.IT.xml",
+      "bytes": 142149,
+      "compressed_bytes": 9854,
+      "crc": 2984417593
+    },
+    {
+      "name": "ALSD.IT.xml",
+      "bytes": 424155,
+      "compressed_bytes": 26611,
+      "crc": 542116543
+    },
+    {
+      "name": "ALT.IT.xml",
+      "bytes": 68902,
+      "compressed_bytes": 2999,
+      "crc": 363686383
+    },
+    {
+      "name": "AMA.IT.xml",
+      "bytes": 113966,
+      "compressed_bytes": 4024,
+      "crc": 3124836137
+    },
+    {
+      "name": "AMDL.IT.xml",
+      "bytes": 80903,
+      "compressed_bytes": 3714,
+      "crc": 810999038
+    },
+    {
+      "name": "AME.IT.xml",
+      "bytes": 522365,
+      "compressed_bytes": 27890,
+      "crc": 2453170292
+    },
+    {
+      "name": "AMN.IT.xml",
+      "bytes": 205071,
+      "compressed_bytes": 9688,
+      "crc": 1851853970
+    },
+    {
+      "name": "AMSN.IT.xml",
+      "bytes": 137233,
+      "compressed_bytes": 9429,
+      "crc": 4263427286
+    },
+    {
+      "name": "AMT.IT.xml",
+      "bytes": 250159,
+      "compressed_bytes": 10852,
+      "crc": 3519783665
+    },
+    {
+      "name": "ANB.IT.xml",
+      "bytes": 68890,
+      "compressed_bytes": 2992,
+      "crc": 4073604903
+    },
+    {
+      "name": "ANT.IT.xml",
+      "bytes": 318152,
+      "compressed_bytes": 16769,
+      "crc": 1596963567
+    },
+    {
+      "name": "ANZ.IT.xml",
+      "bytes": 138382,
+      "compressed_bytes": 4694,
+      "crc": 3057862131
+    },
+    {
+      "name": "AOSA.IT.xml",
+      "bytes": 137227,
+      "compressed_bytes": 9417,
+      "crc": 3121586309
+    },
+    {
+      "name": "APIC.IT.xml",
+      "bytes": 80900,
+      "compressed_bytes": 3711,
+      "crc": 857672986
+    },
+    {
+      "name": "APNO.IT.xml",
+      "bytes": 80904,
+      "compressed_bytes": 3719,
+      "crc": 1771959512
+    },
+    {
+      "name": "APO0.IT.xml",
+      "bytes": 57568,
+      "compressed_bytes": 2947,
+      "crc": 294841992
+    },
+    {
+      "name": "APR.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 2989,
+      "crc": 1322865896
+    },
+    {
+      "name": "AQA.IT.xml",
+      "bytes": 386261,
+      "compressed_bytes": 18099,
+      "crc": 3980244449
+    },
+    {
+      "name": "AQF.IT.xml",
+      "bytes": 209720,
+      "compressed_bytes": 7073,
+      "crc": 1769103664
+    },
+    {
+      "name": "AQG.IT.xml",
+      "bytes": 273438,
+      "compressed_bytes": 12776,
+      "crc": 4061572181
+    },
+    {
+      "name": "AQK.IT.xml",
+      "bytes": 153860,
+      "compressed_bytes": 5745,
+      "crc": 2078913450
+    },
+    {
+      "name": "AQM.IT.xml",
+      "bytes": 69239,
+      "compressed_bytes": 3339,
+      "crc": 2075897600
+    },
+    {
+      "name": "AQP.IT.xml",
+      "bytes": 367832,
+      "compressed_bytes": 14594,
+      "crc": 1374453912
+    },
+    {
+      "name": "AQV.IT.xml",
+      "bytes": 261752,
+      "compressed_bytes": 15602,
+      "crc": 1493200396
+    },
+    {
+      "name": "ARCV.IT.xml",
+      "bytes": 70625,
+      "compressed_bytes": 3045,
+      "crc": 2955226581
+    },
+    {
+      "name": "ARE.IT.xml",
+      "bytes": 125305,
+      "compressed_bytes": 7186,
+      "crc": 1591528685
+    },
+    {
+      "name": "ARG.IT.xml",
+      "bytes": 294852,
+      "compressed_bytes": 17201,
+      "crc": 1859241078
+    },
+    {
+      "name": "ARI.IT.xml",
+      "bytes": 68901,
+      "compressed_bytes": 2993,
+      "crc": 2193029126
+    },
+    {
+      "name": "ARL.IT.xml",
+      "bytes": 463550,
+      "compressed_bytes": 21118,
+      "crc": 91453060
+    },
+    {
+      "name": "ARMO.IT.xml",
+      "bytes": 137230,
+      "compressed_bytes": 9430,
+      "crc": 3338716171
+    },
+    {
+      "name": "ARO.IT.xml",
+      "bytes": 193643,
+      "compressed_bytes": 11093,
+      "crc": 1833717804
+    },
+    {
+      "name": "ARR.IT.xml",
+      "bytes": 395481,
+      "compressed_bytes": 22113,
+      "crc": 3359436014
+    },
+    {
+      "name": "ASGO.IT.xml",
+      "bytes": 339610,
+      "compressed_bytes": 21746,
+      "crc": 4194777675
+    },
+    {
+      "name": "ASP.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2994,
+      "crc": 1548448069
+    },
+    {
+      "name": "ASR.IT.xml",
+      "bytes": 193126,
+      "compressed_bytes": 11152,
+      "crc": 4161473243
+    },
+    {
+      "name": "ASS.IT.xml",
+      "bytes": 221416,
+      "compressed_bytes": 10490,
+      "crc": 72201994
+    },
+    {
+      "name": "ASTI.IT.xml",
+      "bytes": 137226,
+      "compressed_bytes": 9416,
+      "crc": 2937438833
+    },
+    {
+      "name": "ATI.IT.xml",
+      "bytes": 603399,
+      "compressed_bytes": 29491,
+      "crc": 3800084077
+    },
+    {
+      "name": "ATN.IT.xml",
+      "bytes": 68902,
+      "compressed_bytes": 2999,
+      "crc": 636356806
+    },
+    {
+      "name": "ATRI.IT.xml",
+      "bytes": 80899,
+      "compressed_bytes": 3719,
+      "crc": 3934761479
+    },
+    {
+      "name": "ATSA.IT.xml",
+      "bytes": 80901,
+      "compressed_bytes": 3717,
+      "crc": 2691505764
+    },
+    {
+      "name": "AUG1.IT.xml",
+      "bytes": 329177,
+      "compressed_bytes": 19404,
+      "crc": 1457208895
+    },
+    {
+      "name": "AUL.IT.xml",
+      "bytes": 426042,
+      "compressed_bytes": 25368,
+      "crc": 3840184485
+    },
+    {
+      "name": "AUP.IT.xml",
+      "bytes": 113960,
+      "compressed_bytes": 4005,
+      "crc": 2735343046
+    },
+    {
+      "name": "AVHO.IT.xml",
+      "bytes": 80924,
+      "compressed_bytes": 3738,
+      "crc": 3905458466
+    },
+    {
+      "name": "AVI.IT.xml",
+      "bytes": 153830,
+      "compressed_bytes": 5733,
+      "crc": 997460011
+    },
+    {
+      "name": "AVL.IT.xml",
+      "bytes": 289954,
+      "compressed_bytes": 17116,
+      "crc": 2442224206
+    },
+    {
+      "name": "AVS.IT.xml",
+      "bytes": 250051,
+      "compressed_bytes": 12132,
+      "crc": 1103660838
+    },
+    {
+      "name": "AVT.IT.xml",
+      "bytes": 68891,
+      "compressed_bytes": 2988,
+      "crc": 566550854
+    },
+    {
+      "name": "AVZ.IT.xml",
+      "bytes": 329905,
+      "compressed_bytes": 8943,
+      "crc": 769588738
+    },
+    {
+      "name": "AVZA.IT.xml",
+      "bytes": 80922,
+      "compressed_bytes": 3737,
+      "crc": 2745032794
+    },
+    {
+      "name": "BAG.IT.xml",
+      "bytes": 2185942,
+      "compressed_bytes": 116247,
+      "crc": 1341002012
+    },
+    {
+      "name": "BAI.IT.xml",
+      "bytes": 170371,
+      "compressed_bytes": 4867,
+      "crc": 1288188343
+    },
+    {
+      "name": "BAIP.IT.xml",
+      "bytes": 137257,
+      "compressed_bytes": 9451,
+      "crc": 3880694674
+    },
+    {
+      "name": "BAN.IT.xml",
+      "bytes": 193650,
+      "compressed_bytes": 11089,
+      "crc": 1532770324
+    },
+    {
+      "name": "BBN.IT.xml",
+      "bytes": 339590,
+      "compressed_bytes": 19949,
+      "crc": 4040844710
+    },
+    {
+      "name": "BCL.IT.xml",
+      "bytes": 68901,
+      "compressed_bytes": 3000,
+      "crc": 3706518595
+    },
+    {
+      "name": "BCLI.IT.xml",
+      "bytes": 283157,
+      "compressed_bytes": 18249,
+      "crc": 2604714911
+    },
+    {
+      "name": "BCN.IT.xml",
+      "bytes": 402777,
+      "compressed_bytes": 19192,
+      "crc": 4273522270
+    },
+    {
+      "name": "BDG.IT.xml",
+      "bytes": 68900,
+      "compressed_bytes": 2999,
+      "crc": 4213907488
+    },
+    {
+      "name": "BDT.IT.xml",
+      "bytes": 339595,
+      "compressed_bytes": 19959,
+      "crc": 3384372486
+    },
+    {
+      "name": "BEL7.IT.xml",
+      "bytes": 586334,
+      "compressed_bytes": 29285,
+      "crc": 3514611224
+    },
+    {
+      "name": "BGI.IT.xml",
+      "bytes": 68902,
+      "compressed_bytes": 2994,
+      "crc": 969756510
+    },
+    {
+      "name": "BGL.IT.xml",
+      "bytes": 339596,
+      "compressed_bytes": 19946,
+      "crc": 1415353365
+    },
+    {
+      "name": "BGMO.IT.xml",
+      "bytes": 137229,
+      "compressed_bytes": 9431,
+      "crc": 76419755
+    },
+    {
+      "name": "BGN.IT.xml",
+      "bytes": 68890,
+      "compressed_bytes": 2986,
+      "crc": 1311129725
+    },
+    {
+      "name": "BGR.IT.xml",
+      "bytes": 442790,
+      "compressed_bytes": 14092,
+      "crc": 2837892917
+    },
+    {
+      "name": "BIEL.IT.xml",
+      "bytes": 137228,
+      "compressed_bytes": 9418,
+      "crc": 1980542624
+    },
+    {
+      "name": "BLL.IT.xml",
+      "bytes": 250158,
+      "compressed_bytes": 10787,
+      "crc": 1710349434
+    },
+    {
+      "name": "BLZN.IT.xml",
+      "bytes": 153850,
+      "compressed_bytes": 9072,
+      "crc": 3292824164
+    },
+    {
+      "name": "BNE.IT.xml",
+      "bytes": 250160,
+      "compressed_bytes": 10855,
+      "crc": 2561038176
+    },
+    {
+      "name": "BNF.IT.xml",
+      "bytes": 2138806,
+      "compressed_bytes": 115380,
+      "crc": 367053314
+    },
+    {
+      "name": "BNO.IT.xml",
+      "bytes": 329848,
+      "compressed_bytes": 14064,
+      "crc": 1679091323
+    },
+    {
+      "name": "BNOM.IT.xml",
+      "bytes": 80923,
+      "compressed_bytes": 3736,
+      "crc": 2576204591
+    },
+    {
+      "name": "BNPI.IT.xml",
+      "bytes": 80915,
+      "compressed_bytes": 3731,
+      "crc": 3697339209
+    },
+    {
+      "name": "BNT.IT.xml",
+      "bytes": 396000,
+      "compressed_bytes": 21066,
+      "crc": 2224241022
+    },
+    {
+      "name": "BNV.IT.xml",
+      "bytes": 136678,
+      "compressed_bytes": 4124,
+      "crc": 3503162125
+    },
+    {
+      "name": "BOI.IT.xml",
+      "bytes": 68906,
+      "compressed_bytes": 3000,
+      "crc": 962313071
+    },
+    {
+      "name": "BOJ.IT.xml",
+      "bytes": 250055,
+      "compressed_bytes": 12169,
+      "crc": 2749507054
+    },
+    {
+      "name": "BON0.IT.xml",
+      "bytes": 57545,
+      "compressed_bytes": 2931,
+      "crc": 27484262
+    },
+    {
+      "name": "BONO.IT.xml",
+      "bytes": 141275,
+      "compressed_bytes": 9779,
+      "crc": 3111826909
+    },
+    {
+      "name": "BOR.IT.xml",
+      "bytes": 193644,
+      "compressed_bytes": 11068,
+      "crc": 2177675171
+    },
+    {
+      "name": "BOZL.IT.xml",
+      "bytes": 80898,
+      "compressed_bytes": 3720,
+      "crc": 1485772619
+    },
+    {
+      "name": "BRA.IT.xml",
+      "bytes": 68889,
+      "compressed_bytes": 2989,
+      "crc": 2517248688
+    },
+    {
+      "name": "BRB.IT.xml",
+      "bytes": 193658,
+      "compressed_bytes": 11100,
+      "crc": 2348349588
+    },
+    {
+      "name": "BRC.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2985,
+      "crc": 2496505500
+    },
+    {
+      "name": "BRD.IT.xml",
+      "bytes": 402761,
+      "compressed_bytes": 19200,
+      "crc": 4011464025
+    },
+    {
+      "name": "BRDS.IT.xml",
+      "bytes": 283159,
+      "compressed_bytes": 18259,
+      "crc": 930124814
+    },
+    {
+      "name": "BRE.IT.xml",
+      "bytes": 113960,
+      "compressed_bytes": 3941,
+      "crc": 4047469082
+    },
+    {
+      "name": "BRH.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 3002,
+      "crc": 823642813
+    },
+    {
+      "name": "BRLL.IT.xml",
+      "bytes": 70627,
+      "compressed_bytes": 3048,
+      "crc": 945657358
+    },
+    {
+      "name": "BRM.IT.xml",
+      "bytes": 68897,
+      "compressed_bytes": 2993,
+      "crc": 2964698684
+    },
+    {
+      "name": "BRN.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2994,
+      "crc": 3500704816
+    },
+    {
+      "name": "BRO.IT.xml",
+      "bytes": 68898,
+      "compressed_bytes": 2995,
+      "crc": 2486832909
+    },
+    {
+      "name": "BRR.IT.xml",
+      "bytes": 68890,
+      "compressed_bytes": 2992,
+      "crc": 2625351398
+    },
+    {
+      "name": "BRS.IT.xml",
+      "bytes": 125310,
+      "compressed_bytes": 7192,
+      "crc": 82384710
+    },
+    {
+      "name": "BRSA.IT.xml",
+      "bytes": 97438,
+      "compressed_bytes": 4161,
+      "crc": 3995692541
+    },
+    {
+      "name": "BRZ.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2990,
+      "crc": 1799523043
+    },
+    {
+      "name": "BSA.IT.xml",
+      "bytes": 249531,
+      "compressed_bytes": 14144,
+      "crc": 3768453640
+    },
+    {
+      "name": "BSG.IT.xml",
+      "bytes": 346472,
+      "compressed_bytes": 13555,
+      "crc": 3957934105
+    },
+    {
+      "name": "BSNA.IT.xml",
+      "bytes": 142147,
+      "compressed_bytes": 9847,
+      "crc": 2744600039
+    },
+    {
+      "name": "BSS.IT.xml",
+      "bytes": 138391,
+      "compressed_bytes": 4696,
+      "crc": 1616435787
+    },
+    {
+      "name": "BSZ.IT.xml",
+      "bytes": 254981,
+      "compressed_bytes": 12635,
+      "crc": 812640702
+    },
+    {
+      "name": "BTR.IT.xml",
+      "bytes": 2138808,
+      "compressed_bytes": 115386,
+      "crc": 1462498808
+    },
+    {
+      "name": "BTT2.IT.xml",
+      "bytes": 68905,
+      "compressed_bytes": 3000,
+      "crc": 320614131
+    },
+    {
+      "name": "BTTL.IT.xml",
+      "bytes": 142137,
+      "compressed_bytes": 9850,
+      "crc": 1696405801
+    },
+    {
+      "name": "BVG.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2993,
+      "crc": 1277705642
+    },
+    {
+      "name": "BVM.IT.xml",
+      "bytes": 193648,
+      "compressed_bytes": 11091,
+      "crc": 1041523667
+    },
+    {
+      "name": "BVN.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2988,
+      "crc": 4161683293
+    },
+    {
+      "name": "BVSP.IT.xml",
+      "bytes": 80899,
+      "compressed_bytes": 3710,
+      "crc": 1189468001
+    },
+    {
+      "name": "BVT.IT.xml",
+      "bytes": 329850,
+      "compressed_bytes": 14066,
+      "crc": 687776647
+    },
+    {
+      "name": "BZZ.IT.xml",
+      "bytes": 194814,
+      "compressed_bytes": 6333,
+      "crc": 876016960
+    },
+    {
+      "name": "CAGL.IT.xml",
+      "bytes": 70623,
+      "compressed_bytes": 3044,
+      "crc": 914541606
+    },
+    {
+      "name": "CAN.IT.xml",
+      "bytes": 306468,
+      "compressed_bytes": 13152,
+      "crc": 1444695796
+    },
+    {
+      "name": "CAR.IT.xml",
+      "bytes": 442762,
+      "compressed_bytes": 15148,
+      "crc": 3731973718
+    },
+    {
+      "name": "CAS0.IT.xml",
+      "bytes": 57549,
+      "compressed_bytes": 2928,
+      "crc": 3541700650
+    },
+    {
+      "name": "CAT.IT.xml",
+      "bytes": 204426,
+      "compressed_bytes": 5115,
+      "crc": 2577356891
+    },
+    {
+      "name": "CATP.IT.xml",
+      "bytes": 113412,
+      "compressed_bytes": 4253,
+      "crc": 4089989532
+    },
+    {
+      "name": "CAV0.IT.xml",
+      "bytes": 57545,
+      "compressed_bytes": 2928,
+      "crc": 4090261102
+    },
+    {
+      "name": "CBAG.IT.xml",
+      "bytes": 80927,
+      "compressed_bytes": 3742,
+      "crc": 304436311
+    },
+    {
+      "name": "CBHG.IT.xml",
+      "bytes": 80922,
+      "compressed_bytes": 3736,
+      "crc": 76916036
+    },
+    {
+      "name": "CBPH.IT.xml",
+      "bytes": 80918,
+      "compressed_bytes": 3733,
+      "crc": 4145511516
+    },
+    {
+      "name": "CCT.IT.xml",
+      "bytes": 193775,
+      "compressed_bytes": 5842,
+      "crc": 1866256637
+    },
+    {
+      "name": "CDCT.IT.xml",
+      "bytes": 238475,
+      "compressed_bytes": 15653,
+      "crc": 3876479831
+    },
+    {
+      "name": "CDI1.IT.xml",
+      "bytes": 385644,
+      "compressed_bytes": 21532,
+      "crc": 1525859927
+    },
+    {
+      "name": "CDM.IT.xml",
+      "bytes": 68903,
+      "compressed_bytes": 3001,
+      "crc": 1560662924
+    },
+    {
+      "name": "CDN.IT.xml",
+      "bytes": 68891,
+      "compressed_bytes": 2988,
+      "crc": 1783678395
+    },
+    {
+      "name": "CDS.IT.xml",
+      "bytes": 250068,
+      "compressed_bytes": 12240,
+      "crc": 567916223
+    },
+    {
+      "name": "CER.IT.xml",
+      "bytes": 329933,
+      "compressed_bytes": 12636,
+      "crc": 3711249011
+    },
+    {
+      "name": "CES.IT.xml",
+      "bytes": 480591,
+      "compressed_bytes": 28303,
+      "crc": 3144535068
+    },
+    {
+      "name": "CEV.IT.xml",
+      "bytes": 386246,
+      "compressed_bytes": 18888,
+      "crc": 3411222782
+    },
+    {
+      "name": "CFL.IT.xml",
+      "bytes": 193643,
+      "compressed_bytes": 11077,
+      "crc": 683413209
+    },
+    {
+      "name": "CHCS.IT.xml",
+      "bytes": 137235,
+      "compressed_bytes": 9422,
+      "crc": 1475827366
+    },
+    {
+      "name": "CHF.IT.xml",
+      "bytes": 153860,
+      "compressed_bytes": 9078,
+      "crc": 447398699
+    },
+    {
+      "name": "CHT.IT.xml",
+      "bytes": 205417,
+      "compressed_bytes": 5608,
+      "crc": 3785229412
+    },
+    {
+      "name": "CHTI.IT.xml",
+      "bytes": 80901,
+      "compressed_bytes": 3720,
+      "crc": 1640617849
+    },
+    {
+      "name": "CIAM.IT.xml",
+      "bytes": 80903,
+      "compressed_bytes": 3719,
+      "crc": 224715394
+    },
+    {
+      "name": "CIR.IT.xml",
+      "bytes": 2138802,
+      "compressed_bytes": 115384,
+      "crc": 3314095168
+    },
+    {
+      "name": "CIT.IT.xml",
+      "bytes": 57551,
+      "compressed_bytes": 2924,
+      "crc": 3221820225
+    },
+    {
+      "name": "CLA.IT.xml",
+      "bytes": 193633,
+      "compressed_bytes": 11042,
+      "crc": 119931266
+    },
+    {
+      "name": "CLF.IT.xml",
+      "bytes": 68905,
+      "compressed_bytes": 2998,
+      "crc": 557739116
+    },
+    {
+      "name": "CLG.IT.xml",
+      "bytes": 113402,
+      "compressed_bytes": 4242,
+      "crc": 996647170
+    },
+    {
+      "name": "CLG1.IT.xml",
+      "bytes": 329753,
+      "compressed_bytes": 19344,
+      "crc": 3539586042
+    },
+    {
+      "name": "CLL.IT.xml",
+      "bytes": 339603,
+      "compressed_bytes": 19947,
+      "crc": 2608462186
+    },
+    {
+      "name": "CLM.IT.xml",
+      "bytes": 193653,
+      "compressed_bytes": 11083,
+      "crc": 4204137437
+    },
+    {
+      "name": "CLN.IT.xml",
+      "bytes": 210263,
+      "compressed_bytes": 10194,
+      "crc": 4205740225
+    },
+    {
+      "name": "CLO.IT.xml",
+      "bytes": 113975,
+      "compressed_bytes": 3987,
+      "crc": 2757185446
+    },
+    {
+      "name": "CLPS.IT.xml",
+      "bytes": 70638,
+      "compressed_bytes": 3057,
+      "crc": 2222465573
+    },
+    {
+      "name": "CLS7.IT.xml",
+      "bytes": 460809,
+      "compressed_bytes": 21881,
+      "crc": 3863794394
+    },
+    {
+      "name": "CLST.IT.xml",
+      "bytes": 142143,
+      "compressed_bytes": 9862,
+      "crc": 1744631334
+    },
+    {
+      "name": "CLT.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2988,
+      "crc": 1667616914
+    },
+    {
+      "name": "CLTS.IT.xml",
+      "bytes": 80918,
+      "compressed_bytes": 3730,
+      "crc": 134881582
+    },
+    {
+      "name": "CLV.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 2993,
+      "crc": 111306883
+    },
+    {
+      "name": "CLZZ.IT.xml",
+      "bytes": 142150,
+      "compressed_bytes": 9852,
+      "crc": 3020763937
+    },
+    {
+      "name": "CMA.IT.xml",
+      "bytes": 2138805,
+      "compressed_bytes": 115377,
+      "crc": 1626595881
+    },
+    {
+      "name": "CMB.IT.xml",
+      "bytes": 294817,
+      "compressed_bytes": 17570,
+      "crc": 2937914872
+    },
+    {
+      "name": "CME.IT.xml",
+      "bytes": 474066,
+      "compressed_bytes": 22818,
+      "crc": 603187382
+    },
+    {
+      "name": "CMG.IT.xml",
+      "bytes": 249495,
+      "compressed_bytes": 12523,
+      "crc": 3589142829
+    },
+    {
+      "name": "CMI.IT.xml",
+      "bytes": 57546,
+      "compressed_bytes": 2924,
+      "crc": 3741551338
+    },
+    {
+      "name": "CML.IT.xml",
+      "bytes": 210266,
+      "compressed_bytes": 10126,
+      "crc": 2063829780
+    },
+    {
+      "name": "CMM.IT.xml",
+      "bytes": 306502,
+      "compressed_bytes": 13248,
+      "crc": 3793461434
+    },
+    {
+      "name": "CMNZ.IT.xml",
+      "bytes": 137235,
+      "compressed_bytes": 9430,
+      "crc": 1507137972
+    },
+    {
+      "name": "CMO.IT.xml",
+      "bytes": 266683,
+      "compressed_bytes": 7751,
+      "crc": 3720294937
+    },
+    {
+      "name": "CMR.IT.xml",
+      "bytes": 193648,
+      "compressed_bytes": 11087,
+      "crc": 465739234
+    },
+    {
+      "name": "CMRN.IT.xml",
+      "bytes": 137234,
+      "compressed_bytes": 9428,
+      "crc": 162761741
+    },
+    {
+      "name": "CNC.IT.xml",
+      "bytes": 68898,
+      "compressed_bytes": 2995,
+      "crc": 2310705430
+    },
+    {
+      "name": "CNCT.IT.xml",
+      "bytes": 80904,
+      "compressed_bytes": 3718,
+      "crc": 1645213671
+    },
+    {
+      "name": "CNE.IT.xml",
+      "bytes": 57567,
+      "compressed_bytes": 2938,
+      "crc": 3274980977
+    },
+    {
+      "name": "CNF.IT.xml",
+      "bytes": 386178,
+      "compressed_bytes": 20478,
+      "crc": 357600796
+    },
+    {
+      "name": "CNG.IT.xml",
+      "bytes": 68900,
+      "compressed_bytes": 2995,
+      "crc": 3032155167
+    },
+    {
+      "name": "CNM.IT.xml",
+      "bytes": 193659,
+      "compressed_bytes": 11098,
+      "crc": 1480798919
+    },
+    {
+      "name": "CNMT.IT.xml",
+      "bytes": 273346,
+      "compressed_bytes": 17703,
+      "crc": 1931622508
+    },
+    {
+      "name": "CNO.IT.xml",
+      "bytes": 329859,
+      "compressed_bytes": 16910,
+      "crc": 1373164997
+    },
+    {
+      "name": "CNT.IT.xml",
+      "bytes": 193635,
+      "compressed_bytes": 11075,
+      "crc": 1216979700
+    },
+    {
+      "name": "CNTN.IT.xml",
+      "bytes": 97439,
+      "compressed_bytes": 4162,
+      "crc": 1056096220
+    },
+    {
+      "name": "CON.IT.xml",
+      "bytes": 289954,
+      "compressed_bytes": 17116,
+      "crc": 2691523851
+    },
+    {
+      "name": "COP.IT.xml",
+      "bytes": 605144,
+      "compressed_bytes": 29128,
+      "crc": 1117878581
+    },
+    {
+      "name": "COR.IT.xml",
+      "bytes": 205081,
+      "compressed_bytes": 9681,
+      "crc": 3639812537
+    },
+    {
+      "name": "COS.IT.xml",
+      "bytes": 254125,
+      "compressed_bytes": 12539,
+      "crc": 1814128886
+    },
+    {
+      "name": "CPC.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 3000,
+      "crc": 4276276999
+    },
+    {
+      "name": "CPCA.IT.xml",
+      "bytes": 70633,
+      "compressed_bytes": 3055,
+      "crc": 2121453175
+    },
+    {
+      "name": "CPS.IT.xml",
+      "bytes": 649699,
+      "compressed_bytes": 31500,
+      "crc": 1420368502
+    },
+    {
+      "name": "CPT.IT.xml",
+      "bytes": 153860,
+      "compressed_bytes": 5744,
+      "crc": 1309207995
+    },
+    {
+      "name": "CRD.IT.xml",
+      "bytes": 68910,
+      "compressed_bytes": 3008,
+      "crc": 879686125
+    },
+    {
+      "name": "CRG.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2992,
+      "crc": 3095747297
+    },
+    {
+      "name": "CRI.IT.xml",
+      "bytes": 294869,
+      "compressed_bytes": 17589,
+      "crc": 3486702553
+    },
+    {
+      "name": "CRL.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2989,
+      "crc": 1328632527
+    },
+    {
+      "name": "CRN.IT.xml",
+      "bytes": 68890,
+      "compressed_bytes": 2988,
+      "crc": 3353220054
+    },
+    {
+      "name": "CRO.IT.xml",
+      "bytes": 289953,
+      "compressed_bytes": 17396,
+      "crc": 557065509
+    },
+    {
+      "name": "CRP.IT.xml",
+      "bytes": 487402,
+      "compressed_bytes": 23962,
+      "crc": 622248623
+    },
+    {
+      "name": "CRR.IT.xml",
+      "bytes": 442674,
+      "compressed_bytes": 24445,
+      "crc": 2650642945
+    },
+    {
+      "name": "CRV.IT.xml",
+      "bytes": 68897,
+      "compressed_bytes": 2992,
+      "crc": 116477796
+    },
+    {
+      "name": "CSA.IT.xml",
+      "bytes": 68906,
+      "compressed_bytes": 2998,
+      "crc": 3300858832
+    },
+    {
+      "name": "CSA7.IT.xml",
+      "bytes": 193668,
+      "compressed_bytes": 11089,
+      "crc": 4120492282
+    },
+    {
+      "name": "CSAN.IT.xml",
+      "bytes": 137251,
+      "compressed_bytes": 9441,
+      "crc": 1899657970
+    },
+    {
+      "name": "CSBD.IT.xml",
+      "bytes": 142162,
+      "compressed_bytes": 9874,
+      "crc": 3702970752
+    },
+    {
+      "name": "CSC.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2988,
+      "crc": 2884374235
+    },
+    {
+      "name": "CSD.IT.xml",
+      "bytes": 68903,
+      "compressed_bytes": 2998,
+      "crc": 3447237420
+    },
+    {
+      "name": "CSG.IT.xml",
+      "bytes": 480634,
+      "compressed_bytes": 28345,
+      "crc": 1585891379
+    },
+    {
+      "name": "CSL.IT.xml",
+      "bytes": 68900,
+      "compressed_bytes": 2993,
+      "crc": 1160399269
+    },
+    {
+      "name": "CSLA.IT.xml",
+      "bytes": 137243,
+      "compressed_bytes": 9428,
+      "crc": 4255073525
+    },
+    {
+      "name": "CSM.IT.xml",
+      "bytes": 153855,
+      "compressed_bytes": 9084,
+      "crc": 3046184867
+    },
+    {
+      "name": "CSN.IT.xml",
+      "bytes": 578755,
+      "compressed_bytes": 28228,
+      "crc": 2181120331
+    },
+    {
+      "name": "CSNA.IT.xml",
+      "bytes": 283877,
+      "compressed_bytes": 18240,
+      "crc": 2625738623
+    },
+    {
+      "name": "CSO.IT.xml",
+      "bytes": 57548,
+      "compressed_bytes": 2932,
+      "crc": 4110984847
+    },
+    {
+      "name": "CSO1.IT.xml",
+      "bytes": 210264,
+      "compressed_bytes": 10122,
+      "crc": 2682637829
+    },
+    {
+      "name": "CSP.IT.xml",
+      "bytes": 68903,
+      "compressed_bytes": 3000,
+      "crc": 3390250914
+    },
+    {
+      "name": "CSPC.IT.xml",
+      "bytes": 137261,
+      "compressed_bytes": 9447,
+      "crc": 2253171877
+    },
+    {
+      "name": "CSS.IT.xml",
+      "bytes": 442671,
+      "compressed_bytes": 19906,
+      "crc": 3718135460
+    },
+    {
+      "name": "CSSE.IT.xml",
+      "bytes": 137268,
+      "compressed_bytes": 9449,
+      "crc": 3246431682
+    },
+    {
+      "name": "CSST.IT.xml",
+      "bytes": 137249,
+      "compressed_bytes": 9436,
+      "crc": 2278572502
+    },
+    {
+      "name": "CST.IT.xml",
+      "bytes": 68907,
+      "compressed_bytes": 2998,
+      "crc": 159350597
+    },
+    {
+      "name": "CSTF.IT.xml",
+      "bytes": 80914,
+      "compressed_bytes": 3729,
+      "crc": 1907857785
+    },
+    {
+      "name": "CSV0.IT.xml",
+      "bytes": 57565,
+      "compressed_bytes": 2938,
+      "crc": 1013654110
+    },
+    {
+      "name": "CTD.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 2994,
+      "crc": 1599352723
+    },
+    {
+      "name": "CTL.IT.xml",
+      "bytes": 193639,
+      "compressed_bytes": 11083,
+      "crc": 2603287422
+    },
+    {
+      "name": "CTLR.IT.xml",
+      "bytes": 142159,
+      "compressed_bytes": 9863,
+      "crc": 1147775846
+    },
+    {
+      "name": "CTN.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 2993,
+      "crc": 309395854
+    },
+    {
+      "name": "CTR0.IT.xml",
+      "bytes": 57556,
+      "compressed_bytes": 2931,
+      "crc": 2143937284
+    },
+    {
+      "name": "CTRL.IT.xml",
+      "bytes": 137236,
+      "compressed_bytes": 9430,
+      "crc": 334508869
+    },
+    {
+      "name": "CTS.IT.xml",
+      "bytes": 68905,
+      "compressed_bytes": 2999,
+      "crc": 2892737686
+    },
+    {
+      "name": "CTU.IT.xml",
+      "bytes": 193648,
+      "compressed_bytes": 11089,
+      "crc": 576200738
+    },
+    {
+      "name": "CTV.IT.xml",
+      "bytes": 193646,
+      "compressed_bytes": 11084,
+      "crc": 4022743551
+    },
+    {
+      "name": "CTZ.IT.xml",
+      "bytes": 205096,
+      "compressed_bytes": 9694,
+      "crc": 3262561556
+    },
+    {
+      "name": "CUN.IT.xml",
+      "bytes": 339565,
+      "compressed_bytes": 21762,
+      "crc": 470638601
+    },
+    {
+      "name": "CURO.IT.xml",
+      "bytes": 141281,
+      "compressed_bytes": 9786,
+      "crc": 3859803470
+    },
+    {
+      "name": "CVD.IT.xml",
+      "bytes": 68919,
+      "compressed_bytes": 3007,
+      "crc": 747868163
+    },
+    {
+      "name": "CVDC.IT.xml",
+      "bytes": 142168,
+      "compressed_bytes": 9872,
+      "crc": 3259007019
+    },
+    {
+      "name": "CVF.IT.xml",
+      "bytes": 193647,
+      "compressed_bytes": 11057,
+      "crc": 136251043
+    },
+    {
+      "name": "CVL.IT.xml",
+      "bytes": 153293,
+      "compressed_bytes": 9406,
+      "crc": 3208272518
+    },
+    {
+      "name": "CVM.IT.xml",
+      "bytes": 294880,
+      "compressed_bytes": 17578,
+      "crc": 1055229330
+    },
+    {
+      "name": "CVT.IT.xml",
+      "bytes": 68908,
+      "compressed_bytes": 2999,
+      "crc": 2165200319
+    },
+    {
+      "name": "CVTM.IT.xml",
+      "bytes": 80908,
+      "compressed_bytes": 3726,
+      "crc": 2980537995
+    },
+    {
+      "name": "DANT.IT.xml",
+      "bytes": 289396,
+      "compressed_bytes": 11077,
+      "crc": 731982553
+    },
+    {
+      "name": "DCM.IT.xml",
+      "bytes": 193645,
+      "compressed_bytes": 11077,
+      "crc": 3793639681
+    },
+    {
+      "name": "DLNV.IT.xml",
+      "bytes": 137236,
+      "compressed_bytes": 9419,
+      "crc": 2391588184
+    },
+    {
+      "name": "DMD.IT.xml",
+      "bytes": 193651,
+      "compressed_bytes": 11068,
+      "crc": 4134182519
+    },
+    {
+      "name": "DMN.IT.xml",
+      "bytes": 68890,
+      "compressed_bytes": 2989,
+      "crc": 2846563109
+    },
+    {
+      "name": "DNM.IT.xml",
+      "bytes": 48253,
+      "compressed_bytes": 2615,
+      "crc": 1808267816
+    },
+    {
+      "name": "DNMI.IT.xml",
+      "bytes": 64680,
+      "compressed_bytes": 3130,
+      "crc": 4136401287
+    },
+    {
+      "name": "DNMM.IT.xml",
+      "bytes": 48264,
+      "compressed_bytes": 2627,
+      "crc": 1854323787
+    },
+    {
+      "name": "DNSP.IT.xml",
+      "bytes": 97439,
+      "compressed_bytes": 4165,
+      "crc": 444702390
+    },
+    {
+      "name": "DRN.IT.xml",
+      "bytes": 250045,
+      "compressed_bytes": 12134,
+      "crc": 3907429780
+    },
+    {
+      "name": "DSG.IT.xml",
+      "bytes": 426165,
+      "compressed_bytes": 18668,
+      "crc": 2339240258
+    },
+    {
+      "name": "DUR.IT.xml",
+      "bytes": 465954,
+      "compressed_bytes": 22380,
+      "crc": 1125627610
+    },
+    {
+      "name": "EBO.IT.xml",
+      "bytes": 68888,
+      "compressed_bytes": 2992,
+      "crc": 3040518219
+    },
+    {
+      "name": "ENNA.IT.xml",
+      "bytes": 80943,
+      "compressed_bytes": 3753,
+      "crc": 721331278
+    },
+    {
+      "name": "ERI.IT.xml",
+      "bytes": 452411,
+      "compressed_bytes": 22066,
+      "crc": 1174265927
+    },
+    {
+      "name": "FAA.IT.xml",
+      "bytes": 57553,
+      "compressed_bytes": 2926,
+      "crc": 1604000044
+    },
+    {
+      "name": "FAG.IT.xml",
+      "bytes": 193644,
+      "compressed_bytes": 11080,
+      "crc": 3126933786
+    },
+    {
+      "name": "FAV.IT.xml",
+      "bytes": 395978,
+      "compressed_bytes": 21053,
+      "crc": 4195565728
+    },
+    {
+      "name": "FAZ.IT.xml",
+      "bytes": 385683,
+      "compressed_bytes": 19200,
+      "crc": 1659880311
+    },
+    {
+      "name": "FBR.IT.xml",
+      "bytes": 68891,
+      "compressed_bytes": 2992,
+      "crc": 922968401
+    },
+    {
+      "name": "FCC.IT.xml",
+      "bytes": 57559,
+      "compressed_bytes": 2930,
+      "crc": 3560941291
+    },
+    {
+      "name": "FDF.IT.xml",
+      "bytes": 266676,
+      "compressed_bytes": 11117,
+      "crc": 320065541
+    },
+    {
+      "name": "FDNZ.IT.xml",
+      "bytes": 142147,
+      "compressed_bytes": 9851,
+      "crc": 2236027013
+    },
+    {
+      "name": "FDS.IT.xml",
+      "bytes": 386282,
+      "compressed_bytes": 21727,
+      "crc": 2525886605
+    },
+    {
+      "name": "FEN.IT.xml",
+      "bytes": 339591,
+      "compressed_bytes": 19949,
+      "crc": 367691034
+    },
+    {
+      "name": "FER0.IT.xml",
+      "bytes": 57545,
+      "compressed_bytes": 2930,
+      "crc": 3465711669
+    },
+    {
+      "name": "FGV.IT.xml",
+      "bytes": 450133,
+      "compressed_bytes": 22278,
+      "crc": 2163915527
+    },
+    {
+      "name": "FIC.IT.xml",
+      "bytes": 193638,
+      "compressed_bytes": 11085,
+      "crc": 3348552237
+    },
+    {
+      "name": "FIC0.IT.xml",
+      "bytes": 57546,
+      "compressed_bytes": 2931,
+      "crc": 3054707003
+    },
+    {
+      "name": "FIE.IT.xml",
+      "bytes": 351280,
+      "compressed_bytes": 18627,
+      "crc": 2972037273
+    },
+    {
+      "name": "FIN0.IT.xml",
+      "bytes": 113960,
+      "compressed_bytes": 3927,
+      "crc": 3216471378
+    },
+    {
+      "name": "FIUG.IT.xml",
+      "bytes": 80901,
+      "compressed_bytes": 3717,
+      "crc": 1577367820
+    },
+    {
+      "name": "FLP.IT.xml",
+      "bytes": 68902,
+      "compressed_bytes": 2996,
+      "crc": 2597471642
+    },
+    {
+      "name": "FLPC.IT.xml",
+      "bytes": 97458,
+      "compressed_bytes": 4186,
+      "crc": 2860590392
+    },
+    {
+      "name": "FLT.IT.xml",
+      "bytes": 249506,
+      "compressed_bytes": 12528,
+      "crc": 2888086947
+    },
+    {
+      "name": "FMCG.IT.xml",
+      "bytes": 80912,
+      "compressed_bytes": 3725,
+      "crc": 3294480699
+    },
+    {
+      "name": "FMG.IT.xml",
+      "bytes": 193654,
+      "compressed_bytes": 11089,
+      "crc": 157128603
+    },
+    {
+      "name": "FMNT.IT.xml",
+      "bytes": 193647,
+      "compressed_bytes": 12907,
+      "crc": 683171958
+    },
+    {
+      "name": "FMT.IT.xml",
+      "bytes": 57550,
+      "compressed_bytes": 2925,
+      "crc": 4009872694
+    },
+    {
+      "name": "FNLG.IT.xml",
+      "bytes": 97432,
+      "compressed_bytes": 4163,
+      "crc": 2248349063
+    },
+    {
+      "name": "FOC.IT.xml",
+      "bytes": 442784,
+      "compressed_bytes": 14055,
+      "crc": 1264135391
+    },
+    {
+      "name": "FOC0.IT.xml",
+      "bytes": 57553,
+      "compressed_bytes": 2932,
+      "crc": 373969399
+    },
+    {
+      "name": "FOCC.IT.xml",
+      "bytes": 193665,
+      "compressed_bytes": 11098,
+      "crc": 1517186652
+    },
+    {
+      "name": "FOGG.IT.xml",
+      "bytes": 137228,
+      "compressed_bytes": 9416,
+      "crc": 3038830779
+    },
+    {
+      "name": "FOPC.IT.xml",
+      "bytes": 97456,
+      "compressed_bytes": 4192,
+      "crc": 2609422447
+    },
+    {
+      "name": "FOR.IT.xml",
+      "bytes": 572085,
+      "compressed_bytes": 17972,
+      "crc": 2006233519
+    },
+    {
+      "name": "FORN.IT.xml",
+      "bytes": 137234,
+      "compressed_bytes": 9420,
+      "crc": 3138232202
+    },
+    {
+      "name": "FOS.IT.xml",
+      "bytes": 499090,
+      "compressed_bytes": 21462,
+      "crc": 521857310
+    },
+    {
+      "name": "FRE.IT.xml",
+      "bytes": 480622,
+      "compressed_bytes": 28325,
+      "crc": 957340578
+    },
+    {
+      "name": "FRE1.IT.xml",
+      "bytes": 57552,
+      "compressed_bytes": 2932,
+      "crc": 1246538510
+    },
+    {
+      "name": "FRN.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2988,
+      "crc": 1194716494
+    },
+    {
+      "name": "FRR.IT.xml",
+      "bytes": 68893,
+      "compressed_bytes": 2991,
+      "crc": 3654061507
+    },
+    {
+      "name": "FRSC.IT.xml",
+      "bytes": 80903,
+      "compressed_bytes": 3719,
+      "crc": 2410569822
+    },
+    {
+      "name": "FRT.IT.xml",
+      "bytes": 57550,
+      "compressed_bytes": 2930,
+      "crc": 301913283
+    },
+    {
+      "name": "FRZ.IT.xml",
+      "bytes": 2138808,
+      "compressed_bytes": 115373,
+      "crc": 2819894861
+    },
+    {
+      "name": "FRZN.IT.xml",
+      "bytes": 193645,
+      "compressed_bytes": 12902,
+      "crc": 3056588047
+    },
+    {
+      "name": "FSS.IT.xml",
+      "bytes": 68906,
+      "compressed_bytes": 3002,
+      "crc": 2343426242
+    },
+    {
+      "name": "FVZ.IT.xml",
+      "bytes": 193646,
+      "compressed_bytes": 11093,
+      "crc": 2857646799
+    },
+    {
+      "name": "FZE.IT.xml",
+      "bytes": 193657,
+      "compressed_bytes": 11090,
+      "crc": 2862532651
+    },
+    {
+      "name": "GAI.IT.xml",
+      "bytes": 193642,
+      "compressed_bytes": 11074,
+      "crc": 411651824
+    },
+    {
+      "name": "GARS.IT.xml",
+      "bytes": 97435,
+      "compressed_bytes": 4160,
+      "crc": 2269524690
+    },
+    {
+      "name": "GBB.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2992,
+      "crc": 1686131846
+    },
+    {
+      "name": "GBC.IT.xml",
+      "bytes": 56992,
+      "compressed_bytes": 2923,
+      "crc": 522843349
+    },
+    {
+      "name": "GBL.IT.xml",
+      "bytes": 339603,
+      "compressed_bytes": 19954,
+      "crc": 2573404513
+    },
+    {
+      "name": "GBM.IT.xml",
+      "bytes": 57556,
+      "compressed_bytes": 2937,
+      "crc": 4142776872
+    },
+    {
+      "name": "GBP.IT.xml",
+      "bytes": 68900,
+      "compressed_bytes": 2997,
+      "crc": 1024611825
+    },
+    {
+      "name": "GBSL.IT.xml",
+      "bytes": 283199,
+      "compressed_bytes": 18273,
+      "crc": 835838665
+    },
+    {
+      "name": "GDFR.IT.xml",
+      "bytes": 97446,
+      "compressed_bytes": 4179,
+      "crc": 3422836041
+    },
+    {
+      "name": "GDNA.IT.xml",
+      "bytes": 137234,
+      "compressed_bytes": 9424,
+      "crc": 851995087
+    },
+    {
+      "name": "GEA.IT.xml",
+      "bytes": 289940,
+      "compressed_bytes": 17091,
+      "crc": 1071428919
+    },
+    {
+      "name": "GEL.IT.xml",
+      "bytes": 148671,
+      "compressed_bytes": 5547,
+      "crc": 3256217959
+    },
+    {
+      "name": "GLD.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2990,
+      "crc": 1501186631
+    },
+    {
+      "name": "GLNS.IT.xml",
+      "bytes": 137236,
+      "compressed_bytes": 9424,
+      "crc": 1833803104
+    },
+    {
+      "name": "GLT.IT.xml",
+      "bytes": 317630,
+      "compressed_bytes": 17883,
+      "crc": 2450102638
+    },
+    {
+      "name": "GMB.IT.xml",
+      "bytes": 68915,
+      "compressed_bytes": 3007,
+      "crc": 2941562869
+    },
+    {
+      "name": "GNGI.IT.xml",
+      "bytes": 137231,
+      "compressed_bytes": 9419,
+      "crc": 3904513158
+    },
+    {
+      "name": "GNL.IT.xml",
+      "bytes": 153860,
+      "compressed_bytes": 9099,
+      "crc": 808831085
+    },
+    {
+      "name": "GNU.IT.xml",
+      "bytes": 487515,
+      "compressed_bytes": 21096,
+      "crc": 2181247480
+    },
+    {
+      "name": "GNV.IT.xml",
+      "bytes": 153841,
+      "compressed_bytes": 9080,
+      "crc": 1127031509
+    },
+    {
+      "name": "GRA.IT.xml",
+      "bytes": 210253,
+      "compressed_bytes": 6768,
+      "crc": 2591259428
+    },
+    {
+      "name": "GRD.IT.xml",
+      "bytes": 250064,
+      "compressed_bytes": 12217,
+      "crc": 2428957619
+    },
+    {
+      "name": "GRM.IT.xml",
+      "bytes": 68901,
+      "compressed_bytes": 2994,
+      "crc": 97540343
+    },
+    {
+      "name": "GRN.IT.xml",
+      "bytes": 124754,
+      "compressed_bytes": 7172,
+      "crc": 2077347585
+    },
+    {
+      "name": "GRO.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2992,
+      "crc": 714239336
+    },
+    {
+      "name": "GRS.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 2994,
+      "crc": 755286377
+    },
+    {
+      "name": "GSA.IT.xml",
+      "bytes": 250090,
+      "compressed_bytes": 12203,
+      "crc": 117228918
+    },
+    {
+      "name": "GSG.IT.xml",
+      "bytes": 221953,
+      "compressed_bytes": 10350,
+      "crc": 2244816752
+    },
+    {
+      "name": "GSM.IT.xml",
+      "bytes": 193650,
+      "compressed_bytes": 11089,
+      "crc": 130341839
+    },
+    {
+      "name": "GSN.IT.xml",
+      "bytes": 68903,
+      "compressed_bytes": 2996,
+      "crc": 4111261824
+    },
+    {
+      "name": "GSS.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2995,
+      "crc": 1885558160
+    },
+    {
+      "name": "GTR.IT.xml",
+      "bytes": 193068,
+      "compressed_bytes": 8375,
+      "crc": 972928439
+    },
+    {
+      "name": "ISD.IT.xml",
+      "bytes": 68900,
+      "compressed_bytes": 2997,
+      "crc": 2497999042
+    },
+    {
+      "name": "ISG.IT.xml",
+      "bytes": 70637,
+      "compressed_bytes": 3056,
+      "crc": 574497148
+    },
+    {
+      "name": "ISI.IT.xml",
+      "bytes": 209698,
+      "compressed_bytes": 10411,
+      "crc": 215808193
+    },
+    {
+      "name": "ISNH.IT.xml",
+      "bytes": 70634,
+      "compressed_bytes": 3056,
+      "crc": 362001503
+    },
+    {
+      "name": "ISNL.IT.xml",
+      "bytes": 137233,
+      "compressed_bytes": 9422,
+      "crc": 2063582314
+    },
+    {
+      "name": "ISR.IT.xml",
+      "bytes": 193644,
+      "compressed_bytes": 11075,
+      "crc": 1519016998
+    },
+    {
+      "name": "ISTM.IT.xml",
+      "bytes": 141280,
+      "compressed_bytes": 9785,
+      "crc": 4161395576
+    },
+    {
+      "name": "ITR.IT.xml",
+      "bytes": 70621,
+      "compressed_bytes": 3042,
+      "crc": 3342669800
+    },
+    {
+      "name": "IVR.IT.xml",
+      "bytes": 480586,
+      "compressed_bytes": 28284,
+      "crc": 2016157600
+    },
+    {
+      "name": "JESI.IT.xml",
+      "bytes": 70622,
+      "compressed_bytes": 3049,
+      "crc": 3310234892
+    },
+    {
+      "name": "KRT.IT.xml",
+      "bytes": 2138798,
+      "compressed_bytes": 115368,
+      "crc": 629572841
+    },
+    {
+      "name": "LARN.IT.xml",
+      "bytes": 137233,
+      "compressed_bytes": 9422,
+      "crc": 516568654
+    },
+    {
+      "name": "LAT.IT.xml",
+      "bytes": 250155,
+      "compressed_bytes": 10820,
+      "crc": 969191138
+    },
+    {
+      "name": "LAZR.IT.xml",
+      "bytes": 137229,
+      "compressed_bytes": 9424,
+      "crc": 619841943
+    },
+    {
+      "name": "LCA.IT.xml",
+      "bytes": 68889,
+      "compressed_bytes": 2989,
+      "crc": 1695093278
+    },
+    {
+      "name": "LCC.IT.xml",
+      "bytes": 193648,
+      "compressed_bytes": 11093,
+      "crc": 2689328976
+    },
+    {
+      "name": "LCCE.IT.xml",
+      "bytes": 283156,
+      "compressed_bytes": 18256,
+      "crc": 1678995945
+    },
+    {
+      "name": "LDP.IT.xml",
+      "bytes": 362889,
+      "compressed_bytes": 14136,
+      "crc": 554510873
+    },
+    {
+      "name": "LDR.IT.xml",
+      "bytes": 68898,
+      "compressed_bytes": 2990,
+      "crc": 1151495994
+    },
+    {
+      "name": "LEC.IT.xml",
+      "bytes": 250146,
+      "compressed_bytes": 10788,
+      "crc": 1101168295
+    },
+    {
+      "name": "LGGR.IT.xml",
+      "bytes": 137235,
+      "compressed_bytes": 9441,
+      "crc": 3638205426
+    },
+    {
+      "name": "LGN.IT.xml",
+      "bytes": 402787,
+      "compressed_bytes": 19184,
+      "crc": 3885146313
+    },
+    {
+      "name": "LIC.IT.xml",
+      "bytes": 249529,
+      "compressed_bytes": 13231,
+      "crc": 4108451962
+    },
+    {
+      "name": "LMZ.IT.xml",
+      "bytes": 344071,
+      "compressed_bytes": 13811,
+      "crc": 1979050794
+    },
+    {
+      "name": "LNG.IT.xml",
+      "bytes": 68898,
+      "compressed_bytes": 2998,
+      "crc": 2337886300
+    },
+    {
+      "name": "LNT.IT.xml",
+      "bytes": 305446,
+      "compressed_bytes": 12122,
+      "crc": 1499989635
+    },
+    {
+      "name": "LPR.IT.xml",
+      "bytes": 57543,
+      "compressed_bytes": 2933,
+      "crc": 467645271
+    },
+    {
+      "name": "LPR1.IT.xml",
+      "bytes": 339567,
+      "compressed_bytes": 19946,
+      "crc": 617632961
+    },
+    {
+      "name": "LRG.IT.xml",
+      "bytes": 68900,
+      "compressed_bytes": 2988,
+      "crc": 3397301451
+    },
+    {
+      "name": "LRNO.IT.xml",
+      "bytes": 137232,
+      "compressed_bytes": 9426,
+      "crc": 1331675771
+    },
+    {
+      "name": "LRP0.IT.xml",
+      "bytes": 57553,
+      "compressed_bytes": 2931,
+      "crc": 3036702873
+    },
+    {
+      "name": "LRS.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2989,
+      "crc": 16003584
+    },
+    {
+      "name": "LSN.IT.xml",
+      "bytes": 68889,
+      "compressed_bytes": 2988,
+      "crc": 3836678352
+    },
+    {
+      "name": "LSP.IT.xml",
+      "bytes": 153844,
+      "compressed_bytes": 9100,
+      "crc": 397602023
+    },
+    {
+      "name": "LSS.IT.xml",
+      "bytes": 402794,
+      "compressed_bytes": 19882,
+      "crc": 1379791365
+    },
+    {
+      "name": "LTA.IT.xml",
+      "bytes": 97432,
+      "compressed_bytes": 4166,
+      "crc": 1624852009
+    },
+    {
+      "name": "LTR.IT.xml",
+      "bytes": 395444,
+      "compressed_bytes": 21517,
+      "crc": 1427964998
+    },
+    {
+      "name": "LTSN.IT.xml",
+      "bytes": 193627,
+      "compressed_bytes": 11059,
+      "crc": 1383775682
+    },
+    {
+      "name": "LUI.IT.xml",
+      "bytes": 193635,
+      "compressed_bytes": 11086,
+      "crc": 1051666898
+    },
+    {
+      "name": "LVN1.IT.xml",
+      "bytes": 193083,
+      "compressed_bytes": 11143,
+      "crc": 2269582772
+    },
+    {
+      "name": "LVNO.IT.xml",
+      "bytes": 339585,
+      "compressed_bytes": 21749,
+      "crc": 631783972
+    },
+    {
+      "name": "LVO.IT.xml",
+      "bytes": 57557,
+      "compressed_bytes": 2935,
+      "crc": 622034283
+    },
+    {
+      "name": "LVR.IT.xml",
+      "bytes": 350715,
+      "compressed_bytes": 18677,
+      "crc": 4111519160
+    },
+    {
+      "name": "LVRN.IT.xml",
+      "bytes": 80899,
+      "compressed_bytes": 3717,
+      "crc": 4150070352
+    },
+    {
+      "name": "MAI.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2988,
+      "crc": 2159619106
+    },
+    {
+      "name": "MAJ.IT.xml",
+      "bytes": 153848,
+      "compressed_bytes": 5759,
+      "crc": 1640341596
+    },
+    {
+      "name": "MAL0.IT.xml",
+      "bytes": 57561,
+      "compressed_bytes": 2940,
+      "crc": 852996415
+    },
+    {
+      "name": "MAR.IT.xml",
+      "bytes": 250055,
+      "compressed_bytes": 12157,
+      "crc": 2806269174
+    },
+    {
+      "name": "MAZ.IT.xml",
+      "bytes": 491765,
+      "compressed_bytes": 28176,
+      "crc": 2428786985
+    },
+    {
+      "name": "MBG0.IT.xml",
+      "bytes": 57559,
+      "compressed_bytes": 2937,
+      "crc": 3108343575
+    },
+    {
+      "name": "MBRC.IT.xml",
+      "bytes": 97442,
+      "compressed_bytes": 4166,
+      "crc": 283281370
+    },
+    {
+      "name": "MCA.IT.xml",
+      "bytes": 2138806,
+      "compressed_bytes": 115369,
+      "crc": 803864892
+    },
+    {
+      "name": "MCLF.IT.xml",
+      "bytes": 283182,
+      "compressed_bytes": 18256,
+      "crc": 4269551539
+    },
+    {
+      "name": "MCN.IT.xml",
+      "bytes": 261738,
+      "compressed_bytes": 15599,
+      "crc": 4287205862
+    },
+    {
+      "name": "MCR.IT.xml",
+      "bytes": 68904,
+      "compressed_bytes": 2998,
+      "crc": 2761346640
+    },
+    {
+      "name": "MCS.IT.xml",
+      "bytes": 346473,
+      "compressed_bytes": 12522,
+      "crc": 1012752478
+    },
+    {
+      "name": "MCST.IT.xml",
+      "bytes": 142148,
+      "compressed_bytes": 9863,
+      "crc": 3736475781
+    },
+    {
+      "name": "MCT.IT.xml",
+      "bytes": 337860,
+      "compressed_bytes": 19822,
+      "crc": 76030933
+    },
+    {
+      "name": "MCV.IT.xml",
+      "bytes": 57554,
+      "compressed_bytes": 2929,
+      "crc": 2039841762
+    },
+    {
+      "name": "MDC.IT.xml",
+      "bytes": 68891,
+      "compressed_bytes": 2989,
+      "crc": 2066191144
+    },
+    {
+      "name": "MDCH.IT.xml",
+      "bytes": 141284,
+      "compressed_bytes": 9794,
+      "crc": 234633488
+    },
+    {
+      "name": "MDG.IT.xml",
+      "bytes": 68898,
+      "compressed_bytes": 2991,
+      "crc": 551693473
+    },
+    {
+      "name": "MDN.IT.xml",
+      "bytes": 153849,
+      "compressed_bytes": 5739,
+      "crc": 2458331726
+    },
+    {
+      "name": "MDNA.IT.xml",
+      "bytes": 97433,
+      "compressed_bytes": 4167,
+      "crc": 379033715
+    },
+    {
+      "name": "MDT.IT.xml",
+      "bytes": 68898,
+      "compressed_bytes": 2989,
+      "crc": 3970178888
+    },
+    {
+      "name": "MFG.IT.xml",
+      "bytes": 386174,
+      "compressed_bytes": 20488,
+      "crc": 830095024
+    },
+    {
+      "name": "MLBT.IT.xml",
+      "bytes": 273348,
+      "compressed_bytes": 17693,
+      "crc": 1090490979
+    },
+    {
+      "name": "MLC.IT.xml",
+      "bytes": 148664,
+      "compressed_bytes": 5542,
+      "crc": 2476698991
+    },
+    {
+      "name": "MLD.IT.xml",
+      "bytes": 136664,
+      "compressed_bytes": 4116,
+      "crc": 3381819424
+    },
+    {
+      "name": "MLF.IT.xml",
+      "bytes": 345801,
+      "compressed_bytes": 18525,
+      "crc": 2516230525
+    },
+    {
+      "name": "MLPS.IT.xml",
+      "bytes": 137243,
+      "compressed_bytes": 9440,
+      "crc": 3814693321
+    },
+    {
+      "name": "MLR.IT.xml",
+      "bytes": 193646,
+      "compressed_bytes": 11085,
+      "crc": 2169058716
+    },
+    {
+      "name": "MMO.IT.xml",
+      "bytes": 56994,
+      "compressed_bytes": 2921,
+      "crc": 4188722301
+    },
+    {
+      "name": "MMP1.IT.xml",
+      "bytes": 391174,
+      "compressed_bytes": 19353,
+      "crc": 3963215550
+    },
+    {
+      "name": "MMR7.IT.xml",
+      "bytes": 210264,
+      "compressed_bytes": 6773,
+      "crc": 1043020244
+    },
+    {
+      "name": "MND.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2994,
+      "crc": 392399971
+    },
+    {
+      "name": "MNF.IT.xml",
+      "bytes": 68907,
+      "compressed_bytes": 3000,
+      "crc": 633765197
+    },
+    {
+      "name": "MNG.IT.xml",
+      "bytes": 434178,
+      "compressed_bytes": 25844,
+      "crc": 121858380
+    },
+    {
+      "name": "MNN.IT.xml",
+      "bytes": 205323,
+      "compressed_bytes": 11493,
+      "crc": 1436159071
+    },
+    {
+      "name": "MNOV.IT.xml",
+      "bytes": 80898,
+      "compressed_bytes": 3720,
+      "crc": 2983998880
+    },
+    {
+      "name": "MNS.IT.xml",
+      "bytes": 68892,
+      "compressed_bytes": 2988,
+      "crc": 868399607
+    },
+    {
+      "name": "MNT.IT.xml",
+      "bytes": 68898,
+      "compressed_bytes": 2988,
+      "crc": 128996281
+    },
+    {
+      "name": "MODF.IT.xml",
+      "bytes": 97435,
+      "compressed_bytes": 4165,
+      "crc": 2985975482
+    },
+    {
+      "name": "MODG.IT.xml",
+      "bytes": 137229,
+      "compressed_bytes": 9421,
+      "crc": 2978511225
+    },
+    {
+      "name": "MOG.IT.xml",
+      "bytes": 499086,
+      "compressed_bytes": 21464,
+      "crc": 1698877374
+    },
+    {
+      "name": "MOG0.IT.xml",
+      "bytes": 57544,
+      "compressed_bytes": 2925,
+      "crc": 4116921466
+    },
+    {
+      "name": "MOMC.IT.xml",
+      "bytes": 97444,
+      "compressed_bytes": 4164,
+      "crc": 1137709626
+    },
+    {
+      "name": "MOV.IT.xml",
+      "bytes": 153857,
+      "compressed_bytes": 5744,
+      "crc": 409885913
+    },
+    {
+      "name": "MPCD.IT.xml",
+      "bytes": 273339,
+      "compressed_bytes": 17689,
+      "crc": 1379949768
+    },
+    {
+      "name": "MPP0.IT.xml",
+      "bytes": 57552,
+      "compressed_bytes": 2929,
+      "crc": 3292764470
+    },
+    {
+      "name": "MRA.IT.xml",
+      "bytes": 193644,
+      "compressed_bytes": 11091,
+      "crc": 4040336568
+    },
+    {
+      "name": "MRC.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2990,
+      "crc": 3081811827
+    },
+    {
+      "name": "MRH.IT.xml",
+      "bytes": 68903,
+      "compressed_bytes": 3001,
+      "crc": 1983421940
+    },
+    {
+      "name": "MRL.IT.xml",
+      "bytes": 452417,
+      "compressed_bytes": 22059,
+      "crc": 4242123841
+    },
+    {
+      "name": "MRM.IT.xml",
+      "bytes": 386161,
+      "compressed_bytes": 20493,
+      "crc": 1459820556
+    },
+    {
+      "name": "MRN.IT.xml",
+      "bytes": 68892,
+      "compressed_bytes": 2989,
+      "crc": 1626208917
+    },
+    {
+      "name": "MRN0.IT.xml",
+      "bytes": 57558,
+      "compressed_bytes": 2944,
+      "crc": 2346536786
+    },
+    {
+      "name": "MRNO.IT.xml",
+      "bytes": 193644,
+      "compressed_bytes": 12901,
+      "crc": 761386158
+    },
+    {
+      "name": "MRR.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2993,
+      "crc": 1480876898
+    },
+    {
+      "name": "MRT.IT.xml",
+      "bytes": 68908,
+      "compressed_bytes": 3001,
+      "crc": 1557761449
+    },
+    {
+      "name": "MRV.IT.xml",
+      "bytes": 250063,
+      "compressed_bytes": 12177,
+      "crc": 3170727935
+    },
+    {
+      "name": "MRZ.IT.xml",
+      "bytes": 339595,
+      "compressed_bytes": 19940,
+      "crc": 3014597396
+    },
+    {
+      "name": "MSA.IT.xml",
+      "bytes": 386249,
+      "compressed_bytes": 18879,
+      "crc": 3020344756
+    },
+    {
+      "name": "MSC.IT.xml",
+      "bytes": 138403,
+      "compressed_bytes": 4690,
+      "crc": 2509906036
+    },
+    {
+      "name": "MSCT.IT.xml",
+      "bytes": 57554,
+      "compressed_bytes": 2934,
+      "crc": 553152473
+    },
+    {
+      "name": "MSR.IT.xml",
+      "bytes": 125308,
+      "compressed_bytes": 7205,
+      "crc": 1976404504
+    },
+    {
+      "name": "MST.IT.xml",
+      "bytes": 68897,
+      "compressed_bytes": 2989,
+      "crc": 3600457500
+    },
+    {
+      "name": "MTC.IT.xml",
+      "bytes": 148675,
+      "compressed_bytes": 5544,
+      "crc": 450191542
+    },
+    {
+      "name": "MTCL.IT.xml",
+      "bytes": 281538,
+      "compressed_bytes": 18144,
+      "crc": 2844704381
+    },
+    {
+      "name": "MTFT.IT.xml",
+      "bytes": 137246,
+      "compressed_bytes": 9437,
+      "crc": 528511028
+    },
+    {
+      "name": "MTGG.IT.xml",
+      "bytes": 80907,
+      "compressed_bytes": 3722,
+      "crc": 821508949
+    },
+    {
+      "name": "MTL.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2997,
+      "crc": 1368230544
+    },
+    {
+      "name": "MTPR.IT.xml",
+      "bytes": 137246,
+      "compressed_bytes": 9443,
+      "crc": 887780914
+    },
+    {
+      "name": "MTR.IT.xml",
+      "bytes": 419295,
+      "compressed_bytes": 15053,
+      "crc": 2929707885
+    },
+    {
+      "name": "MTV.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 2994,
+      "crc": 2172924477
+    },
+    {
+      "name": "MTVA.IT.xml",
+      "bytes": 137229,
+      "compressed_bytes": 9419,
+      "crc": 1812262396
+    },
+    {
+      "name": "MTVM.IT.xml",
+      "bytes": 142160,
+      "compressed_bytes": 9868,
+      "crc": 1364895084
+    },
+    {
+      "name": "MVB.IT.xml",
+      "bytes": 499099,
+      "compressed_bytes": 21453,
+      "crc": 1278547864
+    },
+    {
+      "name": "MVMN.IT.xml",
+      "bytes": 379497,
+      "compressed_bytes": 24049,
+      "crc": 2543034044
+    },
+    {
+      "name": "MVO.IT.xml",
+      "bytes": 97456,
+      "compressed_bytes": 4176,
+      "crc": 1738628895
+    },
+    {
+      "name": "MZR.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 3001,
+      "crc": 565420049
+    },
+    {
+      "name": "MZZ.IT.xml",
+      "bytes": 481907,
+      "compressed_bytes": 26731,
+      "crc": 329889029
+    },
+    {
+      "name": "NAAG.IT.xml",
+      "bytes": 283164,
+      "compressed_bytes": 18263,
+      "crc": 591106304
+    },
+    {
+      "name": "NABA.IT.xml",
+      "bytes": 137236,
+      "compressed_bytes": 9423,
+      "crc": 1654927797
+    },
+    {
+      "name": "NACO.IT.xml",
+      "bytes": 283147,
+      "compressed_bytes": 18265,
+      "crc": 2612145296
+    },
+    {
+      "name": "NAD.IT.xml",
+      "bytes": 362883,
+      "compressed_bytes": 14110,
+      "crc": 3622978498
+    },
+    {
+      "name": "NAFG.IT.xml",
+      "bytes": 137244,
+      "compressed_bytes": 9434,
+      "crc": 32054839
+    },
+    {
+      "name": "NAP.IT.xml",
+      "bytes": 362987,
+      "compressed_bytes": 12816,
+      "crc": 3457077858
+    },
+    {
+      "name": "NAS.IT.xml",
+      "bytes": 68892,
+      "compressed_bytes": 2986,
+      "crc": 1486731197
+    },
+    {
+      "name": "NCH.IT.xml",
+      "bytes": 68904,
+      "compressed_bytes": 2995,
+      "crc": 3345727860
+    },
+    {
+      "name": "NCIA.IT.xml",
+      "bytes": 97437,
+      "compressed_bytes": 4159,
+      "crc": 1233699227
+    },
+    {
+      "name": "NCO.IT.xml",
+      "bytes": 329749,
+      "compressed_bytes": 19355,
+      "crc": 1153972534
+    },
+    {
+      "name": "NCR.IT.xml",
+      "bytes": 68900,
+      "compressed_bytes": 2994,
+      "crc": 3653768950
+    },
+    {
+      "name": "NCS.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2991,
+      "crc": 2393431053
+    },
+    {
+      "name": "NOR.IT.xml",
+      "bytes": 430563,
+      "compressed_bytes": 17386,
+      "crc": 2190222914
+    },
+    {
+      "name": "NRC.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2995,
+      "crc": 984352867
+    },
+    {
+      "name": "NRN.IT.xml",
+      "bytes": 68893,
+      "compressed_bytes": 2988,
+      "crc": 2321169473
+    },
+    {
+      "name": "NSA.IT.xml",
+      "bytes": 193644,
+      "compressed_bytes": 11083,
+      "crc": 3216240635
+    },
+    {
+      "name": "NSC.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2990,
+      "crc": 2989830045
+    },
+    {
+      "name": "NTE.IT.xml",
+      "bytes": 124778,
+      "compressed_bytes": 7213,
+      "crc": 683187944
+    },
+    {
+      "name": "NVG.IT.xml",
+      "bytes": 250050,
+      "compressed_bytes": 12169,
+      "crc": 1560930649
+    },
+    {
+      "name": "NVL.IT.xml",
+      "bytes": 68892,
+      "compressed_bytes": 2992,
+      "crc": 2840499848
+    },
+    {
+      "name": "NVR1.IT.xml",
+      "bytes": 193655,
+      "compressed_bytes": 11097,
+      "crc": 2509994986
+    },
+    {
+      "name": "NZZ.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 2998,
+      "crc": 3075820265
+    },
+    {
+      "name": "OPI.IT.xml",
+      "bytes": 137232,
+      "compressed_bytes": 9425,
+      "crc": 700754873
+    },
+    {
+      "name": "ORC.IT.xml",
+      "bytes": 317590,
+      "compressed_bytes": 17163,
+      "crc": 2248577575
+    },
+    {
+      "name": "ORP.IT.xml",
+      "bytes": 209744,
+      "compressed_bytes": 10889,
+      "crc": 2839810521
+    },
+    {
+      "name": "ORS.IT.xml",
+      "bytes": 2185943,
+      "compressed_bytes": 116243,
+      "crc": 3944901832
+    },
+    {
+      "name": "OSTR.IT.xml",
+      "bytes": 80896,
+      "compressed_bytes": 3717,
+      "crc": 1523941076
+    },
+    {
+      "name": "OVAR.IT.xml",
+      "bytes": 153842,
+      "compressed_bytes": 5728,
+      "crc": 930798050
+    },
+    {
+      "name": "OVD.IT.xml",
+      "bytes": 250044,
+      "compressed_bytes": 12166,
+      "crc": 1322913283
+    },
+    {
+      "name": "PALT.IT.xml",
+      "bytes": 137232,
+      "compressed_bytes": 9431,
+      "crc": 2484244141
+    },
+    {
+      "name": "PAN.IT.xml",
+      "bytes": 386260,
+      "compressed_bytes": 19600,
+      "crc": 3316337209
+    },
+    {
+      "name": "PAR.IT.xml",
+      "bytes": 339565,
+      "compressed_bytes": 19934,
+      "crc": 3813571161
+    },
+    {
+      "name": "PAS.IT.xml",
+      "bytes": 250050,
+      "compressed_bytes": 12213,
+      "crc": 308973057
+    },
+    {
+      "name": "PBN.IT.xml",
+      "bytes": 198587,
+      "compressed_bytes": 11548,
+      "crc": 3869092505
+    },
+    {
+      "name": "PCB.IT.xml",
+      "bytes": 68908,
+      "compressed_bytes": 2994,
+      "crc": 3700528815
+    },
+    {
+      "name": "PCH.IT.xml",
+      "bytes": 68890,
+      "compressed_bytes": 2990,
+      "crc": 3860449218
+    },
+    {
+      "name": "PCNC.IT.xml",
+      "bytes": 80904,
+      "compressed_bytes": 3721,
+      "crc": 3734725669
+    },
+    {
+      "name": "PDM.IT.xml",
+      "bytes": 396011,
+      "compressed_bytes": 21045,
+      "crc": 4189577782
+    },
+    {
+      "name": "PENN.IT.xml",
+      "bytes": 80900,
+      "compressed_bytes": 3715,
+      "crc": 3772239384
+    },
+    {
+      "name": "PESR.IT.xml",
+      "bytes": 97433,
+      "compressed_bytes": 4159,
+      "crc": 3708114079
+    },
+    {
+      "name": "PGA.IT.xml",
+      "bytes": 153856,
+      "compressed_bytes": 5735,
+      "crc": 563353950
+    },
+    {
+      "name": "PGG.IT.xml",
+      "bytes": 138400,
+      "compressed_bytes": 4697,
+      "crc": 3513511629
+    },
+    {
+      "name": "PGGS.IT.xml",
+      "bytes": 137240,
+      "compressed_bytes": 9443,
+      "crc": 3301223548
+    },
+    {
+      "name": "PGMG.IT.xml",
+      "bytes": 137240,
+      "compressed_bytes": 9449,
+      "crc": 2550906984
+    },
+    {
+      "name": "PGN.IT.xml",
+      "bytes": 125301,
+      "compressed_bytes": 7202,
+      "crc": 1140402467
+    },
+    {
+      "name": "PGSN.IT.xml",
+      "bytes": 137248,
+      "compressed_bytes": 9436,
+      "crc": 945983246
+    },
+    {
+      "name": "PIBC.IT.xml",
+      "bytes": 424208,
+      "compressed_bytes": 26667,
+      "crc": 1916822243
+    },
+    {
+      "name": "PIC.IT.xml",
+      "bytes": 306475,
+      "compressed_bytes": 13149,
+      "crc": 2941559322
+    },
+    {
+      "name": "PIE.IT.xml",
+      "bytes": 193648,
+      "compressed_bytes": 11080,
+      "crc": 2112706465
+    },
+    {
+      "name": "PIE0.IT.xml",
+      "bytes": 57553,
+      "compressed_bytes": 2931,
+      "crc": 1808983451
+    },
+    {
+      "name": "PIE7.IT.xml",
+      "bytes": 111733,
+      "compressed_bytes": 4726,
+      "crc": 2099728753
+    },
+    {
+      "name": "PIL0.IT.xml",
+      "bytes": 57558,
+      "compressed_bytes": 2934,
+      "crc": 3474840657
+    },
+    {
+      "name": "PIT.IT.xml",
+      "bytes": 193644,
+      "compressed_bytes": 11086,
+      "crc": 1906900785
+    },
+    {
+      "name": "PLC.IT.xml",
+      "bytes": 68891,
+      "compressed_bytes": 2988,
+      "crc": 2592780766
+    },
+    {
+      "name": "PLP.IT.xml",
+      "bytes": 68901,
+      "compressed_bytes": 2999,
+      "crc": 3701345562
+    },
+    {
+      "name": "PLR.IT.xml",
+      "bytes": 574301,
+      "compressed_bytes": 34227,
+      "crc": 73285473
+    },
+    {
+      "name": "PLS.IT.xml",
+      "bytes": 136681,
+      "compressed_bytes": 4133,
+      "crc": 1049566556
+    },
+    {
+      "name": "PLT.IT.xml",
+      "bytes": 205083,
+      "compressed_bytes": 9686,
+      "crc": 93431183
+    },
+    {
+      "name": "PLTA.IT.xml",
+      "bytes": 137240,
+      "compressed_bytes": 9437,
+      "crc": 901484760
+    },
+    {
+      "name": "PLZ.IT.xml",
+      "bytes": 507711,
+      "compressed_bytes": 23336,
+      "crc": 2563251886
+    },
+    {
+      "name": "PLZA.IT.xml",
+      "bytes": 153844,
+      "compressed_bytes": 5736,
+      "crc": 1603974607
+    },
+    {
+      "name": "PMI.IT.xml",
+      "bytes": 113958,
+      "compressed_bytes": 3940,
+      "crc": 3599585642
+    },
+    {
+      "name": "PMRC.IT.xml",
+      "bytes": 80903,
+      "compressed_bytes": 3717,
+      "crc": 1312661690
+    },
+    {
+      "name": "PNA.IT.xml",
+      "bytes": 329761,
+      "compressed_bytes": 19370,
+      "crc": 297119552
+    },
+    {
+      "name": "PNAL.IT.xml",
+      "bytes": 193423,
+      "compressed_bytes": 9367,
+      "crc": 3372759138
+    },
+    {
+      "name": "PNC.IT.xml",
+      "bytes": 68902,
+      "compressed_bytes": 2996,
+      "crc": 2738564658
+    },
+    {
+      "name": "PNI.IT.xml",
+      "bytes": 111798,
+      "compressed_bytes": 6965,
+      "crc": 3567856655
+    },
+    {
+      "name": "PNM.IT.xml",
+      "bytes": 480429,
+      "compressed_bytes": 28259,
+      "crc": 3659912957
+    },
+    {
+      "name": "PNN.IT.xml",
+      "bytes": 68898,
+      "compressed_bytes": 2993,
+      "crc": 895029975
+    },
+    {
+      "name": "PNR.IT.xml",
+      "bytes": 68891,
+      "compressed_bytes": 2991,
+      "crc": 3798223380
+    },
+    {
+      "name": "POG0.IT.xml",
+      "bytes": 97458,
+      "compressed_bytes": 4188,
+      "crc": 3939423366
+    },
+    {
+      "name": "POL.IT.xml",
+      "bytes": 2138803,
+      "compressed_bytes": 115370,
+      "crc": 1352438572
+    },
+    {
+      "name": "POLL.IT.xml",
+      "bytes": 80900,
+      "compressed_bytes": 3717,
+      "crc": 1366272275
+    },
+    {
+      "name": "PON.IT.xml",
+      "bytes": 153844,
+      "compressed_bytes": 5737,
+      "crc": 2027263321
+    },
+    {
+      "name": "POT7.IT.xml",
+      "bytes": 339609,
+      "compressed_bytes": 19952,
+      "crc": 4195995424
+    },
+    {
+      "name": "POZA.IT.xml",
+      "bytes": 142166,
+      "compressed_bytes": 9876,
+      "crc": 1484555481
+    },
+    {
+      "name": "POZB.IT.xml",
+      "bytes": 137248,
+      "compressed_bytes": 9441,
+      "crc": 774056577
+    },
+    {
+      "name": "POZL.IT.xml",
+      "bytes": 137238,
+      "compressed_bytes": 9436,
+      "crc": 38088490
+    },
+    {
+      "name": "POZM.IT.xml",
+      "bytes": 283206,
+      "compressed_bytes": 18277,
+      "crc": 3151032150
+    },
+    {
+      "name": "POZS.IT.xml",
+      "bytes": 281441,
+      "compressed_bytes": 18157,
+      "crc": 2378182912
+    },
+    {
+      "name": "POZT.IT.xml",
+      "bytes": 273343,
+      "compressed_bytes": 17704,
+      "crc": 1600903874
+    },
+    {
+      "name": "POZU.IT.xml",
+      "bytes": 137246,
+      "compressed_bytes": 9437,
+      "crc": 2706005452
+    },
+    {
+      "name": "PPL1.IT.xml",
+      "bytes": 385706,
+      "compressed_bytes": 19221,
+      "crc": 3490434977
+    },
+    {
+      "name": "PRA.IT.xml",
+      "bytes": 2138803,
+      "compressed_bytes": 115394,
+      "crc": 630861574
+    },
+    {
+      "name": "PRE.IT.xml",
+      "bytes": 57546,
+      "compressed_bytes": 2924,
+      "crc": 4189668913
+    },
+    {
+      "name": "PRG.IT.xml",
+      "bytes": 727050,
+      "compressed_bytes": 37551,
+      "crc": 3265677974
+    },
+    {
+      "name": "PRGL.IT.xml",
+      "bytes": 70625,
+      "compressed_bytes": 3047,
+      "crc": 518429659
+    },
+    {
+      "name": "PRGP.IT.xml",
+      "bytes": 193660,
+      "compressed_bytes": 11085,
+      "crc": 2677367868
+    },
+    {
+      "name": "PRM.IT.xml",
+      "bytes": 204437,
+      "compressed_bytes": 5114,
+      "crc": 2075560432
+    },
+    {
+      "name": "PRT.IT.xml",
+      "bytes": 250063,
+      "compressed_bytes": 12186,
+      "crc": 767426669
+    },
+    {
+      "name": "PRZ.IT.xml",
+      "bytes": 148673,
+      "compressed_bytes": 5546,
+      "crc": 3104388607
+    },
+    {
+      "name": "PSC.IT.xml",
+      "bytes": 266694,
+      "compressed_bytes": 11201,
+      "crc": 1232540467
+    },
+    {
+      "name": "PSCZ.IT.xml",
+      "bytes": 80912,
+      "compressed_bytes": 3721,
+      "crc": 1668587891
+    },
+    {
+      "name": "PSR.IT.xml",
+      "bytes": 193643,
+      "compressed_bytes": 11056,
+      "crc": 3130754770
+    },
+    {
+      "name": "PSTA.IT.xml",
+      "bytes": 339602,
+      "compressed_bytes": 21772,
+      "crc": 1464224891
+    },
+    {
+      "name": "PTA.IT.xml",
+      "bytes": 57561,
+      "compressed_bytes": 2936,
+      "crc": 378147334
+    },
+    {
+      "name": "PTC.IT.xml",
+      "bytes": 346366,
+      "compressed_bytes": 18866,
+      "crc": 3707546357
+    },
+    {
+      "name": "PTF.IT.xml",
+      "bytes": 337960,
+      "compressed_bytes": 19836,
+      "crc": 2545742388
+    },
+    {
+      "name": "PTI.IT.xml",
+      "bytes": 68897,
+      "compressed_bytes": 2991,
+      "crc": 3776484533
+    },
+    {
+      "name": "PTL.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 2994,
+      "crc": 3655216358
+    },
+    {
+      "name": "PTR.IT.xml",
+      "bytes": 136664,
+      "compressed_bytes": 4113,
+      "crc": 485563045
+    },
+    {
+      "name": "PTT.IT.xml",
+      "bytes": 125305,
+      "compressed_bytes": 7199,
+      "crc": 2182038772
+    },
+    {
+      "name": "PTV.IT.xml",
+      "bytes": 68892,
+      "compressed_bytes": 2992,
+      "crc": 617189530
+    },
+    {
+      "name": "PTZ.IT.xml",
+      "bytes": 209699,
+      "compressed_bytes": 7055,
+      "crc": 2329693305
+    },
+    {
+      "name": "PVC.IT.xml",
+      "bytes": 482573,
+      "compressed_bytes": 20589,
+      "crc": 2943671748
+    },
+    {
+      "name": "PVF.IT.xml",
+      "bytes": 442687,
+      "compressed_bytes": 19925,
+      "crc": 41998213
+    },
+    {
+      "name": "PVS.IT.xml",
+      "bytes": 68907,
+      "compressed_bytes": 3002,
+      "crc": 4089576371
+    },
+    {
+      "name": "PVT.IT.xml",
+      "bytes": 346460,
+      "compressed_bytes": 13519,
+      "crc": 311404742
+    },
+    {
+      "name": "PZAM.IT.xml",
+      "bytes": 80922,
+      "compressed_bytes": 3734,
+      "crc": 1200109459
+    },
+    {
+      "name": "PZI.IT.xml",
+      "bytes": 57548,
+      "compressed_bytes": 2929,
+      "crc": 932946676
+    },
+    {
+      "name": "PZI1.IT.xml",
+      "bytes": 329749,
+      "compressed_bytes": 19340,
+      "crc": 2866783482
+    },
+    {
+      "name": "PZS.IT.xml",
+      "bytes": 329758,
+      "compressed_bytes": 19371,
+      "crc": 3423435054
+    },
+    {
+      "name": "PZZ.IT.xml",
+      "bytes": 522354,
+      "compressed_bytes": 27190,
+      "crc": 3854819354
+    },
+    {
+      "name": "RAV0.IT.xml",
+      "bytes": 57549,
+      "compressed_bytes": 2934,
+      "crc": 3541602881
+    },
+    {
+      "name": "RCC.IT.xml",
+      "bytes": 68900,
+      "compressed_bytes": 2995,
+      "crc": 1385495538
+    },
+    {
+      "name": "RCDN.IT.xml",
+      "bytes": 141289,
+      "compressed_bytes": 9783,
+      "crc": 1476400860
+    },
+    {
+      "name": "RCG.IT.xml",
+      "bytes": 70628,
+      "compressed_bytes": 3049,
+      "crc": 1788051059
+    },
+    {
+      "name": "RCI.IT.xml",
+      "bytes": 2138806,
+      "compressed_bytes": 115381,
+      "crc": 1032926371
+    },
+    {
+      "name": "RCPC.IT.xml",
+      "bytes": 137255,
+      "compressed_bytes": 9445,
+      "crc": 612684618
+    },
+    {
+      "name": "RCU.IT.xml",
+      "bytes": 600320,
+      "compressed_bytes": 31192,
+      "crc": 3723200882
+    },
+    {
+      "name": "RDAB.IT.xml",
+      "bytes": 141287,
+      "compressed_bytes": 9792,
+      "crc": 2965040982
+    },
+    {
+      "name": "RDCD.IT.xml",
+      "bytes": 142151,
+      "compressed_bytes": 9860,
+      "crc": 2101152604
+    },
+    {
+      "name": "RDD.IT.xml",
+      "bytes": 68904,
+      "compressed_bytes": 2998,
+      "crc": 2375960096
+    },
+    {
+      "name": "RDG.IT.xml",
+      "bytes": 153287,
+      "compressed_bytes": 9396,
+      "crc": 1702112576
+    },
+    {
+      "name": "REA.IT.xml",
+      "bytes": 250065,
+      "compressed_bytes": 12145,
+      "crc": 2809370214
+    },
+    {
+      "name": "RFC.IT.xml",
+      "bytes": 57566,
+      "compressed_bytes": 2939,
+      "crc": 3915435137
+    },
+    {
+      "name": "RGLO.IT.xml",
+      "bytes": 141284,
+      "compressed_bytes": 9785,
+      "crc": 2803985535
+    },
+    {
+      "name": "RGS.IT.xml",
+      "bytes": 435335,
+      "compressed_bytes": 26253,
+      "crc": 1706964686
+    },
+    {
+      "name": "RIC.IT.xml",
+      "bytes": 329747,
+      "compressed_bytes": 19361,
+      "crc": 3465111414
+    },
+    {
+      "name": "RIEM.IT.xml",
+      "bytes": 193649,
+      "compressed_bytes": 12894,
+      "crc": 3024943977
+    },
+    {
+      "name": "RIEP.IT.xml",
+      "bytes": 480627,
+      "compressed_bytes": 30101,
+      "crc": 2779301636
+    },
+    {
+      "name": "RIEV.IT.xml",
+      "bytes": 137237,
+      "compressed_bytes": 9435,
+      "crc": 3077541353
+    },
+    {
+      "name": "RIM.IT.xml",
+      "bytes": 386159,
+      "compressed_bytes": 20479,
+      "crc": 2461100023
+    },
+    {
+      "name": "RINI.IT.xml",
+      "bytes": 97451,
+      "compressed_bytes": 4173,
+      "crc": 648112864
+    },
+    {
+      "name": "RMCL.IT.xml",
+      "bytes": 210244,
+      "compressed_bytes": 6774,
+      "crc": 59996895
+    },
+    {
+      "name": "RMMM.IT.xml",
+      "bytes": 97447,
+      "compressed_bytes": 4169,
+      "crc": 2847610623
+    },
+    {
+      "name": "RMPS.IT.xml",
+      "bytes": 137240,
+      "compressed_bytes": 9433,
+      "crc": 1155946429
+    },
+    {
+      "name": "RMPV.IT.xml",
+      "bytes": 137244,
+      "compressed_bytes": 9437,
+      "crc": 496877374
+    },
+    {
+      "name": "RMUL.IT.xml",
+      "bytes": 250054,
+      "compressed_bytes": 12212,
+      "crc": 3607757311
+    },
+    {
+      "name": "RMVT.IT.xml",
+      "bytes": 193646,
+      "compressed_bytes": 12907,
+      "crc": 1242832405
+    },
+    {
+      "name": "RNC.IT.xml",
+      "bytes": 68901,
+      "compressed_bytes": 2996,
+      "crc": 1378490601
+    },
+    {
+      "name": "RNMU.IT.xml",
+      "bytes": 137241,
+      "compressed_bytes": 9426,
+      "crc": 278674563
+    },
+    {
+      "name": "RNPC.IT.xml",
+      "bytes": 137249,
+      "compressed_bytes": 9429,
+      "crc": 2457625821
+    },
+    {
+      "name": "RNS.IT.xml",
+      "bytes": 153848,
+      "compressed_bytes": 5737,
+      "crc": 3068017428
+    },
+    {
+      "name": "RNSF.IT.xml",
+      "bytes": 137252,
+      "compressed_bytes": 9438,
+      "crc": 717730839
+    },
+    {
+      "name": "RNV2.IT.xml",
+      "bytes": 68909,
+      "compressed_bytes": 3000,
+      "crc": 2271712913
+    },
+    {
+      "name": "ROL0.IT.xml",
+      "bytes": 57553,
+      "compressed_bytes": 2936,
+      "crc": 4119316903
+    },
+    {
+      "name": "RONS.IT.xml",
+      "bytes": 137229,
+      "compressed_bytes": 9424,
+      "crc": 2968103235
+    },
+    {
+      "name": "ROT7.IT.xml",
+      "bytes": 208081,
+      "compressed_bytes": 7533,
+      "crc": 4078562907
+    },
+    {
+      "name": "RPBA.IT.xml",
+      "bytes": 137238,
+      "compressed_bytes": 9426,
+      "crc": 3137356480
+    },
+    {
+      "name": "RQT.IT.xml",
+      "bytes": 136684,
+      "compressed_bytes": 4046,
+      "crc": 2270010343
+    },
+    {
+      "name": "RSM.IT.xml",
+      "bytes": 97459,
+      "compressed_bytes": 4175,
+      "crc": 3998122123
+    },
+    {
+      "name": "RSN.IT.xml",
+      "bytes": 386160,
+      "compressed_bytes": 20466,
+      "crc": 1107411536
+    },
+    {
+      "name": "RST.IT.xml",
+      "bytes": 605142,
+      "compressed_bytes": 29693,
+      "crc": 2709604604
+    },
+    {
+      "name": "RTI.IT.xml",
+      "bytes": 273929,
+      "compressed_bytes": 6749,
+      "crc": 2656077448
+    },
+    {
+      "name": "RVR.IT.xml",
+      "bytes": 68892,
+      "compressed_bytes": 2994,
+      "crc": 3443082279
+    },
+    {
+      "name": "RVST.IT.xml",
+      "bytes": 193649,
+      "compressed_bytes": 11082,
+      "crc": 768917444
+    },
+    {
+      "name": "RVT.IT.xml",
+      "bytes": 329759,
+      "compressed_bytes": 19370,
+      "crc": 3886748524
+    },
+    {
+      "name": "SAA.IT.xml",
+      "bytes": 2138815,
+      "compressed_bytes": 115380,
+      "crc": 2643620809
+    },
+    {
+      "name": "SAAM.IT.xml",
+      "bytes": 137252,
+      "compressed_bytes": 9440,
+      "crc": 3079470945
+    },
+    {
+      "name": "SAB.IT.xml",
+      "bytes": 482905,
+      "compressed_bytes": 28323,
+      "crc": 3188036346
+    },
+    {
+      "name": "SAC.IT.xml",
+      "bytes": 395404,
+      "compressed_bytes": 21376,
+      "crc": 297907802
+    },
+    {
+      "name": "SAG.IT.xml",
+      "bytes": 442691,
+      "compressed_bytes": 22800,
+      "crc": 1199883891
+    },
+    {
+      "name": "SAG0.IT.xml",
+      "bytes": 57551,
+      "compressed_bytes": 2935,
+      "crc": 2700621696
+    },
+    {
+      "name": "SAN0.IT.xml",
+      "bytes": 57559,
+      "compressed_bytes": 2941,
+      "crc": 2736107111
+    },
+    {
+      "name": "SAP.IT.xml",
+      "bytes": 125320,
+      "compressed_bytes": 7206,
+      "crc": 2505958833
+    },
+    {
+      "name": "SAR.IT.xml",
+      "bytes": 386158,
+      "compressed_bytes": 22279,
+      "crc": 1388423393
+    },
+    {
+      "name": "SARM.IT.xml",
+      "bytes": 80898,
+      "compressed_bytes": 3723,
+      "crc": 1026767061
+    },
+    {
+      "name": "SAS.IT.xml",
+      "bytes": 293990,
+      "compressed_bytes": 17131,
+      "crc": 2041068644
+    },
+    {
+      "name": "SAV.IT.xml",
+      "bytes": 68905,
+      "compressed_bytes": 3008,
+      "crc": 3073326405
+    },
+    {
+      "name": "SBC.IT.xml",
+      "bytes": 507098,
+      "compressed_bytes": 23001,
+      "crc": 1345394779
+    },
+    {
+      "name": "SBDA.IT.xml",
+      "bytes": 281431,
+      "compressed_bytes": 18126,
+      "crc": 555075395
+    },
+    {
+      "name": "SBI0.IT.xml",
+      "bytes": 57564,
+      "compressed_bytes": 2939,
+      "crc": 1502458288
+    },
+    {
+      "name": "SBR.IT.xml",
+      "bytes": 68889,
+      "compressed_bytes": 2994,
+      "crc": 1355614253
+    },
+    {
+      "name": "SBT.IT.xml",
+      "bytes": 193661,
+      "compressed_bytes": 11097,
+      "crc": 2069893578
+    },
+    {
+      "name": "SCC.IT.xml",
+      "bytes": 136655,
+      "compressed_bytes": 4022,
+      "crc": 849391168
+    },
+    {
+      "name": "SCF.IT.xml",
+      "bytes": 138391,
+      "compressed_bytes": 4697,
+      "crc": 2584827528
+    },
+    {
+      "name": "SCHE.IT.xml",
+      "bytes": 278044,
+      "compressed_bytes": 11844,
+      "crc": 759110500
+    },
+    {
+      "name": "SCI.IT.xml",
+      "bytes": 306454,
+      "compressed_bytes": 13140,
+      "crc": 1489973236
+    },
+    {
+      "name": "SCL.IT.xml",
+      "bytes": 68889,
+      "compressed_bytes": 2989,
+      "crc": 1597543076
+    },
+    {
+      "name": "SCM.IT.xml",
+      "bytes": 250072,
+      "compressed_bytes": 12198,
+      "crc": 3253001327
+    },
+    {
+      "name": "SCN.IT.xml",
+      "bytes": 362879,
+      "compressed_bytes": 14108,
+      "crc": 1752930403
+    },
+    {
+      "name": "SCO.IT.xml",
+      "bytes": 238457,
+      "compressed_bytes": 12767,
+      "crc": 693222564
+    },
+    {
+      "name": "SCP.IT.xml",
+      "bytes": 250062,
+      "compressed_bytes": 12173,
+      "crc": 3038246241
+    },
+    {
+      "name": "SCR.IT.xml",
+      "bytes": 339040,
+      "compressed_bytes": 20005,
+      "crc": 1001384981
+    },
+    {
+      "name": "SCS.IT.xml",
+      "bytes": 68902,
+      "compressed_bytes": 3001,
+      "crc": 4139513602
+    },
+    {
+      "name": "SCV.IT.xml",
+      "bytes": 250069,
+      "compressed_bytes": 12183,
+      "crc": 859705030
+    },
+    {
+      "name": "SCZA.IT.xml",
+      "bytes": 137242,
+      "compressed_bytes": 9434,
+      "crc": 3005202352
+    },
+    {
+      "name": "SDF.IT.xml",
+      "bytes": 250044,
+      "compressed_bytes": 12156,
+      "crc": 2337497225
+    },
+    {
+      "name": "SDG.IT.xml",
+      "bytes": 339042,
+      "compressed_bytes": 20022,
+      "crc": 2919015486
+    },
+    {
+      "name": "SDM.IT.xml",
+      "bytes": 138409,
+      "compressed_bytes": 4706,
+      "crc": 2596810739
+    },
+    {
+      "name": "SDN.IT.xml",
+      "bytes": 458744,
+      "compressed_bytes": 14775,
+      "crc": 446694596
+    },
+    {
+      "name": "SDNO.IT.xml",
+      "bytes": 141274,
+      "compressed_bytes": 9780,
+      "crc": 2299788508
+    },
+    {
+      "name": "SDV.IT.xml",
+      "bytes": 136680,
+      "compressed_bytes": 4129,
+      "crc": 382879895
+    },
+    {
+      "name": "SEFR.IT.xml",
+      "bytes": 80916,
+      "compressed_bytes": 3734,
+      "crc": 1868765694
+    },
+    {
+      "name": "SEGG.IT.xml",
+      "bytes": 283879,
+      "compressed_bytes": 18246,
+      "crc": 1171722422
+    },
+    {
+      "name": "SEL.IT.xml",
+      "bytes": 153842,
+      "compressed_bytes": 5737,
+      "crc": 2246108048
+    },
+    {
+      "name": "SEM.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 2992,
+      "crc": 2925617285
+    },
+    {
+      "name": "SEP.IT.xml",
+      "bytes": 339601,
+      "compressed_bytes": 19960,
+      "crc": 3514612592
+    },
+    {
+      "name": "SGD.IT.xml",
+      "bytes": 351284,
+      "compressed_bytes": 20367,
+      "crc": 2246689355
+    },
+    {
+      "name": "SGMA.IT.xml",
+      "bytes": 290051,
+      "compressed_bytes": 7411,
+      "crc": 4248626417
+    },
+    {
+      "name": "SGPA.IT.xml",
+      "bytes": 193750,
+      "compressed_bytes": 5734,
+      "crc": 2408195559
+    },
+    {
+      "name": "SGR.IT.xml",
+      "bytes": 68909,
+      "compressed_bytes": 3009,
+      "crc": 2540058944
+    },
+    {
+      "name": "SGSC.IT.xml",
+      "bytes": 193750,
+      "compressed_bytes": 5734,
+      "crc": 47225325
+    },
+    {
+      "name": "SGV.IT.xml",
+      "bytes": 402909,
+      "compressed_bytes": 13433,
+      "crc": 1586685423
+    },
+    {
+      "name": "SGVC.IT.xml",
+      "bytes": 80912,
+      "compressed_bytes": 3730,
+      "crc": 1630013460
+    },
+    {
+      "name": "SIEN.IT.xml",
+      "bytes": 80900,
+      "compressed_bytes": 3719,
+      "crc": 2037326934
+    },
+    {
+      "name": "SIG.IT.xml",
+      "bytes": 250056,
+      "compressed_bytes": 12168,
+      "crc": 2528329377
+    },
+    {
+      "name": "SIN.IT.xml",
+      "bytes": 68897,
+      "compressed_bytes": 2995,
+      "crc": 731856234
+    },
+    {
+      "name": "SLC1.IT.xml",
+      "bytes": 153859,
+      "compressed_bytes": 9086,
+      "crc": 2586926837
+    },
+    {
+      "name": "SLD.IT.xml",
+      "bytes": 578978,
+      "compressed_bytes": 11840,
+      "crc": 3215732085
+    },
+    {
+      "name": "SLL.IT.xml",
+      "bytes": 68891,
+      "compressed_bytes": 2991,
+      "crc": 1999055925
+    },
+    {
+      "name": "SLO.IT.xml",
+      "bytes": 635187,
+      "compressed_bytes": 29780,
+      "crc": 1710403506
+    },
+    {
+      "name": "SLOB.IT.xml",
+      "bytes": 283156,
+      "compressed_bytes": 18250,
+      "crc": 2562627101
+    },
+    {
+      "name": "SLS.IT.xml",
+      "bytes": 136668,
+      "compressed_bytes": 4114,
+      "crc": 736957638
+    },
+    {
+      "name": "SLZ.IT.xml",
+      "bytes": 193637,
+      "compressed_bytes": 11088,
+      "crc": 4276012769
+    },
+    {
+      "name": "SMA.IT.xml",
+      "bytes": 339601,
+      "compressed_bytes": 19972,
+      "crc": 2289131982
+    },
+    {
+      "name": "SMCV.IT.xml",
+      "bytes": 142171,
+      "compressed_bytes": 9872,
+      "crc": 1456867309
+    },
+    {
+      "name": "SMP.IT.xml",
+      "bytes": 249519,
+      "compressed_bytes": 12540,
+      "crc": 2106032401
+    },
+    {
+      "name": "SMR.IT.xml",
+      "bytes": 346373,
+      "compressed_bytes": 18166,
+      "crc": 2897434082
+    },
+    {
+      "name": "SMS0.IT.xml",
+      "bytes": 57555,
+      "compressed_bytes": 2935,
+      "crc": 1943424525
+    },
+    {
+      "name": "SNA.IT.xml",
+      "bytes": 339034,
+      "compressed_bytes": 20006,
+      "crc": 1595293023
+    },
+    {
+      "name": "SNG.IT.xml",
+      "bytes": 68893,
+      "compressed_bytes": 2990,
+      "crc": 512043508
+    },
+    {
+      "name": "SNI.IT.xml",
+      "bytes": 68897,
+      "compressed_bytes": 2991,
+      "crc": 2915392224
+    },
+    {
+      "name": "SNLG.IT.xml",
+      "bytes": 80904,
+      "compressed_bytes": 3720,
+      "crc": 1712945634
+    },
+    {
+      "name": "SNM.IT.xml",
+      "bytes": 153852,
+      "compressed_bytes": 9086,
+      "crc": 1791691206
+    },
+    {
+      "name": "SNN.IT.xml",
+      "bytes": 68910,
+      "compressed_bytes": 3002,
+      "crc": 2973385082
+    },
+    {
+      "name": "SNO.IT.xml",
+      "bytes": 250056,
+      "compressed_bytes": 12167,
+      "crc": 1502915214
+    },
+    {
+      "name": "SNRM.IT.xml",
+      "bytes": 243332,
+      "compressed_bytes": 15738,
+      "crc": 2019170202
+    },
+    {
+      "name": "SNS.IT.xml",
+      "bytes": 57552,
+      "compressed_bytes": 2929,
+      "crc": 180142494
+    },
+    {
+      "name": "SNS1.IT.xml",
+      "bytes": 237615,
+      "compressed_bytes": 12698,
+      "crc": 3658692173
+    },
+    {
+      "name": "SNZ.IT.xml",
+      "bytes": 193642,
+      "compressed_bytes": 11083,
+      "crc": 2436731654
+    },
+    {
+      "name": "SNZ1.IT.xml",
+      "bytes": 68889,
+      "compressed_bytes": 2991,
+      "crc": 1819833555
+    },
+    {
+      "name": "SON.IT.xml",
+      "bytes": 666546,
+      "compressed_bytes": 36629,
+      "crc": 3446108693
+    },
+    {
+      "name": "SOR.IT.xml",
+      "bytes": 57545,
+      "compressed_bytes": 2928,
+      "crc": 1600387813
+    },
+    {
+      "name": "SORA.IT.xml",
+      "bytes": 193642,
+      "compressed_bytes": 11086,
+      "crc": 292222281
+    },
+    {
+      "name": "SPA.IT.xml",
+      "bytes": 193655,
+      "compressed_bytes": 11093,
+      "crc": 6703701
+    },
+    {
+      "name": "SPC.IT.xml",
+      "bytes": 57556,
+      "compressed_bytes": 2932,
+      "crc": 1188747470
+    },
+    {
+      "name": "SPD.IT.xml",
+      "bytes": 124760,
+      "compressed_bytes": 7177,
+      "crc": 728301758
+    },
+    {
+      "name": "SPI.IT.xml",
+      "bytes": 193636,
+      "compressed_bytes": 11066,
+      "crc": 2537868731
+    },
+    {
+      "name": "SPI0.IT.xml",
+      "bytes": 57557,
+      "compressed_bytes": 2933,
+      "crc": 3841840140
+    },
+    {
+      "name": "SPM.IT.xml",
+      "bytes": 68905,
+      "compressed_bytes": 2998,
+      "crc": 2748193096
+    },
+    {
+      "name": "SPO.IT.xml",
+      "bytes": 153854,
+      "compressed_bytes": 9062,
+      "crc": 3783359007
+    },
+    {
+      "name": "SPO1.IT.xml",
+      "bytes": 165520,
+      "compressed_bytes": 6096,
+      "crc": 3800617868
+    },
+    {
+      "name": "SPP.IT.xml",
+      "bytes": 329860,
+      "compressed_bytes": 14075,
+      "crc": 1517195387
+    },
+    {
+      "name": "SPR.IT.xml",
+      "bytes": 125307,
+      "compressed_bytes": 7196,
+      "crc": 551073872
+    },
+    {
+      "name": "SPS.IT.xml",
+      "bytes": 193677,
+      "compressed_bytes": 11100,
+      "crc": 1761027169
+    },
+    {
+      "name": "SPT1.IT.xml",
+      "bytes": 193653,
+      "compressed_bytes": 11091,
+      "crc": 2297018533
+    },
+    {
+      "name": "SPVL.IT.xml",
+      "bytes": 70636,
+      "compressed_bytes": 3060,
+      "crc": 4036570635
+    },
+    {
+      "name": "SPZ.IT.xml",
+      "bytes": 2138815,
+      "compressed_bytes": 115394,
+      "crc": 3978060013
+    },
+    {
+      "name": "SQDO.IT.xml",
+      "bytes": 80914,
+      "compressed_bytes": 3730,
+      "crc": 282347978
+    },
+    {
+      "name": "SQL.IT.xml",
+      "bytes": 48248,
+      "compressed_bytes": 2617,
+      "crc": 1942291255
+    },
+    {
+      "name": "SRC.IT.xml",
+      "bytes": 435899,
+      "compressed_bytes": 25953,
+      "crc": 2168255490
+    },
+    {
+      "name": "SRE.IT.xml",
+      "bytes": 48250,
+      "compressed_bytes": 2619,
+      "crc": 810432097
+    },
+    {
+      "name": "SRL.IT.xml",
+      "bytes": 68889,
+      "compressed_bytes": 2989,
+      "crc": 1108066624
+    },
+    {
+      "name": "SRN.IT.xml",
+      "bytes": 68903,
+      "compressed_bytes": 2997,
+      "crc": 847076122
+    },
+    {
+      "name": "SRP.IT.xml",
+      "bytes": 68890,
+      "compressed_bytes": 2996,
+      "crc": 3962055087
+    },
+    {
+      "name": "SRT.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2989,
+      "crc": 1600753186
+    },
+    {
+      "name": "SRTN.IT.xml",
+      "bytes": 142148,
+      "compressed_bytes": 9856,
+      "crc": 233330704
+    },
+    {
+      "name": "SSA.IT.xml",
+      "bytes": 57568,
+      "compressed_bytes": 2946,
+      "crc": 450272858
+    },
+    {
+      "name": "SSB.IT.xml",
+      "bytes": 2138813,
+      "compressed_bytes": 115383,
+      "crc": 2419467366
+    },
+    {
+      "name": "SSC.IT.xml",
+      "bytes": 193659,
+      "compressed_bytes": 11095,
+      "crc": 423546830
+    },
+    {
+      "name": "SSG.IT.xml",
+      "bytes": 68905,
+      "compressed_bytes": 2999,
+      "crc": 1754897747
+    },
+    {
+      "name": "SSNM.IT.xml",
+      "bytes": 70636,
+      "compressed_bytes": 3056,
+      "crc": 3327476068
+    },
+    {
+      "name": "SSO.IT.xml",
+      "bytes": 193759,
+      "compressed_bytes": 5761,
+      "crc": 1297429140
+    },
+    {
+      "name": "SSR.IT.xml",
+      "bytes": 306471,
+      "compressed_bytes": 13140,
+      "crc": 1860902756
+    },
+    {
+      "name": "SSU.IT.xml",
+      "bytes": 442573,
+      "compressed_bytes": 21483,
+      "crc": 1201616902
+    },
+    {
+      "name": "SSV.IT.xml",
+      "bytes": 68893,
+      "compressed_bytes": 2991,
+      "crc": 1072462149
+    },
+    {
+      "name": "STB.IT.xml",
+      "bytes": 346367,
+      "compressed_bytes": 18503,
+      "crc": 977657859
+    },
+    {
+      "name": "STC.IT.xml",
+      "bytes": 396019,
+      "compressed_bytes": 21075,
+      "crc": 3307377386
+    },
+    {
+      "name": "STF.IT.xml",
+      "bytes": 743185,
+      "compressed_bytes": 33354,
+      "crc": 1248680715
+    },
+    {
+      "name": "STG.IT.xml",
+      "bytes": 68900,
+      "compressed_bytes": 2994,
+      "crc": 2017858656
+    },
+    {
+      "name": "STI.IT.xml",
+      "bytes": 2138803,
+      "compressed_bytes": 115400,
+      "crc": 644169084
+    },
+    {
+      "name": "STL.IT.xml",
+      "bytes": 193656,
+      "compressed_bytes": 11093,
+      "crc": 2987237680
+    },
+    {
+      "name": "STN.IT.xml",
+      "bytes": 193643,
+      "compressed_bytes": 11088,
+      "crc": 2001386297
+    },
+    {
+      "name": "STR.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2989,
+      "crc": 153895058
+    },
+    {
+      "name": "STRV.IT.xml",
+      "bytes": 137242,
+      "compressed_bytes": 9439,
+      "crc": 2642528271
+    },
+    {
+      "name": "STS.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 2994,
+      "crc": 1197444012
+    },
+    {
+      "name": "SUL.IT.xml",
+      "bytes": 289953,
+      "compressed_bytes": 17103,
+      "crc": 3628685487
+    },
+    {
+      "name": "SULA.IT.xml",
+      "bytes": 250169,
+      "compressed_bytes": 10811,
+      "crc": 3654030342
+    },
+    {
+      "name": "SULC.IT.xml",
+      "bytes": 289964,
+      "compressed_bytes": 17124,
+      "crc": 1792739836
+    },
+    {
+      "name": "SULP.IT.xml",
+      "bytes": 210270,
+      "compressed_bytes": 10144,
+      "crc": 542653956
+    },
+    {
+      "name": "SUS.IT.xml",
+      "bytes": 153839,
+      "compressed_bytes": 5733,
+      "crc": 379214086
+    },
+    {
+      "name": "SUZR.IT.xml",
+      "bytes": 80898,
+      "compressed_bytes": 3721,
+      "crc": 1595754369
+    },
+    {
+      "name": "SVA.IT.xml",
+      "bytes": 402862,
+      "compressed_bytes": 14575,
+      "crc": 2401586152
+    },
+    {
+      "name": "SVCH.IT.xml",
+      "bytes": 137243,
+      "compressed_bytes": 9425,
+      "crc": 2432202456
+    },
+    {
+      "name": "SVN.IT.xml",
+      "bytes": 454264,
+      "compressed_bytes": 25075,
+      "crc": 3374028181
+    },
+    {
+      "name": "SVP.IT.xml",
+      "bytes": 339598,
+      "compressed_bytes": 19957,
+      "crc": 603199710
+    },
+    {
+      "name": "SVRT.IT.xml",
+      "bytes": 142148,
+      "compressed_bytes": 9859,
+      "crc": 2088914388
+    },
+    {
+      "name": "TAO.IT.xml",
+      "bytes": 339028,
+      "compressed_bytes": 20000,
+      "crc": 3004084611
+    },
+    {
+      "name": "TART.IT.xml",
+      "bytes": 137237,
+      "compressed_bytes": 9430,
+      "crc": 2251733144
+    },
+    {
+      "name": "TEM.IT.xml",
+      "bytes": 193660,
+      "compressed_bytes": 11094,
+      "crc": 2119384553
+    },
+    {
+      "name": "TER.IT.xml",
+      "bytes": 193643,
+      "compressed_bytes": 11080,
+      "crc": 2312767557
+    },
+    {
+      "name": "TES.IT.xml",
+      "bytes": 339591,
+      "compressed_bytes": 19954,
+      "crc": 3331158714
+    },
+    {
+      "name": "TGG.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2990,
+      "crc": 1231229598
+    },
+    {
+      "name": "TGL.IT.xml",
+      "bytes": 294051,
+      "compressed_bytes": 17121,
+      "crc": 976444299
+    },
+    {
+      "name": "TGN.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2989,
+      "crc": 3443914849
+    },
+    {
+      "name": "TLFA.IT.xml",
+      "bytes": 142145,
+      "compressed_bytes": 9856,
+      "crc": 3760205412
+    },
+    {
+      "name": "TLM2.IT.xml",
+      "bytes": 68898,
+      "compressed_bytes": 2994,
+      "crc": 2725243996
+    },
+    {
+      "name": "TLN.IT.xml",
+      "bytes": 250058,
+      "compressed_bytes": 12173,
+      "crc": 2635735604
+    },
+    {
+      "name": "TLS.IT.xml",
+      "bytes": 407688,
+      "compressed_bytes": 25304,
+      "crc": 1974415563
+    },
+    {
+      "name": "TMO.IT.xml",
+      "bytes": 250056,
+      "compressed_bytes": 12164,
+      "crc": 1629115616
+    },
+    {
+      "name": "TNO.IT.xml",
+      "bytes": 510748,
+      "compressed_bytes": 23292,
+      "crc": 3254024009
+    },
+    {
+      "name": "TNS.IT.xml",
+      "bytes": 478002,
+      "compressed_bytes": 28150,
+      "crc": 3615464321
+    },
+    {
+      "name": "TNTO.IT.xml",
+      "bytes": 137229,
+      "compressed_bytes": 9430,
+      "crc": 3249538094
+    },
+    {
+      "name": "TOD.IT.xml",
+      "bytes": 442770,
+      "compressed_bytes": 14103,
+      "crc": 3660591229
+    },
+    {
+      "name": "TOR.IT.xml",
+      "bytes": 345841,
+      "compressed_bytes": 18898,
+      "crc": 2701794255
+    },
+    {
+      "name": "TPA.IT.xml",
+      "bytes": 492173,
+      "compressed_bytes": 27013,
+      "crc": 3180228188
+    },
+    {
+      "name": "TPI.IT.xml",
+      "bytes": 250148,
+      "compressed_bytes": 10857,
+      "crc": 2995800851
+    },
+    {
+      "name": "TRA.IT.xml",
+      "bytes": 289936,
+      "compressed_bytes": 16749,
+      "crc": 3918241106
+    },
+    {
+      "name": "TRCA.IT.xml",
+      "bytes": 141273,
+      "compressed_bytes": 9782,
+      "crc": 2915370628
+    },
+    {
+      "name": "TRE.IT.xml",
+      "bytes": 233547,
+      "compressed_bytes": 12323,
+      "crc": 1063567229
+    },
+    {
+      "name": "TRE2.IT.xml",
+      "bytes": 137231,
+      "compressed_bytes": 9423,
+      "crc": 2167383358
+    },
+    {
+      "name": "TRF.IT.xml",
+      "bytes": 125302,
+      "compressed_bytes": 7191,
+      "crc": 1193292546
+    },
+    {
+      "name": "TRL.IT.xml",
+      "bytes": 68903,
+      "compressed_bytes": 2989,
+      "crc": 3339471701
+    },
+    {
+      "name": "TRM.IT.xml",
+      "bytes": 68898,
+      "compressed_bytes": 2992,
+      "crc": 47843476
+    },
+    {
+      "name": "TRN.IT.xml",
+      "bytes": 57546,
+      "compressed_bytes": 2925,
+      "crc": 4006836362
+    },
+    {
+      "name": "TRN1.IT.xml",
+      "bytes": 193745,
+      "compressed_bytes": 5733,
+      "crc": 3475721040
+    },
+    {
+      "name": "TRO.IT.xml",
+      "bytes": 193646,
+      "compressed_bytes": 11080,
+      "crc": 2918634478
+    },
+    {
+      "name": "TRR.IT.xml",
+      "bytes": 68897,
+      "compressed_bytes": 2992,
+      "crc": 4127874876
+    },
+    {
+      "name": "TRRM.IT.xml",
+      "bytes": 141279,
+      "compressed_bytes": 9788,
+      "crc": 4127679533
+    },
+    {
+      "name": "TRS.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2986,
+      "crc": 2434972519
+    },
+    {
+      "name": "TRT.IT.xml",
+      "bytes": 68890,
+      "compressed_bytes": 2987,
+      "crc": 3985310385
+    },
+    {
+      "name": "TRTO.IT.xml",
+      "bytes": 153849,
+      "compressed_bytes": 9072,
+      "crc": 949148322
+    },
+    {
+      "name": "TRV.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2990,
+      "crc": 3287155170
+    },
+    {
+      "name": "TSC.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2991,
+      "crc": 3904285872
+    },
+    {
+      "name": "TVL.IT.xml",
+      "bytes": 68894,
+      "compressed_bytes": 2992,
+      "crc": 4218250201
+    },
+    {
+      "name": "TVR.IT.xml",
+      "bytes": 68903,
+      "compressed_bytes": 3000,
+      "crc": 4231013126
+    },
+    {
+      "name": "TZVP.IT.xml",
+      "bytes": 142157,
+      "compressed_bytes": 9859,
+      "crc": 1817412412
+    },
+    {
+      "name": "UGN.IT.xml",
+      "bytes": 68889,
+      "compressed_bytes": 2988,
+      "crc": 1153502043
+    },
+    {
+      "name": "UMB.IT.xml",
+      "bytes": 68897,
+      "compressed_bytes": 2993,
+      "crc": 1895415097
+    },
+    {
+      "name": "UMBT.IT.xml",
+      "bytes": 97448,
+      "compressed_bytes": 4168,
+      "crc": 735630813
+    },
+    {
+      "name": "UMPN.IT.xml",
+      "bytes": 137237,
+      "compressed_bytes": 9425,
+      "crc": 931896306
+    },
+    {
+      "name": "UMPR.IT.xml",
+      "bytes": 137245,
+      "compressed_bytes": 9438,
+      "crc": 3310224442
+    },
+    {
+      "name": "UMPS.IT.xml",
+      "bytes": 137239,
+      "compressed_bytes": 9431,
+      "crc": 3774577378
+    },
+    {
+      "name": "URBI.IT.xml",
+      "bytes": 70624,
+      "compressed_bytes": 3047,
+      "crc": 2053802439
+    },
+    {
+      "name": "URBN.IT.xml",
+      "bytes": 70625,
+      "compressed_bytes": 3047,
+      "crc": 2183728935
+    },
+    {
+      "name": "UST.IT.xml",
+      "bytes": 329747,
+      "compressed_bytes": 19362,
+      "crc": 680007646
+    },
+    {
+      "name": "VAL.IT.xml",
+      "bytes": 153855,
+      "compressed_bytes": 9078,
+      "crc": 929941406
+    },
+    {
+      "name": "VALS.IT.xml",
+      "bytes": 289735,
+      "compressed_bytes": 11009,
+      "crc": 3259513849
+    },
+    {
+      "name": "VAV.IT.xml",
+      "bytes": 193634,
+      "compressed_bytes": 11072,
+      "crc": 1820832593
+    },
+    {
+      "name": "VBM.IT.xml",
+      "bytes": 329742,
+      "compressed_bytes": 19341,
+      "crc": 3710559008
+    },
+    {
+      "name": "VBV.IT.xml",
+      "bytes": 193088,
+      "compressed_bytes": 11147,
+      "crc": 1200444497
+    },
+    {
+      "name": "VCNZ.IT.xml",
+      "bytes": 193641,
+      "compressed_bytes": 12840,
+      "crc": 1898529182
+    },
+    {
+      "name": "VDB.IT.xml",
+      "bytes": 431074,
+      "compressed_bytes": 16183,
+      "crc": 693082454
+    },
+    {
+      "name": "VGG.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 2991,
+      "crc": 1169013230
+    },
+    {
+      "name": "VGG7.IT.xml",
+      "bytes": 247829,
+      "compressed_bytes": 12876,
+      "crc": 2854971937
+    },
+    {
+      "name": "VGL.IT.xml",
+      "bytes": 68899,
+      "compressed_bytes": 2995,
+      "crc": 696458181
+    },
+    {
+      "name": "VGR.IT.xml",
+      "bytes": 250046,
+      "compressed_bytes": 12152,
+      "crc": 2375558257
+    },
+    {
+      "name": "VIE.IT.xml",
+      "bytes": 329737,
+      "compressed_bytes": 19354,
+      "crc": 3394168700
+    },
+    {
+      "name": "VLC.IT.xml",
+      "bytes": 68902,
+      "compressed_bytes": 2996,
+      "crc": 3189495684
+    },
+    {
+      "name": "VLFB.IT.xml",
+      "bytes": 193649,
+      "compressed_bytes": 12905,
+      "crc": 1888503660
+    },
+    {
+      "name": "VLL.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2990,
+      "crc": 3445908489
+    },
+    {
+      "name": "VLM.IT.xml",
+      "bytes": 68901,
+      "compressed_bytes": 3000,
+      "crc": 2010632434
+    },
+    {
+      "name": "VLMN.IT.xml",
+      "bytes": 137236,
+      "compressed_bytes": 9423,
+      "crc": 175943934
+    },
+    {
+      "name": "VLN.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2987,
+      "crc": 3542201064
+    },
+    {
+      "name": "VLS2.IT.xml",
+      "bytes": 284220,
+      "compressed_bytes": 11219,
+      "crc": 622549196
+    },
+    {
+      "name": "VLT.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2989,
+      "crc": 2081596009
+    },
+    {
+      "name": "VLTR.IT.xml",
+      "bytes": 137241,
+      "compressed_bytes": 9432,
+      "crc": 2566806158
+    },
+    {
+      "name": "VNCH.IT.xml",
+      "bytes": 70629,
+      "compressed_bytes": 3053,
+      "crc": 1034061396
+    },
+    {
+      "name": "VNF.IT.xml",
+      "bytes": 193754,
+      "compressed_bytes": 5814,
+      "crc": 784971967
+    },
+    {
+      "name": "VNF1.IT.xml",
+      "bytes": 369646,
+      "compressed_bytes": 20595,
+      "crc": 2955718663
+    },
+    {
+      "name": "VNM.IT.xml",
+      "bytes": 329834,
+      "compressed_bytes": 14070,
+      "crc": 2088758460
+    },
+    {
+      "name": "VNN.IT.xml",
+      "bytes": 305910,
+      "compressed_bytes": 13580,
+      "crc": 4049314634
+    },
+    {
+      "name": "VNZ.IT.xml",
+      "bytes": 210263,
+      "compressed_bytes": 6756,
+      "crc": 1223555030
+    },
+    {
+      "name": "VNZE.IT.xml",
+      "bytes": 238450,
+      "compressed_bytes": 15639,
+      "crc": 3622101932
+    },
+    {
+      "name": "VRB.IT.xml",
+      "bytes": 390296,
+      "compressed_bytes": 22109,
+      "crc": 3606981758
+    },
+    {
+      "name": "VRCL.IT.xml",
+      "bytes": 409432,
+      "compressed_bytes": 25923,
+      "crc": 448273920
+    },
+    {
+      "name": "VRL.IT.xml",
+      "bytes": 153848,
+      "compressed_bytes": 5737,
+      "crc": 1746674304
+    },
+    {
+      "name": "VRNA.IT.xml",
+      "bytes": 193644,
+      "compressed_bytes": 12880,
+      "crc": 2604692721
+    },
+    {
+      "name": "VRNP.IT.xml",
+      "bytes": 142102,
+      "compressed_bytes": 9848,
+      "crc": 3322163298
+    },
+    {
+      "name": "VRP.IT.xml",
+      "bytes": 339510,
+      "compressed_bytes": 19908,
+      "crc": 2877249333
+    },
+    {
+      "name": "VRSI.IT.xml",
+      "bytes": 142135,
+      "compressed_bytes": 9851,
+      "crc": 3640108792
+    },
+    {
+      "name": "VSD.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2991,
+      "crc": 1337022950
+    },
+    {
+      "name": "VSE.IT.xml",
+      "bytes": 68893,
+      "compressed_bytes": 2984,
+      "crc": 3720569315
+    },
+    {
+      "name": "VSNL.IT.xml",
+      "bytes": 142149,
+      "compressed_bytes": 9854,
+      "crc": 2208913857
+    },
+    {
+      "name": "VTBO.IT.xml",
+      "bytes": 141328,
+      "compressed_bytes": 9798,
+      "crc": 4260214288
+    },
+    {
+      "name": "VTT.IT.xml",
+      "bytes": 68896,
+      "compressed_bytes": 2995,
+      "crc": 1288218379
+    },
+    {
+      "name": "VULS.IT.xml",
+      "bytes": 137240,
+      "compressed_bytes": 9431,
+      "crc": 2258636003
+    },
+    {
+      "name": "VZZ.IT.xml",
+      "bytes": 68895,
+      "compressed_bytes": 2993,
+      "crc": 3102324616
+    },
+    {
+      "name": "ZPG.IT.xml",
+      "bytes": 193658,
+      "compressed_bytes": 11073,
+      "crc": 1837608787
+    },
+    {
+      "name": "ZPP.IT.xml",
+      "bytes": 395461,
+      "compressed_bytes": 22096,
+      "crc": 2689293486
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+\paragraph{1A --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
+
+21 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+
+Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
+
+Saved numerical output: \path{data/continuation/figure_1A.csv}.
+
+Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \path{figures/figure_1A_routine.pdf}.
+
+The same plotting command composes the report figure: \path{figures/figure_1_combined.pdf}.
+
+\paragraph{1B --- partial data-to-plot chain.} Original GNSS/leveling observations plus explicitly labeled historical source estimates/reconstruction.
+
+Inputs: \path{inputs/continuation/RITE_2000_2025.txt}, \path{inputs/continuation/RITE_Timeseries_Format.readme}, \path{inputs/continuation/RITE_daily.txt}, \path{inputs/continuation/Time_Series_Format.txt}, \path{inputs/extended/delgaudio2010_table.doc}.
+
+Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
+
+Saved numerical output: \path{data/continuation/rite_gnss.csv}, \path{data/continuation/historical_leveling.csv}.
+
+Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \path{figures/figure_1B_displacement.pdf}.
+
+The same plotting command composes the report figure: \path{figures/figure_1_combined.pdf}.
+
+\paragraph{1C --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
+
+21 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+
+Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
+
+Saved numerical output: \path{data/continuation/figure_1C.csv}, \path{data/continuation/figure_1C_cumulative.csv}.
+
+Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \path{figures/figure_1C_routine.pdf}.
+
+The same plotting command composes the report figure: \path{figures/figure_1_combined.pdf}.
+
+\paragraph{S1 --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
+
+608 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+
+Data command: \par\noindent \path{.venv/bin/python scripts/process_continuous.py all --frozen}\par
+
+Saved numerical output: \path{data/continuation/processed_coverage_union.json}.
+
+Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \path{figures/continuation_coverage.pdf}.
+
+\paragraph{S2 --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
+
+22 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+
+Data command: \par\noindent \path{.venv/bin/python scripts/station_geometry.py}\par
+
+Saved numerical output: \path{data/continuation/figure_S2.csv}, \path{data/continuation/station_geometry_qa.csv}, \path{data/continuation/station_geometry_epochs.csv}.
+
+Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \path{figures/continuation_stations.pdf}.
+
+\paragraph{S5/map --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
+
+21 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+
+Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
+
+Saved numerical output: \path{data/continuation/figure_S5.csv}.
+
+Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \path{figures/figure_S5_routine.pdf}.
+
+\paragraph{S5/northing-depth --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
+
+21 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+
+Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
+
+Saved numerical output: \path{data/continuation/figure_S5.csv}.
+
+Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \path{figures/figure_S5_routine.pdf}.
+
+\paragraph{S5/easting-depth --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
+
+21 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+
+Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
+
+Saved numerical output: \path{data/continuation/figure_S5.csv}.
+
+Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \path{figures/figure_S5_routine.pdf}.
+
+\paragraph{S8A --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
+
+631 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+
+Data command: \par\noindent \path{.venv/bin/python scripts/downstream_checks.py --dataset continuation}\par\noindent \path{.venv/bin/python scripts/magnitude_statistics.py}\par
+
+Saved numerical output: \path{data/continuation/figure_S8A.csv}.
+
+Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \path{figures/figure_S8_pilot.pdf}.
+
+\paragraph{S8B --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
+
+631 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+
+Data command: \par\noindent \path{.venv/bin/python scripts/downstream_checks.py --dataset continuation}\par\noindent \path{.venv/bin/python scripts/magnitude_statistics.py}\par
+
+Saved numerical output: \path{data/continuation/figure_S8B.csv}, \path{data/continuation/magnitude_statistics.json}.
+
+Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \path{figures/figure_S8_pilot.pdf}.
+
+\paragraph{S15C --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
+
+Inputs: \path{inputs/metadata/response.xml}, \path{inputs/waveforms/E3_CAAM.mseed}, \path{inputs/waveforms/E3_COLB.mseed}.
+
+Data command: \par\noindent \path{.venv/bin/python scripts/analyze_observations.py}\par
+
+Saved numerical output: \path{data/observations/E3_waveforms.csv}, \path{data/observations/E3_CAAM_Z_spectrum.npz}, \path{data/observations/E3_CAAM_E_spectrum.npz}, \path{data/observations/E3_COLB_Z_spectrum.npz}, \path{data/observations/E3_COLB_E_spectrum.npz}.
+
+Plot command: \path{.venv/bin/python scripts/plot_observations.py}\par Output: \path{figures/hybrid_E3.pdf}.
