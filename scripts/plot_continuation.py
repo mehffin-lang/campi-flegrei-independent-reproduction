@@ -120,6 +120,12 @@ def main():
             axes[1].step(hist.ML_bin,hist.cumulative,where='mid',color='#b25231',label='Cumulative')
             axes[1].set_yscale('log')
         axes[1].set(xlabel='Independent provisional ML',ylabel='Events',title='S8B · Limited-sample distribution');axes[1].legend(fontsize=8)
+        statistics=json.loads((D/'magnitude_statistics.json').read_text())
+        if statistics.get('b') is not None:
+            axes[1].axvline(statistics['Mc'],ls=':',color='.4',lw=.8)
+            error=statistics.get('b_sigma');label=(f"S8B · Limited-sample distribution\nConditional b={statistics['b']:.2f}"+(f" ± {error:.2f}" if error is not None else '')+
+                f"; {statistics['events_ge_Mc']} events at/above Mc={statistics['Mc']:.1f}\nStandard error excludes selection bias.")
+            axes[1].set_title(label,fontsize=8)
         fig.suptitle('Partial pilot: initial locations; incomplete magnitude sample. No full-period Mc or b claim.',fontsize=9)
         fig.savefig(F/'figure_S8_pilot.pdf');plt.close(fig)
 

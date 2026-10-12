@@ -1882,7 +1882,7 @@
     "scope": "supplement",
     "quantity": "Estimated local versus routine duration magnitude",
     "documentation": "Supplement S19 caption; S5-S6 methods",
-    "parameters": "5 s signal, 2 s preceding noise; SNR >=5 dB; stations with associated phases only; >=2 shared stations; separation < one fifth of station distance; squared zero-lag correlation weights; Md regularization lambda=1 for unique one-to-one matches within 2 s. Initial locations. B uses 0.1 magnitude bins and a >=20-above-Mc minimum for reporting a pilot b estimate.",
+    "parameters": "5 s signal, 2 s preceding noise; SNR >=5 dB; stations with associated phases only; >=2 shared stations; separation < one fifth of station distance; squared zero-lag correlation weights; Md regularization lambda=1 for unique one-to-one matches within 2 s. Initial locations. B uses 0.1 magnitude bins, maximum-curvature Mc, half-bin-corrected likelihood b and formal Shi-Bolt sampling error; no arbitrary minimum sample cutoff.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/downstream_checks.py --dataset continuation && .venv/bin/python scripts/magnitude_statistics.py",
     "plot_command": ".venv/bin/python scripts/plot_continuation.py",
@@ -2240,7 +2240,7 @@
     "scope": "supplement",
     "quantity": "Magnitude-frequency distribution and fitted b value",
     "documentation": "Supplement S19 caption; S6 methods",
-    "parameters": "5 s signal, 2 s preceding noise; SNR >=5 dB; stations with associated phases only; >=2 shared stations; separation < one fifth of station distance; squared zero-lag correlation weights; Md regularization lambda=1 for unique one-to-one matches within 2 s. Initial locations. B uses 0.1 magnitude bins and a >=20-above-Mc minimum for reporting a pilot b estimate.",
+    "parameters": "5 s signal, 2 s preceding noise; SNR >=5 dB; stations with associated phases only; >=2 shared stations; separation < one fifth of station distance; squared zero-lag correlation weights; Md regularization lambda=1 for unique one-to-one matches within 2 s. Initial locations. B uses 0.1 magnitude bins, maximum-curvature Mc, half-bin-corrected likelihood b and formal Shi-Bolt sampling error; no arbitrary minimum sample cutoff.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/downstream_checks.py --dataset continuation && .venv/bin/python scripts/magnitude_statistics.py",
     "plot_command": ".venv/bin/python scripts/plot_continuation.py",
@@ -2591,7 +2591,7 @@
       "inputs/waveforms/day_CSTH_23.mseed"
     ],
     "generated_figure": "figures/figure_S8_pilot.pdf",
-    "saved_data": "data/continuation/figure_S8B.csv"
+    "saved_data": "data/continuation/figure_S8B.csv; data/continuation/magnitude_statistics.json"
   },
   {
     "panel": "S9/map",

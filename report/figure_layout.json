@@ -287,7 +287,7 @@
       "figures/figure_S8_pilot.pdf"
     ],
     "missing": "",
-    "caption": "Partial amplitude-ratio pilot: 22 provisional magnitudes from independent observations, with routine Md as the documented calibration prior. A is not an independent validation of that prior. B is a limited-sample histogram, not the full-period completeness or b-value result. Locations are initial associations, before final relocation.",
+    "caption": "Partial amplitude-ratio pilot: 22 provisional magnitudes from independent observations, with routine Md as the documented calibration prior. A is not an independent validation of that prior. B is a limited-sample histogram with a conditional likelihood estimate, not the full-period completeness or b-value result. Locations are initial associations, before final relocation.",
     "file_labels": [
       "S8A--B"
     ]

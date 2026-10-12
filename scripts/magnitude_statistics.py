@@ -21,9 +21,9 @@ if len(m):
     pd.DataFrame(dict(ML_bin=centers,count=counts,cumulative=np.cumsum(counts[::-1])[::-1])).to_csv(D/'figure_S8B.csv',index=False)
     mc=float(centers[np.argmax(counts)]);above=values[values>=mc-1e-8]
     result.update(Mc=mc,events_ge_Mc=len(above),status='Pilot maximum-curvature estimate; acquisition and magnitude selection incomplete')
-    if len(above)>=20:
+    if len(above):
         b=float(np.log10(np.e)/(above.mean()-(mc-.05)))
-        sigma=float(2.30*b*b*np.sqrt(np.sum((above-above.mean())**2)/(len(above)*(len(above)-1))))
+        sigma=float(2.30*b*b*np.sqrt(np.sum((above-above.mean())**2)/(len(above)*(len(above)-1)))) if len(above)>1 else None
         result.update(b=b,b_sigma=sigma,estimator='Aki--Utsu maximum likelihood with half-bin correction; Shi--Bolt sampling error; does not include coverage/systematic errors')
-    else:result['b_blocker']='Fewer than 20 magnitudes above pilot Mc; do not report a stable b estimate.'
+        result['b_caveat']=f'Conditional descriptive estimate from only {len(above)} selected pilot magnitudes. Neither population completeness nor the regional b-value is established; the formal error excludes selection, magnitude calibration and coverage bias.'
 (D/'magnitude_statistics.json').write_text(json.dumps(result,indent=2)+'\n');print(result)

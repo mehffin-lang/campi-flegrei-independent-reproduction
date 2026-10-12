@@ -46,8 +46,9 @@ for r in rows:
             r.update(status='partially reproduced',generated_figure='figures/figure_S8_pilot.pdf',saved_data=f'data/continuation/figure_{p}.csv',
                 data_command='.venv/bin/python scripts/downstream_checks.py --dataset continuation && .venv/bin/python scripts/magnitude_statistics.py',plot_command='.venv/bin/python scripts/plot_continuation.py',
                 input_observation_files=processed+routine+['inputs/continuation/IV_responses.xml','inputs/continuation/2I_responses.xml'],
-                parameters='5 s signal, 2 s preceding noise; SNR >=5 dB; stations with associated phases only; >=2 shared stations; separation < one fifth of station distance; squared zero-lag correlation weights; Md regularization lambda=1 for unique one-to-one matches within 2 s. Initial locations. B uses 0.1 magnitude bins and a >=20-above-Mc minimum for reporting a pilot b estimate.',
+                parameters='5 s signal, 2 s preceding noise; SNR >=5 dB; stations with associated phases only; >=2 shared stations; separation < one fifth of station distance; squared zero-lag correlation weights; Md regularization lambda=1 for unique one-to-one matches within 2 s. Initial locations. B uses 0.1 magnitude bins, maximum-curvature Mc, half-bin-corrected likelihood b and formal Shi-Bolt sampling error; no arbitrary minimum sample cutoff.',
                 attempt='Executed amplitude-ratio inversion on initial locations; partial pilot comparison/distribution only. No claim of full-period completeness or b-value.')
+            if p=='S8B':r['saved_data']+='; data/continuation/magnitude_statistics.json'
     if p.startswith('S12'):
         r['blocker']=f"{loc.get('associated_cpoz_p_picks',0)} independently associated CPOZ P arrivals now exist. Relocated ring-sector selection and manual depth review remain unfinished; internal S-P checks do not establish location accuracy."
     if p.startswith('S14'):
@@ -67,7 +68,7 @@ for item in layout:
     elif item['figure']=='S6' and v.get('completed') and v.get('quality_passing',0):
         item.update(partial_panels=item['panels'],file_labels=['S6, all views'],independent_files=['figures/figure_S6_pilot.pdf'],missing='',caption=f"Partial independent VELEST pilot: {v['quality_passing']} events pass the final six-pick, 0.25 s RMS and 300-degree gap filters. This limited, unreviewed sample is not the published 61,809-event catalog. The initial association model and regional averaging choices differ or are assumed; no TomoDD refinement is implied.")
     elif item['figure']=='S8' and m.get('calibrated_magnitudes',0)>0:
-        item.update(partial_panels=item['panels'],file_labels=['S8A--B'],independent_files=['figures/figure_S8_pilot.pdf'],missing='',caption=f"Partial amplitude-ratio pilot: {m['calibrated_magnitudes']} provisional magnitudes from independent observations, with routine Md as the documented calibration prior. A is not an independent validation of that prior. B is a limited-sample histogram, not the full-period completeness or b-value result. Locations are initial associations, before final relocation.")
+        item.update(partial_panels=item['panels'],file_labels=['S8A--B'],independent_files=['figures/figure_S8_pilot.pdf'],missing='',caption=f"Partial amplitude-ratio pilot: {m['calibrated_magnitudes']} provisional magnitudes from independent observations, with routine Md as the documented calibration prior. A is not an independent validation of that prior. B is a limited-sample histogram with a conditional likelihood estimate, not the full-period completeness or b-value result. Locations are initial associations, before final relocation.")
     elif item['figure'] in ['S6','S8']:
         item.update(partial_panels=[],file_labels=[],independent_files=[],missing='No successful current pilot result. See the recorded stage failure; no older output is substituted.',caption='Not reproduced at the current checkpoint.')
     elif item['figure']=='2':item['missing']=f"Panels A and B need multiyear calibrated/relocated events and magnitudes. The current {s['events']} initial associations remain provisional."
@@ -93,6 +94,12 @@ if v.get('precision_check'):
     max_p=max(c['Vp_km_s'] for c in changes.values());max_s=max(c['Vs_km_s'] for c in changes.values())
     velest_text+=f" Repeating calibration with 64-bit rather than 32-bit arithmetic changes some fitted layers by up to {max_p:.2f} km/s in $V_p$ and {max_s:.2f} km/s in $V_s$. This substantial arithmetic sensitivity prevents accepting the pilot fit as a robust regional calibration."
 (R/'continuation_velest.tex').write_text(velest_text+'\n')
+if stats.get('b') is not None:
+    sigma=stats.get('b_sigma')
+    error=f" \\pm {sigma:.2f}" if sigma is not None else ''
+    text=f"The conditional magnitude-frequency fit gives $M_c={stats['Mc']:.1f}$ and $b={stats['b']:.2f}{error}$ from only {stats['events_ge_Mc']} selected magnitudes at or above the pilot completeness level. The quoted Shi--Bolt standard error excludes coverage, selection and magnitude-calibration biases. The previous 20-event reporting cutoff was an unnecessary implementation assumption and is removed. This calculation does not establish population completeness or a regional b-value."
+else:text='No magnitude-frequency fit can be calculated from the current saved magnitudes.'
+(R/'continuation_magnitude_statistics.tex').write_text(text+'\n')
 if v.get('completed') and (D/'independent_velest_model.csv').exists():
     model=pd.read_csv(D/'independent_velest_model.csv')
     lines=[r'\begin{longtable}{rrrr}\toprule Layer top (km b.s.l.) & $V_p$ (km/s) & $V_s$ (km/s) & $V_p/V_s$\\\midrule\endhead']
@@ -108,7 +115,7 @@ updates={
     4:f"Partial VELEST pilot: completed={v.get('completed')}; {v.get('calibration_events',0)} calibration events, {len(v.get('runs',[]))} successful runs, {v.get('quality_passing',0)} quality-passing locations. Exact subset/model validity not established.",
     5:'Generic TomoDD source retrieved, classified and compiled. Scientific differential-time pairing and both relocation rounds remain unfinished, not executed.',
     7:f"Executed: {m.get('amplitude_measurements',0)} amplitudes, {m.get('snr_passing',0)} SNR passes, {m.get('magnitude_edges',0)} amplitude-ratio equations, {m.get('calibrated_magnitudes',0)} provisional magnitudes. Initial locations; final relocated-catalog calibration unfinished.",
-    8:f"Pilot histogram and maximum-curvature calculation executed on {stats.get('magnitudes',0)} values. Full-period completeness/b not established; {stats.get('b_blocker','selection and systematic limitations remain')}",
+    8:f"Pilot histogram and maximum-curvature calculation executed on {stats.get('magnitudes',0)} values; conditional b={stats.get('b')} from {stats.get('events_ge_Mc',0)} values at/above pilot Mc. Full-period completeness/b not established; selection and systematic limitations remain.",
     10:f"Internal S-P checks: {loc.get('paired_observations',0)} pairs, {loc.get('nonpositive_sp',0)} nonpositive. {loc.get('associated_cpoz_p_picks',0)} CPOZ P arrivals. Relocated sector gathers and manual deep-event review unfinished.",
     11:f"Executed {h.get('valid_hours',0):.3f} common CAAM/COLB scan hours; {h.get('candidates',0)} unconfirmed crossings. Three-year review, clustering and catalog-wide FI incomplete.",
     12:f"Executed: {c['leveling_rows']} original leveling observations, {c['gnss_rows']} daily GNSS through 2025-03-20, {c['routine_located']} historical and {c['routine_study_located']} study-period located routine events. External catalog roles explicitly permitted; historical count difference unresolved."

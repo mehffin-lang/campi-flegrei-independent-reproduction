@@ -58,6 +58,8 @@ The present S--P check includes \CurrentSPPairs{} paired observations, of which 
 The current amplitude/SNR stage measured \CurrentAmplitudes{} channel amplitudes, with \CurrentSNR{} passing SNR and \CurrentMagnitudeEdges{} accepted difference equations. It returned \CurrentMagnitudes{} provisional magnitudes. These are actual executed outputs, not a promised future count. Candidate measurement errors and quality failures are retained in the JSON/CSV records. The old 140-measurement, 23-SNR, zero-edge result is superseded for the current sample but preserved in Git and the earlier data directory.
 
 \subsection*{Comparison after independent processing}
+\input{report/continuation_magnitude_statistics.tex}
+
 \IfFileExists{report/continuation_final_comparison.tex}{\input{report/continuation_final_comparison.tex}}{The current final comparison has not run.}
 
 \section{Limitations and unfinished analyses}

@@ -33,7 +33,7 @@
   },
   {
     "stage": "9. Completeness / b",
-    "status": "Pilot histogram and maximum-curvature calculation executed on 22 values. Full-period completeness/b not established; Fewer than 20 magnitudes above pilot Mc; do not report a stable b estimate."
+    "status": "Pilot histogram and maximum-curvature calculation executed on 22 values; conditional b=1.2408413768664375 from 8 values at/above pilot Mc. Full-period completeness/b not established; selection and systematic limitations remain."
   },
   {
     "stage": "10. Focal mechanisms",
