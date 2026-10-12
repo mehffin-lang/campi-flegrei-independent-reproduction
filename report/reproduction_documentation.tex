@@ -1,0 +1,147 @@
+The scientific execution record below describes the saved 9 October 2026 analysis. The 12 October revision reorganizes its presentation and builds a separate visual-comparison document; it does not rerun those scientific calculations. The document-only build verifies that all protected files remain unchanged.
+
+\section{Scientific specification and input verification}
+The local \path{tanmodel.pdf} and \path{tanmodelsupp.pdf} were extracted before changing outputs. Main captions 1--4, supplementary captions S1--S15 and methods S2--S11 are readable. Two font-weight warnings do not prevent main-text extraction. Both supplied ZIPs were listed and CRC-tested; no file from them was executed. Their inventory and hashes are in \path{docs/resumed_source_check.json} and \path{docs/file_inventory.json}.
+\begingroup\small\input{report/files_table.tex}\endgroup
+The data archive contains Data S1 (final event catalog), S2 (associated phases) and S3 (focal mechanisms), plus binary macOS packaging metadata. The other archive contains an HTML seismicity visualization. These are derived products, not original waveform inputs. Data S1 was read only after independent outputs existed, for a separate final comparison of temporal coincidences and horizontal differences. Data S3 was read only for a final row-count audit: the CSV has 74 rows and 58 nonempty gCAP solutions, consistent with the methods. Its caption's 55-event description is inconsistent with the actual file. No supplied solution entered inference, initialization, filtering or magnitude estimation.
+
+The latest instruction permits an external input genuinely required by the published method. Accordingly, routine INGV duration magnitudes are permitted only after independent detection and association, as supplementary S6's explicit magnitude regularization reference. Their use no longer presents the blanket policy conflict stated in the previous report. The picking/association program never opens that catalog. Historical catalog plots are explicitly external context, not independently detected earthquakes.
+
+The authors' fitted 1D velocity model, station corrections, picks, associated catalog, focal solutions and study scripts remain excluded. Generic PhaseNet/SeisBench, GaMMA and VELEST are attributed method software. The trained PhaseNet artifact is used for new inference; retraining is not claimed. All independent numerical figures read saved CSV or NPZ outputs. No figure was digitized. Published images appear only as labeled visual references in the separate comparison PDF; none substitutes for an output.
+
+\section{Data access and actual coverage}
+\input{report/resume_access.tex}
+The study interval is 21 January 2022 through 20 March 2025. All 26 full-period IV/2I station requests returned HTTP 413, explicitly citing a one-billion-sample limit. This is a request-size constraint, not evidence that the archive is unavailable. Half-hour requests were then executed for calendar-selected windows on 21 January 2022, 1 January 2023, 1 January 2024 and 20 March 2025. These windows were chosen independently of every earthquake catalog. Daily requests were also attempted; most timed out after 180 seconds, while two returned complete files. Failed transfers are not counted as full-day coverage. A resumable retrieval tool and exact input manifest accompany the project. Full-period download and processing remain unfinished.
+
+Complete response metadata was obtained for 26 station names in networks IV and 2I. This extends the previous four-station response inventory and includes four temporary-network stations. Metadata epochs do not prove continuous recording. The coverage figure uses returned miniSEED segments and preserves gaps. Coverage totals count each channel separately; they do not imply three-component coverage throughout every station interval. Some single-channel records do not support the three-component picker. Actual input files, channel segments, sampling rates, and unioned intervals are saved in the manifests and coverage tables.
+
+The INGV landing page fails local TLS issuer verification, whereas the official FDSN service works with normal verification. RAN's public pages are readable but waveform downloads require registration/login; credentials were unavailable. No account was created. Individual HTTP 204, HTTP 502 and timeout results remain explicit in the receipt files.
+
+The temporary/local ZIP's directory was read using HTTP byte ranges. It lists 319,890 members and approximately 3.845 GB of uncompressed content. Its actual filename station inventory includes CFB1, CFB3, CROS, V0102, V0105, CRUS and CMDP; it does not establish every station advertised on the landing page. One miniSEED member was read successfully, with 6001 samples over 60 seconds. These observations are cut around author-detected events and therefore cannot supply unbiased continuous event discovery. They were not used to seed analysis. The four 2I stations were instead accessed through continuous FDSN requests.
+
+\section{Independent processing and explicit departures}
+\subsection{Picking and provisional association}
+The picker uses released tensors with a strict tensor-only load, 100 Hz sampling, nominal 30-second windows, ENZ components, standard-deviation normalization, 1500-sample overlap, 250-sample edge blinding and a 0.3 P/S threshold. The release README specifies a 1 Hz highpass; four poles and a causal implementation are explicit choices. Extended processing uses 30-minute cores with 15-second context where recorded. Missing intervals are not interpolated. Repeated picks within 0.25 seconds at the same station and phase are merged by retaining the larger score. This merging tolerance is an assumption. S picks at CASE, CFB1 and CFB3 are excluded.
+
+The numerical starting profile cited by the paper is Cal\`o and Tramelli (2018). Its retrieved supplement presents that profile graphically; no numerical table was found, and its data statement offers data on request. No plot was digitized. The released fixed 3D file is identified in the model repository as the TomoDD input; the paper attributes its fixed background to Battaglia et al. (2008). Its original-release byte identity remains unverified. The file contains a $23\times14\times27$ grid of $V_P$ and $V_P/V_S$; $V_S$ is calculated by division before averaging.
+
+Two independent horizontal averages were computed: 14.02--14.20 degrees E, 40.77--40.86 degrees N, and a central box at 14.11--14.16 degrees E, 40.81--40.84 degrees N. These polygons are explicit assumptions, not inferred figure borders. Bounding nodes and the deep 200 km padding level are omitted from the association profile. Above sea level, the surface velocity is extended to station elevations rather than averaging air nodes. This profile is a sensitivity alternative; the associated events cannot be called an exact reproduction of the paper's first locations.
+
+GaMMA uses its 1D eikonal travel-time option with 0.1 km grid spacing. The association requires at least six picks, without separate P/S minima. Additional declared settings are a 10-second DBSCAN neighborhood, three minimum DBSCAN samples, fivefold mixture oversampling, a time-only likelihood, 1 second-squared covariance prior, horizontal bounds of $\pm12$ km and depth bounds of 0--8 km. Amplitude is omitted from association because the paper does not specify its association-amplitude configuration; the GaMMA placeholder magnitude is removed from saved events. These choices are in \path{config/association.json} and were not tuned against a supplied catalog.
+
+\subsection{Location quality and magnitude attempt}
+Travel-time residuals are recomputed from each provisional origin and the same eikonal model. I calculate
+\[
+R=\sqrt{\frac{1}{N}\sum_{k=1}^{N}(t_k-t_0-T_k)^2},
+\]
+and the largest unoccupied azimuth between distinct stations. The generic VELEST guidance requires more than six observations and a gap below 180 degrees for calibration candidates. This is a geometry screen, not acceptance of their waveform interpretations. The paper's 0.25-second rejection is a post-location criterion and is not imposed prematurely as a calibration prerequisite.
+
+The generic VELEST source builds after three platform-only repairs: a FORMAT trailing comma, the CPU clock, and the date/time routine. Its scientific inversion was not run. The small provisional candidate set does not constrain the chosen 21-level P/S model, hypocenters and station corrections. The paper used 373 calibration events. No author-fitted model fills this gap. Consequently, the prescribed VELEST residual-rejection sequence, two TomoDD rounds and regional HypoDD SVD uncertainty tests remain unexecuted.
+
+The magnitude attempt nevertheless measures available waveforms independently for all provisional events, without restricting it to the VELEST calibration subset. A recorded P pick defines the arrival, with the calculated P arrival used where only S is assigned. Full response removal produces velocity with a 0.1, 0.2, 35, 45 Hz prefilter and 60 dB water level; these are stated measurement assumptions, not fully specified publication settings. Signal and noise powers use five seconds after and two seconds before the arrival:
+\[
+\mathrm{SNR}=10\log_{10}(P_{\rm signal}/P_{\rm noise}).
+\]
+Observations below 5 dB are rejected. Candidate event pairs require at least two common stations and separation below one-fifth of both source--station distances. The measured equation is
+\[
+M_i-M_j=\log_{10}(A_{is}/A_{js}).
+\]
+The implemented least-squares objective weights channel equations by squared waveform correlation and uses routine $M_d$ priors with declared unit regularization weight. A connected component must contain measured amplitude-difference equations and a matched external anchor. It cannot acquire a magnitude merely because an external $M_d$ exists. This run produced no qualifying edge and therefore no calibrated magnitude. Completeness and b-value cannot be estimated from an empty independently calibrated sample.
+
+\subsection{Hybrid waveforms and search}
+The three templates use the times written in supplementary S9. Matching uses eight-second CAAM/COLB vertical windows, a causal four-pole 0.2--6 Hz filter, mean two-station normalized correlation above 0.25, eight-second peak separation and exclusion of ten-second segment edges. Every supported downloaded common interval is scanned, with duplicate exposure removed. This is not a three-year search.
+
+Candidate frequency indices use separate response-corrected, eight-second CAAM windows:
+\[
+\mathrm{FI}=\log_{10}(P_{8\text{--}15\,\mathrm{Hz}}/P_{2\text{--}5\,\mathrm{Hz}}).
+\]
+The matching bandpass is not reused for FI. Candidate waveform panels contain largely persistent broadband fluctuations and do not establish an isolated hybrid onset with a decaying low-frequency coda. All remain unconfirmed. No relative magnitude is assigned to a supposed hybrid cluster before common-source membership is established. The original three template displays remain useful observations; only the E3 example corresponds to S15C. E1/E2 displays are not S15A/B reproductions.
+
+\section{Supporting results, validation and final numerical comparison}
+\input{report/resume_results.tex}
+\input{report/final_comparison.tex}
+The association consistency test recovers one analytically constructed homogeneous-medium event with 16 P/S arrivals. It tests association and coordinates, not earthquake-detection accuracy or the adequacy of the alternative background profile. Probability bounds, S-pick exclusions, six-pick minima and assignment uniqueness are checked. The original 27 C++ equation checks and observational waveform/FI checks are retained and rerun. \input{report/results.tex}
+
+An additional inference comparison uses the generic original PhaseNet weights converted by SeisBench and the released retrained weights. It processes calendar-selected CSOB and CMIS observations with the same stated preprocessing. In the 1600-second CMIS window, the original model returns 17 P and 4 S picks, versus 11 P and 55 S picks from the retrained model. The waveform is dominated by persistent fluctuations. Without independently reviewed annotations, these counts establish neither greater sensitivity nor better accuracy. The 120-second CSOB window yields no original-model pick and one retrained S pick. Neither window is claimed to match S4's illustrated example. No retraining or labeled benchmark was executed. Saved probability arrays and both plots remain in the repository. The CMIS example is shown below as a reproduction diagnostic; the CSOB counts are retained here without repeating its figure.
+
+The location-consistency diagnostic compares observed and calculated S--P intervals at stations with both independently assigned phases. It does not validate location accuracy independently of the fitted model. No associated CPOZ P arrival exists in this sample, so the paper's arrival-aligned CPOZ sector gathers cannot yet be formed. Counts and residuals are saved in \path{data/extended/location_consistency.json}; no author pick fills this gap.
+
+The historical leveling calculation independently extracts 128 tabulated entries from the original Del Gaudio et al. supplement, March 1905--July 2009. It subtracts the March 1905 benchmark elevation. Display dates use the middle of the tabulated month; uncertain months remain flagged in the saved CSV. The resulting displacement ranges from $-1.266$ to $2.541$ m. Some source entries are estimates from photographs or earlier graphical reconstructions; their descriptions are retained. This investigation digitizes no graph. The original De Martino et al. (2021) supplement was subsequently retrieved from the publisher's static content host despite HTTP 403 on its main supplement page. Its RITE daily file supplies North, East and Up positions and uncertainties in meters, with Modified Julian Dates, through December 2019. I estimate a constant datum offset as the median difference between each overlapping leveling observation and the median GNSS Up value within 15 days. Both original series are retained; this assumes a common local displacement history and does not remove spatial differences between benchmarks. The offset and its median absolute deviation are recorded. Original daily observations for 2020--2023 remain missing. The December 2023 official monitoring bulletin gives a written approximate uplift of 1.19 m since November 2005. A separate endpoint is referenced to the median of the original November 2005 GNSS observations; no curve fills the intervening gap and no plot pixels supply values. A later interpolated compilation is excluded as a replacement.
+
+Routine catalog pages for 2005--2025 were retrieved for explicit external context and the permitted calibration role. The current study-period download has 19,274 records, of which 12,503 have location and depth, versus 12,083 events in the publication's S5. This 420-event difference must not be removed by matching an author event list. Possible causes include archive revisions or selection differences; they are not resolved here. Context counts include unlocated events where appropriate, whereas maps require coordinates. The three-year independent detection rate, relocation precision, ring-fault geometry and magnitude-frequency distribution cannot be validated from the limited provisional sample.
+
+After generating the displacement plot, I inspected the published Figure 1B visually. The sequence of early subsidence, uplift episodes and subsequent relaxation agrees qualitatively. The displayed vertical datum differs: the present plot subtracts the original table's March 1905 benchmark height of 3.464 m, whereas the source elevations are retained in the saved table. Absolute plot ordinates should therefore not be compared without accounting for the datum. No value was digitized or used to adjust the analysis from this comparison. The incomplete recent daily series precludes a full temporal reconstruction.
+
+
+
+
+
+
+
+
+
+
+\clearpage
+\section{Essential reproduction diagnostics and external context}
+The figures in this section are supporting evidence, not publication figures. They are excluded from both the main-paper/supplement figure sequence and the comparison PDF. Other diagnostic source data and scripts remain in the repository without additional report figures.
+
+\begin{figure}[H]\centering
+\includegraphics[width=.48\linewidth]{figures/background_profiles.pdf}
+\includegraphics[width=.94\linewidth]{figures/association_diagnostic.pdf}
+\captionsetup{name=Reproduction diagnostic}
+\caption{Alternative background averages and provisional association. The profiles explain the departure from the specified starting model, and the location/residual/gap panels show why an initial diagnostic cannot stand in for Figure 3 or the VELEST/TomoDD products. No calibrated structural result is claimed.}
+\end{figure}
+\begin{figure}[H]\centering
+\includegraphics[width=.86\linewidth]{figures/hybrid_candidate_review.pdf}
+\captionsetup{name=Reproduction diagnostic}
+\caption{Unconfirmed template-search candidates. Threshold crossings alone do not establish isolated hybrid onsets or common-source clusters. This evidence supports withholding a reproduced status from Figure S14.}
+\end{figure}
+\begin{figure}[H]\centering
+\includegraphics[width=.94\linewidth]{figures/picker_comparison_CMIS.pdf}
+\captionsetup{name=Reproduction diagnostic}
+\caption{Original and retrained PhaseNet inference on an unlabeled CMIS calendar window. Different pick counts without reference annotations do not establish comparative accuracy. This is not the published S4B example. The related CSOB arrays, figure and numerical counts remain available in the repository and text.}
+\end{figure}
+\begin{figure}[H]\centering
+\includegraphics[width=.94\linewidth]{figures/historical_catalog_context.pdf}
+\captionsetup{name=External context}
+\caption{Current routine INGV historical seismicity, related to the questions in Figure 1A/C. These are external catalog records, not independent detections, and retain the existing not-reproduced panel assessment.}
+\end{figure}
+\begin{figure}[H]\centering
+\includegraphics[width=.94\linewidth]{figures/routine_catalog_context.pdf}
+\captionsetup{name=External context}
+\caption{Current routine-catalog study-period locations, related to S5. The retrieved 12,503 located events differ from the publication's 12,083; neither selection matching nor independent reproduction is asserted.}
+\end{figure}
+
+\section{Completion status and remaining work}
+No publication panel is fully independently reproduced. Figure 1B and S1, S2, S15C are partial. All remaining main-text and supplementary panels are not reproduced, including those for which an external context plot is supplied. The full record gives each quantity, written specification, exact inputs, executed data/plot commands or null commands, and a specific limitation. Generic software access is distinguished from scientific execution.
+
+\input{report/stages_table.tex}
+The unresolved starting profile, missing acceleration access and incomplete full-period processing are distinct limitations. Lack of a full catalog is not attributed solely to the prompt. Full retrieval, qualified calibration-event selection, VELEST inversion, coherency-weighted differential times, TomoDD relocation, HypoDD uncertainty, reviewed polarities, SKHASH and gCAP inversion, complete magnitude statistics and multiyear hybrid classification remain necessary. Unknown settings require documented assumptions and sensitivity checks rather than hidden substitutions. No coupled physical model is invented.
+
+\section{Rebuild, provenance and replacement}
+The README gives environment creation, exact snapshot restoration and the full analysis rebuild command. For the present presentation-only revision, run \path{.venv/bin/python scripts/build_documents.py --clean} from the repository root. This compiles both PDFs from the existing saved results and local publication PDFs without running an analysis or changing numerical outputs. Its validation record is \path{report/document_build.json}. The checksums in \path{report/layout_baseline.json} freeze the numerical outputs and analytical scripts used for this revision. The original \path{data/manifest.sha256} and \path{data/build_log.json} remain evidence of the earlier scientific build; the document build has a separate hash record. The offline rebuild verifies supplied-source and downloaded-input checksums before removing generated products. It reruns the original checks and waveform processing, extended picking/association, analytic association validation, external context extraction, response-corrected amplitude/quality measurements, template scans, plotting, panel tables and the document builder, which runs two LaTeX passes for each PDF and verifies their order. This describes the full scientific rebuild; it was not rerun for this presentation-only revision. Command outcomes are saved in \path{data/build_log.json}. Input hashes and placement URLs are in \path{docs/rebuild_inputs.json}. Live routine pages can change; restoration refuses a mismatched hash and asks for the recorded snapshot or an explicit new provenance audit. Successful HTTP access is not taken as proof of reproducibility of an older mutable archive version.
+
+The 9 October scientific run replaced the previous report source/PDF, station/coverage figures, panel records, input policy, blocker descriptions and rebuild procedure. It preserved prior observational template figures, raw source documents, independent C++ checks and useful setup; historical erroneous products remain only in Git history. That run's outputs are saved under \path{data/extended/}. The 12 October presentation revision replaces the report source/PDF and adds the comparison PDF, separated sources and document-build records; its scientific files and panel classifications are unchanged. Exact replacement details are in \path{docs/REPLACEMENTS.md} and \path{docs/REPORT_LAYOUT.md}. Neither build declares the scientific project complete.
+
+All project inputs, environments and intermediate products reside under this repository in \path{inputs/}, \path{.venv/}, \path{tmp/} and \path{build/}. Standard dependency caches may reside in \path{/home/mehffin/.cache/pip}; the earlier initial SeisBench configuration remains in \path{/home/mehffin/.seisbench}. Current analysis redirects SeisBench, plotting and numba caches into the repository. Large inputs and generic software downloads are not committed. Their URLs, sizes, checksums or pinned revisions accompany the project.
+
+\section{Figure-by-figure record}
+The following table records every publication panel or labeled view. For every panel marked not reproduced, no command generates a claimed reproduction; null command fields in the machine-readable record mean unexecuted, not unavailable software. The complete per-panel input paths and command fields are in \href{https://github.com/mehffin-lang/campi-flegrei-independent-reproduction/blob/main/docs/panel_record.json}{\path{docs/panel_record.json}}. Each listed external file's exact URL, size and checksum appears in \path{docs/rebuild_inputs.json}. The partial panels use the recipes below, from the repository root. Each script is invoked with \path{.venv/bin/python scripts/NAME.py}; required upstream outputs are produced by \path{scripts/rebuild.py --clean}.
+
+\begin{itemize}
+\item 1B: data \path{context_data.py}; plot \path{plot_extended.py}. Inputs: \path{inputs/extended/delgaudio2010_table.doc}, \path{inputs/extended/demartino_supp.zip} (member \path{RITE_daily.txt}), and \path{inputs/extended/monthly_2023_12.pdf}.
+\item S1: data \path{analyze_observations.py} and \path{extended_analysis.py}; plot \path{plot_extended.py}. Inputs: all 171 miniSEED paths explicitly listed in the S1 record and frozen manifest. Actual recorded segments supply the plotted intervals.
+\item S2: data \path{analyze_observations.py} and \path{extended_analysis.py}; plot \path{plot_extended.py}. Inputs: \path{inputs/models/stations.csv}, \path{inputs/metadata/channels.txt}, and the 26 XML response files explicitly listed in the S2 record under \path{inputs/extended/responses/}.
+\item S15C: data \path{analyze_observations.py}; plot \path{plot_observations.py}. Inputs: \path{inputs/waveforms/E3_CAAM.mseed}, \path{inputs/waveforms/E3_COLB.mseed}, and \path{inputs/metadata/response.xml}.
+\end{itemize}
+External context recipes for 1A/C and S5 use \path{context_data.py} and \path{plot_extended.py}; the input routine HTML pages are identified row by row in the saved external CSV. Additional diagnostics use \path{compare_pickers.py}, \path{location_consistency.py}, or \path{review_hybrid_candidates.py}, with saved numerical outputs. These commands do not upgrade the corresponding unreproduced publication panels.
+
+\begingroup\footnotesize\input{report/panels_table.tex}\endgroup
+\section{Saved numerical tables and equation consistency checks}
+\subsection*{Original-waveform template frequency indices}
+These saved template measurements are supporting evidence, not a reproduction of the complete S14 cluster analysis. E1 and E2 are written-method templates, not the exact S15A/B illustrated events.
+\input{report/template_table.tex}
+\subsection*{Analytic fixtures}
+\begingroup\small\input{report/checks_table.tex}\endgroup
+\section{Sources}
+Primary specification: Tan et al. (2025), Science 390, 70--75, local \path{tanmodel.pdf} and \path{tanmodelsupp.pdf}. Original waveform and response source: \url{https://webservices.ingv.it/fdsnws/}. Required routine magnitude reference and external context: \url{https://terremoti.ov.ingv.it/gossip/flegrei/}. Original leveling table: Del Gaudio et al. (2010), doi:10.1016/j.jvolgeores.2010.05.014, publisher supplement \path{1-s2.0-S0377027310001745-mmc1.doc}. External background references: Battaglia et al. (2008), doi:10.1111/j.1365-2478.2007.00687.x; Cal\`o and Tramelli (2018), doi:10.1038/s41598-018-34456-x. Trained artifact and candidate fixed background release: \url{https://github.com/iamharrison2000/Campi-Flegrei-Earthquake-Monitoring}, revision pinned in the receipts. GaMMA: \url{https://github.com/AI4EPS/GaMMA}, revision \path{80394dd4a4c29450da599f507916ecf1db6203dd}. VELEST: \url{https://seg.ethz.ch/software/velest.html}. Additional source receipts record RAN, temporary observations, STEAD, HypoDD, SKHASH and gCAP. No Tan study-specific analysis or plotting script was used.

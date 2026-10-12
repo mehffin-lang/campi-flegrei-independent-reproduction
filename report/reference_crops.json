@@ -1,0 +1,306 @@
+[
+  {
+    "figure": "1",
+    "source": "tanmodel.pdf",
+    "source_sha256": "9651e54e369eed320504ffe9b7a04807c90f687d0b479f806799e4608ded9740",
+    "page": 2,
+    "crop_points": [
+      37,
+      37,
+      548,
+      302
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/F1.png",
+    "sha256": "2d3c51bfdb65c4f4c7433731b8efe37262a24b2635829eb3e426a6cad5cf29f2",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "2",
+    "source": "tanmodel.pdf",
+    "source_sha256": "9651e54e369eed320504ffe9b7a04807c90f687d0b479f806799e4608ded9740",
+    "page": 3,
+    "crop_points": [
+      37,
+      37,
+      408,
+      392
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/F2.png",
+    "sha256": "cb0e544276d652730be5fdc839c682529e9056bbd595ad7f2a4f5001b48755cb",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "3",
+    "source": "tanmodel.pdf",
+    "source_sha256": "9651e54e369eed320504ffe9b7a04807c90f687d0b479f806799e4608ded9740",
+    "page": 4,
+    "crop_points": [
+      37,
+      37,
+      370,
+      357
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/F3.png",
+    "sha256": "1c7ea5aa817bf535d6a71148d8f96edc8a5b494e3a6461c9228ac89d33b4578b",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "4",
+    "source": "tanmodel.pdf",
+    "source_sha256": "9651e54e369eed320504ffe9b7a04807c90f687d0b479f806799e4608ded9740",
+    "page": 5,
+    "crop_points": [
+      37,
+      37,
+      292,
+      373
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/F4.png",
+    "sha256": "9f37af26e5e7d7ba7f8dd7a208d45b3e144cc5095f67d03e450a21a80b3f1f76",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S1",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 12,
+    "crop_points": [
+      60,
+      65,
+      550,
+      679
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS1.png",
+    "sha256": "67b0615bf4f31286dbc3e805c91af48b49bea6fe7083a74b8557ef187be8226a",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S2",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 13,
+    "crop_points": [
+      60,
+      65,
+      550,
+      568
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS2.png",
+    "sha256": "916109b32adcec45e72c8a5c2dd348f5126eed342a4cd85e766a22c86a810d3d",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S3",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 14,
+    "crop_points": [
+      60,
+      65,
+      550,
+      458
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS3.png",
+    "sha256": "9c8e672efcef0bd11f8e340679274f423ee52ecace0c9f560daf70d54f159cfe",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S4",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 15,
+    "crop_points": [
+      60,
+      65,
+      550,
+      555
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS4.png",
+    "sha256": "b078ae1644ff64e7f1e42f728f1df6488bfe68201d3f9ea22d5859e6c5cd18dd",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S5",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 16,
+    "crop_points": [
+      60,
+      65,
+      550,
+      593
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS5.png",
+    "sha256": "bcd7e7f1c419fe52d5d1ca77335d709abc0978df03d9e97181ad1659e0444700",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S6",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 17,
+    "crop_points": [
+      60,
+      65,
+      550,
+      604
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS6.png",
+    "sha256": "e58a915dbfdc71faf23ba15dfdd6feeaf0ecb33e77f003e2e9c2b8cf40f89315",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S7",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 18,
+    "crop_points": [
+      60,
+      65,
+      550,
+      476
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS7.png",
+    "sha256": "5d67f6ba0c8d42eb0d392576933067625e16d19adfd058af782dff74b8fb9fc5",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S8",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 19,
+    "crop_points": [
+      60,
+      65,
+      550,
+      471
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS8.png",
+    "sha256": "66314c004f64752b02f3603746d01466967a48a2c9e7f1c23623a005deac889f",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S9",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 20,
+    "crop_points": [
+      60,
+      65,
+      550,
+      583
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS9.png",
+    "sha256": "fb6684d48ab47343ce1b6a1bab1dae715689e92accfed6812d1f4a3e798a964c",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S10",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 21,
+    "crop_points": [
+      60,
+      65,
+      550,
+      679
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS10.png",
+    "sha256": "721338d17ad52a423b6c1a6ae62806e677b0148aed43352661ee5b0550c5fca3",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S11",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 22,
+    "crop_points": [
+      60,
+      65,
+      550,
+      557
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS11.png",
+    "sha256": "fba7326fa7fd0d73432fc0cbe1a1a19e9434ed0a76e6df7fbf8feb228b52053b",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S12",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 23,
+    "crop_points": [
+      60,
+      65,
+      550,
+      572
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS12.png",
+    "sha256": "1e1806c79b098a01826b94b57e5432022881dac6ec86699eba53b3751ae9d8ac",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S13",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 24,
+    "crop_points": [
+      60,
+      65,
+      550,
+      638
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS13.png",
+    "sha256": "f552238eb225b6e893260e85b5d27084733b9faca85a104090f3293664d73618",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S14",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 25,
+    "crop_points": [
+      60,
+      65,
+      550,
+      559
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS14.png",
+    "sha256": "4b5925973fe13bd726bc3d2daf9285f8ce0832af2345f2a53637dc6bc360c97c",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  },
+  {
+    "figure": "S15",
+    "source": "tanmodelsupp.pdf",
+    "source_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "page": 26,
+    "crop_points": [
+      60,
+      65,
+      550,
+      461
+    ],
+    "display_dpi": 200,
+    "file": "report/reference_assets/FS15.png",
+    "sha256": "4fed96940952375d7c924e208963b99ca90f3eddb7f63910704c66db0047d1c9",
+    "role": "Published reference; comparison PDF only; no analytical input"
+  }
+]

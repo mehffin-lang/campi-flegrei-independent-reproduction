@@ -1,0 +1,423 @@
+[
+  {
+    "figure": "1",
+    "title": "Seismicity and ground displacement",
+    "source": "tanmodel.pdf",
+    "page": 2,
+    "crop_points": [
+      37,
+      37,
+      548,
+      302
+    ],
+    "panels": [
+      "1A",
+      "1B",
+      "1C"
+    ],
+    "partial_panels": [
+      "1B"
+    ],
+    "independent_files": [
+      "figures/historical_leveling_partial.pdf"
+    ],
+    "missing": "Panels 1A and 1C have no valid independent counterpart; existing routine-catalog plots are external context.",
+    "caption": "Panel 1B is partial: original leveling through 2009 and daily GNSS through 2019, with a separate written December 2023 monitoring endpoint. The vertical datum is relative to March 1905; daily observations for 2020--2023 are missing."
+  },
+  {
+    "figure": "2",
+    "title": "Temporal evolution of seismicity",
+    "source": "tanmodel.pdf",
+    "page": 3,
+    "crop_points": [
+      37,
+      37,
+      408,
+      392
+    ],
+    "panels": [
+      "2A",
+      "2B"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "Panels A and B require a multiyear calibrated, relocated catalog and magnitudes. Only nine provisional associations exist.",
+    "caption": "Seismicity rates by region and depth versus time are not reproduced."
+  },
+  {
+    "figure": "3",
+    "title": "Spatial distribution of seismicity",
+    "source": "tanmodel.pdf",
+    "page": 4,
+    "crop_points": [
+      37,
+      37,
+      370,
+      357
+    ],
+    "panels": [
+      "3/map",
+      "3/northing-depth",
+      "3/easting-depth"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "The map and both cross sections require independently calibrated and double-difference-relocated events. Provisional diagnostic locations are not substitutes.",
+    "caption": "Map, northing-depth and easting-depth views are not reproduced."
+  },
+  {
+    "figure": "4",
+    "title": "Focal mechanisms of larger events",
+    "source": "tanmodel.pdf",
+    "page": 5,
+    "crop_points": [
+      37,
+      37,
+      292,
+      373
+    ],
+    "panels": [
+      "4A",
+      "4B"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "Panels A and B require independent SKHASH/gCAP solutions and reliable locations. No focal inversion was executed.",
+    "caption": "Ring-sector and central/onshore focal-mechanism maps are not reproduced."
+  },
+  {
+    "figure": "S1",
+    "title": "Recorded station availability",
+    "source": "tanmodelsupp.pdf",
+    "page": 12,
+    "crop_points": [
+      60,
+      65,
+      550,
+      679
+    ],
+    "panels": [
+      "S1"
+    ],
+    "partial_panels": [
+      "S1"
+    ],
+    "independent_files": [
+      "figures/coverage_partial.pdf"
+    ],
+    "missing": "",
+    "caption": "Partial: actual returned waveform intervals from 171 files and 26 station names. Short retrieved windows are marked without implying continuous coverage between them; channel-hours are not full network-years."
+  },
+  {
+    "figure": "S2",
+    "title": "Station locations",
+    "source": "tanmodelsupp.pdf",
+    "page": 13,
+    "crop_points": [
+      60,
+      65,
+      550,
+      568
+    ],
+    "panels": [
+      "S2"
+    ],
+    "partial_panels": [
+      "S2"
+    ],
+    "independent_files": [
+      "figures/stations_partial.pdf"
+    ],
+    "missing": "",
+    "caption": "Partial: released station coordinates and retrieved IV/2I response metadata. Exact membership of the original 48 instruments, station epochs and the basemap are not fully reconciled."
+  },
+  {
+    "figure": "S3",
+    "title": "Training examples",
+    "source": "tanmodelsupp.pdf",
+    "page": 14,
+    "crop_points": [
+      60,
+      65,
+      550,
+      458
+    ],
+    "panels": [
+      "S3A",
+      "S3B",
+      "S3C",
+      "S3D"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "Panels A--D require the specified training traces, annotations and augmentation examples. These were not reconstructed; downstream use of trained weights is not retraining.",
+    "caption": "Noise, single-event and overlapping-event training examples are not reproduced."
+  },
+  {
+    "figure": "S4",
+    "title": "PhaseNet benchmark examples",
+    "source": "tanmodelsupp.pdf",
+    "page": 15,
+    "crop_points": [
+      60,
+      65,
+      550,
+      555
+    ],
+    "panels": [
+      "S4A",
+      "S4B"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "Panels A and B were not generated for the exact CSOB swarm and CMIS noise examples. Other unlabeled inference comparisons remain diagnostics.",
+    "caption": "The original benchmark examples and a labeled accuracy comparison are not reproduced."
+  },
+  {
+    "figure": "S5",
+    "title": "Routine-catalog locations",
+    "source": "tanmodelsupp.pdf",
+    "page": 16,
+    "crop_points": [
+      60,
+      65,
+      550,
+      593
+    ],
+    "panels": [
+      "S5/map",
+      "S5/northing-depth",
+      "S5/easting-depth"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "Current INGV routine-catalog plots are external context. The saved panel record contains no valid independent counterpart to these three views; the published selection/version is unresolved.",
+    "caption": "Map and two cross sections retain their not-reproduced status; external catalog plots are documented separately."
+  },
+  {
+    "figure": "S6",
+    "title": "Initial VELEST locations",
+    "source": "tanmodelsupp.pdf",
+    "page": 17,
+    "crop_points": [
+      60,
+      65,
+      550,
+      604
+    ],
+    "panels": [
+      "S6/map",
+      "S6/northing-depth",
+      "S6/easting-depth"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "The map and both cross sections require scientific VELEST location and velocity/station-correction runs. Compilation alone did not produce these results.",
+    "caption": "Initial-location map and cross sections are not reproduced."
+  },
+  {
+    "figure": "S7",
+    "title": "Location uncertainties",
+    "source": "tanmodelsupp.pdf",
+    "page": 18,
+    "crop_points": [
+      60,
+      65,
+      550,
+      476
+    ],
+    "panels": [
+      "S7A/map",
+      "S7A/easting-depth",
+      "S7B",
+      "S7D",
+      "S7F",
+      "S7C",
+      "S7E",
+      "S7G"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "Panels A--G require independently selected regional subsets, HypoDD SVD locations and coordinate uncertainties. None of these scientific inversions ran.",
+    "caption": "Regional locations, uncertainty-versus-count panels and uncertainty distributions are not reproduced."
+  },
+  {
+    "figure": "S8",
+    "title": "Magnitude calibration and frequency distribution",
+    "source": "tanmodelsupp.pdf",
+    "page": 19,
+    "crop_points": [
+      60,
+      65,
+      550,
+      471
+    ],
+    "panels": [
+      "S8A",
+      "S8B"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "Panels A and B require qualifying relative-amplitude equations and calibrated magnitudes. Zero qualifying equations were obtained; completeness and b-value were not estimated.",
+    "caption": "Local-versus-duration magnitude comparison and magnitude-frequency distribution are not reproduced."
+  },
+  {
+    "figure": "S9",
+    "title": "Best-located earthquake subset",
+    "source": "tanmodelsupp.pdf",
+    "page": 20,
+    "crop_points": [
+      60,
+      65,
+      550,
+      583
+    ],
+    "panels": [
+      "S9/map",
+      "S9/northing-depth",
+      "S9/easting-depth"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "All three views require independently relocated events and cross-correlation observation counts for the published quality filter. These outputs are absent.",
+    "caption": "The filtered map and cross sections are not reproduced."
+  },
+  {
+    "figure": "S10",
+    "title": "Seismicity by year",
+    "source": "tanmodelsupp.pdf",
+    "page": 21,
+    "crop_points": [
+      60,
+      65,
+      550,
+      679
+    ],
+    "panels": [
+      "S10/2022",
+      "S10/2023",
+      "S10/2024",
+      "S10/2025"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "The four annual groups for 2022--2025 require the independent multiyear relocated catalog. The available sample does not support them.",
+    "caption": "All four annual groups are not reproduced."
+  },
+  {
+    "figure": "S11",
+    "title": "Four major swarms",
+    "source": "tanmodelsupp.pdf",
+    "page": 22,
+    "crop_points": [
+      60,
+      65,
+      550,
+      557
+    ],
+    "panels": [
+      "S11/swarm-1",
+      "S11/swarm-2",
+      "S11/swarm-3",
+      "S11/swarm-4"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "The four swarm maps require the independent relocated catalog and justified swarm windows. These selections and locations remain incomplete.",
+    "caption": "All four swarm maps are not reproduced."
+  },
+  {
+    "figure": "S12",
+    "title": "Ring sectors and CPOZ common-receiver gathers",
+    "source": "tanmodelsupp.pdf",
+    "page": 23,
+    "crop_points": [
+      60,
+      65,
+      550,
+      572
+    ],
+    "panels": [
+      "S12A",
+      "S12B",
+      "S12C",
+      "S12D",
+      "S12E",
+      "S12F",
+      "S12G",
+      "S12H"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "Panels A--H require relocated sector selections and independently associated CPOZ P arrivals. The current associations contain zero CPOZ P arrivals.",
+    "caption": "Sector views and six arrival-aligned waveform gathers are not reproduced."
+  },
+  {
+    "figure": "S13",
+    "title": "Relocated seismicity on satellite imagery",
+    "source": "tanmodelsupp.pdf",
+    "page": 24,
+    "crop_points": [
+      60,
+      65,
+      550,
+      638
+    ],
+    "panels": [
+      "S13A",
+      "S13B"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "Panels A and B require reliable independent relocated coordinates and an appropriately sourced basemap. The relocated catalog does not exist.",
+    "caption": "Full-caldera and onshore spatial views are not reproduced."
+  },
+  {
+    "figure": "S14",
+    "title": "Hybrid-event clusters",
+    "source": "tanmodelsupp.pdf",
+    "page": 25,
+    "crop_points": [
+      60,
+      65,
+      550,
+      559
+    ],
+    "panels": [
+      "S14/1",
+      "S14/2",
+      "S14/3",
+      "S14/unclustered"
+    ],
+    "partial_panels": [],
+    "independent_files": [],
+    "missing": "The three clusters and unclustered group require a multiyear scan, confirmed events, frequency indices and cluster-relative magnitudes. Four current candidates are unconfirmed.",
+    "caption": "Cluster histories and annotated waveform collections are not reproduced."
+  },
+  {
+    "figure": "S15",
+    "title": "Hybrid and shallow-event waveforms",
+    "source": "tanmodelsupp.pdf",
+    "page": 26,
+    "crop_points": [
+      60,
+      65,
+      550,
+      461
+    ],
+    "panels": [
+      "S15A",
+      "S15B",
+      "S15C",
+      "S15D"
+    ],
+    "partial_panels": [
+      "S15C"
+    ],
+    "independent_files": [
+      "figures/hybrid_E3.pdf"
+    ],
+    "missing": "Panels A and B use different published events from the saved E1/E2 templates; D has no independently selected matching example. Those panels remain not reproduced.",
+    "caption": "Panel C is partial: independently processed E3 CAAM/COLB observations. Onset alignment, display filtering and spectral settings differ or are incompletely specified. A, B and D have placeholders rather than substitute waveforms."
+  }
+]

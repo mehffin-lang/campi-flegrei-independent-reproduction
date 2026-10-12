@@ -1,4 +1,4 @@
-"""Offline verified rebuild of bounded observational analysis, figures and report."""
+"""Offline verified rebuild of bounded observational analysis, figures and both PDFs."""
 from pathlib import Path
 import os,sys,json,hashlib,zipfile,subprocess,time
 ROOT=Path(__file__).resolve().parents[1];os.chdir(ROOT)
@@ -23,7 +23,7 @@ if '--clean' in sys.argv:
    for p in Path(folder).glob(pat):p.unlink()
 cmds=[['g++','-std=c++17','-O3','-Wall','-Wextra','-pedantic','src/method_checks.cpp','-o','build/method_checks'],['./build/method_checks','config/method_checks.cfg','data']]
 cmds += [[sys.executable,'scripts/'+s+'.py'] for s in ['analyze_observations','plot_observations','build_velest','extended_analysis','validate_association','compare_pickers','context_data','downstream_checks','location_consistency','extend_hybrid_scan','review_hybrid_candidates','resume_inventory','plot_extended','update_panel_record','report_tables','resume_report_tables']]
-latex=['pdflatex','-interaction=nonstopmode','-halt-on-error','-output-directory=report','report/report.tex'];cmds.extend([latex,latex]);logs=[]
+cmds.append([sys.executable,'scripts/build_documents.py','--clean']);logs=[]
 for cmd in cmds:
  start=time.monotonic();print('RUN '+' '.join(cmd),flush=True)
  p=subprocess.run(cmd,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,universal_newlines=True)

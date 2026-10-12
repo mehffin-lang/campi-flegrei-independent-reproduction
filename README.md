@@ -2,13 +2,29 @@
 
 This repository contains an executed but **incomplete scientific reproduction** of Tan et al. (2025). It independently processes original waveforms, performs provisional GaMMA association, measures response-corrected amplitudes, scans available hybrid-template windows, and extracts the original historical leveling table. It does not contain a reproduced multiyear relocated earthquake catalog or focal-mechanism solution set.
 
-Read [the PDF report](report/report.pdf), [panel record](docs/panel_record.json), [stage record](docs/stages.json), [input policy](docs/INPUT_POLICY.md), [remaining limits](docs/BLOCKERS.md), and [replacement record](docs/REPLACEMENTS.md). Actual execution counts are in [extended results](data/extended/summary.json), [downstream measurements](data/extended/downstream_summary.json), [hybrid search](data/extended/hybrid_summary.json), and [coverage](data/extended/access_summary.json).
+Read [the paper and reproduction report](report/report.pdf), [the comparison-only PDF](report/comparison.pdf), [panel record](docs/panel_record.json), [stage record](docs/stages.json), [input policy](docs/INPUT_POLICY.md), [remaining limits](docs/BLOCKERS.md), and [replacement record](docs/REPLACEMENTS.md). Actual execution counts are in [extended results](data/extended/summary.json), [downstream measurements](data/extended/downstream_summary.json), [hybrid search](data/extended/hybrid_summary.json), and [coverage](data/extended/access_summary.json).
 
 No publication panel is fully independently reproduced. **Partial: 1B, S1, S2, S15C.** All other publication panels are unreproduced. The routine-catalog plots related to 1A/C and S5 are explicitly **external context**, not independently detected events. Provisional association and candidate-review plots are additional diagnostics, not substitutes for relocated or confirmed-hybrid figures.
 
+## Build both PDFs from the saved results
+
+The paper follows Tan et al.'s main section sequence and Figures 1–4, then the original supplementary topics and Figures S1–S15. Full methods, access/provenance records, supporting numerical tables, diagnostics, limitations, panel status and rebuild details follow the reproduced supplement. Missing results remain labeled placeholders. The separate comparison PDF contains only 19 figure comparisons, in publication order, labeled **Published reference** and **Independent result**.
+
+From the repository root, with the existing environment and committed source documents/results:
+
+```bash
+.venv/bin/python scripts/build_documents.py --clean
+```
+
+This **presentation-only build** runs no scientific analysis and preserves the saved data, figures and analytical scripts. It requires Python with Pillow (already pinned), `pdftoppm`, `pdftotext`, and `pdflatex`; it uses no network access. It renders figure crops from the local supplied PDFs strictly for display in the comparison PDF, generates figure placeholders, compiles each PDF twice, and checks the final section/figure order, reference-image isolation and unchanged analysis-file hashes. `--clean` removes only document products. Generated reference crops remain ignored in `report/reference_assets/` and are recreated from the supplied PDFs.
+
+Sources: [report/report.tex](report/report.tex), [main paper](report/main_paper.tex), [reproduced supplement](report/reproduced_supplement.tex), [post-supplement documentation](report/reproduction_documentation.tex), and [report/comparison.tex](report/comparison.tex). The shared [figure layout](report/figure_layout.json) records the exact mapping. Generated LaTeX fragments are retained alongside the sources. See [layout/replacement details](docs/REPORT_LAYOUT.md), [document build result](report/document_build.json), and [build commands/log](report/document_build_log.json).
+
+The 12 October presentation revision preserves the 9 October numerical outputs. `data/build_log.json`, `data/build_status.json` and `data/manifest.sha256` remain records of that earlier scientific build, including its then-current report. Current document hashes are recorded separately in `report/document_build.json`; the historical data manifest is not a current-document checksum list.
+
 ## Rebuild the executed analysis
 
-Use this repository as the working directory. Requirements: Python 3.11, g++, gfortran, curl, Git, antiword, pdftotext, and pdflatex with the packages used in `report/report.tex`.
+Use this repository as the working directory. Requirements: Python 3.11, g++, gfortran, curl, Git, antiword, pdftoppm, pdftotext, and pdflatex with the packages used in `report/report.tex` and `report/comparison.tex`.
 
 ```bash
 mkdir -p tmp
@@ -20,7 +36,7 @@ TMPDIR="$PWD/tmp" .venv/bin/pip install --extra-index-url https://download.pytor
 
 The four supplied PDFs/ZIPs are retained at the repository root and verified before generated products are removed. The exact external input snapshot is [docs/rebuild_inputs.json](docs/rebuild_inputs.json): URLs, byte counts, SHA-256 hashes, and placement paths. Inputs and generic software are ignored under `inputs/`. Restoration verifies existing files and retrieves missing ones. **Live catalog pages can change:** a changed hash causes a clear failure; provide the recorded snapshot or explicitly audit a new source version. No changed source is silently accepted.
 
-The offline rebuild reruns C++ equation checks; original and extended waveform inference; provisional association; an analytic association test; original/retrained picker comparisons on unlabeled CSOB/CMIS windows; original leveling/GNSS and external catalog extraction; response correction, SNR/pair measurements, S–P and location quality checks; available-interval template scanning; candidate FI/waveform review; all plots and panel tables; and two LaTeX passes. Outcomes are saved in [data/build_log.json](data/build_log.json) and [data/build_status.json](data/build_status.json). The scientific-completion flag remains false even when the build passes.
+The offline rebuild reruns C++ equation checks; original and extended waveform inference; provisional association; an analytic association test; original/retrained picker comparisons on unlabeled CSOB/CMIS windows; original leveling/GNSS and external catalog extraction; response correction, SNR/pair measurements, S–P and location quality checks; available-interval template scanning; candidate FI/waveform review; all plots and panel tables; and the document builder above. Outcomes are saved in [data/build_log.json](data/build_log.json) and [data/build_status.json](data/build_status.json). The scientific-completion flag remains false even when the build passes. This full analysis command was not rerun for the presentation-only revision.
 
 ## Acquisition and limits
 

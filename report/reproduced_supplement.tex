@@ -1,0 +1,50 @@
+This supplement follows the original Materials and Methods topic sequence, then Figures S1--S15 and Tables S1--S2. It reports only outcomes supported by the saved independent calculations. Detailed processing settings, input inventories, assumptions and validation are collected after this supplement.
+
+\section*{Materials and Methods}
+\section{Building the Campi Flegrei high-resolution earthquake catalog}
+\paragraph{Data.} The independently retrieved station intervals and station inventory provide partial counterparts to Figures S1 and S2. They do not establish complete network coverage over the study period.
+\paragraph{Phase picking.} Inference with released trained weights produced 3,637 merged picks (560 P and 3,077 S). The training examples and exact benchmark windows in Figures S3 and S4 were not reproduced. Inference on other windows is supporting evidence only.
+\paragraph{Phase association.} GaMMA associated 63 picks into nine provisional events. These results are insufficient to replace the paper's later location products.
+\paragraph{Initial earthquake location.} Three events passed the stated geometry screen, but no scientific VELEST inversion was run. Figure S6 and Table S1 therefore have no independent counterpart. The current external routine catalog is contextual evidence for S5, not a replacement for independent locations.
+\paragraph{Earthquake relocation.} Neither TomoDD relocation nor regional HypoDD SVD uncertainty estimation has been executed. Figures S7 and S9--S13 retain their unreproduced status.
+\paragraph{Local magnitude.} Of 140 measured channel amplitudes, 23 passed the 5 dB SNR threshold, but no event pair supplied a qualifying magnitude-difference equation. There are no calibrated magnitudes, completeness estimate or b-value for Figure S8.
+\paragraph{Focal mechanism estimation.} SKHASH and gCAP inversions were not run. No independent mechanism is available for Figure 4.
+
+\section{Validation of earthquake locations}
+\paragraph{Ring-shaped structures with confined depth distributions.} The provisional associations do not establish a ring structure. Internal travel-time consistency is preserved in the documentation, but does not substitute for the regional uncertainty or common-receiver tests in Figures S7 and S12.
+\paragraph{Depth of earthquakes in the central region.} No associated CPOZ P arrival exists in the processed sample. The specified CPOZ waveform gathers and manual checks on apparently deep central events remain unperformed. No conclusion about a lower depth limit follows from their absence.
+
+\section{Template Matching to Detect Hybrid Events}
+The search covered 24.298 hours of available common CAAM/COLB intervals and returned four unconfirmed candidates. It did not produce independently confirmed families for Figure S14.
+\paragraph{Depth.} No independent hybrid-event location set is available for Table S2.
+\paragraph{Frequency index.} Frequency indices were calculated for the available template and candidate windows. Figure S15C displays the corresponding third written-method template. The first two templates are different examples from the published S15A/B panels and are not inserted in their place.
+\paragraph{Relative magnitude.} Cluster-relative magnitudes were not assigned because cluster membership has not been established.
+\paragraph{Temporal evolution of the hybrid events.} The limited exposure and unconfirmed detections do not support a three-year cluster history.
+\paragraph{Further search for HB/LP events.} Catalog-wide frequency-index and coda-contamination review remains incomplete.
+
+\clearpage
+\section*{Supplementary figures}
+\input{report/figure_sections/FS1.tex}
+\input{report/figure_sections/FS2.tex}
+\input{report/figure_sections/FS3.tex}
+\input{report/figure_sections/FS4.tex}
+\input{report/figure_sections/FS5.tex}
+\input{report/figure_sections/FS6.tex}
+\input{report/figure_sections/FS7.tex}
+\input{report/figure_sections/FS8.tex}
+\input{report/figure_sections/FS9.tex}
+\input{report/figure_sections/FS10.tex}
+\input{report/figure_sections/FS11.tex}
+\input{report/figure_sections/FS12.tex}
+\input{report/figure_sections/FS13.tex}
+\input{report/figure_sections/FS14.tex}
+\input{report/figure_sections/FS15.tex}
+
+\section*{Supplementary tables}
+\paragraph{Table S1: fitted one-dimensional velocity model --- not reproduced.}
+No independently fitted VELEST model exists. The author's tabulated fitted velocities are not copied into this result.
+\paragraph{Table S2: hybrid events in the relocated catalog --- not reproduced.}
+No independently relocated hybrid-event sample exists. The author's event parameters are not substituted.
+
+\section*{Supplementary data products}
+Independent counterparts of the final catalog (Data S1), associated phases of that final catalog (Data S2), focal mechanisms (Data S3), and the relocated interactive view (Interactive Plot S1) are not complete. The saved provisional products retain their existing labels. References and the complete provenance record follow in the reproduction documentation.
