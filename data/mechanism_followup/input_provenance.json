@@ -1,0 +1,712 @@
+{
+  "observations": [
+    {
+      "file": "inputs/continuation/waveforms/2I_CGAU_20250319T000000_20250319T060000.mseed",
+      "sha256": "d054d2101e23774df2c5234028efd98dc652676d2989ab57583a31d10191e10d",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CGAU_20250319T060000_20250319T120000.mseed",
+      "sha256": "00645ed546bd4977eb960920cd9cd9e8659c1f316be01d2e36e912ed0fa23258",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CGAU_20250319T120000_20250319T180000.mseed",
+      "sha256": "ea13f5e89fe3281a6a4794e18ee0d68308ddab56069e1ea8df52902955743bd2",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CGAU_20250320T060000_20250320T120000.mseed",
+      "sha256": "1e1267a9ddf2f53cce455531be21fff9c4556ab3157c7f0872698322ba7d9e67",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CGAU_20250320T120000_20250320T180000.mseed",
+      "sha256": "bc93e515272cecc4bbbc4a3d22196b7895ab4caa7967a6d6764facdcb8667e42",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CLAC_20250319T000000_20250319T060000.mseed",
+      "sha256": "fc1c3aa4b2ad88cef32fccd7360601acba209650df3f7d6f33fbd51215a61ceb",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CLAC_20250319T060000_20250319T120000.mseed",
+      "sha256": "3c43b971f6cd96992d8cc65dc580eb4097d59897e18dfa623caf729831b9a372",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CLAC_20250319T120000_20250319T180000.mseed",
+      "sha256": "f6594f0a106c74c006beb0d47f7045cc27ee86ed5ddeda6e7c3e6c5adaeca236",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CLAC_20250320T060000_20250320T120000.mseed",
+      "sha256": "1758c6164ceae0432a80869ac740033c3c59f57df1bd1b5b388334d7a5a7cf55",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CLAC_20250320T120000_20250320T180000.mseed",
+      "sha256": "a89f8ded95a38fa6742d7307a32a116e8ba85c797e03193a5da9cc2f97a2eab6",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CREM_20250319T060000_20250319T120000.mseed",
+      "sha256": "af1bfcc79cfd8dd5431783e0abb0e15499045ef1bcfec9d6c979139d75a9ab88",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CREM_20250319T120000_20250319T180000.mseed",
+      "sha256": "14db7387ddf22b737194bed0670a2677f7af90706c957df9537371c8d31502e0",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CREM_20250320T060000_20250320T120000.mseed",
+      "sha256": "2c275ea3e98406b80cfeea81ab709088bd830b73ae119cf59886c255dd1bb817",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CREM_20250320T120000_20250320T180000.mseed",
+      "sha256": "b478c380e74ee4ae20840622a9295f8a40c84a5c818096ea1e7a18d0bcbe297a",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CSOC_20250319T060000_20250319T120000.mseed",
+      "sha256": "eed2df8818f4f6ee1a9bf2dbebb7f26cf652c886c582c4e1b8b5fdfa250e1aeb",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CSOC_20250319T120000_20250319T180000.mseed",
+      "sha256": "656be2bf5277e3767869f118a6e0d73b10f86d7f017577467a626607bf3519d0",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CSOC_20250320T060000_20250320T120000.mseed",
+      "sha256": "9a134dfe6c36449110c8fe6b5fc7dea1c2bf010a8005568f8552c3ab11a56f02",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CSOC_20250320T120000_20250320T180000.mseed",
+      "sha256": "5dbc4cf281c91344872a6304106dc48bb89a7d72b160ff78e922e16a9ec8ceed",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250319T000000_20250319T060000.mseed",
+      "sha256": "57e8f71baad13402bac2e527c7891fd6cbb4df5379dc4dad9ed146b1a804072b",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250319T060000_20250319T120000.mseed",
+      "sha256": "117e8dd64d60e5bf7bda563b9014f7c59aa44a9e88bc7fc5a4aecc927ad0a5c1",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250319T120000_20250319T180000.mseed",
+      "sha256": "668feb1e736b71282675ae6cd251dc73e7a9a451ccb8d3178f8fe6eb674250cc",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250320T060000_20250320T120000.mseed",
+      "sha256": "05e0b0fed3204fb9348e96db1afdc882dbb8240636bac76e069f83deeebc9ecb",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250320T120000_20250320T180000.mseed",
+      "sha256": "0326507931ecc1c7cb47e48290c9eb1ab7901b4499659fadd77837c849e8c503",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CBAC_20250319T000000_20250319T060000.mseed",
+      "sha256": "637d1e25fcc6f992c4c515a4641af15f193d75a9253fbf7b1d10e436c5ebb98b",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CBAC_20250319T060000_20250319T120000.mseed",
+      "sha256": "2abd5cfa61d40f807600020a967e4f850c82c7a83b601ba2f300c3e7f12ad5aa",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CBAC_20250319T120000_20250319T180000.mseed",
+      "sha256": "aca64319181d28f633189f9106aff301f34a1997acc5bdc1ba7ca4c3bf851fe2",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CBAC_20250320T060000_20250320T120000.mseed",
+      "sha256": "8abfa7473620128ccf5c99246c034d49b1ba7b5882339732d3c9e4b8e54c904c",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CBAC_20250320T120000_20250320T180000.mseed",
+      "sha256": "d63f35d8e0066e336a90a85de2e4b84d3a8142aee64750c4395c5881862e31d9",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CBAG_20250319T000000_20250319T060000.mseed",
+      "sha256": "ca52eff07f619b8fb4bf88173bbf015d731bca4bb1f0a203adab2de4abbf2706",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CBAG_20250319T060000_20250319T120000.mseed",
+      "sha256": "52fd3a9fb8cadfea41b70af6feef38186fcbcfc35446996c25ec9f92e6c762c3",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CBAG_20250319T120000_20250319T180000.mseed",
+      "sha256": "8f0c9b993436b65d620f51c5b842d8dedee38bbc1ba4b12aae87ec94b970a223",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CBAG_20250320T060000_20250320T120000.mseed",
+      "sha256": "64a1ce6103dc9a8b4c00c3d5d1d99c70c933db55bc1a3ab5589ef5cf4911f035",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CBAG_20250320T120000_20250320T180000.mseed",
+      "sha256": "9cfac958abbd0f51958e0d2025a04b2e20a4b6be7baab7f5db47136c9becf349",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CCAP_20250319T000000_20250319T060000.mseed",
+      "sha256": "fa6522de31728028fb6a2fda3f10bfe6bc0acdc2f1192e3f151d034c2a835429",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CCAP_20250319T060000_20250319T120000.mseed",
+      "sha256": "8d0f10667a3a73831fd2cac3996bbd60b64fb8b39ea0d1ad3db79c87a90cda75",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CCAP_20250319T120000_20250319T180000.mseed",
+      "sha256": "3659e911dfaf72757b4469c8786e729907e9896e6fedf67c4b1f50c5d40417c4",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CCAP_20250320T060000_20250320T120000.mseed",
+      "sha256": "44e9e07be5981a6ea71d9ed2ee62dd7bcec71eeb055e5119c5bd42a9d5cefef0",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CCAP_20250320T120000_20250320T180000.mseed",
+      "sha256": "ad0cf3111b5f94364740e8338b293ceb33e05fd67635a40f30f1ac52df5dbe30",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB3_20250319T000000_20250319T060000.mseed",
+      "sha256": "7be2a31a8944f93abce8c967b0a26c9c3254c65ef3a75ca0851344ed4a882c5b",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB3_20250319T060000_20250319T120000.mseed",
+      "sha256": "77dc9476e9000041b56357313be8b3733c3c8c01c533d10ea081de0ac485f1e0",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB3_20250319T120000_20250319T180000.mseed",
+      "sha256": "691813178324cc8cd74edf6f90cefae3692c8a12c11183c60e0248bd13a9b7c9",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB3_20250320T060000_20250320T120000.mseed",
+      "sha256": "dfd15f8ec26f91f3e5c633d3dd5f7d1ef1e682fff46f5286a4bc847ad72c0b80",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB3_20250320T120000_20250320T180000.mseed",
+      "sha256": "49e46e230fd41daa345c3b6288608e141044ec1cdd5b4f398a3569d7d1ee8185",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFMN_20250319T000000_20250319T060000.mseed",
+      "sha256": "d9967cc681b6d0849b28cd2d18bbb44bb0cb605876415c5e7a93564a00912783",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFMN_20250319T060000_20250319T120000.mseed",
+      "sha256": "f7eb52b5e1090a3c7ea2c85f4574d61ef7d98d019423c1e4fef463ce65f1a4dc",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFMN_20250319T120000_20250319T180000.mseed",
+      "sha256": "6c29e53691688582d359bc9e3fb03d76e44c6452bc3927c0bf6777198bd031a4",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFMN_20250320T060000_20250320T120000.mseed",
+      "sha256": "5b58238ad34e298d1bea6a2e87d62dcd415a0a3a54dde2e1ef9e089848fcd702",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFMN_20250320T120000_20250320T180000.mseed",
+      "sha256": "08153971a87d6702ab7b67f5fea8dfb71b745f60fc718e3a9b7be09d21ff7473",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20250319T000000_20250319T060000.mseed",
+      "sha256": "75956a359e388366bde9390548f94c5c1bf56c3801b22c913f654f132ec35400",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20250319T060000_20250319T120000.mseed",
+      "sha256": "0afe5ff75862de892ed4a9e409698638e76fd8300163240e3564fc2a9bf666ed",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20250319T120000_20250319T180000.mseed",
+      "sha256": "3201bbbb668be7c2e9c7d73d8bec516c6bf4897c6a02b344238336e631b43778",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20250320T060000_20250320T120000.mseed",
+      "sha256": "1f127f81096ce32e172c7f0a3e89c873b263cab8bc131d35c736548e030bce77",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20250320T120000_20250320T180000.mseed",
+      "sha256": "dfb800946f68ef53873e7656e7d0593848fa0f66cbfd9aceaa951beec0a7896d",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20250319T000000_20250319T060000.mseed",
+      "sha256": "c96c2119dfc4c655cc611e82ca238261f0bddf9f3e2a1cb25b4f51be4bae5f72",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20250319T060000_20250319T120000.mseed",
+      "sha256": "f55959a35398c4c0058e99df547ef9170f8efbe4d0a4f6bd7ac219b37cb4c13a",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20250319T120000_20250319T180000.mseed",
+      "sha256": "02af9145aae8a10a86aedf0fab385648e867c397aaf3930aa23f7374cfa2dc9f",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20250320T060000_20250320T120000.mseed",
+      "sha256": "343ba2e985748e979fa31f5d15e3d16d61a805afa1a3d73d97a8d6e2df09994d",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20250320T120000_20250320T180000.mseed",
+      "sha256": "e73fbb1efec756c329e6dbeb5ddfa658cf04cb484a901e0556478447096fa615",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMTS_20250319T000000_20250319T060000.mseed",
+      "sha256": "3cce612d232c517d1fecd4a23f0338b07656c03b67cc4ef3234448b21eb17f65",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMTS_20250319T060000_20250319T120000.mseed",
+      "sha256": "ae0d81883769eaaadad2dafba1bae8a457051f123e4d993ca810f28c9b9d15fa",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMTS_20250319T120000_20250319T180000.mseed",
+      "sha256": "9090b66d3e4e7c312a45b777683cbba46d823737b9c6d10da0cbbfbdb770ed0a",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMTS_20250320T060000_20250320T120000.mseed",
+      "sha256": "b765e87da6f536724df4a949f831a2a595c2ebf2ad73039b47d895b02074f01f",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMTS_20250320T120000_20250320T180000.mseed",
+      "sha256": "f7b0249349126c01b73652348988e26207a3ae1e971e56d88075fd1ea16c51e3",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CNIS_20250319T060000_20250319T120000.mseed",
+      "sha256": "175afdeea3f48af2f614e43adcfa150a2092b99738246d9c530627e7b98697c9",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CNIS_20250319T120000_20250319T180000.mseed",
+      "sha256": "790f7c76ee51b3b18b8666fd65b2ae44816aebf97c3e96b39ffa29abe437614d",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CNIS_20250320T060000_20250320T120000.mseed",
+      "sha256": "40ba8c24f020d9ce6b8952b0a654efd7c4848a0c6388b99ab35d141b2874471d",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CNIS_20250320T120000_20250320T180000.mseed",
+      "sha256": "c5023cedf9d208ff98ab6e57d55a420c126e5baf61328e5d70a779b84fa0396c",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250319T000000_20250319T060000.mseed",
+      "sha256": "ef8046a6de6ac0a58de41bebf3667a647c38e71e86cb999d05635fcda50d4e0d",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250319T060000_20250319T120000.mseed",
+      "sha256": "8de299a0e1350d857d9d1f9a08f834a162f317016ecd7ede86ac5e81726d4107",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250319T120000_20250319T180000.mseed",
+      "sha256": "68f83d1c4a92323b045d8801c4c6bccf58537b039a001f42d7be04e5d8487968",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250320T060000_20250320T120000.mseed",
+      "sha256": "845f0f6bdd328eb0507770e4b4a1b3851ce09aeadd088faa2eaf8fe5e0c071ab",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250320T120000_20250320T180000.mseed",
+      "sha256": "cdd33f1e076e86ee244ca43bd45dceed05476d959c8ac538435ab82c4874d124",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CPIS_20250319T060000_20250319T120000.mseed",
+      "sha256": "fea5e5b551e4bdcbfe5e4b7aa2d8b19c2736e65a6539ae0354b4885591b3a8a2",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CPIS_20250319T120000_20250319T180000.mseed",
+      "sha256": "62c18264a99d2016d73fa2264e05ede3741ae51edd32b09fcefc3abb5860f5c2",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CPIS_20250320T060000_20250320T120000.mseed",
+      "sha256": "d64211e749537c06bdafa7050c3cf3f591ea098021423956bed62ee1020fdbe3",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CPIS_20250320T120000_20250320T180000.mseed",
+      "sha256": "c60f9bb35305a8b521e98e48ea347e12b56c111fa9f014eab50dacd1652507a7",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CPOZ_20250319T060000_20250319T120000.mseed",
+      "sha256": "17e4930ed8bafccb4b07252f6c18a78c11664552a67ca8f7a7ca7c0e4ce8ec10",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CPOZ_20250319T120000_20250319T180000.mseed",
+      "sha256": "1b4ec0a91105bd4122890424014052fa3fdce758fee63e0a1d4661194cbb90ac",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CPOZ_20250320T060000_20250320T120000.mseed",
+      "sha256": "fb95e2c03c9f79bbd51b68f2f2535a61a59f4a049651585ab0a342c7b66dbcca",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CPOZ_20250320T120000_20250320T180000.mseed",
+      "sha256": "e0e807c96442ae4c79034e3466a6fe90ef0142c7ae95988474d69d1c966f93ad",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CQUE_20250319T060000_20250319T120000.mseed",
+      "sha256": "4a4ade978e49b7d56cc7ebeef687ac0d63c3d0605bb792d0b8f137aaffea020a",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CQUE_20250319T120000_20250319T180000.mseed",
+      "sha256": "df8dae30a03d8d1dc715c1c84c3579ab063aad4b0e164c8454d429da9ae45cf5",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CQUE_20250320T060000_20250320T120000.mseed",
+      "sha256": "a9e73620c0d308e9fa1610fc38863b54d311dcdc4c27f5d1528a486757b371db",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CQUE_20250320T120000_20250320T180000.mseed",
+      "sha256": "b6a77a6489b2d970fb8a443ce265bfbc1eb5f38dcdf673587cf12ee07e17a1de",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CRUS_20250319T060000_20250319T120000.mseed",
+      "sha256": "2ba2aeda199f33b6631481b42073e64f11c25307245e91f2a0e06db3dc91622b",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CRUS_20250319T120000_20250319T180000.mseed",
+      "sha256": "3f3daf7bc6186c0ff138af73069faba125febbdc0d907533eae9d500b4756cd4",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CRUS_20250320T060000_20250320T120000.mseed",
+      "sha256": "c1996458dab1aef883f9278cd9d0adbfa544b96865206086b3e4a23e75c1c6df",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CRUS_20250320T120000_20250320T180000.mseed",
+      "sha256": "910d717b61b3e149f3085e29811c96eca1048aa7b824043107450ce39f72a474",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSFT_20250319T060000_20250319T120000.mseed",
+      "sha256": "50a119decc714c9d2db38b82de855cc26b27828a209d04b85117862226071995",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSFT_20250319T120000_20250319T180000.mseed",
+      "sha256": "57f8f447b6dfee7d29c71bdd75f7d269b24eb565d75a8d27a733c15bf8c6f0ef",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSFT_20250320T060000_20250320T120000.mseed",
+      "sha256": "28fe88d3007f9ebd3f648aabe9694c275f21f64b276d3cf96a5fa6dbf3a94981",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSFT_20250320T120000_20250320T180000.mseed",
+      "sha256": "0e31b6bac6beda57c2e387045760b9c5735c8af4d49083adcdecfa1903c3dc0f",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSOB_20250319T060000_20250319T120000.mseed",
+      "sha256": "329c47d281fb22ff9fc5ccc0db1d20ce008a46823c4cd2bff6c176bf63ebfccc",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSOB_20250319T120000_20250319T180000.mseed",
+      "sha256": "c2c30527f98a9f9791cdb3f935d4fff60006c18c7deb41259386110d4bf2a264",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSOB_20250320T060000_20250320T120000.mseed",
+      "sha256": "6b49d2f8d7ee2b7d92fa8a784ab19ab8d186eb5f14bac481b9b15bb82378fe34",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSOB_20250320T120000_20250320T180000.mseed",
+      "sha256": "40a933c1062d28604440caea17d55979702cf3188a0454fb1eb1f01b2af62363",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSTH_20250319T060000_20250319T120000.mseed",
+      "sha256": "bbf18f1c6f702e26b5333c27db0eeecdd788f075f397962711289ac0c2a810b6",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSTH_20250319T120000_20250319T180000.mseed",
+      "sha256": "b5cc109c9d8d6d7cd41cb80823af88e1fde1e65b66b1ca429e52c7415563a21a",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSTH_20250320T060000_20250320T120000.mseed",
+      "sha256": "ba75382af882bfc88b12a73d9902ceb5271d0aa386554492cbfc57217706cd79",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSTH_20250320T120000_20250320T180000.mseed",
+      "sha256": "a724c81cd14c884c9e5d1b5bbb0b565128f3e6fc40ad88329321c4953ccae6fd",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CUMA_20250319T060000_20250319T120000.mseed",
+      "sha256": "26c13e95b3c6d543287a69148b26f2ec52e62eddce970419d814e65605f01179",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CUMA_20250319T120000_20250319T180000.mseed",
+      "sha256": "9a4196d2f40e5d766b64bfee27636e8483a2c5da97d63e2b9cfa4f993b088a63",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CUMA_20250320T060000_20250320T120000.mseed",
+      "sha256": "3b4a52838f0a8c6121d950bdb5b4aa2a7e8c44c7665d2fb94a7f4df76365ec03",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CUMA_20250320T120000_20250320T180000.mseed",
+      "sha256": "3ebd3df7ab47b02221575b905ca48a2248d02827aed4acb93d3fdb6d1af5cbbc",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_PTMR_20250319T060000_20250319T120000.mseed",
+      "sha256": "e785862b7e497da5741ef401914204d0fa0b513951f991921ec6a62788aa9ef6",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_PTMR_20250319T120000_20250319T180000.mseed",
+      "sha256": "88cb0d6f15a3790ffd6fa750033206bf5a13144e48db6c96445cf1598a29c97a",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_PTMR_20250320T060000_20250320T120000.mseed",
+      "sha256": "1eda8f07efb386fdc23b5725ade311415fa7838b0ba771a329f77996adb9eb8c",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_PTMR_20250320T120000_20250320T180000.mseed",
+      "sha256": "7a439ed34451e6feb8a3a14823dd23129e4b8f295e74fb65b0c967d53598c899",
+      "classification": "Original waveform observation",
+      "role": "Phase and three-component amplitude inspection; response-corrected gCAP observation where accepted"
+    }
+  ],
+  "other_inputs": [
+    {
+      "file": "inputs/continuation/IV_responses.xml",
+      "sha256": "07545b22de0f7b9030f2064467b52ce428365b213c136477b05a5768c4dd62a3",
+      "classification": "Public metadata",
+      "role": "Response, orientation, position and epoch"
+    },
+    {
+      "file": "inputs/continuation/2I_responses.xml",
+      "sha256": "91c213556e69c7934686d80a497d25f43f8281ffe2411b6d39a5df4e77b9a784",
+      "classification": "Public metadata",
+      "role": "Response, orientation, position and epoch"
+    },
+    {
+      "file": "inputs/models/phasenet_retrained.pt",
+      "sha256": "7f2b2d4345b82232ded67ea554794f7ff148bee235d50b1772f3516833500059",
+      "classification": "Permitted trained method weights",
+      "role": "Tan-retrained PhaseNet inference; attribution and original source in prior model manifest"
+    },
+    {
+      "file": "data/grid_calibration/reference_grid.original",
+      "sha256": "dc36fe2a542fc7a3b6c473c48ec109c53ddd77a1721f509b920fea97fb0166f3",
+      "classification": "Permitted starting/reference grid",
+      "role": "Tan distribution attributed to Battaglia2008; dimension discrepancy disclosed, original preserved"
+    },
+    {
+      "file": "data/coverage_extension/calibration/merged4/independent_calibrated.mod",
+      "sha256": "7ec777db1a8d45558a68896d3eb845cc64f4c20ca80cae4d2ad6a054461cfa68",
+      "classification": "Independent provisional result",
+      "role": "Frozen cohort model for mechanism trials, not accepted physical model"
+    },
+    {
+      "file": "data/coverage_extension/calibration/merged4/uncertainty/relocated_events.csv",
+      "sha256": "a8261fa4fc814006a8d5ad656ef2f2d85e316c628c6cc7f8f5c26891c18c898d",
+      "classification": "Independent provisional result",
+      "role": "Frozen candidate locations, not Tan locations"
+    },
+    {
+      "file": "config/mechanism_visual_decisions.json",
+      "sha256": "103fad59530cdd9cfa8bd291fff04e2a88660f4eaccad59ff4d386e5df4800c5",
+      "classification": "Independent AI visual measurements",
+      "role": "Trace review decisions and signs, not human manual review"
+    },
+    {
+      "file": "config/mechanism_review_arrivals.csv",
+      "sha256": "14b5e5c2d7d3d8359ec18bf9cda621887931214c9a0ff4eb5edc4883c7bd1147",
+      "classification": "Independent AI visual measurement",
+      "role": "CFMN649 observed P onset, not author pick"
+    }
+  ],
+  "method_software": "data/mechanism_followup/method_resources.json",
+  "outputs": {
+    "review_waveforms.npz": "Observed response-corrected windows",
+    "measurements.csv": "Own measurements; raw automatic scores kept distinct from accepted review",
+    "gcap/solutions.csv": "Own unaccepted fitted results",
+    "gcap/run_records.zip": "Original waveform inputs plus theoretical Green functions/predictions, controls and logs; these predictions are not empirical observations"
+  },
+  "review": "AI visually inspected saved picked and broad unpicked records, with per-record decisions. Zero human reviews. The broad unpicked review predates the additional CFMN P pick.",
+  "published_references": "Display-only source PDFs/crops in separate comparison PDF; no reference pixels or Tan derived solution table used in these calculations",
+  "tests": "Only fixed-matrix eigensolver/rotation assertions; no synthetic observations or test fixtures in empirical tables"
+}

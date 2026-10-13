@@ -1,0 +1,8 @@
+event_id,low_band_VR_percent,high_band_VR_percent,double_couple_rotation_deg,accepted,reason
+212,6.9,7.1,79.02048423100017,False,Low waveform variance reduction and sensitivity to frequency band; own location/model unvalidated
+312,11.9,7.0,73.73948403480263,False,Low waveform variance reduction and sensitivity to frequency band; own location/model unvalidated
+315,14.8,6.4,97.93679022219459,False,Low waveform variance reduction and sensitivity to frequency band; own location/model unvalidated
+359,7.3,3.9,48.28830050335237,False,Low waveform variance reduction and sensitivity to frequency band; own location/model unvalidated
+373,3.9,5.0,34.19751222759397,False,Low waveform variance reduction and sensitivity to frequency band; own location/model unvalidated
+649,6.0,4.2,79.14568206754502,False,Low waveform variance reduction and sensitivity to frequency band; own location/model unvalidated
+815,9.2,2.3,80.5563842974781,False,Low waveform variance reduction and sensitivity to frequency band; own location/model unvalidated

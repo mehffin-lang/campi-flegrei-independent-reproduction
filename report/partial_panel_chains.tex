@@ -1,73 +1,70 @@
-\paragraph{Figure 1.} 1A, 1B, 1C. Data: \path{.venv/bin/python scripts/continue_context.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\paragraph{Figure 1.} 1A, 1B, 1C. Data: \path{.venv/bin/python scripts/continue_context.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}.
 \par\path{data/continuation/figure_1A.csv}
 \par\path{data/continuation/figure_1C.csv}
 \par\path{data/continuation/figure_1C_cumulative.csv}
 \par\path{data/continuation/historical_leveling.csv}
 \par\path{data/continuation/rite_gnss.csv}
-\par Output: \path{figures/figure_1_combined.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure 2.} 2A, 2B. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
-\par\path{data/grid_calibration/merged4/panels/sectors.csv}
-\par\path{data/grid_calibration/merged4/panels/weekly_counts.csv}
-\par Output: \path{figures/figure_2_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure 3.} 3/map, 3/northing-depth, 3/easting-depth. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
-\par\path{data/grid_calibration/merged4/panels/relocated.csv}
-\par Output: \path{figures/figure_3_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S1.} S1. Data: \path{.venv/bin/python scripts/extend_calibration_observations.py --workers 8 --output data/coverage_extension --reuse-own-days}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
-\par\path{data/coverage_extension/processed_coverage_union.json}
-\par Output: \path{figures/coverage_extension.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S2.} S2. Data: \path{.venv/bin/python scripts/station_geometry.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par Output: \path{figures/figure_1_combined.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure 2.} 2A, 2B. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
+\par\path{data/local_extension/calibration/merged4/panels/relocated.csv}
+\par\path{data/local_extension/calibration/merged4/panels/weekly_counts.csv}
+\par Output: \path{figures/figure_2_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure 3.} 3/map, 3/northing-depth, 3/easting-depth. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
+\par\path{data/local_extension/calibration/merged4/panels/relocated.csv}
+\par Output: \path{figures/figure_3_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure 4.} 4A, 4B. Data: \path{.venv/bin/python scripts/mechanism_measurements.py && .venv/bin/python scripts/run_reviewed_skhash.py && .venv/bin/python scripts/run_gcap_followup.py && .venv/bin/python scripts/run_gcap_followup.py --high-band && .venv/bin/python scripts/validate_mechanism_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
+\par\path{data/mechanism_followup/candidate_requirements.csv}
+\par\path{data/mechanism_followup/gcap/solutions.csv}
+\par\path{data/mechanism_followup/gcap_1_5/solutions.csv}
+\par Output: \path{figures/figure_4_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S1.} S1. Data: \path{.venv/bin/python scripts/process_local_followup.py --frozen --workers 4}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
+\par\path{data/local_extension/processed_coverage.csv}
+\par\path{data/local_extension/processed_coverage_union.json}
+\par\path{data/local_extension/short_window_inputs.json}
+\par Output: \path{figures/coverage_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S2.} S2. Data: \path{.venv/bin/python scripts/station_geometry.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}.
 \par\path{data/continuation/figure_S2.csv}
 \par\path{data/continuation/station_geometry_epochs.csv}
 \par\path{data/continuation/station_geometry_qa.csv}
-\par Output: \path{figures/continuation_stations.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S4.} S4A. Data: \path{.venv/bin/python scripts/benchmark_window.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par Output: \path{figures/continuation_stations.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S4.} S4A. Data: \path{.venv/bin/python scripts/benchmark_window.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}.
 \par\path{data/continuation/figure_S4A.npz}
 \par\path{data/continuation/figure_S4A_picks.json}
-\par Output: \path{figures/figure_S4A.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S5.} S5/map, S5/northing-depth, S5/easting-depth. Data: \path{.venv/bin/python scripts/continue_context.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par Output: \path{figures/figure_S4A.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S5.} S5/map, S5/northing-depth, S5/easting-depth. Data: \path{.venv/bin/python scripts/continue_context.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}.
 \par\path{data/continuation/figure_S5.csv}
-\par Output: \path{figures/figure_S5_routine.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S6.} S6/map, S6/northing-depth, S6/easting-depth. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
-\par\path{data/grid_calibration/merged4/panels/velest.csv}
-\par Output: \path{figures/figure_S6_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S7.} S7A/map, S7A/easting-depth, S7B, S7D, S7F, S7C, S7E, S7G. Data: \path{.venv/bin/python scripts/grid_uncertainty.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
-\par\path{data/grid_calibration/merged4/uncertainty/regional_svd.csv}
-\par Output: \path{figures/figure_S7_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S8.} S8A, S8B. Data: \path{.venv/bin/python scripts/downstream_checks.py --dataset grid --workers 6; .venv/bin/python scripts/magnitude_statistics.py --grid}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
-\par\path{data/grid_calibration/merged4/magnitude/amplitude_measurements.csv}
-\par\path{data/grid_calibration/merged4/magnitude/figure_S8A.csv}
-\par\path{data/grid_calibration/merged4/magnitude/figure_S8B.csv}
-\par\path{data/grid_calibration/merged4/magnitude/magnitude_edges.csv}
-\par\path{data/grid_calibration/merged4/magnitude/magnitude_statistics.json}
-\par\path{data/grid_calibration/merged4/magnitude/magnitudes.csv}
-\par\path{data/grid_calibration/merged4/magnitude/routine_matches.csv}
-\par Output: \path{figures/figure_S8_pilot.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S10.} S10/2022, S10/2023, S10/2024, S10/2025. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
-\par\path{data/grid_calibration/merged4/panels/year2022.csv}
-\par\path{data/grid_calibration/merged4/panels/year2023.csv}
-\par\path{data/grid_calibration/merged4/panels/year2024.csv}
-\par\path{data/grid_calibration/merged4/panels/year2025.csv}
-\par Output: \path{figures/figure_S10_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S11.} S11/swarm-2. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
-\par\path{data/grid_calibration/merged4/panels/swarm-1.csv}
-\par\path{data/grid_calibration/merged4/panels/swarm-2.csv}
-\par\path{data/grid_calibration/merged4/panels/swarm-3.csv}
-\par\path{data/grid_calibration/merged4/panels/swarm-4.csv}
-\par Output: \path{figures/figure_S11_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S12.} S12A, S12B, S12C, S12D, S12E, S12F, S12G, S12H. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
-\par\path{data/grid_calibration/merged4/panels/cpoz_gathers.npz}
-\par\path{data/grid_calibration/merged4/panels/cpoz_index.csv}
-\par\path{data/grid_calibration/merged4/panels/sectors.csv}
-\par Output: \path{figures/figure_S12_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S13.} S13A, S13B. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
-\par\path{data/grid_calibration/merged4/panels/relocated.csv}
-\par Output: \path{figures/figure_S13_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S14.} S14/1, S14/2, S14/3. Data: \path{.venv/bin/python scripts/extend_hybrid_scan.py --dataset grid; .venv/bin/python scripts/grid_hybrid_candidates.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par Output: \path{figures/figure_S5_routine.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S6.} S6/map, S6/northing-depth, S6/easting-depth. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
+\par\path{data/local_extension/calibration/merged4/panels/velest.csv}
+\par Output: \path{figures/figure_S6_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S7.} S7A/map, S7A/easting-depth, S7B, S7D, S7F, S7C, S7E, S7G. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
+\par\path{data/local_extension/calibration/merged4/panels/relocated.csv}
+\par\path{data/local_extension/calibration/merged4/uncertainty/regional_svd.csv}
+\par Output: \path{figures/figure_S7_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S8.} S8A, S8B. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
+\par\path{data/local_extension/calibration/merged4/magnitude/figure_S8A.csv}
+\par\path{data/local_extension/calibration/merged4/magnitude/figure_S8B.csv}
+\par Output: \path{figures/figure_S8_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S10.} S10/2022, S10/2023, S10/2024, S10/2025. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
+\par\path{data/local_extension/calibration/merged4/panels/relocated.csv}
+\par Output: \path{figures/figure_S10_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S11.} S11/swarm-2. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
+\par\path{data/local_extension/calibration/merged4/panels/swarm-2.csv}
+\par Output: \path{figures/figure_S11_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S12.} S12A, S12B, S12C, S12D, S12E, S12F, S12G, S12H. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
+\par\path{data/local_extension/calibration/merged4/panels/cpoz_gathers.npz}
+\par\path{data/local_extension/calibration/merged4/panels/cpoz_index.csv}
+\par\path{data/local_extension/calibration/merged4/panels/sectors.csv}
+\par Output: \path{figures/figure_S12_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S13.} S13A, S13B. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
+\par\path{data/local_extension/calibration/merged4/panels/relocated.csv}
+\par Output: \path{figures/figure_S13_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S14.} S14/1, S14/2, S14/3. Data: \path{.venv/bin/python scripts/extend_hybrid_scan.py --dataset grid; .venv/bin/python scripts/grid_hybrid_candidates.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}.
 \par\path{data/grid_calibration/merged4/hybrid/display_candidates.csv}
 \par\path{data/grid_calibration/merged4/hybrid/display_waveforms.npz}
 \par\path{data/grid_calibration/merged4/hybrid/hybrid_candidates.csv}
-\par Output: \path{figures/figure_S14_candidates.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
-\paragraph{Figure S15.} S15A, S15B, S15C. Data: \path{.venv/bin/python scripts/analyze_observations.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par Output: \path{figures/figure_S14_candidates.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\paragraph{Figure S15.} S15A, S15B, S15C. Data: \path{.venv/bin/python scripts/analyze_observations.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}.
 \par\path{data/observations/E1_CAAM_E_spectrum.npz}
 \par\path{data/observations/E1_CAAM_Z_spectrum.npz}
 \par\path{data/observations/E1_COLB_E_spectrum.npz}
@@ -75,4 +72,12 @@
 \par\path{data/observations/E1_waveforms.csv}
 \par\path{data/observations/E2_CAAM_E_spectrum.npz}
 \par\path{data/observations/E2_CAAM_Z_spectrum.npz}
-\par Output: \path{figures/hybrid_E1.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\par\path{data/observations/E2_COLB_E_spectrum.npz}
+\par\path{data/observations/E2_COLB_Z_spectrum.npz}
+\par\path{data/observations/E2_waveforms.csv}
+\par\path{data/observations/E3_CAAM_E_spectrum.npz}
+\par\path{data/observations/E3_CAAM_Z_spectrum.npz}
+\par\path{data/observations/E3_COLB_E_spectrum.npz}
+\par\path{data/observations/E3_COLB_Z_spectrum.npz}
+\par\path{data/observations/E3_waveforms.csv}
+\par Output: \path{figures/hybrid_E1.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.

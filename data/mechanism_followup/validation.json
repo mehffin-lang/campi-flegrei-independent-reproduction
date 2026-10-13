@@ -1,0 +1,33 @@
+{
+  "accepted": false,
+  "low_band": [
+    0.2,
+    2
+  ],
+  "high_band": [
+    1,
+    5
+  ],
+  "events": 7,
+  "low_band_variance_reduction_range_percent": [
+    3.9,
+    14.8
+  ],
+  "high_band_variance_reduction_range_percent": [
+    2.3,
+    7.1
+  ],
+  "orientation_rotation_range_deg": [
+    34.19751222759397,
+    97.93679022219459
+  ],
+  "method": "Minimum proper rotation of ordered T/B/P double-couple frames over four determinant-positive sign symmetries. This compares two own gCAP trials, not SKHASH versus gCAP, not author mechanisms.",
+  "mathematical_checks": {
+    "auxiliary_nodal_plane_rotation_deg": [
+      0.0,
+      1.2074182697257333e-06
+    ]
+  },
+  "SKHASH": "No surviving solution under unchanged 8-polarity/90-degree azimuth/60-degree plunge gates",
+  "limitations": "AI rather than human review; approximate phase windows; fixed provisional locations/model; undocumented event filters, density/Q and source duration; external-filter gCAP port. High-band trial did not validate mechanism inference."
+}

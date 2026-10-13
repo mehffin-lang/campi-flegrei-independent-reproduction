@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/mehffin/campi-flegrei-independent-reproduction/scripts/rebuild_local_followup.py", line 43, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/scripts/rebuild_local_followup.py", line 38, in main
+    run('build_documents.py','--clean')
+  File "/home/mehffin/campi-flegrei-independent-reproduction/scripts/rebuild_local_followup.py", line 17, in run
+    if result.returncode:raise RuntimeError(str(path))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: /home/mehffin/campi-flegrei-independent-reproduction/tmp/local_followup_rebuild/build_documents.py.log

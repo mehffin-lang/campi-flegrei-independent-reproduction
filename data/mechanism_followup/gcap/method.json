@@ -1,0 +1,20 @@
+{
+  "classification": "Independent exploratory waveform inversion using generic gCAP/FK; no synthetic observations",
+  "source_model": "data/coverage_extension/calibration/merged4/independent_calibrated.mod",
+  "model": [
+    "1.50000 1.50000 2.12000 1.44840 500 1000",
+    "2.00000 2.21000 2.58000 1.59560 500 1000",
+    "2.00000 3.23000 4.52000 2.21640 500 1000",
+    "0.00000 3.73000 5.59000 2.55880 500 1000"
+  ],
+  "source_depth": "Own bsl depth +0.5 km; reference free surface at -0.5 km bsl",
+  "receiver_depth": "Flat model surface; topographic receiver correction not implemented",
+  "rho": "FK documented fallback rho=0.77+0.32 Vp in g/cm3",
+  "Q": "FK defaults Qs=500 Qp=1000; not measured here",
+  "filter": "Both data and Green functions prefiltered 0.2\u20132 Hz, 4-pole zero-phase, then 20 Hz. Different ordering from stock gCAP segment filtering; exploratory assumption.",
+  "windows": "Own P-.3 to P+1.2; own S-.3 to S+4.7 s; maximum shifts .5 and 1 s; Pnl weight 2 and distance powers 1/.5; no automatic trace rejection",
+  "source": "Fixed own provisional location/depth, DC only, 10-degree strike/dip/rake grid, Mw step .1, 0.2-s trapezoidal duration. Settings are generic/disclosed, not recovered Tan event controls.",
+  "rotation": "Metadata-verified ZNE -> upward Z, outward radial R, counterclockwise T; cm/s; horizontal energy check passed for saved records",
+  "validation": "Finite Green functions and fit arrays; counts; rotation energy; eigensolver consistency. No model/path or source-depth sensitivity acceptance. Raw variance reduction is not a validation of source mechanism.",
+  "software": "Official FK 3.3 and generic Zhu gCAP, with disclosed cap_followup eigensolver/external-filter port; archive/extraction manifests in inputs/method_followup/"
+}

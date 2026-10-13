@@ -1,0 +1,132 @@
+{
+  "archive_sha256": "342366d7e07a7608d959d53dcb51977d4e46b37c122ca8f36d98e6e3d3af2208",
+  "modifications": "Build a disclosed gCAP port without proprietary numerical/filter libraries.\n\nThe unchanged grid-search/radiation code is the generic Zhu method resource.\nOwn Jacobi rotations replace the 3x3 curvature eigensolver; SciPy preprocessing\nperforms filtering before this binary is called. Internal filter calls abort.\nModified files and binary have distinct names as requested by the license.\nNo archive example, supplied Green function, observation or plotting code is used.\n",
+  "runs": [
+    {
+      "command": [
+        "cc",
+        "-O2",
+        "-c",
+        "cap_followup.c",
+        "-o",
+        "cap_followup.o"
+      ],
+      "returncode": 0,
+      "output": "cap_followup.c: In function \u2018main\u2019:\ncap_followup.c:228:23: warning: implicit declaration of function \u2018fttq_\u2019 [-Wimplicit-function-declaration]\n        if (tstarP>0.) fttq_(&dt, &tstarP, &j, &nqP, attnP);\n                       ^~~~~\n"
+    },
+    {
+      "command": [
+        "cc",
+        "-O2",
+        "-c",
+        "cap_sub_followup.c",
+        "-o",
+        "cap_sub_followup.o"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "cc",
+        "-O2",
+        "-c",
+        "fft.c",
+        "-o",
+        "fft.o"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "cc",
+        "-O2",
+        "-c",
+        "Complex.c",
+        "-o",
+        "Complex.o"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "cc",
+        "-O2",
+        "-c",
+        "radiats.c",
+        "-o",
+        "radiats.o"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "cc",
+        "-O2",
+        "-c",
+        "grid3d.c",
+        "-o",
+        "grid3d.o"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "cc",
+        "-O2",
+        "-c",
+        "sacio.c",
+        "-o",
+        "sacio.o"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "cc",
+        "-O2",
+        "-c",
+        "trap.c",
+        "-o",
+        "trap.o"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "gfortran",
+        "-O2",
+        "-std=legacy",
+        "-c",
+        "futterman.f"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "gfortran",
+        "-o",
+        "cap_followup",
+        "cap_followup.o",
+        "cap_sub_followup.o",
+        "fft.o",
+        "Complex.o",
+        "radiats.o",
+        "grid3d.o",
+        "sacio.o",
+        "trap.o",
+        "futterman.o",
+        "-lm"
+      ],
+      "returncode": 0,
+      "output": ""
+    }
+  ]
+}

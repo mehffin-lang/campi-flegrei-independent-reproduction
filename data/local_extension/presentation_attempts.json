@@ -1,0 +1,10 @@
+[
+  {
+    "attempt": "initial aggregate presentation rebuild",
+    "plotting_returncode": 0,
+    "report_integration_returncode": 0,
+    "document_returncode": 1,
+    "failure": "Compiled both PDFs but section-order assertion found missing Figure3/4 input macros; paragraph replacement consumed following source lines.",
+    "correction": "Restore F3/F4 inputs; restrict replacement to one source line; preserve computed plots and validate their hashes."
+  }
+]

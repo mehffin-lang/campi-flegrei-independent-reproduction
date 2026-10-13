@@ -1,0 +1,199 @@
+{
+  "common_events": 124,
+  "max_horizontal_m": 386.2773239778147,
+  "median_horizontal_m": 113.47326137931285,
+  "max_depth_km": 0.372,
+  "median_absolute_depth_km": 0.09500000000000008,
+  "gap_passing": 123,
+  "zero_cc_events": 34,
+  "more_than_100_cc": 0,
+  "interpretation": "Between-round changes test stability; LSQR errors are not SVD uncertainties. Different accepted observations prevent treating aggregate RMS change as a like-for-like fit improvement.",
+  "matched_observations": {
+    "cc": {
+      "n": 398,
+      "round1_rms_s": 0.041249567418746504,
+      "round2_rms_s": 0.03940160049535917
+    },
+    "picked": {
+      "n": 4367,
+      "round1_rms_s": 0.10737686702660604,
+      "round2_rms_s": 0.10130313718634282
+    }
+  },
+  "svd_runs": [
+    {
+      "name": "svd_Central_0",
+      "returncode": 0,
+      "starting_events": 42,
+      "svd": true,
+      "workdir": "tmp/local_extension/uncertainty/svd_Central_0",
+      "cluster_selection": "largest connected component only",
+      "output_events": 24,
+      "clusters": 1,
+      "median_depth_km": 3.2215,
+      "max_error_z_m": 1095.1,
+      "max_depth_km": 6.201,
+      "region": "Central",
+      "component": 0
+    },
+    {
+      "region": "Central",
+      "component": 1,
+      "starting_events": 2,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 2,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 3,
+      "starting_events": 2,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_North_0",
+      "returncode": 0,
+      "starting_events": 24,
+      "svd": true,
+      "workdir": "tmp/local_extension/uncertainty/svd_North_0",
+      "cluster_selection": "largest connected component only",
+      "output_events": 18,
+      "clusters": 1,
+      "median_depth_km": 0.895,
+      "max_error_z_m": 524.4,
+      "max_depth_km": 3.043,
+      "region": "North",
+      "component": 0
+    },
+    {
+      "region": "North",
+      "component": 1,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 2,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 3,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 4,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_North_5",
+      "returncode": 0,
+      "starting_events": 6,
+      "svd": true,
+      "workdir": "tmp/local_extension/uncertainty/svd_North_5",
+      "cluster_selection": "largest connected component only",
+      "output_events": 5,
+      "clusters": 1,
+      "median_depth_km": 3.601,
+      "max_error_z_m": 722.7,
+      "max_depth_km": 5.724,
+      "region": "North",
+      "component": 5
+    },
+    {
+      "region": "Southwest",
+      "component": 0,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 1,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_Southwest_2",
+      "returncode": 0,
+      "starting_events": 15,
+      "svd": true,
+      "workdir": "tmp/local_extension/uncertainty/svd_Southwest_2",
+      "cluster_selection": "largest connected component only",
+      "output_events": 15,
+      "clusters": 1,
+      "median_depth_km": 4.505,
+      "max_error_z_m": 840.7,
+      "max_depth_km": 5.368,
+      "region": "Southwest",
+      "component": 2
+    },
+    {
+      "region": "East",
+      "component": 0,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 1,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 2,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_East_3",
+      "returncode": 0,
+      "starting_events": 20,
+      "svd": true,
+      "workdir": "tmp/local_extension/uncertainty/svd_East_3",
+      "cluster_selection": "largest connected component only",
+      "output_events": 18,
+      "clusters": 1,
+      "median_depth_km": 2.9205,
+      "max_error_z_m": 1336.6,
+      "max_depth_km": 4.235,
+      "region": "East",
+      "component": 3
+    },
+    {
+      "region": "East",
+      "component": 4,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 5,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    }
+  ],
+  "svd_events": 80,
+  "masks": {
+    "Central": "longitude 14.14 E and latitude 40.82 N quadrant boundary; explicit alternative to unspecified paper masks",
+    "North": "longitude 14.14 E and latitude 40.82 N quadrant boundary; explicit alternative to unspecified paper masks",
+    "Southwest": "longitude 14.14 E and latitude 40.82 N quadrant boundary; explicit alternative to unspecified paper masks",
+    "East": "longitude 14.14 E and latitude 40.82 N quadrant boundary; explicit alternative to unspecified paper masks"
+  },
+  "uncertainty": "Generic HypoDD SVD reported 2-sigma errors in m; includes conditional measurement covariance, excludes velocity-grid/calibration/association/systematic bias. Every >=4-event six-phase-linked component attempted, not only the largest.",
+  "sources": {
+    "data/local_extension/calibration/merged4/tomodd/round1_locations.csv": "aa077bed2817623a716b691ece79c535fed441a006511dbd0cc90ec174e5f0a9",
+    "data/local_extension/calibration/merged4/tomodd/round2_locations.csv": "96d9fe870d6553640eb273dbf09b26ef6014aea8684a500405b57ed0ba1890a5",
+    "data/local_extension/calibration/merged4/tomodd/phase_pair_times.csv": "96efd4a998c96f4557a1ece8e87ace4d51761a55adbcc60ea735d828a7a69f22",
+    "data/local_extension/calibration/merged4/tomodd/accepted_differential_times.csv": "4051c3cf0ae110babdf39742c8c830d61beef5e8aba944a6e94da290343f2466",
+    "data/local_extension/calibration/merged4/independent_calibrated.mod": "7ec777db1a8d45558a68896d3eb845cc64f4c20ca80cae4d2ad6a054461cfa68"
+  }
+}

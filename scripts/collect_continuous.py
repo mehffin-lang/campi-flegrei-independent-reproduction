@@ -138,7 +138,7 @@ def run(args):
                 print('STOP: fewer than 20 GiB free on the shared filesystem.', flush=True)
                 break
             while len(active) < args.workers and (args.max_jobs is None or completed+len(active) < args.max_jobs):
-                job = conn.execute("SELECT * FROM jobs WHERE status='pending' ORDER BY (end-start), start, CASE WHEN station IN ('CAAM','COLB') THEN 0 ELSE 1 END,station LIMIT 1").fetchone()
+                job = conn.execute("SELECT * FROM jobs WHERE status='pending' AND attempts=0 ORDER BY (end-start), start, CASE WHEN station IN ('CAAM','COLB') THEN 0 ELSE 1 END,station LIMIT 1").fetchone()
                 if job is None:
                     break
                 conn.execute("UPDATE jobs SET status='running', attempts=attempts+1 WHERE id=?", (job['id'],))

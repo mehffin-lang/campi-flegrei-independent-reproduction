@@ -1,0 +1,53 @@
+ Input number_of_layers layer_src_at_botom rcv_layer
+ Input thickness of each layer and velocity
+ Input the number of distance ranges
+ Input distance range (in km)
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+ Input number_of_layers layer_src_at_botom rcv_layer
+ Input thickness of each layer and velocity
+ Input the number of distance ranges
+ Input distance range (in km)
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Input nlay src_layer src_type rcv_layer updn
+ Input thickness Vp Vs rho Qa Qb for layer           1
+   1   1.50   2.12   1.50   1.45 0.10E+04 0.50E+03
+ Input thickness Vp Vs rho Qa Qb for layer           2
+   2   1.80   2.58   2.21   1.60 0.10E+04 0.50E+03
+ Input thickness Vp Vs rho Qa Qb for layer           3
+   3   0.20   2.58   2.21   1.60 0.10E+04 0.50E+03
+ Input thickness Vp Vs rho Qa Qb for layer           4
+   4   2.00   4.52   3.23   2.22 0.10E+04 0.50E+03
+ Input thickness Vp Vs rho Qa Qb for layer           5
+   5   0.00   5.59   3.73   2.56 0.10E+04 0.50E+03
+source-station    3.301
+Input sigma NFFT dt lp nb smooth_factor wc1 wc2
+Input pmin pmax dk kc
+Input number of distance ranges to compute
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+  **** WARNING **** dk =   0.300000012      larger than max    1.14028137E-02
+  dk =  0.28551  kmax =  4.54  pmax =0.4525     N =    27465
+  start F-K computation, iw-range:           2           3         358         512
+  10% done
+  20% done
+  30% done
+  40% done
+  50% done
+  60% done
+  70% done
+  80% done
+  90% done
+    26896           100% done, writing files ... 
+model_3.301/2.414.grn.0
+model_3.301/2.414.grn.5
+model_3.301/2.125.grn.0
+model_3.301/2.125.grn.5
+model_3.301/2.580.grn.0
+model_3.301/2.580.grn.5
+model_3.301/2.644.grn.0
+model_3.301/2.644.grn.5
+model_3.301/1.343.grn.0
+model_3.301/1.343.grn.5

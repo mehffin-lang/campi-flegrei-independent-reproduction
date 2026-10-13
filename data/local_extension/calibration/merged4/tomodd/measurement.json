@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "neighbor_pairs": 1482,
+    "catalog_pair_phases": 5847,
+    "measured_channels": 9867,
+    "accepted_channels": 757,
+    "accepted_phase_delays": 539,
+    "window_failures": 13,
+    "max_cnv_rounding_s": 0.0016090000000001936
+  },
+  "files": {
+    "data/local_extension/calibration/merged4/filtered_events.csv": "e7b1644459eab36a6c94589afab1837ee188e4cd7c48cfe772555539bc88c09c",
+    "data/local_extension/picks.csv": "1e8db57cf9baa26b62d89e4946c148fb359266bb20039affcc1fea0f166d1c1a",
+    "data/local_extension/associations.csv": "96b031d783348709d3210ea794e48951df5c293fa713c1a86a7ee684a7c8395a",
+    "data/local_extension/calibration/merged4/tomodd/retained_picks.csv": "2a2cb264d824e851076a743b5d6e458481b334a8b20b998f487e291f4ea33b5c",
+    "data/local_extension/calibration/merged4/tomodd/observed_windows.npz": "50921949145c7e3af37122bf1a70e3a40207ee946696bb02da9c4022471b758e",
+    "data/local_extension/calibration/merged4/tomodd/phase_pair_times.csv": "96efd4a998c96f4557a1ece8e87ace4d51761a55adbcc60ea735d828a7a69f22",
+    "data/local_extension/calibration/merged4/tomodd/accepted_differential_times.csv": "4051c3cf0ae110babdf39742c8c830d61beef5e8aba944a6e94da290343f2466"
+  }
+}

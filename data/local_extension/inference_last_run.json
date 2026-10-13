@@ -1,0 +1,67 @@
+[
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220129T060000_20220129T120000.mseed",
+    "picks": 172,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220129T060000_20220129T120000.mseed",
+    "picks": 61,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220129T060000_20220129T120000.mseed",
+    "picks": 137,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220129T060000_20220129T120000.mseed",
+    "picks": 68,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220129T060000_20220129T120000.mseed",
+    "picks": 67,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220129T060000_20220129T120000.mseed",
+    "picks": 151,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220129T060000_20220129T120000.mseed",
+    "picks": 461,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CAAM_20220129T120000_20220129T180000.mseed",
+    "picks": 112,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220129T120000_20220129T180000.mseed",
+    "picks": 2,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220129T120000_20220129T180000.mseed",
+    "picks": 176,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220129T120000_20220129T180000.mseed",
+    "picks": 36,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220129T120000_20220129T180000.mseed",
+    "picks": 84,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220129T120000_20220129T180000.mseed",
+    "picks": 57,
+    "status": "processed"
+  }
+]

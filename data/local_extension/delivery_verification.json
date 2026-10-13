@@ -1,0 +1,27 @@
+{
+  "report": "report/report.pdf",
+  "comparison": "report/comparison.pdf",
+  "report_pages": 54,
+  "comparison_pages": 19,
+  "panel_views": 63,
+  "partial": 50,
+  "unreproduced": 13,
+  "fully_reproduced": 0,
+  "all_saved_panel_paths_exist": true,
+  "new_plot_input_output_hashes_verified": true,
+  "visual_inspection": [
+    "Standalone Figure3",
+    "Standalone Figure4",
+    "S1 actual-coverage plot",
+    "Mechanism waveform-fit diagnostic",
+    "Scientific report pages4,5,24,25",
+    "Comparison PDF page4",
+    "Comparison PDF page3"
+  ],
+  "visual_findings": "Legible scientific/provisional labels; Figure3 contains current numerical cohort. Figure4 gray fits explicitly unaccepted. Comparison original and independent sides distinct. Diagnostic confined to documentation; no scientific image clipping observed.",
+  "sha256": {
+    "report/report.pdf": "f63256c740504768d07532a705211f4f37472ab357c8e63ac7b33d00a441f684",
+    "report/comparison.pdf": "0581b8483fad3395548e1778defa032a48d39a598a85ca35412faf04c37344b6"
+  },
+  "scope": "All nine numerical calibration/downstream stages and mechanism attempts executed this turn. Final aggregate rebuild reused hash-verified plots; no second raw-waveform rerun is claimed."
+}

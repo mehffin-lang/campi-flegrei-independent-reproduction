@@ -1,0 +1,10 @@
+{
+  "current_inference_manifest_files": 859,
+  "previously_processed_baseline_files": 165,
+  "physical_mseed_files": 1024,
+  "processed_source_files": 1024,
+  "physical_files_not_in_processed_coverage": [],
+  "manifest_missing": [],
+  "mechanism_observation_files": 108,
+  "note": "859 current jobs plus 165 earlier independently processed baseline files, all original observations. Processing is not the same as obtaining valid picks for every fragment."
+}

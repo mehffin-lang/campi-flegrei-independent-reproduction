@@ -1,0 +1,22 @@
+make: Entering directory '/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk'
+gfortran -O2 -std=legacy -ffixed-line-length-none  -c -o fk.o fk.f
+gfortran -O2 -std=legacy -ffixed-line-length-none  -c -o kernel.o kernel.f
+gfortran -O2 -std=legacy -ffixed-line-length-none  -c -o prop.o prop.f
+gfortran -O2 -std=legacy -ffixed-line-length-none  -c -o source.o source.f
+gfortran -O2 -std=legacy -ffixed-line-length-none  -c -o bessel.o bessel.f
+cc -O   -c -o fft.o fft.c
+cc -O   -c -o Complex.o Complex.c
+cc -O   -c -o sacio.o sacio.c
+gfortran -O2 -std=legacy -ffixed-line-length-none  -c -o haskell.o haskell.f
+gfortran -O2 -std=legacy -ffixed-line-length-none  -c -o trav.o trav.f
+gfortran -O2 -std=legacy -ffixed-line-length-none  -c -o tau_p.o tau_p.f
+cc -O   -c -o sachd.o sachd.c
+gfortran -O2 -std=legacy -ffixed-line-length-none   -o fk fk.o kernel.o prop.o source.o bessel.o fft.o Complex.o sacio.o haskell.o -lm
+gfortran -O2 -std=legacy -ffixed-line-length-none   -o trav trav.o tau_p.o -lm
+cc -O    -o sachd sachd.o sacio.o -lm
+make: Leaving directory '/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk'
+sachd.c: In function ‘main’:
+sachd.c:29:15: warning: implicit declaration of function ‘sac_head_index’; did you mean ‘sac_head_inex’? [-Wimplicit-function-declaration]
+      ls[nl] = sac_head_index(argv[0]);
+               ^~~~~~~~~~~~~~
+               sac_head_inex

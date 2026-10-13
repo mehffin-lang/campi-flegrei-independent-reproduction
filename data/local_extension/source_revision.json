@@ -1,0 +1,7 @@
+{
+  "executed_source": "data/local_extension/executed_process_local_followup.py.txt",
+  "executed_sha256": "ef90941f083e6ceec83f123007957270e9e6eb5922a5ec64c873ccd04b688cbc",
+  "current_source": "scripts/process_local_followup.py",
+  "current_sha256": "ab309c79d1934897f0e04fcc3f7d47398de87bf8d202be14bc60ee5c4eb8b321",
+  "change": "After the executed run, added --frozen to read/verify the saved input manifest for repeat runs. No inference, association or numerical algorithm changed. Original executed source retained byte-for-byte."
+}

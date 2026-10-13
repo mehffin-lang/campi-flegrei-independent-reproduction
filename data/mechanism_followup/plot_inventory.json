@@ -1,0 +1,198 @@
+[
+  {
+    "files": [
+      "figures/figure_S6_local_followup.pdf"
+    ],
+    "corresponding_panel": "S6",
+    "note": "Separately frozen extended cohort; independent identifiers. Depth 0\u20135 km, integer ticks, jet_r; magenta above 5, white below 0. Full location axes. Uniform 3-point-squared symbols for S6; exact printed area unspecified.",
+    "inputs": {
+      "data/local_extension/calibration/merged4/panels/velest.csv": "477d72dbaea92ec9e64df42b444abeeecc579c100d69a8617d2cf537a48c2e8a",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_local_followup.py",
+    "outputs": {
+      "figures/figure_S6_local_followup.pdf": "5dba9d482bcf16f72127b8e082e13c3be6413fac0091f92ac188db1346267138"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_3_local_followup.pdf"
+    ],
+    "corresponding_panel": "3",
+    "note": "Separately frozen extended cohort; independent identifiers. Depth 0\u20135 km, integer ticks, jet_r; magenta above 5, white below 0. Full location axes. Own ML sizes where available; crosses otherwise. Published size formula unspecified: 0.7+3*10**(ML-2) points squared is explicit display assumption.",
+    "inputs": {
+      "data/local_extension/calibration/merged4/panels/relocated.csv": "77a9e44b7fde4729d4dc5bf33dc12c96e74a15c2e547ae12b4a79b9d6e99379d",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_local_followup.py",
+    "outputs": {
+      "figures/figure_3_local_followup.pdf": "ef7e3a38e6b472797b8866a8e0ea18d314eaf9ce7074b5a25ccff31139c0863e"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_2_local_followup.pdf"
+    ],
+    "corresponding_panel": "2A\u2013B",
+    "note": "Separately frozen extended cohort; independent identifiers. Weekly counts; no false zeros in unobserved weeks. Alternative masks. External routine counts distinct axis. No invented hybrid timings or magnitudes.",
+    "inputs": {
+      "data/local_extension/calibration/merged4/panels/weekly_counts.csv": "bfa0d76a36b3892de08019a9d0ab7f18b97c1d098b4a1d5aa1fd1dbff019450b",
+      "data/local_extension/calibration/merged4/panels/sectors.csv": "552e9c9879867f89c1a378a0f22debd483ad5ecb1779b83fcde25e919894ba81"
+    },
+    "command": ".venv/bin/python scripts/plot_local_followup.py",
+    "outputs": {
+      "figures/figure_2_local_followup.pdf": "bd847aa3ae1328c4a0038ae78c784846cdbbf989db576e19881ff42889507506"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S7_local_followup.pdf"
+    ],
+    "corresponding_panel": "S7 all views",
+    "note": "Separately frozen extended cohort; independent identifiers. Positive 2-sigma errors; zero NCC observations excluded only from log-count axes. Scott KDE in log10(error), explicitly differing from unspecified paper bandwidth. All outliers retained. No fixed 10 m target.",
+    "inputs": {
+      "data/local_extension/calibration/merged4/uncertainty/regional_svd.csv": "aba7333a22ad3ab636cefc3b653eadac02000ab76ad2ab3682f37d6eade1baea",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_local_followup.py",
+    "outputs": {
+      "figures/figure_S7_local_followup.pdf": "c7277d8043642f172ccef7eafb9bc65cc2daa160e55cf5759ef7c9acc3e1911b"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S10_local_followup.pdf"
+    ],
+    "corresponding_panel": "S10",
+    "note": "Separately frozen extended cohort; independent identifiers. Fixed original geographic display, black points; no magnitude-size mapping in these simple maps. Empty selection explicitly marked, not an empirical absence.",
+    "inputs": {
+      "data/local_extension/calibration/merged4/panels/year2022.csv": "29e9cc6e424a33d9b0025d6feb2c87dceea05b2a8719f2d1a76115630b7e5c8f",
+      "data/local_extension/calibration/merged4/panels/year2023.csv": "c2f2f8e0fee069dfce1ea18b938ce4aff8b94b6659a2e9157f134e0e03df6095",
+      "data/local_extension/calibration/merged4/panels/year2024.csv": "5febee3b5f7758d3bb1897af5943d00c1e1f3a3e704d49a6022a1bbd2c80489a",
+      "data/local_extension/calibration/merged4/panels/year2025.csv": "6a81ad24cdff0cee3002c55b5c7d75ca71186f3c6e8ddcbf652d8c82fb695af3",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_local_followup.py",
+    "outputs": {
+      "figures/figure_S10_local_followup.pdf": "295121b494677adbd87e1e1b093ec5b2b830e1ccae43a3d2b5fad2800f7d8a9d"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S11_local_followup.pdf"
+    ],
+    "corresponding_panel": "S11",
+    "note": "Separately frozen extended cohort; independent identifiers. Fixed original geographic display, black points; no magnitude-size mapping in these simple maps. Empty selection explicitly marked, not an empirical absence.",
+    "inputs": {
+      "data/local_extension/calibration/merged4/panels/swarm-1.csv": "2214cd41d20dd741e7ee52101c93e75e0a3d8babbc4d4c610224c79f997eb3c5",
+      "data/local_extension/calibration/merged4/panels/swarm-2.csv": "c2f2f8e0fee069dfce1ea18b938ce4aff8b94b6659a2e9157f134e0e03df6095",
+      "data/local_extension/calibration/merged4/panels/swarm-3.csv": "2214cd41d20dd741e7ee52101c93e75e0a3d8babbc4d4c610224c79f997eb3c5",
+      "data/local_extension/calibration/merged4/panels/swarm-4.csv": "2214cd41d20dd741e7ee52101c93e75e0a3d8babbc4d4c610224c79f997eb3c5",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_local_followup.py",
+    "outputs": {
+      "figures/figure_S11_local_followup.pdf": "9e5bda8525b8b78ce8189af46d76211b3cc7c201f2b9cba88958f4d2a61396d3"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S12_local_followup.pdf"
+    ],
+    "corresponding_panel": "S12",
+    "note": "Separately frozen extended cohort; independent identifiers. Actual P-aligned eight-second traces; normalized amplitudes -1..1, seismic diverging palette. No traces inferred between coordinates; 0.040 km display strip width only, not spatial averaging or uncertainty. Sector membership differs from unpublished masks.",
+    "inputs": {
+      "data/local_extension/calibration/merged4/panels/sectors.csv": "552e9c9879867f89c1a378a0f22debd483ad5ecb1779b83fcde25e919894ba81",
+      "data/local_extension/calibration/merged4/panels/cpoz_index.csv": "9eee29ea5004ce3dcde191f60071fa3d75e20f22649075bb65a849942a20306e",
+      "data/local_extension/calibration/merged4/panels/cpoz_gathers.npz": "ee46bdd3d74afc2d729ac4e2fc3534f2ccf8b92259889e31963ba8516f9718aa",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_local_followup.py",
+    "outputs": {
+      "figures/figure_S12_local_followup.pdf": "b580c936ae5bc07772eb9b12ccd46bd0a79157bdfb66d1dc43169a2a54ba205a"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S13_local_followup.pdf"
+    ],
+    "corresponding_panel": "S13A\u2013B",
+    "note": "Separately frozen extended cohort; independent identifiers. Own locations; no copied satellite/DEM or figure pixels. Basemap mismatch disclosed. Full data in saved table, explicit onshore display window.",
+    "inputs": {
+      "data/local_extension/calibration/merged4/panels/relocated.csv": "77a9e44b7fde4729d4dc5bf33dc12c96e74a15c2e547ae12b4a79b9d6e99379d",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_local_followup.py",
+    "outputs": {
+      "figures/figure_S13_local_followup.pdf": "487ebaf296da4339e816b9831b4904eadb6ab30b8263b6b80f4397f97ca14343"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S8_local_followup.pdf"
+    ],
+    "corresponding_panel": "S8A\u2013B",
+    "note": "Blue small dots, red own calibration fit, histogram and orange own conditional likelihood curve; full observed axes. Formal errors retained in source table.",
+    "inputs": {
+      "data/local_extension/calibration/merged4/magnitude/figure_S8A.csv": "e536fc46be4061bb74f2a69b89c6a596be728cceb09cdb26af356b4f2c7ee07c",
+      "data/local_extension/calibration/merged4/magnitude/figure_S8B.csv": "ff7b2b6c2f3e4950b6b82b24efa12fcb5cf1b5a062ab42b711e820ae2277903d",
+      "data/local_extension/calibration/merged4/magnitude/magnitude_statistics.json": "50065a52f6ef4e0fcb779053b47f8a01b711c1fb7125a913032405140248122b"
+    },
+    "command": ".venv/bin/python scripts/plot_local_followup.py",
+    "outputs": {
+      "figures/figure_S8_local_followup.pdf": "739f800f23798b76f63d993c0390b67b1feab6dc1e768017afd6ef3985b20567"
+    }
+  },
+  {
+    "files": [
+      "figures/coverage_local_followup.pdf",
+      "figures/coverage_local_followup.png"
+    ],
+    "corresponding_panel": "S1",
+    "note": "Actual intervals, no requested duration counted. Fixed-width ticks identify start times, not continuous exposure. Event-selected original windows distinguished from returned public intervals.",
+    "inputs": {
+      "data/local_extension/processed_coverage.csv": "9781534a17662aad23f0473293e0667ac8d2e34d3093703d31f1185aeac2a990",
+      "data/local_extension/short_window_inputs.json": "db7f9eaba0baee13920557320acd0c8fcda7e62e2858bade8f2dddfc5e8b8040"
+    },
+    "command": ".venv/bin/python scripts/plot_local_followup.py",
+    "outputs": {
+      "figures/coverage_local_followup.pdf": "779ce01c584e4cb406d3922924ebd4c99654ad2a77d57b72826918cbe491bc4f",
+      "figures/coverage_local_followup.png": "b0a3b2285b39c8dc0eaa97d1d8ff8ca98ed12ea0a66e92ffe5f596cff1ed894a"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_4_followup.pdf",
+      "figures/figure_4_followup.png"
+    ],
+    "corresponding_panel": "4A\u2013B",
+    "note": "Gray is a separate unvalidated class, not the publication red/blue quality mapping. Background depth 0\u20135 km jet_r, integer ticks, magenta >5. B has no independent DEM: depth, not published elevation. Beachballs uniform .35 km display width; no magnitude claim.",
+    "inputs": {
+      "data/mechanism_followup/gcap/solutions.csv": "5c480f5457bdde1d314431b173e2448059a6ef9ea90aaa275cd8f8525980169d",
+      "data/coverage_extension/calibration/merged4/panels/relocated.csv": "6e6fb34403e74456acff88bbb4c1a1b2537e288667e150c08e889b76b604fdb7",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_local_followup.py",
+    "outputs": {
+      "figures/figure_4_followup.pdf": "1dd8aa091a13bbba4daece372c4ddb74121bb8f0a35acc72d8da0f69448c0970",
+      "figures/figure_4_followup.png": "2c85a87909ee090db39443158d9fa38b5a4c80256a2ebf4a65bb4e11cc1474dc"
+    }
+  },
+  {
+    "files": [
+      "figures/mechanism_fit_diagnostic.pdf",
+      "figures/mechanism_fit_diagnostic.png"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "Even output suffix is observed, odd is theoretical. Stored SAC a includes fitted lag. One observed-peak normalization per pair; prediction amplitude not independently normalized.",
+    "inputs": {
+      "data/mechanism_followup/gcap/fit_index.csv": "3079af7293ae59a1182d614559d1162532870e25941485eeaacbf885176c9435",
+      "data/mechanism_followup/gcap/fit_waveforms.npz": "854c7cd7cabfdf583e3dd02ce14adec5505150c6452ba5a854878e42d2a6dc22"
+    },
+    "command": ".venv/bin/python scripts/plot_local_followup.py",
+    "outputs": {
+      "figures/mechanism_fit_diagnostic.pdf": "c93dd06e0decdbb5639ad21eff0029bdf990cdc380339cb2cee249c77f3ab57c",
+      "figures/mechanism_fit_diagnostic.png": "2004f90daa66a67e6fd5c931da4d4b93c36a885647ef92fb3c77752934d6ee9d"
+    }
+  }
+]

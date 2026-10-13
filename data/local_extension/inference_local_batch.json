@@ -1,0 +1,102 @@
+[
+  {
+    "file": "inputs/continuation/waveforms/IV_CAAM_20220129T100000_20220129T103000.mseed",
+    "picks": 4,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CAAM_20220129T103000_20220129T110000.mseed",
+    "picks": 10,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CAAM_20220129T110000_20220129T113000.mseed",
+    "picks": 9,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CAAM_20220129T113000_20220129T120000.mseed",
+    "picks": 9,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/local_inspection/20220121T014220_IV_CFB1_HHZ.mseed",
+    "picks": 0,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/local_inspection/20220121T032217_IV_CROS_EHE.mseed",
+    "picks": 2,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/local_inspection/20220316T101444_IV_CFB3_HHZ.mseed",
+    "picks": 0,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/local_inspection/20230714T110024_IV_V0102_EHE.mseed",
+    "picks": 6,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/local_inspection/20240314T162713_IV_V0105_EHE.mseed",
+    "picks": 2,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/local_inspection/20240513T131843_IV_CRUS_EHE.mseed",
+    "picks": 0,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/local_inspection/20250313T100251_IV_CMDP_HHE.mseed",
+    "picks": 0,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/resumption/S4_CSOB_20240520.mseed",
+    "picks": 27,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/waveforms/E1_CAAM.mseed",
+    "picks": 2,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/waveforms/E2_CAAM.mseed",
+    "picks": 5,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/waveforms/E1_COLB.mseed",
+    "picks": 20,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/waveforms/E2_COLB.mseed",
+    "picks": 6,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/waveforms/E3_CAAM.mseed",
+    "picks": 24,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/waveforms/E3_COLB.mseed",
+    "picks": 21,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220129T060000_20220129T120000.mseed",
+    "picks": 1,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220129T060000_20220129T120000.mseed",
+    "picks": 165,
+    "status": "processed"
+  }
+]

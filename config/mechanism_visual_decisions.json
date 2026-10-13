@@ -1,0 +1,44 @@
+{
+  "reviewer": "Codex AI visual inspection of original waveforms; not human/seismologist manual review",
+  "date": "2026-10-13",
+  "evidence": "data/mechanism_followup/review/event_*.png and unpicked_*.png; CFMN_649_onset.png",
+  "accepted_polarities": {
+    "212": {"CAAM": 1, "CFB3": 1, "CMIS": 1},
+    "312": {"CBAC": -1, "CFMN": -1, "CGAU": 1, "CPOZ": 1, "CREM": 1},
+    "315": {"CFMN": -1, "CGAU": 1, "CPOZ": 1, "CREM": 1},
+    "359": {"CFB3": 1, "CMIS": 1, "CREM": 1},
+    "373": {"CMIS": 1, "CREM": 1},
+    "649": {"CAAM": 1, "CBAC": -1, "CFB3": 1, "CFMN": 1, "CMIS": 1, "COLB": 1, "CPOZ": 1, "CREM": 1},
+    "698": {"CPOZ": 1},
+    "815": {"CGAU": -1, "CREM": 1, "CSFT": 1}
+  },
+  "accepted_sp_windows": {
+    "212": ["CAAM", "CBAC", "CGAU", "CMIS", "COLB"],
+    "312": ["CBAC", "CFMN", "CGAU", "CPOZ", "CREM"],
+    "315": ["CFMN", "CGAU", "CPOZ", "CREM"],
+    "359": ["CFMN", "CGAU", "CMIS", "CREM", "CSFT", "CSOB", "CSTH"],
+    "373": ["CAAM", "CMIS", "CREM", "CBAC"],
+    "649": ["CAAM", "CBAC", "CFMN", "CMIS", "COLB", "CPOZ", "CREM", "CSFT", "CNIS", "CSTH"],
+    "698": ["CPOZ"],
+    "815": ["CGAU", "CREM", "CSFT", "CSOB", "CSTH"]
+  },
+  "polarity_notes": {
+    "212_CMIS": "Upward precursor begins before the automatic pick; the later negative peak is not the first motion.",
+    "312_CBAC": "Small coherent first downward lobe precedes the larger upward peak.",
+    "312_CFMN": "First downward lobe starts just before the pick; later upward peak rejected as a polarity proxy.",
+    "312_CPOZ": "First upward pulse starts approximately 0.07 s after the automatic pick; timing is approximate.",
+    "315_CPOZ": "First upward pulse starts approximately 0.07 s after the automatic pick; timing is approximate.",
+    "359_CREM": "Clear upward onset starts about 0.06 s before the automatic pick; later negative peak is not the first motion.",
+    "649_CBAC": "Small initial downward lobe precedes the upward peak; counts and corrected velocity agree; conservative polarity weight 0.25.",
+    "649_CFMN": "Additional AI-picked P at 06:32:18.910 UTC; onset zoom verifies upward first coherent lobe. Human confirmation absent.",
+    "649_CMIS": "Initial lobe is upward, although the later larger lobe is downward. Automatic peak sign is superseded.",
+    "698_CGAU": "Reject polarity: small early downward deflection cannot be separated confidently from preceding fluctuations.",
+    "649_CMSN": "Reject polarity and ratio: onset is not separated from pre-arrival oscillations; amplitude QC also fails.",
+    "649_CGAU": "Reject polarity and ratio: weak first motion and strong pre-S oscillations make the selected packets ambiguous.",
+    "649_PTMR": "Reject polarity and ratio: broad low-frequency onset overlaps pre-arrival fluctuations; require expert arrival review.",
+    "649_CSOB": "Reject polarity and ratio: broad onset with appreciable precursor; S-window interpretation remains uncertain."
+  },
+  "general_rejection": "First break is emergent, comparable to preceding fluctuations, or ambiguous between the first lobe and a later peak. Do not equate automated peak SNR with a reviewed first motion.",
+  "unpicked_rejection": "No independent P. Broad waveform inspected, but P identity/first-motion sign remains unresolved. Several stations show later signal energy; absence of an accepted pick is not absence of a recording.",
+  "sp_caution": "Accepted only for exploratory inversion when amplitude QC also passes. Three-component P and S packet windows were visually inspected; no human review or validated uncertainty is implied."
+}

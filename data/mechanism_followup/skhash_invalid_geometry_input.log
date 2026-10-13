@@ -1,0 +1,27 @@
+========================
+SKHASH v1.1 (2025-12-17)
+========================
+Control file: /home/mehffin/campi-flegrei-independent-reproduction/data/mechanism_followup/control.txt
+Ignoring the stfile (/home/mehffin/campi-flegrei-independent-reproduction/data/mechanism_followup/stations.csv) because takeoff and azimuths are already provided.
+Discarded 7 earthquakes with fewer than 8 polarities.
+Creating lookup table (0/0): /home/mehffin/campi-flegrei-independent-reproduction/data/mechanism_followup/velocity.csv
+	Created table.
+Computing mechanisms in serial...
+/home/mehffin/campi-flegrei-independent-reproduction/.venv-skhash/lib/python3.11/site-packages/SKHASH/functions/fun.py:1028: RuntimeWarning: invalid value encountered in cast
+  i=np.round((p_b3+1.)/astep).astype(int)
+Traceback (most recent call last):
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv-skhash/bin/SKHASH", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv-skhash/lib64/python3.11/site-packages/SKHASH/SKHASH.py", line 554, in main
+    SKHASH()
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv-skhash/lib64/python3.11/site-packages/SKHASH/SKHASH.py", line 483, in SKHASH
+    mech_dict=compute_mech.compute_mech(event_x,num_events,event_id,group_pol_df.get_group(event_id),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv-skhash/lib/python3.11/site-packages/SKHASH/functions/compute_mech.py", line 110, in compute_mech
+    faultnorms_all,faultslips_all=fun.focal_gridsearch(sr_azimuth,takeoff,p_pol,sp_amp,dir_cos_dict,nextra,ntotal,qextra,qtotal,p_dict['maxout'],dir_cos_dict['ncoor'])
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv-skhash/lib/python3.11/site-packages/SKHASH/functions/fun.py", line 1030, in focal_gridsearch
+    theta=dir_cos_dict['thetable'][i]
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index -9223372036854775808 is out of bounds for axis 0 with size 361

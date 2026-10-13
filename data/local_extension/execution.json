@@ -1,0 +1,130 @@
+{
+  "started_utc": "2026-10-13T22:24:03.805696+00:00",
+  "scientifically_accepted": false,
+  "runs": [
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/prepare_grid_calibration.py"
+      ],
+      "environment": {
+        "CF_GRID_BASE": "data/local_extension/calibration",
+        "CF_GRID_WORK": "tmp/local_extension",
+        "CF_OBSERVATIONS": "data/local_extension"
+      },
+      "returncode": 0,
+      "log": "tmp/local_extension/prepare_grid_calibration.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/run_grid_velest.py",
+        "--coarse-four"
+      ],
+      "environment": {
+        "CF_GRID_BASE": "data/local_extension/calibration",
+        "CF_GRID_WORK": "tmp/local_extension",
+        "CF_OBSERVATIONS": "data/local_extension"
+      },
+      "returncode": 0,
+      "log": "tmp/local_extension/run_grid_velest.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/validate_grid_velest.py"
+      ],
+      "environment": {
+        "CF_GRID_BASE": "data/local_extension/calibration",
+        "CF_GRID_WORK": "tmp/local_extension",
+        "CF_OBSERVATIONS": "data/local_extension"
+      },
+      "returncode": 0,
+      "log": "tmp/local_extension/validate_grid_velest.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/run_grid_tomodd.py"
+      ],
+      "environment": {
+        "CF_GRID_BASE": "data/local_extension/calibration",
+        "CF_GRID_WORK": "tmp/local_extension",
+        "CF_OBSERVATIONS": "data/local_extension"
+      },
+      "returncode": 0,
+      "log": "tmp/local_extension/run_grid_tomodd.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_uncertainty.py"
+      ],
+      "environment": {
+        "CF_GRID_BASE": "data/local_extension/calibration",
+        "CF_GRID_WORK": "tmp/local_extension",
+        "CF_OBSERVATIONS": "data/local_extension"
+      },
+      "returncode": 0,
+      "log": "tmp/local_extension/grid_uncertainty.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/downstream_checks.py",
+        "--dataset",
+        "grid",
+        "--workers",
+        "4"
+      ],
+      "environment": {
+        "CF_GRID_BASE": "data/local_extension/calibration",
+        "CF_GRID_WORK": "tmp/local_extension",
+        "CF_OBSERVATIONS": "data/local_extension"
+      },
+      "returncode": 0,
+      "log": "tmp/local_extension/downstream_checks.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/magnitude_statistics.py",
+        "--grid"
+      ],
+      "environment": {
+        "CF_GRID_BASE": "data/local_extension/calibration",
+        "CF_GRID_WORK": "tmp/local_extension",
+        "CF_OBSERVATIONS": "data/local_extension"
+      },
+      "returncode": 0,
+      "log": "tmp/local_extension/magnitude_statistics.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_panel_data.py"
+      ],
+      "environment": {
+        "CF_GRID_BASE": "data/local_extension/calibration",
+        "CF_GRID_WORK": "tmp/local_extension",
+        "CF_OBSERVATIONS": "data/local_extension"
+      },
+      "returncode": 0,
+      "log": "tmp/local_extension/grid_panel_data.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_location_checks.py"
+      ],
+      "environment": {
+        "CF_GRID_BASE": "data/local_extension/calibration",
+        "CF_GRID_WORK": "tmp/local_extension",
+        "CF_OBSERVATIONS": "data/local_extension"
+      },
+      "returncode": 0,
+      "log": "tmp/local_extension/grid_location_checks.py.log"
+    }
+  ],
+  "finished_utc": "2026-10-13T22:38:53.313022+00:00"
+}

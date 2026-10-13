@@ -1,11 +1,13 @@
 [
   {
     "stage": "1. Collection",
-    "status": "The latest separately frozen extension contains 997 observed files from 26 station names, 8706.970 union channel-hours, 134,483 picks and 1,023 provisional associations (7,410 assigned picks). All returned study-period files in its manifest were processed. Instrument sensitivity and response stages cover all 8706.970 measured channel-hours; this checks epoch coverage, not absolute instrument calibration. The source-level gaps and failed/pending requests remain in its station-by-time ledger. Full-period acquisition remains unfinished, not demonstrated inaccessible. RAN waveform credentials remain unavailable."
+    "status": "Latest local extension: 1,024 files, 30 station names, 8,952.452 union channel-hours; four names only in short windows. Bounded batch: 19 downloads, one empty, zero failed. 73,917 pending requests; incomplete coverage.",
+    "current_evidence": "data/local_extension/report_summary.json; data/mechanism_followup/candidate_requirements.csv"
   },
   {
     "stage": "2. Phase picking",
-    "status": "Latest extension: 134483 own picks; frozen 1,015-association downstream cohort preserved separately."
+    "status": "136,376 own picks: 20,022 P and 116,354 S. All 33 newly included files processed; compatible prior caches and 165 old baseline files reused. Ten picks lack verified metadata and are excluded from association.",
+    "current_evidence": "data/local_extension/report_summary.json; data/mechanism_followup/candidate_requirements.csv"
   },
   {
     "stage": "3. Training / S3--S4",
@@ -13,35 +15,43 @@
   },
   {
     "stage": "4. Association",
-    "status": "Latest extension: 1023 provisional associations. Exact-data reuse of own daily solves and new changed-day runs are recorded; alternative association profile remains disclosed."
+    "status": "1,024 provisional GaMMA events, 7,416 assigned picks. Disclosed Tramelli2021 alternative profile; no author solutions. One new association fails later residual rejection.",
+    "current_evidence": "data/local_extension/report_summary.json; data/mechanism_followup/candidate_requirements.csv"
   },
   {
     "stage": "5. VELEST",
-    "status": "216 numerical-filter passes; common-start precision test isolates accumulated nonlinear path sensitivity. Held-out phase RMS worsens from 0.2177 to 0.2198 s; extended prelocation still oscillates. No scientific acceptance."
+    "status": "Latest cohort: 921 causal events, 38 calibration candidates, 219 filter passes. Precision-path depth difference 0.89 km and regional-start difference 1.04 km prevent scientific acceptance.",
+    "current_evidence": "data/local_extension/report_summary.json; data/mechanism_followup/candidate_requirements.csv"
   },
   {
     "stage": "6. TomoDD",
-    "status": "Both fixed-grid rounds executed; 123 final gap passes. Matched-observation residuals improve, but round-to-round shifts and calibration dependence remain. Numerical results plotted provisionally."
+    "status": "Both rounds rerun on latest cohort; 123 final gap passes, no extra retained event. Shared CC RMS 0.04125 to 0.03940 s; maximum inter-round movement 386 m / 0.372 km. No absolute-location validation.",
+    "current_evidence": "data/local_extension/report_summary.json; data/mechanism_followup/candidate_requirements.csv"
   },
   {
     "stage": "7. HypoDD SVD",
-    "status": "90 conditional SVD estimates returned from supported components in four alternative quadrants. Up to 4.002 km depth error; original regional masks and absolute accuracy unresolved."
+    "status": "80 conditional SVD estimates from supported components in explicit alternative quadrants; max vertical reported 2-sigma 1.337 km. Model/systematic bias excluded.",
+    "current_evidence": "data/local_extension/report_summary.json; data/mechanism_followup/candidate_requirements.csv"
   },
   {
     "stage": "8. Magnitudes",
-    "status": "5929 measurements, 1626 SNR passes, 884 equations, 65 current-cohort provisional magnitudes. Routine Md is calibration only."
+    "status": "5,887 channel measurements, 1,623 SNR passes, 884 equations, 67 provisional amplitude magnitudes. Routine Md used only as external calibration prior after own detection/location.",
+    "current_evidence": "data/local_extension/report_summary.json; data/mechanism_followup/candidate_requirements.csv"
   },
   {
     "stage": "9. Completeness / b",
-    "status": "Conditional selected-subset Mc=-0.00, b=0.866 +/- 0.110, N above Mc=41. Population completeness untested."
+    "status": "Conditional Mc=0.0, b=0.866 +/-0.110 from 41 selected magnitudes; not population completeness.",
+    "current_evidence": "data/local_extension/report_summary.json; data/mechanism_followup/candidate_requirements.csv"
   },
   {
     "stage": "10. Focal mechanisms",
-    "status": "Actual SKHASH attempt: 76 measurements, 35 stable automated polarities, zero solutions after unchanged polarity/gap filters. Manual review, S/P and gCAP/FK remain incomplete."
+    "status": "AI inspected 180 station-event records, 29 first motions and 41 S/P retained; zero human reviews. SKHASH zero solutions: seven candidates <8 signs, event649 gap96.57>90 deg. Seven FK/gCAP fits per band; VR3.9\u201314.8% /2.3\u20137.1%, orientation changes34\u201398deg; none accepted.",
+    "current_evidence": "data/local_extension/report_summary.json; data/mechanism_followup/candidate_requirements.csv"
   },
   {
     "stage": "11. Location checks",
-    "status": "118 actual P-aligned CPOZ traces; 382 positive S-P pairs, 0.1784 s approximate-model residual RMS; 44 deep events flagged for review. Exact masks and manual depth validation unresolved."
+    "status": "122 CPOZ component gathers, 383 positive S-P pairs; approximate own-model residual RMS0.1777s. 42 deep events flagged; manual depth validation incomplete.",
+    "current_evidence": "data/local_extension/report_summary.json; data/mechanism_followup/candidate_requirements.csv"
   },
   {
     "stage": "12. Hybrid search",

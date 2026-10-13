@@ -1,0 +1,99 @@
+make: Entering directory '/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk'
+gfortran -O2 -std=legacy  -c -o fk.o fk.f
+gfortran -O2 -std=legacy  -c -o kernel.o kernel.f
+gfortran -O2 -std=legacy  -c -o prop.o prop.f
+gfortran -O2 -std=legacy  -c -o source.o source.f
+gfortran -O2 -std=legacy  -c -o bessel.o bessel.f
+cc -O   -c -o fft.o fft.c
+cc -O   -c -o Complex.o Complex.c
+cc -O   -c -o sacio.o sacio.c
+gfortran -O2 -std=legacy  -c -o haskell.o haskell.f
+gfortran -O2 -std=legacy  -c -o trav.o trav.f
+aseries.h:22:72:
+
+       REAL vps(2,max_num_lay),den(max_num_lay),thk(max_num_lay),q(2,max_num_lay)
+                                                                        1
+Error: Expected another dimension in array declaration at (1)
+trav.f:28:21:
+
+         read(*,*) thk(i),vps(1,i)
+                     1
+Error: Syntax error in READ statement at (1)
+trav.f:29:13:
+
+  if (vps(1,i).LT.Vmin) vps(1,i) = Vmin
+             1
+Error: PROCEDURE attribute conflicts with COMMON attribute in ‘vps’ at (1)
+trav.f:30:8:
+
+         vps(1,i) = 1./vps(1,i)**2
+        1
+Error: Unclassifiable statement at (1)
+trav.f:31:6:
+
+  vps(2,i) = vps(1,i)
+      1
+Error: Unclassifiable statement at (1)
+trav.f:44:27:
+
+     ray_len(1,k) = thk(k)
+                           1
+Error: PROCEDURE attribute conflicts with COMMON attribute in ‘thk’ at (1)
+trav.f:46:26:
+
+     aa = AMIN1(aa,vps(1,k))
+                          1
+Error: PROCEDURE attribute conflicts with COMMON attribute in ‘vps’ at (1)
+trav.f:55:33:
+
+     ray_len(1,bttm) = 2.*thk(bttm)
+                                 1
+Error: PROCEDURE attribute conflicts with COMMON attribute in ‘thk’ at (1)
+trav.f:57:26:
+
+     aa = AMIN1(aa,vps(1,bttm))
+                          1
+Error: PROCEDURE attribute conflicts with COMMON attribute in ‘vps’ at (1)
+trav.f:60:26:
+
+     aa = AMIN1(aa,vps(1,bttm+1))
+                          1
+Error: PROCEDURE attribute conflicts with COMMON attribute in ‘vps’ at (1)
+trav.f:73:33:
+
+     ray_len(1,topp) = 2.*thk(topp)
+                                 1
+Error: PROCEDURE attribute conflicts with COMMON attribute in ‘thk’ at (1)
+trav.f:75:26:
+
+     aa = AMIN1(aa,vps(1,topp))
+                          1
+Error: PROCEDURE attribute conflicts with COMMON attribute in ‘vps’ at (1)
+trav.f:78:43:
+
+            if (topp.GT.1) aa = AMIN1(aa,vps(1,topp-1))
+                                           1
+Error: PROCEDURE attribute conflicts with COMMON attribute in ‘vps’ at (1)
+aseries.h:25:34:
+
+       COMMON/model/num_lay,vps,den,thk,q,src_lay,src,nCom,
+                                  1
+Error: Symbol ‘den’ at (1) has no IMPLICIT type
+aseries.h:25:40:
+
+       COMMON/model/num_lay,vps,den,thk,q,src_lay,src,nCom,
+                                        1
+Error: Symbol ‘q’ at (1) has no IMPLICIT type
+aseries.h:25:38:
+
+       COMMON/model/num_lay,vps,den,thk,q,src_lay,src,nCom,
+                                      1
+Error: Symbol ‘thk’ at (1) has no IMPLICIT type
+aseries.h:25:30:
+
+       COMMON/model/num_lay,vps,den,thk,q,src_lay,src,nCom,
+                              1
+Error: Symbol ‘vps’ at (1) has no IMPLICIT type
+make: *** [<builtin>: trav.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: Leaving directory '/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk'

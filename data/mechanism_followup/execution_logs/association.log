@@ -1,0 +1,184 @@
+Processing 13 new waveform files on 4 workers.
+{'file': 'inputs/continuation/waveforms/IV_CFMN_20220129T060000_20220129T120000.mseed', 'picks': 172, 'status': 'processed'}
+{'file': 'inputs/continuation/waveforms/IV_CMIS_20220129T060000_20220129T120000.mseed', 'picks': 61, 'status': 'processed'}
+{'file': 'inputs/continuation/waveforms/IV_CMSN_20220129T060000_20220129T120000.mseed', 'picks': 137, 'status': 'processed'}
+{'file': 'inputs/continuation/waveforms/IV_CPOZ_20220129T060000_20220129T120000.mseed', 'picks': 68, 'status': 'processed'}
+{'file': 'inputs/continuation/waveforms/IV_CSFT_20220129T060000_20220129T120000.mseed', 'picks': 67, 'status': 'processed'}
+{'file': 'inputs/continuation/waveforms/IV_CSOB_20220129T060000_20220129T120000.mseed', 'picks': 151, 'status': 'processed'}
+{'file': 'inputs/continuation/waveforms/IV_CSTH_20220129T060000_20220129T120000.mseed', 'picks': 461, 'status': 'processed'}
+{'file': 'inputs/continuation/waveforms/IV_CAAM_20220129T120000_20220129T180000.mseed', 'picks': 112, 'status': 'processed'}
+{'file': 'inputs/continuation/waveforms/IV_CFB1_20220129T120000_20220129T180000.mseed', 'picks': 2, 'status': 'processed'}
+{'file': 'inputs/continuation/waveforms/IV_CFMN_20220129T120000_20220129T180000.mseed', 'picks': 176, 'status': 'processed'}
+{'file': 'inputs/continuation/waveforms/IV_CMIS_20220129T120000_20220129T180000.mseed', 'picks': 36, 'status': 'processed'}
+{'file': 'inputs/continuation/waveforms/IV_CMSN_20220129T120000_20220129T180000.mseed', 'picks': 84, 'status': 'processed'}
+2026-10-13 15:21:52,550 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-13 15:21:52,603 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:21:52,604 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:21:54,218 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-13 15:21:54,265 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:21:54,265 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:21:55,596 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-13 15:21:55,645 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:21:55,645 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:21:55,645 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:21:56,912 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-13 15:21:56,952 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:21:56,952 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:21:56,952 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:21:58,211 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-13 15:21:58,257 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:21:59,708 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-13 15:22:01,400 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-13 15:22:01,447 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:22:01,447 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:22:02,732 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-13 15:22:04,148 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-13 15:22:05,592 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-13 15:22:05,647 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:22:05,648 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples. Output might be empty.
+2026-10-13 15:22:06,906 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+2026-10-13 15:22:08,499 | seisbench | WARNING | Parts of the input stream consist of fragments shorter than the number of input samples or misaligned traces. Output might be empty.
+{'file': 'inputs/continuation/waveforms/IV_COLB_20220129T120000_20220129T180000.mseed', 'picks': 57, 'status': 'processed'}
+2022-01-21 picks 9899 events 49
+2022-01-22 picks 4861 events 5
+2022-01-23 picks 5700 events 7
+2022-01-24 picks 4998 events 26
+2022-01-25 picks 6019 events 30
+2022-01-26 picks 8059 events 38
+2022-01-27 picks 6980 events 3
+2022-01-28 picks 5586 events 13
+Eikonal Solver: 
+Iter 0, error = 999.941
+Iter 1, error = 0.000
+Time: 5.443
+Eikonal Solver: 
+Iter 0, error = 999.895
+Iter 1, error = 0.000
+Time: 0.092
+Clustering (eps=8.33):   0%|          | 0/63 [00:00<?, ?it/s]Clustering (eps=8.33): 100%|██████████| 63/63 [00:00<00:00, 35564.09it/s]
+Associating 62 clusters with 6 CPUs
+2022-01-29 picks 3198 events 5
+2022-04-01 picks 339 events 4
+2022-07-01 picks 195 events 0
+2022-10-01 picks 187 events 0
+2023-01-01 picks 389 events 0
+2023-04-01 picks 308 events 0
+2023-07-01 picks 270 events 0
+2023-10-01 picks 273 events 2
+2024-01-01 picks 2538 events 4
+Eikonal Solver: 
+Iter 0, error = 999.941
+Iter 1, error = 0.000
+Time: 0.097
+Eikonal Solver: 
+Iter 0, error = 999.895
+Iter 1, error = 0.000
+Time: 0.092
+Clustering (eps=8.33):   0%|          | 0/2 [00:00<?, ?it/s]Clustering (eps=8.33): 100%|██████████| 2/2 [00:00<00:00, 9915.61it/s]
+Associating 1 clusters with 6 CPUs
+2024-03-08 picks 11 events 0
+2024-04-01 picks 630 events 4
+Eikonal Solver: 
+Iter 0, error = 999.941
+Iter 1, error = 0.000
+Time: 0.091
+Eikonal Solver: 
+Iter 0, error = 999.895
+Iter 1, error = 0.000
+Time: 0.091
+Clustering (eps=8.33):   0%|          | 0/3 [00:00<?, ?it/s]Clustering (eps=8.33): 100%|██████████| 3/3 [00:00<00:00, 16754.88it/s]
+Associating 2 clusters with 6 CPUs
+2024-05-06 picks 22 events 0
+Eikonal Solver: 
+Iter 0, error = 999.941
+Iter 1, error = 0.000
+Time: 0.091
+Eikonal Solver: 
+Iter 0, error = 999.895
+Iter 1, error = 0.000
+Time: 0.091
+Clustering (eps=8.33):   0%|          | 0/4 [00:00<?, ?it/s]Clustering (eps=8.33): 100%|██████████| 4/4 [00:00<00:00, 19021.79it/s]
+Associating 3 clusters with 6 CPUs
+2024-05-20 picks 27 events 0
+2024-07-01 picks 511 events 2
+2024-10-01 picks 427 events 0
+2025-01-01 picks 597 events 5
+Eikonal Solver: 
+Iter 0, error = 999.941
+Iter 1, error = 0.000
+Time: 0.091
+Eikonal Solver: 
+Iter 0, error = 999.895
+Iter 1, error = 0.000
+Time: 0.091
+Clustering (eps=8.33):   0%|          | 0/2 [00:00<?, ?it/s]Clustering (eps=8.33): 100%|██████████| 2/2 [00:00<00:00, 12905.55it/s]
+Associating 1 clusters with 6 CPUs
+2025-02-17 picks 45 events 0
+2025-03-01 picks 788 events 10
+2025-03-19 picks 32177 events 309
+2025-03-20 picks 41332 events 508
+{
+  "picks": 136376,
+  "p_picks": 20022,
+  "s_picks": 116354,
+  "events": 1024,
+  "assigned_picks": 7416,
+  "processed_channel_hours": 8952.452264379923,
+  "stations": [
+    "CAAM",
+    "CAWE",
+    "CBAC",
+    "CBAG",
+    "CCAP",
+    "CFB1",
+    "CFB3",
+    "CFMN",
+    "CGAU",
+    "CLAC",
+    "CMDP",
+    "CMIS",
+    "CMSN",
+    "CMTS",
+    "CNIS",
+    "COLB",
+    "CPIS",
+    "CPOZ",
+    "CQUE",
+    "CREM",
+    "CROS",
+    "CRUS",
+    "CSFT",
+    "CSOB",
+    "CSOC",
+    "CSTH",
+    "CUMA",
+    "PTMR",
+    "V0102",
+    "V0105"
+  ],
+  "files": 1024,
+  "checks": {
+    "probability_bounds": true,
+    "excluded_s_absent": true,
+    "minimum_six_picks": true,
+    "unique_assigned_picks": true,
+    "valid_pick_indices": true
+  },
+  "status": "Partial: published alternative starting profile, incomplete continuous acquisition, no VELEST/TomoDD final catalog.",
+  "alternative_profile": "Tramelli et al. (2021), Table 1; not asserted identical to Calo--Tramelli (2018).",
+  "settings": {
+    "highpass_hz": 1,
+    "corners": 4,
+    "zerophase": false,
+    "P_threshold": 0.3,
+    "S_threshold": 0.3,
+    "core_s": 1800,
+    "context_s": 30,
+    "merge_tolerance_s": 0.25,
+    "exclude_s": [
+      "CASE",
+      "CFB1",
+      "CFB3"
+    ]
+  }
+}

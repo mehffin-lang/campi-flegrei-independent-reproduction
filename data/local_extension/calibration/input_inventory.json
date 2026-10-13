@@ -1,0 +1,21 @@
+{
+  "events": 1024,
+  "usable_causal_events": 921,
+  "calibration_events": 38,
+  "period": [
+    "2022-01-21T01:14:48.080",
+    "2025-03-20T23:58:58.807"
+  ],
+  "processed_files": 1024,
+  "stations": 30,
+  "channel_hours": 8952.452264379923,
+  "files": {
+    "data/local_extension/picks.csv": "1e8db57cf9baa26b62d89e4946c148fb359266bb20039affcc1fea0f166d1c1a",
+    "data/local_extension/associations.csv": "96b031d783348709d3210ea794e48951df5c293fa713c1a86a7ee684a7c8395a",
+    "data/local_extension/initial_events.csv": "18c6bfdfc20b86e250b6efb165953c151e1a4d4861946b81bd933806d6ce2037",
+    "data/local_extension/stations.csv": "83f3bd10a60529750a7ad3c9e7baa155cae39d33d1372554ee0cab0eb72960a7",
+    "data/local_extension/processed_coverage_union.json": "3f0aa905c009c225aec130298fc3523efc0f812c0e4b0e052f118436d5fc4421"
+  },
+  "selection": "All causally consistent associations enter whole-catalog runs; calibration requires >=4 P, >=2 S, >10 total picks, gap<180 and no initial 0/8-km bound hit. Not the authors' manually selected 373-event subset.",
+  "planned_correction": "Set LOWVELOCLAY=0 per VELEST guide, replacing previous 1; coarse grid-derived layering; fixed-model prelocation before the two calibration rounds per guide p7. Retain original observations and thresholds."
+}

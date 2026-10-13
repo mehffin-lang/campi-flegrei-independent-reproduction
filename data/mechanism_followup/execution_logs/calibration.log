@@ -1,0 +1,9 @@
+prepare_grid_calibration.py 0
+run_grid_velest.py 0
+validate_grid_velest.py 0
+run_grid_tomodd.py 0
+grid_uncertainty.py 0
+downstream_checks.py 0
+magnitude_statistics.py 0
+grid_panel_data.py 0
+grid_location_checks.py 0

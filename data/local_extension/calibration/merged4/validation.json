@@ -1,0 +1,99 @@
+{
+  "runs": [
+    {
+      "name": "precision32_prelocation",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2580055735001106,
+      "event_rms_s": 0.283915295003355,
+      "depth_min_km": 0.1,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/local_extension/merged4/precision32_prelocation"
+    },
+    {
+      "name": "precision32_round1",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.24353893814973315,
+      "event_rms_s": 0.2588588316763446,
+      "depth_min_km": 0.19,
+      "depth_max_km": 5.9,
+      "workdir": "tmp/local_extension/merged4/precision32_round1"
+    },
+    {
+      "name": "precision32_round2",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.21465229906674682,
+      "event_rms_s": 0.22588422744965245,
+      "depth_min_km": 0.02,
+      "depth_max_km": 5.26,
+      "workdir": "tmp/local_extension/merged4/precision32_round2"
+    },
+    {
+      "name": "precision32_convergence1",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.21384205073985052,
+      "event_rms_s": 0.22890471472001758,
+      "depth_min_km": 0.24,
+      "depth_max_km": 5.14,
+      "workdir": "tmp/local_extension/merged4/precision32_convergence1"
+    },
+    {
+      "name": "precision32_convergence2",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.21533964055956967,
+      "event_rms_s": 0.2290081588985538,
+      "depth_min_km": 0.14,
+      "depth_max_km": 5.24,
+      "workdir": "tmp/local_extension/merged4/precision32_convergence2"
+    },
+    {
+      "name": "precision32_convergence3",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.21203436327586364,
+      "event_rms_s": 0.22652407795803264,
+      "depth_min_km": 0.1,
+      "depth_max_km": 5.0,
+      "workdir": "tmp/local_extension/merged4/precision32_convergence3"
+    }
+  ],
+  "precision_difference": {
+    "max_horizontal_m": 557.7708650016511,
+    "max_depth_km": 0.89,
+    "max_origin_s": 0.42,
+    "max_rms_s": 0.06
+  },
+  "velocity_difference_km_s": 0.3199999999999994,
+  "station_delay_difference_s": 0.25,
+  "precision_gate_passed": false,
+  "same_converged_start_precision": {
+    "max_horizontal_m": 0.0,
+    "max_depth_km": 0.0,
+    "max_origin_s": 0.0,
+    "max_rms_s": 0.0
+  },
+  "same_converged_start_velocity_difference_km_s": 0.0,
+  "accepted_scientific_catalog": false,
+  "limitation": "Full 32/64-bit calibration paths compared from identical inputs; a separate common-converged-start test isolates local sensitivity. Numerical agreement is not independent location accuracy. Held-out refitting, manual phase review and external absolute-location validation have not been repeated for this grid-based run.",
+  "sources": {
+    "data/local_extension/calibration/merged4/independent_calibrated.mod": "7ec777db1a8d45558a68896d3eb845cc64f4c20ca80cae4d2ad6a054461cfa68",
+    "data/local_extension/calibration/merged4/independent_calibrated.sta": "466070d5505bb31cd77bf2325baa00eeaf0565436b0b8a5f45d2c7f77791de45",
+    "data/local_extension/calibration/merged4/filtered_events.csv": "e7b1644459eab36a6c94589afab1837ee188e4cd7c48cfe772555539bc88c09c"
+  }
+}

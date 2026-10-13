@@ -1,0 +1,13 @@
+make: Entering directory '/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk'
+gfortran -O2 -std=legacy -ffixed-line-length-none   -o fk fk.o kernel.o prop.o source.o bessel.o fft.o Complex.o sacio.o haskell.o -lm
+gfortran -O2 -std=legacy -ffixed-line-length-none  -c -o trav.o trav.f
+gfortran -O2 -std=legacy -ffixed-line-length-none  -c -o tau_p.o tau_p.f
+cc -O   -c -o sachd.o sachd.c
+sachd.c: In function ‘main’:
+sachd.c:29:15: warning: implicit declaration of function ‘sac_head_index’; did you mean ‘sac_head_inex’? [-Wimplicit-function-declaration]
+      ls[nl] = sac_head_index(argv[0]);
+               ^~~~~~~~~~~~~~
+               sac_head_inex
+cc -O    -o sachd sachd.o sacio.o -lm
+gfortran -O2 -std=legacy -ffixed-line-length-none   -o trav trav.o tau_p.o -lm
+make: Leaving directory '/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk'

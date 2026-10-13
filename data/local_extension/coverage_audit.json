@@ -1,0 +1,9 @@
+{
+  "stations": 30,
+  "channels": 87,
+  "response_covered_channel_hours": 8952.385587991012,
+  "missing_response_channel_hours": 0.06667638891273074,
+  "missing_response_intervals": 4,
+  "maximum_metadata_coordinate_difference_m": 16.906168732523646,
+  "note": "Only actual returned intervals count. A response must have sensitivity and stages with overlapping epoch. This does not independently validate instrument calibration. Unobserved intervals are gaps in this retrieval, not assertions that the archive has no data."
+}

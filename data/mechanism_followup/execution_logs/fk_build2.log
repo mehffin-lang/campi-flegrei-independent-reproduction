@@ -1,0 +1,9 @@
+make: Entering directory '/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk'
+gfortran -O2 -std=legacy -fallow-argument-mismatch  -c -o fk.o fk.f
+gfortran -O2 -std=legacy -fallow-argument-mismatch  -c -o kernel.o kernel.f
+gfortran: error: unrecognized command line option ‘-fallow-argument-mismatch’; did you mean ‘-Wno-argument-mismatch’?
+gfortran: error: unrecognized command line option ‘-fallow-argument-mismatch’; did you mean ‘-Wno-argument-mismatch’?
+make: *** [<builtin>: fk.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [<builtin>: kernel.o] Error 1
+make: Leaving directory '/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk'

@@ -10,14 +10,14 @@ from pyproj import Transformer
 ROOT=None;D='data/grid_calibration/merged4/panels/';U='data/grid_calibration/merged4/uncertainty/'
 PROJ=Transformer.from_crs('EPSG:4326','+proj=aeqd +lat_0=40.82 +lon_0=14.14 +datum=WGS84 +units=km',always_xy=True)
 
-def generate(p,extension=False):
+def generate(p,extension=False,base_override=None):
     global ROOT,D,U
     ROOT=p.ROOT
-    base='data/coverage_extension/calibration/merged4/' if extension else 'data/grid_calibration/merged4/'
+    base=base_override or ('data/coverage_extension/calibration/merged4/' if extension else 'data/grid_calibration/merged4/')
     D=base+'panels/';U=base+'uncertainty/'
     def table(path):return pd.read_csv(ROOT/path)
     def save(fig,name,inputs,panels,note):
-        if extension:name=name.replace('_provisional','')+'_extension';note='Latest extended cohort; separate identifiers. '+note
+        if extension:name=name.replace('_provisional','')+('_local_followup' if base_override else '_extension');note='Separately frozen extended cohort; independent identifiers. '+note
         p.save(fig,name,inputs,panels,note)
     norm=Normalize(0,5,clip=False);cm=p.style.depth_cmap();limits=[]
     def scatter(ax,d,x,y,constant=False):

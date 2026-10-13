@@ -1,0 +1,2 @@
+event_id,trace_id,p_time,reviewer,reason,evidence
+649,IV.CFMN.,2025-03-20T06:32:18.910000Z,Codex AI visual review,First coherent upward onset at 1.85 s after own origin visible in counts and response-corrected velocity; approximate timing uncertainty 0.03 s; not a human review,data/mechanism_followup/review/CFMN_649_onset.png

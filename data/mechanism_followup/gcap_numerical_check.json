@@ -1,0 +1,7 @@
+{
+  "test_only": true,
+  "max_eigenvalue_absolute_errors": [
+    0.0,
+    6.690567877498665e-08
+  ]
+}

@@ -1,0 +1,36 @@
+$input_format
+skhash
+$fpfile
+/home/mehffin/campi-flegrei-independent-reproduction/data/mechanism_followup/polarities.csv
+$ampfile
+/home/mehffin/campi-flegrei-independent-reproduction/data/mechanism_followup/sp_ratios.csv
+$stfile
+/home/mehffin/campi-flegrei-independent-reproduction/data/mechanism_followup/stations.csv
+$outfile1
+/home/mehffin/campi-flegrei-independent-reproduction/data/mechanism_followup/solutions.csv
+$outfile2
+/home/mehffin/campi-flegrei-independent-reproduction/data/mechanism_followup/acceptable_planes.csv
+$outfile_pol_info
+/home/mehffin/campi-flegrei-independent-reproduction/data/mechanism_followup/used_measurements.csv
+$vmodel_paths
+/home/mehffin/campi-flegrei-independent-reproduction/data/mechanism_followup/velocity.csv
+$npolmin
+8
+$max_agap
+90
+$max_pgap
+60
+$nmc
+30
+$look_dep
+0 10 1
+$look_del
+0 120 1
+$nd0
+11
+$nx0
+121
+$num_cpus
+1
+$overwrite_output_file
+True

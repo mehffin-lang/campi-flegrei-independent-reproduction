@@ -1,0 +1,11 @@
+make: Entering directory '/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap'
+cc -O -I/NRC_includes   -c -o cap.o cap.c
+cc -O -I/NRC_includes   -c -o fft.o fft.c
+In file included from cap.c:85:
+cap.h:17:10: fatal error: nr.h: No such file or directory
+ #include "nr.h"
+          ^~~~~~
+compilation terminated.
+make: *** [<builtin>: cap.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: Leaving directory '/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap'

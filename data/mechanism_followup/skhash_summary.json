@@ -1,0 +1,17 @@
+{
+  "candidates": 8,
+  "station_event_records": 180,
+  "accepted_ai_polarities": 29,
+  "accepted_ai_sp_ratios": 41,
+  "human_manual_reviews": 0,
+  "returncode": 0,
+  "computed_solutions": 0,
+  "accepted_scientific_mechanisms": 0,
+  "classification": "Exploratory; AI visual review, own provisional locations/model, explicit amplitude windows. Generic minimum-eight/90-degree/60-degree gates retained.",
+  "sources": {
+    "data/mechanism_followup/measurements.csv": "cc5606ba903876b5e56125fab3aadc30739069db41ea2c82b9cc958afccf8df3",
+    "config/mechanism_visual_decisions.json": "103fad59530cdd9cfa8bd291fff04e2a88660f4eaccad59ff4d386e5df4800c5",
+    "data/mechanism_followup/velocity.csv": "a74218980deb676421a0fa9339cc4e32a49f3b4bc1221affc08c0db57b684baa",
+    "data/mechanism_followup/control.txt": "8fa45383991382b37e369958dc88161e83219764d595cb51f8d950d715c7e978"
+  }
+}

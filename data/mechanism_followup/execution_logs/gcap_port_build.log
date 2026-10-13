@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/home/mehffin/campi-flegrei-independent-reproduction/scripts/build_gcap_followup.py", line 75, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/scripts/build_gcap_followup.py", line 62, in main
+    if r.returncode:raise RuntimeError(r.stderr)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: cap_sub_followup.c: In function ‘design’:
+cap_sub_followup.c:86:1: error: number of arguments doesn’t match prototype
+ void design() { fprintf(stderr,"Internal SAC filtering unavailable; externally prefilter\n"); exit(91); }
+ ^~~~
+In file included from cap_followup.h:14,
+                 from cap_sub_followup.c:1:
+sac.h:323:6: error: prototype declaration
+ void design(long int, char*, char*, double, double, double, double, double, float*, float*, long int*);
+      ^~~~~~
+cap_sub_followup.c: In function ‘apply’:
+cap_sub_followup.c:87:1: error: number of arguments doesn’t match prototype
+ void apply() { fprintf(stderr,"Internal SAC filtering unavailable; externally prefilter\n"); exit(92); }
+ ^~~~
+In file included from cap_followup.h:14,
+                 from cap_sub_followup.c:1:
+sac.h:324:6: error: prototype declaration
+ void apply(float *, long int, long, float *, float *, long int);
+      ^~~~~
+

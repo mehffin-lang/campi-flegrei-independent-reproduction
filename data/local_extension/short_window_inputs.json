@@ -1,0 +1,156 @@
+[
+  {
+    "file": "inputs/local_inspection/20220121T014220_IV_CFB1_HHZ.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.CFB1..HHZ"
+    ],
+    "start": 1642729334.998393,
+    "end": 1642729395.008393,
+    "sha256": "b8db3fd37dba5799a04a91d830b94065a1526fd8122a6d77f67e4d3b5fddbe18"
+  },
+  {
+    "file": "inputs/local_inspection/20220121T032217_IV_CROS_EHE.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.CROS..EHE"
+    ],
+    "start": 1642735332.0,
+    "end": 1642735392.01,
+    "sha256": "03e56d7c465f852d28bd07076d14ee9808140aecd45b2f688bad409a93e62bd6"
+  },
+  {
+    "file": "inputs/local_inspection/20220316T101444_IV_CFB3_HHZ.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.CFB3..HHZ"
+    ],
+    "start": 1647425678.998393,
+    "end": 1647425739.008393,
+    "sha256": "2cbc38c903758f30d8c7138751343dfd8808086fc564fecc9d1e95bff3069f6a"
+  },
+  {
+    "file": "inputs/local_inspection/20230714T110024_IV_V0102_EHE.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.V0102.00.EHE"
+    ],
+    "start": 1689332419.0,
+    "end": 1689332479.005,
+    "sha256": "f25d3087243cc3861f9c0f3848cb38b733ffeb8ac1b66df31d7ed262de1f846a"
+  },
+  {
+    "file": "inputs/local_inspection/20240314T162713_IV_V0105_EHE.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.V0105.00.EHE"
+    ],
+    "start": 1710433628.0,
+    "end": 1710433688.01,
+    "sha256": "9383408e65e653f7e7cf3bdea07ded8ea95a73e9e4bcbfd9fb824c69a89ceea7"
+  },
+  {
+    "file": "inputs/local_inspection/20240513T131843_IV_CRUS_EHE.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.CRUS..EHE"
+    ],
+    "start": 1715606318.0,
+    "end": 1715606378.01,
+    "sha256": "a9a0b892cb8cfae56a0a9570581b12aaa3e7f9f0f85585eb34f0e955c746018d"
+  },
+  {
+    "file": "inputs/local_inspection/20250313T100251_IV_CMDP_HHE.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.CMDP..HHE"
+    ],
+    "start": 1741860166.0,
+    "end": 1741860226.01,
+    "sha256": "827d57df3a3a4dea0a301f287411eb9d498b31436497f01e2e84480212e009be"
+  },
+  {
+    "file": "inputs/resumption/S4_CSOB_20240520.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.CSOB..HHE",
+      "IV.CSOB..HHN",
+      "IV.CSOB..HHZ"
+    ],
+    "start": 1716235771.6499999,
+    "end": 1716235954.5200002,
+    "sha256": "4645e5484ae8ac44281312c52917630e46799782ee5c6cf46a3c0a8a6e890e04"
+  },
+  {
+    "file": "inputs/waveforms/E1_CAAM.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.CAAM..HHE",
+      "IV.CAAM..HHN",
+      "IV.CAAM..HHZ"
+    ],
+    "start": 1715033398.6899998,
+    "end": 1715033581.3799999,
+    "sha256": "ccba37062237ac60eeac753fd866b73c93503d83a051e9d231662fc75a0ca656"
+  },
+  {
+    "file": "inputs/waveforms/E1_COLB.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.COLB..HHE",
+      "IV.COLB..HHN",
+      "IV.COLB..HHZ"
+    ],
+    "start": 1715033398.15,
+    "end": 1715033581.8400002,
+    "sha256": "36ba87e5240885fec99fa075432df96ebc4e48d01a57d19a40c88681f80e0ac4"
+  },
+  {
+    "file": "inputs/waveforms/E2_CAAM.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.CAAM..HHE",
+      "IV.CAAM..HHN",
+      "IV.CAAM..HHZ"
+    ],
+    "start": 1709919598.57,
+    "end": 1709919781.95,
+    "sha256": "5d8bcf8c4cbb0a3caf1038877f7b7a050e25f2e8967d8a0ce9f180cc025bc9f2"
+  },
+  {
+    "file": "inputs/waveforms/E2_COLB.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.COLB..HHE",
+      "IV.COLB..HHN",
+      "IV.COLB..HHZ"
+    ],
+    "start": 1709919598.54,
+    "end": 1709919782.02,
+    "sha256": "d5d245e8f1133107ae73242b968dbbbdc0dcf6170ee216fdabc982bc8f0ba4c2"
+  },
+  {
+    "file": "inputs/waveforms/E3_CAAM.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.CAAM..HHE",
+      "IV.CAAM..HHN",
+      "IV.CAAM..HHZ"
+    ],
+    "start": 1739779557.95,
+    "end": 1739779741.7399998,
+    "sha256": "9786cebcec2cd1bd81464ed84e0dded0e6b36f68b6349058d683d92bbb5b49c8"
+  },
+  {
+    "file": "inputs/waveforms/E3_COLB.mseed",
+    "role": "Original observation in an event-selected short window; not continuous discovery exposure",
+    "channels": [
+      "IV.COLB..HHE",
+      "IV.COLB..HHN",
+      "IV.COLB..HHZ"
+    ],
+    "start": 1739779558.1299999,
+    "end": 1739779741.55,
+    "sha256": "ffa33ef4a7ccdf5d32991880368855af674c0569da5b871716fbd158c054b422"
+  }
+]

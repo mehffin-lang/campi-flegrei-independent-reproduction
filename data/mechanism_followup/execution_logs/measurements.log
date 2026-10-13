@@ -1,0 +1,36 @@
+212 12
+312 24
+315 24
+359 24
+373 24
+649 24
+698 24
+815 24
+Traceback (most recent call last):
+  File "/home/mehffin/campi-flegrei-independent-reproduction/scripts/mechanism_measurements.py", line 110, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/scripts/mechanism_measurements.py", line 104, in main
+    right.axvline(0,c='red',lw=.6);right.axvline(r.s_minus_p_s,c='orange',lw=.6);right.set(xlim=(-1,r.s_minus_p_s+1),xlabel='Seconds from P; orange = own S')
+                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv/lib64/python3.11/site-packages/matplotlib/artist.py", line 140, in <lambda>
+    cls.set = lambda self, **kwargs: Artist.set(self, **kwargs)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv/lib64/python3.11/site-packages/matplotlib/artist.py", line 1321, in set
+    return self._internal_update(cbook.normalize_kwargs(kwargs, self))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv/lib64/python3.11/site-packages/matplotlib/artist.py", line 1313, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv/lib64/python3.11/site-packages/matplotlib/artist.py", line 1274, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv/lib64/python3.11/site-packages/matplotlib/axes/_base.py", line 3992, in set_xlim
+    return self.xaxis._set_lim(left, right, emit=emit, auto=auto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv/lib64/python3.11/site-packages/matplotlib/axis.py", line 1264, in _set_lim
+    v1 = self.axes._validate_converted_limits(v1, self.convert_units)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv/lib64/python3.11/site-packages/matplotlib/axes/_base.py", line 3913, in _validate_converted_limits
+    raise ValueError("Axis limits cannot be NaN or Inf")
+ValueError: Axis limits cannot be NaN or Inf

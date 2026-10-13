@@ -1,0 +1,14 @@
+{
+  "final_events_old": 123,
+  "final_events_new": 123,
+  "identical_origin_times": true,
+  "max_coordinate_differences": {
+    "latitude": 4.0000000041118255e-06,
+    "longitude": 1.0999999998873022e-05,
+    "depth_km": 0.0010000000000000009
+  },
+  "new_associations_not_within_one_second": [
+    175
+  ],
+  "role": "Own cohort comparison only; no published catalog. Event IDs are separately numbered."
+}

@@ -1,0 +1,9 @@
+event_id,local_vertical_stations,reviewed_waveforms,accepted_ai_polarities,accepted_ai_sp,human_reviews,polarity_azimuth_gap_deg,unmet_requirement,scientifically_accepted
+212,12,12,3,5,0,190.68989638281883,Fewer than 8 reliable first motions gCAP ran: VR 6.9% / 7.1%; orientation changes 79.0 deg across bands. Reliable location/model and validated windows remain necessary.,False
+312,24,24,5,5,0,170.6028085501284,Fewer than 8 reliable first motions gCAP ran: VR 11.9% / 7.0%; orientation changes 73.7 deg across bands. Reliable location/model and validated windows remain necessary.,False
+315,24,24,4,4,0,270.9335379320124,Fewer than 8 reliable first motions gCAP ran: VR 14.8% / 6.4%; orientation changes 97.9 deg across bands. Reliable location/model and validated windows remain necessary.,False
+359,24,24,3,7,0,182.29762776566443,Fewer than 8 reliable first motions gCAP ran: VR 7.3% / 3.9%; orientation changes 48.3 deg across bands. Reliable location/model and validated windows remain necessary.,False
+373,24,24,2,4,0,199.10743858795655,Fewer than 8 reliable first motions gCAP ran: VR 3.9% / 5.0%; orientation changes 34.2 deg across bands. Reliable location/model and validated windows remain necessary.,False
+649,24,24,8,10,0,96.42168084186392,SKHASH measured gap 96.57 deg exceeds unchanged max_agap=90 deg. gCAP ran: VR 6.0% / 4.2%; orientation changes 79.1 deg across bands. Reliable location/model and validated windows remain necessary.,False
+698,24,24,1,1,0,360.0,Fewer than 8 reliable first motions Only one reviewed three-component packet; no four-station gCAP trial.,False
+815,24,24,3,5,0,199.85204309730523,Fewer than 8 reliable first motions gCAP ran: VR 9.2% / 2.3%; orientation changes 80.6 deg across bands. Reliable location/model and validated windows remain necessary.,False
