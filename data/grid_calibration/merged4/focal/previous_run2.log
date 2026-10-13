@@ -1,0 +1,12 @@
+========================
+SKHASH v1.1 (2025-12-17)
+========================
+Control file: /home/mehffin/campi-flegrei-independent-reproduction/data/grid_calibration/merged4/focal/control.txt
+Discarded 7 earthquakes with fewer than 8 polarities.
+Creating lookup table (0/0): /home/mehffin/campi-flegrei-independent-reproduction/data/grid_calibration/merged4/focal/velocity.csv
+	Created table.
+Computing mechanisms in serial...
+0 / 0	(641)
+	Maximum azimuthal gap (186.158) > max_agap (90). Skipping.
+Mech computation runtime: 0.01 sec
+Total runtime: 0.77 sec

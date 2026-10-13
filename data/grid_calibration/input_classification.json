@@ -2393,6 +2393,498 @@
       "bytes": 2681344,
       "sha256": "e52cf357eef5d762242047ee90abaaaadab12770abf3382a1b315825b0392179",
       "classification": "Original waveform observations"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CLAC_20250301T000000_20250301T003000.mseed",
+      "sha256": "5cdbf0d4fd908f2fc5c0ec4880159a856752f3e27959012bc129129d2a87b7d9",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CLAC&loc=%2A&cha=HH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CLAC_20250319T120000_20250319T180000.mseed",
+      "sha256": "f6594f0a106c74c006beb0d47f7045cc27ee86ed5ddeda6e7c3e6c5adaeca236",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CLAC&loc=%2A&cha=HH%3F&start=2025-03-19T11%3A59%3A30.000000Z&end=2025-03-19T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CSOC_20250301T000000_20250301T003000.mseed",
+      "sha256": "40d2bc7fcff05766d7feebb1fb61ed2ffb87d1898a14a1b9becd2da89aff885f",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CSOC&loc=%2A&cha=EH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/2I_CSOC_20250319T120000_20250319T180000.mseed",
+      "sha256": "656be2bf5277e3767869f118a6e0d73b10f86d7f017577467a626607bf3519d0",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CSOC&loc=%2A&cha=EH%3F&start=2025-03-19T11%3A59%3A30.000000Z&end=2025-03-19T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20230701T000000_20230701T003000.mseed",
+      "sha256": "d4d36b5cea2058694c9639bee72f7ac7f9765ebe979109234d27ba31a7e9b0d5",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=%2A&cha=HH%3F&start=2023-06-30T23%3A59%3A30.000000Z&end=2023-07-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20231001T000000_20231001T003000.mseed",
+      "sha256": "a253006735b052cd46720d4ca34ab4d40be1ef6c74c4514dba9b15118abb9796",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=%2A&cha=HH%3F&start=2023-09-30T23%3A59%3A30.000000Z&end=2023-10-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CBAG_20231001T000000_20231001T003000.mseed",
+      "sha256": "2f9130460bd755c06558aa6602516164f120701ed9bae82fff31295c8396b709",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAG&loc=%2A&cha=HH%3F&start=2023-09-30T23%3A59%3A30.000000Z&end=2023-10-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CBAG_20250301T000000_20250301T003000.mseed",
+      "sha256": "c5c5ec64a8721faaf88161be2619a5a87c2375be512abf8e2c188b8dce7653e9",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAG&loc=%2A&cha=HH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CCAP_20231001T000000_20231001T003000.mseed",
+      "sha256": "de3b97433b0b620c8d16e3b8b3a4b38b8966fa1f5d68e8a1e2d4261539565a7d",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2023-09-30T23%3A59%3A30.000000Z&end=2023-10-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CCAP_20240401T000000_20240401T003000.mseed",
+      "sha256": "6500d0baf4c93567803cee46386790e0925f548f62c4b3890c249d1ed54a6dcc",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2024-03-31T23%3A59%3A30.000000Z&end=2024-04-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CCAP_20250301T000000_20250301T003000.mseed",
+      "sha256": "e577fd20ba5589e24b2088ba621938c6355e9aa09afc953b5418256d2bb663ec",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CCAP_20250319T120000_20250319T180000.mseed",
+      "sha256": "3659e911dfaf72757b4469c8786e729907e9896e6fedf67c4b1f50c5d40417c4",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2025-03-19T11%3A59%3A30.000000Z&end=2025-03-19T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB1_20220122T120000_20220122T180000.mseed",
+      "sha256": "8b5634afae928d5db74b5efacf5b4d36f493dd3ddbc11ccfb28586bae92c4498",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-22T11%3A59%3A30.000000Z&end=2022-01-22T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB1_20220122T180000_20220123T000000.mseed",
+      "sha256": "eedab45645b41d61654e5e5a68150d0f1d64e0f910b441e1db84b6bab92ad2d7",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB1_20220123T180000_20220124T000000.mseed",
+      "sha256": "2f930516b485575d7662b83bc87cd7b9b4395f36ab840c8db6f306056d0d28ee",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB1_20220124T060000_20220124T120000.mseed",
+      "sha256": "7cab27239b8d452b3f1f18a9d17ed9778011db7e9a2bad52bdf0ccb39ae5881a",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB1_20220124T180000_20220125T000000.mseed",
+      "sha256": "4328db9929ec04f9ac42be76bd7d0884b2c4d0d7509613552f6d1f38e9b90ae1",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB1_20220125T060000_20220125T120000.mseed",
+      "sha256": "3edeb3917d66ec80bf58816e7814c1ae1b59f366ce5315d5648d315534e5be28",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB1_20220128T000000_20220128T060000.mseed",
+      "sha256": "6f298bd254a131d839c969200050ddf9cbffd133b9c07f463d2749fc5b1d6cc4",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-27T23%3A59%3A30.000000Z&end=2022-01-28T06%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB1_20220128T120000_20220128T180000.mseed",
+      "sha256": "6644956e27276aa2e7617bc1b129a19e6c7a1974323d1bee057d954f7e12af5b",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-28T11%3A59%3A30.000000Z&end=2022-01-28T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB1_20240401T000000_20240401T003000.mseed",
+      "sha256": "1c0e653480efb0f6e21c0ca4b2b1203b7aac5d0b4be3efbd86d7503dc4056aaa",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2024-03-31T23%3A59%3A30.000000Z&end=2024-04-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFB3_20250301T000000_20250301T003000.mseed",
+      "sha256": "a1a7ec5b90cb47f682f85dec3da3b1c7b59fe851b6f7db6ef92880bdcb02f1c8",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB3&loc=%2A&cha=HH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFMN_20220122T180000_20220123T000000.mseed",
+      "sha256": "b34db16fcd5a1afc9bb7ebce89c0a6dc09b358853dc09908e58ae2bfafa3d06c",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFMN_20220123T180000_20220124T000000.mseed",
+      "sha256": "e6cacb6cb92fde3b440f81c150d68b781acc82c4730285586a98ba2417b04744",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFMN_20220124T060000_20220124T120000.mseed",
+      "sha256": "4245d5c0b5377865cb5f36b1b76f9c7de572ba3ec384ba31088583f9ea231ab4",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFMN_20220124T180000_20220125T000000.mseed",
+      "sha256": "2ae5bb1914c49e94b290424681d9b456ff878986b3422f233f6dae76e9324d01",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFMN_20220128T120000_20220128T180000.mseed",
+      "sha256": "31a789c5c9ecc36bb7439cac06e2c4f772257726af708af221c7f0274de5493a",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-28T11%3A59%3A30.000000Z&end=2022-01-28T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFMN_20231001T000000_20231001T003000.mseed",
+      "sha256": "dac854703fdffb89d8cd7b4cb767a78047824e9478fa8f7f01d7b0209ae3cd96",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2023-09-30T23%3A59%3A30.000000Z&end=2023-10-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CFMN_20250301T000000_20250301T003000.mseed",
+      "sha256": "d94156e463c132fbb083b6f4f668b11ef30ba4a974f41dd7f74a909f667bf9e2",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20220122T120000_20220122T180000.mseed",
+      "sha256": "be0e40504922f257d590b12a0150342654a1095520564cdb75bd7a9ace19923b",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-22T11%3A59%3A30.000000Z&end=2022-01-22T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20220122T180000_20220123T000000.mseed",
+      "sha256": "384011bc491ca1188ae53e0343542332ae615105e1f0a04ef24356f42fa944ee",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20220123T120000_20220123T180000.mseed",
+      "sha256": "5e671ab515c722fd1a56c40fb8150e76ca48bf364ee2a468e403de793cea2767",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20220123T180000_20220124T000000.mseed",
+      "sha256": "44e8d0f63162cc20fdcf0ed599d745e2a3b7d8a309d2ff00038a3c853e758ece",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20220124T000000_20220124T060000.mseed",
+      "sha256": "09bc0a2f3da900050bd7bd7484f96af110daf7411c4ef97e06f0c4ff55fdf2d8",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-23T23%3A59%3A30.000000Z&end=2022-01-24T06%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20220124T060000_20220124T120000.mseed",
+      "sha256": "7c26bd4677a2d78ec250fedb084a49e939629561d248d33ac56ef2f7833ffbbc",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20220124T120000_20220124T180000.mseed",
+      "sha256": "9d7415f4ec084e1d07f0576bf7b759c116b3ae57cfb258b1e6711ea296f29f00",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20220124T180000_20220125T000000.mseed",
+      "sha256": "b56add6ea30071e94631e6bb9ed61614485eadb89f1e5fedf20a785ebe069fcb",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20220125T060000_20220125T120000.mseed",
+      "sha256": "34ef902b91fbbf9191855a8da7a12c1f77c163379077f1b835c414adbf146e28",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20220125T180000_20220126T000000.mseed",
+      "sha256": "6c7fb439a0848aa8e1fe435f94b00c2f6ef8176e00affa5fad08616b54a1cb4d",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-25T17%3A59%3A30.000000Z&end=2022-01-26T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20220128T000000_20220128T060000.mseed",
+      "sha256": "ba3a14ae102d49f3542714ca00f4025b23a8a9282d3b057025ec2c10f4446da7",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-27T23%3A59%3A30.000000Z&end=2022-01-28T06%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20220128T120000_20220128T180000.mseed",
+      "sha256": "6f7e585d34dec078099ca7f358154ff9ae5407b837c8085aff3305bd99722f8d",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-28T11%3A59%3A30.000000Z&end=2022-01-28T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMIS_20240401T000000_20240401T003000.mseed",
+      "sha256": "9cb6499ad666a641357fc9341996a94cf8df6c653aa6ec0a6991a48432a013d9",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2024-03-31T23%3A59%3A30.000000Z&end=2024-04-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20220122T180000_20220123T000000.mseed",
+      "sha256": "bae004031be64a850ac47fa0a8783dd921f07ed1d39e6c99f4574461d5e35df2",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20220123T120000_20220123T180000.mseed",
+      "sha256": "9a4e6ebec0ef26504a691e00e40083163263553d87ecfff916bab069a8e6bc8e",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20220123T180000_20220124T000000.mseed",
+      "sha256": "a7a2063aa2bc33e3005bd1ca585fd5c0e490c2c600f5aad2952ebec32383be58",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20220124T000000_20220124T060000.mseed",
+      "sha256": "061de0a150cdbeb0bef4760f920ccff7c0f0d43b895080a918a6ec8889ccfa08",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-23T23%3A59%3A30.000000Z&end=2022-01-24T06%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20220124T060000_20220124T120000.mseed",
+      "sha256": "6bed7039bf4c73d2159fbb8e72c2f411798648be43974478cfa0459f2ff0953f",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20220124T120000_20220124T180000.mseed",
+      "sha256": "fab8d6c80b08ee8bf302e5fda62c3ef686d96a9f6b8a1ff1c48594c1082811a1",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20220124T180000_20220125T000000.mseed",
+      "sha256": "c16dfb076098577aae9d13988ec2467ae7e896d99a6c7c8ba95524bf6f201bc1",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20220125T000000_20220125T060000.mseed",
+      "sha256": "a88f4a70602e2185c5b31c46267018c9f4a11a65788efbc392802b6ea87e2b27",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-24T23%3A59%3A30.000000Z&end=2022-01-25T06%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20220125T060000_20220125T120000.mseed",
+      "sha256": "816b0ddc90a0ecfe5d7f500a2a61ae7b02918e28699d446ffc8d95c9769e920c",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20220128T000000_20220128T060000.mseed",
+      "sha256": "9e54dc256ab26e587be1401361c8f2148fdd0b236bd597bf14b8f939959e31b9",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-27T23%3A59%3A30.000000Z&end=2022-01-28T06%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20220128T120000_20220128T180000.mseed",
+      "sha256": "b8aa0cab4dd24f6b21607127d3a08904e3a06cb7dbc886e28175432a21aff170",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-28T11%3A59%3A30.000000Z&end=2022-01-28T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20231001T000000_20231001T003000.mseed",
+      "sha256": "d320b5afe87eb5590d403193004722d2898756ca68995451fe944ba91eccdf0a",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2023-09-30T23%3A59%3A30.000000Z&end=2023-10-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20250301T000000_20250301T003000.mseed",
+      "sha256": "30f0b87f1cf980ac487b6e22ec04c7c066f4299271c1104e9559425f93eb1f80",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20250319T120000_20250319T180000.mseed",
+      "sha256": "02af9145aae8a10a86aedf0fab385648e867c397aaf3930aa23f7374cfa2dc9f",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2025-03-19T11%3A59%3A30.000000Z&end=2025-03-19T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMSN_20250320T000000_20250320T060000.mseed",
+      "sha256": "01b0ee8f49e5fc8909efeb8f2f3e027b15d2f512cd18d76a99a1e6451cb72013",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2025-03-19T23%3A59%3A30.000000Z&end=2025-03-20T06%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMTS_20240401T000000_20240401T003000.mseed",
+      "sha256": "894443936c66db1f81df6ba876c1b0b97dde6b462faf0a61420ae4c45be53378",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2024-03-31T23%3A59%3A30.000000Z&end=2024-04-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMTS_20250301T000000_20250301T003000.mseed",
+      "sha256": "a19d79b19d56bf1d905e6bf7795356c7b64fec4a74606fd7f8e9646c44467abe",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CMTS_20250319T120000_20250319T180000.mseed",
+      "sha256": "9090b66d3e4e7c312a45b777683cbba46d823737b9c6d10da0cbbfbdb770ed0a",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2025-03-19T11%3A59%3A30.000000Z&end=2025-03-19T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CNIS_20231001T000000_20231001T003000.mseed",
+      "sha256": "80c378765443f3b51f083d8a7d5fdc851bac91eeaa1f01927d0fcaaf0f33c4a7",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CNIS&loc=%2A&cha=HH%3F&start=2023-09-30T23%3A59%3A30.000000Z&end=2023-10-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CNIS_20240401T000000_20240401T003000.mseed",
+      "sha256": "19f39448a0907b4c496ddc33fc19232820af5d5843b1bca84ea9c5a7d3b02256",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CNIS&loc=%2A&cha=HH%3F&start=2024-03-31T23%3A59%3A30.000000Z&end=2024-04-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CNIS_20250301T000000_20250301T003000.mseed",
+      "sha256": "31a97cd2c6dd32701820af1f7fadaf3f39148221a9adea3e4789d91f7c568972",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CNIS&loc=%2A&cha=HH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CPIS_20250301T000000_20250301T003000.mseed",
+      "sha256": "8c0bb2b3109994b4cc20ebd004d0f7d1a048a4e392e7d8d3bdf9f892085dbda8",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPIS&loc=%2A&cha=HH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CQUE_20231001T000000_20231001T003000.mseed",
+      "sha256": "612d8fa94de498c261bfe552ffa8162e81ba3b31db38ef5ce048658992ba9890",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CQUE&loc=%2A&cha=HH%3F&start=2023-09-30T23%3A59%3A30.000000Z&end=2023-10-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CQUE_20240401T000000_20240401T003000.mseed",
+      "sha256": "68814b653dad0bdfef988db6c4dbb5ff099de9e6d9bfe2e7e083c82685f299bd",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CQUE&loc=%2A&cha=HH%3F&start=2024-03-31T23%3A59%3A30.000000Z&end=2024-04-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CQUE_20250320T060000_20250320T120000.mseed",
+      "sha256": "a9e73620c0d308e9fa1610fc38863b54d311dcdc4c27f5d1528a486757b371db",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CQUE&loc=%2A&cha=HH%3F&start=2025-03-20T05%3A59%3A30.000000Z&end=2025-03-20T12%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSFT_20231001T000000_20231001T003000.mseed",
+      "sha256": "06ff7f39a09caf3460e59bcbe37a3f0f3dac0979f76c85cf1c602ab58c6cd560",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2023-09-30T23%3A59%3A30.000000Z&end=2023-10-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSFT_20250301T000000_20250301T003000.mseed",
+      "sha256": "2b5d5741a027ddf2cb4f8aab8d773a4dee9407649bbf1fc0b90de3ad1e963911",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSOB_20231001T000000_20231001T003000.mseed",
+      "sha256": "7fc4969d229f881215d84de3096f4f9c4f7a1f3fad1bd543d9ba155a40a456dc",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2023-09-30T23%3A59%3A30.000000Z&end=2023-10-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSTH_20231001T000000_20231001T003000.mseed",
+      "sha256": "88755346e63ab74aa3ec8db4a42cfae60a4d6978a8df0898f45a1ef1761ee8f4",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2023-09-30T23%3A59%3A30.000000Z&end=2023-10-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CSTH_20250301T000000_20250301T003000.mseed",
+      "sha256": "1c10304b04a38ed9b941ed17b74aa129071f3eb22aa00805043e3ba63217b7fc",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CUMA_20250301T000000_20250301T003000.mseed",
+      "sha256": "31824582f5f6b10b8343541cda2c99fc24933dca7f696118d9bc1cdc94a1763d",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CUMA&loc=%2A&cha=HH%3F&start=2025-02-28T23%3A59%3A30.000000Z&end=2025-03-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CUMA_20250319T120000_20250319T180000.mseed",
+      "sha256": "9a4196d2f40e5d766b64bfee27636e8483a2c5da97d63e2b9cfa4f993b088a63",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CUMA&loc=%2A&cha=HH%3F&start=2025-03-19T11%3A59%3A30.000000Z&end=2025-03-19T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CUMA_20250319T180000_20250320T000000.mseed",
+      "sha256": "40b5e41a5c06f2fdf4ab4f9af8f074f8993cea7d51a301d168a0d61c9d037b07",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CUMA&loc=%2A&cha=HH%3F&start=2025-03-19T17%3A59%3A30.000000Z&end=2025-03-20T00%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CUMA_20250320T180000_20250321T000000.mseed",
+      "sha256": "341215823be401a99e1c9e88c211006ee65ae14ddabf97e11866c9cb91f8a7ee",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CUMA&loc=%2A&cha=HH%3F&start=2025-03-20T17%3A59%3A30.000000Z&end=2025-03-21T00%3A00%3A00.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_PTMR_20231001T000000_20231001T003000.mseed",
+      "sha256": "d44c4a329ba336d07d1c5006b66bba0b8d8ba25c68e94519e2aa3760b39545fc",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=PTMR&loc=%2A&cha=HH%3F&start=2023-09-30T23%3A59%3A30.000000Z&end=2023-10-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_PTMR_20240401T000000_20240401T003000.mseed",
+      "sha256": "688f0fdd9573d3af265ebf72bf5b7c1bff2c08c1fd79fc52ad7c93c3ee5272d6",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=PTMR&loc=%2A&cha=HH%3F&start=2024-03-31T23%3A59%3A30.000000Z&end=2024-04-01T00%3A30%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_PTMR_20250319T120000_20250319T180000.mseed",
+      "sha256": "88cb0d6f15a3790ffd6fa750033206bf5a13144e48db6c96445cf1598a29c97a",
+      "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=PTMR&loc=%2A&cha=HH%3F&start=2025-03-19T11%3A59%3A30.000000Z&end=2025-03-19T18%3A00%3A30.000000Z",
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/extended/waveforms/2I_CSOC_2025-03-20T12:00:00_2025-03-20T12:30:00.mseed",
+      "sha256": "a50db2f09af3761f57723b6520f5d02f0a99f3dbdd10b4f518dde13f945d16ba",
+      "url": null,
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/extended/waveforms/IV_CAWE_2025-03-20T12:00:00_2025-03-20T12:30:00.mseed",
+      "sha256": "e36e635569bb25c881f78cebda02e44c6d3ff51060dfdd0ca99851a3e28d4353",
+      "url": null,
+      "classification": "Original waveform observations; measured by own downstream stage"
+    },
+    {
+      "file": "inputs/extended/waveforms/IV_CRUS_2025-03-20T12:00:00_2025-03-20T12:30:00.mseed",
+      "sha256": "cb503d1900f871f4df24898b01cb77d300ff274473d13ecf163ac28dbda12ce6",
+      "url": null,
+      "classification": "Original waveform observations; measured by own downstream stage"
     }
   ],
   "metadata": [
@@ -2416,14 +2908,19 @@
     {
       "file": "docs/tomodd_source_receipt.json",
       "role": "Generic method software and mandatory global reference tables; example results excluded"
+    },
+    {
+      "file": "data/grid_calibration/merged4/focal/summary.json",
+      "role": "Generic SKHASH 1.1.5 provenance and isolated software hash; own screened observations only"
     }
   ],
   "own_outputs": [
     "data/grid_calibration/regional_node_means.csv",
     "data/grid_calibration/merged4/",
-    "data/grid_calibration/style/"
+    "data/grid_calibration/style/",
+    "data/coverage_extension/ (separate event identifiers; original observations and own processing)"
   ],
-  "context": "Existing routine catalog and GNSS/leveling inputs remain restricted to labeled context/calibration. No routine values enter the current VELEST/TomoDD runs.",
+  "context": "Routine catalog is used only in labeled context and post-detection magnitude calibration; it supplies no picks, associations or locations. GNSS and source-provided leveling estimates retain separate provenance labels.",
   "published_reference": "Local paper/supplement supply written methods. Published image files occur only in the separate comparison document, never empirical plotting inputs.",
   "synthetic": "No synthetic observations, test fixtures or injected waveforms enter the new calibration, relocation or empirical figure inputs.",
   "trace": "Raw receipt hashes are inherited from the checked expanded processing manifest; waveform extraction code is differential_times.windows, new measurements are run_grid_tomodd.py, which retains original pick source/time identities. Generic method software and released weights retain their earlier pinned receipts."

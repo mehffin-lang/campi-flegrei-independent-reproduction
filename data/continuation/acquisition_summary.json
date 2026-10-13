@@ -4,14 +4,15 @@
   "request_hours": "6-hour full-period queue plus 0.5-hour calendar coverage checks",
   "priority": "short requests first, then chronological; no event catalog",
   "jobs_by_status": {
-    "downloaded": 694,
-    "no_data": 34,
-    "pending": 73946
+    "downloaded": 823,
+    "failed": 11,
+    "no_data": 35,
+    "pending": 73937
   },
   "full_collection_complete": false,
-  "downloaded_bytes": 6093577728,
-  "files": 694,
-  "channel_hours": 8137.11196943985,
+  "downloaded_bytes": 6238056448,
+  "files": 823,
+  "channel_hours": 8332.566136106649,
   "stations": [
     "CAAM",
     "CAWE",

@@ -1,0 +1,102 @@
+{
+  "cohort": "data/coverage_extension",
+  "started_utc": "2026-10-13T19:35:57.818403+00:00",
+  "accepted": false,
+  "runs": [
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/prepare_grid_calibration.py"
+      ],
+      "returncode": 0,
+      "log": "tmp/coverage_extension/prepare_grid_calibration.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/run_grid_velest.py",
+        "--coarse-four"
+      ],
+      "returncode": 0,
+      "log": "tmp/coverage_extension/run_grid_velest.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/validate_grid_velest.py"
+      ],
+      "returncode": 0,
+      "log": "tmp/coverage_extension/validate_grid_velest.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/run_grid_tomodd.py"
+      ],
+      "returncode": 0,
+      "log": "tmp/coverage_extension/run_grid_tomodd.py.log"
+    }
+  ],
+  "finished_utc": "2026-10-13T19:44:00.382529+00:00",
+  "input_scope": {
+    "picks": 134483,
+    "p_picks": 19757,
+    "s_picks": 114726,
+    "events": 1023,
+    "assigned_picks": 7410,
+    "processed_channel_hours": 8706.97035188039,
+    "stations": [
+      "CAAM",
+      "CAWE",
+      "CBAC",
+      "CBAG",
+      "CCAP",
+      "CFB1",
+      "CFB3",
+      "CFMN",
+      "CGAU",
+      "CLAC",
+      "CMIS",
+      "CMSN",
+      "CMTS",
+      "CNIS",
+      "COLB",
+      "CPIS",
+      "CPOZ",
+      "CQUE",
+      "CREM",
+      "CRUS",
+      "CSFT",
+      "CSOB",
+      "CSOC",
+      "CSTH",
+      "CUMA",
+      "PTMR"
+    ],
+    "files": 997,
+    "checks": {
+      "probability_bounds": true,
+      "excluded_s_absent": true,
+      "minimum_six_picks": true,
+      "unique_assigned_picks": true,
+      "valid_pick_indices": true
+    },
+    "status": "Partial: published alternative starting profile, incomplete continuous acquisition, no VELEST/TomoDD final catalog.",
+    "alternative_profile": "Tramelli et al. (2021), Table 1; not asserted identical to Calo--Tramelli (2018).",
+    "settings": {
+      "highpass_hz": 1,
+      "corners": 4,
+      "zerophase": false,
+      "P_threshold": 0.3,
+      "S_threshold": 0.3,
+      "core_s": 1800,
+      "context_s": 30,
+      "merge_tolerance_s": 0.25,
+      "exclude_s": [
+        "CASE",
+        "CFB1",
+        "CFB3"
+      ]
+    }
+  }
+}

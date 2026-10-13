@@ -1,0 +1,20 @@
+{
+  "candidate_events": 8,
+  "measured_polarities": 76,
+  "stable_screen_polarities": 35,
+  "events_with_eight_stable": 1,
+  "returncode": 0,
+  "solutions": 0,
+  "scientifically_accepted": 0,
+  "reviewed_polarities": 0,
+  "failures": [],
+  "method": "SKHASH 1.1.5 generic USGS software; https://code.usgs.gov/esc/SKHASH ; Skoumal et al. 2024 doi:10.1785/0220230329. Isolated .venv-skhash; no example/author event data used.",
+  "assumptions": "Peak signs agree in 0.01\u20130.06/0.10/0.15 s after own P and exceed 3x preceding 0.45-s RMS. Upward Z metadata verified. Weight 0.5. This screen is not manual polarity review; S/P ratios not supplied. Horizontal .655 km and vertical 1.04 km perturbation scales use own regional-start maximum shifts as conservative assumed errors, not measured Gaussian uncertainties. Default eight-polarity, 90-degree azimuth and 60-degree plunge-gap gates are not relaxed.",
+  "gcap": "No reviewed suitable source solution yet; independent FK library and event-specific filters/window weights, density and attenuation choices remain unimplemented/unspecified. Generic gCAP archive is present, but no author Green functions or solution can replace this stage.",
+  "sources": {
+    "data/coverage_extension/calibration/merged4/tomodd/retained_picks.csv": "6cdd2a85a619824e17b18ea282d4d469c28a0fd52b5d82f291b888c07d629cb5",
+    "data/coverage_extension/calibration/merged4/uncertainty/relocated_events.csv": "a8261fa4fc814006a8d5ad656ef2f2d85e316c628c6cc7f8f5c26891c18c898d",
+    "data/coverage_extension/calibration/merged4/independent_calibrated.mod": "7ec777db1a8d45558a68896d3eb845cc64f4c20ca80cae4d2ad6a054461cfa68",
+    ".venv-skhash/lib/python3.11/site-packages/SKHASH/SKHASH.py": "a6ee84fd49636ceb8b677514272010e2f04015a91632b2d80f30b303ea99fbe6"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "role": "Expanded independent picking/association checkpoint; uncalibrated",
+  "original_cohort": "data/calibration_followup/expanded/initial_events.csv",
+  "relationship": "Not substituted for the frozen calibration cohort; no shared event-index assumption.",
+  "command": ".venv/bin/python scripts/extend_calibration_observations.py --workers 8 --output data/coverage_extension"
+}

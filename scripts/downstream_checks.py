@@ -17,14 +17,33 @@ import pandas as pd
 from obspy import read,read_inventory,UTCDateTime
 from gamma.seismic_ops import initialize_eikonal,calc_time
 ap=argparse.ArgumentParser(description=__doc__)
-ap.add_argument('--dataset',choices=['extended','continuation'],default='extended')
+ap.add_argument('--dataset',choices=['extended','continuation','grid'],default='extended')
 ap.add_argument('--workers',type=int,default=16)
 args=ap.parse_args()
-OUT=Path('data')/args.dataset
-events=pd.read_csv(OUT/'initial_events.csv');picks=pd.read_csv(OUT/'picks.csv')
-assign=pd.read_csv(OUT/'associations.csv');stations=pd.read_csv(OUT/'stations.csv').set_index('id')
-coverage=pd.read_csv(OUT/'processed_coverage.csv') if args.dataset=='continuation' else None
-config=json.loads(Path('config/continuation_association.json' if args.dataset=='continuation' else 'config/association.json').read_text());eik=initialize_eikonal(config['eikonal'])
+GRID=Path(os.environ.get('CF_GRID_BASE','data/grid_calibration'))/'merged4'
+OUT=GRID/'magnitude' if args.dataset=='grid' else Path('data')/args.dataset
+OUT.mkdir(parents=True,exist_ok=True)
+INPUT=Path(os.environ.get('CF_OBSERVATIONS','data/calibration_followup/expanded')) if args.dataset=='grid' else OUT
+events=pd.read_csv(INPUT/'initial_events.csv');picks=pd.read_csv(INPUT/'picks.csv')
+assign=pd.read_csv(INPUT/'associations.csv');stations=pd.read_csv(INPUT/'stations.csv').set_index('id')
+coverage=pd.read_csv(INPUT/'processed_coverage.csv') if args.dataset in ['continuation','grid'] else None
+config=json.loads(Path('config/continuation_association.json' if args.dataset in ['continuation','grid'] else 'config/association.json').read_text())
+if args.dataset=='grid':
+    from pyproj import Transformer
+    import run_velest as v
+    events=pd.read_csv(GRID/'uncertainty/relocated_events.csv')
+    transform=Transformer.from_crs('EPSG:4326','+proj=aeqd +lat_0=40.82 +lon_0=14.14 +datum=WGS84 +units=km',always_xy=True)
+    events['x(km)'],events['y(km)']=transform.transform(events.longitude.to_numpy(),events.latitude.to_numpy());events['z(km)']=events.depth_km
+    model=v.model_table(GRID/'independent_calibrated.mod')
+    z=[];vp=[];vs=[]
+    for i,r in model.iterrows():
+        bottom=float(model.layer_top_km.iloc[i+1]-.00001) if i+1<len(model) else max(16.,events.depth_km.max()+1)
+        z.extend([r.layer_top_km,bottom]);vp.extend([r.Vp_km_s]*2);vs.extend([r.Vs_km_s]*2)
+    config['eikonal']['vel']=dict(z=z,p=vp,s=vs);config['eikonal']['zlim']=[-.5,16]
+    # Original picks are still used where available. This own 1-D fit supplies
+    # only missing theoretical P windows; station corrections are omitted and
+    # this approximation is disclosed. No routine arrival or location is used.
+eik=initialize_eikonal(config['eikonal'])
 quality=[];measurements=[];waveforms={};errors=[];inventories={}
 causality=(pd.read_csv(OUT/'association_quality.csv').set_index('event_index').passes_causality.to_dict()
            if args.dataset=='continuation' else {int(e):True for e in events.event_index})
@@ -66,7 +85,7 @@ def evaluate_event(e):
         try:
             st=original_stream(source).select(network=ident.split('.')[0],station=ident.split('.')[1],location=ident.split('.')[2]).slice(ptime-30,ptime+30).copy()
             st.merge(method=0);st=st.split()
-            response=Path('inputs/continuation')/(ident.split('.')[0]+'_responses.xml') if args.dataset=='continuation' else Path('inputs/extended/responses')/('_'.join(ident.split('.')[:2])+'.xml')
+            response=Path('inputs/continuation')/(ident.split('.')[0]+'_responses.xml') if args.dataset in ['continuation','grid'] else Path('inputs/extended/responses')/('_'.join(ident.split('.')[:2])+'.xml')
             if not response.exists():response=Path('inputs/extended/responses')/('_'.join(ident.split('.')[:2])+'.xml')
             if str(response) not in inventories:inventories[str(response)]=read_inventory(str(response))
             inv=inventories[str(response)]
@@ -121,7 +140,7 @@ def main():
             if passing_stations>=2:edges.extend(valid)
     pd.DataFrame(pair_audit,columns=['event_a','event_b','separation_km','snr_common_stations','qualifying_common_stations','causality_eligible_pair','accepted']).to_csv(OUT/'magnitude_pair_audit.csv',index=False)
     pd.DataFrame(edges,columns=['event_a','event_b','station','channel','delta_M','weight']).to_csv(OUT/'magnitude_edges.csv',index=False)
-    external=pd.read_csv(OUT/('routine_catalog.csv' if args.dataset=='continuation' else 'external_routine_catalog.csv'));external['epoch']=pd.to_datetime(external.time,utc=True,format='ISO8601').map(lambda t:t.timestamp())
+    external=pd.read_csv(Path('data/continuation/routine_catalog.csv') if args.dataset=='grid' else OUT/('routine_catalog.csv' if args.dataset=='continuation' else 'external_routine_catalog.csv'));external['epoch']=pd.to_datetime(external.time,utc=True,format='ISO8601').map(lambda t:t.timestamp())
     matches=[]
     for e in events.to_dict('records'):
         if not causality[e['event_index']]:continue
@@ -163,12 +182,16 @@ def main():
             inversion_checks.append(check)
             if rank!=len(nodes):continue
             sigma=np.sqrt(np.maximum(np.diag(np.linalg.pinv(A.T@A))*(residual@residual)/dof,0)) if dof>0 else np.full(len(nodes),np.nan)
-            estimates.extend(dict(event_index=v,ML=float(sol[ix[v]]),formal_sigma_ML=float(sigma[ix[v]]),residual_dof=int(dof),regularization_lambda=1.,status='provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions') for v in nodes)
+            estimates.extend(dict(event_index=v,ML=float(sol[ix[v]]),formal_sigma_ML=float(sigma[ix[v]]),residual_dof=int(dof),regularization_lambda=1.,status='provisional; independent grid-based relocation' if args.dataset=='grid' else 'provisional; alternative initial locations; formal uncertainty conditional on weighting/prior assumptions') for v in nodes)
     pd.DataFrame(estimates,columns=['event_index','ML','formal_sigma_ML','residual_dof','regularization_lambda','status']).to_csv(OUT/'magnitudes.csv',index=False)
     (OUT/'magnitude_inversion_checks.json').write_text(json.dumps(dict(components=inversion_checks,
         uncertainty='Residual-scaled inverse normal matrix of the weighted amplitude/prior system. Conditional on unit Md prior weight and independent homoscedastic weighted errors; excludes absolute calibration, response, association, location and exposure errors. Undefined when residual degrees of freedom are zero.'),indent=2)+'\n')
     summary=dict(events_evaluated=len(events),causality_excluded_events=sum(not bool(v) for v in causality.values()),calibration_eligible=len(eligible),amplitude_measurements=len(m),snr_passing=int(m.snr_pass.sum()) if len(m) else 0,event_pairs_checked=len(pair_audit),pairs_with_two_snr_stations=sum(r['snr_common_stations']>=2 for r in pair_audit),magnitude_edges=len(edges),calibrated_magnitudes=len(estimates),routine_matches=len(matches),ambiguous_reference_claims_rejected=len(ambiguous),measurement_errors=errors,
         focal_mechanisms=0,relocated_events=0,remaining='This magnitude pilot uses initial associations. See the separate VELEST record for its later inversion. TomoDD, HypoDD and focal processing remain unfinished; these magnitudes are not final relocated-catalog values.')
+    if args.dataset=='grid':
+        summary.update(relocated_events=len(events),remaining='Own two-round TomoDD trial locations, with unresolved calibration path sensitivity. Routine Md anchors only after independent detection/location. Theoretical P windows use own calibrated 1D fit without station delay; amplitudes are response-corrected velocity maxima. Unit regularization and unshifted normalized correlation squared are disclosed assumptions. Formal errors exclude location, calibration and coverage bias.')
+        import hashlib
+        summary['sources']={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in [INPUT/'picks.csv',INPUT/'associations.csv',INPUT/'stations.csv',GRID/'uncertainty/relocated_events.csv',GRID/'independent_calibrated.mod',Path('data/continuation/routine_catalog.csv')]}
     (OUT/'downstream_summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(summary)
 
 if __name__=='__main__':main()

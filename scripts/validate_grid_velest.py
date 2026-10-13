@@ -3,7 +3,7 @@ import json
 import numpy as np
 import pandas as pd
 import run_grid_velest as g
-c=g.c;v=g.v;ROOT=g.ROOT;OUT=g.BASE/'merged4';WORK=ROOT/'tmp/grid_calibration/merged4'
+c=g.c;v=g.v;ROOT=g.ROOT;OUT=g.BASE/'merged4';WORK=g.WORKROOT/'merged4'
 
 def main():
     c.OUT=OUT;c.WORK=WORK;s=json.loads((OUT/'summary.json').read_text());region=s['lowest_converged_phase_RMS_region'];ids=pd.read_csv(OUT/'selected_initial_events.csv').event_index.tolist();records=[]

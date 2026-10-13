@@ -1,4 +1,21 @@
-> Current calibration/relocation evidence: [GRID_WORKFLOW.md](GRID_WORKFLOW.md). Both TomoDD rounds now execute; scientific validation remains unresolved. Historical completion statements below are superseded by that record.
+> Current evidence: [PROVISIONAL_CONTINUATION.md](PROVISIONAL_CONTINUATION.md), `data/grid_calibration/current_status.json` and `docs/panel_record.json`. The older inventory below is historical, not a current assertion that numerical results are absent.
+
+## Current blockers after executed provisional analyses
+
+- **Calibration, F2/F3/S6–S13:** identical-input 32/64-bit runs diverge along nonlinear paths; a common serialized start nearly removes that difference. The examined linear systems are moderately conditioned. Ten extended prelocation passes and the held-out phase test do not validate the fit. Available locations are plotted provisionally. This is a validation failure, not a prohibited input.
+- **S7:** 90 conditional SVD solutions exist and are plotted. Alternative quadrants replace unspecified original masks; errors remain conditional on the unaccepted model and catalog.
+- **S9:** the maximum correlated-phase count is 30; the documented >100 filter returns zero events. More linked observations are required; no existing qualifying event can be plotted.
+- **S11:** only one of four written swarm windows contains a retained trial event. Empty selections reflect incomplete sampling, not absent seismicity.
+- **S8:** 65 independent amplitude magnitudes exist. Sparse exposure, conditional locations, calibration assumptions and small samples prevent full-catalog completeness or robust population interpretation. Routine Md is an external calibration prior.
+- **F4:** executed SKHASH returns no solutions. Seven events fail eight polarities; the eighth fails the 90-degree gap gate. Reviewed polarities/S/P ratios, suitable coverage, stable locations, an FK library and event-specific gCAP settings are still required. gCAP remains unfinished, not proven inaccessible.
+- **S12:** own P-aligned CPOZ gathers and S–P residuals are available. Manual phase/depth review and exact original masks remain unresolved; published depth bands were not imposed on selection.
+- **S14/S15:** candidate-family measurements and different-event E1/E2 analogues are provisional. Full exposure and validated onset/cluster assignments remain unfinished. No qualified shallow west-Accademia example exists for S15D.
+- **S3/S4B:** exact eligible labels, splits and benchmark windows remain missing. Released weights do not reproduce training.
+- **Coverage:** public half-hour EIDA requests succeed, but most of the full-period queue remains unfinished. RAN waveform credentials are unavailable. Temporary selected windows do not establish continuous exposure. Failed requests never count as coverage. S2 membership remains unresolved as detailed below.
+- **Context:** a publication-era routine snapshot and exact historical deformation datum/stitching remain unresolved. Existing context is labeled separately from independent detection.
+- **Deferred association profile:** the numerical Calò–Tramelli model remains missing; the alternative is disclosed. The Tan-distributed 3D grid is authorized and preserved, with unknown original transformation and exact averaging masks. No author-fitted model is used and nobody has been contacted.
+
+## Historical inventory, superseded where noted above
 
 # Current limitations and required inputs
 

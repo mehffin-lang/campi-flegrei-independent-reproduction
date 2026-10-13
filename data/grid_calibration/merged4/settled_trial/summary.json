@@ -1,0 +1,365 @@
+{
+  "reason": "Original fixed-model prelocation stopped at its iteration limit. Generic VELEST guide recommends starting coupled inversion from well-located events; extend prelocation without changing damping, observations or gates.",
+  "runs": [
+    {
+      "name": "prelocation32_1",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2580055735001106,
+      "event_rms_s": 0.283915295003355,
+      "depth_min_km": 0.1,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation32_1"
+    },
+    {
+      "name": "prelocation32_2",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2612561070016078,
+      "event_rms_s": 0.2817193452244347,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation32_2",
+      "change": {
+        "max_horizontal_m": 1048.3233866292023,
+        "max_depth_km": 0.5,
+        "max_origin_s": 0.12,
+        "max_rms_s": 0.03999999999999998
+      }
+    },
+    {
+      "name": "prelocation32_3",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2623287657063145,
+      "event_rms_s": 0.2820041059798132,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation32_3",
+      "change": {
+        "max_horizontal_m": 341.9894678039767,
+        "max_depth_km": 0.41000000000000014,
+        "max_origin_s": 0.14,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation32_4",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.26217174327319015,
+      "event_rms_s": 0.28177538647130385,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation32_4",
+      "change": {
+        "max_horizontal_m": 282.1606001791947,
+        "max_depth_km": 0.2699999999999996,
+        "max_origin_s": 0.04,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation32_5",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2621494348398066,
+      "event_rms_s": 0.2815932116406666,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation32_5",
+      "change": {
+        "max_horizontal_m": 282.1606001791947,
+        "max_depth_km": 0.22999999999999998,
+        "max_origin_s": 0.02,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation32_6",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.26241337227346595,
+      "event_rms_s": 0.28177538647130385,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation32_6",
+      "change": {
+        "max_horizontal_m": 282.1606001791947,
+        "max_depth_km": 0.22999999999999998,
+        "max_origin_s": 0.05,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation32_7",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.26213810465321363,
+      "event_rms_s": 0.2815932116406666,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation32_7",
+      "change": {
+        "max_horizontal_m": 282.1606001791947,
+        "max_depth_km": 0.3899999999999997,
+        "max_origin_s": 0.04,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation32_8",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.26221673989850747,
+      "event_rms_s": 0.28201343752978936,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation32_8",
+      "change": {
+        "max_horizontal_m": 352.2470964012711,
+        "max_depth_km": 0.4200000000000004,
+        "max_origin_s": 0.14,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation32_9",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.26226524688633296,
+      "event_rms_s": 0.2815932116406666,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation32_9",
+      "change": {
+        "max_horizontal_m": 282.1606001791947,
+        "max_depth_km": 0.22999999999999998,
+        "max_origin_s": 0.03,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation32_10",
+      "bits": 32,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2621657618318532,
+      "event_rms_s": 0.28177538647130385,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation32_10",
+      "change": {
+        "max_horizontal_m": 282.1606001791947,
+        "max_depth_km": 0.2400000000000002,
+        "max_origin_s": 0.04,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation64_1",
+      "bits": 64,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2579663843147924,
+      "event_rms_s": 0.283915295003355,
+      "depth_min_km": 0.1,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation64_1"
+    },
+    {
+      "name": "prelocation64_2",
+      "bits": 64,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2612925698224318,
+      "event_rms_s": 0.2815464811583188,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation64_2",
+      "change": {
+        "max_horizontal_m": 1048.3233866292023,
+        "max_depth_km": 0.5,
+        "max_origin_s": 0.12,
+        "max_rms_s": 0.03999999999999998
+      }
+    },
+    {
+      "name": "prelocation64_3",
+      "bits": 64,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2623344223652961,
+      "event_rms_s": 0.28183141657455624,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation64_3",
+      "change": {
+        "max_horizontal_m": 340.362640530082,
+        "max_depth_km": 0.41000000000000014,
+        "max_origin_s": 0.14,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation64_4",
+      "bits": 64,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.26214504770010566,
+      "event_rms_s": 0.28194811019424343,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation64_4",
+      "change": {
+        "max_horizontal_m": 282.1606001791947,
+        "max_depth_km": 0.2699999999999996,
+        "max_origin_s": 0.04,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation64_5",
+      "bits": 64,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.26212634749690344,
+      "event_rms_s": 0.2817660470375341,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation64_5",
+      "change": {
+        "max_horizontal_m": 282.1606001791947,
+        "max_depth_km": 0.22999999999999998,
+        "max_origin_s": 0.02,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation64_6",
+      "bits": 64,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2624137165858021,
+      "event_rms_s": 0.28177538647130385,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation64_6",
+      "change": {
+        "max_horizontal_m": 282.1606001791947,
+        "max_depth_km": 0.22999999999999998,
+        "max_origin_s": 0.05,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation64_7",
+      "bits": 64,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2621374065411428,
+      "event_rms_s": 0.2815932116406666,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation64_7",
+      "change": {
+        "max_horizontal_m": 282.1606001791947,
+        "max_depth_km": 0.3899999999999997,
+        "max_origin_s": 0.04,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation64_8",
+      "bits": 64,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.26221079160534794,
+      "event_rms_s": 0.28201343752978936,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation64_8",
+      "change": {
+        "max_horizontal_m": 352.2470964012711,
+        "max_depth_km": 0.4200000000000004,
+        "max_origin_s": 0.14,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation64_9",
+      "bits": 64,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2622607770155429,
+      "event_rms_s": 0.2815932116406666,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation64_9",
+      "change": {
+        "max_horizontal_m": 282.1606001791947,
+        "max_depth_km": 0.22999999999999998,
+        "max_origin_s": 0.03,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "prelocation64_10",
+      "bits": 64,
+      "events": 38,
+      "picks": 653,
+      "returncode": 0,
+      "residual_rms_s": 0.2621644154046103,
+      "event_rms_s": 0.28177538647130385,
+      "depth_min_km": 0.16,
+      "depth_max_km": 6.12,
+      "workdir": "tmp/grid_calibration/settled_trial/prelocation64_10",
+      "change": {
+        "max_horizontal_m": 282.1606001791947,
+        "max_depth_km": 0.2400000000000002,
+        "max_origin_s": 0.04,
+        "max_rms_s": 0.010000000000000009
+      }
+    }
+  ],
+  "paths": {
+    "32": {
+      "prelocation_stable": false,
+      "passes": 10
+    },
+    "64": {
+      "prelocation_stable": false,
+      "passes": 10
+    }
+  },
+  "accepted": false,
+  "interpretation": "This controlled longer-prelocation trial is not silently substituted for the current event catalog. Numerical stability, held-out prediction and phase review remain necessary."
+}

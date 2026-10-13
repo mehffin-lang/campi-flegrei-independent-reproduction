@@ -83,7 +83,7 @@ Run \path{{.venv/bin/python scripts/rebuild_grid_workflow.py}} from the reposito
     # Preserve exact executed files, including failed trials, outside ignored scratch.
     members={}
     with zipfile.ZipFile(D/'run_records.zip','w',compression=zipfile.ZIP_DEFLATED) as z:
-        for base in ['velest','merged4','tomodd']:
+        for base in ['velest','merged4','tomodd','path_diagnosis','settled_trial','uncertainty']:
             for p in sorted((ROOT/'tmp/grid_calibration'/base).rglob('*')):
                 if p.is_file() and p.suffix not in ['.npz']:
                     name=str(p.relative_to(ROOT/'tmp/grid_calibration'));z.write(p,name);members[name]=hashlib.sha256(p.read_bytes()).hexdigest()

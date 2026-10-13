@@ -1,0 +1,7 @@
+{
+  "file": "data/coverage_extension/acquisition.sqlite.gz",
+  "bytes": 3311133,
+  "sha256": "0fe472387c0110c1e9898676a51bd3886604cbd0e5c0b357b41215dda1f73fb6",
+  "frozen_utc": "2026-10-13T19:35:36.779443+00:00",
+  "role": "Includes pending/failed requests. Only header-verified successful sample intervals count."
+}

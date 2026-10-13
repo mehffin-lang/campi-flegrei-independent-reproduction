@@ -1,0 +1,62 @@
+[
+  {
+    "region": "caldera",
+    "file": "input.cnv",
+    "identical": false,
+    "sha256": "765ecc3d5dcfa1830e699e5b542c46e7c2b59dff3051f1cf3052a2272cff26fb",
+    "extension_sha256": "32c6a2f2bc691824b6359d794e132422c4d736da80f793dfb221a68544496ea4",
+    "same_events_and_phase_multiset": true,
+    "difference": "CNV phase order can differ at tied arrival times; compare complete event headers and phase multisets."
+  },
+  {
+    "region": "caldera",
+    "file": "input.mod",
+    "identical": true,
+    "sha256": "07af18933affd1ed79bf23be629e9a5659115f4f4478638cad6e482a7b369d78",
+    "extension_sha256": "07af18933affd1ed79bf23be629e9a5659115f4f4478638cad6e482a7b369d78"
+  },
+  {
+    "region": "caldera",
+    "file": "input.sta",
+    "identical": true,
+    "sha256": "288f2ee7bc1157de3cf3eb1f084192e3625a5072d77aa963ff7acaae65a9664b",
+    "extension_sha256": "288f2ee7bc1157de3cf3eb1f084192e3625a5072d77aa963ff7acaae65a9664b"
+  },
+  {
+    "region": "caldera",
+    "file": "velest.cmn",
+    "identical": true,
+    "sha256": "4daa3b3f48be29cf19cc5f56cab43d5cf7daaec1860bc13a573a978b121c534b",
+    "extension_sha256": "4daa3b3f48be29cf19cc5f56cab43d5cf7daaec1860bc13a573a978b121c534b"
+  },
+  {
+    "region": "Pozzuoli_Solfatara",
+    "file": "input.cnv",
+    "identical": false,
+    "sha256": "765ecc3d5dcfa1830e699e5b542c46e7c2b59dff3051f1cf3052a2272cff26fb",
+    "extension_sha256": "32c6a2f2bc691824b6359d794e132422c4d736da80f793dfb221a68544496ea4",
+    "same_events_and_phase_multiset": true,
+    "difference": "CNV phase order can differ at tied arrival times; compare complete event headers and phase multisets."
+  },
+  {
+    "region": "Pozzuoli_Solfatara",
+    "file": "input.mod",
+    "identical": true,
+    "sha256": "eea9d713eb7f5c44143c380d6a9d79249494be2df3f35e5d4dd941ab7ebc1a8a",
+    "extension_sha256": "eea9d713eb7f5c44143c380d6a9d79249494be2df3f35e5d4dd941ab7ebc1a8a"
+  },
+  {
+    "region": "Pozzuoli_Solfatara",
+    "file": "input.sta",
+    "identical": true,
+    "sha256": "288f2ee7bc1157de3cf3eb1f084192e3625a5072d77aa963ff7acaae65a9664b",
+    "extension_sha256": "288f2ee7bc1157de3cf3eb1f084192e3625a5072d77aa963ff7acaae65a9664b"
+  },
+  {
+    "region": "Pozzuoli_Solfatara",
+    "file": "velest.cmn",
+    "identical": true,
+    "sha256": "4daa3b3f48be29cf19cc5f56cab43d5cf7daaec1860bc13a573a978b121c534b",
+    "extension_sha256": "4daa3b3f48be29cf19cc5f56cab43d5cf7daaec1860bc13a573a978b121c534b"
+  }
+]

@@ -13,7 +13,8 @@ def restore(row):
     assert p.stat().st_size==row['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest()==row['sha256'],row['file']
     return row['file']
 if __name__=='__main__':
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--continuation',action='store_true');parser.add_argument('--calibration-followup',action='store_true');args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--continuation',action='store_true');parser.add_argument('--calibration-followup',action='store_true');parser.add_argument('--coverage-extension',action='store_true');args=parser.parse_args()
+    if args.coverage_extension:args.calibration_followup=True
     if args.calibration_followup:args.continuation=True
     rows=json.loads((ROOT/'docs/rebuild_inputs.json').read_text())
     if args.continuation:
@@ -47,5 +48,8 @@ if __name__=='__main__':
     if args.calibration_followup:
         known={r['file'] for r in rows}
         rows += [r for r in json.loads((ROOT/'data/calibration_followup/additional_inputs.json').read_text()) if r['file'] not in known]
+    if args.coverage_extension:
+        known={r['file'] for r in rows}
+        rows += [r for r in json.loads((ROOT/'data/coverage_extension/retrieval_receipts.json').read_text()) if r['file'] not in known]
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         for name in pool.map(restore,rows):print('Verified',name,flush=True)

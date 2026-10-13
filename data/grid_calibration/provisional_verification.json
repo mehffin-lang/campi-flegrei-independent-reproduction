@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "empirical_locations": 123,
+  "own_magnitudes": 65,
+  "checked_amplitude_equations": 884,
+  "cpoz_traces": 118,
+  "svd_events": 90,
+  "S9_events": 0,
+  "panels": 63,
+  "partial": 48,
+  "scientific_catalog_accepted": false,
+  "scope": "Tests saved source hashes, same-cohort identity, original P alignment, SNR/amplitude equations, selection counts and figure availability. Does not establish event identities, absolute depths, independent magnitude accuracy, reviewed polarities or exact reproduction."
+}

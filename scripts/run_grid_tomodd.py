@@ -6,7 +6,7 @@ import pandas as pd
 from obspy import UTCDateTime
 from pyproj import Geod
 import relocation_followup as rf
-ROOT=rf.ROOT;OUT=ROOT/'data/grid_calibration/merged4';DEST=OUT/'tomodd';D=ROOT/'data/calibration_followup/expanded';WORK=ROOT/'tmp/grid_calibration/tomodd'
+ROOT=rf.ROOT;OUT=ROOT/os.environ.get('CF_GRID_BASE','data/grid_calibration')/'merged4';DEST=OUT/'tomodd';D=ROOT/os.environ.get('CF_OBSERVATIONS','data/calibration_followup/expanded');WORK=ROOT/os.environ.get('CF_GRID_WORK','tmp/grid_calibration')/'tomodd'
 
 def write_inputs(work,events,stations,picks,ct,cc):
     work.mkdir(parents=True,exist_ok=True);ids=set(events.index);initial=pd.read_csv(OUT/'filtered_events.csv').set_index('event_index')

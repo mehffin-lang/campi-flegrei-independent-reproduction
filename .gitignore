@@ -8,4 +8,5 @@ report/*.fls
 report/reference_assets/
 sources/run2/
 .venv/
+.venv-skhash/
 inputs/

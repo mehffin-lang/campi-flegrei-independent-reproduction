@@ -27,7 +27,8 @@
     "caption": "Partial contextual reconstruction. A: external routine catalog, 16,046 located events and five Md>=4 stars. B: 114 leveling surveys (circles), 13 source-provided estimates (triangles), one source-provided reconstruction (cross), and daily GNSS through 20 March 2025; Historical estimates are not raw observations or reconstructions made here. C: all routine monthly counts and cumulative Md>0.2; March includes days 1--20 only. Routine events are not independent detections. Datum joining is an assumption; basemap and live snapshot differ from the publication. Depth colors: fixed 0\u20135 km, red to blue; magenta >5 km, no data clipping. S5 limits/ticks are printed; 1A endpoints are unlabeled and 0\u20135 km is an explicit approximation. Circle area law is an explicit display assumption, not recovered exactly. Missing magnitudes are crosses. Routine events are external context.",
     "file_labels": [
       "1A--C"
-    ]
+    ],
+    "comparison_caption": "External routine-catalog context and source-labeled leveling/GNSS observations. These earthquakes are not independent detections. Historical snapshot and datum differences remain."
   },
   {
     "figure": "2",
@@ -44,10 +45,21 @@
       "2A",
       "2B"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "Panels A and B need a validated multiyear relocated catalog and independent magnitudes. The expanded 1,015 associations now enter grid-derived calibration and two TomoDD trials, but path sensitivity and sparse coverage prevent acceptance.",
-    "caption": "Seismicity rates by region and depth versus time are not reproduced."
+    "partial_panels": [
+      "2A",
+      "2B"
+    ],
+    "independent_files": [
+      "figures/figure_2_provisional.pdf",
+      "figures/figure_2_extension.pdf"
+    ],
+    "missing": "",
+    "caption": "Weekly counts and depth evolution of the sparse relocated subset. Weeks without own events are not joined as measured zeros. External routine counts use a separately labeled right axis. Geographic masks are explicit alternatives; no confirmed-hybrid markers are added. Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. The additional extended-cohort view uses separately numbered, independently rerun results. Magnitudes and SVD uncertainties were not inherited by integer event ID.",
+    "file_labels": [
+      "2; provisional numerical counterpart",
+      "Latest extended cohort: independently rerun, provisional"
+    ],
+    "comparison_caption": "Provisional weekly counts and depths from two overlapping own subsets. Sparse exposure is not a full-period rate measurement; spatial masks differ. Routine context has a separate axis."
   },
   {
     "figure": "3",
@@ -65,10 +77,22 @@
       "3/northing-depth",
       "3/easting-depth"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "The map and both cross sections require independently calibrated and double-difference-relocated events. Provisional diagnostic locations are not substitutes.",
-    "caption": "Map, northing-depth and easting-depth views are not reproduced."
+    "partial_panels": [
+      "3/map",
+      "3/northing-depth",
+      "3/easting-depth"
+    ],
+    "independent_files": [
+      "figures/figure_3_provisional.pdf",
+      "figures/figure_3_extension.pdf"
+    ],
+    "missing": "",
+    "caption": "123 independently relocated trial events, 0.111--7.965 km depth. Own relative magnitudes set sizes where available; crosses mark missing magnitudes. This scattered subset does not establish the published ring or its depth limit. Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. The additional extended-cohort view uses separately numbered, independently rerun results. Magnitudes and SVD uncertainties were not inherited by integer event ID.",
+    "file_labels": [
+      "3; provisional numerical counterpart",
+      "Latest extended cohort: independently rerun, provisional"
+    ],
+    "comparison_caption": "Two separately processed 123-event trial subsets. Calibration sensitivity prevents accepting fault geometry. Own magnitudes set sizes where measured; crosses mark missing magnitudes. Depth colors retain over-range values."
   },
   {
     "figure": "4",
@@ -87,7 +111,7 @@
     ],
     "partial_panels": [],
     "independent_files": [],
-    "missing": "Panels A and B require independent SKHASH/gCAP solutions and reliable locations. No focal inversion was executed.",
+    "missing": "SKHASH was executed: 76 automated first-motion measurements on 8 own events; 35 passed the provisional sign/SNR screen. Seven events lack eight stable polarities; the remaining event has a 186.158-degree gap, exceeding the unchanged 90-degree gate. No mechanism is returned. Reviewed polarities, S/P constraints and independent gCAP/FK processing remain missing; no beachballs can be plotted.",
     "caption": "Ring-sector and central/onshore focal-mechanism maps are not reproduced."
   },
   {
@@ -108,10 +132,13 @@
       "S1"
     ],
     "independent_files": [
-      "figures/followup_coverage.pdf"
+      "figures/coverage_extension.pdf"
     ],
     "missing": "",
-    "caption": "Partial: expanded checkpoint, 868 processed files, 26 station names, 8511.520 union channel-hours. Empty intervals are neither connected nor counted. Current grid-derived calibration uses this expanded checkpoint. Earlier diagnostics retain separate identifiers. Vertical ticks show observed-interval midpoints where durations are too short to resolve; ticks do not imply continuous coverage."
+    "caption": "997 files, 26 station names and 8706.970 union channel-hours. Short interval markers do not imply full-period coverage. Earlier calibration/downstream cohort remains separately numbered.",
+    "file_labels": [
+      "S1: latest actual processed intervals"
+    ]
   },
   {
     "figure": "S2",
@@ -231,11 +258,22 @@
       "S6/northing-depth",
       "S6/easting-depth"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "No validated independent counterpart. Authorized-grid VELEST now runs on the expanded cohort but remains path-sensitive; both fixed-grid rounds executed; validation pending. Diagnostics are retained after the supplement. No rejected locations are presented as reproduced structure.",
-    "caption": "Not reproduced at the current checkpoint.",
-    "file_labels": []
+    "partial_panels": [
+      "S6/map",
+      "S6/northing-depth",
+      "S6/easting-depth"
+    ],
+    "independent_files": [
+      "figures/figure_S6_provisional.pdf",
+      "figures/figure_S6_extension.pdf"
+    ],
+    "missing": "",
+    "caption": "216 independently fitted VELEST events pass the numerical pick/RMS/gap filters. Physical layer ordering and the final small-update gate pass; stagnation, held-out prediction, regional and precision-path stability prevent acceptance. These are plotted as provisional results. Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. The additional extended-cohort view uses separately numbered, independently rerun results. Magnitudes and SVD uncertainties were not inherited by integer event ID.",
+    "file_labels": [
+      "S6; provisional numerical counterpart",
+      "Latest extended cohort: independently rerun, provisional"
+    ],
+    "comparison_caption": "216 and 219 own VELEST numerical-filter passes. Uniform symbols and fixed 0\u20135 km depth colors; magenta marks deeper events. Calibration remains unaccepted; no author locations or fitted model are plotted."
   },
   {
     "figure": "S7",
@@ -258,10 +296,27 @@
       "S7E",
       "S7G"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "No validated independent counterpart. Authorized-grid VELEST now runs on the expanded cohort but remains path-sensitive; both fixed-grid rounds executed; validation pending. Diagnostics are retained after the supplement. No rejected locations are presented as reproduced structure.",
-    "caption": "Regional locations, uncertainty-versus-count panels and uncertainty distributions are not reproduced."
+    "partial_panels": [
+      "S7A/map",
+      "S7A/easting-depth",
+      "S7B",
+      "S7D",
+      "S7F",
+      "S7C",
+      "S7E",
+      "S7G"
+    ],
+    "independent_files": [
+      "figures/figure_S7_provisional.pdf",
+      "figures/figure_S7_extension.pdf"
+    ],
+    "missing": "",
+    "caption": "90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention. Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. The additional extended-cohort view uses separately numbered, independently rerun results. Magnitudes and SVD uncertainties were not inherited by integer event ID.",
+    "file_labels": [
+      "S7; provisional numerical counterpart",
+      "Latest extended cohort: independently rerun, provisional"
+    ],
+    "comparison_caption": "90 and 80 conditional SVD solutions from alternative quadrants. Kilometer-scale errors are retained. Different subset counts do not establish improved absolute accuracy."
   },
   {
     "figure": "S8",
@@ -283,13 +338,16 @@
       "S8B"
     ],
     "independent_files": [
-      "figures/figure_S8_pilot.pdf"
+      "figures/figure_S8_pilot.pdf",
+      "figures/figure_S8_extension.pdf"
     ],
     "missing": "",
-    "caption": "Partial amplitude-ratio pilot: 119 provisional magnitudes from independent observations, with routine Md as the documented calibration prior. A is not an independent validation of that prior. B is a limited-sample histogram with a conditional likelihood estimate, not the full-period completeness or b-value result. Locations are initial associations, before final relocation.",
+    "caption": "Partial relocated-subset magnitude calculation: 65 own estimates, 40 matched routine Md anchors in panel A. 5929 response-corrected channel measurements, 1626 above 5 dB, 884 relative-amplitude equations. Mc=-0.0, b=0.866 +/- 0.110 from 41 selected magnitudes. Calibration comparison is not independent validation; sparse acquisition cannot establish population completeness or b-value. The additional extended-cohort view uses separately numbered, independently rerun results. Magnitudes and SVD uncertainties were not inherited by integer event ID.",
     "file_labels": [
-      "S8A--B"
-    ]
+      "S8A--B",
+      "Latest extended cohort: independently rerun, provisional"
+    ],
+    "comparison_caption": "65 and 67 independently inverted amplitude magnitudes. Routine duration magnitude is a calibration prior, not validation. Completeness and b describe selected, discontinuous samples."
   },
   {
     "figure": "S9",
@@ -309,7 +367,7 @@
     ],
     "partial_panels": [],
     "independent_files": [],
-    "missing": "All three views require independently relocated events and cross-correlation observation counts for the published quality filter. These outputs are absent.",
+    "missing": "The documented NCCP+NCCS>100 selection was computed on the provisional relocated catalog and returned zero events. No qualified spatial result exists to plot. More waveform-linked neighboring events are needed; the threshold was not relaxed.",
     "caption": "The filtered map and cross sections are not reproduced."
   },
   {
@@ -329,10 +387,23 @@
       "S10/2024",
       "S10/2025"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "The four annual groups for 2022--2025 require the independent multiyear relocated catalog. The available sample does not support them.",
-    "caption": "All four annual groups are not reproduced."
+    "partial_panels": [
+      "S10/2022",
+      "S10/2023",
+      "S10/2024",
+      "S10/2025"
+    ],
+    "independent_files": [
+      "figures/figure_S10_provisional.pdf",
+      "figures/figure_S10_extension.pdf"
+    ],
+    "missing": "",
+    "caption": "Independently selected calendar-year subsets. Event counts reflect sparse exposure and numerical filtering, not regional seismicity rates. All years have at least one provisional relocated result. Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. The additional extended-cohort view uses separately numbered, independently rerun results. Magnitudes and SVD uncertainties were not inherited by integer event ID.",
+    "file_labels": [
+      "S10; provisional numerical counterpart",
+      "Latest extended cohort: independently rerun, provisional"
+    ],
+    "comparison_caption": "Own trial locations by calendar year, with sparse coverage. Counts are not annual seismicity-rate estimates."
   },
   {
     "figure": "S11",
@@ -351,10 +422,20 @@
       "S11/swarm-3",
       "S11/swarm-4"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "The four swarm maps require the independent relocated catalog and justified swarm windows. These selections and locations remain incomplete.",
-    "caption": "All four swarm maps are not reproduced."
+    "partial_panels": [
+      "S11/swarm-2"
+    ],
+    "independent_files": [
+      "figures/figure_S11_provisional.pdf",
+      "figures/figure_S11_extension.pdf"
+    ],
+    "missing": "S11/swarm-1, swarm-3 and swarm-4 have no surviving independently relocated events in their written calendar windows; sparse exposure, not evidence that no earthquakes occurred.",
+    "caption": "Selections use the dates written in the published panel titles, with inclusive end days. Only nonempty selections have partial counterparts. Empty selections are explicitly labeled: they do not establish absence of earthquakes. Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. The additional extended-cohort view uses separately numbered, independently rerun results. Magnitudes and SVD uncertainties were not inherited by integer event ID.",
+    "file_labels": [
+      "S11; provisional numerical counterpart",
+      "Latest extended cohort: independently rerun, provisional"
+    ],
+    "comparison_caption": "Only swarm 2 contains retained own events. The other written calendar windows have no qualifying numerical result in either observed subset."
   },
   {
     "figure": "S12",
@@ -377,10 +458,27 @@
       "S12G",
       "S12H"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "Panels A--H need relocated sector selections and manual depth review. 137 independent CPOZ P arrivals now exist, but the required sector gathers remain unfinished.",
-    "caption": "Sector views and six arrival-aligned waveform gathers are not reproduced."
+    "partial_panels": [
+      "S12A",
+      "S12B",
+      "S12C",
+      "S12D",
+      "S12E",
+      "S12F",
+      "S12G",
+      "S12H"
+    ],
+    "independent_files": [
+      "figures/figure_S12_provisional.pdf",
+      "figures/figure_S12_extension.pdf"
+    ],
+    "missing": "",
+    "caption": "118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete. Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. The additional extended-cohort view uses separately numbered, independently rerun results. Magnitudes and SVD uncertainties were not inherited by integer event ID.",
+    "file_labels": [
+      "S12; provisional numerical counterpart",
+      "Latest extended cohort: independently rerun, provisional"
+    ],
+    "comparison_caption": "118 and 122 original CPOZ component traces, aligned on own P picks and filtered above 4 Hz. Alternative geographic masks, individually normalized amplitudes and unreviewed onsets."
   },
   {
     "figure": "S13",
@@ -397,10 +495,21 @@
       "S13A",
       "S13B"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "Panels A and B require reliable independent relocated coordinates and an appropriately sourced basemap. The relocated catalog does not exist.",
-    "caption": "Full-caldera and onshore spatial views are not reproduced."
+    "partial_panels": [
+      "S13A",
+      "S13B"
+    ],
+    "independent_files": [
+      "figures/figure_S13_provisional.pdf",
+      "figures/figure_S13_extension.pdf"
+    ],
+    "missing": "",
+    "caption": "Own relocated coordinates are plotted for full-caldera and onshore views. Independent coarse coastline replaces the satellite layer, whose retrieval and rendering remain unimplemented. No publication pixels enter either map. Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. The additional extended-cohort view uses separately numbered, independently rerun results. Magnitudes and SVD uncertainties were not inherited by integer event ID.",
+    "file_labels": [
+      "S13; provisional numerical counterpart",
+      "Latest extended cohort: independently rerun, provisional"
+    ],
+    "comparison_caption": "Own provisional relocated coordinates on an independent coarse coastline. A satellite background is not implemented; no published pixels supply the result."
   },
   {
     "figure": "S14",
@@ -419,10 +528,20 @@
       "S14/3",
       "S14/unclustered"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "The cluster histories require three-year exposure, confirmed events and relative magnitudes. The present 75.797 hour scan produced 822 unconfirmed threshold crossings, not reviewed families.",
-    "caption": "Cluster histories and annotated waveform collections are not reproduced."
+    "partial_panels": [
+      "S14/1",
+      "S14/2",
+      "S14/3"
+    ],
+    "independent_files": [
+      "figures/figure_S14_candidates.pdf"
+    ],
+    "missing": "S14/unclustered: no independent unclustered hybrid sample or validated family assignment. The three-template threshold scan cannot itself supply that class.",
+    "caption": "Partial candidate-family analysis from original observations. Twelve strongest independent correlation crossings per E1/E2/E3 template are displayed with measured frequency index and horizontal amplitude ratio. Template assignment is not manual confirmation or validated clustering. The amplitude ratio is not called a relative magnitude because common propagation paths are unverified. These are not the published 70 events or their full-period history.",
+    "file_labels": [
+      "Template-family candidates; not confirmed clusters"
+    ],
+    "comparison_caption": "Measured waveforms, frequency indices and amplitude ratios for the twelve highest correlations per template. These candidates are not confirmed hybrids or validated clusters."
   },
   {
     "figure": "S15",
@@ -442,12 +561,22 @@
       "S15D"
     ],
     "partial_panels": [
+      "S15A",
+      "S15B",
       "S15C"
     ],
     "independent_files": [
+      "figures/hybrid_E1.pdf",
+      "figures/hybrid_E2.pdf",
       "figures/hybrid_E3.pdf"
     ],
-    "missing": "Panels A and B use different published events from the saved E1/E2 templates; D has no independently selected matching example. Those panels remain not reproduced.",
-    "caption": "Panel C is partial: independently processed E3 CAAM/COLB observations. Onset alignment, display filtering and spectral settings differ or are incompletely specified. A, B and D have placeholders rather than substitute waveforms."
+    "missing": "S15D: no retained independently relocated event with depth <0.6 km south of 40.83 N in this cohort, hence no suitable west-Accademia extremely-shallow example. Incorrectly labeled examples are not substituted.",
+    "caption": "Partial numerical waveform/spectral counterparts. A/B analogues use the written-method E1/E2 family templates, which are different events from the published A/B examples. They are explicitly not exact event reproduction. C uses E3. All are processed original CAAM/COLB observations; normalization and spectral settings are disclosed. No author waveform or spectral array is used.",
+    "file_labels": [
+      "S15A analogue: different documented E1 event",
+      "S15B analogue: different documented E2 event",
+      "S15C: documented E3 event"
+    ],
+    "comparison_caption": "A/B use explicitly different E1/E2 examples; C uses the documented E3 template. All traces and spectra were computed from original observations. No qualified D example is available."
   }
 ]

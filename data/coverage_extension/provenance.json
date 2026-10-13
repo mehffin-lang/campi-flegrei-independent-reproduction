@@ -1,0 +1,18 @@
+{
+  "observations": "Original public waveforms and StationXML; exact files/intervals/hashes in input_jobs.json, retrieval_receipts.json and processing_checkpoint.json. No routine-catalog seed.",
+  "method_resources": [
+    "Permitted trained PhaseNet weights and documented generic GaMMA configuration, pinned in processing_checkpoint.json",
+    "Explicitly authorized unchanged Tan-distributed Battaglia-attributed grid; calibration/grid_provenance.json",
+    "Generic VELEST, TomoDD, HypoDD and SKHASH, with own controls and logs"
+  ],
+  "contextual_calibration": "data/continuation/routine_catalog.csv used only after independent detection and location for magnitude priors.",
+  "own_results": "picks.csv, associations.csv, initial_events.csv and calibration/merged4/ are computed by this implementation; reused daily solves come only from the hash-verified own earlier cohort.",
+  "published_results": "None used as analysis inputs. Published figure crops occur only in report/comparison.pdf.",
+  "fixtures": "No synthetic test observations enter these results. Zero magnitude/error fields in generic event-file formats are unused solver placeholders, not measured magnitudes or reported errors; plotted magnitudes come only from own amplitude inversion.",
+  "commands": [
+    "scripts/extend_calibration_observations.py --output data/coverage_extension --reuse-own-days",
+    "scripts/calibrate_coverage_extension.py",
+    "scripts/coverage_extension_downstream.py",
+    "scripts/publication_plots.py"
+  ]
+}

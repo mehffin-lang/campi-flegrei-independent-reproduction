@@ -6,8 +6,8 @@ import numpy as np
 import pandas as pd
 from obspy import read,UTCDateTime
 from scipy.signal import fftconvolve,find_peaks
-ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--dataset',choices=['extended','continuation'],default='extended');args=ap.parse_args()
-OUT=Path('data')/args.dataset;cfg=json.loads(Path('config/observations.json').read_text())
+ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--dataset',choices=['extended','continuation','grid'],default='extended');ap.add_argument('--refresh-observations',action='store_true');args=ap.parse_args()
+OUT=Path('data/grid_calibration/merged4/hybrid') if args.dataset=='grid' else Path('data')/args.dataset;OUT.mkdir(exist_ok=True);cfg=json.loads(Path('config/observations.json').read_text())
 def corr(x,y):
     y=y-y.mean();n=len(y);s=np.r_[0.,np.cumsum(x)];ss=np.r_[0.,np.cumsum(x*x)]
     den=np.sqrt(np.maximum(ss[n:]-ss[:-n]-(s[n:]-s[:-n])**2/n,0))*np.linalg.norm(y)
@@ -25,6 +25,16 @@ if args.dataset=='continuation':
     # Reuse the exact observation checkpoint; later downloads must not silently
     # change the exposure of an offline rebuild.
     files += [Path(r['file']) for r in json.loads(Path('docs/continuation_processed_inputs.json').read_text())]
+elif args.dataset=='grid':
+    import process_continuous as pc
+    manifest=OUT/'input_jobs.json'
+    if args.refresh_observations or not manifest.exists():
+        jobs=pc.jobs();manifest.write_text(json.dumps([dict(file=f,start=a,end=b,sha256=h) for f,a,b,h in jobs if any(s in f for s in index)],indent=2)+'\n')
+    import hashlib
+    for r in json.loads(manifest.read_text()):
+        assert hashlib.sha256(Path(r['file']).read_bytes()).hexdigest()==r['sha256'],r['file']
+        files.append(Path(r['file']))
+files=sorted(set(files))
 for f in files:
     if not any(s in f.name for s in index):continue
     for tr in read(str(f),headonly=True).select(component='Z'):

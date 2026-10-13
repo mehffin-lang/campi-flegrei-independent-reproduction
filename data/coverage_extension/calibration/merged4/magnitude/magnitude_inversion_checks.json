@@ -1,0 +1,165 @@
+{
+  "components": [
+    {
+      "component": 0,
+      "events": 2,
+      "equations": 13,
+      "rank": 2,
+      "residual_dof": 11,
+      "calibration_priors": 2,
+      "weighted_residual_sum_squares": 0.05293560319245199,
+      "accepted": true
+    },
+    {
+      "component": 1,
+      "events": 8,
+      "equations": 277,
+      "rank": 8,
+      "residual_dof": 269,
+      "calibration_priors": 4,
+      "weighted_residual_sum_squares": 0.25161990852743726,
+      "accepted": true
+    },
+    {
+      "component": 2,
+      "events": 2,
+      "equations": 11,
+      "rank": 2,
+      "residual_dof": 9,
+      "calibration_priors": 2,
+      "weighted_residual_sum_squares": 0.007290397660898152,
+      "accepted": true
+    },
+    {
+      "component": 3,
+      "events": 2,
+      "equations": 8,
+      "rank": 2,
+      "residual_dof": 6,
+      "calibration_priors": 1,
+      "weighted_residual_sum_squares": 0.0010247839052211862,
+      "accepted": true
+    },
+    {
+      "component": 4,
+      "events": 6,
+      "equations": 56,
+      "rank": 6,
+      "residual_dof": 50,
+      "calibration_priors": 6,
+      "weighted_residual_sum_squares": 0.08772909141099405,
+      "accepted": true
+    },
+    {
+      "component": 5,
+      "events": 2,
+      "equations": 5,
+      "rank": 2,
+      "residual_dof": 3,
+      "calibration_priors": 1,
+      "weighted_residual_sum_squares": 0.0009181245212242495,
+      "accepted": true
+    },
+    {
+      "component": 6,
+      "events": 3,
+      "equations": 18,
+      "rank": 3,
+      "residual_dof": 15,
+      "calibration_priors": 2,
+      "weighted_residual_sum_squares": 0.002850033781340832,
+      "accepted": true
+    },
+    {
+      "component": 7,
+      "events": 8,
+      "equations": 96,
+      "rank": 8,
+      "residual_dof": 88,
+      "calibration_priors": 5,
+      "weighted_residual_sum_squares": 0.08911998105829122,
+      "accepted": true
+    },
+    {
+      "component": 8,
+      "events": 3,
+      "equations": 13,
+      "rank": 3,
+      "residual_dof": 10,
+      "calibration_priors": 2,
+      "weighted_residual_sum_squares": 0.012238190713808564,
+      "accepted": true
+    },
+    {
+      "component": 9,
+      "events": 9,
+      "equations": 112,
+      "rank": 9,
+      "residual_dof": 103,
+      "calibration_priors": 3,
+      "weighted_residual_sum_squares": 0.1014636909570672,
+      "accepted": true
+    },
+    {
+      "component": 10,
+      "events": 2,
+      "equations": 11,
+      "rank": 2,
+      "residual_dof": 9,
+      "calibration_priors": 1,
+      "weighted_residual_sum_squares": 0.0036866915513856825,
+      "accepted": true
+    },
+    {
+      "component": 11,
+      "events": 2,
+      "equations": 14,
+      "rank": 2,
+      "residual_dof": 12,
+      "calibration_priors": 2,
+      "weighted_residual_sum_squares": 0.08356753517393473,
+      "accepted": true
+    },
+    {
+      "component": 12,
+      "events": 11,
+      "equations": 199,
+      "rank": 11,
+      "residual_dof": 188,
+      "calibration_priors": 6,
+      "weighted_residual_sum_squares": 0.37194861207085606,
+      "accepted": true
+    },
+    {
+      "component": 13,
+      "events": 3,
+      "equations": 8,
+      "rank": 3,
+      "residual_dof": 5,
+      "calibration_priors": 1,
+      "weighted_residual_sum_squares": 0.0024850704262857023,
+      "accepted": true
+    },
+    {
+      "component": 14,
+      "events": 2,
+      "equations": 32,
+      "rank": 2,
+      "residual_dof": 30,
+      "calibration_priors": 1,
+      "weighted_residual_sum_squares": 0.03431157518863885,
+      "accepted": true
+    },
+    {
+      "component": 19,
+      "events": 2,
+      "equations": 22,
+      "rank": 2,
+      "residual_dof": 20,
+      "calibration_priors": 2,
+      "weighted_residual_sum_squares": 0.017016856263267915,
+      "accepted": true
+    }
+  ],
+  "uncertainty": "Residual-scaled inverse normal matrix of the weighted amplitude/prior system. Conditional on unit Md prior weight and independent homoscedastic weighted errors; excludes absolute calibration, response, association, location and exposure errors. Undefined when residual degrees of freedom are zero."
+}

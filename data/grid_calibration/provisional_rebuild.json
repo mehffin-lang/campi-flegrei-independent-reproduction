@@ -1,0 +1,200 @@
+{
+  "started_utc": "2026-10-13T20:10:54.577758+00:00",
+  "command": "scripts/rebuild_provisional_workflow.py --documents-only",
+  "stages": [
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/build_documents.py",
+        "--clean"
+      ],
+      "start": "2026-10-13T20:10:55.295709+00:00",
+      "returncode": 0,
+      "log": "tmp/grid_calibration/provisional_rebuild/build_documents.log"
+    }
+  ],
+  "procedure_passed": true,
+  "scientific_acceptance": false,
+  "previous_scientific_execution": {
+    "started_utc": "2026-10-13T19:12:16.645303+00:00",
+    "command": "scripts/rebuild_provisional_workflow.py --science-only",
+    "stages": [
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/diagnose_grid_paths.py"
+        ],
+        "start": "2026-10-13T19:12:16.806939+00:00",
+        "returncode": 0,
+        "log": "tmp/grid_calibration/provisional_rebuild/diagnose_grid_paths.log"
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/settle_grid_prelocation.py"
+        ],
+        "start": "2026-10-13T19:12:47.870328+00:00",
+        "returncode": 0,
+        "log": "tmp/grid_calibration/provisional_rebuild/settle_grid_prelocation.log"
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/grid_uncertainty.py"
+        ],
+        "start": "2026-10-13T19:12:52.754829+00:00",
+        "returncode": 0,
+        "log": "tmp/grid_calibration/provisional_rebuild/grid_uncertainty.log"
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/downstream_checks.py",
+          "--dataset",
+          "grid",
+          "--workers",
+          "6"
+        ],
+        "start": "2026-10-13T19:13:01.498281+00:00",
+        "returncode": 0,
+        "log": "tmp/grid_calibration/provisional_rebuild/downstream_checks.log"
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/magnitude_statistics.py",
+          "--grid"
+        ],
+        "start": "2026-10-13T19:17:41.285572+00:00",
+        "returncode": 0,
+        "log": "tmp/grid_calibration/provisional_rebuild/magnitude_statistics.log"
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/grid_focal_attempt.py"
+        ],
+        "start": "2026-10-13T19:17:42.239482+00:00",
+        "returncode": 0,
+        "log": "tmp/grid_calibration/provisional_rebuild/grid_focal_attempt.log"
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/grid_panel_data.py"
+        ],
+        "start": "2026-10-13T19:18:09.354826+00:00",
+        "returncode": 0,
+        "log": "tmp/grid_calibration/provisional_rebuild/grid_panel_data.log"
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/grid_location_checks.py"
+        ],
+        "start": "2026-10-13T19:18:22.806926+00:00",
+        "returncode": 0,
+        "log": "tmp/grid_calibration/provisional_rebuild/grid_location_checks.log"
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/grid_hybrid_candidates.py"
+        ],
+        "start": "2026-10-13T19:18:40.158066+00:00",
+        "returncode": 0,
+        "log": "tmp/grid_calibration/provisional_rebuild/grid_hybrid_candidates.log"
+      }
+    ],
+    "procedure_passed": true,
+    "scientific_acceptance": false,
+    "finished_utc": "2026-10-13T19:19:02.044016+00:00"
+  },
+  "reused_completed_stages": [
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/coverage_extension_report.py",
+        "--prepare-only"
+      ],
+      "start": "2026-10-13T19:53:01.404415+00:00",
+      "returncode": 0,
+      "log": "tmp/grid_calibration/provisional_rebuild/coverage_extension_report.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/publication_plots.py"
+      ],
+      "start": "2026-10-13T19:53:04.220269+00:00",
+      "returncode": 0,
+      "log": "tmp/grid_calibration/provisional_rebuild/publication_plots.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_report.py"
+      ],
+      "start": "2026-10-13T19:55:01.517110+00:00",
+      "returncode": 0,
+      "log": "tmp/grid_calibration/provisional_rebuild/grid_report.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/provisional_report.py"
+      ],
+      "start": "2026-10-13T19:55:05.554208+00:00",
+      "returncode": 0,
+      "log": "tmp/grid_calibration/provisional_rebuild/provisional_report.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/coverage_extension_report.py"
+      ],
+      "start": "2026-10-13T19:55:10.375241+00:00",
+      "returncode": 0,
+      "log": "tmp/grid_calibration/provisional_rebuild/coverage_extension_report.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/verify_grid_workflow.py"
+      ],
+      "start": "2026-10-13T19:55:13.242079+00:00",
+      "returncode": 0,
+      "log": "tmp/grid_calibration/provisional_rebuild/verify_grid_workflow.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/verify_provisional_workflow.py"
+      ],
+      "start": "2026-10-13T19:55:17.764319+00:00",
+      "returncode": 0,
+      "log": "tmp/grid_calibration/provisional_rebuild/verify_provisional_workflow.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/verify_grid_workflow.py",
+        "--extension"
+      ],
+      "start": "2026-10-13T19:55:19.967901+00:00",
+      "returncode": 0,
+      "log": "tmp/grid_calibration/provisional_rebuild/verify_grid_workflow_extension.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/verify_provisional_workflow.py",
+        "--extension"
+      ],
+      "start": "2026-10-13T19:55:24.229621+00:00",
+      "returncode": 0,
+      "log": "tmp/grid_calibration/provisional_rebuild/verify_provisional_workflow_extension.log"
+    }
+  ],
+  "finished_utc": "2026-10-13T20:11:48.978510+00:00"
+}

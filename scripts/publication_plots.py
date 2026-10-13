@@ -67,7 +67,9 @@ def contextual():
     save(fig,'figure_1_combined',['data/continuation/figure_1A.csv','inputs/continuation/coastline.zip']+hist_inputs+rate_inputs,'1A–C','Original panel arrangement; contextual observations, not independent earthquake detections.')
 
 def coverage():
-    for folder,name in [('data/continuation','continuation_coverage'),('data/calibration_followup/expanded','followup_coverage')]:
+    sources=[('data/continuation','continuation_coverage'),('data/calibration_followup/expanded','followup_coverage')]
+    if (ROOT/'data/coverage_extension/analysis_summary.json').exists():sources.append(('data/coverage_extension','coverage_extension'))
+    for folder,name in sources:
         path=folder+'/processed_coverage_union.json';rows=json.loads((ROOT/path).read_text());groups={}
         for r in rows:groups.setdefault('.'.join(r['channel'].split('.')[:-1])+'.'+r['channel'].split('.')[-1][:-1],[]).extend(r['intervals'])
         fig,ax=plt.subplots(figsize=(8,8),layout='constrained')
@@ -129,17 +131,21 @@ def picking():
         fig.suptitle(title+'\nSpectrogram: normalized-count²/Hz, −80 to 0 dB (under white / over black); paper scale unspecified.',fontsize=9)
         save(fig,name,[file,str(target.relative_to(ROOT))]+(['data/continuation/figure_S4A_picks.json'] if current else []),panel,'S4 blue P/orange S; teal/red own saved pick marks for S4A, score-peak indicators for separate diagnostics. Spectral limits undisclosed in paper; explicit own normalization. No published reference annotations.',png=True)
 
-def magnitudes():
-    a=pd.read_csv(D/'figure_S8A.csv');h=pd.read_csv(D/'figure_S8B.csv');stat=json.loads((D/'magnitude_statistics.json').read_text());fig,axes=plt.subplots(1,2,figsize=(10,4),layout='constrained')
+def magnitudes(extension=False):
+    source=ROOT/'data/grid_calibration/merged4/magnitude' if (ROOT/'data/grid_calibration/merged4/magnitude/magnitude_statistics.json').exists() else D
+    if extension:source=ROOT/'data/coverage_extension/calibration/merged4/magnitude'
+    a=pd.read_csv(source/'figure_S8A.csv');h=pd.read_csv(source/'figure_S8B.csv');stat=json.loads((source/'magnitude_statistics.json').read_text());fig,axes=plt.subplots(1,2,figsize=(10,4),layout='constrained')
     axes[0].scatter(a.Md,a.ML,c='blue',s=3,linewidths=0);axes[0].set(xlabel=r'Duration magnitude $M_d$',ylabel=r'Provisional local magnitude $M_L$',title='A · Calibration matches')
     axes[1].bar(h.ML_bin,h['count'],width=.09,color='#1f77b4',lw=0);axes[1].plot(h.ML_bin,h.cumulative,'.',ms=2,c='#1f77b4');axes[1].set(yscale='log',xlabel=r'Provisional magnitude $M_L$',ylabel='Number of events',title='B · Incomplete sample')
     if stat.get('b') is not None:
         xx=np.linspace(stat['Mc'],float(h.ML_bin.max()),100);yy=stat['events_ge_Mc']*10**(-stat['b']*(xx-stat['Mc']))
-        pd.DataFrame(dict(ML=xx,expected_count=yy)).to_csv(OUT/'conditional_GR_display.csv',index=False)
+        pd.DataFrame(dict(ML=xx,expected_count=yy)).to_csv(OUT/('conditional_GR_extension.csv' if extension else 'conditional_GR_display.csv'),index=False)
         axes[1].plot(xx,yy,c='#ff7f0e',lw=1,label=f"Conditional b={stat['b']:.2f} ± {stat['b_sigma']:.2f}")
         axes[1].scatter([stat['Mc']],[stat['events_ge_Mc']],c='#ff7f0e',s=30);axes[1].legend(fontsize=8)
-    fig.suptitle('S8 · Partial; routine Md is calibration input, not independent validation. Initial locations.',fontsize=9)
-    save(fig,'figure_S8_pilot',['data/continuation/'+x for x in ['figure_S8A.csv','figure_S8B.csv','magnitude_statistics.json']],'S8A–B','Blue small dots, thin histogram and orange own conditional likelihood curve; full observed axes, not published data range. Formal errors retained in source table.')
+    if len(a)>2:
+        fit=np.polyfit(a.Md,a.ML,1);xx=np.array([a.Md.min(),a.Md.max()]);axes[0].plot(xx,np.polyval(fit,xx),color='red',lw=.8)
+    fig.suptitle(f'S8 · Partial; {stat["magnitudes"]} magnitudes. Routine Md is calibration input, not validation.',fontsize=9)
+    save(fig,'figure_S8_extension' if extension else 'figure_S8_pilot',[str((source/x).relative_to(ROOT)) for x in ['figure_S8A.csv','figure_S8B.csv','magnitude_statistics.json']],'S8A–B','Blue small dots, red own calibration fit, histogram and orange own conditional likelihood curve; full observed axes. Formal errors retained in source table.')
 
 def hybrids():
     for event in ['E1','E2','E3']:
@@ -148,14 +154,22 @@ def hybrids():
             g=x[(x.station==sta)&(x.component==comp)];axes[0,k].plot(g.time_s,g.normalized,color='black',lw=.55,label=sta+' HH'+comp);axes[0,k].legend(fontsize=6);axes[0,k].set_yticks([])
             file=f'data/observations/{event}_{sta}_{comp}_spectrum.npz';inputs.append(file);a=np.load(ROOT/file);f=a['frequency'];keep=(f>=1)&(f<=20);values=10*np.log10(np.maximum(a['power'][keep],np.finfo(float).tiny))
             axes[1,k].pcolormesh(a['time'],f[keep],values,cmap=spectral_cmap('gist_rainbow_r',values,event+' '+sta+comp),vmin=-80,vmax=0,shading='auto',rasterized=True);axes[1,k].set(yscale='log',ylim=(1,20),xlabel='Time from written template (s)',ylabel='Hz' if k==0 else '',xlim=(g.time_s.min(),g.time_s.max()))
-        fig.suptitle(('S15C · Partial' if event=='E3' else 'Reproduction diagnostic: '+event+' is not the published S15 event')+'; normalized spectra −80…0 dB (under white / over black); paper scale unspecified.',fontsize=8)
-        save(fig,'hybrid_'+event,inputs,'S15C' if event=='E3' else 'diagnostic, S15-style layout','Four component columns, waveforms above log-frequency spectra. Closest visible rainbow palette; exact palette/normalization not published. Observed window is not truncated to force reference onset.',png=True)
+        label={'E1':'S15A analogue · E1 template, different event','E2':'S15B analogue · E2 template, different event','E3':'S15C · Partial'}[event]
+        fig.suptitle(label+'; normalized spectra −80…0 dB; paper scale unspecified.',fontsize=8)
+        save(fig,'hybrid_'+event,inputs,{'E1':'S15A analogue','E2':'S15B analogue','E3':'S15C'}[event],'Four component columns, waveforms above log-frequency spectra. E1/E2 are alternative documented family templates, not the published example events. Closest visible rainbow palette; exact palette/normalization not published. Observed window is not truncated to force reference onset.',png=True)
 
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True);theme();contextual();coverage();station_map();picking();magnitudes();hybrids()
     diagnostics()
     grid_diagnostic()
+    if (ROOT/'data/grid_calibration/merged4/panels/summary.json').exists():
+        from grid_publication_panels import generate
+        import sys
+        generate(sys.modules[__name__])
+        if (ROOT/'data/coverage_extension/calibration/merged4/panels/velest.csv').exists():
+            generate(sys.modules[__name__],extension=True)
+            if (ROOT/'data/coverage_extension/calibration/merged4/magnitude/magnitude_statistics.json').exists():magnitudes(extension=True)
     (OUT/'plot_inventory.json').write_text(json.dumps(RECORD,indent=2)+'\n')
     (OUT/'spectral_scales.json').write_text(json.dumps(SPECTRAL,indent=2)+'\n')
     print('Regenerated',len(RECORD),'current figure groups from saved data.')

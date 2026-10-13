@@ -1,11 +1,11 @@
 [
   {
     "stage": "1. Collection",
-    "status": "Expanded checkpoint: 868 processed files, 8511.520 union channel-hours; 694 successful segmented requests, 73946 pending. Full-period retrieval/inference unfinished; RAN credentials unavailable. Figure S1 shows the expanded subset; calibration retains the separate older event identifiers."
+    "status": "The latest separately frozen extension contains 997 observed files from 26 station names, 8706.970 union channel-hours, 134,483 picks and 1,023 provisional associations (7,410 assigned picks). All returned study-period files in its manifest were processed. Instrument sensitivity and response stages cover all 8706.970 measured channel-hours; this checks epoch coverage, not absolute instrument calibration. The source-level gaps and failed/pending requests remain in its station-by-time ledger. Full-period acquisition remains unfinished, not demonstrated inaccessible. RAN waveform credentials remain unavailable."
   },
   {
     "stage": "2. Phase picking",
-    "status": "Expanded checkpoint: 132733 own merged picks; frozen 1003-event cohort retained for calibration. No full-period coverage claim."
+    "status": "Latest extension: 134483 own picks; frozen 1,015-association downstream cohort preserved separately."
   },
   {
     "stage": "3. Training / S3--S4",
@@ -13,39 +13,39 @@
   },
   {
     "stage": "4. Association",
-    "status": "Expanded checkpoint: 1015 provisional associations from 7351 assigned picks, separate identifier set. Alternative 2021 profile; no accepted event catalog."
+    "status": "Latest extension: 1023 provisional associations. Exact-data reuse of own daily solves and new changed-day runs are recorded; alternative association profile remains disclosed."
   },
   {
     "stage": "5. VELEST",
-    "status": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed."
+    "status": "216 numerical-filter passes; common-start precision test isolates accumulated nonlinear path sensitivity. Held-out phase RMS worsens from 0.2177 to 0.2198 s; extended prelocation still oscillates. No scientific acceptance."
   },
   {
     "stage": "6. TomoDD",
-    "status": "both fixed-grid rounds executed; validation pending. round 1: 132 outputs, 124 gap passes; round 2: 124 outputs, 123 gap passes. Independently measured delays; no scientifically accepted relocated catalog."
+    "status": "Both fixed-grid rounds executed; 123 final gap passes. Matched-observation residuals improve, but round-to-round shifts and calibration dependence remain. Numerical results plotted provisionally."
   },
   {
     "stage": "7. HypoDD SVD",
-    "status": "Earlier alternative-model quadrant SVD diagnostics remain historical. No S7 uncertainty from accepted current-grid calibration/relocation; precise regional selection and reviewed phases unresolved."
+    "status": "90 conditional SVD estimates returned from supported components in four alternative quadrants. Up to 4.002 km depth error; original regional masks and absolute accuracy unresolved."
   },
   {
     "stage": "8. Magnitudes",
-    "status": "Executed: 61681 amplitudes, 4705 SNR passes, 1163 amplitude-ratio equations, 119 provisional magnitudes. Initial locations; final relocated-catalog calibration unfinished."
+    "status": "5929 measurements, 1626 SNR passes, 884 equations, 65 current-cohort provisional magnitudes. Routine Md is calibration only."
   },
   {
     "stage": "9. Completeness / b",
-    "status": "Pilot histogram and maximum-curvature calculation executed on 119 values; conditional b=0.6573450644531221 from 103 values at/above pilot Mc. Full-period completeness/b not established; selection and systematic limitations remain."
+    "status": "Conditional selected-subset Mc=-0.00, b=0.866 +/- 0.110, N above Mc=41. Population completeness untested."
   },
   {
     "stage": "10. Focal mechanisms",
-    "status": "Not reproduced: independently reviewed polarities/S-P amplitudes, accepted locations/model, FK Green functions and event-specific settings remain missing or unfinished. No author mechanism result table is used by this run."
+    "status": "Actual SKHASH attempt: 76 measurements, 35 stable automated polarities, zero solutions after unchanged polarity/gap filters. Manual review, S/P and gCAP/FK remain incomplete."
   },
   {
     "stage": "11. Location checks",
-    "status": "Internal S-P checks: 1703 pairs, 58 nonpositive. 137 CPOZ P arrivals. Relocated sector gathers and manual deep-event review unfinished."
+    "status": "118 actual P-aligned CPOZ traces; 382 positive S-P pairs, 0.1784 s approximate-model residual RMS; 44 deep events flagged for review. Exact masks and manual depth validation unresolved."
   },
   {
     "stage": "12. Hybrid search",
-    "status": "Executed 75.797 common CAAM/COLB scan hours; 822 unconfirmed crossings. 30 pass the mean threshold despite nonpositive similarity at one station. Six examples saved for inspection; no confirmed hybrids. Three-year exposure, full onset/coda review and clustering remain incomplete."
+    "status": "78.773 common hours, 823 unconfirmed crossings. Thirty-six candidate-family displays; no confirmed hybrid clusters or full-period history."
   },
   {
     "stage": "13. Historical context",

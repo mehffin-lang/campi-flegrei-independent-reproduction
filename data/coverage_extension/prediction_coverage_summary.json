@@ -1,0 +1,10 @@
+{
+  "finite_score_station_hours": {
+    "P": 2902.7344083346256,
+    "S": 2645.3818388901814
+  },
+  "continuous_files_with_prediction_spans": 825,
+  "scope": "Continuous checkpoint only. Earlier independent baseline files did not save finite-score exposure; their input channel-hours are not silently converted to model exposure.",
+  "missing_component_policy": "SeisBench default strict=False: missing components are zero-filled for inference only, not counted as observed channel-hours or plotted as observations.",
+  "units": "station-hours per phase, not channel-hours; finite model scores do not establish detection accuracy."
+}

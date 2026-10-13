@@ -4,7 +4,7 @@
     "scope": "main",
     "quantity": "INGV event map and large-event markers",
     "documentation": "Main p.71, Fig.1 caption",
-    "parameters": "2005-01-01 to 2025-03-20; origin 14.14 E, 40.82 N; sea-level depth; Md>=4 markers Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Full color ranges: 0--8 km for 1A, 0--6 km for S5. Display bounds and off-view counts saved in routine_plot_scope.csv.",
+    "parameters": "2005-01-01 to 2025-03-20; origin 14.14 E, 40.82 N; sea-level depth; Md>=4 markers Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Fixed depth color limits 0--5 km with explicit under/over treatment; 1A endpoints are approximate because not labeled.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/continue_context.py",
     "plot_command": ".venv/bin/python scripts/publication_plots.py",
@@ -109,85 +109,234 @@
     "scope": "main",
     "quantity": "Catalog seismicity rates by region",
     "documentation": "Main p.72, Fig.2 caption",
-    "parameters": "Central vs ring/other regions; 54319 vs 12083 catalog events; time bin unspecified",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "Weekly counts and depth evolution of the sparse relocated subset. Weeks without own events are not joined as measured zeros. External routine counts use a separately labeled right axis. Geographic masks are explicit alternatives; no confirmed-hybrid markers are added.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. Weekly counts and depth evolution of the sparse relocated subset. Weeks without own events are not joined as measured zeros. External routine counts use a separately labeled right axis. Geographic masks are explicit alternatives; no confirmed-hybrid markers are added.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/panels/weekly_counts.csv",
+      "data/grid_calibration/merged4/panels/sectors.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/weekly_counts.csv",
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/coverage_extension/calibration/merged4/panels/weekly_counts.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/weekly_counts.csv; data/grid_calibration/merged4/panels/sectors.csv",
+    "output": "figures/figure_2_provisional.pdf",
+    "output_files": [
+      "figures/figure_2_provisional.pdf",
+      "figures/figure_2_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 166,
+        "source": "data/coverage_extension/calibration/merged4/panels/weekly_counts.csv",
+        "source_sha256": "044e7735efdddee49d2f34e3dedc5ca6c477f5a58e78ea351d07583e73c7c03c",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/weekly_counts.csv",
+        "figure": "figures/figure_2_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "2B",
     "scope": "main",
     "quantity": "Depth versus time, symbol size by magnitude",
     "documentation": "Main p.72, Fig.2 caption",
-    "parameters": "Sea-level depth; near-surface 0-0.5 km; central 0.5-2.1; ring sectors to 3.7 km",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "Weekly counts and depth evolution of the sparse relocated subset. Weeks without own events are not joined as measured zeros. External routine counts use a separately labeled right axis. Geographic masks are explicit alternatives; no confirmed-hybrid markers are added.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. Weekly counts and depth evolution of the sparse relocated subset. Weeks without own events are not joined as measured zeros. External routine counts use a separately labeled right axis. Geographic masks are explicit alternatives; no confirmed-hybrid markers are added.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/panels/weekly_counts.csv",
+      "data/grid_calibration/merged4/panels/sectors.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/weekly_counts.csv",
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/coverage_extension/calibration/merged4/panels/weekly_counts.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/weekly_counts.csv; data/grid_calibration/merged4/panels/sectors.csv",
+    "output": "figures/figure_2_provisional.pdf",
+    "output_files": [
+      "figures/figure_2_provisional.pdf",
+      "figures/figure_2_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 166,
+        "source": "data/coverage_extension/calibration/merged4/panels/weekly_counts.csv",
+        "source_sha256": "044e7735efdddee49d2f34e3dedc5ca6c477f5a58e78ea351d07583e73c7c03c",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/weekly_counts.csv",
+        "figure": "figures/figure_2_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "3/map",
     "scope": "main",
     "quantity": "Epicentral spatial pattern",
     "documentation": "Main p.73, Fig.3 caption",
-    "parameters": "Relative origin 14.14 E, 40.82 N; sea-level depths",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "123 independently relocated trial events, 0.111--7.965 km depth. Own relative magnitudes set sizes where available; crosses mark missing magnitudes. This scattered subset does not establish the published ring or its depth limit.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 123 independently relocated trial events, 0.111--7.965 km depth. Own relative magnitudes set sizes where available; crosses mark missing magnitudes. This scattered subset does not establish the published ring or its depth limit.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Views are not lettered in the caption.",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/panels/relocated.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/relocated.csv",
+      "data/coverage_extension/calibration/merged4/panels/relocated.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/relocated.csv",
+    "output": "figures/figure_3_provisional.pdf",
+    "output_files": [
+      "figures/figure_3_provisional.pdf",
+      "figures/figure_3_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "events": 123,
+        "source": "data/coverage_extension/calibration/merged4/tomodd/round2_locations.csv",
+        "source_sha256": "f08b33fe70f646cc2e4c673534697e10a51973c576cbdf8840fed661ba1495c7",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "figure": "figures/figure_3_extension.pdf",
+        "limitation": "Separate new event IDs; no inherited magnitude or uncertainty. Unaccepted numerical trial, not additional independent confirmation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "3/northing-depth",
     "scope": "main",
     "quantity": "Depth versus northing",
     "documentation": "Main p.73, Fig.3 caption",
-    "parameters": "Relative origin 14.14 E, 40.82 N; sea-level depths",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "123 independently relocated trial events, 0.111--7.965 km depth. Own relative magnitudes set sizes where available; crosses mark missing magnitudes. This scattered subset does not establish the published ring or its depth limit.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 123 independently relocated trial events, 0.111--7.965 km depth. Own relative magnitudes set sizes where available; crosses mark missing magnitudes. This scattered subset does not establish the published ring or its depth limit.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Views are not lettered in the caption.",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/panels/relocated.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/relocated.csv",
+      "data/coverage_extension/calibration/merged4/panels/relocated.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/relocated.csv",
+    "output": "figures/figure_3_provisional.pdf",
+    "output_files": [
+      "figures/figure_3_provisional.pdf",
+      "figures/figure_3_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "events": 123,
+        "source": "data/coverage_extension/calibration/merged4/tomodd/round2_locations.csv",
+        "source_sha256": "f08b33fe70f646cc2e4c673534697e10a51973c576cbdf8840fed661ba1495c7",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "figure": "figures/figure_3_extension.pdf",
+        "limitation": "Separate new event IDs; no inherited magnitude or uncertainty. Unaccepted numerical trial, not additional independent confirmation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "3/easting-depth",
     "scope": "main",
     "quantity": "Depth versus easting",
     "documentation": "Main p.73, Fig.3 caption",
-    "parameters": "Relative origin 14.14 E, 40.82 N; sea-level depths",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "123 independently relocated trial events, 0.111--7.965 km depth. Own relative magnitudes set sizes where available; crosses mark missing magnitudes. This scattered subset does not establish the published ring or its depth limit.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 123 independently relocated trial events, 0.111--7.965 km depth. Own relative magnitudes set sizes where available; crosses mark missing magnitudes. This scattered subset does not establish the published ring or its depth limit.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Views are not lettered in the caption.",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/panels/relocated.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/relocated.csv",
+      "data/coverage_extension/calibration/merged4/panels/relocated.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/relocated.csv",
+    "output": "figures/figure_3_provisional.pdf",
+    "output_files": [
+      "figures/figure_3_provisional.pdf",
+      "figures/figure_3_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "events": 123,
+        "source": "data/coverage_extension/calibration/merged4/tomodd/round2_locations.csv",
+        "source_sha256": "f08b33fe70f646cc2e4c673534697e10a51973c576cbdf8840fed661ba1495c7",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "figure": "figures/figure_3_extension.pdf",
+        "limitation": "Separate new event IDs; no inherited magnitude or uncertainty. Unaccepted numerical trial, not additional independent confirmation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "4A",
@@ -196,15 +345,16 @@
     "documentation": "Main p.74, Fig.4; supplement S6-S7",
     "parameters": "High quality: SKHASH A or Kagan angle<30 deg; gCAP preference with stated exception",
     "status": "not reproduced",
-    "data_command": null,
+    "data_command": ".venv/bin/python scripts/grid_focal_attempt.py",
     "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "blocker": "SKHASH was executed: 76 automated first-motion measurements on 8 own events; 35 passed the provisional sign/SNR screen. Seven events lack eight stable polarities; the remaining event has a 186.158-degree gap, exceeding the unchanged 90-degree gate. No mechanism is returned. Reviewed polarities, S/P constraints and independent gCAP/FK processing remain missing; no beachballs can be plotted.",
+    "attempt": "SKHASH 1.1.5 executed; all candidates rejected by observation/geometry checks.",
     "notes": "",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "saved_data": "data/grid_calibration/merged4/focal/polarity_screen.csv; data/grid_calibration/merged4/focal/run.log"
   },
   {
     "panel": "4B",
@@ -213,15 +363,16 @@
     "documentation": "Main p.74, Fig.4; supplement S6-S7",
     "parameters": "High quality: SKHASH A or Kagan angle<30 deg; gCAP preference with stated exception",
     "status": "not reproduced",
-    "data_command": null,
+    "data_command": ".venv/bin/python scripts/grid_focal_attempt.py",
     "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "blocker": "SKHASH was executed: 76 automated first-motion measurements on 8 own events; 35 passed the provisional sign/SNR screen. Seven events lack eight stable polarities; the remaining event has a 186.158-degree gap, exceeding the unchanged 90-degree gate. No mechanism is returned. Reviewed polarities, S/P constraints and independent gCAP/FK processing remain missing; no beachballs can be plotted.",
+    "attempt": "SKHASH 1.1.5 executed; all candidates rejected by observation/geometry checks.",
     "notes": "",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "saved_data": "data/grid_calibration/merged4/focal/polarity_screen.csv; data/grid_calibration/merged4/focal/run.log"
   },
   {
     "panel": "S1",
@@ -230,9 +381,9 @@
     "documentation": "Supplement S12 caption; S2 methods",
     "parameters": "48 stations; continuous-data availability",
     "status": "partially reproduced",
-    "data_command": ".venv/bin/python scripts/extend_calibration_observations.py --workers 8",
+    "data_command": ".venv/bin/python scripts/extend_calibration_observations.py --workers 8 --output data/coverage_extension --reuse-own-days",
     "plot_command": ".venv/bin/python scripts/publication_plots.py",
-    "blocker": "Expanded processed subset: 868 files, 8511.520 channel-hours; full-period queue remains unfinished. No requested-but-failed interval is counted.",
+    "blocker": "997 files, 26 station names and 8706.970 union channel-hours. Short interval markers do not imply full-period coverage. Earlier calibration/downstream cohort remains separately numbered.",
     "attempt": "Executed actual sample-span union for the frozen processed checkpoint; no requested interval is counted as covered.",
     "notes": "",
     "input_observation_files": [
@@ -1106,9 +1257,19 @@
       "inputs/waveforms/day_CSTH_23.mseed"
     ],
     "generated_figure": "figures/followup_coverage.pdf",
-    "saved_data": "data/calibration_followup/expanded/processed_coverage_union.json",
+    "saved_data": "data/coverage_extension/processed_coverage_union.json",
     "report_figure": "figures/followup_coverage.pdf",
-    "style_record": "data/grid_calibration/style/plot_inventory.json"
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "input_files": [
+      "data/coverage_extension/processed_coverage_union.json"
+    ],
+    "inputs": [
+      "data/coverage_extension/processed_coverage_union.json"
+    ],
+    "output": "figures/coverage_extension.pdf",
+    "output_files": [
+      "figures/coverage_extension.pdf"
+    ]
   },
   {
     "panel": "S2",
@@ -1265,7 +1426,7 @@
     "scope": "supplement",
     "quantity": "Routine-catalog spatial views; map",
     "documentation": "Supplement S16 caption",
-    "parameters": "12083 events; 1D model and HYPO71 Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Full color ranges: 0--8 km for 1A, 0--6 km for S5. Display bounds and off-view counts saved in routine_plot_scope.csv.",
+    "parameters": "12083 events; 1D model and HYPO71 Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Fixed depth color limits 0--5 km with explicit under/over treatment; 1A endpoints are approximate because not labeled.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/continue_context.py",
     "plot_command": ".venv/bin/python scripts/publication_plots.py",
@@ -1306,7 +1467,7 @@
     "scope": "supplement",
     "quantity": "Routine-catalog spatial views; northing-depth",
     "documentation": "Supplement S16 caption",
-    "parameters": "12083 events; 1D model and HYPO71 Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Full color ranges: 0--8 km for 1A, 0--6 km for S5. Display bounds and off-view counts saved in routine_plot_scope.csv.",
+    "parameters": "12083 events; 1D model and HYPO71 Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Fixed depth color limits 0--5 km with explicit under/over treatment; 1A endpoints are approximate because not labeled.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/continue_context.py",
     "plot_command": ".venv/bin/python scripts/publication_plots.py",
@@ -1347,7 +1508,7 @@
     "scope": "supplement",
     "quantity": "Routine-catalog spatial views; easting-depth",
     "documentation": "Supplement S16 caption",
-    "parameters": "12083 events; 1D model and HYPO71 Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Full color ranges: 0--8 km for 1A, 0--6 km for S5. Display bounds and off-view counts saved in routine_plot_scope.csv.",
+    "parameters": "12083 events; 1D model and HYPO71 Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Fixed depth color limits 0--5 km with explicit under/over treatment; 1A endpoints are approximate because not labeled.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/continue_context.py",
     "plot_command": ".venv/bin/python scripts/publication_plots.py",
@@ -1388,204 +1549,520 @@
     "scope": "supplement",
     "quantity": "Initial-location spatial views; map",
     "documentation": "Supplement S17 caption",
-    "parameters": "Requires verified fixed 2008 grid, documented regional averages and validated independent VELEST inversions.",
-    "status": "not reproduced",
-    "data_command": "Not run: provenance/validation prerequisites unresolved",
-    "plot_command": "Not generated",
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "216 independently fitted VELEST events pass the numerical pick/RMS/gap filters. Physical layer ordering and the final small-update gate pass; stagnation, held-out prediction, regional and precision-path stability prevent acceptance. These are plotted as provisional results.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 216 independently fitted VELEST events pass the numerical pick/RMS/gap filters. Physical layer ordering and the final small-update gate pass; stagnation, held-out prediction, regional and precision-path stability prevent acceptance. These are plotted as provisional results.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
     "input_observation_files": [],
     "generated_figure": "",
-    "saved_data": "",
+    "saved_data": "data/grid_calibration/merged4/panels/velest.csv",
     "report_figure": "",
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/panels/velest.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/velest.csv",
+      "data/coverage_extension/calibration/merged4/panels/velest.csv"
+    ],
+    "output": "figures/figure_S6_provisional.pdf",
+    "output_files": [
+      "figures/figure_S6_provisional.pdf",
+      "figures/figure_S6_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "events": 219,
+        "source": "data/coverage_extension/calibration/merged4/filtered_events.csv",
+        "source_sha256": "f977ab798c18334a28b32893d4842632fc3551b7f3ad24083ede8b7e06a185e2",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/velest.csv",
+        "figure": "figures/figure_S6_extension.pdf",
+        "limitation": "Separate new event IDs; no inherited magnitude or uncertainty. Unaccepted numerical trial, not additional independent confirmation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S6/northing-depth",
     "scope": "supplement",
     "quantity": "Initial-location spatial views; northing-depth",
     "documentation": "Supplement S17 caption",
-    "parameters": "Requires verified fixed 2008 grid, documented regional averages and validated independent VELEST inversions.",
-    "status": "not reproduced",
-    "data_command": "Not run: provenance/validation prerequisites unresolved",
-    "plot_command": "Not generated",
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "216 independently fitted VELEST events pass the numerical pick/RMS/gap filters. Physical layer ordering and the final small-update gate pass; stagnation, held-out prediction, regional and precision-path stability prevent acceptance. These are plotted as provisional results.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 216 independently fitted VELEST events pass the numerical pick/RMS/gap filters. Physical layer ordering and the final small-update gate pass; stagnation, held-out prediction, regional and precision-path stability prevent acceptance. These are plotted as provisional results.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
     "input_observation_files": [],
     "generated_figure": "",
-    "saved_data": "",
+    "saved_data": "data/grid_calibration/merged4/panels/velest.csv",
     "report_figure": "",
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/panels/velest.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/velest.csv",
+      "data/coverage_extension/calibration/merged4/panels/velest.csv"
+    ],
+    "output": "figures/figure_S6_provisional.pdf",
+    "output_files": [
+      "figures/figure_S6_provisional.pdf",
+      "figures/figure_S6_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "events": 219,
+        "source": "data/coverage_extension/calibration/merged4/filtered_events.csv",
+        "source_sha256": "f977ab798c18334a28b32893d4842632fc3551b7f3ad24083ede8b7e06a185e2",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/velest.csv",
+        "figure": "figures/figure_S6_extension.pdf",
+        "limitation": "Separate new event IDs; no inherited magnitude or uncertainty. Unaccepted numerical trial, not additional independent confirmation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S6/easting-depth",
     "scope": "supplement",
     "quantity": "Initial-location spatial views; easting-depth",
     "documentation": "Supplement S17 caption",
-    "parameters": "Requires verified fixed 2008 grid, documented regional averages and validated independent VELEST inversions.",
-    "status": "not reproduced",
-    "data_command": "Not run: provenance/validation prerequisites unresolved",
-    "plot_command": "Not generated",
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "216 independently fitted VELEST events pass the numerical pick/RMS/gap filters. Physical layer ordering and the final small-update gate pass; stagnation, held-out prediction, regional and precision-path stability prevent acceptance. These are plotted as provisional results.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 216 independently fitted VELEST events pass the numerical pick/RMS/gap filters. Physical layer ordering and the final small-update gate pass; stagnation, held-out prediction, regional and precision-path stability prevent acceptance. These are plotted as provisional results.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
     "input_observation_files": [],
     "generated_figure": "",
-    "saved_data": "",
+    "saved_data": "data/grid_calibration/merged4/panels/velest.csv",
     "report_figure": "",
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/panels/velest.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/velest.csv",
+      "data/coverage_extension/calibration/merged4/panels/velest.csv"
+    ],
+    "output": "figures/figure_S6_provisional.pdf",
+    "output_files": [
+      "figures/figure_S6_provisional.pdf",
+      "figures/figure_S6_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "events": 219,
+        "source": "data/coverage_extension/calibration/merged4/filtered_events.csv",
+        "source_sha256": "f977ab798c18334a28b32893d4842632fc3551b7f3ad24083ede8b7e06a185e2",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/velest.csv",
+        "figure": "figures/figure_S6_extension.pdf",
+        "limitation": "Separate new event IDs; no inherited magnitude or uncertainty. Unaccepted numerical trial, not additional independent confirmation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S7A/map",
     "scope": "supplement",
     "quantity": "Cluster locations and 2-sigma errors: map and cross-sectional views; map",
     "documentation": "Supplement S18 caption; S5 methods",
-    "parameters": "Central174, north165, southwest175, east166; HypoDD SVD; Table S1",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_uncertainty.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+      "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+    "output": "figures/figure_S7_provisional.pdf",
+    "output_files": [
+      "figures/figure_S7_provisional.pdf",
+      "figures/figure_S7_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 80,
+        "source": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "source_sha256": "13aec9f11c6b05505b313c1954254111cfba5de9c1df001818d1feeb18d41186",
+        "saved_data": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "figure": "figures/figure_S7_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S7A/easting-depth",
     "scope": "supplement",
     "quantity": "Cluster locations and 2-sigma errors: map and cross-sectional views; easting-depth",
     "documentation": "Supplement S18 caption; S5 methods",
-    "parameters": "Central174, north165, southwest175, east166; HypoDD SVD; Table S1",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_uncertainty.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+      "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+    "output": "figures/figure_S7_provisional.pdf",
+    "output_files": [
+      "figures/figure_S7_provisional.pdf",
+      "figures/figure_S7_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 80,
+        "source": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "source_sha256": "13aec9f11c6b05505b313c1954254111cfba5de9c1df001818d1feeb18d41186",
+        "saved_data": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "figure": "figures/figure_S7_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S7B",
     "scope": "supplement",
     "quantity": "EX uncertainty versus differential-pick count",
     "documentation": "Supplement S18 caption",
-    "parameters": "Log-log axes; NCCP+NCCS",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_uncertainty.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Caption labeling retained; methods prose uses inconsistent letter references.",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+      "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+    "output": "figures/figure_S7_provisional.pdf",
+    "output_files": [
+      "figures/figure_S7_provisional.pdf",
+      "figures/figure_S7_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 80,
+        "source": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "source_sha256": "13aec9f11c6b05505b313c1954254111cfba5de9c1df001818d1feeb18d41186",
+        "saved_data": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "figure": "figures/figure_S7_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S7D",
     "scope": "supplement",
     "quantity": "EY uncertainty versus differential-pick count",
     "documentation": "Supplement S18 caption",
-    "parameters": "Log-log axes; NCCP+NCCS",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_uncertainty.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Caption labeling retained; methods prose uses inconsistent letter references.",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+      "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+    "output": "figures/figure_S7_provisional.pdf",
+    "output_files": [
+      "figures/figure_S7_provisional.pdf",
+      "figures/figure_S7_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 80,
+        "source": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "source_sha256": "13aec9f11c6b05505b313c1954254111cfba5de9c1df001818d1feeb18d41186",
+        "saved_data": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "figure": "figures/figure_S7_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S7F",
     "scope": "supplement",
     "quantity": "EZ uncertainty versus differential-pick count",
     "documentation": "Supplement S18 caption",
-    "parameters": "Log-log axes; NCCP+NCCS",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_uncertainty.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Caption labeling retained; methods prose uses inconsistent letter references.",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+      "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+    "output": "figures/figure_S7_provisional.pdf",
+    "output_files": [
+      "figures/figure_S7_provisional.pdf",
+      "figures/figure_S7_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 80,
+        "source": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "source_sha256": "13aec9f11c6b05505b313c1954254111cfba5de9c1df001818d1feeb18d41186",
+        "saved_data": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "figure": "figures/figure_S7_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S7C",
     "scope": "supplement",
     "quantity": "EX uncertainty density by cluster",
     "documentation": "Supplement S18 caption",
-    "parameters": "Kernel density estimate; bandwidth unspecified",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_uncertainty.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Caption labeling retained; methods prose also refers to panels H/I.",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+      "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+    "output": "figures/figure_S7_provisional.pdf",
+    "output_files": [
+      "figures/figure_S7_provisional.pdf",
+      "figures/figure_S7_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 80,
+        "source": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "source_sha256": "13aec9f11c6b05505b313c1954254111cfba5de9c1df001818d1feeb18d41186",
+        "saved_data": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "figure": "figures/figure_S7_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S7E",
     "scope": "supplement",
     "quantity": "EY uncertainty density by cluster",
     "documentation": "Supplement S18 caption",
-    "parameters": "Kernel density estimate; bandwidth unspecified",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_uncertainty.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Caption labeling retained; methods prose also refers to panels H/I.",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+      "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+    "output": "figures/figure_S7_provisional.pdf",
+    "output_files": [
+      "figures/figure_S7_provisional.pdf",
+      "figures/figure_S7_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 80,
+        "source": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "source_sha256": "13aec9f11c6b05505b313c1954254111cfba5de9c1df001818d1feeb18d41186",
+        "saved_data": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "figure": "figures/figure_S7_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S7G",
     "scope": "supplement",
     "quantity": "EZ uncertainty density by cluster",
     "documentation": "Supplement S18 caption",
-    "parameters": "Kernel density estimate; bandwidth unspecified",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
-    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "parameters": "90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_uncertainty.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 90 conditional HypoDD SVD estimates from every supported connected component in four explicit alternative quadrants. The names in the computation are not verified original region membership. Reported 2-sigma errors are retained, including kilometer-scale outliers. Zero cross-correlation counts cannot appear on logarithmic count axes; they remain in the map and saved table. KDE uses Scott bandwidth in log10(error), an explicit display convention.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Caption labeling retained; methods prose also refers to panels H/I.",
     "input_observation_files": [],
     "report_figure": null,
     "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
-    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json",
+    "inputs": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+      "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/uncertainty/regional_svd.csv",
+    "output": "figures/figure_S7_provisional.pdf",
+    "output_files": [
+      "figures/figure_S7_provisional.pdf",
+      "figures/figure_S7_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 80,
+        "source": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "source_sha256": "13aec9f11c6b05505b313c1954254111cfba5de9c1df001818d1feeb18d41186",
+        "saved_data": "data/coverage_extension/calibration/merged4/uncertainty/regional_svd.csv",
+        "figure": "figures/figure_S7_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S8A",
     "scope": "supplement",
     "quantity": "Estimated local versus routine duration magnitude",
     "documentation": "Supplement S19 caption; S5-S6 methods",
-    "parameters": "5 s signal, 2 s preceding noise; SNR >=5 dB; all available recorded stations; own picked or predicted P arrivals; >=2 shared stations; separation < one fifth of station distance; squared zero-lag correlation weights; Md regularization lambda=1 for unique one-to-one matches within 2 s. Initial locations. B uses 0.1 magnitude bins, maximum-curvature Mc, half-bin-corrected likelihood b and formal Shi-Bolt sampling error; no arbitrary minimum sample cutoff.",
+    "parameters": "Tan S1-S3 relative-amplitude method; direct least squares, squared normalized correlations and unit Md regularization are disclosed departures/settings.",
     "status": "partially reproduced",
-    "data_command": ".venv/bin/python scripts/downstream_checks.py --dataset continuation && .venv/bin/python scripts/magnitude_statistics.py",
+    "data_command": ".venv/bin/python scripts/downstream_checks.py --dataset grid --workers 6; .venv/bin/python scripts/magnitude_statistics.py --grid",
     "plot_command": ".venv/bin/python scripts/publication_plots.py",
-    "blocker": "61681 channel measurements, 4705 passing SNR, 1163 relative-amplitude equations, 119 provisional magnitudes. Final relocated locations/full exposure remain missing; routine Md is an allowed regularizer, not independent validation.",
+    "blocker": "Partial relocated-subset magnitude calculation: 65 own estimates, 40 matched routine Md anchors in panel A. 5929 response-corrected channel measurements, 1626 above 5 dB, 884 relative-amplitude equations. Mc=-0.0, b=0.866 +/- 0.110 from 41 selected magnitudes. Calibration comparison is not independent validation; sparse acquisition cannot establish population completeness or b-value.",
     "attempt": "Executed amplitude-ratio inversion on initial locations; partial pilot comparison/distribution only. No claim of full-period completeness or b-value.",
     "notes": "",
     "input_observation_files": [
@@ -2439,20 +2916,57 @@
       "inputs/waveforms/day_CSTH_23.mseed"
     ],
     "generated_figure": "figures/figure_S8_pilot.pdf",
-    "saved_data": "data/continuation/figure_S8A.csv",
+    "saved_data": "data/grid_calibration/merged4/magnitude/amplitude_measurements.csv; data/grid_calibration/merged4/magnitude/magnitude_edges.csv; data/grid_calibration/merged4/magnitude/magnitudes.csv; data/grid_calibration/merged4/magnitude/routine_matches.csv; data/grid_calibration/merged4/magnitude/figure_S8A.csv; data/grid_calibration/merged4/magnitude/figure_S8B.csv; data/grid_calibration/merged4/magnitude/magnitude_statistics.json",
     "report_figure": "figures/figure_S8_pilot.pdf",
-    "style_record": "data/grid_calibration/style/plot_inventory.json"
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "inputs": [
+      "data/grid_calibration/merged4/magnitude/amplitude_measurements.csv",
+      "data/grid_calibration/merged4/magnitude/magnitude_edges.csv",
+      "data/grid_calibration/merged4/magnitude/magnitudes.csv",
+      "data/grid_calibration/merged4/magnitude/routine_matches.csv",
+      "data/grid_calibration/merged4/magnitude/figure_S8A.csv",
+      "data/grid_calibration/merged4/magnitude/figure_S8B.csv",
+      "data/grid_calibration/merged4/magnitude/magnitude_statistics.json"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/magnitude/amplitude_measurements.csv",
+      "data/grid_calibration/merged4/magnitude/magnitude_edges.csv",
+      "data/grid_calibration/merged4/magnitude/magnitudes.csv",
+      "data/grid_calibration/merged4/magnitude/routine_matches.csv",
+      "data/grid_calibration/merged4/magnitude/figure_S8A.csv",
+      "data/grid_calibration/merged4/magnitude/figure_S8B.csv",
+      "data/grid_calibration/merged4/magnitude/magnitude_statistics.json",
+      "data/coverage_extension/calibration/merged4/magnitude/magnitudes.csv"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Conditional subset estimates only; not a test of full-catalog Mc=0.4 or b=0.97.",
+    "additional_independent_results": [
+      {
+        "rows": 67,
+        "source": "data/coverage_extension/calibration/merged4/magnitude/magnitudes.csv",
+        "source_sha256": "d01e1e898d6507210d96cfe43829e04e98d11928c42a6e1e24fd0628bb6dfe62",
+        "saved_data": "data/coverage_extension/calibration/merged4/magnitude/magnitudes.csv",
+        "figure": "figures/figure_S8_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ],
+    "output_files": [
+      "figures/figure_S8_pilot.pdf",
+      "figures/figure_S8_extension.pdf"
+    ]
   },
   {
     "panel": "S8B",
     "scope": "supplement",
     "quantity": "Magnitude-frequency distribution and fitted b value",
     "documentation": "Supplement S19 caption; S6 methods",
-    "parameters": "5 s signal, 2 s preceding noise; SNR >=5 dB; all available recorded stations; own picked or predicted P arrivals; >=2 shared stations; separation < one fifth of station distance; squared zero-lag correlation weights; Md regularization lambda=1 for unique one-to-one matches within 2 s. Initial locations. B uses 0.1 magnitude bins, maximum-curvature Mc, half-bin-corrected likelihood b and formal Shi-Bolt sampling error; no arbitrary minimum sample cutoff.",
+    "parameters": "Tan S1-S3 relative-amplitude method; direct least squares, squared normalized correlations and unit Md regularization are disclosed departures/settings.",
     "status": "partially reproduced",
-    "data_command": ".venv/bin/python scripts/downstream_checks.py --dataset continuation && .venv/bin/python scripts/magnitude_statistics.py",
+    "data_command": ".venv/bin/python scripts/downstream_checks.py --dataset grid --workers 6; .venv/bin/python scripts/magnitude_statistics.py --grid",
     "plot_command": ".venv/bin/python scripts/publication_plots.py",
-    "blocker": "61681 channel measurements, 4705 passing SNR, 1163 relative-amplitude equations, 119 provisional magnitudes. Final relocated locations/full exposure remain missing; routine Md is an allowed regularizer, not independent validation.",
+    "blocker": "Partial relocated-subset magnitude calculation: 65 own estimates, 40 matched routine Md anchors in panel A. 5929 response-corrected channel measurements, 1626 above 5 dB, 884 relative-amplitude equations. Mc=-0.0, b=0.866 +/- 0.110 from 41 selected magnitudes. Calibration comparison is not independent validation; sparse acquisition cannot establish population completeness or b-value.",
     "attempt": "Executed amplitude-ratio inversion on initial locations; partial pilot comparison/distribution only. No claim of full-period completeness or b-value.",
     "notes": "",
     "input_observation_files": [
@@ -3306,9 +3820,46 @@
       "inputs/waveforms/day_CSTH_23.mseed"
     ],
     "generated_figure": "figures/figure_S8_pilot.pdf",
-    "saved_data": "data/continuation/figure_S8B.csv; data/continuation/magnitude_statistics.json",
+    "saved_data": "data/grid_calibration/merged4/magnitude/amplitude_measurements.csv; data/grid_calibration/merged4/magnitude/magnitude_edges.csv; data/grid_calibration/merged4/magnitude/magnitudes.csv; data/grid_calibration/merged4/magnitude/routine_matches.csv; data/grid_calibration/merged4/magnitude/figure_S8A.csv; data/grid_calibration/merged4/magnitude/figure_S8B.csv; data/grid_calibration/merged4/magnitude/magnitude_statistics.json",
     "report_figure": "figures/figure_S8_pilot.pdf",
-    "style_record": "data/grid_calibration/style/plot_inventory.json"
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "inputs": [
+      "data/grid_calibration/merged4/magnitude/amplitude_measurements.csv",
+      "data/grid_calibration/merged4/magnitude/magnitude_edges.csv",
+      "data/grid_calibration/merged4/magnitude/magnitudes.csv",
+      "data/grid_calibration/merged4/magnitude/routine_matches.csv",
+      "data/grid_calibration/merged4/magnitude/figure_S8A.csv",
+      "data/grid_calibration/merged4/magnitude/figure_S8B.csv",
+      "data/grid_calibration/merged4/magnitude/magnitude_statistics.json"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/magnitude/amplitude_measurements.csv",
+      "data/grid_calibration/merged4/magnitude/magnitude_edges.csv",
+      "data/grid_calibration/merged4/magnitude/magnitudes.csv",
+      "data/grid_calibration/merged4/magnitude/routine_matches.csv",
+      "data/grid_calibration/merged4/magnitude/figure_S8A.csv",
+      "data/grid_calibration/merged4/magnitude/figure_S8B.csv",
+      "data/grid_calibration/merged4/magnitude/magnitude_statistics.json",
+      "data/coverage_extension/calibration/merged4/magnitude/magnitudes.csv"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Conditional subset estimates only; not a test of full-catalog Mc=0.4 or b=0.97.",
+    "additional_independent_results": [
+      {
+        "rows": 67,
+        "source": "data/coverage_extension/calibration/merged4/magnitude/magnitudes.csv",
+        "source_sha256": "d01e1e898d6507210d96cfe43829e04e98d11928c42a6e1e24fd0628bb6dfe62",
+        "saved_data": "data/coverage_extension/calibration/merged4/magnitude/magnitudes.csv",
+        "figure": "figures/figure_S8_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ],
+    "output_files": [
+      "figures/figure_S8_pilot.pdf",
+      "figures/figure_S8_extension.pdf"
+    ]
   },
   {
     "panel": "S9/map",
@@ -3317,13 +3868,14 @@
     "documentation": "Supplement S20 caption",
     "parameters": "38103 events; NCCP+NCCS threshold 100",
     "status": "not reproduced",
-    "data_command": null,
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
     "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "The documented NCCP+NCCS>100 selection was computed on the provisional relocated catalog and returned zero events. No qualified spatial result exists to plot. More waveform-linked neighboring events are needed; the threshold was not relaxed.",
+    "attempt": "Exact written count filter executed; zero passing events.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "saved_data": "data/grid_calibration/merged4/panels/best_located.csv"
   },
   {
     "panel": "S9/northing-depth",
@@ -3332,13 +3884,14 @@
     "documentation": "Supplement S20 caption",
     "parameters": "38103 events; NCCP+NCCS threshold 100",
     "status": "not reproduced",
-    "data_command": null,
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
     "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "The documented NCCP+NCCS>100 selection was computed on the provisional relocated catalog and returned zero events. No qualified spatial result exists to plot. More waveform-linked neighboring events are needed; the threshold was not relaxed.",
+    "attempt": "Exact written count filter executed; zero passing events.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "saved_data": "data/grid_calibration/merged4/panels/best_located.csv"
   },
   {
     "panel": "S9/easting-depth",
@@ -3347,283 +3900,784 @@
     "documentation": "Supplement S20 caption",
     "parameters": "38103 events; NCCP+NCCS threshold 100",
     "status": "not reproduced",
-    "data_command": null,
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
     "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "The documented NCCP+NCCS>100 selection was computed on the provisional relocated catalog and returned zero events. No qualified spatial result exists to plot. More waveform-linked neighboring events are needed; the threshold was not relaxed.",
+    "attempt": "Exact written count filter executed; zero passing events.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "saved_data": "data/grid_calibration/merged4/panels/best_located.csv"
   },
   {
     "panel": "S10/2022",
     "scope": "supplement",
     "quantity": "Annual seismicity map",
     "documentation": "Supplement S21 caption",
-    "parameters": "Year 2022",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "Independently selected calendar-year subsets. Event counts reflect sparse exposure and numerical filtering, not regional seismicity rates. All years have at least one provisional relocated result.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. Independently selected calendar-year subsets. Event counts reflect sparse exposure and numerical filtering, not regional seismicity rates. All years have at least one provisional relocated result.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/year2022.csv",
+      "data/grid_calibration/merged4/panels/year2023.csv",
+      "data/grid_calibration/merged4/panels/year2024.csv",
+      "data/grid_calibration/merged4/panels/year2025.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/year2022.csv",
+      "data/grid_calibration/merged4/panels/year2023.csv",
+      "data/grid_calibration/merged4/panels/year2024.csv",
+      "data/grid_calibration/merged4/panels/year2025.csv",
+      "data/coverage_extension/calibration/merged4/panels/relocated.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/year2022.csv; data/grid_calibration/merged4/panels/year2023.csv; data/grid_calibration/merged4/panels/year2024.csv; data/grid_calibration/merged4/panels/year2025.csv",
+    "output": "figures/figure_S10_provisional.pdf",
+    "output_files": [
+      "figures/figure_S10_provisional.pdf",
+      "figures/figure_S10_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 123,
+        "source": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "source_sha256": "6e6fb34403e74456acff88bbb4c1a1b2537e288667e150c08e889b76b604fdb7",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "figure": "figures/figure_S10_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S10/2023",
     "scope": "supplement",
     "quantity": "Annual seismicity map",
     "documentation": "Supplement S21 caption",
-    "parameters": "Year 2023",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "Independently selected calendar-year subsets. Event counts reflect sparse exposure and numerical filtering, not regional seismicity rates. All years have at least one provisional relocated result.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. Independently selected calendar-year subsets. Event counts reflect sparse exposure and numerical filtering, not regional seismicity rates. All years have at least one provisional relocated result.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/year2022.csv",
+      "data/grid_calibration/merged4/panels/year2023.csv",
+      "data/grid_calibration/merged4/panels/year2024.csv",
+      "data/grid_calibration/merged4/panels/year2025.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/year2022.csv",
+      "data/grid_calibration/merged4/panels/year2023.csv",
+      "data/grid_calibration/merged4/panels/year2024.csv",
+      "data/grid_calibration/merged4/panels/year2025.csv",
+      "data/coverage_extension/calibration/merged4/panels/relocated.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/year2022.csv; data/grid_calibration/merged4/panels/year2023.csv; data/grid_calibration/merged4/panels/year2024.csv; data/grid_calibration/merged4/panels/year2025.csv",
+    "output": "figures/figure_S10_provisional.pdf",
+    "output_files": [
+      "figures/figure_S10_provisional.pdf",
+      "figures/figure_S10_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 123,
+        "source": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "source_sha256": "6e6fb34403e74456acff88bbb4c1a1b2537e288667e150c08e889b76b604fdb7",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "figure": "figures/figure_S10_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S10/2024",
     "scope": "supplement",
     "quantity": "Annual seismicity map",
     "documentation": "Supplement S21 caption",
-    "parameters": "Year 2024",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "Independently selected calendar-year subsets. Event counts reflect sparse exposure and numerical filtering, not regional seismicity rates. All years have at least one provisional relocated result.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. Independently selected calendar-year subsets. Event counts reflect sparse exposure and numerical filtering, not regional seismicity rates. All years have at least one provisional relocated result.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/year2022.csv",
+      "data/grid_calibration/merged4/panels/year2023.csv",
+      "data/grid_calibration/merged4/panels/year2024.csv",
+      "data/grid_calibration/merged4/panels/year2025.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/year2022.csv",
+      "data/grid_calibration/merged4/panels/year2023.csv",
+      "data/grid_calibration/merged4/panels/year2024.csv",
+      "data/grid_calibration/merged4/panels/year2025.csv",
+      "data/coverage_extension/calibration/merged4/panels/relocated.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/year2022.csv; data/grid_calibration/merged4/panels/year2023.csv; data/grid_calibration/merged4/panels/year2024.csv; data/grid_calibration/merged4/panels/year2025.csv",
+    "output": "figures/figure_S10_provisional.pdf",
+    "output_files": [
+      "figures/figure_S10_provisional.pdf",
+      "figures/figure_S10_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 123,
+        "source": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "source_sha256": "6e6fb34403e74456acff88bbb4c1a1b2537e288667e150c08e889b76b604fdb7",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "figure": "figures/figure_S10_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S10/2025",
     "scope": "supplement",
     "quantity": "Annual seismicity map",
     "documentation": "Supplement S21 caption",
-    "parameters": "Year 2025 through March20",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "Independently selected calendar-year subsets. Event counts reflect sparse exposure and numerical filtering, not regional seismicity rates. All years have at least one provisional relocated result.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. Independently selected calendar-year subsets. Event counts reflect sparse exposure and numerical filtering, not regional seismicity rates. All years have at least one provisional relocated result.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/year2022.csv",
+      "data/grid_calibration/merged4/panels/year2023.csv",
+      "data/grid_calibration/merged4/panels/year2024.csv",
+      "data/grid_calibration/merged4/panels/year2025.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/year2022.csv",
+      "data/grid_calibration/merged4/panels/year2023.csv",
+      "data/grid_calibration/merged4/panels/year2024.csv",
+      "data/grid_calibration/merged4/panels/year2025.csv",
+      "data/coverage_extension/calibration/merged4/panels/relocated.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/year2022.csv; data/grid_calibration/merged4/panels/year2023.csv; data/grid_calibration/merged4/panels/year2024.csv; data/grid_calibration/merged4/panels/year2025.csv",
+    "output": "figures/figure_S10_provisional.pdf",
+    "output_files": [
+      "figures/figure_S10_provisional.pdf",
+      "figures/figure_S10_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 123,
+        "source": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "source_sha256": "6e6fb34403e74456acff88bbb4c1a1b2537e288667e150c08e889b76b604fdb7",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "figure": "figures/figure_S10_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S11/swarm-1",
     "scope": "supplement",
     "quantity": "Map of one of four major swarms",
     "documentation": "Supplement S22 caption",
-    "parameters": "2022-2025; exact swarm windows not enumerated in caption",
+    "parameters": "Four written calendar windows from the publication panel titles; inclusive start, exclusive day after end. No location or event values digitized.",
     "status": "not reproduced",
-    "data_command": null,
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
     "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "S11/swarm-1, swarm-3 and swarm-4 have no surviving independently relocated events in their written calendar windows; sparse exposure, not evidence that no earthquakes occurred.",
+    "attempt": "Computed on the current independent subset; no qualifying numerical counterpart. See saved selection/measurement record.",
     "notes": "Positional identifiers for four maps; event windows not inferred from plotted data.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "saved_data": "data/grid_calibration/merged4/panels/swarm-1.csv"
   },
   {
     "panel": "S11/swarm-2",
     "scope": "supplement",
     "quantity": "Map of one of four major swarms",
     "documentation": "Supplement S22 caption",
-    "parameters": "2022-2025; exact swarm windows not enumerated in caption",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "Selections use the dates written in the published panel titles, with inclusive end days. Only nonempty selections have partial counterparts. Empty selections are explicitly labeled: they do not establish absence of earthquakes.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. Selections use the dates written in the published panel titles, with inclusive end days. Only nonempty selections have partial counterparts. Empty selections are explicitly labeled: they do not establish absence of earthquakes.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "Positional identifiers for four maps; event windows not inferred from plotted data.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/swarm-1.csv",
+      "data/grid_calibration/merged4/panels/swarm-2.csv",
+      "data/grid_calibration/merged4/panels/swarm-3.csv",
+      "data/grid_calibration/merged4/panels/swarm-4.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/swarm-1.csv",
+      "data/grid_calibration/merged4/panels/swarm-2.csv",
+      "data/grid_calibration/merged4/panels/swarm-3.csv",
+      "data/grid_calibration/merged4/panels/swarm-4.csv",
+      "data/coverage_extension/calibration/merged4/panels/swarm-2.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/swarm-1.csv; data/grid_calibration/merged4/panels/swarm-2.csv; data/grid_calibration/merged4/panels/swarm-3.csv; data/grid_calibration/merged4/panels/swarm-4.csv",
+    "output": "figures/figure_S11_provisional.pdf",
+    "output_files": [
+      "figures/figure_S11_provisional.pdf",
+      "figures/figure_S11_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 1,
+        "source": "data/coverage_extension/calibration/merged4/panels/swarm-2.csv",
+        "source_sha256": "7c2f8e212d050dc88e533d891b6f0d4dfc47c34dac616661caf1081e93094ec3",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/swarm-2.csv",
+        "figure": "figures/figure_S11_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S11/swarm-3",
     "scope": "supplement",
     "quantity": "Map of one of four major swarms",
     "documentation": "Supplement S22 caption",
-    "parameters": "2022-2025; exact swarm windows not enumerated in caption",
+    "parameters": "Four written calendar windows from the publication panel titles; inclusive start, exclusive day after end. No location or event values digitized.",
     "status": "not reproduced",
-    "data_command": null,
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
     "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "S11/swarm-1, swarm-3 and swarm-4 have no surviving independently relocated events in their written calendar windows; sparse exposure, not evidence that no earthquakes occurred.",
+    "attempt": "Computed on the current independent subset; no qualifying numerical counterpart. See saved selection/measurement record.",
     "notes": "Positional identifiers for four maps; event windows not inferred from plotted data.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "saved_data": "data/grid_calibration/merged4/panels/swarm-3.csv"
   },
   {
     "panel": "S11/swarm-4",
     "scope": "supplement",
     "quantity": "Map of one of four major swarms",
     "documentation": "Supplement S22 caption",
-    "parameters": "2022-2025; exact swarm windows not enumerated in caption",
+    "parameters": "Four written calendar windows from the publication panel titles; inclusive start, exclusive day after end. No location or event values digitized.",
     "status": "not reproduced",
-    "data_command": null,
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
     "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "S11/swarm-1, swarm-3 and swarm-4 have no surviving independently relocated events in their written calendar windows; sparse exposure, not evidence that no earthquakes occurred.",
+    "attempt": "Computed on the current independent subset; no qualifying numerical counterpart. See saved selection/measurement record.",
     "notes": "Positional identifiers for four maps; event windows not inferred from plotted data.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "saved_data": "data/grid_calibration/merged4/panels/swarm-4.csv"
   },
   {
     "panel": "S12A",
     "scope": "supplement",
     "quantity": "Ring-sector division",
     "documentation": "Supplement S23 caption; S8",
-    "parameters": "East, southwest, north; sector boundaries by location/depth",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "137 independently associated CPOZ P arrivals now exist. Relocated ring-sector selection and manual depth review remain unfinished; internal S-P checks do not establish location accuracy.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+      "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/sectors.csv; data/grid_calibration/merged4/panels/cpoz_index.csv; data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+    "output": "figures/figure_S12_provisional.pdf",
+    "output_files": [
+      "figures/figure_S12_provisional.pdf",
+      "figures/figure_S12_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 122,
+        "source": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "source_sha256": "998e675d16413a852ed750292f3b456f8b4e7c223e09d8eefe067f345fdcc9e3",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "figure": "figures/figure_S12_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S12B",
     "scope": "supplement",
     "quantity": "Ring-sector division in complementary spatial view",
     "documentation": "Supplement S23 caption; S8",
-    "parameters": "East, southwest, north; sector boundaries by location/depth",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "137 independently associated CPOZ P arrivals now exist. Relocated ring-sector selection and manual depth review remain unfinished; internal S-P checks do not establish location accuracy.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+      "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/sectors.csv; data/grid_calibration/merged4/panels/cpoz_index.csv; data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+    "output": "figures/figure_S12_provisional.pdf",
+    "output_files": [
+      "figures/figure_S12_provisional.pdf",
+      "figures/figure_S12_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 122,
+        "source": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "source_sha256": "998e675d16413a852ed750292f3b456f8b4e7c223e09d8eefe067f345fdcc9e3",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "figure": "figures/figure_S12_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S12C",
     "scope": "supplement",
     "quantity": "Common-receiver gather: east / HHZ",
     "documentation": "Supplement S23 caption",
-    "parameters": "CPOZ; -1 to +7 s about P; >4 Hz; north sector ordered by easting, others northing",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "137 independently associated CPOZ P arrivals now exist. Relocated ring-sector selection and manual depth review remain unfinished; internal S-P checks do not establish location accuracy.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+      "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/sectors.csv; data/grid_calibration/merged4/panels/cpoz_index.csv; data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+    "output": "figures/figure_S12_provisional.pdf",
+    "output_files": [
+      "figures/figure_S12_provisional.pdf",
+      "figures/figure_S12_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 122,
+        "source": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "source_sha256": "998e675d16413a852ed750292f3b456f8b4e7c223e09d8eefe067f345fdcc9e3",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "figure": "figures/figure_S12_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S12D",
     "scope": "supplement",
     "quantity": "Common-receiver gather: southwest / HHZ",
     "documentation": "Supplement S23 caption",
-    "parameters": "CPOZ; -1 to +7 s about P; >4 Hz; north sector ordered by easting, others northing",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "137 independently associated CPOZ P arrivals now exist. Relocated ring-sector selection and manual depth review remain unfinished; internal S-P checks do not establish location accuracy.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+      "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/sectors.csv; data/grid_calibration/merged4/panels/cpoz_index.csv; data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+    "output": "figures/figure_S12_provisional.pdf",
+    "output_files": [
+      "figures/figure_S12_provisional.pdf",
+      "figures/figure_S12_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 122,
+        "source": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "source_sha256": "998e675d16413a852ed750292f3b456f8b4e7c223e09d8eefe067f345fdcc9e3",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "figure": "figures/figure_S12_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S12E",
     "scope": "supplement",
     "quantity": "Common-receiver gather: north / HHZ",
     "documentation": "Supplement S23 caption",
-    "parameters": "CPOZ; -1 to +7 s about P; >4 Hz; north sector ordered by easting, others northing",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "137 independently associated CPOZ P arrivals now exist. Relocated ring-sector selection and manual depth review remain unfinished; internal S-P checks do not establish location accuracy.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+      "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/sectors.csv; data/grid_calibration/merged4/panels/cpoz_index.csv; data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+    "output": "figures/figure_S12_provisional.pdf",
+    "output_files": [
+      "figures/figure_S12_provisional.pdf",
+      "figures/figure_S12_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 122,
+        "source": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "source_sha256": "998e675d16413a852ed750292f3b456f8b4e7c223e09d8eefe067f345fdcc9e3",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "figure": "figures/figure_S12_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S12F",
     "scope": "supplement",
     "quantity": "Common-receiver gather: east / HHN",
     "documentation": "Supplement S23 caption",
-    "parameters": "CPOZ; -1 to +7 s about P; >4 Hz; north sector ordered by easting, others northing",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "137 independently associated CPOZ P arrivals now exist. Relocated ring-sector selection and manual depth review remain unfinished; internal S-P checks do not establish location accuracy.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+      "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/sectors.csv; data/grid_calibration/merged4/panels/cpoz_index.csv; data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+    "output": "figures/figure_S12_provisional.pdf",
+    "output_files": [
+      "figures/figure_S12_provisional.pdf",
+      "figures/figure_S12_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 122,
+        "source": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "source_sha256": "998e675d16413a852ed750292f3b456f8b4e7c223e09d8eefe067f345fdcc9e3",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "figure": "figures/figure_S12_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S12G",
     "scope": "supplement",
     "quantity": "Common-receiver gather: southwest / HHN",
     "documentation": "Supplement S23 caption",
-    "parameters": "CPOZ; -1 to +7 s about P; >4 Hz; north sector ordered by easting, others northing",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "137 independently associated CPOZ P arrivals now exist. Relocated ring-sector selection and manual depth review remain unfinished; internal S-P checks do not establish location accuracy.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+      "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/sectors.csv; data/grid_calibration/merged4/panels/cpoz_index.csv; data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+    "output": "figures/figure_S12_provisional.pdf",
+    "output_files": [
+      "figures/figure_S12_provisional.pdf",
+      "figures/figure_S12_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 122,
+        "source": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "source_sha256": "998e675d16413a852ed750292f3b456f8b4e7c223e09d8eefe067f345fdcc9e3",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "figure": "figures/figure_S12_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S12H",
     "scope": "supplement",
     "quantity": "Common-receiver gather: north / HHN",
     "documentation": "Supplement S23 caption",
-    "parameters": "CPOZ; -1 to +7 s about P; >4 Hz; north sector ordered by easting, others northing",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "137 independently associated CPOZ P arrivals now exist. Relocated ring-sector selection and manual depth review remain unfinished; internal S-P checks do not establish location accuracy.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. 118 independently picked CPOZ component traces, aligned -1/+7 s about P and filtered above 4 Hz, joined to same-cohort relocated events. Alternative masks use geography without imposing the publication's depth bands. Trace colors show normalized recorded amplitude; strips do not interpolate missing events. Manual onset/depth review remains incomplete.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/sectors.csv",
+      "data/grid_calibration/merged4/panels/cpoz_index.csv",
+      "data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+      "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/sectors.csv; data/grid_calibration/merged4/panels/cpoz_index.csv; data/grid_calibration/merged4/panels/cpoz_gathers.npz",
+    "output": "figures/figure_S12_provisional.pdf",
+    "output_files": [
+      "figures/figure_S12_provisional.pdf",
+      "figures/figure_S12_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 122,
+        "source": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "source_sha256": "998e675d16413a852ed750292f3b456f8b4e7c223e09d8eefe067f345fdcc9e3",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/cpoz_index.csv",
+        "figure": "figures/figure_S12_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S13A",
     "scope": "supplement",
     "quantity": "Full caldera seismicity on satellite reference",
     "documentation": "Supplement S24 caption",
-    "parameters": "Depth-coded relocated events; Google Earth basemap",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "Own relocated coordinates are plotted for full-caldera and onshore views. Independent coarse coastline replaces the satellite layer, whose retrieval and rendering remain unimplemented. No publication pixels enter either map.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. Own relocated coordinates are plotted for full-caldera and onshore views. Independent coarse coastline replaces the satellite layer, whose retrieval and rendering remain unimplemented. No publication pixels enter either map.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/relocated.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/relocated.csv",
+      "data/coverage_extension/calibration/merged4/panels/relocated.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/relocated.csv",
+    "output": "figures/figure_S13_provisional.pdf",
+    "output_files": [
+      "figures/figure_S13_provisional.pdf",
+      "figures/figure_S13_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 123,
+        "source": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "source_sha256": "6e6fb34403e74456acff88bbb4c1a1b2537e288667e150c08e889b76b604fdb7",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "figure": "figures/figure_S13_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S13B",
     "scope": "supplement",
     "quantity": "Onshore seismicity on satellite reference",
     "documentation": "Supplement S24 caption",
-    "parameters": "Depth-coded relocated events; Google Earth basemap",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Unfinished full-period processing and missing calibrated/relocated catalog. Provisional GaMMA diagnostics use an alternative external profile; they are not this panel. Author-derived results are not substituted.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "parameters": "Own relocated coordinates are plotted for full-caldera and onshore views. Independent coarse coastline replaces the satellite layer, whose retrieval and rendering remain unimplemented. No publication pixels enter either map.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Provisional independent observations and processing; sparse coverage, unreviewed phases, calibration path sensitivity. Not established fault geometry or exact reproduction. Own relocated coordinates are plotted for full-caldera and onshore views. Independent coarse coastline replaces the satellite layer, whose retrieval and rendering remain unimplemented. No publication pixels enter either map.",
+    "attempt": "Executed; numerical result plotted even though scientific acceptance remains unresolved.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/panels/relocated.csv"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/panels/relocated.csv",
+      "data/coverage_extension/calibration/merged4/panels/relocated.csv"
+    ],
+    "saved_data": "data/grid_calibration/merged4/panels/relocated.csv",
+    "output": "figures/figure_S13_provisional.pdf",
+    "output_files": [
+      "figures/figure_S13_provisional.pdf",
+      "figures/figure_S13_extension.pdf"
+    ],
+    "independent_data_generation": true,
+    "agreement_with_publication": "Not quantitatively established; subset and methodology differ.",
+    "provenance": "Independently computed from eligible waveforms, responses, own picks and own locations; authorized Tan-distributed reference grid. See data/grid_calibration/input_classification.json.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json",
+    "additional_independent_results": [
+      {
+        "rows": 123,
+        "source": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "source_sha256": "6e6fb34403e74456acff88bbb4c1a1b2537e288667e150c08e889b76b604fdb7",
+        "saved_data": "data/coverage_extension/calibration/merged4/panels/relocated.csv",
+        "figure": "figures/figure_S13_extension.pdf",
+        "limitation": "Separate new event identifiers; independently rerun conditional analysis, not absolute validation.",
+        "data_command": ".venv/bin/python scripts/calibrate_coverage_extension.py; .venv/bin/python scripts/coverage_extension_downstream.py; .venv/bin/python scripts/coverage_extension_report.py --prepare-only",
+        "plot_command": ".venv/bin/python scripts/publication_plots.py"
+      }
+    ]
   },
   {
     "panel": "S14/1",
@@ -3631,14 +4685,29 @@
     "quantity": "CAAM waveforms and event annotations",
     "documentation": "Supplement S25 caption; S9-S11",
     "parameters": "1-10 Hz display; 8-s FI at 2-5 and 8-15 Hz; FI<0 colored red",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "75.797 common CAAM/COLB scan hours; 822 unconfirmed threshold crossings. Three-year scan, reviewed clusters, relative magnitudes and timing histories remain unfinished.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/extend_hybrid_scan.py --dataset grid; .venv/bin/python scripts/grid_hybrid_candidates.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Partial candidate-family analysis from original observations. Twelve strongest independent correlation crossings per E1/E2/E3 template are displayed with measured frequency index and horizontal amplitude ratio. Template assignment is not manual confirmation or validated clustering. The amplitude ratio is not called a relative magnitude because common propagation paths are unverified. These are not the published 70 events or their full-period history.",
     "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
     "notes": "Cluster identifiers; not invented panel letters. No magnitude/correlation for unclustered events.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/hybrid/hybrid_candidates.csv",
+      "data/grid_calibration/merged4/hybrid/display_candidates.csv",
+      "data/grid_calibration/merged4/hybrid/display_waveforms.npz"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/hybrid/hybrid_candidates.csv",
+      "data/grid_calibration/merged4/hybrid/display_candidates.csv",
+      "data/grid_calibration/merged4/hybrid/display_waveforms.npz"
+    ],
+    "saved_data": "data/grid_calibration/merged4/hybrid/hybrid_candidates.csv; data/grid_calibration/merged4/hybrid/display_candidates.csv; data/grid_calibration/merged4/hybrid/display_waveforms.npz",
+    "output": "figures/figure_S14_candidates.pdf",
+    "independent_data_generation": true,
+    "agreement_with_publication": "Unconfirmed candidate-family counterpart; confirmed clusters and timing evolution untested.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S14/2",
@@ -3646,14 +4715,29 @@
     "quantity": "CAAM waveforms and event annotations",
     "documentation": "Supplement S25 caption; S9-S11",
     "parameters": "1-10 Hz display; 8-s FI at 2-5 and 8-15 Hz; FI<0 colored red",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "75.797 common CAAM/COLB scan hours; 822 unconfirmed threshold crossings. Three-year scan, reviewed clusters, relative magnitudes and timing histories remain unfinished.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/extend_hybrid_scan.py --dataset grid; .venv/bin/python scripts/grid_hybrid_candidates.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Partial candidate-family analysis from original observations. Twelve strongest independent correlation crossings per E1/E2/E3 template are displayed with measured frequency index and horizontal amplitude ratio. Template assignment is not manual confirmation or validated clustering. The amplitude ratio is not called a relative magnitude because common propagation paths are unverified. These are not the published 70 events or their full-period history.",
     "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
     "notes": "Cluster identifiers; not invented panel letters. No magnitude/correlation for unclustered events.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/hybrid/hybrid_candidates.csv",
+      "data/grid_calibration/merged4/hybrid/display_candidates.csv",
+      "data/grid_calibration/merged4/hybrid/display_waveforms.npz"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/hybrid/hybrid_candidates.csv",
+      "data/grid_calibration/merged4/hybrid/display_candidates.csv",
+      "data/grid_calibration/merged4/hybrid/display_waveforms.npz"
+    ],
+    "saved_data": "data/grid_calibration/merged4/hybrid/hybrid_candidates.csv; data/grid_calibration/merged4/hybrid/display_candidates.csv; data/grid_calibration/merged4/hybrid/display_waveforms.npz",
+    "output": "figures/figure_S14_candidates.pdf",
+    "independent_data_generation": true,
+    "agreement_with_publication": "Unconfirmed candidate-family counterpart; confirmed clusters and timing evolution untested.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S14/3",
@@ -3661,14 +4745,29 @@
     "quantity": "CAAM waveforms and event annotations",
     "documentation": "Supplement S25 caption; S9-S11",
     "parameters": "1-10 Hz display; 8-s FI at 2-5 and 8-15 Hz; FI<0 colored red",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "75.797 common CAAM/COLB scan hours; 822 unconfirmed threshold crossings. Three-year scan, reviewed clusters, relative magnitudes and timing histories remain unfinished.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/extend_hybrid_scan.py --dataset grid; .venv/bin/python scripts/grid_hybrid_candidates.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Partial candidate-family analysis from original observations. Twelve strongest independent correlation crossings per E1/E2/E3 template are displayed with measured frequency index and horizontal amplitude ratio. Template assignment is not manual confirmation or validated clustering. The amplitude ratio is not called a relative magnitude because common propagation paths are unverified. These are not the published 70 events or their full-period history.",
     "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
     "notes": "Cluster identifiers; not invented panel letters. No magnitude/correlation for unclustered events.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/grid_calibration/merged4/hybrid/hybrid_candidates.csv",
+      "data/grid_calibration/merged4/hybrid/display_candidates.csv",
+      "data/grid_calibration/merged4/hybrid/display_waveforms.npz"
+    ],
+    "input_files": [
+      "data/grid_calibration/merged4/hybrid/hybrid_candidates.csv",
+      "data/grid_calibration/merged4/hybrid/display_candidates.csv",
+      "data/grid_calibration/merged4/hybrid/display_waveforms.npz"
+    ],
+    "saved_data": "data/grid_calibration/merged4/hybrid/hybrid_candidates.csv; data/grid_calibration/merged4/hybrid/display_candidates.csv; data/grid_calibration/merged4/hybrid/display_waveforms.npz",
+    "output": "figures/figure_S14_candidates.pdf",
+    "independent_data_generation": true,
+    "agreement_with_publication": "Unconfirmed candidate-family counterpart; confirmed clusters and timing evolution untested.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S14/unclustered",
@@ -3677,13 +4776,14 @@
     "documentation": "Supplement S25 caption; S9-S11",
     "parameters": "1-10 Hz display; 8-s FI at 2-5 and 8-15 Hz; FI<0 colored red",
     "status": "not reproduced",
-    "data_command": null,
+    "data_command": ".venv/bin/python scripts/extend_hybrid_scan.py --dataset grid; .venv/bin/python scripts/grid_hybrid_candidates.py",
     "plot_command": null,
-    "blocker": "75.797 common CAAM/COLB scan hours; 822 unconfirmed threshold crossings. Three-year scan, reviewed clusters, relative magnitudes and timing histories remain unfinished.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "S14/unclustered: no independent unclustered hybrid sample or validated family assignment. The three-template threshold scan cannot itself supply that class.",
+    "attempt": "Computed on the current independent subset; no qualifying numerical counterpart. See saved selection/measurement record.",
     "notes": "Cluster identifiers; not invented panel letters. No magnitude/correlation for unclustered events.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "saved_data": "data/grid_calibration/merged4/hybrid/hybrid_summary.json"
   },
   {
     "panel": "S15A",
@@ -3691,10 +4791,10 @@
     "quantity": "Hybrid family 1: waveforms and spectrograms",
     "documentation": "Supplement S26 caption; S9-S10",
     "parameters": "CAAM/COLB HHZ/HHE; amplitudes normalized by CAAM maximum",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Post-generation visual comparison shows a different published example from the written-method template used here. The generated family-template figure is related analysis, not reproduction of this panel.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/analyze_observations.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Partial numerical waveform/spectral counterparts. A/B analogues use the written-method E1/E2 family templates, which are different events from the published A/B examples. They are explicitly not exact event reproduction. C uses E3. All are processed original CAAM/COLB observations; normalization and spectral settings are disclosed. No author waveform or spectral array is used.",
     "attempt": "Related written-method template processed; it is not the published example and is excluded from this panel comparison.",
     "notes": "Caption spells CCAM once; interpreted as CAAM consistently with methods. Each entry covers the traces/spectrograms of that labeled example.",
     "input_observation_files": [
@@ -3703,11 +4803,29 @@
       "inputs/waveforms/E1_COLB.mseed"
     ],
     "generated_figure": null,
-    "saved_data": null,
+    "saved_data": "data/observations/E1_waveforms.csv; data/observations/E1_CAAM_Z_spectrum.npz; data/observations/E1_CAAM_E_spectrum.npz; data/observations/E1_COLB_Z_spectrum.npz; data/observations/E1_COLB_E_spectrum.npz",
     "related_data_command": ".venv/bin/python scripts/analyze_observations.py",
     "related_plot_command": ".venv/bin/python scripts/plot_observations.py",
     "related_diagnostic": "figures/hybrid_E1.pdf (different example, not a panel counterpart)",
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/observations/E1_waveforms.csv",
+      "data/observations/E1_CAAM_Z_spectrum.npz",
+      "data/observations/E1_CAAM_E_spectrum.npz",
+      "data/observations/E1_COLB_Z_spectrum.npz",
+      "data/observations/E1_COLB_E_spectrum.npz"
+    ],
+    "input_files": [
+      "data/observations/E1_waveforms.csv",
+      "data/observations/E1_CAAM_Z_spectrum.npz",
+      "data/observations/E1_CAAM_E_spectrum.npz",
+      "data/observations/E1_COLB_Z_spectrum.npz",
+      "data/observations/E1_COLB_E_spectrum.npz"
+    ],
+    "output": "figures/hybrid_E1.pdf",
+    "independent_data_generation": true,
+    "agreement_with_publication": "Different documented template event: methodological analogue, not exact event agreement.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S15B",
@@ -3715,10 +4833,10 @@
     "quantity": "Hybrid family 2: waveforms and spectrograms",
     "documentation": "Supplement S26 caption; S9-S10",
     "parameters": "CAAM/COLB HHZ/HHE; amplitudes normalized by CAAM maximum",
-    "status": "not reproduced",
-    "data_command": null,
-    "plot_command": null,
-    "blocker": "Post-generation visual comparison shows a different published example from the written-method template used here. The generated family-template figure is related analysis, not reproduction of this panel.",
+    "status": "partially reproduced",
+    "data_command": ".venv/bin/python scripts/analyze_observations.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
+    "blocker": "Partial numerical waveform/spectral counterparts. A/B analogues use the written-method E1/E2 family templates, which are different events from the published A/B examples. They are explicitly not exact event reproduction. C uses E3. All are processed original CAAM/COLB observations; normalization and spectral settings are disclosed. No author waveform or spectral array is used.",
     "attempt": "Related written-method template processed; it is not the published example and is excluded from this panel comparison.",
     "notes": "Caption spells CCAM once; interpreted as CAAM consistently with methods. Each entry covers the traces/spectrograms of that labeled example.",
     "input_observation_files": [
@@ -3727,11 +4845,29 @@
       "inputs/waveforms/E2_COLB.mseed"
     ],
     "generated_figure": null,
-    "saved_data": null,
+    "saved_data": "data/observations/E2_waveforms.csv; data/observations/E2_CAAM_Z_spectrum.npz; data/observations/E2_CAAM_E_spectrum.npz; data/observations/E2_COLB_Z_spectrum.npz; data/observations/E2_COLB_E_spectrum.npz",
     "related_data_command": ".venv/bin/python scripts/analyze_observations.py",
     "related_plot_command": ".venv/bin/python scripts/plot_observations.py",
     "related_diagnostic": "figures/hybrid_E2.pdf (different example, not a panel counterpart)",
-    "report_figure": null
+    "report_figure": null,
+    "inputs": [
+      "data/observations/E2_waveforms.csv",
+      "data/observations/E2_CAAM_Z_spectrum.npz",
+      "data/observations/E2_CAAM_E_spectrum.npz",
+      "data/observations/E2_COLB_Z_spectrum.npz",
+      "data/observations/E2_COLB_E_spectrum.npz"
+    ],
+    "input_files": [
+      "data/observations/E2_waveforms.csv",
+      "data/observations/E2_CAAM_Z_spectrum.npz",
+      "data/observations/E2_CAAM_E_spectrum.npz",
+      "data/observations/E2_COLB_Z_spectrum.npz",
+      "data/observations/E2_COLB_E_spectrum.npz"
+    ],
+    "output": "figures/hybrid_E2.pdf",
+    "independent_data_generation": true,
+    "agreement_with_publication": "Different documented template event: methodological analogue, not exact event agreement.",
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S15C",
@@ -3762,12 +4898,13 @@
     "documentation": "Supplement S26 caption; S9-S10",
     "parameters": "CAAM/COLB HHZ/HHE; amplitudes normalized by CAAM maximum",
     "status": "not reproduced",
-    "data_command": null,
+    "data_command": ".venv/bin/python scripts/grid_panel_data.py",
     "plot_command": null,
-    "blocker": "Exact shallow VT example not identified by written method alone; no author catalog or plot values used to select it.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "S15D: no retained independently relocated event with depth <0.6 km south of 40.83 N in this cohort, hence no suitable west-Accademia extremely-shallow example. Incorrectly labeled examples are not substituted.",
+    "attempt": "Computed on the current independent subset; no qualifying numerical counterpart. See saved selection/measurement record.",
     "notes": "Caption spells CCAM once; interpreted as CAAM consistently with methods. Each entry covers the traces/spectrograms of that labeled example.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "saved_data": "data/grid_calibration/merged4/panels/summary.json"
   }
 ]

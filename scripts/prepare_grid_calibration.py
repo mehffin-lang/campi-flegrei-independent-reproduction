@@ -1,10 +1,10 @@
 """Disclosed regional starting profiles from the specifically authorized Tan grid."""
 from pathlib import Path
-import hashlib,json,shutil
+import hashlib,json,shutil,os
 import numpy as np
 import pandas as pd
 from obspy import UTCDateTime
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'data/grid_calibration';D=ROOT/'data/calibration_followup/expanded'
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/os.environ.get('CF_GRID_BASE','data/grid_calibration');D=ROOT/os.environ.get('CF_OBSERVATIONS','data/calibration_followup/expanded')
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def main():

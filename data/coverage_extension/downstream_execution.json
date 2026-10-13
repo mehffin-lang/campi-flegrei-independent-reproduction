@@ -1,0 +1,61 @@
+{
+  "started_utc": "2026-10-13T19:44:01.488978+00:00",
+  "runs": [
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_uncertainty.py"
+      ],
+      "returncode": 0,
+      "log": "tmp/coverage_extension/grid_uncertainty.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/downstream_checks.py",
+        "--dataset",
+        "grid",
+        "--workers",
+        "6"
+      ],
+      "returncode": 0,
+      "log": "tmp/coverage_extension/downstream_checks.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/magnitude_statistics.py",
+        "--grid"
+      ],
+      "returncode": 0,
+      "log": "tmp/coverage_extension/magnitude_statistics.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_focal_attempt.py"
+      ],
+      "returncode": 0,
+      "log": "tmp/coverage_extension/grid_focal_attempt.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_panel_data.py"
+      ],
+      "returncode": 0,
+      "log": "tmp/coverage_extension/grid_panel_data.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_location_checks.py"
+      ],
+      "returncode": 0,
+      "log": "tmp/coverage_extension/grid_location_checks.py.log"
+    }
+  ],
+  "scientific_acceptance": false,
+  "finished_utc": "2026-10-13T19:49:37.467207+00:00",
+  "procedure_passed": true
+}

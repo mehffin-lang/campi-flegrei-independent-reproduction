@@ -1,12 +1,12 @@
 """Independent grid-derived VELEST experiments, full usable cohort, explicit gates."""
 from pathlib import Path
 import argparse
-import json,hashlib,shutil
+import json,hashlib,shutil,os
 import numpy as np
 import pandas as pd
 import calibration_chain as c
 import run_velest as v
-ROOT=c.ROOT;BASE=ROOT/'data/grid_calibration';OUT=BASE;D=ROOT/'data/calibration_followup/expanded';WORK=ROOT/'tmp/grid_calibration/velest'
+ROOT=c.ROOT;BASE=ROOT/os.environ.get('CF_GRID_BASE','data/grid_calibration');OUT=BASE;D=ROOT/os.environ.get('CF_OBSERVATIONS','data/calibration_followup/expanded');WORKROOT=ROOT/os.environ.get('CF_GRID_WORK','tmp/grid_calibration');WORK=WORKROOT/'velest'
 c.OUT=OUT;c.WORK=WORK
 base_controls=v.controls
 
@@ -28,7 +28,7 @@ def main():
     global OUT,WORK
     parser=argparse.ArgumentParser();parser.add_argument('--coarse-four',action='store_true');args=parser.parse_args()
     if args.coarse_four:
-        OUT=BASE/'merged4';WORK=ROOT/'tmp/grid_calibration/merged4';OUT.mkdir(exist_ok=True);c.OUT=OUT;c.WORK=WORK
+        OUT=BASE/'merged4';WORK=WORKROOT/'merged4';OUT.mkdir(exist_ok=True);c.OUT=OUT;c.WORK=WORK
     ev=pd.read_csv(D/'initial_events.csv');p=pd.read_csv(D/'picks.csv');a=pd.read_csv(D/'associations.csv');q=pd.read_csv(BASE/'input_quality.csv');s=pd.read_csv(D/'stations.csv')
     ev=ev[ev.event_index.isin(q.loc[q.causal,'event_index'])].sort_values('time');a=a[a.event_index.isin(ev.event_index)]
     selected=ev[ev.event_index.isin(q.loc[q.calibration,'event_index'])];selected.to_csv(OUT/'selected_initial_events.csv',index=False)
@@ -73,7 +73,7 @@ def main():
                 rr.update(location_change=delta,max_velocity_change_km_s=dv,max_station_delay_change_s=ds);r['runs'].append(rr)
                 r['converged']=bool(delta['max_horizontal_m']<=100 and delta['max_depth_km']<=.1 and dv<=.05 and ds<=.02)
                 last,previous=wn,ln;save()
-            r['accepted']=r['converged'];r['validated_workdir']=str(last.relative_to(ROOT));r['status']='executed'
+            r['accepted']=False;r['local_change_gate_passed']=r['converged'];r['validated_workdir']=str(last.relative_to(ROOT));r['status']='executed; local-change gate is not scientific acceptance'
             fits[region]=(last,previous)
         except Exception as exc:r.update(status='failed validation or solver',error=repr(exc))
         save()

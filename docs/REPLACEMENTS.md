@@ -1,4 +1,12 @@
-# Current provenance correction and observational expansion
+# Current provisional-results continuation
+
+This run starts from `6e8da6bbfe8a0adb4fc4950f65d1917363e5cfaa`. It preserves the original 1,015-association calibration cohort, its grid and own VELEST/TomoDD solutions. Added controlled precision/common-start/held-out diagnostics, a failed extended-prelocation trial, 90 regional SVD solutions, current-cohort magnitude measurements, a screened SKHASH attempt, aligned CPOZ gathers, S–P checks and candidate-family measurements. Their controls, failures and saved numerical outputs remain traceable under `data/grid_calibration/merged4/`.
+
+The report and comparison sources now include available provisional F2/F3/S6/S7/S10–S14 counterparts instead of withholding all unaccepted numerical results. S8 replaces the older 119-magnitude pilot with the current 65-magnitude cohort; the old data and Git history are preserved. S15A/B are explicitly different-event analogues. Missing selections and rejected mechanisms remain missing, with exact reasons. New figures, plotting code, panel records and rebuilt PDFs supersede their prior presentation, not the original observations. Regional `accepted` flags are corrected to false; a small final change after repeated backups is not scientific convergence.
+
+Additional half-hour EIDA requests and processing use a separate `data/coverage_extension/` cohort to prevent event-ID aliasing. No source document, user upload, existing assessment or unrelated work is removed. Exact current counts and build outcomes are recorded in `data/grid_calibration/provisional_rebuild.json`, `provisional_verification.json` and `docs/panel_record.json`.
+
+# Earlier provenance correction and observational expansion
 
 This revision supersedes the provisional checkpoint at `ff7586a3bb8c8b24bbb06b47f167cce6bbc89d11`. Git history and useful source observations are retained. Earlier entries below describe earlier runs, not the current acceptance status.
 

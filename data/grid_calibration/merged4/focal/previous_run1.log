@@ -1,0 +1,22 @@
+========================
+SKHASH v1.1 (2025-12-17)
+========================
+Control file: /home/mehffin/campi-flegrei-independent-reproduction/data/grid_calibration/merged4/focal/control.txt
+Discarded 7 earthquakes with fewer than 8 polarities.
+Creating lookup table (0/0): /home/mehffin/campi-flegrei-independent-reproduction/data/grid_calibration/merged4/focal/velocity.csv
+Traceback (most recent call last):
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv-skhash/bin/SKHASH", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv-skhash/lib64/python3.11/site-packages/SKHASH/SKHASH.py", line 554, in main
+    SKHASH()
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv-skhash/lib64/python3.11/site-packages/SKHASH/SKHASH.py", line 442, in SKHASH
+    lookup_dict=fun.create_lookup_table(p_dict)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv-skhash/lib/python3.11/site-packages/SKHASH/functions/fun.py", line 1360, in create_lookup_table
+    table=create_takeoff_table(vmodel_depthvp,deptab,delttab,p_dict['nump'],p_dict['nx0'],p_dict['nd0'],p_dict['output_angle_precision'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/.venv-skhash/lib/python3.11/site-packages/SKHASH/functions/fun.py", line 416, in create_takeoff_table
+    depucor[:]=slow[output_col_ind+1]
+    ~~~~~~~^^^
+ValueError: could not broadcast input array from shape (11,) into shape (9001,14)

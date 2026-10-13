@@ -1,0 +1,1084 @@
+{
+  "setup": {
+    "input.mod": {
+      "identical": true,
+      "sha256": "07af18933affd1ed79bf23be629e9a5659115f4f4478638cad6e482a7b369d78"
+    },
+    "input.sta": {
+      "identical": true,
+      "sha256": "288f2ee7bc1157de3cf3eb1f084192e3625a5072d77aa963ff7acaae65a9664b"
+    },
+    "input.cnv": {
+      "identical": true,
+      "sha256": "765ecc3d5dcfa1830e699e5b542c46e7c2b59dff3051f1cf3052a2272cff26fb"
+    },
+    "velest.cmn": {
+      "identical": true,
+      "sha256": "4daa3b3f48be29cf19cc5f56cab43d5cf7daaec1860bc13a573a978b121c534b"
+    }
+  },
+  "stages": [
+    {
+      "stage": "prelocation",
+      "change": {
+        "max_horizontal_m": 13.94506414450025,
+        "max_depth_km": 0.020000000000000018,
+        "max_origin_s": 0.0,
+        "max_rms_s": 0.0
+      },
+      "run64": {
+        "iterations": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "weighted_rms_s": [
+          0.316601,
+          0.286143,
+          0.27295,
+          0.272866,
+          0.275462,
+          0.270869,
+          0.270026,
+          0.273323,
+          0.269433,
+          0.273497,
+          0.269397,
+          0.270687,
+          0.273108,
+          0.26952,
+          0.275443,
+          0.270563,
+          0.272319,
+          0.269997,
+          0.27176,
+          0.269921,
+          0.275622,
+          0.270657,
+          0.27193
+        ],
+        "backup_iterations": [
+          [
+            "4",
+            "1"
+          ],
+          [
+            "6",
+            "1"
+          ],
+          [
+            "7",
+            "1"
+          ],
+          [
+            "9",
+            "1"
+          ],
+          [
+            "10",
+            "1"
+          ],
+          [
+            "11",
+            "1"
+          ],
+          [
+            "12",
+            "1"
+          ],
+          [
+            "13",
+            "1"
+          ]
+        ],
+        "stop": [
+          "NITT = ITTMAX  --> stop iterations."
+        ],
+        "rays": [
+          "572",
+          "545",
+          "574",
+          "533",
+          "562",
+          "546",
+          "550",
+          "553",
+          "543",
+          "556",
+          "546",
+          "559",
+          "564",
+          "544",
+          "550",
+          "558",
+          "546",
+          "552",
+          "561",
+          "539",
+          "548",
+          "547",
+          "551"
+        ]
+      },
+      "run32": {
+        "iterations": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "weighted_rms_s": [
+          0.3166,
+          0.286141,
+          0.272946,
+          0.272862,
+          0.275459,
+          0.270866,
+          0.270021,
+          0.27332,
+          0.269429,
+          0.273492,
+          0.269393,
+          0.270685,
+          0.273105,
+          0.269518,
+          0.275441,
+          0.270562,
+          0.272315,
+          0.269991,
+          0.271764,
+          0.269923,
+          0.275628,
+          0.270661,
+          0.27195
+        ],
+        "backup_iterations": [
+          [
+            "4",
+            "1"
+          ],
+          [
+            "6",
+            "1"
+          ],
+          [
+            "7",
+            "1"
+          ],
+          [
+            "9",
+            "1"
+          ],
+          [
+            "10",
+            "1"
+          ],
+          [
+            "11",
+            "1"
+          ],
+          [
+            "12",
+            "1"
+          ],
+          [
+            "13",
+            "1"
+          ]
+        ],
+        "stop": [
+          "NITT = ITTMAX  --> stop iterations."
+        ],
+        "rays": [
+          "572",
+          "545",
+          "574",
+          "533",
+          "562",
+          "546",
+          "550",
+          "553",
+          "543",
+          "556",
+          "546",
+          "559",
+          "564",
+          "544",
+          "550",
+          "558",
+          "546",
+          "552",
+          "561",
+          "539",
+          "548",
+          "554",
+          "552"
+        ]
+      },
+      "numerical_start_model_equal": true,
+      "station_start_equal": true,
+      "observation_hashes": {
+        "tmp/grid_calibration/merged4/caldera_prelocation/input.cnv": "765ecc3d5dcfa1830e699e5b542c46e7c2b59dff3051f1cf3052a2272cff26fb",
+        "tmp/grid_calibration/merged4/precision32_prelocation/input.cnv": "765ecc3d5dcfa1830e699e5b542c46e7c2b59dff3051f1cf3052a2272cff26fb"
+      },
+      "control_identical": true
+    },
+    {
+      "stage": "round1",
+      "change": {
+        "max_horizontal_m": 142.25784115466047,
+        "max_depth_km": 0.23000000000000004,
+        "max_origin_s": 0.05,
+        "max_rms_s": 0.010000000000000009
+      },
+      "run64": {
+        "iterations": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "weighted_rms_s": [
+          0.271904,
+          0.266177,
+          0.261746,
+          0.258799,
+          0.256211,
+          0.262984,
+          0.25439,
+          0.258001,
+          0.252849,
+          0.258262,
+          0.252196
+        ],
+        "backup_iterations": [
+          [
+            "5",
+            "1"
+          ],
+          [
+            "6",
+            "1"
+          ],
+          [
+            "7",
+            "1"
+          ]
+        ],
+        "stop": [
+          "NITT = ITTMAX  --> stop iterations."
+        ],
+        "rays": [
+          "530",
+          "555",
+          "529",
+          "539",
+          "519",
+          "542",
+          "536",
+          "469",
+          "498",
+          "507",
+          "506"
+        ]
+      },
+      "run32": {
+        "iterations": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "weighted_rms_s": [
+          0.271925,
+          0.266177,
+          0.261956,
+          0.258891,
+          0.256378,
+          0.263088,
+          0.254469,
+          0.257815,
+          0.253215,
+          0.258375,
+          0.252417
+        ],
+        "backup_iterations": [
+          [
+            "5",
+            "1"
+          ],
+          [
+            "6",
+            "1"
+          ],
+          [
+            "7",
+            "1"
+          ]
+        ],
+        "stop": [
+          "NITT = ITTMAX  --> stop iterations."
+        ],
+        "rays": [
+          "530",
+          "556",
+          "531",
+          "539",
+          "520",
+          "539",
+          "537",
+          "470",
+          "501",
+          "523",
+          "502"
+        ]
+      },
+      "numerical_start_model_equal": true,
+      "station_start_equal": true,
+      "observation_hashes": {
+        "tmp/grid_calibration/merged4/caldera_round1/input.cnv": "9cad4f69649009aca8b81da56d71303625c4cc53ef5667de5f8a16ec3e8f66de",
+        "tmp/grid_calibration/merged4/precision32_round1/input.cnv": "8849bb3e6bcf1d3051e6d823e95fd04b79000db90b115356a93907c6b19f24a3"
+      },
+      "control_identical": true
+    },
+    {
+      "stage": "round2",
+      "change": {
+        "max_horizontal_m": 807.8029306321185,
+        "max_depth_km": 0.8700000000000001,
+        "max_origin_s": 0.29,
+        "max_rms_s": 0.09999999999999998
+      },
+      "run64": {
+        "iterations": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "weighted_rms_s": [
+          0.252219,
+          0.230151,
+          0.220616,
+          0.222526,
+          0.21895,
+          0.218136,
+          0.218572,
+          0.216655,
+          0.221833,
+          0.216586
+        ],
+        "backup_iterations": [
+          [
+            "3",
+            "1"
+          ],
+          [
+            "7",
+            "1"
+          ]
+        ],
+        "stop": [
+          "NITT = ITTMAX  --> stop iterations."
+        ],
+        "rays": [
+          "490",
+          "517",
+          "523",
+          "541",
+          "532",
+          "520",
+          "524",
+          "523",
+          "537",
+          "531"
+        ]
+      },
+      "run32": {
+        "iterations": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "weighted_rms_s": [
+          0.252474,
+          0.233054,
+          0.226749,
+          0.222781,
+          0.22364,
+          0.22004,
+          0.218125,
+          0.219129
+        ],
+        "backup_iterations": [],
+        "stop": [
+          "NITT = ITTMAX  --> stop iterations."
+        ],
+        "rays": [
+          "477",
+          "526",
+          "525",
+          "547",
+          "561",
+          "560",
+          "561",
+          "562"
+        ]
+      },
+      "numerical_start_model_equal": false,
+      "station_start_equal": true,
+      "observation_hashes": {
+        "tmp/grid_calibration/merged4/caldera_round2/input.cnv": "8d10b7c813862a28ec0c5d1a0c5ca2c32c12f6dd10c1ecf9f192c3c4d7941f07",
+        "tmp/grid_calibration/merged4/precision32_round2/input.cnv": "7884ae35cd8cc3627f8933c20904882daddc5eedea8acbf81f7b605f754da357"
+      },
+      "control_identical": true
+    },
+    {
+      "stage": "convergence1",
+      "change": {
+        "max_horizontal_m": 488.91489951933636,
+        "max_depth_km": 0.9099999999999997,
+        "max_origin_s": 0.26,
+        "max_rms_s": 0.16000000000000003
+      },
+      "run64": {
+        "iterations": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "weighted_rms_s": [
+          0.216561,
+          0.219714,
+          0.217548,
+          0.220475,
+          0.218931,
+          0.21862,
+          0.22039,
+          0.219336,
+          0.222167,
+          0.220817,
+          0.220419,
+          0.218244,
+          0.221565,
+          0.218909,
+          0.219176
+        ],
+        "backup_iterations": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "1"
+          ],
+          [
+            "2",
+            "2"
+          ],
+          [
+            "3",
+            "1"
+          ],
+          [
+            "4",
+            "1"
+          ],
+          [
+            "4",
+            "2"
+          ],
+          [
+            "6",
+            "1"
+          ]
+        ],
+        "stop": [
+          "NITT = ITTMAX  --> stop iterations."
+        ],
+        "rays": [
+          "530",
+          "536",
+          "537",
+          "544",
+          "555",
+          "539",
+          "542",
+          "550",
+          "569",
+          "568",
+          "557",
+          "537",
+          "562",
+          "563",
+          "558"
+        ]
+      },
+      "run32": {
+        "iterations": [
+          1,
+          2,
+          3
+        ],
+        "weighted_rms_s": [
+          0.219178,
+          0.221692,
+          0.217608,
+          0.225598,
+          0.22014,
+          0.218739,
+          0.218555,
+          0.226282,
+          0.221275,
+          0.220184,
+          0.219896,
+          0.219846
+        ],
+        "backup_iterations": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "1"
+          ],
+          [
+            "2",
+            "2"
+          ],
+          [
+            "2",
+            "3"
+          ],
+          [
+            "3",
+            "1"
+          ],
+          [
+            "3",
+            "2"
+          ],
+          [
+            "3",
+            "3"
+          ],
+          [
+            "3",
+            "4"
+          ]
+        ],
+        "stop": [
+          "4 TIMES BACKUP MADE --> sTOP ITERATIONS."
+        ],
+        "rays": [
+          "561",
+          "583",
+          "564",
+          "584",
+          "570",
+          "569",
+          "561",
+          "569",
+          "580",
+          "567",
+          "567",
+          "565"
+        ]
+      },
+      "numerical_start_model_equal": false,
+      "station_start_equal": false,
+      "observation_hashes": {
+        "tmp/grid_calibration/merged4/caldera_convergence1/input.cnv": "174c052983439be53efa0f6762426820b0b132ab49fe5aead40d42b7bc5fbed8",
+        "tmp/grid_calibration/merged4/precision32_convergence1/input.cnv": "efd5f9c95590783aa49ab5332c64f71d13ea15d98cce41bcb0511d3a5c744c4c"
+      },
+      "control_identical": true
+    },
+    {
+      "stage": "convergence2",
+      "change": {
+        "max_horizontal_m": 427.0057696385415,
+        "max_depth_km": 0.66,
+        "max_origin_s": 0.2,
+        "max_rms_s": 0.08000000000000002
+      },
+      "run64": {
+        "iterations": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "weighted_rms_s": [
+          0.219183,
+          0.221325,
+          0.218665,
+          0.221343,
+          0.21961,
+          0.220397,
+          0.221669,
+          0.219248,
+          0.224913,
+          0.221499,
+          0.22056,
+          0.220422,
+          0.220499
+        ],
+        "backup_iterations": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "1"
+          ],
+          [
+            "4",
+            "1"
+          ],
+          [
+            "5",
+            "1"
+          ],
+          [
+            "5",
+            "2"
+          ],
+          [
+            "5",
+            "3"
+          ],
+          [
+            "5",
+            "4"
+          ]
+        ],
+        "stop": [
+          "4 TIMES BACKUP MADE --> sTOP ITERATIONS."
+        ],
+        "rays": [
+          "558",
+          "558",
+          "560",
+          "569",
+          "558",
+          "570",
+          "569",
+          "566",
+          "569",
+          "576",
+          "579",
+          "570",
+          "563"
+        ]
+      },
+      "run32": {
+        "iterations": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "weighted_rms_s": [
+          0.219798,
+          0.220683,
+          0.222069,
+          0.219602,
+          0.226507,
+          0.221046,
+          0.220114,
+          0.225331,
+          0.222446,
+          0.22161,
+          0.221533,
+          0.221588
+        ],
+        "backup_iterations": [
+          [
+            "2",
+            "1"
+          ],
+          [
+            "3",
+            "1"
+          ],
+          [
+            "3",
+            "2"
+          ],
+          [
+            "4",
+            "1"
+          ],
+          [
+            "4",
+            "2"
+          ],
+          [
+            "4",
+            "3"
+          ],
+          [
+            "4",
+            "4"
+          ]
+        ],
+        "stop": [
+          "4 TIMES BACKUP MADE --> sTOP ITERATIONS."
+        ],
+        "rays": [
+          "557",
+          "567",
+          "581",
+          "570",
+          "580",
+          "574",
+          "577",
+          "575",
+          "572",
+          "568",
+          "573",
+          "573"
+        ]
+      },
+      "numerical_start_model_equal": false,
+      "station_start_equal": false,
+      "observation_hashes": {
+        "tmp/grid_calibration/merged4/caldera_convergence2/input.cnv": "e7785d154ce985caef9f37acdb2cafab8a85a12259762efbde8ed8c7df92f9fe",
+        "tmp/grid_calibration/merged4/precision32_convergence2/input.cnv": "20e9d45202268e19fa5eba6a32c452b80951c6f1a12ad817058fd80c3e622206"
+      },
+      "control_identical": true
+    },
+    {
+      "stage": "convergence3",
+      "change": {
+        "max_horizontal_m": 557.7708650016511,
+        "max_depth_km": 0.89,
+        "max_origin_s": 0.42,
+        "max_rms_s": 0.06
+      },
+      "run64": {
+        "iterations": [
+          1
+        ],
+        "weighted_rms_s": [
+          0.22068,
+          0.223528,
+          0.222012,
+          0.221963,
+          0.222143,
+          0.222348
+        ],
+        "backup_iterations": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "1",
+            "2"
+          ],
+          [
+            "1",
+            "3"
+          ],
+          [
+            "1",
+            "4"
+          ]
+        ],
+        "stop": [
+          "4 TIMES BACKUP MADE --> sTOP ITERATIONS."
+        ],
+        "rays": [
+          "561",
+          "571",
+          "578",
+          "583",
+          "582",
+          "574"
+        ]
+      },
+      "run32": {
+        "iterations": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "weighted_rms_s": [
+          0.221602,
+          0.221954,
+          0.22023,
+          0.219128,
+          0.220855,
+          0.21935,
+          0.219047,
+          0.219402,
+          0.217794
+        ],
+        "backup_iterations": [
+          [
+            "4",
+            "1"
+          ]
+        ],
+        "stop": [
+          "NITT = ITTMAX  --> stop iterations."
+        ],
+        "rays": [
+          "573",
+          "578",
+          "589",
+          "594",
+          "579",
+          "579",
+          "567",
+          "557",
+          "552"
+        ]
+      },
+      "numerical_start_model_equal": false,
+      "station_start_equal": false,
+      "observation_hashes": {
+        "tmp/grid_calibration/merged4/caldera_convergence3/input.cnv": "839be1bca6c4677bdac67c4facf63790f64c761b734f9ac0e897f444b9dbc00b",
+        "tmp/grid_calibration/merged4/precision32_convergence3/input.cnv": "9bbc0b647108fcbe939db395f73890a0e01695c0f38b1435e9b55fe3380baf4f"
+      },
+      "control_identical": true
+    }
+  ],
+  "common_start": [
+    {
+      "stage": "round1",
+      "change": {
+        "max_horizontal_m": 0.0,
+        "max_depth_km": 0.0,
+        "max_origin_s": 0.0,
+        "max_rms_s": 0.0
+      },
+      "run": {
+        "name": "common_start32_round1",
+        "bits": 32,
+        "events": 38,
+        "picks": 653,
+        "returncode": 0,
+        "residual_rms_s": 0.24368918332672074,
+        "event_rms_s": 0.2580187671672863,
+        "depth_min_km": 0.19,
+        "depth_max_km": 5.9,
+        "workdir": "tmp/grid_calibration/path_diagnosis/common_start32_round1"
+      },
+      "log": {
+        "iterations": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "weighted_rms_s": [
+          0.271902,
+          0.266173,
+          0.261748,
+          0.258798,
+          0.256201,
+          0.262983,
+          0.254385,
+          0.258,
+          0.252844,
+          0.258263,
+          0.252195
+        ],
+        "backup_iterations": [
+          [
+            "5",
+            "1"
+          ],
+          [
+            "6",
+            "1"
+          ],
+          [
+            "7",
+            "1"
+          ]
+        ],
+        "stop": [
+          "NITT = ITTMAX  --> stop iterations."
+        ],
+        "rays": [
+          "530",
+          "555",
+          "529",
+          "539",
+          "519",
+          "542",
+          "536",
+          "469",
+          "498",
+          "507",
+          "506"
+        ]
+      }
+    },
+    {
+      "stage": "round2",
+      "change": {
+        "max_horizontal_m": 11.105068417173733,
+        "max_depth_km": 0.0,
+        "max_origin_s": 0.01,
+        "max_rms_s": 0.0
+      },
+      "run": {
+        "name": "common_start32_round2",
+        "bits": 32,
+        "events": 38,
+        "picks": 653,
+        "returncode": 0,
+        "residual_rms_s": 0.21120494753242544,
+        "event_rms_s": 0.22405943760294358,
+        "depth_min_km": 0.15,
+        "depth_max_km": 5.81,
+        "workdir": "tmp/grid_calibration/path_diagnosis/common_start32_round2"
+      },
+      "log": {
+        "iterations": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "weighted_rms_s": [
+          0.252218,
+          0.23015,
+          0.220614,
+          0.222526,
+          0.218949,
+          0.218134,
+          0.218571,
+          0.216653,
+          0.221831,
+          0.216585
+        ],
+        "backup_iterations": [
+          [
+            "3",
+            "1"
+          ],
+          [
+            "7",
+            "1"
+          ]
+        ],
+        "stop": [
+          "NITT = ITTMAX  --> stop iterations."
+        ],
+        "rays": [
+          "490",
+          "517",
+          "523",
+          "541",
+          "532",
+          "520",
+          "524",
+          "523",
+          "537",
+          "531"
+        ]
+      }
+    }
+  ],
+  "heldout": {
+    "training_events": 30,
+    "heldout_events": 8,
+    "selection": "Every fifth chronological calibration candidate; no external catalog.",
+    "starting": {
+      "name": "heldout_starting",
+      "bits": 64,
+      "events": 8,
+      "picks": 126,
+      "returncode": 0,
+      "residual_rms_s": 0.21767332083462734,
+      "event_rms_s": 0.22068076490713912,
+      "depth_min_km": 0.26,
+      "depth_max_km": 4.76,
+      "workdir": "tmp/grid_calibration/path_diagnosis/heldout_starting"
+    },
+    "fitted": {
+      "name": "heldout_fitted",
+      "bits": 64,
+      "events": 8,
+      "picks": 126,
+      "returncode": 0,
+      "residual_rms_s": 0.21978324459151705,
+      "event_rms_s": 0.21342445970413046,
+      "depth_min_km": 0.24,
+      "depth_max_km": 5.14,
+      "workdir": "tmp/grid_calibration/path_diagnosis/heldout_fitted"
+    }
+  },
+  "interpretation": "Identical initial numerical inputs, observation order, control settings and stopping rules. Paths diverge during fixed-model prelocation and subsequent coupled updates. The saved stage logs and same-start trials distinguish branching from upstream propagation. Two-decimal model/depth output serialization also propagates differences between restarts. No acceptance threshold is changed; held-out improvement is assessed separately from path robustness.",
+  "instrumentation": {
+    "source_sha256": "9a303d9d3ef0e664d8b129df0470eef31c3d19a8d3c8d8934eb0f45158e3b72f",
+    "equations_changed": false,
+    "output_identity_check": true,
+    "condition_number_range": [
+      2371.6595571409403,
+      3313.2435542124335
+    ]
+  },
+  "sources": {
+    "data/grid_calibration/merged4/filtered_events.csv": "e44e5232e34f566cd423c2438e09a794e65ca25cc0114d966b93bf23171855ce",
+    "data/grid_calibration/merged4/independent_calibrated.mod": "7ec777db1a8d45558a68896d3eb845cc64f4c20ca80cae4d2ad6a054461cfa68",
+    "data/grid_calibration/merged4/validation.json": "8689864c01d1007319201caf6d2b9d0d14a695a0f8a3253c956dc7224e014675"
+  }
+}

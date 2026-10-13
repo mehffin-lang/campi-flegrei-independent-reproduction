@@ -1,125 +1,78 @@
-\paragraph{1A --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
-
-22 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
-
-Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
-
-Saved numerical output: \path{data/continuation/figure_1A.csv}.
-
-Plot command: \path{.venv/bin/python scripts/publication_plots.py}\par Output: \path{figures/figure_1A_routine.pdf}.
-
-The same plotting command composes the report figure: \path{figures/figure_1_combined.pdf}.
-
-\paragraph{1B --- partial data-to-plot chain.} Original GNSS/leveling observations plus explicitly labeled historical source estimates/reconstruction.
-
-Inputs: \path{inputs/continuation/RITE_2000_2025.txt}, \path{inputs/continuation/RITE_Timeseries_Format.readme}, \path{inputs/continuation/RITE_daily.txt}, \path{inputs/continuation/Time_Series_Format.txt}, \path{inputs/extended/delgaudio2010_table.doc}.
-
-Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
-
-Saved numerical output: \path{data/continuation/rite_gnss.csv}, \path{data/continuation/historical_leveling.csv}.
-
-Plot command: \path{.venv/bin/python scripts/publication_plots.py}\par Output: \path{figures/figure_1B_displacement.pdf}.
-
-The same plotting command composes the report figure: \path{figures/figure_1_combined.pdf}.
-
-\paragraph{1C --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
-
-21 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
-
-Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
-
-Saved numerical output: \path{data/continuation/figure_1C.csv}, \path{data/continuation/figure_1C_cumulative.csv}.
-
-Plot command: \path{.venv/bin/python scripts/publication_plots.py}\par Output: \path{figures/figure_1C_routine.pdf}.
-
-The same plotting command composes the report figure: \path{figures/figure_1_combined.pdf}.
-
-\paragraph{S1 --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
-
-868 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
-
-Data command: \par\noindent \path{.venv/bin/python scripts/extend_calibration_observations.py --workers 8}\par
-
-Saved numerical output: \path{data/calibration_followup/expanded/processed_coverage_union.json}.
-
-Plot command: \path{.venv/bin/python scripts/publication_plots.py}\par Output: \path{figures/followup_coverage.pdf}.
-
-\paragraph{S2 --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
-
-22 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
-
-Data command: \par\noindent \path{.venv/bin/python scripts/station_geometry.py}\par
-
-Saved numerical output: \path{data/continuation/figure_S2.csv}, \path{data/continuation/station_geometry_qa.csv}, \path{data/continuation/station_geometry_epochs.csv}.
-
-Plot command: \path{.venv/bin/python scripts/publication_plots.py}\par Output: \path{figures/continuation_stations.pdf}.
-
-\paragraph{S4A --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
-
-Inputs: \path{inputs/resumption/S4_CSOB_20240520.mseed}, \path{inputs/resumption/s4_anchor.html}.
-
-Data command: \par\noindent \path{.venv/bin/python scripts/benchmark_window.py}\par
-
-Saved numerical output: \path{data/continuation/figure_S4A.npz}, \path{data/continuation/figure_S4A_picks.json}.
-
-Plot command: \path{.venv/bin/python scripts/benchmark_window.py}\par Output: \path{figures/figure_S4A.pdf}.
-
-\paragraph{S5/map --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
-
-22 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
-
-Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
-
-Saved numerical output: \path{data/continuation/figure_S5.csv}.
-
-Plot command: \path{.venv/bin/python scripts/publication_plots.py}\par Output: \path{figures/figure_S5_routine.pdf}.
-
-\paragraph{S5/northing-depth --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
-
-22 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
-
-Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
-
-Saved numerical output: \path{data/continuation/figure_S5.csv}.
-
-Plot command: \path{.venv/bin/python scripts/publication_plots.py}\par Output: \path{figures/figure_S5_routine.pdf}.
-
-\paragraph{S5/easting-depth --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
-
-22 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
-
-Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
-
-Saved numerical output: \path{data/continuation/figure_S5.csv}.
-
-Plot command: \path{.venv/bin/python scripts/publication_plots.py}\par Output: \path{figures/figure_S5_routine.pdf}.
-
-\paragraph{S8A --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
-
-848 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
-
-Data command: \par\noindent \path{.venv/bin/python scripts/downstream_checks.py --dataset continuation}\par\noindent \path{.venv/bin/python scripts/magnitude_statistics.py}\par
-
-Saved numerical output: \path{data/continuation/figure_S8A.csv}.
-
-Plot command: \path{.venv/bin/python scripts/publication_plots.py}\par Output: \path{figures/figure_S8_pilot.pdf}.
-
-\paragraph{S8B --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
-
-848 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
-
-Data command: \par\noindent \path{.venv/bin/python scripts/downstream_checks.py --dataset continuation}\par\noindent \path{.venv/bin/python scripts/magnitude_statistics.py}\par
-
-Saved numerical output: \path{data/continuation/figure_S8B.csv}, \path{data/continuation/magnitude_statistics.json}.
-
-Plot command: \path{.venv/bin/python scripts/publication_plots.py}\par Output: \path{figures/figure_S8_pilot.pdf}.
-
-\paragraph{S15C --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
-
-Inputs: \path{inputs/metadata/response.xml}, \path{inputs/waveforms/E3_CAAM.mseed}, \path{inputs/waveforms/E3_COLB.mseed}.
-
-Data command: \par\noindent \path{.venv/bin/python scripts/analyze_observations.py}\par
-
-Saved numerical output: \path{data/observations/E3_waveforms.csv}, \path{data/observations/E3_CAAM_Z_spectrum.npz}, \path{data/observations/E3_CAAM_E_spectrum.npz}, \path{data/observations/E3_COLB_Z_spectrum.npz}, \path{data/observations/E3_COLB_E_spectrum.npz}.
-
-Plot command: \path{.venv/bin/python scripts/publication_plots.py}\par Output: \path{figures/hybrid_E3.pdf}.
+\paragraph{Figure 1.} 1A, 1B, 1C. Data: \path{.venv/bin/python scripts/continue_context.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/continuation/figure_1A.csv}
+\par\path{data/continuation/figure_1C.csv}
+\par\path{data/continuation/figure_1C_cumulative.csv}
+\par\path{data/continuation/historical_leveling.csv}
+\par\path{data/continuation/rite_gnss.csv}
+\par Output: \path{figures/figure_1_combined.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure 2.} 2A, 2B. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/grid_calibration/merged4/panels/sectors.csv}
+\par\path{data/grid_calibration/merged4/panels/weekly_counts.csv}
+\par Output: \path{figures/figure_2_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure 3.} 3/map, 3/northing-depth, 3/easting-depth. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/grid_calibration/merged4/panels/relocated.csv}
+\par Output: \path{figures/figure_3_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S1.} S1. Data: \path{.venv/bin/python scripts/extend_calibration_observations.py --workers 8 --output data/coverage_extension --reuse-own-days}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/coverage_extension/processed_coverage_union.json}
+\par Output: \path{figures/coverage_extension.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S2.} S2. Data: \path{.venv/bin/python scripts/station_geometry.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/continuation/figure_S2.csv}
+\par\path{data/continuation/station_geometry_epochs.csv}
+\par\path{data/continuation/station_geometry_qa.csv}
+\par Output: \path{figures/continuation_stations.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S4.} S4A. Data: \path{.venv/bin/python scripts/benchmark_window.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/continuation/figure_S4A.npz}
+\par\path{data/continuation/figure_S4A_picks.json}
+\par Output: \path{figures/figure_S4A.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S5.} S5/map, S5/northing-depth, S5/easting-depth. Data: \path{.venv/bin/python scripts/continue_context.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/continuation/figure_S5.csv}
+\par Output: \path{figures/figure_S5_routine.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S6.} S6/map, S6/northing-depth, S6/easting-depth. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/grid_calibration/merged4/panels/velest.csv}
+\par Output: \path{figures/figure_S6_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S7.} S7A/map, S7A/easting-depth, S7B, S7D, S7F, S7C, S7E, S7G. Data: \path{.venv/bin/python scripts/grid_uncertainty.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/grid_calibration/merged4/uncertainty/regional_svd.csv}
+\par Output: \path{figures/figure_S7_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S8.} S8A, S8B. Data: \path{.venv/bin/python scripts/downstream_checks.py --dataset grid --workers 6; .venv/bin/python scripts/magnitude_statistics.py --grid}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/grid_calibration/merged4/magnitude/amplitude_measurements.csv}
+\par\path{data/grid_calibration/merged4/magnitude/figure_S8A.csv}
+\par\path{data/grid_calibration/merged4/magnitude/figure_S8B.csv}
+\par\path{data/grid_calibration/merged4/magnitude/magnitude_edges.csv}
+\par\path{data/grid_calibration/merged4/magnitude/magnitude_statistics.json}
+\par\path{data/grid_calibration/merged4/magnitude/magnitudes.csv}
+\par\path{data/grid_calibration/merged4/magnitude/routine_matches.csv}
+\par Output: \path{figures/figure_S8_pilot.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S10.} S10/2022, S10/2023, S10/2024, S10/2025. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/grid_calibration/merged4/panels/year2022.csv}
+\par\path{data/grid_calibration/merged4/panels/year2023.csv}
+\par\path{data/grid_calibration/merged4/panels/year2024.csv}
+\par\path{data/grid_calibration/merged4/panels/year2025.csv}
+\par Output: \path{figures/figure_S10_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S11.} S11/swarm-2. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/grid_calibration/merged4/panels/swarm-1.csv}
+\par\path{data/grid_calibration/merged4/panels/swarm-2.csv}
+\par\path{data/grid_calibration/merged4/panels/swarm-3.csv}
+\par\path{data/grid_calibration/merged4/panels/swarm-4.csv}
+\par Output: \path{figures/figure_S11_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S12.} S12A, S12B, S12C, S12D, S12E, S12F, S12G, S12H. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/grid_calibration/merged4/panels/cpoz_gathers.npz}
+\par\path{data/grid_calibration/merged4/panels/cpoz_index.csv}
+\par\path{data/grid_calibration/merged4/panels/sectors.csv}
+\par Output: \path{figures/figure_S12_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S13.} S13A, S13B. Data: \path{.venv/bin/python scripts/grid_panel_data.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/grid_calibration/merged4/panels/relocated.csv}
+\par Output: \path{figures/figure_S13_provisional.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S14.} S14/1, S14/2, S14/3. Data: \path{.venv/bin/python scripts/extend_hybrid_scan.py --dataset grid; .venv/bin/python scripts/grid_hybrid_candidates.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/grid_calibration/merged4/hybrid/display_candidates.csv}
+\par\path{data/grid_calibration/merged4/hybrid/display_waveforms.npz}
+\par\path{data/grid_calibration/merged4/hybrid/hybrid_candidates.csv}
+\par Output: \path{figures/figure_S14_candidates.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.
+\paragraph{Figure S15.} S15A, S15B, S15C. Data: \path{.venv/bin/python scripts/analyze_observations.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}. Saved numerical inputs:
+\par\path{data/observations/E1_CAAM_E_spectrum.npz}
+\par\path{data/observations/E1_CAAM_Z_spectrum.npz}
+\par\path{data/observations/E1_COLB_E_spectrum.npz}
+\par\path{data/observations/E1_COLB_Z_spectrum.npz}
+\par\path{data/observations/E1_waveforms.csv}
+\par\path{data/observations/E2_CAAM_E_spectrum.npz}
+\par\path{data/observations/E2_CAAM_Z_spectrum.npz}
+\par Output: \path{figures/hybrid_E1.pdf}. Full upstream observation hashes and command chain are in \path{docs/panel_record.json}.

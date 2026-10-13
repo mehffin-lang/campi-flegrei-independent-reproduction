@@ -1,0 +1,7 @@
+{
+  "time_utc": "2026-10-13T19:33:13.859807+00:00",
+  "interrupted_pid": 2138414,
+  "reason": "Avoid repeating the unchanged March 20 daily association: exact association-input multiset and parent checkpoint hashes were verified. First inference completed; final all-files freeze reruns changed days and remaps unchanged own daily solutions. No unfinished pass is counted as complete.",
+  "log": "tmp/grid_calibration/coverage_processing.log",
+  "probe": "tmp/grid_calibration/reuse_check/association_reuse.json"
+}

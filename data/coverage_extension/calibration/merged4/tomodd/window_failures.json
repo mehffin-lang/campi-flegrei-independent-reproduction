@@ -1,0 +1,80 @@
+[
+  {
+    "pick_index": 1738,
+    "component": "N",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220121T000000_20220121T060000.mseed"
+  },
+  {
+    "pick_index": 1738,
+    "component": "E",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220121T000000_20220121T060000.mseed"
+  },
+  {
+    "pick_index": 8308,
+    "component": "N",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220121T120000_20220121T180000.mseed"
+  },
+  {
+    "pick_index": 8308,
+    "component": "E",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220121T120000_20220121T180000.mseed"
+  },
+  {
+    "pick_index": 23392,
+    "component": "N",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed"
+  },
+  {
+    "pick_index": 23392,
+    "component": "E",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed"
+  },
+  {
+    "pick_index": 23652,
+    "component": "Z",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed"
+  },
+  {
+    "pick_index": 23656,
+    "component": "N",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed"
+  },
+  {
+    "pick_index": 23656,
+    "component": "E",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed"
+  },
+  {
+    "pick_index": 32282,
+    "component": "N",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220126T000000_20220126T060000.mseed"
+  },
+  {
+    "pick_index": 32282,
+    "component": "E",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220126T000000_20220126T060000.mseed"
+  },
+  {
+    "pick_index": 37008,
+    "component": "N",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220126T120000_20220126T180000.mseed"
+  },
+  {
+    "pick_index": 37008,
+    "component": "E",
+    "error": "ValueError('Missing or gapped component')",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220126T120000_20220126T180000.mseed"
+  }
+]

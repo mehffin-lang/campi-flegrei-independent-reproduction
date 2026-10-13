@@ -104,10 +104,12 @@
           "max_station_delay_change_s": 0.010000000000000009
         }
       ],
-      "accepted": true,
+      "accepted": false,
       "converged": true,
       "validated_workdir": "tmp/grid_calibration/merged4/Pozzuoli_Solfatara_convergence3",
-      "status": "executed"
+      "status": "executed",
+      "local_change_gate_passed": true,
+      "scientific_acceptance_note": "Small last-pass change only; precision/start sensitivity, backup termination and held-out prediction prevent scientific acceptance."
     },
     "caldera": {
       "runs": [
@@ -208,10 +210,12 @@
           "max_station_delay_change_s": 0.010000000000000009
         }
       ],
-      "accepted": true,
+      "accepted": false,
       "converged": true,
       "validated_workdir": "tmp/grid_calibration/merged4/caldera_convergence3",
-      "status": "executed"
+      "status": "executed",
+      "local_change_gate_passed": true,
+      "scientific_acceptance_note": "Small last-pass change only; precision/start sensitivity, backup termination and held-out prediction prevent scientific acceptance."
     }
   },
   "selection": "All causally consistent associations enter whole-catalog runs; calibration requires >=4 P, >=2 S, >10 total picks, gap<180 and no initial 0/8-km bound hit. Not the authors' manually selected 373-event subset.",

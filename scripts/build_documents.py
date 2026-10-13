@@ -73,9 +73,10 @@ def paper_figure(item):
         return r'\paragraph{Figure '+item['figure']+r' --- not reproduced.} '+tex(item['missing'])+'\n'
     number=int(item['figure'].replace('S',''))
     lines = [r'\setcounter{figure}{'+str(number-1)+'}',r'\begin{figure}[H]', r'\centering']
+    image_height = .62 / len(item['independent_files'])
     for panel, path in zip(item.get('file_labels',item['partial_panels']), item['independent_files']):
         lines += [r'\par\smallskip\textbf{Panel ' + tex(panel) + r': partially reproduced}\par',
-                  r'\includegraphics[width=.94\linewidth,height=.66\textheight,keepaspectratio]{' + path + '}']
+                  r'\includegraphics[width=.94\linewidth,height='+f'{image_height:.3f}'+r'\textheight,keepaspectratio]{' + path + '}']
     if item['missing']:
         lines += [r'\par\small '+tex(item['missing'])]
     lines += [r'\caption{' + tex(item['title'] + '. ' + item['caption']) + '}',
@@ -95,8 +96,9 @@ def comparison_page(item):
              r'{\large\bfseries Independent result}\par\medskip']
     for panel, path in zip(item.get('file_labels',item['partial_panels']), item['independent_files']):
         lines += [r'\textbf{Panel ' + tex(panel) + r' --- partially reproduced}\par\smallskip',
-                  r'\includegraphics[width=\linewidth,height=4.3in,keepaspectratio]{' + path + '}',
-                  r'\par\smallskip{\small ' + tex(item['caption']) + r'}\par\medskip']
+                  r'\includegraphics[width=\linewidth,height='+f'{4.0/len(item["independent_files"]):.3f}'+r'in,keepaspectratio]{' + path + '}',r'\par\smallskip']
+    if item['independent_files']:
+        lines += [r'{\small ' + tex(item.get('comparison_caption',item['caption'])) + r'}\par\medskip']
     if item['missing']:
         missing_panels=[p for p in item['panels'] if p not in item['partial_panels']]
         label = 'Missing: '+', '.join(missing_panels) if missing_panels else 'Remaining limitations'

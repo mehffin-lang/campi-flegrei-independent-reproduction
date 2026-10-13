@@ -1,0 +1,188 @@
+{
+  "reviewed_utc": "2026-10-13T20:12:33.564699+00:00",
+  "source_base_commit": "6e8da6bbfe8a0adb4fc4950f65d1917363e5cfaa",
+  "pdf_sha256": {
+    "report/report.pdf": "ec247f928096625820e6fca7d98ca4c8e9e97122e52b5ace3ea75b70674e91da",
+    "report/comparison.pdf": "58c79fbec3c191f5f8957919b30a1860befab6a004f919389f8a2800ddba2c68"
+  },
+  "visual_review": [
+    {
+      "pdf": "report/report.pdf",
+      "page": 1,
+      "render": "tmp/grid_calibration/final_pdf_review/current/report_1.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "0bee7c8bcbd7a8c6daff19517b5e4bafd3df12892899ab26b3866a6a9c39dc10",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    },
+    {
+      "pdf": "report/report.pdf",
+      "page": 4,
+      "render": "tmp/grid_calibration/final_pdf_review/current/report_4.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "16c993f609d8706821b0dd289f9515c3a3a8b8ff0b1b5d501b557b6a28aa55a1",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    },
+    {
+      "pdf": "report/report.pdf",
+      "page": 12,
+      "render": "tmp/grid_calibration/final_pdf_review/current/report_12.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "f28aa5d819337fdc8abe0193853c7eb4e43d9bee1f113702a1751c5b9f7c66bf",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    },
+    {
+      "pdf": "report/report.pdf",
+      "page": 13,
+      "render": "tmp/grid_calibration/final_pdf_review/current/report_13.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "48ef80a12e2fc1143dd1e1840c4cec7e1966c49e9bccfafec35953954c7ab449",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    },
+    {
+      "pdf": "report/report.pdf",
+      "page": 17,
+      "render": "tmp/grid_calibration/final_pdf_review/current/report_17.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "5a85937c0be41f41a75df2a732d19f89c4e7482e74d3f6ac39290da9e66309d5",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    },
+    {
+      "pdf": "report/report.pdf",
+      "page": 19,
+      "render": "tmp/grid_calibration/final_pdf_review/current/report_19.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "367d27a9be09cca6c321f8ba2a48ab6dfcf3cefaa495da84f3ab523ce1dbbad3",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    },
+    {
+      "pdf": "report/report.pdf",
+      "page": 38,
+      "render": "tmp/grid_calibration/final_pdf_review/current/report_38.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "aa0bbb327e72ea267343f1c02decf77753a8581ef8b434b5c9a3d9448353560b",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    },
+    {
+      "pdf": "report/report.pdf",
+      "page": 48,
+      "render": "tmp/grid_calibration/final_pdf_review/current/report_48.png",
+      "same_pixels_as_inspected": false,
+      "render_sha256": "c5365c8af6a0f97e30394daad2a5dfffe0d2c4d37262c201ca68b932641989e2",
+      "visually_inspected": true,
+      "inspection": "Direct current render inspection"
+    },
+    {
+      "pdf": "report/comparison.pdf",
+      "page": 1,
+      "render": "tmp/grid_calibration/final_pdf_review/current/comparison_1.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "918f8357584950c714ac2f55e041e92248ec257af2894f65855eb43511bb6005",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    },
+    {
+      "pdf": "report/comparison.pdf",
+      "page": 3,
+      "render": "tmp/grid_calibration/final_pdf_review/current/comparison_3.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "a14d05fc660e6d3b4f0bea0b16be72e904c9126fc824910e69ddfe704cbaa0be",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    },
+    {
+      "pdf": "report/comparison.pdf",
+      "page": 4,
+      "render": "tmp/grid_calibration/final_pdf_review/current/comparison_4.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "f4b945a250cde3ab10f31420608f508b7b241c40c9c5857c81523880c0fc5174",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    },
+    {
+      "pdf": "report/comparison.pdf",
+      "page": 10,
+      "render": "tmp/grid_calibration/final_pdf_review/current/comparison_10.png",
+      "same_pixels_as_inspected": false,
+      "render_sha256": "b1c96337af7f614ef9a136dbbebfe15ef9b923a543c663847630b89a9f0dc2a0",
+      "visually_inspected": true,
+      "inspection": "Direct current render inspection"
+    },
+    {
+      "pdf": "report/comparison.pdf",
+      "page": 11,
+      "render": "tmp/grid_calibration/final_pdf_review/current/comparison_11.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "628f3805968d1b1b83ce2aabed97dcef0ed3f116376febd24cef0929f8a3eed4",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    },
+    {
+      "pdf": "report/comparison.pdf",
+      "page": 15,
+      "render": "tmp/grid_calibration/final_pdf_review/current/comparison_15.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "a1a3402c2b5020d899263ac74c0ba6b12ec78d5a159f93fe082293d98c956e10",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    },
+    {
+      "pdf": "report/comparison.pdf",
+      "page": 19,
+      "render": "tmp/grid_calibration/final_pdf_review/current/comparison_19.png",
+      "same_pixels_as_inspected": true,
+      "render_sha256": "e739458fefc917e15ae4d7c5295534db769fedeacb169a9eaee79f55dcb93234",
+      "visually_inspected": true,
+      "inspection": "Current render pixel-identical to the directly inspected page"
+    }
+  ],
+  "automated_checks": {
+    "build_passed": true,
+    "report_pages": 53,
+    "comparison_pages": 19,
+    "section_order": {
+      "Main paper": 1,
+      "Reproduced supplement": 6,
+      "Reproduction documentation": 22
+    },
+    "published_images_only_in_comparison": true,
+    "protected_numerical_files_unchanged": true,
+    "panel_count": 63,
+    "partial": 48,
+    "unreproduced": 15,
+    "independently_reproduced": 0
+  },
+  "findings": [
+    "Provisional and external-context labels are visible; overlapping cohorts are separate and not summed.",
+    "No clipped figures or missing headings on the inspected pages. An apparent clipped heading in a reduced preview was intact in a native crop.",
+    "Corrected UTF-8 en-dash rendering in the comparison caption.",
+    "S15D and missing swarm/candidate records now describe actual failed selections; historical context includes saved-table references.",
+    "All 63 panel records agree between docs/panels.json and docs/panel_record.json; every nonempty saved_data path exists."
+  ],
+  "limitations": [
+    "Only the enumerated pages were inspected visually; complete page order, figure membership and panel counts were checked automatically.",
+    "Rendering and provenance checks do not accept the scientific locations, magnitudes or catalog, or prove that no unexamined inputs exist."
+  ],
+  "receipts": [
+    "data/grid_calibration/provisional_rebuild.json",
+    "data/grid_calibration/provisional_science_rebuild.json",
+    "data/coverage_extension/calibration/execution.json",
+    "data/coverage_extension/downstream_execution.json",
+    "data/grid_calibration/provisional_verification.json",
+    "data/coverage_extension/calibration/provisional_verification.json"
+  ],
+  "git_whitespace_review": {
+    "warnings": {
+      "data/coverage_extension/calibration/merged4/independent_calibrated.sta": 1,
+      "data/coverage_extension/calibration/merged4/located_events.cnv": 1,
+      "data/coverage_extension/calibration/reference_grid.original": 758
+    },
+    "explanation": "Original authorized grid and native solver file bytes intentionally preserved, including trailing spaces and terminator blank lines. No source/report whitespace warnings."
+  }
+}

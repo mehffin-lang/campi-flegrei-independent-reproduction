@@ -1,0 +1,58 @@
+# Executed provisional analyses
+
+This continuation plots independently generated numerical results even when their scientific validation fails. A partial panel is not a successful reproduction. No author event, pick, fitted velocity, station correction, magnitude or mechanism table supplies an empirical result.
+
+## Frozen calibration cohort
+
+The 1,015-association cohort is `data/calibration_followup/expanded/`. Its integer event IDs must not be joined to the older 1,003-event cohort or the later `data/coverage_extension/` cohort. Observational receipts and processing hashes identify the waveforms, responses and permitted retrained PhaseNet weights. The original Tan-distributed Battaglia-attributed grid, its checksum and its dimensional discrepancy remain in `data/grid_calibration/reference_grid.original`, `source_access.json` and `grid_provenance.json`. It is an explicitly authorized reference input, not claimed to be independently retrieved 2008 bytes.
+
+* **VELEST:** 216 events pass the written numerical filters. The final small-update gate passes, but four-backup termination can signify stagnation. Full-path precision and regional-start dependence fail scientific validation. Byte-identical starting inputs, per-stage controls, common-start tests and normal-matrix instrumentation are recorded in `merged4/diagnosis/`. The instrumented solver reproduces original output bytes. Withholding every fifth calibration event leaves 30 training and eight test events: unweighted phase RMS changes from 0.217673 to 0.219783 s. Ten further 14-iteration fixed-model prelocation passes still fail the original stability criterion; those results are isolated in `merged4/settled_trial/`.
+* **TomoDD:** both fixed-grid rounds have numerical results; 123 final events pass active-observation gap filtering. Same-observation RMS, geometry, original-arrival preservation and round-to-round shifts are saved under `merged4/uncertainty/`. The maximum correlated-phase count is 30, so no event meets S9's >100 requirement. No filter is relaxed.
+* **SVD:** every supported >=4-event, six-phase-linked component in four explicit alternative quadrants was attempted. Ninety solutions were returned. Their reported conditional 2-sigma errors are not absolute accuracy; depth errors reach 4.002 km. The quadrants are not recovered original region masks. `regional_svd.csv` supplies all S7 views. Zero correlated-phase counts remain saved and in maps; logarithmic count axes cannot display zero.
+* **Magnitude:** 5,929 channel measurements, 1,626 passing 5 dB, 884 relative-amplitude equations, 65 provisional magnitudes. Forty of the fitted magnitudes have routine Md matches; routine values enter only as documented calibration priors after independent detection/location. The selected-sample Mc≈0 and b=0.866±0.110 (41 magnitudes above Mc) do not establish population completeness or reproduce the full-catalog statistics. The inverse problem uses direct least squares; unit prior weight and squared unshifted waveform correlation are disclosed choices. Theoretical P windows use the own fitted 1D model without station corrections; original picked P windows take precedence.
+* **Source mechanisms:** generic SKHASH 1.1.5 was installed in `.venv-skhash`, separate from the NumPy 2.4.6 main environment. Seventy-six automated first-motion measurements on eight independently relocated events yield 35 sign/SNR-stable candidates. Seven events fail the eight-polarity rule; the remaining event (641) fails the 90° azimuthal-gap gate with 186.158°. The solver returns no mechanisms. This is not manual polarity review. S/P measurements, a reviewed source set, an independently computed FK library and event-specific gCAP settings remain missing or unfinished. Failed setup attempts and the final actual solver log are retained. Generic method source: https://code.usgs.gov/esc/SKHASH ; citation DOI 10.1785/0220230329.
+* **Location checks:** 118 CPOZ HHZ/HHN traces use actual same-cohort P picks and -1/+7 s windows, above 4 Hz. Geographic masks are alternatives without imposing any published depth bands. S–P consistency was computed for 382 station/event pairs from 120 events; 44 events deeper than 3 km are tabulated. The own 1D-plus-delay approximation at TomoDD locations has 0.1784 s S–P RMS; this does not identify which picks or depths are wrong. No event is removed by the diagnostic.
+* **Hybrid candidates:** the current scan and its exact input snapshot are in `merged4/hybrid/`. A threshold crossing is not a confirmed hybrid. Highest-correlation displays retain measured FI and horizontal amplitude ratios but do not call them validated clusters or relative magnitudes. E1/E2 waveforms provide explicitly different-event S15A/B analogues; C is the E3 example. No shallow west-Accademia event is present in the qualified subset for S15D. The complete three-year scan and manual review remain unfinished.
+
+All new numerical products are under `data/grid_calibration/merged4/`. Full per-panel commands, source paths, statuses and limitations are in `docs/panel_record.json`. Plot inputs and outputs have SHA-256 receipts in `data/grid_calibration/style/plot_inventory.json`. Published reference images enter only `report/comparison.pdf`; the scientific report's TeX dependency list excludes them. No empirical figure uses a synthetic fixture.
+
+## Rebuild
+
+From the repository root, with the previously documented original waveforms, metadata, trained weights and generic solver sources restored:
+
+```bash
+.venv/bin/python scripts/rebuild_provisional_workflow.py --calibration --extension
+```
+
+This rebuilds generic VELEST/TomoDD, constructs own regional profiles, runs the calibration, both relocation rounds, controlled diagnostics, SVD, magnitudes, focal attempt, location checks, supported plots and both PDFs. `build/hypodd21/src/hypoDD/hypoDD` is produced by `scripts/build_hypodd21.py` if absent. Install the isolated focal dependency with `python3 -m venv .venv-skhash` and `.venv-skhash/bin/pip install SKHASH==1.1.5`.
+
+To reuse the hash-verified current calibration and measured waveform differences while rerunning all new downstream analyses, omit `--calibration`. The actual continuation was run in two stages, `--science-only` then `--presentation-only`, to let data acquisition finish before the document build's immutable-input check. Machine-readable outcomes are `data/grid_calibration/provisional_rebuild.json`, `provisional_science_rebuild.json` and `provisional_verification.json`. A successful procedure does **not** accept the scientific catalog. Unspecified original masks, absent training labels and failed quality checks remain limits.
+
+The current observed input files are large and ignored by Git. See the processing checkpoint, per-file receipt manifests, acquisition SQLite snapshot, `docs/GRID_WORKFLOW.md` and `scripts/restore_inputs.py` for URLs, hashes and restoration. Every project-specific cache is in `tmp/`, `.venv/`, `.venv-skhash/` or ignored `inputs/`; the ordinary user pip cache remains `/home/mehffin/.cache/pip`.
+
+The system TeX installation uses the standard font/cache directory `/home/mehffin/.texlive2018/texmf-var` (`kpsewhich -var-value=TEXMFVAR`). TeX source, logs and PDFs stay in the repository. Document-only corrections use `rebuild_provisional_workflow.py --documents-only`, which verifies saved figure hashes and passed scientific-check receipts before compiling; it does not claim to rerun analysis. Initial integration, missing-TeX-package and page-overflow build failures are retained in `provisional_build_attempts.json` and were corrected without changing observations or numerical results.
+
+## Coverage extension
+
+`collect_continuous.py split-failed` subdivides failed six-hour EIDA transfers into nonoverlapping half-hour cores, retaining parent failures. Successful, header-verified sample intervals alone enter coverage. Failed, interrupted, absent and pending intervals are not coverage. The actual transfer limit is 240 seconds; RAN waveform access still requires credentials not available in this session.
+
+```bash
+.venv/bin/python scripts/collect_continuous.py split-failed
+.venv/bin/python scripts/collect_continuous.py run --workers 4 --max-jobs 128
+.venv/bin/python scripts/extend_calibration_observations.py --freeze --workers 8 --output data/coverage_extension --reuse-own-days
+.venv/bin/python scripts/audit_continuation.py --data-dir data/coverage_extension
+.venv/bin/python scripts/calibrate_coverage_extension.py
+.venv/bin/python scripts/coverage_extension_downstream.py
+```
+
+The separate cohort prevents aliasing old and new event IDs. Its actual execution/coverage files, rather than the requested number of jobs, determine completion. The full-period queue remains substantial unfinished retrieval/processing, not evidence that those observations are inaccessible. No source is contacted on the user's behalf about the unavailable Calò–Tramelli table; the documented alternative association profile remains explicit.
+
+The completed extension processes 997 files, 8,706.970 union channel-hours, 134,483 picks and 1,023 provisional associations. All 83 observed channels have response-stage/sensitivity epoch coverage. Its own 920 causal events and 38 calibration candidates produce 219 numerical VELEST passes and 123 final TomoDD gap passes. Downstream processing was rerun independently: 80 conditional SVD estimates, 67 amplitude magnitudes and zero SKHASH mechanisms. This is not an accepted catalog. The original 1,015-cohort figures and the additional latest-cohort figures are labeled separately; overlapping events are not summed. Counts, controls, numerical products and commands are in `data/coverage_extension/`, including portable request and solver archives.
+
+`--reuse-own-days` reuses only this implementation's own daily associations after checkpoint hashes, settings, station metadata and the exact multiset of association input values match. Tied-time ordering and overlapping-file source aliases can differ; current pick/event indices are explicitly remapped. Twenty-two unchanged days were reused; two changed days were solved again. The redundant initial solve was interrupted with its reason/log retained. No author result supplies these associations.
+
+Restore the frozen public observations with `.venv/bin/python scripts/restore_inputs.py --coverage-extension`. It checks sizes and SHA-256 hashes and refuses changed server content. Use `scripts/freeze_coverage_extension.py` to record a deliberately refreshed acquisition checkpoint; ordinary rebuilds do not silently extend it. The final refreshed hybrid scan covers 78.7728 common hours, with 823 crossings and no confirmed hybrids. `extend_hybrid_scan.py --dataset grid` uses its frozen receipt; add `--refresh-observations` only for a deliberate new observational checkpoint. The 73,937 pending requests and 11 failed requests are not coverage; the remaining workload has not been demonstrated inaccessible.
+
+## Replacements
+
+Replaced the report's blank counterparts with available provisional F2, F3, S6, S7, annual/swarm selections, CPOZ sector gathers, spatial views and candidate-family displays. Replaced Figure S8's older 119-magnitude pilot with the separately traced current 65-magnitude result; the older observations/results remain in `data/continuation/` and Git. Updated plotting scripts, layout/status records and both PDF sources. The earlier input grid, independent picks, calibration and two-round locations were preserved. Controlled failed trials, numerical filters and quality thresholds remain visible; no author result fills a gap.

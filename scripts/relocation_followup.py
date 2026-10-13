@@ -18,6 +18,8 @@ from calibration_chain import ROOT,OUT,WORK,sha
 D=ROOT/'data/continuation'
 DEST=OUT/'relocation'
 BIN=ROOT/'build/hypodd21/src/hypoDD/hypoDD'
+MODEL_PATH=OUT/'calibration_64_round2_model.csv'
+RUN_ROOT=ROOT/'tmp/calibration_followup'
 
 
 def observations():
@@ -116,7 +118,7 @@ def write_inputs(work,events,aliases,ct,cc,svd=False):
     (work/'event.dat').write_text('\n'.join(text)+'\n')
     text=[f'{a} {r.latitude:.6f} {r.longitude:.6f} {-r["z(km)"]*1000:.1f}' for a,r in aliases.iterrows()]
     (work/'station.dat').write_text('\n'.join(text)+'\n')
-    model=pd.read_csv(OUT/'calibration_64_round2_model.csv')
+    model=pd.read_csv(MODEL_PATH)
     # Readable numerical settings, not fitted to published plots. Clustering
     # needs six common phase links. SVD uses no LSQR damping.
     lines=['hypoDD_2','dt.cc','dt.ct','event.dat','station.dat','output.loc','output.reloc','output.sta','output.res','output.src',
@@ -128,7 +130,7 @@ def write_inputs(work,events,aliases,ct,cc,svd=False):
 
 
 def execute(name,events,aliases,ct,cc,svd=False):
-    work=ROOT/'tmp/calibration_followup'/name
+    work=RUN_ROOT/name
     write_inputs(work,events,aliases,ct,cc,svd)
     for pattern in ['output.*','hypoDD.log']:
         for path in work.glob(pattern):path.unlink()

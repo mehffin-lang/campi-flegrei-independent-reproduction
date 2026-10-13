@@ -1,15 +1,17 @@
 # Campi Flegrei: provisional observational reproduction
 
-The [authorized-grid continuation](docs/GRID_WORKFLOW.md) independently runs grid-derived VELEST calibration and both fixed-3D TomoDD rounds. It retains 216 numerically filtered VELEST trials and 123 second-round gap passes, but calibration path dependence prevents scientific acceptance. All current figure groups are restyled from saved numerical products, with fixed comparable color scales and explicit under/over-range treatment. [Current rebuild outcome](data/grid_calibration/rebuild_status.json).
+The [current continuation](docs/PROVISIONAL_CONTINUATION.md) plots the available independent numerical results while preserving failed scientific validation. The frozen 1,015-association cohort yields 216 filtered VELEST locations and 123 final TomoDD gap passes, 90 conditional SVD solutions, 65 relative-amplitude magnitudes and 118 CPOZ traces. None establishes a validated multiyear catalog. Held-out phase RMS worsens from 0.2177 to 0.2198 s; precision and regional-start path sensitivity persist. [Executed rebuild](data/grid_calibration/provisional_rebuild.json).
+
+The separately processed coverage extension has **997 files, 26 station names, 8,706.970 channel-hours, 134,483 picks and 1,023 provisional associations**. Its own rerun gives **219 VELEST filter passes, 123 final TomoDD gap passes, 80 conditional SVD solutions and 67 amplitude magnitudes**. These overlap the earlier cohort and must not be added as separate earthquakes. Both cohorts are shown with explicit labels; their event IDs are never joined. Public downloads work, but 73,937 requests remain pending. The CAAM/COLB scan covers 78.773 common hours and returns 823 unconfirmed crossings, not confirmed hybrids.
 
 The study is **not fully reproduced**. Both PDFs are provisional. The pipeline processes retrieved observations independently; routine-catalog panels are external context, and the explicitly cited 2021 starting profile is an exploratory alternative.
 
 - [Scientific report](report/report.pdf), source [report/report.tex](report/report.tex).
 - [Figure comparisons only](report/comparison.pdf), source [report/comparison.tex](report/comparison.tex).
-- [Executed counts and checks](data/continuation/analysis_summary.json), [rebuild outcome](data/continuation/rebuild_status.json), [panel record](docs/panel_record.json).
-- [Current procedure](docs/CONTINUATION.md), [blockers](docs/BLOCKERS.md), [replacement record](docs/REPLACEMENTS.md).
+- [Frozen processing checkpoint](data/calibration_followup/expanded/analysis_summary.json), [current verification](data/grid_calibration/provisional_verification.json), [panel record](docs/panel_record.json).
+- [Current procedure and scientific limitations](docs/PROVISIONAL_CONTINUATION.md), [input restoration](docs/GRID_WORKFLOW.md), [replacement record](docs/REPLACEMENTS.md).
 
-Partial counterparts are **1A–C, S1, S2, S4A, S5 (three views), S8A–B and S15C**. No panel is fully reproduced. All other main/supplement panels remain unreproduced. S6 has been withdrawn: its old background-grid-dependent locations and fitted models are [quarantined](quarantine/unverified_background/README.md). The preserved Tan-distributed grid is now explicitly permitted as a disclosed reference input. Its dimensional discrepancy is documented; new independent trials remain unvalidated for scientific interpretation.
+Available counterparts include **1A–C, 2, 3, S1, S2, S4A, S5–S8, S10, the sampled S11 swarm, S12–S13, S14 candidate families and S15A–C**. All are partial or provisional; S15A/B use explicitly different example events, and S14 shows unconfirmed candidates. No panel is fully reproduced. Remaining empty comparisons have specific missing observations, unsupported selections or failed computations recorded in the panel inventory. The current S6 contains own numerical inversions from the explicitly authorized Tan-distributed reference grid; the [superseded unverified workflow](quarantine/unverified_background/README.md) remains quarantined. The distributed grid's dimensional discrepancy and unknown historical transformation are disclosed.
 
 Figure 1B distinguishes leveling surveys, source-provided estimates/reconstruction, and daily GNSS observations. Routine INGV events in 1A/1C/S5 are not independently detected events. S2 now uses an audited local projection, corrected coastline handling, leader labels and explicit unresolved station metadata. The 51 identifiers have not been reconciled to 48 instruments.
 
@@ -18,10 +20,10 @@ Figure 1B distinguishes leveling surveys, source-provided estimates/reconstructi
 Use the existing Python 3.11 environment, or follow dependency setup in [CONTINUATION.md](docs/CONTINUATION.md). From this repository:
 
 ```bash
-.venv/bin/python scripts/rebuild_grid_workflow.py
+.venv/bin/python scripts/rebuild_provisional_workflow.py --calibration --extension
 ```
 
-This verifies the expanded independent observation-processing checkpoint, rebuilds generic solvers, reruns grid-derived calibration and relocation, restyles saved results and builds both PDFs. See GRID_WORKFLOW.md for exact scope, input restoration and optional remeasurement. It does not complete the pending multiyear retrieval queue or bypass missing scientific prerequisites. Large waveforms remain local under ignored `inputs/`, with download URLs and checksums. The ordinary rebuild reuses only matching per-file inference caches, whose keys include observations, time cores, weights, preprocessing, inference code and software versions.
+This verifies the frozen independent observation checkpoint, rebuilds generic solvers, reruns grid-derived calibration and relocation, runs the new diagnostics and supported downstream analyses, then builds both PDFs. Omit `--calibration` to reuse hash-verified calibration and measured differential times. See PROVISIONAL_CONTINUATION.md for exact scope and dependencies. It does not complete the pending multiyear retrieval queue or bypass missing scientific prerequisites. Large waveforms remain local under ignored `inputs/`, with download URLs and checksums. Inference caches are reused only with matching observations, time cores, weights, preprocessing, implementation and software versions. The separate `data/coverage_extension/` cohort must never be joined to earlier integer event IDs.
 
 For a document-only rebuild from saved results:
 
@@ -37,4 +39,4 @@ Permitted resources include original waveform/GNSS observations, public metadata
 
 Synthetic and analytic fixtures are kept in [tests/results](tests/results), never empirical catalogs or paper figures. Rejected numerical experiments are under [data/exploratory](data/exploratory), with explicit acceptance flags. The old grid-dependent entry points are disabled; Git preserves their history.
 
-Project caches and intermediates are in `tmp/`; dependencies are in `.venv/`. Standard pip cache: `/home/mehffin/.cache/pip`. An early import created `/home/mehffin/.seisbench`; current runs redirect that cache into the project. Nobody has been contacted on the user's behalf.
+Project caches and intermediates are in `tmp/`; dependencies are in `.venv/` and the isolated `.venv-skhash/`. Standard pip cache: `/home/mehffin/.cache/pip`. An early import created `/home/mehffin/.seisbench`; current runs redirect that cache into the project. Nobody has been contacted on the user's behalf.

@@ -161,6 +161,24 @@ def run(args):
     summarize()
 
 
+def split_failed():
+    """Split failed six-hour transfers into nonoverlapping half-hour cores.
+
+    Keep the parent failure as evidence. Child success alone contributes actual
+    sample coverage; request subdivision never implies continuous observations.
+    """
+    conn=connect();count=0
+    rows=conn.execute("SELECT * FROM jobs WHERE status='failed' AND end-start>1800").fetchall()
+    for r in rows:
+        t=r['start']
+        while t<r['end']:
+            end=min(t+1800,r['end'])
+            ident=f'{r["network"]}_{r["station"]}_{UTCDateTime(t).strftime("%Y%m%dT%H%M%S")}_{UTCDateTime(end).strftime("%Y%m%dT%H%M%S")}'
+            count+=conn.execute('INSERT OR IGNORE INTO jobs(id,network,station,channel,start,end) VALUES(?,?,?,?,?,?)',(ident,r['network'],r['station'],r['channel'],t,end)).rowcount
+            t=end
+    conn.commit();conn.close();print('Added',count,'half-hour children of failed transfers.',flush=True)
+
+
 def summarize():
     conn = connect()
     rows = [dict(row) for row in conn.execute("SELECT * FROM jobs WHERE status IN ('downloaded','failed','no_data') ORDER BY start,station")]
@@ -220,11 +238,12 @@ def spread():
 
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('mode',choices=['plan','run','summary','spread'])
+    parser.add_argument('mode',choices=['plan','run','summary','spread','split-failed'])
     parser.add_argument('--workers',type=int,default=6)
     parser.add_argument('--max-jobs',type=int)
     args=parser.parse_args()
-    if args.mode=='plan': plan()
+    if args.mode=='split-failed':split_failed()
+    elif args.mode=='plan': plan()
     elif args.mode=='spread':spread()
     elif args.mode=='run': run(args)
     else: print(json.dumps(summarize(),indent=2))

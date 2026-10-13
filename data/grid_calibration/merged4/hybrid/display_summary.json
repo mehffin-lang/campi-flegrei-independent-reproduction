@@ -1,0 +1,12 @@
+{
+  "all_crossings": 823,
+  "displayed": 36,
+  "errors": [],
+  "confirmed_hybrids": 0,
+  "confirmed_clusters": 0,
+  "selection": "Twelve highest independent two-station correlation scores per template; a display selection only, not confirmation. Each template family includes noise/coda candidates until reviewed.",
+  "amplitude": "Largest absolute sample of CAAM N or E response-corrected velocity in eight seconds; log10 ratio to largest displayed candidate in each template family. No relative magnitude claim because common path and event membership are unvalidated.",
+  "waveform": "CAAM Z, causal four-pole 1\u201310 Hz, individually normalized for display; eight-second template-aligned window, onset unreviewed.",
+  "reused_metrics": "Crossing list differs; all original-window FI measurements recomputed with hybrid_candidate_metrics.py.",
+  "limitation": "No independent unclustered family or manual hybrid confirmation. Not the published 70-event result or its full-period timing history."
+}

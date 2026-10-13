@@ -4,10 +4,12 @@ Small, noncontinuous pilot exposure cannot establish multiyear completeness.
 Duration magnitudes are calibration inputs, not an independent validation set.
 """
 from pathlib import Path
-import json
+import json,argparse,os
 import numpy as np
 import pandas as pd
 ROOT=Path(__file__).resolve().parents[1];D=ROOT/'data/continuation'
+parser=argparse.ArgumentParser();parser.add_argument('--grid',action='store_true');args=parser.parse_args()
+if args.grid:D=ROOT/os.environ.get('CF_GRID_BASE','data/grid_calibration')/'merged4/magnitude'
 m=pd.read_csv(D/'magnitudes.csv');ref=pd.read_csv(D/'routine_matches.csv')
 (D/'figure_S8B.csv').unlink(missing_ok=True)
 joint=m.merge(ref,on='event_index').dropna(subset=['ML','Md']);joint.to_csv(D/'figure_S8A.csv',index=False)
