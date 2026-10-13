@@ -8,6 +8,7 @@ from pathlib import Path
 import json,subprocess,shutil
 import numpy as np
 import pandas as pd
+from pyproj import Geod
 from obspy import UTCDateTime
 import run_velest as v
 
@@ -28,7 +29,7 @@ def main():
     # Keep the whole currently eligible set within the generic compiled capacity.
     events=events[events.event_index.isin(eligible)].sort_values('time').copy()
     record=dict(scope='Exploratory alternative-profile precision experiment; not S6 or Table S1',accepted_independent_result=False,
-                starting_profile='data/continuation/alternative_starting_profile.csv',selection='Positive travel time; >6 picks and initial azimuthal gap <180 degrees; not manually reviewed',events=len(events),runs=[])
+                starting_profile='data/continuation/alternative_starting_profile.csv',selection='Causality-screened; positive travel time; >6 picks and initial azimuthal gap <180 degrees; not manually reviewed',events=len(events),runs=[])
     if len(events)<5 or len(events)>1024:
         record['blocker']='Current eligible sample outside 5--1024 event capacity.'
         (OUT/'summary.json').write_text(json.dumps(record,indent=2)+'\n');return
@@ -80,7 +81,16 @@ def main():
         a,b=fits[32],fits[64]
         record['maximum_velocity_difference_km_s']={c:float(abs(a[0][c]-b[0][c]).max()) for c in ['Vp_km_s','Vs_km_s']}
         record['maximum_depth_difference_km']=float(abs(a[1].depth_km-b[1].depth_km).max())
-        record['numerically_agrees_at_output_resolution']=all(x<=.0100001 for x in record['maximum_velocity_difference_km_s'].values()) and record['maximum_depth_difference_km']<=.0100001
+        assert a[1].event_index.tolist()==b[1].event_index.tolist()
+        _,_,distance=Geod(ellps='WGS84').inv(a[1].longitude.to_numpy(),a[1].latitude.to_numpy(),b[1].longitude.to_numpy(),b[1].latitude.to_numpy())
+        record['maximum_horizontal_difference_m']=float(np.max(distance))
+        record['locations_with_horizontal_difference']=int(np.count_nonzero(distance))
+        record['maximum_gap_difference_deg']=float(abs(a[1].azimuthal_gap_deg-b[1].azimuthal_gap_deg).max())
+        record['maximum_origin_time_difference_s']=max(abs(UTCDateTime(x)-UTCDateTime(y)) for x,y in zip(a[1].time,b[1].time))
+        record['maximum_rms_difference_s']=float(abs(a[1].rms_s-b[1].rms_s).max())
+        record['identical_serialized_models']=bool(a[0].equals(b[0]))
+        record['identical_serialized_locations']=bool(a[1].equals(b[1]))
+        record['precision_note']='Compare every serialized coordinate, not only depth. Locations are printed at 0.0001 degree and depths at 0.01 km; equality is not a bound on unprinted internal differences.'
     record['interpretation']='Precision agreement tests numerical reproducibility only; physical velocity checks are separate. Exact profile, independently reviewed phases and validated regional calibration remain missing; these fits cannot authorize TomoDD/S7 or be used as S6 results.'
     (OUT/'summary.json').write_text(json.dumps(record,indent=2)+'\n');print(json.dumps(record,indent=2))
 

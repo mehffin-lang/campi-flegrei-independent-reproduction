@@ -1,6 +1,6 @@
 """Update the publication-panel record from actually executed stage outputs."""
 from pathlib import Path
-import json
+import hashlib,json
 import pandas as pd
 ROOT=Path(__file__).resolve().parents[1];D=ROOT/'data/continuation';R=ROOT/'report'
 def read(name,default=None):
@@ -35,6 +35,16 @@ for r in rows:
                  attempt='Original text series and format notes verified; 2020--2025 daily coverage is available. Source-reconstructed history is labeled and not described as raw observations. No JPG or digitization by this implementation.',
                  blocker='Benchmark equivalence and datum-joining convention are assumed because the exact original stitching recipe is not specified. Calendar gaps remain unfilled; no missing recent-data blocker through 2025-03-20.')
     if p=='S1':r.update(generated_figure='figures/continuation_coverage.pdf',input_observation_files=processed,data_command='.venv/bin/python scripts/process_continuous.py all --frozen',plot_command='.venv/bin/python scripts/plot_continuation.py',attempt='Executed actual sample-span union for the frozen processed checkpoint; no requested interval is counted as covered.',saved_data='data/continuation/processed_coverage_union.json',blocker=f"{s['files']} files processed, {s['processed_channel_hours']:.3f} union channel-hours. Full-period queue still pending; actual gaps and unavailable RAN credentials remain. Requests/availability are not coverage.")
+    if p=='S4A':
+        for key in ['comparison_data_command','comparison_plot_command','comparison_figure']:r.pop(key,None)
+        r.update(status='partially reproduced',generated_figure='figures/figure_S4A.pdf',
+            saved_data='data/continuation/figure_S4A.npz; data/continuation/figure_S4A_picks.json',
+            input_observation_files=['inputs/resumption/S4_CSOB_20240520.mseed','inputs/resumption/s4_anchor.html'],
+            permitted_method_files=['inputs/models/original.json.v1','inputs/models/original.pt.v1','inputs/models/phasenet_retrained.json','inputs/models/phasenet_retrained.pt'],
+            data_command='.venv/bin/python scripts/benchmark_window.py',plot_command='.venv/bin/python scripts/benchmark_window.py',
+            parameters='120 s CSOB window at 2024-05-20 20:10:03 UTC, interpreting the caption two-hour offset literally; 1 Hz highpass, released model settings, thresholds 0.3.',
+            attempt='Both permitted models executed on original observations at the caption-defined station/date. Official bulletin used solely to identify the written contextual anchor; these observations/picks never seed the independent catalog.',
+            blocker='Exact published start is not specified in the caption; no reference phase labels. Different pick counts do not establish accuracy or successful retraining.')
     if p=='1C':r['saved_data']='data/continuation/figure_1C.csv; data/continuation/figure_1C_cumulative.csv'
     if p=='S15C':r['saved_data']='data/observations/E3_waveforms.csv; data/observations/E3_CAAM_Z_spectrum.npz; data/observations/E3_CAAM_E_spectrum.npz; data/observations/E3_COLB_Z_spectrum.npz; data/observations/E3_COLB_E_spectrum.npz'
     if p in ['S15A','S15B']:
@@ -79,6 +89,10 @@ for item in layout:
     elif item['figure']=='S2':item.update(independent_files=['figures/continuation_stations.pdf'],caption=f"Partial station inventory: 51 released identifiers audited against official study-period response epochs. Filled triangles: {geo['verified_identifiers']} official coordinate matches; open triangles: {len(geo['unresolved_identifiers'])} released coordinates with unresolved epochs or channel codes. Two coincident-coordinate pairs remain distinct identifiers. No verified geographic outlier. Local WGS84 projection and clipped coastline; the original 48-instrument membership is not established.")
     elif item['figure']=='S8' and m.get('calibrated_magnitudes',0)>0:
         item.update(partial_panels=item['panels'],file_labels=['S8A--B'],independent_files=['figures/figure_S8_pilot.pdf'],missing='',caption=f"Partial amplitude-ratio pilot: {m['calibrated_magnitudes']} provisional magnitudes from independent observations, with routine Md as the documented calibration prior. A is not an independent validation of that prior. B is a limited-sample histogram with a conditional likelihood estimate, not the full-period completeness or b-value result. Locations are initial associations, before final relocation.")
+    elif item['figure']=='S4':
+        bench=read('benchmark_window');counts={r['model']:r['counts'] for r in bench['models']}
+        item.update(partial_panels=['S4A'],file_labels=['S4A'],independent_files=['figures/figure_S4A.pdf'],missing='S4B: exact CMIS noise-window timing and reference labels are unavailable. Other calendar-window diagnostics are not inserted as that panel.',
+            caption=f"Partial S4A inference comparison on original CSOB observations, 20 May 2024 20:10:03--20:12:03 UTC. The caption's two-hour offset is interpreted literally; exact published alignment is unverified. Original weights: {counts['original']['P']} P and {counts['original']['S']} S; retrained weights: {counts['retrained']['P']} P and {counts['retrained']['S']} S. No labeled accuracy or retraining claim.")
     elif item['figure'] in ['S6','S8']:
         item.update(partial_panels=[],file_labels=[],independent_files=[],missing='No accepted current result. For S6, the unverified background grid and dependent previous pilot were quarantined; alternative-profile arithmetic tests are not validated locations. No older output is substituted.',caption='Not reproduced at the current checkpoint.')
     elif item['figure']=='2':item['missing']=f"Panels A and B need multiyear calibrated/relocated events and magnitudes. The current {s['events']} initial associations remain provisional."
@@ -88,18 +102,43 @@ for item in layout:
 numbers=dict(CurrentFiles=s['files'],CurrentPicks=s['picks'],CurrentPPicks=s['p_picks'],CurrentSPicks=s['s_picks'],CurrentEvents=s['events'],CurrentAssigned=s['assigned_picks'],CurrentHours=f"{s['processed_channel_hours']:.3f}",CurrentAmplitudes=m.get('amplitude_measurements',0),CurrentSNR=m.get('snr_passing',0),CurrentMagnitudeEdges=m.get('magnitude_edges',0),CurrentMagnitudes=m.get('calibrated_magnitudes',0),CurrentCalibration=v.get('calibration_events',0),CurrentHybridHours=f"{h.get('valid_hours',0):.3f}",CurrentHybridCandidates=h.get('candidates',0),CurrentCPOZ=loc.get('associated_cpoz_p_picks',0),CurrentSPPairs=loc.get('paired_observations',0),CurrentBadSP=loc.get('nonpositive_sp',0))
 plot_scope=pd.read_csv(D/'routine_plot_scope.csv').set_index('panel')
 numbers.update(CurrentRoutineOffMap=int(plot_scope.loc['1A','outside_view']),CurrentStudyOffMap=int(plot_scope.loc['S5/map','outside_view']),CurrentStudyOffEastDepth=int(plot_scope.loc['S5/easting-depth','outside_view']))
+benchmark=read('benchmark_window')
+for model in benchmark['models']:
+    for phase in ['P','S']:numbers['Benchmark'+model['model'].title()+phase]=model['counts'][phase]
 (R/'continuation_numbers.tex').write_text('\n'.join('\\newcommand{\\'+key+'}{'+str(value)+'}' for key,value in numbers.items())+'\n')
 gather=read('cpoz_gather_summary');hybrid_metrics=read('hybrid_candidate_metrics');catalog_fi=read('catalog_frequency_index')
 experiment_path=ROOT/'data/exploratory/velest_stability/summary.json'
 experiment=json.loads(experiment_path.read_text()) if experiment_path.exists() else {}
-findings=[f"The CPOZ diagnostic contains {gather.get('gathers',0)} P-aligned observed waveforms. It does not implement the relocated ring-sector test.",
+findings=[f"The CPOZ diagnostic contains {gather.get('gathers',0)} events and {gather.get('component_traces',0)} HHZ/HHN traces, aligned on own P picks over -1 to +7 s and highpass filtered above 4 Hz. These now follow the written S12 window and band. The sector/coordinate ordering and onset validation are still absent.",
           f"Spectral measurements were calculated for {hybrid_metrics.get('measured',0)} of {hybrid_metrics.get('candidates',0)} template crossings. None is confirmed as a hybrid event; spectral windows use correlation alignment and still require onset/coda review."]
 findings.append(f"Catalog frequency-index screening measured {catalog_fi.get('station_measurements',0)} station windows for {catalog_fi.get('measured_events',0)} provisional events. Station FIs are averaged; no low-frequency candidate is classified as a confirmed hybrid without onset and coda review.")
+findings.append(f"This screening lacked {len(catalog_fi.get('no_retrieved_window',[]))} station-event windows and recorded {len(catalog_fi.get('measurement_failures',[]))} measurement failures. The saved failure is a waveform sample-count assertion, not an established archive-access failure; it remains unfilled.")
+frequency_review=read('catalog_frequency_review')
+visual_record=ROOT/'data/resumption/catalog_frequency_visual_review.json'
+if frequency_review:
+    findings.append(f"Diagnostic windows were saved for {frequency_review['candidates_with_windows']} negative-mean-FI candidates at {frequency_review['saved_station_windows']} selected station windows. These are observations selected for review, not new event classifications.")
+    if visual_record.exists():
+        visual=json.loads(visual_record.read_text())
+        if hashlib.sha256((D/'catalog_frequency_review.npz').read_bytes()).hexdigest()==visual['data_sha256']:
+            findings.append(f"All {len(visual['findings'])} corresponding diagnostic pages were visually inspected. Persistent oscillations, impulsive packets with positive station FI, low-SNR negative-FI records, and strong earlier arrivals decaying through later windows occur. In particular, the CMIS windows for candidates 631 and 632 show apparent coda contamination. No hybrid was confirmed. This limited agent review supplies no expert-validated onset labels or catalog-wide accuracy estimate; its notes and hashes are retained in data/resumption/catalog_frequency_visual_review.json.")
+calibration_matches=pd.read_csv(D/'routine_matches.csv')
+if len(calibration_matches):
+    reference_md=calibration_matches.Md.dropna()
+    findings.append(f"The {len(reference_md)} retained external routine-Md calibration matches span {reference_md.min():.2f} to {reference_md.max():.2f}; {int((reference_md>=2.2).sum())} reach the written focal-mechanism sample's lower Md of 2.2. These are calibration reference values for independently associated candidates, not independent magnitude measurements or a bound on events outside this matched sample. No reviewed mechanism sample has been established.")
+previous_statistics=json.loads((ROOT/'data/resumption/baseline_checkpoint/magnitude_statistics.json').read_text())
+if stats.get('b') is not None and previous_statistics.get('b') is not None:
+    findings.append(f"The preceding checkpoint had {previous_statistics['magnitudes']} conditional magnitudes, Mc={previous_statistics['Mc']:.1f} and b={previous_statistics['b']:.2f}. The current checkpoint has {stats['magnitudes']}, Mc={stats['Mc']:.1f} and b={stats['b']:.2f}. Coverage, association initialization and causality screening changed together; the separate contributions were not measured. This change prevents treating the earlier apparent agreement as a stable completeness or regional b-value result.")
+repeatability=json.loads((ROOT/'tests/results/association_repeatability.json').read_text())
+findings.append(f"The observed-window repeatability test used {repeatability['picks']} own picks and returned {repeatability['associated_events']} provisional associations with {repeatability['assigned_picks']} assigned picks. Changing from one to three workers and changing the parent random state gave maximum coordinate and origin-time differences of {repeatability['maximum_coordinate_difference_km']:.8f} km and {repeatability['maximum_origin_time_difference_s']:.6f} s after the per-cluster seed correction. This tests scheduling independence on these windows, not event or location accuracy.")
+if 'one_station_nonpositive_score' in h:
+    findings.append(f"Of {h['candidates']} mean-score template crossings, {h['one_station_nonpositive_score']} have a nonpositive score at one station. The original mean-score selection is retained, but this exposes why crossing the mean threshold cannot itself confirm a two-station hybrid event.")
 if experiment:
     findings.append(f"The alternative-profile VELEST experiment used {experiment.get('events',0)} provisional events. Both real precisions were attempted with identical serialized inputs.")
     if experiment.get('maximum_velocity_difference_km_s'):
         change=experiment['maximum_velocity_difference_km_s']
         findings.append(f"Maximum 32/64-bit differences were {change['Vp_km_s']:.3f} km/s for Vp and {change['Vs_km_s']:.3f} km/s for Vs, with {experiment['maximum_depth_difference_km']:.3f} km in fitted depth.")
+        findings.append(f"The horizontal-coordinate check gives a maximum difference of {experiment.get('maximum_horizontal_difference_m',float('nan')):.3f} m in {experiment.get('locations_with_horizontal_difference',0)} locations. Identical serialized locations: {experiment.get('identical_serialized_locations',False)}. A depth-only comparison is insufficient to claim full coordinate agreement.")
+        findings.append(f"Maximum serialized origin-time and event-RMS differences are {experiment.get('maximum_origin_time_difference_s',0):.3f} s and {experiment.get('maximum_rms_difference_s',0):.3f} s. Printed resolution does not bound unprinted internal differences.")
     failures=[str(r['bits']) for r in experiment.get('runs',[]) if not r.get('physical_velocity_check',False)]
     if failures:findings.append('Physical velocity checks did not pass in the '+', '.join(failures)+'-bit attempts. No fitted velocity or location is accepted.')
     else:findings.append('Both runs pass the necessary positive-Vp-greater-than-Vs check. This ordering and numerical agreement do not replace reviewed phases or the documented regional calibration; no experimental fit is accepted for S6 or relocation.')
@@ -115,6 +154,16 @@ if all(p.exists() for p in experiment_models):
     lines.append(r'\bottomrule\end{longtable}')
     (R/'experimental_velocity_table.tex').write_text('\n'.join(lines)+'\n')
 else:(R/'experimental_velocity_table.tex').write_text('No paired experimental models were saved.\n')
+quality=read('association_quality');exposure=read('prediction_coverage_summary');differential=read('differential_times')
+findings.append(f"Causality screening finds {quality.get('events_nonpositive_sp',0)} events with nonpositive S-P and {quality.get('events_nonpositive_travel',0)} with nonpositive propagation times; {quality.get('passes_causality',0)} of {quality.get('events',0)} pass both necessary checks. There are {quality.get('s_only',0)} S-only associations and {quality.get('at_depth_bounds',0)} depth-boundary solutions. Flags are saved for all events; they are not a manual earthquake classifier. Events failing causality cannot enter the magnitude equations, calibration priors or VELEST experiment. Other provisional associations remain unvalidated.")
+if exposure:
+    hours=exposure['finite_score_station_hours']
+    findings.append(f"Finite PhaseNet-score exposure for continuous checkpoint inputs is {hours['P']:.3f} P station-hours and {hours['S']:.3f} S station-hours after the S exclusions. Earlier baseline files lack this telemetry. These units differ from observed channel-hours. SeisBench fills missing input components with zeros for inference; those values are not counted or plotted as observations. Short fragments without scores remain distinguishable from observed samples.")
+if differential:
+    findings.append(f"Exploratory neighboring-event processing saved {differential['saved_waveform_windows']} observed phase windows, measured {differential['measured_channel_pairs']} channel pairs, and retained {differential['passing_measurements']} under the declared correlation/coherence criteria. These are partial timing measurements on {differential['events']} unvalidated, causally consistent nonboundary events, not TomoDD results. Initial neighbor geometry and missing author window/weight settings remain limitations.")
+    component_check=differential.get('horizontal_component_consistency',{})
+    if component_check.get('pairs',0):
+        findings.append(f"For {component_check['pairs']} S-wave pairs passing on both horizontal components, the median absolute delay difference is {component_check['median_difference_s']:.4f} s and the maximum is {component_check['maximum_difference_s']:.4f} s. This internal component check does not measure absolute phase accuracy or hypocentral uncertainty.")
 (R/'revision_findings.tex').write_text('\n\n'.join(tex(t) for t in findings)+'\n')
 counts={status:sum(r['status']==status for r in rows) for status in ['independently reproduced','partially reproduced','not reproduced']}
 (D/'panel_status.json').write_text(json.dumps(dict(counts=counts,partial=[r['panel'] for r in rows if r['status']=='partially reproduced'],unreproduced=[r['panel'] for r in rows if r['status']=='not reproduced']),indent=2)+'\n')
@@ -170,12 +219,13 @@ updates={
     1:f"Executed: {s['picks']} merged picks; exclusions/probability bounds checked. Full-period inference unfinished.",
     3:f"Executed: {s['events']} provisional GaMMA events, {s['assigned_picks']} assigned picks. Explicit Tramelli 2021 alternative; exact 2018 numerical profile still missing.",
     4:'Blocked: unverified 2008 background grid and previous dependent pilot quarantined. The separate 2021-profile arithmetic experiment is exploratory; no accepted calibrated locations or fitted model.',
-    5:'Generic TomoDD source retrieved, classified and compiled. Scientific differential-time pairing and both relocation rounds remain unfinished, not executed.',
+    2:'Retraining not run: exact local labels, cleaned examples, splits and augmentation manifests missing. Both permitted models ran on the caption-defined CSOB swarm window (partial S4A); exact S4B window/labeled accuracy remain unavailable.',
+    5:f"Exploratory differential times executed: {differential.get('measured_channel_pairs',0)} channel pairs, {differential.get('passing_measurements',0)} passing declared criteria. Generic TomoDD compiled, but neither relocation round was run: accepted calibration and verified fixed grid missing.",
     7:f"Executed: {m.get('amplitude_measurements',0)} amplitudes, {m.get('snr_passing',0)} SNR passes, {m.get('magnitude_edges',0)} amplitude-ratio equations, {m.get('calibrated_magnitudes',0)} provisional magnitudes. Initial locations; final relocated-catalog calibration unfinished.",
     8:f"Pilot histogram and maximum-curvature calculation executed on {stats.get('magnitudes',0)} values; conditional b={stats.get('b')} from {stats.get('events_ge_Mc',0)} values at/above pilot Mc. Full-period completeness/b not established; selection and systematic limitations remain.",
     9:'Not reproduced: independently reviewed polarities/S-P amplitudes, accepted locations/model, FK Green functions and event-specific settings remain missing or unfinished. No author mechanism result table is used by this run.',
     10:f"Internal S-P checks: {loc.get('paired_observations',0)} pairs, {loc.get('nonpositive_sp',0)} nonpositive. {loc.get('associated_cpoz_p_picks',0)} CPOZ P arrivals. Relocated sector gathers and manual deep-event review unfinished.",
-    11:f"Executed {h.get('valid_hours',0):.3f} common CAAM/COLB scan hours; {h.get('candidates',0)} unconfirmed crossings. Three-year review, clustering and catalog-wide FI incomplete.",
+    11:f"Executed {h.get('valid_hours',0):.3f} common CAAM/COLB scan hours; {h.get('candidates',0)} unconfirmed crossings. {h.get('one_station_nonpositive_score',0)} pass the mean threshold despite nonpositive similarity at one station. Six examples saved for inspection; no confirmed hybrids. Three-year exposure, full onset/coda review and clustering remain incomplete.",
     12:f"Executed: {c['leveling_rows']} source historical entries with estimates/reconstruction distinguished, {c['gnss_rows']} daily GNSS through 2025-03-20, {c['routine_located']} historical and {c['routine_study_located']} study-period located routine events. External contextual/calibration roles only; historical count difference unresolved."
 }
 for i,status in updates.items():stages[i]['status']=status

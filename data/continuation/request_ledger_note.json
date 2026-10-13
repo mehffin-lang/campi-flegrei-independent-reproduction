@@ -1,9 +1,9 @@
 {
   "requests": 74674,
   "statuses": {
-    "pending": 74234,
-    "downloaded": 434,
-    "no_data": 6
+    "pending": 73994,
+    "downloaded": 651,
+    "no_data": 29
   },
   "role": "Request ledger is not a completeness claim. Per-request hours can overlap; authoritative processed exposure is processed_coverage_union.json. Pending, no_data and failed requests contribute zero.",
   "missing_intervals": "data/continuation/unobserved_channel_intervals.csv"

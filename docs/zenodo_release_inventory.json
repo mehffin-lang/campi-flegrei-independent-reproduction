@@ -1,0 +1,156 @@
+{
+  "url": "https://zenodo.org/api/records/16562216/files/Campi-Flegrei-Earthquake-Monitoring-main.zip/content",
+  "role": "Directory metadata plus the two permitted trained-model members only. No author code or derived result member read or executed.",
+  "checked_utc": "2026-10-13T01:15:43.697787+00:00",
+  "http": 206,
+  "content_range": "bytes 22797283-22862818/22862819",
+  "returned_bytes": 65536,
+  "response_sha256": "05e3190c4a4daea28f0127707ebf3657a330ac6822478664e259dce32e8f6867",
+  "local_file": "inputs/resumption/zenodo_archive_directory.bin",
+  "local_sha256": "5d8f78ffaf94251f4a4e6bafd3b75e66732e25c211d4dd09f0dc49f7ceacbb55",
+  "members": [
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/",
+      "bytes": 0,
+      "compressed": 0,
+      "crc32": "0x0"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/README.md",
+      "bytes": 3094,
+      "compressed": 1379,
+      "crc32": "0x2a699f0c"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/code/",
+      "bytes": 0,
+      "compressed": 0,
+      "crc32": "0x0"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/code/association.ipynb",
+      "bytes": 8170,
+      "compressed": 2559,
+      "crc32": "0x6a7638d7"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/code/cleaning_phasent_picks.ipynb",
+      "bytes": 10401,
+      "compressed": 2898,
+      "crc32": "0x93b3222e"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/code/phase_picking.py",
+      "bytes": 6060,
+      "compressed": 2111,
+      "crc32": "0x4bd832ba"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/models/",
+      "bytes": 0,
+      "compressed": 0,
+      "crc32": "0x0"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/models/1d_vmod_velest.mod",
+      "bytes": 452,
+      "compressed": 193,
+      "crc32": "0x1f73eb48"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/models/3d_vmod",
+      "bytes": 122853,
+      "compressed": 37207,
+      "crc32": "0x79abe4ec"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/models/phasenet_retrained.json",
+      "bytes": 527,
+      "compressed": 245,
+      "crc32": "0x78d4c3a8"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/models/phasenet_retrained.pt",
+      "bytes": 1117748,
+      "compressed": 1021493,
+      "crc32": "0x20f5b41a"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/models/stations.csv",
+      "bytes": 1708,
+      "compressed": 678,
+      "crc32": "0x42864175"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/models/stations_velest.dat",
+      "bytes": 4051,
+      "compressed": 1050,
+      "crc32": "0xec1e373e"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/output/",
+      "bytes": 0,
+      "compressed": 0,
+      "crc32": "0x0"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/output/associated_phases.csv.zip",
+      "bytes": 9235052,
+      "compressed": 9214504,
+      "crc32": "0x665a9c92"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/output/catalog.csv",
+      "bytes": 9400054,
+      "compressed": 3703752,
+      "crc32": "0xd8cbf76a"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/output/focal_mechanism.csv",
+      "bytes": 17807,
+      "compressed": 8132,
+      "crc32": "0x2938f9b6"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/output/polarity.csv",
+      "bytes": 58152,
+      "compressed": 14598,
+      "crc32": "0xe564ddf2"
+    },
+    {
+      "name": "Campi-Flegrei-Earthquake-Monitoring-main/output/s1.html",
+      "bytes": 24247307,
+      "compressed": 8847904,
+      "crc32": "0x4e33943c"
+    }
+  ],
+  "permitted_model_checks": [
+    {
+      "member": "Campi-Flegrei-Earthquake-Monitoring-main/models/phasenet_retrained.json",
+      "classification": "Permitted trained model artifact",
+      "byte_range": [
+        47313,
+        47557
+      ],
+      "bytes": 527,
+      "sha256": "75cd9e14d6f2927d84ec684b44d815abffc6649f6d7751488ae9b1a35da45958",
+      "local_file": "inputs/resumption/zenodo_phasenet_retrained.json",
+      "matches_existing_method_artifact": true
+    },
+    {
+      "member": "Campi-Flegrei-Earthquake-Monitoring-main/models/phasenet_retrained.pt",
+      "classification": "Permitted trained model artifact",
+      "byte_range": [
+        47666,
+        1069158
+      ],
+      "bytes": 1117748,
+      "sha256": "7f2b2d4345b82232ded67ea554794f7ff148bee235d50b1772f3516833500059",
+      "local_file": "inputs/resumption/zenodo_phasenet_retrained.pt",
+      "matches_existing_method_artifact": true
+    }
+  ],
+  "training_materials": "No original training waveform/label/split/augmentation files in the archive directory; raw_picks.csv is explicitly described by the repository metadata as author picks used for association and is excluded.",
+  "preserved_directory": "sources/zenodo_archive_directory.bin",
+  "artifact_restoration": "The verified artifacts are identical to inputs/models/phasenet_retrained.json and .pt already included in the normal restoration manifest. This extra range inspection does not add analysis inputs."
+}

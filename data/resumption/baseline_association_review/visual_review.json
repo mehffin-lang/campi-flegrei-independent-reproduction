@@ -1,0 +1,32 @@
+{
+  "basis": "Visual inspection of all five pages of review.pdf generated from original observations; no reference figure inspected for this review. Qualitative observations are not phase ground truth. Event indices refer to b00267a baseline outputs.",
+  "findings": [
+    {
+      "event": 227,
+      "origin": "2025-03-19T14:53:24.485000Z",
+      "note": "The S-only association places several S picks after the strongest visible wave packet. CPOZ has a sharp onset about 4.5 s after the provisional origin but its assigned S is around 9.5 s. Possible coda mis-picks; no accepted event or depth."
+    },
+    {
+      "event": 463,
+      "origin": "2025-03-20T03:18:06.662000Z",
+      "note": "Several stations show a coherent onset around 4.5 s; CSOC has S before P on earlier energy. At least one pair is causally inconsistent; this does not establish that all phases or the event itself are false."
+    },
+    {
+      "event": 697,
+      "origin": "2025-03-20T14:18:48.393000Z",
+      "note": "The lower-bound event contains visible arrivals before the fitted origin at CPOZ and other stations. Its fitted origin/depth cannot be accepted as physical."
+    },
+    {
+      "event": 763,
+      "origin": "2025-03-20T20:28:08.029000Z",
+      "note": "The upper-bound event includes sustained oscillatory energy at several stations and no convincing common P onset in this display; requires further review, not a verified 8 km earthquake."
+    },
+    {
+      "event": 179,
+      "origin": "2025-03-19T11:55:00.013000Z",
+      "note": "Many stations show clear P onsets and later larger horizontal arrivals near the independent picks. This supports a real recorded event qualitatively, but neither phase accuracy nor depth is independently calibrated."
+    }
+  ],
+  "selection": "One example per prescribed category, selected by largest pick count then lowest event index; not a random validation sample.",
+  "no_analysis_changes_from_review": true
+}

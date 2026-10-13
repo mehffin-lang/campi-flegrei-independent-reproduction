@@ -1,0 +1,1069 @@
+{
+  "events": 1003,
+  "s_only": 66,
+  "at_depth_bounds": 238,
+  "events_nonpositive_sp": 56,
+  "events_nonpositive_travel": 51,
+  "passes_causality": 905,
+  "reviewed_examples": [
+    {
+      "event_index": 345,
+      "category": "S-only",
+      "input_files": [
+        "inputs/continuation/waveforms/2I_CREM_20250319T120000_20250319T180000.mseed",
+        "inputs/continuation/waveforms/IV_CAAM_20250319T120000_20250319T180000.mseed",
+        "inputs/continuation/waveforms/IV_CBAC_20250319T120000_20250319T180000.mseed",
+        "inputs/continuation/waveforms/IV_COLB_20250319T120000_20250319T180000.mseed",
+        "inputs/continuation/waveforms/IV_CPIS_20250319T120000_20250319T180000.mseed",
+        "inputs/continuation/waveforms/IV_CPOZ_20250319T120000_20250319T180000.mseed",
+        "inputs/continuation/waveforms/IV_CSFT_20250319T120000_20250319T180000.mseed",
+        "inputs/continuation/waveforms/IV_CSOB_20250319T120000_20250319T180000.mseed"
+      ],
+      "traces": [
+        {
+          "key": "trace_0",
+          "trace_id": "2I.CREM.",
+          "channel": "2I.CREM..HHE",
+          "source": "inputs/continuation/waveforms/2I_CREM_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 18679.823972570048
+        },
+        {
+          "key": "trace_1",
+          "trace_id": "2I.CREM.",
+          "channel": "2I.CREM..HHN",
+          "source": "inputs/continuation/waveforms/2I_CREM_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 17458.739277204208
+        },
+        {
+          "key": "trace_2",
+          "trace_id": "2I.CREM.",
+          "channel": "2I.CREM..HHZ",
+          "source": "inputs/continuation/waveforms/2I_CREM_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 31176.307080273167
+        },
+        {
+          "key": "trace_3",
+          "trace_id": "IV.CAAM.",
+          "channel": "IV.CAAM..HHE",
+          "source": "inputs/continuation/waveforms/IV_CAAM_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 26272.0992707061
+        },
+        {
+          "key": "trace_4",
+          "trace_id": "IV.CAAM.",
+          "channel": "IV.CAAM..HHN",
+          "source": "inputs/continuation/waveforms/IV_CAAM_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 47200.850871289265
+        },
+        {
+          "key": "trace_5",
+          "trace_id": "IV.CAAM.",
+          "channel": "IV.CAAM..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CAAM_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 35750.08795633967
+        },
+        {
+          "key": "trace_6",
+          "trace_id": "IV.CBAC.",
+          "channel": "IV.CBAC..HHE",
+          "source": "inputs/continuation/waveforms/IV_CBAC_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 28982.245546965292
+        },
+        {
+          "key": "trace_7",
+          "trace_id": "IV.CBAC.",
+          "channel": "IV.CBAC..HHN",
+          "source": "inputs/continuation/waveforms/IV_CBAC_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 45607.647093875516
+        },
+        {
+          "key": "trace_8",
+          "trace_id": "IV.CBAC.",
+          "channel": "IV.CBAC..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CBAC_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 16524.46955973429
+        },
+        {
+          "key": "trace_9",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHE",
+          "source": "inputs/continuation/waveforms/IV_COLB_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 16452.08793332173
+        },
+        {
+          "key": "trace_10",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHN",
+          "source": "inputs/continuation/waveforms/IV_COLB_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 21539.035655477004
+        },
+        {
+          "key": "trace_11",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHZ",
+          "source": "inputs/continuation/waveforms/IV_COLB_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 21690.79106977768
+        },
+        {
+          "key": "trace_12",
+          "trace_id": "IV.CPIS.",
+          "channel": "IV.CPIS..HHE",
+          "source": "inputs/continuation/waveforms/IV_CPIS_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 42063.10263102946
+        },
+        {
+          "key": "trace_13",
+          "trace_id": "IV.CPIS.",
+          "channel": "IV.CPIS..HHN",
+          "source": "inputs/continuation/waveforms/IV_CPIS_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 32128.149040897282
+        },
+        {
+          "key": "trace_14",
+          "trace_id": "IV.CPIS.",
+          "channel": "IV.CPIS..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CPIS_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 34269.4604724168
+        },
+        {
+          "key": "trace_15",
+          "trace_id": "IV.CPOZ.",
+          "channel": "IV.CPOZ..HHE",
+          "source": "inputs/continuation/waveforms/IV_CPOZ_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 40026.66521244615
+        },
+        {
+          "key": "trace_16",
+          "trace_id": "IV.CPOZ.",
+          "channel": "IV.CPOZ..HHN",
+          "source": "inputs/continuation/waveforms/IV_CPOZ_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 63491.90102947974
+        },
+        {
+          "key": "trace_17",
+          "trace_id": "IV.CPOZ.",
+          "channel": "IV.CPOZ..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CPOZ_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 36265.151929954736
+        },
+        {
+          "key": "trace_18",
+          "trace_id": "IV.CSFT.",
+          "channel": "IV.CSFT..HHE",
+          "source": "inputs/continuation/waveforms/IV_CSFT_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 12586.298428793305
+        },
+        {
+          "key": "trace_19",
+          "trace_id": "IV.CSFT.",
+          "channel": "IV.CSFT..HHN",
+          "source": "inputs/continuation/waveforms/IV_CSFT_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 10635.527573538955
+        },
+        {
+          "key": "trace_20",
+          "trace_id": "IV.CSFT.",
+          "channel": "IV.CSFT..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CSFT_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 7242.5096613738015
+        },
+        {
+          "key": "trace_21",
+          "trace_id": "IV.CSOB.",
+          "channel": "IV.CSOB..HHE",
+          "source": "inputs/continuation/waveforms/IV_CSOB_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 44698.19127921829
+        },
+        {
+          "key": "trace_22",
+          "trace_id": "IV.CSOB.",
+          "channel": "IV.CSOB..HHN",
+          "source": "inputs/continuation/waveforms/IV_CSOB_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 20598.401823564687
+        },
+        {
+          "key": "trace_23",
+          "trace_id": "IV.CSOB.",
+          "channel": "IV.CSOB..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CSOB_20250319T120000_20250319T180000.mseed",
+          "normalizer_counts": 11374.590814708425
+        }
+      ],
+      "errors": [],
+      "data": "data/continuation/association_review/event_345.npz",
+      "review_status": "Waveform inspection examples; no automatic acceptance or manual ground-truth labels"
+    },
+    {
+      "event_index": 567,
+      "category": "nonpositive S-P",
+      "input_files": [
+        "inputs/continuation/waveforms/2I_CREM_20250320T000000_20250320T060000.mseed",
+        "inputs/continuation/waveforms/2I_CSOC_20250320T000000_20250320T060000.mseed",
+        "inputs/continuation/waveforms/IV_CAAM_20250320T000000_20250320T060000.mseed",
+        "inputs/continuation/waveforms/IV_CBAC_20250320T000000_20250320T060000.mseed",
+        "inputs/continuation/waveforms/IV_CFB3_20250320T000000_20250320T060000.mseed",
+        "inputs/continuation/waveforms/IV_COLB_20250320T000000_20250320T060000.mseed",
+        "inputs/continuation/waveforms/IV_CPOZ_20250320T000000_20250320T060000.mseed",
+        "inputs/continuation/waveforms/IV_CSTH_20250320T000000_20250320T060000.mseed"
+      ],
+      "traces": [
+        {
+          "key": "trace_0",
+          "trace_id": "2I.CREM.",
+          "channel": "2I.CREM..HHE",
+          "source": "inputs/continuation/waveforms/2I_CREM_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 986.4299160617384
+        },
+        {
+          "key": "trace_1",
+          "trace_id": "2I.CREM.",
+          "channel": "2I.CREM..HHN",
+          "source": "inputs/continuation/waveforms/2I_CREM_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 732.5174117406076
+        },
+        {
+          "key": "trace_2",
+          "trace_id": "2I.CREM.",
+          "channel": "2I.CREM..HHZ",
+          "source": "inputs/continuation/waveforms/2I_CREM_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 1130.820196179995
+        },
+        {
+          "key": "trace_3",
+          "trace_id": "2I.CSOC.",
+          "channel": "2I.CSOC..EHE",
+          "source": "inputs/continuation/waveforms/2I_CSOC_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 4432.81281554257
+        },
+        {
+          "key": "trace_4",
+          "trace_id": "2I.CSOC.",
+          "channel": "2I.CSOC..EHN",
+          "source": "inputs/continuation/waveforms/2I_CSOC_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 5246.336875923849
+        },
+        {
+          "key": "trace_5",
+          "trace_id": "2I.CSOC.",
+          "channel": "2I.CSOC..EHZ",
+          "source": "inputs/continuation/waveforms/2I_CSOC_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 6846.888192743301
+        },
+        {
+          "key": "trace_6",
+          "trace_id": "IV.CAAM.",
+          "channel": "IV.CAAM..HHE",
+          "source": "inputs/continuation/waveforms/IV_CAAM_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 2560.343834829864
+        },
+        {
+          "key": "trace_7",
+          "trace_id": "IV.CAAM.",
+          "channel": "IV.CAAM..HHN",
+          "source": "inputs/continuation/waveforms/IV_CAAM_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 3921.2710321609557
+        },
+        {
+          "key": "trace_8",
+          "trace_id": "IV.CAAM.",
+          "channel": "IV.CAAM..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CAAM_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 1608.4477294938906
+        },
+        {
+          "key": "trace_9",
+          "trace_id": "IV.CBAC.",
+          "channel": "IV.CBAC..HHE",
+          "source": "inputs/continuation/waveforms/IV_CBAC_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 1451.0489129840803
+        },
+        {
+          "key": "trace_10",
+          "trace_id": "IV.CBAC.",
+          "channel": "IV.CBAC..HHN",
+          "source": "inputs/continuation/waveforms/IV_CBAC_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 2176.1206575753818
+        },
+        {
+          "key": "trace_11",
+          "trace_id": "IV.CBAC.",
+          "channel": "IV.CBAC..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CBAC_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 1344.2008659424491
+        },
+        {
+          "key": "trace_12",
+          "trace_id": "IV.CFB3.",
+          "channel": "IV.CFB3..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CFB3_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 1241.3806176901658
+        },
+        {
+          "key": "trace_13",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHE",
+          "source": "inputs/continuation/waveforms/IV_COLB_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 1570.6897253361208
+        },
+        {
+          "key": "trace_14",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHN",
+          "source": "inputs/continuation/waveforms/IV_COLB_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 1622.4485313618375
+        },
+        {
+          "key": "trace_15",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHZ",
+          "source": "inputs/continuation/waveforms/IV_COLB_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 1469.756681542149
+        },
+        {
+          "key": "trace_16",
+          "trace_id": "IV.CPOZ.",
+          "channel": "IV.CPOZ..HHE",
+          "source": "inputs/continuation/waveforms/IV_CPOZ_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 1799.122899444138
+        },
+        {
+          "key": "trace_17",
+          "trace_id": "IV.CPOZ.",
+          "channel": "IV.CPOZ..HHN",
+          "source": "inputs/continuation/waveforms/IV_CPOZ_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 1697.6993431297396
+        },
+        {
+          "key": "trace_18",
+          "trace_id": "IV.CPOZ.",
+          "channel": "IV.CPOZ..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CPOZ_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 2075.998361469082
+        },
+        {
+          "key": "trace_19",
+          "trace_id": "IV.CSTH.",
+          "channel": "IV.CSTH..HHE",
+          "source": "inputs/continuation/waveforms/IV_CSTH_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 5290.398730855419
+        },
+        {
+          "key": "trace_20",
+          "trace_id": "IV.CSTH.",
+          "channel": "IV.CSTH..HHN",
+          "source": "inputs/continuation/waveforms/IV_CSTH_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 5911.832815104566
+        },
+        {
+          "key": "trace_21",
+          "trace_id": "IV.CSTH.",
+          "channel": "IV.CSTH..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CSTH_20250320T000000_20250320T060000.mseed",
+          "normalizer_counts": 4725.350045783574
+        }
+      ],
+      "errors": [],
+      "data": "data/continuation/association_review/event_567.npz",
+      "review_status": "Waveform inspection examples; no automatic acceptance or manual ground-truth labels"
+    },
+    {
+      "event_index": 105,
+      "category": "lower depth bound",
+      "input_files": [
+        "inputs/continuation/waveforms/IV_CFMN_20220125T180000_20220126T000000.mseed",
+        "inputs/continuation/waveforms/IV_COLB_20220125T180000_20220126T000000.mseed",
+        "inputs/continuation/waveforms/IV_CPOZ_20220125T180000_20220126T000000.mseed",
+        "inputs/continuation/waveforms/IV_CSFT_20220125T180000_20220126T000000.mseed",
+        "inputs/continuation/waveforms/IV_CSOB_20220125T180000_20220126T000000.mseed",
+        "inputs/continuation/waveforms/IV_CSTH_20220125T180000_20220126T000000.mseed"
+      ],
+      "traces": [
+        {
+          "key": "trace_0",
+          "trace_id": "IV.CFMN.",
+          "channel": "IV.CFMN..HHE",
+          "source": "inputs/continuation/waveforms/IV_CFMN_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 7209.076754495775
+        },
+        {
+          "key": "trace_1",
+          "trace_id": "IV.CFMN.",
+          "channel": "IV.CFMN..HHN",
+          "source": "inputs/continuation/waveforms/IV_CFMN_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 9267.351062159049
+        },
+        {
+          "key": "trace_2",
+          "trace_id": "IV.CFMN.",
+          "channel": "IV.CFMN..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CFMN_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 7129.020404841752
+        },
+        {
+          "key": "trace_3",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHE",
+          "source": "inputs/continuation/waveforms/IV_COLB_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 2708.6428941336667
+        },
+        {
+          "key": "trace_4",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHN",
+          "source": "inputs/continuation/waveforms/IV_COLB_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 2281.3353973711946
+        },
+        {
+          "key": "trace_5",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHZ",
+          "source": "inputs/continuation/waveforms/IV_COLB_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 2108.9655638775953
+        },
+        {
+          "key": "trace_6",
+          "trace_id": "IV.CPOZ.",
+          "channel": "IV.CPOZ..HHE",
+          "source": "inputs/continuation/waveforms/IV_CPOZ_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 4457.471946573973
+        },
+        {
+          "key": "trace_7",
+          "trace_id": "IV.CPOZ.",
+          "channel": "IV.CPOZ..HHN",
+          "source": "inputs/continuation/waveforms/IV_CPOZ_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 2083.83422737509
+        },
+        {
+          "key": "trace_8",
+          "trace_id": "IV.CPOZ.",
+          "channel": "IV.CPOZ..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CPOZ_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 1445.8069698090922
+        },
+        {
+          "key": "trace_9",
+          "trace_id": "IV.CSFT.",
+          "channel": "IV.CSFT..HHE",
+          "source": "inputs/continuation/waveforms/IV_CSFT_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 58537.70827916666
+        },
+        {
+          "key": "trace_10",
+          "trace_id": "IV.CSFT.",
+          "channel": "IV.CSFT..HHN",
+          "source": "inputs/continuation/waveforms/IV_CSFT_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 56324.17959557967
+        },
+        {
+          "key": "trace_11",
+          "trace_id": "IV.CSFT.",
+          "channel": "IV.CSFT..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CSFT_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 43189.18223872721
+        },
+        {
+          "key": "trace_12",
+          "trace_id": "IV.CSOB.",
+          "channel": "IV.CSOB..HHE",
+          "source": "inputs/continuation/waveforms/IV_CSOB_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 99546.29259719794
+        },
+        {
+          "key": "trace_13",
+          "trace_id": "IV.CSOB.",
+          "channel": "IV.CSOB..HHN",
+          "source": "inputs/continuation/waveforms/IV_CSOB_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 87717.2466611119
+        },
+        {
+          "key": "trace_14",
+          "trace_id": "IV.CSOB.",
+          "channel": "IV.CSOB..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CSOB_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 65732.87661639007
+        },
+        {
+          "key": "trace_15",
+          "trace_id": "IV.CSTH.",
+          "channel": "IV.CSTH..HHE",
+          "source": "inputs/continuation/waveforms/IV_CSTH_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 209887.5374654421
+        },
+        {
+          "key": "trace_16",
+          "trace_id": "IV.CSTH.",
+          "channel": "IV.CSTH..HHN",
+          "source": "inputs/continuation/waveforms/IV_CSTH_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 203197.43760686525
+        },
+        {
+          "key": "trace_17",
+          "trace_id": "IV.CSTH.",
+          "channel": "IV.CSTH..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CSTH_20220125T180000_20220126T000000.mseed",
+          "normalizer_counts": 101600.22924240703
+        }
+      ],
+      "errors": [],
+      "data": "data/continuation/association_review/event_105.npz",
+      "review_status": "Waveform inspection examples; no automatic acceptance or manual ground-truth labels"
+    },
+    {
+      "event_index": 24,
+      "category": "upper depth bound",
+      "input_files": [
+        "inputs/continuation/waveforms/IV_CFMN_20220121T000000_20220121T060000.mseed",
+        "inputs/continuation/waveforms/IV_COLB_2022-01-21T000000_2022-01-21T060000.mseed",
+        "inputs/continuation/waveforms/IV_CSFT_20220121T000000_20220121T060000.mseed",
+        "inputs/continuation/waveforms/IV_CSOB_20220121T000000_20220121T060000.mseed",
+        "inputs/continuation/waveforms/IV_CSTH_20220121T000000_20220121T060000.mseed"
+      ],
+      "traces": [
+        {
+          "key": "trace_0",
+          "trace_id": "IV.CFMN.",
+          "channel": "IV.CFMN..HHE",
+          "source": "inputs/continuation/waveforms/IV_CFMN_20220121T000000_20220121T060000.mseed",
+          "normalizer_counts": 6793.045488731541
+        },
+        {
+          "key": "trace_1",
+          "trace_id": "IV.CFMN.",
+          "channel": "IV.CFMN..HHN",
+          "source": "inputs/continuation/waveforms/IV_CFMN_20220121T000000_20220121T060000.mseed",
+          "normalizer_counts": 5920.0203884458315
+        },
+        {
+          "key": "trace_2",
+          "trace_id": "IV.CFMN.",
+          "channel": "IV.CFMN..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CFMN_20220121T000000_20220121T060000.mseed",
+          "normalizer_counts": 3712.4543133670863
+        },
+        {
+          "key": "trace_3",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHE",
+          "source": "inputs/continuation/waveforms/IV_COLB_2022-01-21T000000_2022-01-21T060000.mseed",
+          "normalizer_counts": 1113.5046244364999
+        },
+        {
+          "key": "trace_4",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHN",
+          "source": "inputs/continuation/waveforms/IV_COLB_2022-01-21T000000_2022-01-21T060000.mseed",
+          "normalizer_counts": 1330.0393814508518
+        },
+        {
+          "key": "trace_5",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHZ",
+          "source": "inputs/continuation/waveforms/IV_COLB_2022-01-21T000000_2022-01-21T060000.mseed",
+          "normalizer_counts": 1342.2539883654085
+        },
+        {
+          "key": "trace_6",
+          "trace_id": "IV.CSFT.",
+          "channel": "IV.CSFT..HHE",
+          "source": "inputs/continuation/waveforms/IV_CSFT_20220121T000000_20220121T060000.mseed",
+          "normalizer_counts": 11796.145555472744
+        },
+        {
+          "key": "trace_7",
+          "trace_id": "IV.CSFT.",
+          "channel": "IV.CSFT..HHN",
+          "source": "inputs/continuation/waveforms/IV_CSFT_20220121T000000_20220121T060000.mseed",
+          "normalizer_counts": 10865.74080073351
+        },
+        {
+          "key": "trace_8",
+          "trace_id": "IV.CSFT.",
+          "channel": "IV.CSFT..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CSFT_20220121T000000_20220121T060000.mseed",
+          "normalizer_counts": 6282.76756810247
+        },
+        {
+          "key": "trace_9",
+          "trace_id": "IV.CSOB.",
+          "channel": "IV.CSOB..HHE",
+          "source": "inputs/continuation/waveforms/IV_CSOB_20220121T000000_20220121T060000.mseed",
+          "normalizer_counts": 30241.85032442966
+        },
+        {
+          "key": "trace_10",
+          "trace_id": "IV.CSOB.",
+          "channel": "IV.CSOB..HHN",
+          "source": "inputs/continuation/waveforms/IV_CSOB_20220121T000000_20220121T060000.mseed",
+          "normalizer_counts": 14498.774638245022
+        },
+        {
+          "key": "trace_11",
+          "trace_id": "IV.CSOB.",
+          "channel": "IV.CSOB..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CSOB_20220121T000000_20220121T060000.mseed",
+          "normalizer_counts": 13924.750239897836
+        },
+        {
+          "key": "trace_12",
+          "trace_id": "IV.CSTH.",
+          "channel": "IV.CSTH..HHE",
+          "source": "inputs/continuation/waveforms/IV_CSTH_20220121T000000_20220121T060000.mseed",
+          "normalizer_counts": 18053.27447610811
+        },
+        {
+          "key": "trace_13",
+          "trace_id": "IV.CSTH.",
+          "channel": "IV.CSTH..HHN",
+          "source": "inputs/continuation/waveforms/IV_CSTH_20220121T000000_20220121T060000.mseed",
+          "normalizer_counts": 22880.05626389217
+        },
+        {
+          "key": "trace_14",
+          "trace_id": "IV.CSTH.",
+          "channel": "IV.CSTH..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CSTH_20220121T000000_20220121T060000.mseed",
+          "normalizer_counts": 12576.448431772253
+        }
+      ],
+      "errors": [],
+      "data": "data/continuation/association_review/event_24.npz",
+      "review_status": "Waveform inspection examples; no automatic acceptance or manual ground-truth labels"
+    },
+    {
+      "event_index": 294,
+      "category": "most picks, passes causality",
+      "input_files": [
+        "inputs/continuation/waveforms/2I_CGAU_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/2I_CLAC_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/2I_CREM_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CAAM_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CBAC_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CBAG_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CFMN_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CMIS_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CMSN_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CNIS_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_COLB_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CPIS_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CPOZ_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CRUS_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CSFT_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CSOB_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CSTH_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_CUMA_20250319T060000_20250319T120000.mseed",
+        "inputs/continuation/waveforms/IV_PTMR_20250319T060000_20250319T120000.mseed"
+      ],
+      "traces": [
+        {
+          "key": "trace_0",
+          "trace_id": "2I.CGAU.",
+          "channel": "2I.CGAU..HHE",
+          "source": "inputs/continuation/waveforms/2I_CGAU_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 98710.12757516898
+        },
+        {
+          "key": "trace_1",
+          "trace_id": "2I.CGAU.",
+          "channel": "2I.CGAU..HHN",
+          "source": "inputs/continuation/waveforms/2I_CGAU_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 77553.4312706687
+        },
+        {
+          "key": "trace_2",
+          "trace_id": "2I.CGAU.",
+          "channel": "2I.CGAU..HHZ",
+          "source": "inputs/continuation/waveforms/2I_CGAU_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 66978.8186997432
+        },
+        {
+          "key": "trace_3",
+          "trace_id": "2I.CLAC.",
+          "channel": "2I.CLAC..HHE",
+          "source": "inputs/continuation/waveforms/2I_CLAC_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 10532.719685202295
+        },
+        {
+          "key": "trace_4",
+          "trace_id": "2I.CLAC.",
+          "channel": "2I.CLAC..HHN",
+          "source": "inputs/continuation/waveforms/2I_CLAC_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 9933.379868994634
+        },
+        {
+          "key": "trace_5",
+          "trace_id": "2I.CLAC.",
+          "channel": "2I.CLAC..HHZ",
+          "source": "inputs/continuation/waveforms/2I_CLAC_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 10359.202796288817
+        },
+        {
+          "key": "trace_6",
+          "trace_id": "2I.CREM.",
+          "channel": "2I.CREM..HHE",
+          "source": "inputs/continuation/waveforms/2I_CREM_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 24402.099640235858
+        },
+        {
+          "key": "trace_7",
+          "trace_id": "2I.CREM.",
+          "channel": "2I.CREM..HHN",
+          "source": "inputs/continuation/waveforms/2I_CREM_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 18096.42848481928
+        },
+        {
+          "key": "trace_8",
+          "trace_id": "2I.CREM.",
+          "channel": "2I.CREM..HHZ",
+          "source": "inputs/continuation/waveforms/2I_CREM_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 26066.245356546624
+        },
+        {
+          "key": "trace_9",
+          "trace_id": "IV.CAAM.",
+          "channel": "IV.CAAM..HHE",
+          "source": "inputs/continuation/waveforms/IV_CAAM_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 16057.91379178152
+        },
+        {
+          "key": "trace_10",
+          "trace_id": "IV.CAAM.",
+          "channel": "IV.CAAM..HHN",
+          "source": "inputs/continuation/waveforms/IV_CAAM_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 17547.665309894102
+        },
+        {
+          "key": "trace_11",
+          "trace_id": "IV.CAAM.",
+          "channel": "IV.CAAM..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CAAM_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 16166.32041931614
+        },
+        {
+          "key": "trace_12",
+          "trace_id": "IV.CBAC.",
+          "channel": "IV.CBAC..HHE",
+          "source": "inputs/continuation/waveforms/IV_CBAC_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 533048.3370756595
+        },
+        {
+          "key": "trace_13",
+          "trace_id": "IV.CBAC.",
+          "channel": "IV.CBAC..HHN",
+          "source": "inputs/continuation/waveforms/IV_CBAC_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 368581.7735053925
+        },
+        {
+          "key": "trace_14",
+          "trace_id": "IV.CBAC.",
+          "channel": "IV.CBAC..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CBAC_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 184299.37181076582
+        },
+        {
+          "key": "trace_15",
+          "trace_id": "IV.CBAG.",
+          "channel": "IV.CBAG..HHE",
+          "source": "inputs/continuation/waveforms/IV_CBAG_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 3859.859073601752
+        },
+        {
+          "key": "trace_16",
+          "trace_id": "IV.CBAG.",
+          "channel": "IV.CBAG..HHN",
+          "source": "inputs/continuation/waveforms/IV_CBAG_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 3547.2252515651585
+        },
+        {
+          "key": "trace_17",
+          "trace_id": "IV.CBAG.",
+          "channel": "IV.CBAG..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CBAG_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 2787.2375545968453
+        },
+        {
+          "key": "trace_18",
+          "trace_id": "IV.CFMN.",
+          "channel": "IV.CFMN..HHE",
+          "source": "inputs/continuation/waveforms/IV_CFMN_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 256163.31950105308
+        },
+        {
+          "key": "trace_19",
+          "trace_id": "IV.CFMN.",
+          "channel": "IV.CFMN..HHN",
+          "source": "inputs/continuation/waveforms/IV_CFMN_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 369524.5747653484
+        },
+        {
+          "key": "trace_20",
+          "trace_id": "IV.CFMN.",
+          "channel": "IV.CFMN..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CFMN_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 279688.128157714
+        },
+        {
+          "key": "trace_21",
+          "trace_id": "IV.CMIS.",
+          "channel": "IV.CMIS..HHE",
+          "source": "inputs/continuation/waveforms/IV_CMIS_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 20623.48459358319
+        },
+        {
+          "key": "trace_22",
+          "trace_id": "IV.CMIS.",
+          "channel": "IV.CMIS..HHN",
+          "source": "inputs/continuation/waveforms/IV_CMIS_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 20852.504654441975
+        },
+        {
+          "key": "trace_23",
+          "trace_id": "IV.CMIS.",
+          "channel": "IV.CMIS..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CMIS_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 7726.8384060658545
+        },
+        {
+          "key": "trace_24",
+          "trace_id": "IV.CMSN.",
+          "channel": "IV.CMSN..HHE",
+          "source": "inputs/continuation/waveforms/IV_CMSN_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 2900.8091548348857
+        },
+        {
+          "key": "trace_25",
+          "trace_id": "IV.CMSN.",
+          "channel": "IV.CMSN..HHN",
+          "source": "inputs/continuation/waveforms/IV_CMSN_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 3588.5010009787616
+        },
+        {
+          "key": "trace_26",
+          "trace_id": "IV.CMSN.",
+          "channel": "IV.CMSN..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CMSN_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 2650.527563620627
+        },
+        {
+          "key": "trace_27",
+          "trace_id": "IV.CNIS.",
+          "channel": "IV.CNIS..HHE",
+          "source": "inputs/continuation/waveforms/IV_CNIS_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 6507.045865413542
+        },
+        {
+          "key": "trace_28",
+          "trace_id": "IV.CNIS.",
+          "channel": "IV.CNIS..HHN",
+          "source": "inputs/continuation/waveforms/IV_CNIS_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 6452.501557454111
+        },
+        {
+          "key": "trace_29",
+          "trace_id": "IV.CNIS.",
+          "channel": "IV.CNIS..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CNIS_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 16250.09142218289
+        },
+        {
+          "key": "trace_30",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHE",
+          "source": "inputs/continuation/waveforms/IV_COLB_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 29051.02991397762
+        },
+        {
+          "key": "trace_31",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHN",
+          "source": "inputs/continuation/waveforms/IV_COLB_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 17678.06910934602
+        },
+        {
+          "key": "trace_32",
+          "trace_id": "IV.COLB.",
+          "channel": "IV.COLB..HHZ",
+          "source": "inputs/continuation/waveforms/IV_COLB_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 14760.072342224086
+        },
+        {
+          "key": "trace_33",
+          "trace_id": "IV.CPIS.",
+          "channel": "IV.CPIS..HHE",
+          "source": "inputs/continuation/waveforms/IV_CPIS_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 39839.735269694866
+        },
+        {
+          "key": "trace_34",
+          "trace_id": "IV.CPIS.",
+          "channel": "IV.CPIS..HHN",
+          "source": "inputs/continuation/waveforms/IV_CPIS_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 34155.72822181853
+        },
+        {
+          "key": "trace_35",
+          "trace_id": "IV.CPIS.",
+          "channel": "IV.CPIS..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CPIS_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 51828.32520823588
+        },
+        {
+          "key": "trace_36",
+          "trace_id": "IV.CPOZ.",
+          "channel": "IV.CPOZ..HHE",
+          "source": "inputs/continuation/waveforms/IV_CPOZ_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 38565.543220233674
+        },
+        {
+          "key": "trace_37",
+          "trace_id": "IV.CPOZ.",
+          "channel": "IV.CPOZ..HHN",
+          "source": "inputs/continuation/waveforms/IV_CPOZ_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 44500.212148162485
+        },
+        {
+          "key": "trace_38",
+          "trace_id": "IV.CPOZ.",
+          "channel": "IV.CPOZ..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CPOZ_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 82578.23349350726
+        },
+        {
+          "key": "trace_39",
+          "trace_id": "IV.CRUS.",
+          "channel": "IV.CRUS..EHE",
+          "source": "inputs/continuation/waveforms/IV_CRUS_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 9061.824363623868
+        },
+        {
+          "key": "trace_40",
+          "trace_id": "IV.CRUS.",
+          "channel": "IV.CRUS..EHN",
+          "source": "inputs/continuation/waveforms/IV_CRUS_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 15987.895883762885
+        },
+        {
+          "key": "trace_41",
+          "trace_id": "IV.CRUS.",
+          "channel": "IV.CRUS..EHZ",
+          "source": "inputs/continuation/waveforms/IV_CRUS_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 7096.337961029356
+        },
+        {
+          "key": "trace_42",
+          "trace_id": "IV.CSFT.",
+          "channel": "IV.CSFT..HHE",
+          "source": "inputs/continuation/waveforms/IV_CSFT_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 50615.701920198044
+        },
+        {
+          "key": "trace_43",
+          "trace_id": "IV.CSFT.",
+          "channel": "IV.CSFT..HHN",
+          "source": "inputs/continuation/waveforms/IV_CSFT_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 47937.664720275905
+        },
+        {
+          "key": "trace_44",
+          "trace_id": "IV.CSFT.",
+          "channel": "IV.CSFT..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CSFT_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 30762.9772208975
+        },
+        {
+          "key": "trace_45",
+          "trace_id": "IV.CSOB.",
+          "channel": "IV.CSOB..HHE",
+          "source": "inputs/continuation/waveforms/IV_CSOB_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 43476.82487579991
+        },
+        {
+          "key": "trace_46",
+          "trace_id": "IV.CSOB.",
+          "channel": "IV.CSOB..HHN",
+          "source": "inputs/continuation/waveforms/IV_CSOB_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 28525.15885097992
+        },
+        {
+          "key": "trace_47",
+          "trace_id": "IV.CSOB.",
+          "channel": "IV.CSOB..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CSOB_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 23408.84515661198
+        },
+        {
+          "key": "trace_48",
+          "trace_id": "IV.CSTH.",
+          "channel": "IV.CSTH..HHE",
+          "source": "inputs/continuation/waveforms/IV_CSTH_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 48602.302406547446
+        },
+        {
+          "key": "trace_49",
+          "trace_id": "IV.CSTH.",
+          "channel": "IV.CSTH..HHN",
+          "source": "inputs/continuation/waveforms/IV_CSTH_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 61812.00524938019
+        },
+        {
+          "key": "trace_50",
+          "trace_id": "IV.CSTH.",
+          "channel": "IV.CSTH..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CSTH_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 38709.74005991937
+        },
+        {
+          "key": "trace_51",
+          "trace_id": "IV.CUMA.",
+          "channel": "IV.CUMA..HHE",
+          "source": "inputs/continuation/waveforms/IV_CUMA_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 14276.169481955072
+        },
+        {
+          "key": "trace_52",
+          "trace_id": "IV.CUMA.",
+          "channel": "IV.CUMA..HHN",
+          "source": "inputs/continuation/waveforms/IV_CUMA_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 10503.18929742162
+        },
+        {
+          "key": "trace_53",
+          "trace_id": "IV.CUMA.",
+          "channel": "IV.CUMA..HHZ",
+          "source": "inputs/continuation/waveforms/IV_CUMA_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 14220.545840247703
+        },
+        {
+          "key": "trace_54",
+          "trace_id": "IV.PTMR.",
+          "channel": "IV.PTMR..HHE",
+          "source": "inputs/continuation/waveforms/IV_PTMR_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 1549.7467897399747
+        },
+        {
+          "key": "trace_55",
+          "trace_id": "IV.PTMR.",
+          "channel": "IV.PTMR..HHN",
+          "source": "inputs/continuation/waveforms/IV_PTMR_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 1487.10224821562
+        },
+        {
+          "key": "trace_56",
+          "trace_id": "IV.PTMR.",
+          "channel": "IV.PTMR..HHZ",
+          "source": "inputs/continuation/waveforms/IV_PTMR_20250319T060000_20250319T120000.mseed",
+          "normalizer_counts": 1542.4525577230374
+        }
+      ],
+      "errors": [],
+      "data": "data/continuation/association_review/event_294.npz",
+      "review_status": "Waveform inspection examples; no automatic acceptance or manual ground-truth labels"
+    }
+  ],
+  "input_hashes": {
+    "picks.csv": "1687c9df8fbeb6a02a5349ff7c1333290a1f8670b652097b2ae2d1b07cb23b66",
+    "associations.csv": "c49815bd8ba33a6e5d4c6627f1e0fa4b628e87f7cec9070b004b92d55c406f27",
+    "initial_events.csv": "4b2525c09a2e061c15f1c7859710838ddd9e61ed8ed661a20ecd52067b7972a2"
+  },
+  "interpretation": "Necessary causality checks only; passing them does not validate an earthquake, depth or magnitude. No picks, associations or scientific selection were changed. Review examples are not the published S4/S12 panels."
+}

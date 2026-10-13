@@ -1,0 +1,38 @@
+{
+  "basis": "All six pages inspected from independently saved waveforms, without a published reference image. Limited visual inspection; not expert-validated phase or hybrid labels.",
+  "selection": "Four highest correlations and two highest CAAM SNRs among baseline 822 crossings; not a random sample.",
+  "findings": [
+    {
+      "candidate": 11,
+      "time": "2023-07-01T00:24:26.620000Z",
+      "observation": "Sustained oscillations before, during and after alignment; no convincing isolated onset in this displayed interval. Negative FI alone does not establish a hybrid."
+    },
+    {
+      "candidate": 50,
+      "time": "2025-03-19T02:52:46.000000Z",
+      "observation": "Clear impulsive wave packet at both stations, with later larger horizontal motion. Positive FI and this shape are compatible with ordinary earthquake body waves; a hybrid identity or family is not established."
+    },
+    {
+      "candidate": 337,
+      "time": "2025-03-19T22:27:39.220000Z",
+      "observation": "Large CAAM oscillatory pulses near alignment and +8 s lack a comparably visible COLB counterpart; no secure two-station hybrid confirmation."
+    },
+    {
+      "candidate": 622,
+      "time": "2025-03-20T10:11:22.400000Z",
+      "observation": "Sustained oscillations without a distinct common onset; measured signal power is below preceding-window power."
+    },
+    {
+      "candidate": 689,
+      "time": "2025-03-20T14:18:46.070000Z",
+      "observation": "Impulsive event visible at both stations, with positive FI. No family or hybrid classification follows from the threshold crossing."
+    },
+    {
+      "candidate": 820,
+      "time": "2025-03-20T23:28:24.320000Z",
+      "observation": "Strong CAAM pulses without a clear COLB counterpart; low FI is insufficient for confirmation."
+    }
+  ],
+  "confirmed_hybrids": 0,
+  "interpretation": "Inspection supports retaining these as unconfirmed crossings. No catalog-wide false-positive rate, event classification or onset truth is inferred from six examples."
+}

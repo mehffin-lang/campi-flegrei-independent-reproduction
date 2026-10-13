@@ -1,0 +1,46 @@
+{
+  "training_release": "f84c9c9dc6bb1501a95a833f6634199a63d4f3b3",
+  "tree_receipt": "inputs/resumption/trained_release_tree.json",
+  "permitted_weights": [
+    "models/phasenet_retrained.json",
+    "models/phasenet_retrained.pt"
+  ],
+  "metadata_requiring_verification": [
+    "models/stations.csv",
+    "models/stations_velest.dat"
+  ],
+  "excluded_author_code": [
+    "code/association.ipynb",
+    "code/cleaning_phasent_picks.ipynb",
+    "code/phase_picking.py"
+  ],
+  "excluded_derived_results": [
+    "models/1d_vmod_velest.mod",
+    "output/associated_phases.csv.zip",
+    "output/catalog.csv",
+    "output/focal_mechanism.csv",
+    "output/polarity.csv",
+    "output/s1.html"
+  ],
+  "unverified_background": [
+    "models/3d_vmod"
+  ],
+  "inspection": "Names/metadata only; no author code, picks, polarity table or derived outputs read. Training labels, original cleaned examples, splits and augmentation manifests are absent from this listed release.",
+  "routine_snapshot_candidate": {
+    "source": "https://doi.org/10.6084/m9.figshare.29940224.v1",
+    "metadata": "inputs/resumption/routine_candidate_metadata.json",
+    "decision": "Not used. Related publication describes January 2019--October 2024 selected Md>=0.5 events; it cannot provide the full 2005--March2025 or study-period all-magnitude snapshot. Only metadata and written selection inspected, not the result spreadsheet."
+  },
+  "ran": {
+    "pages": [
+      "inputs/resumption/ran_index.html",
+      "inputs/resumption/ran_login.html",
+      "inputs/resumption/ran_registration.html"
+    ],
+    "decision": "Public pages and registration/login readable. No credentials supplied; authenticated accelerometer download was not attempted with invented credentials. Public metadata remain usable."
+  },
+  "historical_catalog_archive": "Wayback availability query for the 2025 page near October 3, 2025 returned an empty archived_snapshots object. This does not prove that no snapshot exists elsewhere.",
+  "archived_release_check": "docs/zenodo_release_inventory.json",
+  "archived_weights": "R61 record 16562216, v1.0: both permitted model members match the current method files byte-for-byte. Only directory metadata and those two permitted model members were read.",
+  "training_gap": "Neither inspected Git release tree nor Zenodo ZIP directory lists original training waveforms, reference labels, split or augmentation manifests. The separately listed raw_picks.csv contains author-derived association picks and was not retrieved."
+}

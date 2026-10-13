@@ -55,12 +55,14 @@ for a0,a1,af in sorted(index['CAAM']):
             for st in [ca,cb]:st.detrend('demean');st.filter('bandpass',freqmin=.2,freqmax=6,corners=4)
             n=min(len(ca[0]),len(cb[0]));maximum={}
             for label,template in templates.items():
-                score=(corr(ca[0].data[:n],template['CAAM'])+corr(cb[0].data[:n],template['COLB']))/2
+                caam_score=corr(ca[0].data[:n],template['CAAM']);colb_score=corr(cb[0].data[:n],template['COLB'])
+                score=(caam_score+colb_score)/2
                 idx,_=find_peaks(score,height=.25,distance=800);idx=idx[(idx>=1000)&(idx<len(score)-1000)]
                 maximum[label]=float(score[1000:-1000].max())
-                for i in idx:candidates.append(dict(time=str(begin+i/100),template=label,score=float(score[i]),reviewed=False,caam_file=af,colb_file=bf))
+                for i in idx:candidates.append(dict(time=str(begin+i/100),template=label,score=float(score[i]),caam_score=float(caam_score[i]),colb_score=float(colb_score[i]),reviewed=False,caam_file=af,colb_file=bf))
             covered.append((a,b));intervals.append(dict(start=str(begin+10),end=str(begin+(n-800-1000)/100),valid_start_seconds=(n-800-2000+1)/100,caam_file=af,colb_file=bf,**maximum))
 pd.DataFrame(intervals).to_csv(OUT/'hybrid_scan_intervals.csv',index=False)
-pd.DataFrame(candidates,columns=['time','template','score','reviewed','caam_file','colb_file']).to_csv(OUT/'hybrid_candidates.csv',index=False)
-summary=dict(intervals=len(intervals),valid_hours=sum(r['valid_start_seconds'] for r in intervals)/3600,candidates=len(candidates),reviewed_hybrid_events=0,full_study_search_complete=False)
+pd.DataFrame(candidates,columns=['time','template','score','caam_score','colb_score','reviewed','caam_file','colb_file']).to_csv(OUT/'hybrid_candidates.csv',index=False)
+summary=dict(intervals=len(intervals),valid_hours=sum(r['valid_start_seconds'] for r in intervals)/3600,candidates=len(candidates),one_station_nonpositive_score=sum(min(r['caam_score'],r['colb_score'])<=0 for r in candidates),reviewed_hybrid_events=0,full_study_search_complete=False,
+    score_caveat='The documented two-station mean threshold can pass when one station has weak or negative similarity. Individual station scores are retained for review; no additional station threshold was imposed.')
 (OUT/'hybrid_summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(summary)

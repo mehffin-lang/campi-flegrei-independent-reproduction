@@ -1,15 +1,41 @@
-The CPOZ diagnostic contains 64 P-aligned observed waveforms. It does not implement the relocated ring-sector test.
+The CPOZ diagnostic contains 137 events and 274 HHZ/HHN traces, aligned on own P picks over -1 to +7 s and highpass filtered above 4 Hz. These now follow the written S12 window and band. The sector/coordinate ordering and onset validation are still absent.
 
 Spectral measurements were calculated for 822 of 822 template crossings. None is confirmed as a hybrid event; spectral windows use correlation alignment and still require onset/coda review.
 
-Catalog frequency-index screening measured 20631 station windows for 908 provisional events. Station FIs are averaged; no low-frequency candidate is classified as a confirmed hybrid without onset and coda review.
+Catalog frequency-index screening measured 21199 station windows for 1003 provisional events. Station FIs are averaged; no low-frequency candidate is classified as a confirmed hybrid without onset and coda review.
 
-The alternative-profile VELEST experiment used 120 provisional events. Both real precisions were attempted with identical serialized inputs.
+This screening lacked 4878 station-event windows and recorded 1 measurement failures. The saved failure is a waveform sample-count assertion, not an established archive-access failure; it remains unfilled.
 
-Maximum 32/64-bit differences were 0.000 km/s for Vp and 0.000 km/s for Vs, with 0.000 km in fitted depth.
+Diagnostic windows were saved for 9 negative-mean-FI candidates at 26 selected station windows. These are observations selected for review, not new event classifications.
+
+All 9 corresponding diagnostic pages were visually inspected. Persistent oscillations, impulsive packets with positive station FI, low-SNR negative-FI records, and strong earlier arrivals decaying through later windows occur. In particular, the CMIS windows for candidates 631 and 632 show apparent coda contamination. No hybrid was confirmed. This limited agent review supplies no expert-validated onset labels or catalog-wide accuracy estimate; its notes and hashes are retained in data/resumption/catalog\_frequency\_visual\_review.json.
+
+The 89 retained external routine-Md calibration matches span -1.10 to 1.33; 0 reach the written focal-mechanism sample's lower Md of 2.2. These are calibration reference values for independently associated candidates, not independent magnitude measurements or a bound on events outside this matched sample. No reviewed mechanism sample has been established.
+
+The preceding checkpoint had 53 conditional magnitudes, Mc=0.4 and b=1.01. The current checkpoint has 119, Mc=-0.5 and b=0.66. Coverage, association initialization and causality screening changed together; the separate contributions were not measured. This change prevents treating the earlier apparent agreement as a stable completeness or regional b-value result.
+
+The observed-window repeatability test used 119 own picks and returned 6 provisional associations with 79 assigned picks. Changing from one to three workers and changing the parent random state gave maximum coordinate and origin-time differences of 0.00000000 km and 0.000000 s after the per-cluster seed correction. This tests scheduling independence on these windows, not event or location accuracy.
+
+Of 822 mean-score template crossings, 30 have a nonpositive score at one station. The original mean-score selection is retained, but this exposes why crossing the mean threshold cannot itself confirm a two-station hybrid event.
+
+The alternative-profile VELEST experiment used 130 provisional events. Both real precisions were attempted with identical serialized inputs.
+
+Maximum 32/64-bit differences were 0.000 km/s for Vp and 0.000 km/s for Vs, with 0.010 km in fitted depth.
+
+The horizontal-coordinate check gives a maximum difference of 11.105 m in 2 locations. Identical serialized locations: False. A depth-only comparison is insufficient to claim full coordinate agreement.
+
+Maximum serialized origin-time and event-RMS differences are 0.010 s and 0.000 s. Printed resolution does not bound unprinted internal differences.
 
 Both runs pass the necessary positive-Vp-greater-than-Vs check. This ordering and numerical agreement do not replace reviewed phases or the documented regional calibration; no experimental fit is accepted for S6 or relocation.
 
-The 32-bit experiment has event-RMS aggregate 0.389 s.
+The 32-bit experiment has event-RMS aggregate 0.357 s.
 
-The 64-bit experiment has event-RMS aggregate 0.389 s.
+The 64-bit experiment has event-RMS aggregate 0.357 s.
+
+Causality screening finds 56 events with nonpositive S-P and 51 with nonpositive propagation times; 905 of 1003 pass both necessary checks. There are 66 S-only associations and 238 depth-boundary solutions. Flags are saved for all events; they are not a manual earthquake classifier. Events failing causality cannot enter the magnitude equations, calibration priors or VELEST experiment. Other provisional associations remain unvalidated.
+
+Finite PhaseNet-score exposure for continuous checkpoint inputs is 2591.439 P station-hours and 2364.086 S station-hours after the S exclusions. Earlier baseline files lack this telemetry. These units differ from observed channel-hours. SeisBench fills missing input components with zeros for inference; those values are not counted or plotted as observations. Short fragments without scores remain distinguishable from observed samples.
+
+Exploratory neighboring-event processing saved 9241 observed phase windows, measured 19580 channel pairs, and retained 811 under the declared correlation/coherence criteria. These are partial timing measurements on 721 unvalidated, causally consistent nonboundary events, not TomoDD results. Initial neighbor geometry and missing author window/weight settings remain limitations.
+
+For 226 S-wave pairs passing on both horizontal components, the median absolute delay difference is 0.0019 s and the maximum is 0.0162 s. This internal component check does not measure absolute phase accuracy or hypocentral uncertainty.

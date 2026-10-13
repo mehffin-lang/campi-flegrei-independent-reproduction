@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "classification": "Software repeatability test using own picks on original observations; not detection/location validation",
+  "picks_file": "data/continuation/picks.csv",
+  "picks_sha256": "1687c9df8fbeb6a02a5349ff7c1333290a1f8670b652097b2ae2d1b07cb23b66",
+  "selection_utc": [
+    "2025-03-19T11:54:50Z",
+    "2025-03-20T03:17:56Z"
+  ],
+  "duration_s": 40,
+  "picks": 119,
+  "associated_events": 6,
+  "assigned_picks": 79,
+  "workers": [
+    1,
+    3
+  ],
+  "different_parent_seeds": [
+    19,
+    701
+  ],
+  "maximum_origin_time_difference_s": 0.0,
+  "maximum_coordinate_difference_km": 0.0,
+  "assumption": "Independent cluster seed 42 + deterministic DBSCAN label; same permitted GaMMA equations and BGMM random_state=42."
+}

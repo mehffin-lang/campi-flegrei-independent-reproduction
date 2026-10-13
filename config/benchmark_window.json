@@ -1,0 +1,10 @@
+{
+  "station": "CSOB",
+  "start_utc": "2024-05-20T20:10:03Z",
+  "duration_s": 120,
+  "source_file": "inputs/resumption/S4_CSOB_20240520.mseed",
+  "selection": "S4A caption specifies CSOB, 120 seconds, two hours after the 2024 Md4.4 Solfatara earthquake. Interpret two hours literally from the official bulletin's 18:10:03 UTC time. Exact author window start is not specified in caption text.",
+  "context_source": "https://ingvterremoti.com/2024/05/20/sciame-sismico-ai-campi-flegrei-20-maggio-2024-comunicati-di-aggiornamento/",
+  "context_role": "Identifies the earthquake named by the written benchmark specification only. Not an input to independent detection, association, location or event filtering.",
+  "status": "Partial S4A counterpart; different exact window may have been used. No independent reference labels or accuracy estimate. Not a retraining demonstration."
+}

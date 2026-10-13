@@ -1,0 +1,40 @@
+{
+  "station": "CSOB",
+  "start_utc": "2024-05-20T20:10:03Z",
+  "duration_s": 120,
+  "source_file": "inputs/resumption/S4_CSOB_20240520.mseed",
+  "selection": "S4A caption specifies CSOB, 120 seconds, two hours after the 2024 Md4.4 Solfatara earthquake. Interpret two hours literally from the official bulletin's 18:10:03 UTC time. Exact author window start is not specified in caption text.",
+  "context_source": "https://ingvterremoti.com/2024/05/20/sciame-sismico-ai-campi-flegrei-20-maggio-2024-comunicati-di-aggiornamento/",
+  "context_role": "Identifies the earthquake named by the written benchmark specification only. Not an input to independent detection, association, location or event filtering.",
+  "status": "Partial S4A counterpart; different exact window may have been used. No independent reference labels or accuracy estimate. Not a retraining demonstration.",
+  "input_sha256": "4645e5484ae8ac44281312c52917630e46799782ee5c6cf46a3c0a8a6e890e04",
+  "models": [
+    {
+      "model": "original",
+      "metadata": "inputs/models/original.json.v1",
+      "metadata_sha256": "1479765420108672c0b0320ef8dc24c3d88776ae99f38455e0e92fa4b2bc9fef",
+      "weights": "inputs/models/original.pt.v1",
+      "weights_sha256": "184dd85b896eebf8d5967ee15a722a477fa2e4ce479a3b113ecbcb8a6419113f",
+      "counts": {
+        "P": 5,
+        "S": 5
+      }
+    },
+    {
+      "model": "retrained",
+      "metadata": "inputs/models/phasenet_retrained.json",
+      "metadata_sha256": "75cd9e14d6f2927d84ec684b44d815abffc6649f6d7751488ae9b1a35da45958",
+      "weights": "inputs/models/phasenet_retrained.pt",
+      "weights_sha256": "7f2b2d4345b82232ded67ea554794f7ff148bee235d50b1772f3516833500059",
+      "counts": {
+        "P": 6,
+        "S": 10
+      }
+    }
+  ],
+  "preprocessing": "Demean, causal four-pole 1 Hz highpass; released normalization/default overlap/blinding; threshold 0.3. Raw Z spectrogram: 256 samples, 192 overlap.",
+  "authors_predictions_used": false,
+  "training_repeated": false,
+  "reference_phase_labels": false,
+  "accuracy_estimated": false
+}

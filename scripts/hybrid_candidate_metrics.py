@@ -33,6 +33,7 @@ def main():
                 fi=np.log10(hi/lo) if min(lo,hi)>0 else np.nan
                 snr=10*np.log10(np.mean(signal**2)/np.mean(noise**2)) if np.mean(noise**2)>0 else np.nan
                 rows.append(dict(candidate=index,time=r.time,template=r.template,correlation=r.score,
+                                 caam_score=r.caam_score,colb_score=r.colb_score,
                                  FI=float(fi),power_SNR_dB=float(snr),caam_file=file,colb_file=r.colb_file,
                                  alignment='template correlation peak; onset unreviewed',status='unconfirmed threshold crossing'))
             except Exception as e:errors.append(dict(candidate=int(index),file=file,error=repr(e)))

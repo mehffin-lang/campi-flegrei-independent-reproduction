@@ -2,8 +2,8 @@
   "scope": "Exploratory alternative-profile precision experiment; not S6 or Table S1",
   "accepted_independent_result": false,
   "starting_profile": "data/continuation/alternative_starting_profile.csv",
-  "selection": "Positive travel time; >6 picks and initial azimuthal gap <180 degrees; not manually reviewed",
-  "events": 120,
+  "selection": "Causality-screened; positive travel time; >6 picks and initial azimuthal gap <180 degrees; not manually reviewed",
+  "events": 130,
   "runs": [
     {
       "bits": 32,
@@ -21,7 +21,7 @@
       "workdir": "tmp/continuation/velest_stability_32",
       "returncode": 0,
       "physical_velocity_check": true,
-      "rms_s": 0.38923000912057126
+      "rms_s": 0.3567039280799867
     },
     {
       "bits": 64,
@@ -41,14 +41,21 @@
       "workdir": "tmp/continuation/velest_stability_64",
       "returncode": 0,
       "physical_velocity_check": true,
-      "rms_s": 0.38923000912057126
+      "rms_s": 0.3567039280799867
     }
   ],
   "maximum_velocity_difference_km_s": {
     "Vp_km_s": 0.0,
     "Vs_km_s": 0.0
   },
-  "maximum_depth_difference_km": 0.0,
-  "numerically_agrees_at_output_resolution": true,
+  "maximum_depth_difference_km": 0.010000000000000009,
+  "maximum_horizontal_difference_m": 11.105023422160091,
+  "locations_with_horizontal_difference": 2,
+  "maximum_gap_difference_deg": 0.0,
+  "maximum_origin_time_difference_s": 0.01,
+  "maximum_rms_difference_s": 0.0,
+  "identical_serialized_models": true,
+  "identical_serialized_locations": false,
+  "precision_note": "Compare every serialized coordinate, not only depth. Locations are printed at 0.0001 degree and depths at 0.01 km; equality is not a bound on unprinted internal differences.",
   "interpretation": "Precision agreement tests numerical reproducibility only; physical velocity checks are separate. Exact profile, independently reviewed phases and validated regional calibration remain missing; these fits cannot authorize TomoDD/S7 or be used as S6 results."
 }

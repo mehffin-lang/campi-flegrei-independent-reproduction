@@ -1,7 +1,7 @@
 {
   "stations": 26,
   "channels": 83,
-  "response_covered_channel_hours": 4278.69390466306,
+  "response_covered_channel_hours": 7807.736810214718,
   "missing_response_channel_hours": 0.0,
   "missing_response_intervals": 0,
   "maximum_metadata_coordinate_difference_m": 16.906168732523646,

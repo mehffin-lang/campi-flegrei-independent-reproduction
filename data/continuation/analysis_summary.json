@@ -1,10 +1,10 @@
 {
-  "picks": 90017,
-  "p_picks": 13077,
-  "s_picks": 76940,
-  "events": 908,
-  "assigned_picks": 6526,
-  "processed_channel_hours": 4278.693904663061,
+  "picks": 126133,
+  "p_picks": 18545,
+  "s_picks": 107588,
+  "events": 1003,
+  "assigned_picks": 7268,
+  "processed_channel_hours": 7807.736810214718,
   "stations": [
     "CAAM",
     "CAWE",
@@ -33,7 +33,7 @@
     "CUMA",
     "PTMR"
   ],
-  "files": 608,
+  "files": 825,
   "checks": {
     "probability_bounds": true,
     "excluded_s_absent": true,

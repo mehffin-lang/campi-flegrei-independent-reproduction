@@ -1,0 +1,49 @@
+{
+  "basis": "All five pages of the current association_review_diagnostic.pdf were visually inspected after data generation. No published figure was consulted for these judgments.",
+  "selection": "One example per predefined category, maximal pick count then lowest index; not a random accuracy sample.",
+  "source_figure": "figures/association_review_diagnostic.pdf",
+  "source_figure_sha256": "a3f497393c9854d5006a1216137260aece1dd6c15b8b83f7573bd39d2f77637b",
+  "input_hashes": {
+    "picks.csv": "1687c9df8fbeb6a02a5349ff7c1333290a1f8670b652097b2ae2d1b07cb23b66",
+    "associations.csv": "c49815bd8ba33a6e5d4c6627f1e0fa4b628e87f7cec9070b004b92d55c406f27",
+    "initial_events.csv": "4b2525c09a2e061c15f1c7859710838ddd9e61ed8ed661a20ecd52067b7972a2"
+  },
+  "no_phase_edits_or_acceptance": true,
+  "findings": [
+    {
+      "event_index": 345,
+      "category": "S-only",
+      "saved_array": "data/continuation/association_review/event_345.npz",
+      "array_sha256": "3592ac77a96bfce859b9b439a6fecff03bf95ddb0acd383340b15fbe2a7d9a1d",
+      "note": "S-only picks lie well after visible onsets and major wave packets at several stations, including CPOZ. Possible coda mis-picks; no accepted origin or depth."
+    },
+    {
+      "event_index": 567,
+      "category": "nonpositive S-P",
+      "saved_array": "data/continuation/association_review/event_567.npz",
+      "array_sha256": "82af528427ff31c78eecc693ee16aca6e0f56799bdebdb51b0301863168f3aac",
+      "note": "A coherent recorded onset is visible across several stations, while CSOC contributes an earlier S-before-P pair and CSTH an early isolated S. A real signal does not validate these assignments."
+    },
+    {
+      "event_index": 105,
+      "category": "lower depth bound",
+      "saved_array": "data/continuation/association_review/event_105.npz",
+      "array_sha256": "35e284a9924e3ef6fed978c8085dc41dfdfdee33d26fdae4becd0f1df320761b",
+      "note": "Clear coherent P and later horizontal wave packets occur on several stations, with another packet roughly ten seconds after the provisional origin. The lower-bound solution can accompany a real recorded event; this display does not validate zero depth."
+    },
+    {
+      "event_index": 24,
+      "category": "upper depth bound",
+      "saved_array": "data/continuation/association_review/event_24.npz",
+      "array_sha256": "e1eeabed24315e86cf05c46544e7de008237129e28dbea4d5b80d2792e043df3",
+      "note": "Coherent energy starts before several assigned P marks, and the S marks lie in later energy. Late phase selection is plausible; the displayed signals do not establish an 8 km earthquake."
+    },
+    {
+      "event_index": 294,
+      "category": "most picks, passes causality",
+      "saved_array": "data/continuation/association_review/event_294.npz",
+      "array_sha256": "71d04d1ce1b25fb59d32d2c08469694d34c8adc8083b4fb4adca619c3b2cae4c",
+      "note": "Many stations show clear P onsets and later larger horizontal arrivals near own picks. This supports a real recorded event qualitatively, but does not independently calibrate phase times or depth."
+    }
+  ]
+}

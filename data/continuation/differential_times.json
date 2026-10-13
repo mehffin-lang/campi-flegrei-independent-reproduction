@@ -1,0 +1,34 @@
+{
+  "events": 721,
+  "neighbor_pairs": 4652,
+  "saved_waveform_windows": 9241,
+  "measured_channel_pairs": 19580,
+  "passing_measurements": 811,
+  "failures": 23,
+  "settings": {
+    "neighbors": 10,
+    "window_s": [
+      -0.25,
+      1.75
+    ],
+    "sample_rate_hz": 100,
+    "max_lag_s": 0.25,
+    "frequency_band_hz": [
+      1,
+      15
+    ],
+    "welch_nperseg": 64,
+    "welch_noverlap": 32,
+    "minimum_correlation": 0.6,
+    "minimum_mean_coherence": 0.6
+  },
+  "accepted_relocated_events": 0,
+  "provenance": "Own phase picks, own provisional alternative-model positions, original recordings and official instrument responses. No author products or routine catalog.",
+  "limitations": "Exploratory timing measurements only. Unreviewed phases and initial neighbor geometry remain uncertain. Tan does not specify the window, neighbor count, frequency estimation, coherence or lag thresholds used here. The fixed 2008 grid remains unverified; neither TomoDD round nor HypoDD uncertainties are produced.",
+  "horizontal_component_consistency": {
+    "pairs": 226,
+    "median_difference_s": 0.00187548148528681,
+    "maximum_difference_s": 0.016204921468799836,
+    "interpretation": "Agreement of two measured component delays, not absolute timing accuracy or location uncertainty."
+  }
+}

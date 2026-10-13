@@ -28,9 +28,9 @@
         "2025-03-20T23:42:47.160000Z"
       ],
       "exact_samples_and_times": true,
-      "direct_read_s": 0.6409323089756072,
-      "full_read_s": 0.2323292449582368,
-      "cached_slice_s": 0.035710931988433
+      "direct_read_s": 0.665619543986395,
+      "full_read_s": 0.21350846998393536,
+      "cached_slice_s": 0.03538361599203199
     },
     {
       "source": "inputs/continuation/waveforms/IV_CRUS_20250319T180000_20250320T000000.mseed",
@@ -58,9 +58,9 @@
         "2025-03-19T23:40:06.690000Z"
       ],
       "exact_samples_and_times": true,
-      "direct_read_s": 0.5968289510346949,
-      "full_read_s": 0.20751891704276204,
-      "cached_slice_s": 0.03421512106433511
+      "direct_read_s": 0.605933548999019,
+      "full_read_s": 0.20290050003677607,
+      "cached_slice_s": 0.035226068925112486
     },
     {
       "source": "inputs/continuation/waveforms/IV_CRUS_20250320T000000_20250320T060000.mseed",
@@ -88,9 +88,9 @@
         "2025-03-20T05:46:42.960000Z"
       ],
       "exact_samples_and_times": true,
-      "direct_read_s": 0.5085234169382602,
-      "full_read_s": 0.17707761097699404,
-      "cached_slice_s": 0.03371363296173513
+      "direct_read_s": 0.5258126219268888,
+      "full_read_s": 0.19221276498865336,
+      "cached_slice_s": 0.03532559296581894
     }
   ],
   "command": ".venv/bin/python tests/check_window_reads.py",

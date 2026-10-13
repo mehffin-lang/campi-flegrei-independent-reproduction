@@ -1,0 +1,9 @@
+{
+  "selected_candidates": 6,
+  "saved_component_windows": 36,
+  "failures": [],
+  "selection": "Highest four independent mean correlations plus highest two CAAM power SNRs, unique candidates; diagnostic selection, not a random sample.",
+  "automatic_confirmations": 0,
+  "manual_labels_generated": false,
+  "limitations": "A spectral score or correlation crossing is not an event classification. Full onset/coda review and three-year exposure remain incomplete."
+}

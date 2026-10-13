@@ -46,7 +46,7 @@
     ],
     "partial_panels": [],
     "independent_files": [],
-    "missing": "Panels A and B need multiyear calibrated/relocated events and magnitudes. The current 908 initial associations remain provisional.",
+    "missing": "Panels A and B need multiyear calibrated/relocated events and magnitudes. The current 1003 initial associations remain provisional.",
     "caption": "Seismicity rates by region and depth versus time are not reproduced."
   },
   {
@@ -111,7 +111,7 @@
       "figures/continuation_coverage.pdf"
     ],
     "missing": "",
-    "caption": "Partial: 608 processed files, 26 station names and 4278.694 channel-hours after union of overlapping intervals. Empty intervals are not connected or counted as coverage."
+    "caption": "Partial: 825 processed files, 26 station names and 7807.737 channel-hours after union of overlapping intervals. Empty intervals are not connected or counted as coverage."
   },
   {
     "figure": "S2",
@@ -173,10 +173,17 @@
       "S4A",
       "S4B"
     ],
-    "partial_panels": [],
-    "independent_files": [],
-    "missing": "Panels A and B were not generated for the exact CSOB swarm and CMIS noise examples. Other unlabeled inference comparisons remain diagnostics.",
-    "caption": "The original benchmark examples and a labeled accuracy comparison are not reproduced."
+    "partial_panels": [
+      "S4A"
+    ],
+    "independent_files": [
+      "figures/figure_S4A.pdf"
+    ],
+    "missing": "S4B: exact CMIS noise-window timing and reference labels are unavailable. Other calendar-window diagnostics are not inserted as that panel.",
+    "caption": "Partial S4A inference comparison on original CSOB observations, 20 May 2024 20:10:03--20:12:03 UTC. The caption's two-hour offset is interpreted literally; exact published alignment is unverified. Original weights: 5 P and 5 S; retrained weights: 6 P and 10 S. No labeled accuracy or retraining claim.",
+    "file_labels": [
+      "S4A"
+    ]
   },
   {
     "figure": "S5",
@@ -279,7 +286,7 @@
       "figures/figure_S8_pilot.pdf"
     ],
     "missing": "",
-    "caption": "Partial amplitude-ratio pilot: 53 provisional magnitudes from independent observations, with routine Md as the documented calibration prior. A is not an independent validation of that prior. B is a limited-sample histogram with a conditional likelihood estimate, not the full-period completeness or b-value result. Locations are initial associations, before final relocation.",
+    "caption": "Partial amplitude-ratio pilot: 119 provisional magnitudes from independent observations, with routine Md as the documented calibration prior. A is not an independent validation of that prior. B is a limited-sample histogram with a conditional likelihood estimate, not the full-period completeness or b-value result. Locations are initial associations, before final relocation.",
     "file_labels": [
       "S8A--B"
     ]
@@ -372,7 +379,7 @@
     ],
     "partial_panels": [],
     "independent_files": [],
-    "missing": "Panels A--H need relocated sector selections and manual depth review. 64 independent CPOZ P arrivals now exist, but the required sector gathers remain unfinished.",
+    "missing": "Panels A--H need relocated sector selections and manual depth review. 137 independent CPOZ P arrivals now exist, but the required sector gathers remain unfinished.",
     "caption": "Sector views and six arrival-aligned waveform gathers are not reproduced."
   },
   {

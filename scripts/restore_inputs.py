@@ -34,5 +34,14 @@ if __name__=='__main__':
                 p=(ROOT/row['file']).resolve();assert p.is_relative_to(ROOT/'inputs/revision')
                 raw=z.read(row['file']);assert hashlib.sha256(raw).hexdigest()==row['sha256']
                 if not p.exists():p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(raw)
+        meta=json.loads((ROOT/'docs/resumption_source_bundle.json').read_text());bundle=ROOT/meta['file']
+        assert hashlib.sha256(bundle.read_bytes()).hexdigest()==meta['sha256']
+        known={r['file'] for r in rows};rows += [r for r in meta['members'] if r['file'] not in known]
+        with zipfile.ZipFile(bundle) as z:
+            assert set(z.namelist())=={r['file'] for r in meta['members']} and z.testzip() is None
+            for row in meta['members']:
+                p=(ROOT/row['file']).resolve();assert p.is_relative_to(ROOT/'inputs/resumption')
+                raw=z.read(row['file']);assert hashlib.sha256(raw).hexdigest()==row['sha256']
+                if not p.exists():p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(raw)
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         for name in pool.map(restore,rows):print('Verified',name,flush=True)

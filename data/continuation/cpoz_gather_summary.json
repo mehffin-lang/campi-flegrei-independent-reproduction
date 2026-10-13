@@ -1,7 +1,14 @@
 {
-  "associated_picks": 64,
-  "gathers": 64,
+  "associated_picks": 137,
+  "gathers": 137,
+  "component_traces": 274,
   "failures": [],
   "relocated_sector_gathers": 0,
-  "status": "Reproduction diagnostic only; initial depths are not accepted locations. Manual polarity, onset and suspicious-depth reviews remain incomplete."
+  "window_s": [
+    -1,
+    7
+  ],
+  "filter": "4-Hz causal four-pole highpass, 15 s surrounding context when available",
+  "assumptions": "Paper specifies >4 Hz and an 8 s -1/+7 window on HHZ/HHN, but not filter order/causality. Normalization is per trace. Time order replaces unavailable sector/coordinate order only in this explicitly labeled diagnostic.",
+  "status": "Reproduction diagnostic only; initial depths are not accepted locations. Onset and suspicious-depth reviews remain incomplete."
 }

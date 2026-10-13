@@ -1204,6 +1204,181 @@
     "retrieved_utc": "2026-10-12T21:23:56.276170+00:00"
   },
   {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220121T180000_20220122T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-21T17%3A59%3A30.000000Z&end=2022-01-22T00%3A00%3A30.000000Z",
+    "bytes": 3700224,
+    "sha256": "cf0f127d9aa2b1c24db770b3268595466d8c5fda32b32fc6bf4a654da59739b5",
+    "retrieved_utc": "2026-10-13T00:08:11.451512+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220122T000000_20220122T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-21T23%3A59%3A30.000000Z&end=2022-01-22T06%3A00%3A30.000000Z",
+    "bytes": 4216320,
+    "sha256": "6799286c867e6d6737c0c7eacc06bb50bcee1488b32a8e5b40569105071e3862",
+    "retrieved_utc": "2026-10-13T00:08:48.838659+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220122T060000_20220122T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-22T05%3A59%3A30.000000Z&end=2022-01-22T12%3A00%3A30.000000Z",
+    "bytes": 3350528,
+    "sha256": "8b09ac6c067eae72c1c4f0ba585b68cd3772ae26b564b1be6ff977d048e41e73",
+    "retrieved_utc": "2026-10-13T00:10:09.816170+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220122T120000_20220122T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-22T11%3A59%3A30.000000Z&end=2022-01-22T18%3A00%3A30.000000Z",
+    "bytes": 2974720,
+    "sha256": "8b5634afae928d5db74b5efacf5b4d36f493dd3ddbc11ccfb28586bae92c4498",
+    "retrieved_utc": "2026-10-13T00:11:44.573907+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220122T180000_20220123T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+    "bytes": 3019776,
+    "sha256": "eedab45645b41d61654e5e5a68150d0f1d64e0f910b441e1db84b6bab92ad2d7",
+    "retrieved_utc": "2026-10-13T00:13:08.508402+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220123T000000_20220123T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-22T23%3A59%3A30.000000Z&end=2022-01-23T06%3A00%3A30.000000Z",
+    "bytes": 3147264,
+    "sha256": "93707d8ceaeb97474a97062cebb21960b3cafd40fe8473ddde68dbbca4b23352",
+    "retrieved_utc": "2026-10-13T00:14:36.305360+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220123T060000_20220123T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-23T05%3A59%3A30.000000Z&end=2022-01-23T12%3A00%3A30.000000Z",
+    "bytes": 3093504,
+    "sha256": "a058a39ae91d69986f25340a74092a41d40aa7952958b1acb1e6a19ee57ac754",
+    "retrieved_utc": "2026-10-13T00:15:39.830563+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220123T120000_20220123T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+    "bytes": 3275776,
+    "sha256": "34b10806303ae480cc458d761ed705af38268aac00678430e449ae29f2d16808",
+    "retrieved_utc": "2026-10-13T00:16:43.143659+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220123T180000_20220124T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+    "bytes": 2738688,
+    "sha256": "2f930516b485575d7662b83bc87cd7b9b4395f36ab840c8db6f306056d0d28ee",
+    "retrieved_utc": "2026-10-13T00:17:49.386834+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220124T000000_20220124T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-23T23%3A59%3A30.000000Z&end=2022-01-24T06%3A00%3A30.000000Z",
+    "bytes": 2845184,
+    "sha256": "90fbd521f1c07b6663d738329cc08d0d825dcea86bb2db797216e8f0339ed6be",
+    "retrieved_utc": "2026-10-13T00:19:02.388406+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220124T060000_20220124T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+    "bytes": 3675648,
+    "sha256": "7cab27239b8d452b3f1f18a9d17ed9778011db7e9a2bad52bdf0ccb39ae5881a",
+    "retrieved_utc": "2026-10-13T00:20:17.529528+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220124T120000_20220124T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+    "bytes": 3739648,
+    "sha256": "3c0763ee108b2c24176b657367213e6df08159b7f5caea645d5ea66f2de713f4",
+    "retrieved_utc": "2026-10-13T00:21:16.810017+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220124T180000_20220125T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+    "bytes": 3506176,
+    "sha256": "4328db9929ec04f9ac42be76bd7d0884b2c4d0d7509613552f6d1f38e9b90ae1",
+    "retrieved_utc": "2026-10-13T00:21:59.510924+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220125T000000_20220125T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-24T23%3A59%3A30.000000Z&end=2022-01-25T06%3A00%3A30.000000Z",
+    "bytes": 3423744,
+    "sha256": "7d90d15453e80ced0c348d7d30e7d65b3bdef1148d2e970fe003927f3eac5de2",
+    "retrieved_utc": "2026-10-13T00:22:21.678090+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220125T060000_20220125T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+    "bytes": 3115008,
+    "sha256": "3edeb3917d66ec80bf58816e7814c1ae1b59f366ce5315d5648d315534e5be28",
+    "retrieved_utc": "2026-10-13T00:23:11.375344+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220125T120000_20220125T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-25T11%3A59%3A30.000000Z&end=2022-01-25T18%3A00%3A30.000000Z",
+    "bytes": 2715648,
+    "sha256": "7ef062d04055f4f3b86d5575af7d61c6c1713eb691166795e34e16f2f6a97bbc",
+    "retrieved_utc": "2026-10-13T00:23:59.924080+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220125T180000_20220126T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-25T17%3A59%3A30.000000Z&end=2022-01-26T00%3A00%3A30.000000Z",
+    "bytes": 2605056,
+    "sha256": "c91ef5b822455446ee5fb851f1f59cd3ca985b8c4febb04b8d72ec6b84cb2214",
+    "retrieved_utc": "2026-10-13T00:24:45.070575+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220126T000000_20220126T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-25T23%3A59%3A30.000000Z&end=2022-01-26T06%3A00%3A30.000000Z",
+    "bytes": 2669056,
+    "sha256": "feaeb7f63cb4f9740ee3072d69fbd0f5462b426ba5f1a5b9e513e905cb1db88e",
+    "retrieved_utc": "2026-10-13T00:25:36.671145+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220126T060000_20220126T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-26T05%3A59%3A30.000000Z&end=2022-01-26T12%3A00%3A30.000000Z",
+    "bytes": 2925056,
+    "sha256": "f3467815e0bbc128d321231b20d5855ce274d536e46ec1148a36dcf8f640d055",
+    "retrieved_utc": "2026-10-13T00:26:15.501325+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220126T120000_20220126T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-26T11%3A59%3A30.000000Z&end=2022-01-26T18%3A00%3A30.000000Z",
+    "bytes": 2891264,
+    "sha256": "56109a596ac3d0c36cc57eed52a33fc0a0e62b720365596997189e9ce175a2b0",
+    "retrieved_utc": "2026-10-13T00:27:00.429595+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220126T180000_20220127T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-26T17%3A59%3A30.000000Z&end=2022-01-27T00%3A00%3A30.000000Z",
+    "bytes": 2655744,
+    "sha256": "a12a197d5cb0c07ab4be08d64a77c8a935bdde66bc032aeeddbb1840faa1c6a3",
+    "retrieved_utc": "2026-10-13T00:27:44.496528+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220127T000000_20220127T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-26T23%3A59%3A30.000000Z&end=2022-01-27T06%3A00%3A30.000000Z",
+    "bytes": 2649088,
+    "sha256": "2a352ea82889d76fff435da751a1223f41c6d711f34f13c2f11f4b49a36879a3",
+    "retrieved_utc": "2026-10-13T00:28:26.382616+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220127T060000_20220127T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-27T05%3A59%3A30.000000Z&end=2022-01-27T12%3A00%3A30.000000Z",
+    "bytes": 2895360,
+    "sha256": "a6956d9604a68c90bcc35cc08ec4b854083d78e45a22356580c856a26d77a1ea",
+    "retrieved_utc": "2026-10-13T00:28:54.300954+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220127T120000_20220127T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-27T11%3A59%3A30.000000Z&end=2022-01-27T18%3A00%3A30.000000Z",
+    "bytes": 2795520,
+    "sha256": "7a10bc8ec96001b4324b21f7d7e8b17a0a60fbf36999df2fc1e786019bd4f222",
+    "retrieved_utc": "2026-10-13T00:29:26.917835+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220127T180000_20220128T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-27T17%3A59%3A30.000000Z&end=2022-01-28T00%3A00%3A30.000000Z",
+    "bytes": 2545152,
+    "sha256": "63a6d2de839aab94f53b1f4eabbd0bbd9295a390b34e22b9ca8180d0e2a5ef88",
+    "retrieved_utc": "2026-10-13T00:30:22.408645+00:00"
+  },
+  {
     "file": "inputs/continuation/waveforms/IV_CFB1_20220401T000000_20220401T003000.mseed",
     "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-03-31T23%3A59%3A30.000000Z&end=2022-04-01T00%3A30%3A30.000000Z",
     "bytes": 260096,
@@ -1456,6 +1631,174 @@
     "retrieved_utc": "2026-10-12T21:23:56.853289+00:00"
   },
   {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220121T180000_20220122T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-21T17%3A59%3A30.000000Z&end=2022-01-22T00%3A00%3A30.000000Z",
+    "bytes": 16145408,
+    "sha256": "f36321f751a008b64e512252408412b1b067e90153c75817655b8c390e019947",
+    "retrieved_utc": "2026-10-13T00:08:11.496760+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220122T000000_20220122T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-21T23%3A59%3A30.000000Z&end=2022-01-22T06%3A00%3A30.000000Z",
+    "bytes": 16142336,
+    "sha256": "034a40dc8322cf2dc7214d2519a78497da1fa9e53eb3f1dfc1d97281cec7f696",
+    "retrieved_utc": "2026-10-13T00:08:58.612674+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220122T060000_20220122T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-22T05%3A59%3A30.000000Z&end=2022-01-22T12%3A00%3A30.000000Z",
+    "bytes": 16150016,
+    "sha256": "eae0bbf9c2ca6135422391449b75f7ac8904302f9b8ce0c4cbed690449bd992a",
+    "retrieved_utc": "2026-10-13T00:10:24.915294+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220122T120000_20220122T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-22T11%3A59%3A30.000000Z&end=2022-01-22T18%3A00%3A30.000000Z",
+    "bytes": 16150528,
+    "sha256": "3970ba2e87af4b7c08895bac261e350942af68cb238da16615f5f50ce69c94ae",
+    "retrieved_utc": "2026-10-13T00:11:45.409772+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220122T180000_20220123T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+    "bytes": 16145920,
+    "sha256": "b34db16fcd5a1afc9bb7ebce89c0a6dc09b358853dc09908e58ae2bfafa3d06c",
+    "retrieved_utc": "2026-10-13T00:13:15.181615+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220123T000000_20220123T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-22T23%3A59%3A30.000000Z&end=2022-01-23T06%3A00%3A30.000000Z",
+    "bytes": 16037888,
+    "sha256": "567c35662a12718b1120928eb0b241604cead05c440ba3cd26b6d01b4eff543b",
+    "retrieved_utc": "2026-10-13T00:14:39.552032+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220123T060000_20220123T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-23T05%3A59%3A30.000000Z&end=2022-01-23T12%3A00%3A30.000000Z",
+    "bytes": 16144384,
+    "sha256": "f31fd7e5d47cead9fc887dc08a0495ba33d774803a31439b6f8260cfc7619431",
+    "retrieved_utc": "2026-10-13T00:15:43.023526+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220123T120000_20220123T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+    "bytes": 16151040,
+    "sha256": "df214c719e2871b86c7a925aee1c220b3bfd588e6f819d740780309ea93e4e40",
+    "retrieved_utc": "2026-10-13T00:16:46.348368+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220123T180000_20220124T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+    "bytes": 16133632,
+    "sha256": "e6cacb6cb92fde3b440f81c150d68b781acc82c4730285586a98ba2417b04744",
+    "retrieved_utc": "2026-10-13T00:17:51.782770+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220124T000000_20220124T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-23T23%3A59%3A30.000000Z&end=2022-01-24T06%3A00%3A30.000000Z",
+    "bytes": 15965184,
+    "sha256": "f777660ef15167f883439974f263baeb815aec9fb48a4a155de1bd4446a47a22",
+    "retrieved_utc": "2026-10-13T00:19:06.535929+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220124T060000_20220124T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+    "bytes": 16151040,
+    "sha256": "4245d5c0b5377865cb5f36b1b76f9c7de572ba3ec384ba31088583f9ea231ab4",
+    "retrieved_utc": "2026-10-13T00:20:20.058590+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220124T120000_20220124T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+    "bytes": 16150528,
+    "sha256": "423d883f092959c1a21255f8caa2491aa3e426e90123226dee236538e9ef98d4",
+    "retrieved_utc": "2026-10-13T00:21:21.627253+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220124T180000_20220125T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+    "bytes": 16113664,
+    "sha256": "2ae5bb1914c49e94b290424681d9b456ff878986b3422f233f6dae76e9324d01",
+    "retrieved_utc": "2026-10-13T00:22:02.309019+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220125T000000_20220125T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-24T23%3A59%3A30.000000Z&end=2022-01-25T06%3A00%3A30.000000Z",
+    "bytes": 15992320,
+    "sha256": "7889aa5014063e7e76176b09158cb48343b2c671c67cc52ccdfd54eaaedc93c2",
+    "retrieved_utc": "2026-10-13T00:22:22.291120+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220125T060000_20220125T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+    "bytes": 16151040,
+    "sha256": "664c5ec7e7c6abeeccfb0c3a2fd41902de78b00819a89291914a5cd874c13590",
+    "retrieved_utc": "2026-10-13T00:23:13.849736+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220125T120000_20220125T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-25T11%3A59%3A30.000000Z&end=2022-01-25T18%3A00%3A30.000000Z",
+    "bytes": 16151040,
+    "sha256": "ab799b2d2d2dbdc30f672ef93e95b39d3dae19cefd59f383e4dbd030eb50ee46",
+    "retrieved_utc": "2026-10-13T00:24:03.050132+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220125T180000_20220126T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-25T17%3A59%3A30.000000Z&end=2022-01-26T00%3A00%3A30.000000Z",
+    "bytes": 16124416,
+    "sha256": "3e1687580f14a5df71170be7b3197692f32148939f0b4bbea0e246ed9be9ffb0",
+    "retrieved_utc": "2026-10-13T00:24:46.144355+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220126T000000_20220126T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-25T23%3A59%3A30.000000Z&end=2022-01-26T06%3A00%3A30.000000Z",
+    "bytes": 16019456,
+    "sha256": "10c4574339aad4e827f208ec16808f38cab5f1e7b97f48c85e39b8048f69c63a",
+    "retrieved_utc": "2026-10-13T00:25:37.610481+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220126T060000_20220126T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-26T05%3A59%3A30.000000Z&end=2022-01-26T12%3A00%3A30.000000Z",
+    "bytes": 16151040,
+    "sha256": "3e5d8ca589976640031d47f61efa61a9be379930b5a7b4cb8053d03e56d37844",
+    "retrieved_utc": "2026-10-13T00:26:15.545614+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220126T120000_20220126T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-26T11%3A59%3A30.000000Z&end=2022-01-26T18%3A00%3A30.000000Z",
+    "bytes": 16150528,
+    "sha256": "3aed5959e63f866556314220ac35fdf1a6ea1086618a05cf9dcf7218ffc3a1cb",
+    "retrieved_utc": "2026-10-13T00:27:00.470629+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220126T180000_20220127T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-26T17%3A59%3A30.000000Z&end=2022-01-27T00%3A00%3A30.000000Z",
+    "bytes": 16129536,
+    "sha256": "16154e5431015d0c26e9a5c7ec89be86e773196fa04312e844ae705eb42cb113",
+    "retrieved_utc": "2026-10-13T00:27:49.887052+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220127T000000_20220127T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-26T23%3A59%3A30.000000Z&end=2022-01-27T06%3A00%3A30.000000Z",
+    "bytes": 16041472,
+    "sha256": "effea895d9297241ff9853c520ffe162c16cd0c1384dbf5ce95f0343b1791ae5",
+    "retrieved_utc": "2026-10-13T00:28:27.765312+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220127T060000_20220127T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-27T05%3A59%3A30.000000Z&end=2022-01-27T12%3A00%3A30.000000Z",
+    "bytes": 16151040,
+    "sha256": "8e03ef37b5e59ced47ef6074c0bb63609541e014cb0e0459f9dd7c8feda6a0c7",
+    "retrieved_utc": "2026-10-13T00:28:55.174565+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220127T120000_20220127T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-27T11%3A59%3A30.000000Z&end=2022-01-27T18%3A00%3A30.000000Z",
+    "bytes": 16151040,
+    "sha256": "679930809308c6add84c0b0652ef068deaee5b12bd0c74e8bc50512d3d5956a9",
+    "retrieved_utc": "2026-10-13T00:29:32.112920+00:00"
+  },
+  {
     "file": "inputs/continuation/waveforms/IV_CFMN_20220401T000000_20220401T003000.mseed",
     "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-03-31T23%3A59%3A30.000000Z&end=2022-04-01T00%3A30%3A30.000000Z",
     "bytes": 1382400,
@@ -1631,6 +1974,174 @@
     "retrieved_utc": "2026-10-12T21:24:24.126260+00:00"
   },
   {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220121T180000_20220122T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-21T17%3A59%3A30.000000Z&end=2022-01-22T00%3A00%3A30.000000Z",
+    "bytes": 16137216,
+    "sha256": "646111d93605d5fc1812ac1094b612155624b304e8e76d188f2a6ab09272b09f",
+    "retrieved_utc": "2026-10-13T00:08:11.541089+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220122T000000_20220122T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-21T23%3A59%3A30.000000Z&end=2022-01-22T06%3A00%3A30.000000Z",
+    "bytes": 16144384,
+    "sha256": "d57e52e755cef535397c0e55950f921b130915e91060430e79545c3819352ebc",
+    "retrieved_utc": "2026-10-13T00:09:05.410751+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220122T060000_20220122T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-22T05%3A59%3A30.000000Z&end=2022-01-22T12%3A00%3A30.000000Z",
+    "bytes": 15917056,
+    "sha256": "3521bb0dff461ac0d8d2573e4b257c6c203ea88804800009c4297e878ff0449f",
+    "retrieved_utc": "2026-10-13T00:10:26.663515+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220122T120000_20220122T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-22T11%3A59%3A30.000000Z&end=2022-01-22T18%3A00%3A30.000000Z",
+    "bytes": 15659008,
+    "sha256": "be0e40504922f257d590b12a0150342654a1095520564cdb75bd7a9ace19923b",
+    "retrieved_utc": "2026-10-13T00:12:00.441108+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220122T180000_20220123T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+    "bytes": 15938560,
+    "sha256": "384011bc491ca1188ae53e0343542332ae615105e1f0a04ef24356f42fa944ee",
+    "retrieved_utc": "2026-10-13T00:13:28.980647+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220123T000000_20220123T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-22T23%3A59%3A30.000000Z&end=2022-01-23T06%3A00%3A30.000000Z",
+    "bytes": 15887360,
+    "sha256": "c57ef49035fa322ee99ae816dc764fceda936f1de5411b2923f48c5cd0e6be5d",
+    "retrieved_utc": "2026-10-13T00:14:47.460088+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220123T060000_20220123T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-23T05%3A59%3A30.000000Z&end=2022-01-23T12%3A00%3A30.000000Z",
+    "bytes": 15672320,
+    "sha256": "a3c778556a7543bc0da81f81a7d47e8c0404c0b8757f1c52f682bc14cd46dbe3",
+    "retrieved_utc": "2026-10-13T00:15:49.584803+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220123T120000_20220123T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+    "bytes": 15735296,
+    "sha256": "5e671ab515c722fd1a56c40fb8150e76ca48bf364ee2a468e403de793cea2767",
+    "retrieved_utc": "2026-10-13T00:16:59.422215+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220123T180000_20220124T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+    "bytes": 14754816,
+    "sha256": "44e8d0f63162cc20fdcf0ed599d745e2a3b7d8a309d2ff00038a3c853e758ece",
+    "retrieved_utc": "2026-10-13T00:18:01.016752+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220124T000000_20220124T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-23T23%3A59%3A30.000000Z&end=2022-01-24T06%3A00%3A30.000000Z",
+    "bytes": 14047232,
+    "sha256": "09bc0a2f3da900050bd7bd7484f96af110daf7411c4ef97e06f0c4ff55fdf2d8",
+    "retrieved_utc": "2026-10-13T00:19:18.947188+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220124T060000_20220124T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+    "bytes": 16082432,
+    "sha256": "7c26bd4677a2d78ec250fedb084a49e939629561d248d33ac56ef2f7833ffbbc",
+    "retrieved_utc": "2026-10-13T00:20:31.991207+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220124T120000_20220124T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+    "bytes": 16094720,
+    "sha256": "9d7415f4ec084e1d07f0576bf7b759c116b3ae57cfb258b1e6711ea296f29f00",
+    "retrieved_utc": "2026-10-13T00:21:26.060380+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220124T180000_20220125T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+    "bytes": 16129024,
+    "sha256": "b56add6ea30071e94631e6bb9ed61614485eadb89f1e5fedf20a785ebe069fcb",
+    "retrieved_utc": "2026-10-13T00:22:10.617335+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220125T000000_20220125T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-24T23%3A59%3A30.000000Z&end=2022-01-25T06%3A00%3A30.000000Z",
+    "bytes": 16092672,
+    "sha256": "710380e3e39b7c119f46c53ee3d7d44fb64cd6323679b578d1fcdada6fb03cbd",
+    "retrieved_utc": "2026-10-13T00:22:34.607761+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220125T060000_20220125T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+    "bytes": 15774720,
+    "sha256": "34ef902b91fbbf9191855a8da7a12c1f77c163379077f1b835c414adbf146e28",
+    "retrieved_utc": "2026-10-13T00:23:24.298365+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220125T120000_20220125T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-25T11%3A59%3A30.000000Z&end=2022-01-25T18%3A00%3A30.000000Z",
+    "bytes": 14902784,
+    "sha256": "bbc97264968ff51c15d9356cd4b00afe9a5e07be4d4cd9861c2d0231fb457d6e",
+    "retrieved_utc": "2026-10-13T00:24:09.919327+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220125T180000_20220126T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-25T17%3A59%3A30.000000Z&end=2022-01-26T00%3A00%3A30.000000Z",
+    "bytes": 13334016,
+    "sha256": "6c7fb439a0848aa8e1fe435f94b00c2f6ef8176e00affa5fad08616b54a1cb4d",
+    "retrieved_utc": "2026-10-13T00:24:57.776807+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220126T000000_20220126T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-25T23%3A59%3A30.000000Z&end=2022-01-26T06%3A00%3A30.000000Z",
+    "bytes": 14036992,
+    "sha256": "cd2e67c8506fdcb50fa0c002c1d29b0e8eea38debcffc0d8e433603b921d8bf0",
+    "retrieved_utc": "2026-10-13T00:25:45.462870+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220126T060000_20220126T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-26T05%3A59%3A30.000000Z&end=2022-01-26T12%3A00%3A30.000000Z",
+    "bytes": 14875136,
+    "sha256": "6213303ce90e36fd97a83ff9c639793c7ce400f307f4de7c425116bae5569819",
+    "retrieved_utc": "2026-10-13T00:26:21.504738+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220126T120000_20220126T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-26T11%3A59%3A30.000000Z&end=2022-01-26T18%3A00%3A30.000000Z",
+    "bytes": 15434240,
+    "sha256": "26028ae7bf012373302f3e7e0661ffc1c1d5b70ccd99c9864973fa9e8a40ca72",
+    "retrieved_utc": "2026-10-13T00:27:09.085507+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220126T180000_20220127T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-26T17%3A59%3A30.000000Z&end=2022-01-27T00%3A00%3A30.000000Z",
+    "bytes": 15428608,
+    "sha256": "2dfd21d2302f272bcbf0596da9653314e54d37679ea1e3c945843ae11f37ab10",
+    "retrieved_utc": "2026-10-13T00:27:53.259566+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220127T000000_20220127T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-26T23%3A59%3A30.000000Z&end=2022-01-27T06%3A00%3A30.000000Z",
+    "bytes": 14436352,
+    "sha256": "ab1ff679d18ddb9babdd2ba976108df25287a300531ba9126920f1030bb53cbb",
+    "retrieved_utc": "2026-10-13T00:28:34.504969+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220127T060000_20220127T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-27T05%3A59%3A30.000000Z&end=2022-01-27T12%3A00%3A30.000000Z",
+    "bytes": 14888448,
+    "sha256": "f9ce05fc0ab13329bac7ea9e660e2a750bb74ae18f2cac1d336361b19075de8f",
+    "retrieved_utc": "2026-10-13T00:28:59.178605+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220127T120000_20220127T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-01-27T11%3A59%3A30.000000Z&end=2022-01-27T18%3A00%3A30.000000Z",
+    "bytes": 14999552,
+    "sha256": "2752b7525dbe0c25fa7e28229a6083e4a3b0372f384ae7b5f0d3511f4a8d8680",
+    "retrieved_utc": "2026-10-13T00:29:36.710186+00:00"
+  },
+  {
     "file": "inputs/continuation/waveforms/IV_CMIS_20220401T000000_20220401T003000.mseed",
     "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-03-31T23%3A59%3A30.000000Z&end=2022-04-01T00%3A30%3A30.000000Z",
     "bytes": 1387008,
@@ -1804,6 +2315,174 @@
     "bytes": 12957696,
     "sha256": "94a8cbe7c72a14070becead0579471394c4cc32f09c6cfee81850dafeefd2e76",
     "retrieved_utc": "2026-10-12T21:24:31.878614+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220121T180000_20220122T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-21T17%3A59%3A30.000000Z&end=2022-01-22T00%3A00%3A30.000000Z",
+    "bytes": 11047936,
+    "sha256": "3d2922816b97fb8a5c33bfd0ed5be93c8d36b437658a31fb88c27a89510cb585",
+    "retrieved_utc": "2026-10-13T00:08:11.586117+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220122T000000_20220122T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-21T23%3A59%3A30.000000Z&end=2022-01-22T06%3A00%3A30.000000Z",
+    "bytes": 10572288,
+    "sha256": "54ca42d1a1272914fcd12afce6b097101951b3fce0813f0c614047fb6ae09e01",
+    "retrieved_utc": "2026-10-13T00:09:09.612727+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220122T060000_20220122T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-22T05%3A59%3A30.000000Z&end=2022-01-22T12%3A00%3A30.000000Z",
+    "bytes": 11523072,
+    "sha256": "ed08beb3cc374840029f473e18458efa9837022a171322350959d57e73b3e930",
+    "retrieved_utc": "2026-10-13T00:10:27.477637+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220122T120000_20220122T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-22T11%3A59%3A30.000000Z&end=2022-01-22T18%3A00%3A30.000000Z",
+    "bytes": 11343360,
+    "sha256": "203bd77abfdf88af9a2e66dd8122a50859dc075993ab2e772a1a9ab3f03140d3",
+    "retrieved_utc": "2026-10-13T00:12:14.893481+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220122T180000_20220123T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+    "bytes": 11080192,
+    "sha256": "bae004031be64a850ac47fa0a8783dd921f07ed1d39e6c99f4574461d5e35df2",
+    "retrieved_utc": "2026-10-13T00:13:41.252384+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220123T000000_20220123T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-22T23%3A59%3A30.000000Z&end=2022-01-23T06%3A00%3A30.000000Z",
+    "bytes": 10344960,
+    "sha256": "53af5b64490b6f603d6578e2ccdd96a5b557a82044e2700d27c08fd2f685d51c",
+    "retrieved_utc": "2026-10-13T00:15:05.949898+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220123T060000_20220123T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-23T05%3A59%3A30.000000Z&end=2022-01-23T12%3A00%3A30.000000Z",
+    "bytes": 11077632,
+    "sha256": "47f775343733accf0901f0f7831ac6d465ecbc7857b34e6288378d7c4f280c80",
+    "retrieved_utc": "2026-10-13T00:16:05.494727+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220123T120000_20220123T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+    "bytes": 10978304,
+    "sha256": "9a4e6ebec0ef26504a691e00e40083163263553d87ecfff916bab069a8e6bc8e",
+    "retrieved_utc": "2026-10-13T00:17:13.675831+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220123T180000_20220124T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+    "bytes": 10892288,
+    "sha256": "a7a2063aa2bc33e3005bd1ca585fd5c0e490c2c600f5aad2952ebec32383be58",
+    "retrieved_utc": "2026-10-13T00:18:12.618321+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220124T000000_20220124T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-23T23%3A59%3A30.000000Z&end=2022-01-24T06%3A00%3A30.000000Z",
+    "bytes": 10354176,
+    "sha256": "061de0a150cdbeb0bef4760f920ccff7c0f0d43b895080a918a6ec8889ccfa08",
+    "retrieved_utc": "2026-10-13T00:19:38.012305+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220124T060000_20220124T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+    "bytes": 13787648,
+    "sha256": "6bed7039bf4c73d2159fbb8e72c2f411798648be43974478cfa0459f2ff0953f",
+    "retrieved_utc": "2026-10-13T00:20:51.498520+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220124T120000_20220124T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+    "bytes": 12237312,
+    "sha256": "fab8d6c80b08ee8bf302e5fda62c3ef686d96a9f6b8a1ff1c48594c1082811a1",
+    "retrieved_utc": "2026-10-13T00:21:33.587308+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220124T180000_20220125T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+    "bytes": 10867200,
+    "sha256": "c16dfb076098577aae9d13988ec2467ae7e896d99a6c7c8ba95524bf6f201bc1",
+    "retrieved_utc": "2026-10-13T00:22:12.437362+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220125T000000_20220125T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-24T23%3A59%3A30.000000Z&end=2022-01-25T06%3A00%3A30.000000Z",
+    "bytes": 10175488,
+    "sha256": "a88f4a70602e2185c5b31c46267018c9f4a11a65788efbc392802b6ea87e2b27",
+    "retrieved_utc": "2026-10-13T00:22:48.841751+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220125T060000_20220125T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+    "bytes": 13204480,
+    "sha256": "816b0ddc90a0ecfe5d7f500a2a61ae7b02918e28699d446ffc8d95c9769e920c",
+    "retrieved_utc": "2026-10-13T00:23:34.205168+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220125T120000_20220125T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-25T11%3A59%3A30.000000Z&end=2022-01-25T18%3A00%3A30.000000Z",
+    "bytes": 12591104,
+    "sha256": "e3a1ab23f18810f4a14859737e1de1812c205614243680ca1c00d58aab8a9b3b",
+    "retrieved_utc": "2026-10-13T00:24:20.509779+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220125T180000_20220126T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-25T17%3A59%3A30.000000Z&end=2022-01-26T00%3A00%3A30.000000Z",
+    "bytes": 10961408,
+    "sha256": "8a4a96dd39970ef40f34b3b01f4624306b52dac01124750057ebd7975f9de586",
+    "retrieved_utc": "2026-10-13T00:25:01.359126+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220126T000000_20220126T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-25T23%3A59%3A30.000000Z&end=2022-01-26T06%3A00%3A30.000000Z",
+    "bytes": 10368000,
+    "sha256": "2949d0f4d17cae1e62568fa37e7ca334ca7131ab546278941c3549d94d0df4c1",
+    "retrieved_utc": "2026-10-13T00:25:55.795461+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220126T060000_20220126T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-26T05%3A59%3A30.000000Z&end=2022-01-26T12%3A00%3A30.000000Z",
+    "bytes": 13228544,
+    "sha256": "be66fdee11f5673c53c95a68d16ada2842d21c1a46be373f2c2f02b79f512afb",
+    "retrieved_utc": "2026-10-13T00:26:28.367427+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220126T120000_20220126T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-26T11%3A59%3A30.000000Z&end=2022-01-26T18%3A00%3A30.000000Z",
+    "bytes": 12711424,
+    "sha256": "6667cf6477dc587a223493046bd88bb2b9065f4118648c95dbb2fe51a8fb1dac",
+    "retrieved_utc": "2026-10-13T00:27:10.300546+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220126T180000_20220127T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-26T17%3A59%3A30.000000Z&end=2022-01-27T00%3A00%3A30.000000Z",
+    "bytes": 10969600,
+    "sha256": "cd0efb868dd447cc544a9b727f642aa8fd0d2c6840632a740ce08f1729977b6f",
+    "retrieved_utc": "2026-10-13T00:27:58.334647+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220127T000000_20220127T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-26T23%3A59%3A30.000000Z&end=2022-01-27T06%3A00%3A30.000000Z",
+    "bytes": 10166272,
+    "sha256": "d1234b7c3e64d026b78523a4c505450c9be847c1a5705736d3af806d617279e7",
+    "retrieved_utc": "2026-10-13T00:28:36.130858+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220127T060000_20220127T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-27T05%3A59%3A30.000000Z&end=2022-01-27T12%3A00%3A30.000000Z",
+    "bytes": 13114880,
+    "sha256": "04024a4dde2b8d306b54d501cc9b5fa51f479e7529deced0ae1465af085c9a5c",
+    "retrieved_utc": "2026-10-13T00:29:06.224833+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220127T120000_20220127T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-27T11%3A59%3A30.000000Z&end=2022-01-27T18%3A00%3A30.000000Z",
+    "bytes": 12610560,
+    "sha256": "89602d8eb9de03bc02b364eadc703e374e0084b2d344b2a97bd4f5b3acbc7f99",
+    "retrieved_utc": "2026-10-13T00:29:41.311727+00:00"
   },
   {
     "file": "inputs/continuation/waveforms/IV_CMSN_20220401T000000_20220401T003000.mseed",
@@ -2191,6 +2870,174 @@
     "retrieved_utc": "2026-10-12T21:26:01.329826+00:00"
   },
   {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220122T000000_20220122T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-21T23%3A59%3A30.000000Z&end=2022-01-22T06%3A00%3A30.000000Z",
+    "bytes": 8859136,
+    "sha256": "a3d0feff687e408357afc33c4884aac269c571b427c3fd0cbd82b8af3e84a176",
+    "retrieved_utc": "2026-10-13T00:08:45.343713+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220122T060000_20220122T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-22T05%3A59%3A30.000000Z&end=2022-01-22T12%3A00%3A30.000000Z",
+    "bytes": 9119232,
+    "sha256": "4dea116cc79663932e3c341cc124be2d97647ee7cf072efa34278ceee14b0d92",
+    "retrieved_utc": "2026-10-13T00:10:03.868432+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220122T120000_20220122T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-22T11%3A59%3A30.000000Z&end=2022-01-22T18%3A00%3A30.000000Z",
+    "bytes": 9617408,
+    "sha256": "90ce4de3c91cc715b4949943f81c785fb1525f7254d19005f9158ed2fc7867bb",
+    "retrieved_utc": "2026-10-13T00:11:30.046745+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220122T180000_20220123T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+    "bytes": 8771072,
+    "sha256": "e92eb3fa484c016fd49cb74a43e14a4df48456e11c8812718a0646b6870afa4c",
+    "retrieved_utc": "2026-10-13T00:13:02.553633+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220123T000000_20220123T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-22T23%3A59%3A30.000000Z&end=2022-01-23T06%3A00%3A30.000000Z",
+    "bytes": 7670272,
+    "sha256": "cd6b966fcc8680ac1f4f45b0e30ac9672c5b827cc63cace87ae701779389568d",
+    "retrieved_utc": "2026-10-13T00:14:33.961535+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220123T060000_20220123T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-23T05%3A59%3A30.000000Z&end=2022-01-23T12%3A00%3A30.000000Z",
+    "bytes": 9221632,
+    "sha256": "2e055bde1b130853732194801b86a559acef496834604a169e2242a34f095f49",
+    "retrieved_utc": "2026-10-13T00:15:39.452125+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220123T120000_20220123T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+    "bytes": 9596928,
+    "sha256": "993243db38c30cfac3a03b7bca2536737b3ab7f5c891faeb9fbe35e0cb52711e",
+    "retrieved_utc": "2026-10-13T00:16:39.014356+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220123T180000_20220124T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+    "bytes": 8212992,
+    "sha256": "e6c2c7a56124a49f0587460283c82cc2b9e9e619aa912a8f46912b1fdc97619c",
+    "retrieved_utc": "2026-10-13T00:17:44.145368+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220124T000000_20220124T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-23T23%3A59%3A30.000000Z&end=2022-01-24T06%3A00%3A30.000000Z",
+    "bytes": 7799808,
+    "sha256": "f018c5f2ad2602b3bf4ab495108d400b65ff940881b97c291bbd2dec7a4d81a3",
+    "retrieved_utc": "2026-10-13T00:18:57.914307+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220124T060000_20220124T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+    "bytes": 9666560,
+    "sha256": "b60244d5a511305cb5dd3fb77e722b2903ac59eac9fb3853acf9c88dd812c25e",
+    "retrieved_utc": "2026-10-13T00:20:12.335317+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+    "bytes": 9362432,
+    "sha256": "38b7587a85d8ad87a8cb0a0a3c81c6cbc9a38d6c8de77bb5407d308623dbbf48",
+    "retrieved_utc": "2026-10-13T00:21:16.257339+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220124T180000_20220125T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+    "bytes": 8001024,
+    "sha256": "15471c319dd979a7287fd8bb8ce39535456096e17f3f6ea377be89b07b3bccbd",
+    "retrieved_utc": "2026-10-13T00:21:58.789930+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220125T000000_20220125T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-24T23%3A59%3A30.000000Z&end=2022-01-25T06%3A00%3A30.000000Z",
+    "bytes": 7546368,
+    "sha256": "df17de1d7d4c08fe5c42ffc590778957ebe8a1b91f2ebd749dbc9868146ccec3",
+    "retrieved_utc": "2026-10-13T00:22:20.222278+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220125T060000_20220125T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+    "bytes": 9468928,
+    "sha256": "720c99ab5c4f53eb2510346923717749f37ef685175b11d1b8bb38309ab04742",
+    "retrieved_utc": "2026-10-13T00:23:09.566068+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220125T120000_20220125T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-25T11%3A59%3A30.000000Z&end=2022-01-25T18%3A00%3A30.000000Z",
+    "bytes": 8589824,
+    "sha256": "1ef5e1e29cba7d2c61e274fa26ffdb319a14ff45859074a80e3c76fb04b0558a",
+    "retrieved_utc": "2026-10-13T00:23:59.301293+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220125T180000_20220126T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-25T17%3A59%3A30.000000Z&end=2022-01-26T00%3A00%3A30.000000Z",
+    "bytes": 7931392,
+    "sha256": "90393d71016cb844efe9d1163c1091894cb37417fd8013d96f2c62c908134e90",
+    "retrieved_utc": "2026-10-13T00:24:44.366916+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220126T000000_20220126T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-25T23%3A59%3A30.000000Z&end=2022-01-26T06%3A00%3A30.000000Z",
+    "bytes": 7101952,
+    "sha256": "e420085fab63c3ad345c363ed5904d50a4595dbd91e80d4a3041ca30e47f1092",
+    "retrieved_utc": "2026-10-13T00:25:35.302421+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220126T060000_20220126T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-26T05%3A59%3A30.000000Z&end=2022-01-26T12%3A00%3A30.000000Z",
+    "bytes": 9249792,
+    "sha256": "682d62784520eec611fd4956496f60e5b28c57ba36e213a8e3a466f68f455aed",
+    "retrieved_utc": "2026-10-13T00:26:14.732330+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220126T120000_20220126T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-26T11%3A59%3A30.000000Z&end=2022-01-26T18%3A00%3A30.000000Z",
+    "bytes": 8988672,
+    "sha256": "164e34cb6f500efb0e25beeceafcd64c366963c04dbc6a6bd663050a0927ce2c",
+    "retrieved_utc": "2026-10-13T00:26:59.620974+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220126T180000_20220127T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-26T17%3A59%3A30.000000Z&end=2022-01-27T00%3A00%3A30.000000Z",
+    "bytes": 8464896,
+    "sha256": "90720af2ae9e543ccc7757c4de55d0c7c5ad96abc3ca1e446d4e4556aafbfea0",
+    "retrieved_utc": "2026-10-13T00:27:42.808487+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220127T000000_20220127T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-26T23%3A59%3A30.000000Z&end=2022-01-27T06%3A00%3A30.000000Z",
+    "bytes": 7818240,
+    "sha256": "9ad9272725253e0b7602b93cfe071852ae932c9fc9cff60d3c1fefe85c4ae0f1",
+    "retrieved_utc": "2026-10-13T00:28:24.692865+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220127T060000_20220127T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-27T05%3A59%3A30.000000Z&end=2022-01-27T12%3A00%3A30.000000Z",
+    "bytes": 9198080,
+    "sha256": "357bfe3f129cf5bd90610538131cda3f72499b15d4e7a42dd730652452d2300f",
+    "retrieved_utc": "2026-10-13T00:28:53.389398+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220127T120000_20220127T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-27T11%3A59%3A30.000000Z&end=2022-01-27T18%3A00%3A30.000000Z",
+    "bytes": 8842752,
+    "sha256": "e731260722887b74cd474f1180988a86490dc90375a40efe16ff5a63d064fea1",
+    "retrieved_utc": "2026-10-13T00:29:25.752455+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220127T180000_20220128T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-27T17%3A59%3A30.000000Z&end=2022-01-28T00%3A00%3A30.000000Z",
+    "bytes": 7378944,
+    "sha256": "57ef29af604705d83ee352ebc11027ba307a9478e4a503225c04615a408d866c",
+    "retrieved_utc": "2026-10-13T00:30:22.364428+00:00"
+  },
+  {
     "file": "inputs/continuation/waveforms/IV_COLB_20220401T000000_20220401T003000.mseed",
     "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-03-31T23%3A59%3A30.000000Z&end=2022-04-01T00%3A30%3A30.000000Z",
     "bytes": 1302528,
@@ -2455,6 +3302,174 @@
     "bytes": 8756224,
     "sha256": "4b2d96f9bacb3bc87dd2281c20375959aa1c5680d448cd13c11d9bb029980cb8",
     "retrieved_utc": "2026-10-12T21:24:54.151350+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220121T180000_20220122T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-21T17%3A59%3A30.000000Z&end=2022-01-22T00%3A00%3A30.000000Z",
+    "bytes": 8086528,
+    "sha256": "75f8adf6b46537981c7236ce7859d61632c09ad957dca0fd25a5808b452e0d7d",
+    "retrieved_utc": "2026-10-13T00:08:11.676168+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220122T000000_20220122T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-21T23%3A59%3A30.000000Z&end=2022-01-22T06%3A00%3A30.000000Z",
+    "bytes": 8369664,
+    "sha256": "2f604103b2a94b1aaaf56d125f5a7a477824913407a505304b4854199ee5ee92",
+    "retrieved_utc": "2026-10-13T00:09:11.916474+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220122T060000_20220122T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-22T05%3A59%3A30.000000Z&end=2022-01-22T12%3A00%3A30.000000Z",
+    "bytes": 8192000,
+    "sha256": "dcb81f38fc35936d0ace46d0c41074df08ad9b80d197723edf7052a6af08cc15",
+    "retrieved_utc": "2026-10-13T00:10:39.905271+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220122T120000_20220122T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-22T11%3A59%3A30.000000Z&end=2022-01-22T18%3A00%3A30.000000Z",
+    "bytes": 8348160,
+    "sha256": "a47de5312a04363650877fcd899ca37e005b4823cd4bc99d70c03eaa3fd704ee",
+    "retrieved_utc": "2026-10-13T00:12:18.269623+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220122T180000_20220123T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+    "bytes": 8093184,
+    "sha256": "a71fe4afa58cbb25ce0a25b6bb40e246ddc793fd0722d468e5647362b4ad6d2c",
+    "retrieved_utc": "2026-10-13T00:13:46.382407+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220123T000000_20220123T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-22T23%3A59%3A30.000000Z&end=2022-01-23T06%3A00%3A30.000000Z",
+    "bytes": 7108096,
+    "sha256": "fff9b42f98ccc509eef3b9a60b286d040c2b939bb68cdf3b9fd0f30c50eb32ec",
+    "retrieved_utc": "2026-10-13T00:15:08.031441+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220123T060000_20220123T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-23T05%3A59%3A30.000000Z&end=2022-01-23T12%3A00%3A30.000000Z",
+    "bytes": 8022016,
+    "sha256": "0f10a979f25e036d8a82b9013dceaa02052e149aa21347ae26e91f9dd4767704",
+    "retrieved_utc": "2026-10-13T00:16:08.676762+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220123T120000_20220123T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+    "bytes": 8488960,
+    "sha256": "f2d4338e3af99a1ae415c44f869a922e208698a6f9099eb055299f59721477a1",
+    "retrieved_utc": "2026-10-13T00:17:18.989294+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220123T180000_20220124T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+    "bytes": 7540224,
+    "sha256": "d99e0c84df5896d6b0a05bd32c88627a67d83b55edbd717b72550bf3da0a68fa",
+    "retrieved_utc": "2026-10-13T00:18:23.707276+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220124T000000_20220124T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-23T23%3A59%3A30.000000Z&end=2022-01-24T06%3A00%3A30.000000Z",
+    "bytes": 7076864,
+    "sha256": "04a783c7903c3bb09d61ac9768987d298e3062618401127195df29cd4c2cfeb6",
+    "retrieved_utc": "2026-10-13T00:19:48.273602+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220124T060000_20220124T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+    "bytes": 9393664,
+    "sha256": "f13c0e53c4d3c6729a06d78ef84ab2de3f12ff81935c41a541ad4a0cac14ae43",
+    "retrieved_utc": "2026-10-13T00:20:57.229526+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220124T120000_20220124T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+    "bytes": 8462336,
+    "sha256": "314dcefcf1342182f2c69daa8d22625509563b3c851e87da84dce6400462aa3b",
+    "retrieved_utc": "2026-10-13T00:21:40.079330+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220124T180000_20220125T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+    "bytes": 7551488,
+    "sha256": "4b6d743db05c9ddd4c0e1bb2b794129c2e0c5450a3226706b996d09832608f31",
+    "retrieved_utc": "2026-10-13T00:22:15.090618+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220125T000000_20220125T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-24T23%3A59%3A30.000000Z&end=2022-01-25T06%3A00%3A30.000000Z",
+    "bytes": 7422976,
+    "sha256": "2cef520ad9f5fe2dec9d76d1e4cf2cf37dab75c7c6c4120ea7c62cf8f18a2a31",
+    "retrieved_utc": "2026-10-13T00:22:51.455237+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220125T060000_20220125T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+    "bytes": 8681984,
+    "sha256": "79ceeb055a13d6bd2c084ba5fe160db5806f398495986bdd1c367b701d69b7d3",
+    "retrieved_utc": "2026-10-13T00:23:38.993511+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220125T120000_20220125T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-25T11%3A59%3A30.000000Z&end=2022-01-25T18%3A00%3A30.000000Z",
+    "bytes": 8592896,
+    "sha256": "f9b3a734bccda1cb0b8f029762e3391894a9ab5d40604d1f9902d3a1100d9bbc",
+    "retrieved_utc": "2026-10-13T00:24:24.532470+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220125T180000_20220126T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-25T17%3A59%3A30.000000Z&end=2022-01-26T00%3A00%3A30.000000Z",
+    "bytes": 7114240,
+    "sha256": "bf188c0219b17c973a701377a1ebe1331042b3561c5b7c6e2d5fb04ea260cc24",
+    "retrieved_utc": "2026-10-13T00:25:09.770389+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220126T000000_20220126T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-25T23%3A59%3A30.000000Z&end=2022-01-26T06%3A00%3A30.000000Z",
+    "bytes": 7135744,
+    "sha256": "af2ab9502b701bb432c727e8101823db4c6b68e4404b7899f06d8505864be3f3",
+    "retrieved_utc": "2026-10-13T00:25:58.434271+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220126T060000_20220126T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-26T05%3A59%3A30.000000Z&end=2022-01-26T12%3A00%3A30.000000Z",
+    "bytes": 8801280,
+    "sha256": "9327765682b3d29a96447a26d20815c1090ddf7971c5fb8f2e645d29e9d98f81",
+    "retrieved_utc": "2026-10-13T00:26:40.209781+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220126T120000_20220126T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-26T11%3A59%3A30.000000Z&end=2022-01-26T18%3A00%3A30.000000Z",
+    "bytes": 8436736,
+    "sha256": "6dcae2cdd3b1599d8c570b79c2a040664f09cb78e86d007642469a384039248f",
+    "retrieved_utc": "2026-10-13T00:27:17.362403+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220126T180000_20220127T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-26T17%3A59%3A30.000000Z&end=2022-01-27T00%3A00%3A30.000000Z",
+    "bytes": 7272960,
+    "sha256": "8e66b7d047624510c16cc595913459ecde00dad2cf3cdf835991b6dd2820c2e1",
+    "retrieved_utc": "2026-10-13T00:28:06.630262+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220127T000000_20220127T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-26T23%3A59%3A30.000000Z&end=2022-01-27T06%3A00%3A30.000000Z",
+    "bytes": 7216640,
+    "sha256": "6793f606e8d1fa9a3bcda3eb8b0679e570c60c875e095f6ebb4c8ae512d18e71",
+    "retrieved_utc": "2026-10-13T00:28:40.382972+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220127T060000_20220127T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-27T05%3A59%3A30.000000Z&end=2022-01-27T12%3A00%3A30.000000Z",
+    "bytes": 8743936,
+    "sha256": "1cb6cb1d9c6f36fee7a383ec22f11a04e4bc256bc615b841ee5d767c2ec1f896",
+    "retrieved_utc": "2026-10-13T00:29:08.372920+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220127T120000_20220127T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-27T11%3A59%3A30.000000Z&end=2022-01-27T18%3A00%3A30.000000Z",
+    "bytes": 8466432,
+    "sha256": "0423b698d69dce1756645dc5ea43ce0a0f74059c2424b6ba4b0e3f18e0a74e5d",
+    "retrieved_utc": "2026-10-13T00:29:49.175717+00:00"
   },
   {
     "file": "inputs/continuation/waveforms/IV_CPOZ_20230401T000000_20230401T003000.mseed",
@@ -2765,6 +3780,174 @@
     "retrieved_utc": "2026-10-12T21:24:59.687803+00:00"
   },
   {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220121T180000_20220122T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-21T17%3A59%3A30.000000Z&end=2022-01-22T00%3A00%3A30.000000Z",
+    "bytes": 14793728,
+    "sha256": "aa91c87350c8812df5ccc0e13f8dfde7854939b21cb89e6297090c145351cee7",
+    "retrieved_utc": "2026-10-13T00:08:15.702003+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220122T000000_20220122T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-21T23%3A59%3A30.000000Z&end=2022-01-22T06%3A00%3A30.000000Z",
+    "bytes": 14978048,
+    "sha256": "bbefe504a684c3c51b1c019823d0e657dc972285824f8c4602de9e847fe55c93",
+    "retrieved_utc": "2026-10-13T00:09:12.235194+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220122T060000_20220122T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-22T05%3A59%3A30.000000Z&end=2022-01-22T12%3A00%3A30.000000Z",
+    "bytes": 14923776,
+    "sha256": "63d7932d3afe5321e9a15f54c9068d115a1a6301645dc99d7e940d435307296c",
+    "retrieved_utc": "2026-10-13T00:10:58.025909+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220122T120000_20220122T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-22T11%3A59%3A30.000000Z&end=2022-01-22T18%3A00%3A30.000000Z",
+    "bytes": 14846976,
+    "sha256": "c97a7a5e7455069c971d6d30a80216046918e77d8cd783537ab11d048791bbfe",
+    "retrieved_utc": "2026-10-13T00:12:35.048252+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220122T180000_20220123T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+    "bytes": 14706176,
+    "sha256": "c63009c8ab46f8e30dee1f195d60864c41a06d9e389dbb42c3831cfae7de8034",
+    "retrieved_utc": "2026-10-13T00:14:02.189319+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220123T000000_20220123T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-22T23%3A59%3A30.000000Z&end=2022-01-23T06%3A00%3A30.000000Z",
+    "bytes": 14521856,
+    "sha256": "f9f6fda4bb6fe3d69b93f06bc5a258f79fec3df1a74e6e20db2a7fe0c3b6db18",
+    "retrieved_utc": "2026-10-13T00:15:18.009098+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220123T060000_20220123T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-23T05%3A59%3A30.000000Z&end=2022-01-23T12%3A00%3A30.000000Z",
+    "bytes": 14780928,
+    "sha256": "ad2d9af4092b92ff341e3d34d134dff643331f7e15b82e22bc8e51e55cd7548f",
+    "retrieved_utc": "2026-10-13T00:16:16.994318+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220123T120000_20220123T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+    "bytes": 14796800,
+    "sha256": "c69d68133104ecb5055f328757842f2cd07991e329c491fe4348fe099b6536de",
+    "retrieved_utc": "2026-10-13T00:17:20.475356+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220123T180000_20220124T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+    "bytes": 14646272,
+    "sha256": "2a943fe9730dde7ec0952e8a8873604c4b2d7f8dd7e6da308989e1765136a764",
+    "retrieved_utc": "2026-10-13T00:18:38.038476+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220124T000000_20220124T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-23T23%3A59%3A30.000000Z&end=2022-01-24T06%3A00%3A30.000000Z",
+    "bytes": 14557184,
+    "sha256": "3d74dc7a494f350a4ce77a2ae5912bb47654a9f0eab26a18fd8c0d797fe4d347",
+    "retrieved_utc": "2026-10-13T00:19:58.442398+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220124T060000_20220124T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+    "bytes": 15129600,
+    "sha256": "e44bd8d14e348746c1916a71909f829ca0a0fd76ab5915d4f020c74490f9ba98",
+    "retrieved_utc": "2026-10-13T00:21:03.090423+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220124T120000_20220124T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+    "bytes": 15106560,
+    "sha256": "ee4ecd6a7db284773c9e5e99a0ae2d05125c7e82025c591e2fc03abcc4f91e96",
+    "retrieved_utc": "2026-10-13T00:21:40.924481+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220124T180000_20220125T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+    "bytes": 14729728,
+    "sha256": "0d7b260c40a9baad9bd96f825cddbccf6bef1e7bb1206605b15f7ed29b330638",
+    "retrieved_utc": "2026-10-13T00:22:15.728692+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220125T000000_20220125T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-24T23%3A59%3A30.000000Z&end=2022-01-25T06%3A00%3A30.000000Z",
+    "bytes": 14561280,
+    "sha256": "0109a75fd4b64a0e4342c8ff6f6e871a27df161eb86998ea79dd66f23f1ec2f6",
+    "retrieved_utc": "2026-10-13T00:23:03.999901+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220125T060000_20220125T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+    "bytes": 15080960,
+    "sha256": "4b93f1da050346aaff7f3c460ed8c96a8f3cd42763a41d46486e7d7e32d481ff",
+    "retrieved_utc": "2026-10-13T00:23:41.879493+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220125T120000_20220125T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-25T11%3A59%3A30.000000Z&end=2022-01-25T18%3A00%3A30.000000Z",
+    "bytes": 15009280,
+    "sha256": "03b671c713342f590b80f8819053ee2c05e64ed377e91d7f59e5d40351d78d7c",
+    "retrieved_utc": "2026-10-13T00:24:25.244644+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220125T180000_20220126T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-25T17%3A59%3A30.000000Z&end=2022-01-26T00%3A00%3A30.000000Z",
+    "bytes": 14643200,
+    "sha256": "139723058920f668346fccbaef1ecb9fcb8ec3a1fde9f880111a77f6d876008b",
+    "retrieved_utc": "2026-10-13T00:25:10.487256+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220126T000000_20220126T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-25T23%3A59%3A30.000000Z&end=2022-01-26T06%3A00%3A30.000000Z",
+    "bytes": 14547968,
+    "sha256": "dc39fbcef78b75b5ec1e3a252904de46a620e5794b780ca9efdd94a0f9f18473",
+    "retrieved_utc": "2026-10-13T00:26:04.581410+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220126T060000_20220126T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-26T05%3A59%3A30.000000Z&end=2022-01-26T12%3A00%3A30.000000Z",
+    "bytes": 15111168,
+    "sha256": "58003b7467b92467f6dbd18b81de21353d62e42585397fa51c6274d7032c1ef8",
+    "retrieved_utc": "2026-10-13T00:26:41.738205+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220126T120000_20220126T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-26T11%3A59%3A30.000000Z&end=2022-01-26T18%3A00%3A30.000000Z",
+    "bytes": 15048704,
+    "sha256": "c70550ba5a68e0efeaf042462c52f0ca3c1f82ec6278669fcdd105373431df3b",
+    "retrieved_utc": "2026-10-13T00:27:19.481509+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220126T180000_20220127T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-26T17%3A59%3A30.000000Z&end=2022-01-27T00%3A00%3A30.000000Z",
+    "bytes": 14660096,
+    "sha256": "417b774601a5ffb624a822e83a208d4187e5f58fe1657bbb1890bf2805e34d40",
+    "retrieved_utc": "2026-10-13T00:28:07.447934+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220127T000000_20220127T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-26T23%3A59%3A30.000000Z&end=2022-01-27T06%3A00%3A30.000000Z",
+    "bytes": 14524416,
+    "sha256": "415e81caba730265f5c9ba0a3d4cd4d7cfc42ae265e217abe4a37f8b732c0b20",
+    "retrieved_utc": "2026-10-13T00:28:46.345136+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220127T060000_20220127T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-27T05%3A59%3A30.000000Z&end=2022-01-27T12%3A00%3A30.000000Z",
+    "bytes": 15049728,
+    "sha256": "610355728502becaccd014f89e510de73015f8cc1d78e15dc454f20c50a5e064",
+    "retrieved_utc": "2026-10-13T00:29:10.184706+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220127T120000_20220127T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-27T11%3A59%3A30.000000Z&end=2022-01-27T18%3A00%3A30.000000Z",
+    "bytes": 15002112,
+    "sha256": "f32619aa5c8695a9ad294d64bcbd711b38623e462eb2ec679eb9ccc8e36b734c",
+    "retrieved_utc": "2026-10-13T00:29:53.891681+00:00"
+  },
+  {
     "file": "inputs/continuation/waveforms/IV_CSFT_20220401T000000_20220401T003000.mseed",
     "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-03-31T23%3A59%3A30.000000Z&end=2022-04-01T00%3A30%3A30.000000Z",
     "bytes": 1196032,
@@ -2940,6 +4123,174 @@
     "retrieved_utc": "2026-10-12T21:25:43.089403+00:00"
   },
   {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220121T180000_20220122T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-21T17%3A59%3A30.000000Z&end=2022-01-22T00%3A00%3A30.000000Z",
+    "bytes": 16150016,
+    "sha256": "960fc1147c9018151b9ba5ddfd056eb5510bcce116f1082a4b77460f53411068",
+    "retrieved_utc": "2026-10-13T00:08:34.180611+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220122T000000_20220122T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-21T23%3A59%3A30.000000Z&end=2022-01-22T06%3A00%3A30.000000Z",
+    "bytes": 16152064,
+    "sha256": "ff4164bc84d4cccee183f903acffb4650756cb85d42d9a6803caac5a7769d34c",
+    "retrieved_utc": "2026-10-13T00:09:37.174709+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220122T060000_20220122T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-22T05%3A59%3A30.000000Z&end=2022-01-22T12%3A00%3A30.000000Z",
+    "bytes": 16149504,
+    "sha256": "c6261883d849aa00770eed0fa7048c73ff55c71f7897856742cba30528ec41ab",
+    "retrieved_utc": "2026-10-13T00:11:13.533749+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220122T120000_20220122T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-22T11%3A59%3A30.000000Z&end=2022-01-22T18%3A00%3A30.000000Z",
+    "bytes": 16143360,
+    "sha256": "a7b228a4e9265e737c45d2840e03109ae05331ce5412300018688b23d8a121e9",
+    "retrieved_utc": "2026-10-13T00:12:44.526692+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220122T180000_20220123T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+    "bytes": 16130560,
+    "sha256": "5933b88090b19f9100c294f2a5b59a60a52be95e4e24f30d763cf963a49cef08",
+    "retrieved_utc": "2026-10-13T00:14:13.066261+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220123T000000_20220123T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-22T23%3A59%3A30.000000Z&end=2022-01-23T06%3A00%3A30.000000Z",
+    "bytes": 16108032,
+    "sha256": "fe4dbcd0c9571a05c6c8cc3333b36aae1c1da7195f3fe04bb794dcbf3ed3eba6",
+    "retrieved_utc": "2026-10-13T00:15:26.168100+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220123T060000_20220123T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-23T05%3A59%3A30.000000Z&end=2022-01-23T12%3A00%3A30.000000Z",
+    "bytes": 16141824,
+    "sha256": "28e64682b1cd0916bd5d5c1f0570aec38c3bd7772a6a539d98a2b70369477a75",
+    "retrieved_utc": "2026-10-13T00:16:18.245277+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220123T120000_20220123T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+    "bytes": 16148480,
+    "sha256": "169ea4ca17bbff246c2a82dff6122307c77d21ec06c24a7f8a640e5366d3a137",
+    "retrieved_utc": "2026-10-13T00:17:35.795360+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220123T180000_20220124T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+    "bytes": 16111104,
+    "sha256": "ea6a80162d3dec6919f55075c708408c923f652cf7a38327397f63ffdc1b3c9c",
+    "retrieved_utc": "2026-10-13T00:18:46.863344+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220124T000000_20220124T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-23T23%3A59%3A30.000000Z&end=2022-01-24T06%3A00%3A30.000000Z",
+    "bytes": 16061952,
+    "sha256": "1aa296b88416fb64c46caf7bb649c29296117a6c6550179a57c3c7331e52a2de",
+    "retrieved_utc": "2026-10-13T00:20:04.568396+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220124T060000_20220124T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+    "bytes": 16156160,
+    "sha256": "d7e2f3431074fbaa66ba7482f495894bec35483dddbbb21bbf4b4598a87ac681",
+    "retrieved_utc": "2026-10-13T00:21:07.849332+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220124T120000_20220124T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+    "bytes": 16151552,
+    "sha256": "cbd2e86fa73a4d5f685d459bf874d5cdb52deea3d616efe087a69ec4343ea100",
+    "retrieved_utc": "2026-10-13T00:21:43.430024+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220124T180000_20220125T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+    "bytes": 16149504,
+    "sha256": "d4058eb6d2c013a6aa21ae017c23d6ec846525afd244ffc48a3f0cd5deb200db",
+    "retrieved_utc": "2026-10-13T00:22:18.193012+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220125T000000_20220125T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-24T23%3A59%3A30.000000Z&end=2022-01-25T06%3A00%3A30.000000Z",
+    "bytes": 16148992,
+    "sha256": "cc49f5e91a51cd2b7824322c54c35df59bad4c5c1993ff9e0005f7416567320f",
+    "retrieved_utc": "2026-10-13T00:23:05.172089+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220125T060000_20220125T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+    "bytes": 16151552,
+    "sha256": "d77fb34bd9dc4df8e7978b506e600de3376f6b88bf696169441a8a4bbb9a37b1",
+    "retrieved_utc": "2026-10-13T00:23:43.002352+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220125T120000_20220125T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-25T11%3A59%3A30.000000Z&end=2022-01-25T18%3A00%3A30.000000Z",
+    "bytes": 16149504,
+    "sha256": "43b35acc19a37c398ddbcfc9833cab16b7dfd057acbb266b83ba29ca5d33c56a",
+    "retrieved_utc": "2026-10-13T00:24:33.283614+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220125T180000_20220126T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-25T17%3A59%3A30.000000Z&end=2022-01-26T00%3A00%3A30.000000Z",
+    "bytes": 16129024,
+    "sha256": "adef78cdbcae427441e9cc3fd5f958eae6969aa300df347ea7c747b63ad29b16",
+    "retrieved_utc": "2026-10-13T00:25:27.149672+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220126T000000_20220126T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-25T23%3A59%3A30.000000Z&end=2022-01-26T06%3A00%3A30.000000Z",
+    "bytes": 16062976,
+    "sha256": "b3d7dd9816479aba1ef66d24a911d690805ffa3409dc13ab139bd38871fbf99b",
+    "retrieved_utc": "2026-10-13T00:26:10.195539+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220126T060000_20220126T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-26T05%3A59%3A30.000000Z&end=2022-01-26T12%3A00%3A30.000000Z",
+    "bytes": 16150528,
+    "sha256": "3bed6cd2ce06e44e06ec92870044cf9d77e70eb4a869c43e2e2725f5baec1aa9",
+    "retrieved_utc": "2026-10-13T00:26:50.226130+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220126T120000_20220126T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-26T11%3A59%3A30.000000Z&end=2022-01-26T18%3A00%3A30.000000Z",
+    "bytes": 16150528,
+    "sha256": "416b36140e24ebebe099fa2e0c7225a922b4002639fb119beb6b7641c9f7d9c7",
+    "retrieved_utc": "2026-10-13T00:27:23.345354+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220126T180000_20220127T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-26T17%3A59%3A30.000000Z&end=2022-01-27T00%3A00%3A30.000000Z",
+    "bytes": 16082944,
+    "sha256": "71d903250359b91a231ff06db04844d7f6e39392d3c82727fe883bd201b257f8",
+    "retrieved_utc": "2026-10-13T00:28:20.847079+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220127T000000_20220127T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-26T23%3A59%3A30.000000Z&end=2022-01-27T06%3A00%3A30.000000Z",
+    "bytes": 15932416,
+    "sha256": "6ba8cc36f4bf115191f74a2c9b2e576e2915daad59febb75d5680b808ac43be8",
+    "retrieved_utc": "2026-10-13T00:28:49.397461+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220127T060000_20220127T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-27T05%3A59%3A30.000000Z&end=2022-01-27T12%3A00%3A30.000000Z",
+    "bytes": 16148992,
+    "sha256": "ea06f4d7bb5728070a1b01e7e51215f6ce2c842102464e7db514375ad71ace18",
+    "retrieved_utc": "2026-10-13T00:29:18.847715+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220127T120000_20220127T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-01-27T11%3A59%3A30.000000Z&end=2022-01-27T18%3A00%3A30.000000Z",
+    "bytes": 16148480,
+    "sha256": "ac3c83071676134760ab17617390e09bfec52914d5134c8bfab89d19aceb0853",
+    "retrieved_utc": "2026-10-13T00:29:58.358302+00:00"
+  },
+  {
     "file": "inputs/continuation/waveforms/IV_CSOB_20220401T000000_20220401T003000.mseed",
     "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-03-31T23%3A59%3A30.000000Z&end=2022-04-01T00%3A30%3A30.000000Z",
     "bytes": 1369600,
@@ -3106,6 +4457,174 @@
     "bytes": 16162304,
     "sha256": "95e8a57f273ea0c7325378766a24876f958f4bc736e94962aec07e0c19bfe597",
     "retrieved_utc": "2026-10-12T21:25:57.147378+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220121T180000_20220122T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-21T17%3A59%3A30.000000Z&end=2022-01-22T00%3A00%3A30.000000Z",
+    "bytes": 16152064,
+    "sha256": "08096256cea1a45af7859fdeae9de37611ec41943a6c30f548cd5495ef199007",
+    "retrieved_utc": "2026-10-13T00:08:39.728601+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220122T000000_20220122T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-21T23%3A59%3A30.000000Z&end=2022-01-22T06%3A00%3A30.000000Z",
+    "bytes": 16153088,
+    "sha256": "99efa06f547337295e68d4e4bafe4f80ef64ddfe735d813fac6386cf46e8354f",
+    "retrieved_utc": "2026-10-13T00:09:58.227794+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220122T060000_20220122T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-22T05%3A59%3A30.000000Z&end=2022-01-22T12%3A00%3A30.000000Z",
+    "bytes": 16152064,
+    "sha256": "73767d22efdf5a04fa3aabc7aee1e0ac63eac526d8f3bdd8a86b36e23ac228bf",
+    "retrieved_utc": "2026-10-13T00:11:28.093699+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220122T120000_20220122T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-22T11%3A59%3A30.000000Z&end=2022-01-22T18%3A00%3A30.000000Z",
+    "bytes": 16153088,
+    "sha256": "00accb6b3e1c420f50234b50c3443ebdd37a084c5a799aa291bee899d6e3ba3e",
+    "retrieved_utc": "2026-10-13T00:12:59.764848+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220122T180000_20220123T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+    "bytes": 16147456,
+    "sha256": "a0fa3beafe1733be2d5e110c1f5d96c09def97910c76ccec609a2486e4d9be6c",
+    "retrieved_utc": "2026-10-13T00:14:26.708270+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220123T000000_20220123T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-22T23%3A59%3A30.000000Z&end=2022-01-23T06%3A00%3A30.000000Z",
+    "bytes": 16138752,
+    "sha256": "55c87452c211483e577152f8dd08de837fe7e483dcdf652d8523a5ca99e108fd",
+    "retrieved_utc": "2026-10-13T00:15:27.889731+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220123T060000_20220123T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-23T05%3A59%3A30.000000Z&end=2022-01-23T12%3A00%3A30.000000Z",
+    "bytes": 16152576,
+    "sha256": "8692753f51c5d5b015113dc4377a6b86d641b015a82edd58cabdf97717f7cec0",
+    "retrieved_utc": "2026-10-13T00:16:37.917667+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220123T120000_20220123T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+    "bytes": 16153600,
+    "sha256": "ab7aa7e422682a817d6dd4d103b48fbfd173c0624af8830f7741197a937f8a30",
+    "retrieved_utc": "2026-10-13T00:17:41.850048+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220123T180000_20220124T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+    "bytes": 16147968,
+    "sha256": "82c3baaaa7735028b71ae6b08ff797cd1ecbc2fd7a6691cbd2c2d19ef90949b6",
+    "retrieved_utc": "2026-10-13T00:18:55.550413+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220124T000000_20220124T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-23T23%3A59%3A30.000000Z&end=2022-01-24T06%3A00%3A30.000000Z",
+    "bytes": 16141824,
+    "sha256": "12c7d4122ca48c8e99df5fc2a7c3722aa63c01745d2fbda73c660a9f954dfb62",
+    "retrieved_utc": "2026-10-13T00:20:10.206339+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220124T060000_20220124T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+    "bytes": 16159744,
+    "sha256": "fa2c396c33678d58d2f59d847a7870578d5eecdadd9ff8b21d5241ca3f2f3339",
+    "retrieved_utc": "2026-10-13T00:21:09.660356+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220124T120000_20220124T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+    "bytes": 16154624,
+    "sha256": "6a267b599f0f2cad60cbd58b08553810b22b4de6ad90afc29554282da6b941d5",
+    "retrieved_utc": "2026-10-13T00:21:58.199262+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220124T180000_20220125T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+    "bytes": 16152064,
+    "sha256": "44b8c5fc8be14569f08947eb53785188d68a1b4a8a143f45253e8b6bfc21f971",
+    "retrieved_utc": "2026-10-13T00:22:18.805707+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220125T000000_20220125T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-24T23%3A59%3A30.000000Z&end=2022-01-25T06%3A00%3A30.000000Z",
+    "bytes": 16150016,
+    "sha256": "cd1c8c4b8f5918dad4aaed165fdbc886a5e6ada02bd199ef7d38a8f9d0ec0651",
+    "retrieved_utc": "2026-10-13T00:23:06.439289+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220125T060000_20220125T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+    "bytes": 16156160,
+    "sha256": "08beb46d1c7181c09cf2fa276da571827fa424cd64ad20b7e034f29a037b5588",
+    "retrieved_utc": "2026-10-13T00:23:53.211247+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220125T120000_20220125T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-25T11%3A59%3A30.000000Z&end=2022-01-25T18%3A00%3A30.000000Z",
+    "bytes": 16153088,
+    "sha256": "7d1ec6546d822e5e343bef98a5aca4b388bd441df4fd51edb6c8d377ec24c997",
+    "retrieved_utc": "2026-10-13T00:24:41.077693+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220125T180000_20220126T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-25T17%3A59%3A30.000000Z&end=2022-01-26T00%3A00%3A30.000000Z",
+    "bytes": 16151552,
+    "sha256": "e1d2307d42aeaece903485b9c22080b5b8839fd035f270977a0577202501df88",
+    "retrieved_utc": "2026-10-13T00:25:32.558325+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220126T000000_20220126T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-25T23%3A59%3A30.000000Z&end=2022-01-26T06%3A00%3A30.000000Z",
+    "bytes": 16148992,
+    "sha256": "d7e6ae7ab47a589af8575dfc228392eb987d3cad84ae4122c171627fc8c7f492",
+    "retrieved_utc": "2026-10-13T00:26:13.921056+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220126T060000_20220126T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-26T05%3A59%3A30.000000Z&end=2022-01-26T12%3A00%3A30.000000Z",
+    "bytes": 16156672,
+    "sha256": "8f4fc80ad6c30835193b8a334ba8102ac0b46e83811a7b1912fdcba2f678b4b4",
+    "retrieved_utc": "2026-10-13T00:26:54.697304+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220126T120000_20220126T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-26T11%3A59%3A30.000000Z&end=2022-01-26T18%3A00%3A30.000000Z",
+    "bytes": 16155136,
+    "sha256": "2add7b1894497c96c1e05ae524d96845fdabb9d1c95761020f7451ab144c7dd8",
+    "retrieved_utc": "2026-10-13T00:27:39.439525+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220126T180000_20220127T000000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-26T17%3A59%3A30.000000Z&end=2022-01-27T00%3A00%3A30.000000Z",
+    "bytes": 16151040,
+    "sha256": "b3d46450e4eedf5bfa3fb772760257d3401dd6ba62d95e47728a2f0fbb6b8d11",
+    "retrieved_utc": "2026-10-13T00:28:23.436139+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220127T000000_20220127T060000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-26T23%3A59%3A30.000000Z&end=2022-01-27T06%3A00%3A30.000000Z",
+    "bytes": 16137216,
+    "sha256": "bb92861e0ba43dfa41a1d1d398c07ac1d822f128b337351e137cb8878fcce0dc",
+    "retrieved_utc": "2026-10-13T00:28:52.503180+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220127T060000_20220127T120000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-27T05%3A59%3A30.000000Z&end=2022-01-27T12%3A00%3A30.000000Z",
+    "bytes": 16164864,
+    "sha256": "6e4ce34d39f15ee076209ecbfa0219c78e2f0463d385d73186366e9316eb960a",
+    "retrieved_utc": "2026-10-13T00:29:20.281615+00:00"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220127T120000_20220127T180000.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-01-27T11%3A59%3A30.000000Z&end=2022-01-27T18%3A00%3A30.000000Z",
+    "bytes": 16155136,
+    "sha256": "f6e957d4db28e07b70c5aac9810e1f1d3538e8621c0d96b3f324665ad6af89bd",
+    "retrieved_utc": "2026-10-13T00:30:21.449532+00:00"
   },
   {
     "file": "inputs/continuation/waveforms/IV_CSTH_20220401T000000_20220401T003000.mseed",

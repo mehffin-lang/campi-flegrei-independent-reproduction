@@ -36,5 +36,33 @@
     "HAL insu-00354755v1 (metadata, no fileMain)",
     "INGV Earth-prints original bundle (only GeoProsp_Battaglia.pdf)"
   ],
-  "needed": "Original 2008 numerical Vp/Vs or Vp and Vs grid, coordinate axes/units/depth datum/version and any regridding/padding transformation to models/3d_vmod; request from Battaglia/Zollo or the distributing institution. Nobody contacted."
+  "needed": "Original 2008 numerical Vp and Vs (or Vp/Vs) grid, axes/units/depth datum/version, transformations into the distributed TomoDD grid and regional averaging definitions. No contact or request made.",
+  "resumption_check": {
+    "original_paper_refetched": "inputs/resumption/battaglia2008.pdf",
+    "sha256": "8c1c95beb1c8230f41c481a2bf140bfa7c8c3d9168ebd47a196e80bd3cd58f72",
+    "same_as_previously_verified_written_source": true,
+    "additional_written_sources": [
+      {
+        "url": "https://doi.org/10.1111/j.1365-246X.2010.04911.x",
+        "finding": "Section 3 confirms the 18 x 18 x 9 km volume, top 0.5 km above sea level and 500 m grid. No original numerical grid located on this page."
+      },
+      {
+        "url": "https://amsdottorato.unibo.it/id/eprint/6905/1/serlenga_vincenzo_tesi.pdf",
+        "finding": "Serlenga thesis, printed p.37, reports a 25 m layer representation of an average Battaglia model in Fig.2.16. The inspected section supplies no numerical grid or original-node mapping. No plotted values extracted."
+      }
+    ],
+    "regional_averaging_missing": "Exact Pozzuoli-Solfatara and whole-caldera masks, treatment of padded/unresolved nodes, depth bins, weights, and whether velocities or ratios are averaged are not specified by Tan. No regional average is accepted.",
+    "classification": "Written source verified; numerical original and transformation provenance unresolved; quarantine retained."
+  },
+  "distributed_release_metadata_check": {
+    "record": "https://zenodo.org/records/16562216",
+    "version": "1.0",
+    "member": "Campi-Flegrei-Earthquake-Monitoring-main/models/3d_vmod",
+    "archive_uncompressed_bytes": 122853,
+    "archive_crc32": "0x79abe4ec",
+    "local_bytes": 122853,
+    "local_crc32": "0x79abe4ec",
+    "metadata_agrees": true,
+    "meaning": "Size/CRC agreement identifies compatible author-release metadata, not an independent source or verification of the original 2008 numeric values. No archived grid values were decoded or used; original-grid and transformation provenance remain unresolved."
+  }
 }

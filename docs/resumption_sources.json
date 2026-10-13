@@ -1,0 +1,198 @@
+[
+  {
+    "source": "https://zenodo.org/records/17132077/files/RITE_daily.txt?download=1",
+    "local_input": "inputs/continuation/RITE_daily.txt",
+    "retrieved_utc": "2026-10-13T00:08:36.541704+00:00",
+    "http": 200,
+    "bytes": 156474,
+    "file": "inputs/resumption/RITE_daily.txt",
+    "sha256": "c67c6c6f4b3e062623308f2a51be1e7ae703067a68aa7b576204cc960a1ffa8a",
+    "matches_existing": true
+  },
+  {
+    "source": "https://zenodo.org/records/17132077/files/RITE_Timeseries_Format.readme?download=1",
+    "local_input": "inputs/continuation/RITE_Timeseries_Format.readme",
+    "retrieved_utc": "2026-10-13T00:08:37.410444+00:00",
+    "http": 200,
+    "bytes": 676,
+    "file": "inputs/resumption/RITE_Timeseries_Format.readme",
+    "sha256": "6079e6230bd5c8e086f9c2fef4cd6c6250b3311b0a20fce1640e664ab2446475",
+    "matches_existing": true,
+    "text": "Daily and weekly vertical time series for the GNSS station RITE (Campi Flegrei), 2000-2024\r\n\r\nThe files contain a series of columns providing vertical displacement as a function of time:\r\nColumn 1: Time in Modified Julian Date\r\nColumn 2: Up displacement in meters\r\nColumn 3: Up uncertainty in meters\r\n\r\nPlease cite the following reference when using the dataset:\r\nDe Martino P, Dolce M, Brandi G, Scarpato G, Tammaro U (2021). \r\nThe Ground Deformation History of the Neapolitan Volcanic Area (Campi Flegrei Caldera, Somma\u2013Vesuvius Volcano, and Ischia Island) from 20 Years of Continuous GPS Observations (2000\u20132019).\r\nRemote Sensing. 13(14):2725. doi:10.3390/rs13142725.\r\n\r\n\r\n"
+  },
+  {
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0377027310001745-mmc1.doc",
+    "retrieved_utc": "2026-10-13T00:12:22.841504+00:00",
+    "http": 200,
+    "bytes": 199168,
+    "file": "inputs/resumption/delgaudio2010_table.doc",
+    "sha256": "78fbb98a658eea711902fba278b39d2e71f57ff54d8b2dd9ee53266fe044126b",
+    "matches_existing": true
+  },
+  {
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/years.html",
+    "retrieved_utc": "2026-10-13T00:12:22.842621+00:00",
+    "http": 200,
+    "bytes": 3996,
+    "file": "inputs/resumption/routine_years.html",
+    "sha256": "871726a15160059bcae7ce822cc4786573f9a5bc637e02308ccc7042b2927dc4"
+  },
+  {
+    "url": "https://archive.org/wayback/available?url=terremoti.ov.ingv.it/gossip/flegrei/2025/index.html&timestamp=20251003",
+    "retrieved_utc": "2026-10-13T00:12:22.843504+00:00",
+    "http": 200,
+    "bytes": 113,
+    "file": "inputs/resumption/routine_history.json",
+    "sha256": "a61509956dc38988e96fecacd7b61363eb547de9145c654372d15d7e5fbf1cbe"
+  },
+  {
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/index.html",
+    "retrieved_utc": "2026-10-13T00:12:23.202818+00:00",
+    "http": 200,
+    "bytes": 1510,
+    "file": "inputs/resumption/temporary_index.html",
+    "sha256": "811c6f5ccf073bb67d180e058bc368473bfea6f55254f36beb79a8e7172e9c82"
+  },
+  {
+    "url": "https://ran.protezionecivile.it/IT/index.php",
+    "retrieved_utc": "2026-10-13T00:12:23.713103+00:00",
+    "http": 200,
+    "bytes": 468067,
+    "file": "inputs/resumption/ran_index.html",
+    "sha256": "2ed1ec989186dccf7331a8f5d571378d3cf5bf86040961ec46e71c455bdc7db4"
+  },
+  {
+    "url": "https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1395&context=usgsstaffpub",
+    "retrieved_utc": "2026-10-13T00:13:08.184630+00:00",
+    "http": 403,
+    "bytes": 5698,
+    "error": "HTTPError('403 Client Error: Forbidden for url: https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1395&context=usgsstaffpub')"
+  },
+  {
+    "url": "https://api.figshare.com/v2/articles/29940224/versions/1",
+    "retrieved_utc": "2026-10-13T00:13:08.247698+00:00",
+    "http": 200,
+    "bytes": 3352,
+    "file": "inputs/resumption/routine_candidate_metadata.json",
+    "sha256": "2cc220e44997a40ba90ff0d41feb246fb8600cf3ff5781b48c0f620f1d782dd0"
+  },
+  {
+    "url": "https://ingvterremoti.com/2024/05/20/sciame-sismico-ai-campi-flegrei-20-maggio-2024-comunicati-di-aggiornamento/",
+    "retrieved_utc": "2026-10-13T00:17:13.957845+00:00",
+    "http": 200,
+    "bytes": 450128,
+    "file": "inputs/resumption/s4_anchor.html",
+    "sha256": "3352d323a440a6c753abfceb5b37ba6a0c008a20cb24672b9cde7abd8e6a41b5"
+  },
+  {
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-05-20T20:09:33&end=2024-05-20T20:12:33",
+    "retrieved_utc": "2026-10-13T00:17:14.815906+00:00",
+    "http": 200,
+    "bytes": 136192,
+    "file": "inputs/resumption/S4_CSOB_20240520.mseed",
+    "sha256": "4645e5484ae8ac44281312c52917630e46799782ee5c6cf46a3c0a8a6e890e04",
+    "traces": [
+      {
+        "id": "IV.CSOB..HHE",
+        "start": "2024-05-20T20:09:32.140000Z",
+        "end": "2024-05-20T20:12:33.930000Z",
+        "npts": 18180,
+        "sample_rate": 100.0
+      },
+      {
+        "id": "IV.CSOB..HHN",
+        "start": "2024-05-20T20:09:31.650000Z",
+        "end": "2024-05-20T20:12:34.510000Z",
+        "npts": 18287,
+        "sample_rate": 100.0
+      },
+      {
+        "id": "IV.CSOB..HHZ",
+        "start": "2024-05-20T20:09:32.810000Z",
+        "end": "2024-05-20T20:12:33.910000Z",
+        "npts": 18111,
+        "sample_rate": 100.0
+      }
+    ]
+  },
+  {
+    "url": "https://api.github.com/repos/iamharrison2000/Campi-Flegrei-Earthquake-Monitoring/git/trees/f84c9c9dc6bb1501a95a833f6634199a63d4f3b3?recursive=1",
+    "retrieved_utc": "2026-10-13T00:21:26.831201+00:00",
+    "http": 200,
+    "bytes": 4923,
+    "file": "inputs/resumption/trained_release_tree.json",
+    "sha256": "4a13db9237708ac78bf18f2fb49632b61cf772727afcb29502323e446a147a2c",
+    "paths": [
+      "README.md",
+      "code/association.ipynb",
+      "code/cleaning_phasent_picks.ipynb",
+      "code/phase_picking.py",
+      "models/1d_vmod_velest.mod",
+      "models/3d_vmod",
+      "models/phasenet_retrained.json",
+      "models/phasenet_retrained.pt",
+      "models/stations.csv",
+      "models/stations_velest.dat",
+      "output/associated_phases.csv.zip",
+      "output/catalog.csv",
+      "output/focal_mechanism.csv",
+      "output/polarity.csv",
+      "output/s1.html"
+    ]
+  },
+  {
+    "url": "https://ran.protezionecivile.it/IT/autenticazione.php",
+    "retrieved_utc": "2026-10-13T00:21:27.057445+00:00",
+    "http": 200,
+    "bytes": 8260,
+    "file": "inputs/resumption/ran_login.html",
+    "sha256": "29de4c42cf65cf0d26d6107710bd2fe6e13df5f471f5fad61afff17d7472cfab"
+  },
+  {
+    "url": "https://ran.protezionecivile.it/IT/registrazione.php",
+    "retrieved_utc": "2026-10-13T00:21:27.838784+00:00",
+    "http": 200,
+    "bytes": 10117,
+    "file": "inputs/resumption/ran_registration.html",
+    "sha256": "6c28eab422ddb942bc7adaee9895cb317dc80d91613e678c3c2269413b899c7f"
+  },
+  {
+    "url": "https://www.earth-prints.org/server/api/core/bitstreams/ba5fb65d-7273-4c4e-9a22-dda62cb50c67/content",
+    "retrieved_utc": "2026-10-13T00:23:16.379221+00:00",
+    "http": 200,
+    "bytes": 1519251,
+    "file": "inputs/resumption/battaglia2008.pdf",
+    "sha256": "8c1c95beb1c8230f41c481a2bf140bfa7c8c3d9168ebd47a196e80bd3cd58f72",
+    "matches_existing": true
+  },
+  {
+    "role": "Availability/data-discrepancy diagnostic; not assumed successful coverage",
+    "retrieved_utc": "2026-10-13T00:26:14.008767+00:00",
+    "params": {
+      "net": "IV",
+      "sta": "CPIS",
+      "loc": "*",
+      "cha": "HH?",
+      "start": "2022-01-22T08:00:00",
+      "end": "2022-01-22T08:30:00"
+    },
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPIS&loc=%2A&cha=HH%3F&start=2022-01-22T08%3A00%3A00&end=2022-01-22T08%3A30%3A00",
+    "http": 204,
+    "bytes": 0
+  },
+  {
+    "role": "Availability/data-discrepancy diagnostic; not assumed successful coverage",
+    "retrieved_utc": "2026-10-13T00:26:15.005987+00:00",
+    "params": {
+      "net": "IV",
+      "sta": "CPIS",
+      "loc": "*",
+      "cha": "HHZ",
+      "start": "2022-01-22T08:00:00",
+      "end": "2022-01-22T08:01:00"
+    },
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPIS&loc=%2A&cha=HHZ&start=2022-01-22T08%3A00%3A00&end=2022-01-22T08%3A01%3A00",
+    "http": 204,
+    "bytes": 0
+  }
+]

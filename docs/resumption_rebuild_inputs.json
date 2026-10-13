@@ -1,0 +1,86 @@
+[
+  {
+    "file": "inputs/resumption/RITE_daily.txt",
+    "url": "https://zenodo.org/records/17132077/files/RITE_daily.txt?download=1",
+    "bytes": 156474,
+    "sha256": "c67c6c6f4b3e062623308f2a51be1e7ae703067a68aa7b576204cc960a1ffa8a"
+  },
+  {
+    "file": "inputs/resumption/RITE_Timeseries_Format.readme",
+    "url": "https://zenodo.org/records/17132077/files/RITE_Timeseries_Format.readme?download=1",
+    "bytes": 676,
+    "sha256": "6079e6230bd5c8e086f9c2fef4cd6c6250b3311b0a20fce1640e664ab2446475"
+  },
+  {
+    "file": "inputs/resumption/delgaudio2010_table.doc",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0377027310001745-mmc1.doc",
+    "bytes": 199168,
+    "sha256": "78fbb98a658eea711902fba278b39d2e71f57ff54d8b2dd9ee53266fe044126b"
+  },
+  {
+    "file": "inputs/resumption/routine_years.html",
+    "url": "https://terremoti.ov.ingv.it/gossip/flegrei/years.html",
+    "bytes": 3996,
+    "sha256": "871726a15160059bcae7ce822cc4786573f9a5bc637e02308ccc7042b2927dc4"
+  },
+  {
+    "file": "inputs/resumption/routine_history.json",
+    "url": "https://archive.org/wayback/available?url=terremoti.ov.ingv.it/gossip/flegrei/2025/index.html&timestamp=20251003",
+    "bytes": 113,
+    "sha256": "a61509956dc38988e96fecacd7b61363eb547de9145c654372d15d7e5fbf1cbe"
+  },
+  {
+    "file": "inputs/resumption/temporary_index.html",
+    "url": "https://dataserver.ov.ingv.it/users/anna.tramelli/seismic_records/index.html",
+    "bytes": 1510,
+    "sha256": "811c6f5ccf073bb67d180e058bc368473bfea6f55254f36beb79a8e7172e9c82"
+  },
+  {
+    "file": "inputs/resumption/ran_index.html",
+    "url": "https://ran.protezionecivile.it/IT/index.php",
+    "bytes": 468067,
+    "sha256": "2ed1ec989186dccf7331a8f5d571378d3cf5bf86040961ec46e71c455bdc7db4"
+  },
+  {
+    "file": "inputs/resumption/routine_candidate_metadata.json",
+    "url": "https://api.figshare.com/v2/articles/29940224/versions/1",
+    "bytes": 3352,
+    "sha256": "2cc220e44997a40ba90ff0d41feb246fb8600cf3ff5781b48c0f620f1d782dd0"
+  },
+  {
+    "file": "inputs/resumption/s4_anchor.html",
+    "url": "https://ingvterremoti.com/2024/05/20/sciame-sismico-ai-campi-flegrei-20-maggio-2024-comunicati-di-aggiornamento/",
+    "bytes": 450128,
+    "sha256": "3352d323a440a6c753abfceb5b37ba6a0c008a20cb24672b9cde7abd8e6a41b5"
+  },
+  {
+    "file": "inputs/resumption/S4_CSOB_20240520.mseed",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=*&cha=HH?&start=2024-05-20T20:09:33&end=2024-05-20T20:12:33",
+    "bytes": 136192,
+    "sha256": "4645e5484ae8ac44281312c52917630e46799782ee5c6cf46a3c0a8a6e890e04"
+  },
+  {
+    "file": "inputs/resumption/trained_release_tree.json",
+    "url": "https://api.github.com/repos/iamharrison2000/Campi-Flegrei-Earthquake-Monitoring/git/trees/f84c9c9dc6bb1501a95a833f6634199a63d4f3b3?recursive=1",
+    "bytes": 4923,
+    "sha256": "4a13db9237708ac78bf18f2fb49632b61cf772727afcb29502323e446a147a2c"
+  },
+  {
+    "file": "inputs/resumption/ran_login.html",
+    "url": "https://ran.protezionecivile.it/IT/autenticazione.php",
+    "bytes": 8260,
+    "sha256": "29de4c42cf65cf0d26d6107710bd2fe6e13df5f471f5fad61afff17d7472cfab"
+  },
+  {
+    "file": "inputs/resumption/ran_registration.html",
+    "url": "https://ran.protezionecivile.it/IT/registrazione.php",
+    "bytes": 10117,
+    "sha256": "6c28eab422ddb942bc7adaee9895cb317dc80d91613e678c3c2269413b899c7f"
+  },
+  {
+    "file": "inputs/resumption/battaglia2008.pdf",
+    "url": "https://www.earth-prints.org/server/api/core/bitstreams/ba5fb65d-7273-4c4e-9a22-dda62cb50c67/content",
+    "bytes": 1519251,
+    "sha256": "8c1c95beb1c8230f41c481a2bf140bfa7c8c3d9168ebd47a196e80bd3cd58f72"
+  }
+]

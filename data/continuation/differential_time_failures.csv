@@ -1,0 +1,24 @@
+pick_index,component,error,source
+1608,N,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_2022-01-21T000000_2022-01-21T060000.mseed
+1608,E,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_2022-01-21T000000_2022-01-21T060000.mseed
+1738,N,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_2022-01-21T000000_2022-01-21T060000.mseed
+1738,E,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_2022-01-21T000000_2022-01-21T060000.mseed
+8308,N,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220121T120000_20220121T180000.mseed
+8308,E,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220121T120000_20220121T180000.mseed
+12347,N,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220122T120000_20220122T180000.mseed
+12347,E,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220122T120000_20220122T180000.mseed
+23392,N,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed
+23392,E,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed
+23396,Z,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed
+23652,Z,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed
+23656,N,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed
+23656,E,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed
+31904,N,ValueError('Insufficient context or sample rate'),inputs/continuation/waveforms/IV_COLB_20220126T000000_20220126T060000.mseed
+31904,E,ValueError('Insufficient context or sample rate'),inputs/continuation/waveforms/IV_COLB_20220126T000000_20220126T060000.mseed
+32223,N,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220126T000000_20220126T060000.mseed
+32223,E,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220126T000000_20220126T060000.mseed
+32277,Z,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220126T000000_20220126T060000.mseed
+32282,N,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220126T000000_20220126T060000.mseed
+32282,E,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220126T000000_20220126T060000.mseed
+37008,N,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220126T120000_20220126T180000.mseed
+37008,E,ValueError('Missing or gapped component'),inputs/continuation/waveforms/IV_COLB_20220126T120000_20220126T180000.mseed

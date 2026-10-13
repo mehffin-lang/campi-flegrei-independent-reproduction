@@ -1,0 +1,32 @@
+{
+  "file": "inputs/continuation/waveforms/IV_COLB_20230101T000000_20230101T003000.mseed",
+  "sha256": "99421cd5144a64c74477e9623669a1948f77cffe310ea67bdd783ec48edecd68",
+  "header_inspection": "ObsPy read(file, headonly=True); clip each sample interval to the requested half-hour core",
+  "traces": [
+    {
+      "channel": "IV.COLB..HHE",
+      "start": "2022-12-31T23:59:28.640000Z",
+      "end": "2023-01-01T00:00:01.670000Z",
+      "sample_rate_hz": 100.0,
+      "returned_core_seconds": 1.68
+    },
+    {
+      "channel": "IV.COLB..HHN",
+      "start": "2022-12-31T23:59:28.380000Z",
+      "end": "2023-01-01T00:00:01.330000Z",
+      "sample_rate_hz": 100.0,
+      "returned_core_seconds": 1.34
+    },
+    {
+      "channel": "IV.COLB..HHZ",
+      "start": "2022-12-31T23:59:29.400000Z",
+      "end": "2023-01-01T00:00:00.310000Z",
+      "sample_rate_hz": 100.0,
+      "returned_core_seconds": 0.32
+    }
+  ],
+  "finite_prediction_spans": 0,
+  "independent_picks": 0,
+  "interpretation": "Only the short beginning of the requested core was returned. Raw observed duration is counted after clipping; there are no finite PhaseNet scores in the core. Requested half-hour duration is not covered exposure.",
+  "basis": "Current inference cache and prediction_coverage_summary.json; source headers inspected directly."
+}

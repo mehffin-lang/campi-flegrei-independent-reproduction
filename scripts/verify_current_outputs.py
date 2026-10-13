@@ -20,9 +20,10 @@ def main():
         if r['status']!='partially reproduced':continue
         saved=[p.strip() for p in r['saved_data'].split(';')]
         inputs=r['input_observation_files']
+        methods=r.get('permitted_method_files',[])
         assert all('quarantine/' not in p and 'science.adw9038' not in p and 'reference_assets' not in p and 'tests/' not in p for p in inputs+saved)
         assert r['data_command'] and r['plot_command']
-        chains.append(dict(panel=r['panel'],input_files=inputs,saved_output_sha256={p:sha(p) for p in saved},
+        chains.append(dict(panel=r['panel'],input_files=inputs,permitted_method_sha256={p:sha(p) for p in methods},saved_output_sha256={p:sha(p) for p in saved},
                            data_command=r['data_command'],plot_command=r['plot_command'],plot=r['generated_figure'],plot_sha256=sha(r['generated_figure']),
                            report_figure=r['report_figure'],report_figure_sha256=sha(r['report_figure']),
                            classification='External contextual calculation' if r['panel'] in ['1A','1B','1C'] or r['panel'].startswith('S5') else 'Own partial processing of observations or metadata',
@@ -38,7 +39,11 @@ def main():
         text=(ROOT/'scripts'/name).read_text()
         assert 'science.adw9038' not in text and 'reference_assets' not in text and 'quarantine/' not in text and 'tests/results' not in text
     picks=pd.read_csv(D/'picks.csv');events=pd.read_csv(D/'initial_events.csv');assigned=pd.read_csv(D/'associations.csv')
+    repeatability=json.loads((ROOT/'tests/results/association_repeatability.json').read_text())
+    assert repeatability['passed'] and repeatability['picks_sha256']==sha('data/continuation/picks.csv')
     sources=set(picks.source);assert all(p.startswith(('inputs/waveforms/','inputs/extended/waveforms/','inputs/continuation/waveforms/')) and (ROOT/p).is_file() for p in sources)
+    template_sources={str(p.relative_to(ROOT)) for label in ['E1','E2','E3'] for p in (ROOT/'inputs/waveforms').glob(label+'_*.mseed')}
+    assert sources.isdisjoint(template_sources), 'Written-method hybrid templates must not seed the independent pick catalog'
     assert picks.probability.between(.3,1).all() and assigned.pick_index.is_unique
     assert assigned.pick_index.between(0,len(picks)-1).all()
     counts=assigned.groupby('event_index').size();assert (counts>=6).all()
@@ -64,10 +69,40 @@ def main():
     computed=fi.groupby('event_index').FI.mean().sort_index()
     assert np.allclose(computed,fi_events.loc[computed.index,'mean_FI'],rtol=1e-12,atol=1e-12)
     assert not fi.reviewed.any() and json.loads((D/'catalog_frequency_index.json').read_text())['confirmed_hybrids']==0
+    frequency_review=json.loads((D/'catalog_frequency_review.json').read_text())
+    frequency_index=json.loads((D/'catalog_frequency_review_index.json').read_text())
+    for name,digest in frequency_review['input_sha256'].items():assert sha('data/continuation/'+name)==digest
+    assert {r['event_index'] for r in frequency_index}<=set(fi_events[fi_events.mean_FI<0].index)
+    assert {r['source'] for r in frequency_index}<=set(fi.source)
+    with np.load(D/'catalog_frequency_review.npz') as windows:
+        assert {r['key'] for r in frequency_index}==set(windows.files)
+        assert all(np.isfinite(windows[k]).all() and np.all(np.diff(windows[k][0])>0) for k in windows.files)
+    assert frequency_review['confirmed_hybrids']==0
+    assert 'catalog_frequency_review_diagnostic' not in paper+comparison
+    quality=pd.read_csv(D/'association_quality.csv').set_index('event_index')
+    assert quality.index.is_unique and set(quality.index)==set(events.event_index)
+    assert quality.loc[m.index,'passes_causality'].all()
+    assert quality.loc[edges.event_a,'passes_causality'].all() and quality.loc[edges.event_b,'passes_causality'].all()
+    differential=pd.read_csv(D/'differential_times.csv')
+    assert np.isfinite(differential[['differential_time_s','delay_y_minus_x_s','correlation','mean_coherence']]).all().all()
+    assert np.allclose(differential.differential_time_s,differential.picked_differential_time_s-differential.delay_y_minus_x_s)
+    assert set(differential.source_a)|set(differential.source_b)<=set(pd.read_csv(D/'processed_coverage.csv').file)
+    assert quality.loc[differential.event_a,'passes_causality'].all() and quality.loc[differential.event_b,'passes_causality'].all()
+    bench=json.loads((D/'benchmark_window.json').read_text())
+    assert sha(bench['source_file'])==bench['input_sha256']
+    assert not bench['authors_predictions_used'] and not bench['training_repeated'] and not bench['accuracy_estimated']
+    assert bench['source_file'] not in set(picks.source), 'Context-selected benchmark must not seed independent catalog'
+    with np.load(D/'figure_S4A.npz') as values:
+        for model in ['original','retrained']:
+            for phase in ['P','S']:
+                scores=values[model+'_'+phase];assert np.isfinite(scores).all() and ((scores>=0)&(scores<=1)).all()
     result=dict(passed=True,partial_panel_chains=chains,picks_checked=len(picks),raw_pick_source_files=len(sources),provisional_events=len(events),
                 magnitude_normal_equation_max_abs_residual=norm,frequency_index_station_measurements=len(fi),frequency_index_event_means_verified=len(fi_events),published_reference_images_only_in_comparison=True,
                 no_test_fixture_or_quarantined_result_in_inspected_panel_chains=True,
                 association_software_test=json.loads((ROOT/'tests/results/association_validation.json').read_text()),
+                observed_association_repeatability=repeatability,
+                waveform_differential_measurements_checked=len(differential),benchmark_window_checked=True,causality_magnitude_screen_checked=True,
+                negative_frequency_candidate_review_windows=frequency_review['saved_station_windows'],
                 scope='Explicit current file graph and listed invariants only. Does not prove absence of unexamined/hidden inputs or establish scientific accuracy of provisional events. S6 is excluded, and no panel is fully reproduced.')
     (D/'provenance_validation.json').write_text(json.dumps(result,indent=2)+'\n');print('PASS: current partial-panel chains, provenance boundaries and saved numerical consistency.')
 

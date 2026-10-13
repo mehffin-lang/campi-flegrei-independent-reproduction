@@ -1,0 +1,15 @@
+{
+  "negative_mean_FI_candidates": 9,
+  "candidates_with_windows": 9,
+  "saved_station_windows": 26,
+  "failures": [],
+  "confirmed_hybrids": 0,
+  "selection": "For each negative-mean-FI provisional event: two highest station SNRs and the lowest station FI, deduplicated. Diagnostic selection, not an accuracy sample.",
+  "display_method": "Z velocity; response removal on up to -35/+31 s context, then -20/+16 s display, with a separate causal four-pole 0.2--6 Hz curve. FI/SNR labels retain the original saved measurements, whose response-removal context was -10/+10 s; no FI is re-estimated from the display.",
+  "input_sha256": {
+    "catalog_frequency_index.csv": "12ca0b4d055eda06505ce40d48b435971c54354c59d13c983c01e32f55918b2b",
+    "catalog_frequency_index_events.csv": "a4b75305368c09edae011d8c44130ae919860d4bca34187a8a12daa46d9597a2",
+    "association_quality.csv": "b26fda2293809d9bca7b1d964bf84c3470ec02a5984f961d8dd87c526802561f"
+  },
+  "limitations": "Predicted/picked alignment is unreviewed. Other provisional arrivals are warnings, not validated coda labels. Plots and negative FI do not establish hybrid events."
+}

@@ -1,0 +1,452 @@
+[
+  {
+    "event_index": 157,
+    "mean_FI": -0.0435539377535477,
+    "station": "IV.CSOB.",
+    "channel": "IV.CSOB..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CSOB_20220401T000000_20220401T003000.mseed",
+    "source_sha256": "5e3483b5e2e6d5aec5ef00cb65112a4c294d75ebc2123407fc66b1201a0705cd",
+    "arrival": "2022-04-01T00:12:12.500000Z",
+    "alignment": "independent P pick",
+    "FI": 0.0238835654460313,
+    "power_SNR_dB": 6.080537383213286,
+    "key": "e157_IV_CSOB_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -5.16,
+      7.73
+    ]
+  },
+  {
+    "event_index": 157,
+    "mean_FI": -0.0435539377535477,
+    "station": "IV.COLB.",
+    "channel": "IV.COLB..HHZ",
+    "source": "inputs/continuation/waveforms/IV_COLB_20220401T000000_20220401T003000.mseed",
+    "source_sha256": "11555931078aa151ad0d99235e5739f3d7f1458692111c1fd690ee8cd955d868",
+    "arrival": "2022-04-01T00:12:12.120000Z",
+    "alignment": "independent P pick",
+    "FI": -0.6246781912406992,
+    "power_SNR_dB": 5.493420166620662,
+    "key": "e157_IV_COLB_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -5.07,
+      8.14754
+    ]
+  },
+  {
+    "event_index": 157,
+    "mean_FI": -0.0435539377535477,
+    "station": "IV.CFB1.",
+    "channel": "IV.CFB1..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CFB1_20220401T000000_20220401T003000.mseed",
+    "source_sha256": "76d450d2c194a4249ebcc7e87bfe1bea7d9e31f6ce175ed8c583792d6a5f96b9",
+    "arrival": "2022-04-01T00:12:11.383747Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -1.257099946817663,
+    "power_SNR_dB": -0.7965704930957129,
+    "key": "e157_IV_CFB1_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -3.974618,
+      8.178787
+    ]
+  },
+  {
+    "event_index": 158,
+    "mean_FI": -0.0242765452548117,
+    "station": "IV.CNIS.",
+    "channel": "IV.CNIS..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CNIS_20220401T000000_20220401T003000.mseed",
+    "source_sha256": "0758f59cad9e84dcb38d582d7c2a6a5d1875908f14df089ddf505b018df2d241",
+    "arrival": "2022-04-01T00:12:20.442136Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -0.9249901006442524,
+    "power_SNR_dB": 3.3204975814962943,
+    "key": "e158_IV_CNIS_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -12.664117,
+      -8.538064
+    ]
+  },
+  {
+    "event_index": 158,
+    "mean_FI": -0.0242765452548117,
+    "station": "IV.CFB3.",
+    "channel": "IV.CFB3..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CFB3_20220401T000000_20220401T003000.mseed",
+    "source_sha256": "e242b65220a0998058ccb3de798af3cde872fad9b83064425121c5c11f913199",
+    "arrival": "2022-04-01T00:12:20.158091Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -0.4241167210159022,
+    "power_SNR_dB": 1.0195286787948523,
+    "key": "e158_IV_CFB3_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -12.874672,
+      -8.483899
+    ]
+  },
+  {
+    "event_index": 158,
+    "mean_FI": -0.0242765452548117,
+    "station": "IV.CFB1.",
+    "channel": "IV.CFB1..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CFB1_20220401T000000_20220401T003000.mseed",
+    "source_sha256": "76d450d2c194a4249ebcc7e87bfe1bea7d9e31f6ce175ed8c583792d6a5f96b9",
+    "arrival": "2022-04-01T00:12:19.562534Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -1.2139979892118655,
+    "power_SNR_dB": -0.679017677471765,
+    "key": "e158_IV_CFB1_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -12.153405,
+      -8.178787
+    ]
+  },
+  {
+    "event_index": 165,
+    "mean_FI": -0.2190289596296332,
+    "station": "IV.CSTH.",
+    "channel": "IV.CSTH..HHZ",
+    "source": "inputs/waveforms/day_CSTH_23.mseed",
+    "source_sha256": "e52cf357eef5d762242047ee90abaaaadab12770abf3382a1b315825b0392179",
+    "arrival": "2024-01-01T23:26:57.550000Z",
+    "alignment": "independent P pick",
+    "FI": 0.7775122430705922,
+    "power_SNR_dB": 3.9827746948823584,
+    "key": "e165_IV_CSTH_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": []
+  },
+  {
+    "event_index": 165,
+    "mean_FI": -0.2190289596296332,
+    "station": "IV.CSOB.",
+    "channel": "IV.CSOB..HHZ",
+    "source": "inputs/waveforms/day_CSOB_23.mseed",
+    "source_sha256": "c1144252e5c39e689dcbfae5ef4323441def7c182038950c908632781d0fa7a6",
+    "arrival": "2024-01-01T23:26:57.650000Z",
+    "alignment": "independent P pick",
+    "FI": 0.6714988316366851,
+    "power_SNR_dB": 2.1292765760987797,
+    "key": "e165_IV_CSOB_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": []
+  },
+  {
+    "event_index": 165,
+    "mean_FI": -0.2190289596296332,
+    "station": "IV.CFB1.",
+    "channel": "IV.CFB1..HHZ",
+    "source": "inputs/extended/waveforms/IV_CFB1_2024-01-01_2024-01-02.mseed",
+    "source_sha256": "99054d839bc2077bf2b429730b96eef0eb44899f92e720fc8a41f0667f199dea",
+    "arrival": "2024-01-01T23:26:58.081591Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -1.767015639024144,
+    "power_SNR_dB": -3.122716788745188,
+    "key": "e165_IV_CFB1_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": []
+  },
+  {
+    "event_index": 201,
+    "mean_FI": -0.1374882790774374,
+    "station": "IV.CFB3.",
+    "channel": "IV.CFB3..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CFB3_20250319T000000_20250319T060000.mseed",
+    "source_sha256": "7be2a31a8944f93abce8c967b0a26c9c3254c65ef3a75ca0851344ed4a882c5b",
+    "arrival": "2025-03-19T03:17:50.310759Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -0.7347140052988943,
+    "power_SNR_dB": 7.093806696920582,
+    "key": "e201_IV_CFB3_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -6.112366
+    ]
+  },
+  {
+    "event_index": 201,
+    "mean_FI": -0.1374882790774374,
+    "station": "IV.CCAP.",
+    "channel": "IV.CCAP..EHZ",
+    "source": "inputs/continuation/waveforms/IV_CCAP_20250319T000000_20250319T060000.mseed",
+    "source_sha256": "fa6522de31728028fb6a2fda3f10bfe6bc0acdc2f1192e3f151d034c2a835429",
+    "arrival": "2025-03-19T03:17:50.130020Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": 0.1177438688089612,
+    "power_SNR_dB": 6.49664527045294,
+    "key": "e201_IV_CCAP_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -5.497075
+    ]
+  },
+  {
+    "event_index": 201,
+    "mean_FI": -0.1374882790774374,
+    "station": "2I.CLAC.",
+    "channel": "2I.CLAC..HHZ",
+    "source": "inputs/continuation/waveforms/2I_CLAC_20250319T000000_20250319T060000.mseed",
+    "source_sha256": "fc1c3aa4b2ad88cef32fccd7360601acba209650df3f7d6f33fbd51215a61ceb",
+    "arrival": "2025-03-19T03:17:52.672579Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -1.809276089845804,
+    "power_SNR_dB": 0.4243625504357524,
+    "key": "e201_2I_CLAC_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -6.742671
+    ]
+  },
+  {
+    "event_index": 561,
+    "mean_FI": -0.0771025015663663,
+    "station": "IV.CQUE.",
+    "channel": "IV.CQUE..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CQUE_20250320T000000_20250320T060000.mseed",
+    "source_sha256": "0dfba11be0a321435c9c89597e76708f8567ab53f9f4c0fc34b9ca21d379d227",
+    "arrival": "2025-03-20T02:54:32.620000Z",
+    "alignment": "independent P pick",
+    "FI": 1.8730329786762976,
+    "power_SNR_dB": 9.363331703044055,
+    "key": "e561_IV_CQUE_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": []
+  },
+  {
+    "event_index": 561,
+    "mean_FI": -0.0771025015663663,
+    "station": "IV.CAAM.",
+    "channel": "IV.CAAM..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CAAM_20250320T000000_20250320T060000.mseed",
+    "source_sha256": "427d8001cc47cd9fb2e092e6298f05e61988dbe9470a4cbc84c0835245fc10cd",
+    "arrival": "2025-03-20T02:54:33.246485Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": 0.718298608275135,
+    "power_SNR_dB": 4.378664138296876,
+    "key": "e561_IV_CAAM_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": []
+  },
+  {
+    "event_index": 561,
+    "mean_FI": -0.0771025015663663,
+    "station": "IV.CUMA.",
+    "channel": "IV.CUMA..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CUMA_20250320T000000_20250320T060000.mseed",
+    "source_sha256": "45e3614081fc311fe4c79ad771bda89e8830e726d85191ec4b6a48cdd0b00490",
+    "arrival": "2025-03-20T02:54:32.980426Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -1.701792586327119,
+    "power_SNR_dB": 0.6120204463006106,
+    "key": "e561_IV_CUMA_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": []
+  },
+  {
+    "event_index": 569,
+    "mean_FI": -0.0385238650373946,
+    "station": "IV.CRUS.",
+    "channel": "IV.CRUS..EHZ",
+    "source": "inputs/continuation/waveforms/IV_CRUS_20250320T000000_20250320T060000.mseed",
+    "source_sha256": "636f0f7f8989739f4854d837eedd85f3c2a0d0b31841c91bb661202ff4507eb6",
+    "arrival": "2025-03-20T03:22:52.797553Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": 0.726396931570507,
+    "power_SNR_dB": 7.9186510457514,
+    "key": "e569_IV_CRUS_",
+    "passes_causality": false,
+    "other_provisional_arrivals_s": []
+  },
+  {
+    "event_index": 569,
+    "mean_FI": -0.0385238650373946,
+    "station": "IV.CUMA.",
+    "channel": "IV.CUMA..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CUMA_20250320T000000_20250320T060000.mseed",
+    "source_sha256": "45e3614081fc311fe4c79ad771bda89e8830e726d85191ec4b6a48cdd0b00490",
+    "arrival": "2025-03-20T03:22:53.545266Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -1.5595724328712903,
+    "power_SNR_dB": 1.9283708357571083,
+    "key": "e569_IV_CUMA_",
+    "passes_causality": false,
+    "other_provisional_arrivals_s": []
+  },
+  {
+    "event_index": 570,
+    "mean_FI": -0.0291407414330449,
+    "station": "2I.CREM.",
+    "channel": "2I.CREM..HHZ",
+    "source": "inputs/continuation/waveforms/2I_CREM_20250320T000000_20250320T060000.mseed",
+    "source_sha256": "e27999ed63afbdfa9e9257f2fbebb668e64e16bd303833206e1e4f8ae003abd8",
+    "arrival": "2025-03-20T03:23:34.840000Z",
+    "alignment": "independent P pick",
+    "FI": 0.8768490447941225,
+    "power_SNR_dB": 9.039783045261096,
+    "key": "e570_2I_CREM_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      13.78
+    ]
+  },
+  {
+    "event_index": 570,
+    "mean_FI": -0.0291407414330449,
+    "station": "IV.CSFT.",
+    "channel": "IV.CSFT..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CSFT_20250320T000000_20250320T060000.mseed",
+    "source_sha256": "9c7876cae69686506dcc1cd9ffdb9ce4610a41681a63494519b34788f40fe03e",
+    "arrival": "2025-03-20T03:23:34.837313Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": 0.8322730400885985,
+    "power_SNR_dB": 3.458820543237082,
+    "key": "e570_IV_CSFT_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      13.643822
+    ]
+  },
+  {
+    "event_index": 570,
+    "mean_FI": -0.0291407414330449,
+    "station": "IV.CUMA.",
+    "channel": "IV.CUMA..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CUMA_20250320T000000_20250320T060000.mseed",
+    "source_sha256": "45e3614081fc311fe4c79ad771bda89e8830e726d85191ec4b6a48cdd0b00490",
+    "arrival": "2025-03-20T03:23:37.570663Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -1.662144650622499,
+    "power_SNR_dB": 0.1240353760396462,
+    "key": "e570_IV_CUMA_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      13.65173
+    ]
+  },
+  {
+    "event_index": 631,
+    "mean_FI": -0.1411457260076434,
+    "station": "IV.CUMA.",
+    "channel": "IV.CUMA..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CUMA_20250320T060000_20250320T120000.mseed",
+    "source_sha256": "3b4a52838f0a8c6121d950bdb5b4aa2a7e8c44c7665d2fb94a7f4df76365ec03",
+    "arrival": "2025-03-20T06:32:22.436969Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -0.6517047246498212,
+    "power_SNR_dB": 7.047402704529232,
+    "key": "e631_IV_CUMA_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -2.426969,
+      -3.00708,
+      0.695957,
+      5.106384
+    ]
+  },
+  {
+    "event_index": 631,
+    "mean_FI": -0.1411457260076434,
+    "station": "IV.CBAG.",
+    "channel": "IV.CBAG..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CBAG_20250320T060000_20250320T120000.mseed",
+    "source_sha256": "64a1ce6103dc9a8b4c00c3d5d1d99c70c933db55bc1a3ab5589ef5cf4911f035",
+    "arrival": "2025-03-20T06:32:23.590117Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -0.3956381607452578,
+    "power_SNR_dB": 6.204007677128159,
+    "key": "e631_IV_CBAG_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -4.353091,
+      -3.710117,
+      -1.625057,
+      2.65188
+    ]
+  },
+  {
+    "event_index": 631,
+    "mean_FI": -0.1411457260076434,
+    "station": "IV.CMIS.",
+    "channel": "IV.CMIS..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CMIS_20250320T060000_20250320T120000.mseed",
+    "source_sha256": "1f127f81096ce32e172c7f0a3e89c873b263cab8bc131d35c736548e030bce77",
+    "arrival": "2025-03-20T06:32:22.600309Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -1.135617893819082,
+    "power_SNR_dB": -0.9976082031312744,
+    "key": "e631_IV_CMIS_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -3.946886,
+      -3.710309,
+      0.704832,
+      4.983982
+    ]
+  },
+  {
+    "event_index": 632,
+    "mean_FI": -0.5057786997563409,
+    "station": "IV.CMTS.",
+    "channel": "IV.CMTS..EHZ",
+    "source": "inputs/continuation/waveforms/IV_CMTS_20250320T060000_20250320T120000.mseed",
+    "source_sha256": "b765e87da6f536724df4a949f831a2a595c2ebf2ad73039b47d895b02074f01f",
+    "arrival": "2025-03-20T06:32:25.419232Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": 0.9485200586046372,
+    "power_SNR_dB": 4.884316337017671,
+    "key": "e632_IV_CMTS_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -5.720547,
+      -5.470078,
+      -3.452017,
+      -1.468966
+    ]
+  },
+  {
+    "event_index": 632,
+    "mean_FI": -0.5057786997563409,
+    "station": "IV.CBAG.",
+    "channel": "IV.CBAG..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CBAG_20250320T060000_20250320T120000.mseed",
+    "source_sha256": "64a1ce6103dc9a8b4c00c3d5d1d99c70c933db55bc1a3ab5589ef5cf4911f035",
+    "arrival": "2025-03-20T06:32:26.241997Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -0.5436193476408676,
+    "power_SNR_dB": 4.568076609185842,
+    "key": "e632_IV_CBAG_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -7.004971,
+      -6.361997,
+      -4.276937,
+      -2.65188
+    ]
+  },
+  {
+    "event_index": 632,
+    "mean_FI": -0.5057786997563409,
+    "station": "IV.CMIS.",
+    "channel": "IV.CMIS..HHZ",
+    "source": "inputs/continuation/waveforms/IV_CMIS_20250320T060000_20250320T120000.mseed",
+    "source_sha256": "1f127f81096ce32e172c7f0a3e89c873b263cab8bc131d35c736548e030bce77",
+    "arrival": "2025-03-20T06:32:27.584291Z",
+    "alignment": "alternative-profile predicted P",
+    "FI": -1.629234526019669,
+    "power_SNR_dB": -10.622260501028729,
+    "key": "e632_IV_CMIS_",
+    "passes_causality": true,
+    "other_provisional_arrivals_s": [
+      -8.930868,
+      -8.694291,
+      -4.27915,
+      -4.983982
+    ]
+  }
+]

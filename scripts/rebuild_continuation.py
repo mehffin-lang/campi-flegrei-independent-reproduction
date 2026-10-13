@@ -24,7 +24,7 @@ for row in json.loads(Path('docs/file_inventory.json').read_text()):
         with zipfile.ZipFile(p) as z:
             names=z.namelist();assert names and z.testzip() is None
 assert all('Figure S'+str(i)+':' in Path('tmp/continuation/tanmodelsupp.txt').read_text() for i in range(1,16))
-for manifest in ['docs/rebuild_inputs.json','docs/continuation_rebuild_inputs.json']:
+for manifest in ['docs/rebuild_inputs.json','docs/continuation_rebuild_inputs.json','docs/resumption_rebuild_inputs.json']:
     for row in json.loads(Path(manifest).read_text()):
         p=Path(row['file']);assert p.exists() and p.stat().st_size==row['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest()==row['sha256'],row['file']
 commands=[['g++','-std=c++17','-O3','-Wall','-Wextra','-pedantic','src/method_checks.cpp','-o','build/method_checks'],['./build/method_checks','config/method_checks.cfg','tests/results'],[sys.executable,'scripts/build_velest.py']]
@@ -32,9 +32,15 @@ if args.fresh:commands += [[sys.executable,'scripts/'+s+'.py'] for s in ['analyz
 commands += [[sys.executable,'scripts/'+s+'.py'] for s in ['plot_observations','prepare_continuation','continue_context','station_geometry','acquisition_ledger']]
 commands.append([sys.executable,'scripts/process_continuous.py','all','--workers','6','--frozen']+(['--fresh'] if args.fresh else []))
 commands.append([sys.executable,'scripts/check_starting_profile.py'])
+commands.append([sys.executable,'tests/check_association_repeatability.py'])
+commands.append([sys.executable,'scripts/association_quality.py'])
+commands += [[sys.executable,'tests/check_differential_times.py'],[sys.executable,'scripts/differential_times.py'],[sys.executable,'scripts/benchmark_window.py']]
 commands += [[sys.executable,'scripts/audit_continuation.py'],[sys.executable,'scripts/downstream_checks.py','--dataset','continuation'],[sys.executable,'scripts/velest_stability.py'],[sys.executable,'scripts/magnitude_statistics.py'],[sys.executable,'scripts/location_consistency.py','--dataset','continuation'],[sys.executable,'scripts/cpoz_gathers.py'],[sys.executable,'scripts/extend_hybrid_scan.py','--dataset','continuation'],[sys.executable,'scripts/hybrid_candidate_metrics.py'],[sys.executable,'scripts/plot_continuation.py'],[sys.executable,'scripts/continuation_report.py'],[sys.executable,'scripts/build_documents.py','--clean']]
 commands.insert(next(i for i,c in enumerate(commands) if c[-1]=='scripts/plot_continuation.py'),[sys.executable,'scripts/catalog_frequency_index.py'])
+commands.insert(next(i for i,c in enumerate(commands) if c[-1]=='scripts/plot_continuation.py'),[sys.executable,'scripts/hybrid_review_windows.py'])
+commands.insert(next(i for i,c in enumerate(commands) if c[-1]=='scripts/plot_continuation.py'),[sys.executable,'scripts/catalog_frequency_review.py'])
 commands.insert(next(i for i,c in enumerate(commands) if 'scripts/downstream_checks.py' in c),[sys.executable,'tests/check_window_reads.py'])
+commands.insert(next(i for i,c in enumerate(commands) if 'scripts/process_continuous.py' in c),[sys.executable,'tests/check_annotation_telemetry.py'])
 commands.append([sys.executable,'scripts/verify_current_outputs.py'])
 logs=[];started=time.monotonic();resumed_stages=0
 if args.resume:
@@ -46,26 +52,31 @@ if args.resume:
     old_attempt=D/'rebuild_failed_attempt.json'
     if old_attempt.exists() and not attempts:attempts.append(json.loads(old_attempt.read_text()))
     attempts.append(previous);attempts_path.write_text(json.dumps(attempts,indent=2)+'\n')
-    (D/'rebuild_failed_attempt.json').write_text(json.dumps(previous,indent=2)+'\n')
+    if any(row['returncode'] for row in previous):
+        (D/'rebuild_failed_attempt.json').write_text(json.dumps(previous,indent=2)+'\n')
     logs=previous[:resumed_stages];commands=commands[resumed_stages:]
     print('RESUME after',resumed_stages,'hash-verified successful stages',flush=True)
+(D/'rebuild_status.json').write_text(json.dumps(dict(build_passed=False,state='running',resumed_stages=resumed_stages,scientific_reproduction_complete=False),indent=2)+'\n')
 for cmd in commands:
     t=time.monotonic();print('RUN',' '.join(cmd),flush=True)
-    run=subprocess.run(cmd,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True)
-    logs.append(dict(command=cmd,returncode=run.returncode,elapsed_s=time.monotonic()-t,output=run.stdout))
+    live_log=ROOT/'tmp/continuation'/f'stage_{len(logs)+1:02d}.log'
+    with live_log.open('w') as stream:
+        run=subprocess.run(cmd,stdout=stream,stderr=subprocess.STDOUT,text=True)
+    output=live_log.read_text()
+    logs.append(dict(command=cmd,returncode=run.returncode,elapsed_s=time.monotonic()-t,output=output,live_log=str(live_log.relative_to(ROOT))))
     (D/'rebuild_log.json').write_text(json.dumps(logs,indent=2)+'\n')
     if run.returncode:
         rebuild_state.freeze(logs)
-        (D/'rebuild_status.json').write_text(json.dumps(dict(build_passed=False,failed_command=cmd,returncode=run.returncode,scientific_reproduction_complete=False),indent=2)+'\n')
-        print(run.stdout[-5000:]);raise SystemExit(run.returncode)
+        (D/'rebuild_status.json').write_text(json.dumps(dict(build_passed=False,state='failed',failed_command=cmd,returncode=run.returncode,scientific_reproduction_complete=False),indent=2)+'\n')
+        print(output[-5000:]);raise SystemExit(run.returncode)
     print('PASS',round(time.monotonic()-t,1),'seconds',flush=True)
-status=dict(build_passed=True,fresh=args.fresh,resumed_stages=resumed_stages,elapsed_s=time.monotonic()-started,total_successful_stage_elapsed_s=sum(r['elapsed_s'] for r in logs),scientific_reproduction_complete=False,
+status=dict(build_passed=True,state='completed',fresh=args.fresh,resumed_stages=resumed_stages,elapsed_s=time.monotonic()-started,total_successful_stage_elapsed_s=sum(r['elapsed_s'] for r in logs),scientific_reproduction_complete=False,
             analysis=json.loads((D/'analysis_summary.json').read_text()),panels=json.loads((D/'panel_status.json').read_text()),
             velest=json.loads((D/'velest_summary.json').read_text()),checkpoint=json.loads((D/'acquisition_checkpoint.json').read_text()),
             documents=json.loads(Path('report/document_build.json').read_text()))
 (D/'rebuild_status.json').write_text(json.dumps(status,indent=2)+'\n')
 files=[]
 for directory in ['data/continuation','scripts','config','report','docs']:
-    files += [p for p in Path(directory).rglob('*') if p.is_file() and p.suffix in ['.py','.json','.csv','.tex','.pdf','.md','.txt','.mod','.sta','.cnv'] and p.name!='manifest.sha256']
+    files += [p for p in Path(directory).rglob('*') if p.is_file() and p.suffix in ['.py','.json','.csv','.npz','.gz','.tex','.pdf','.md','.txt','.mod','.sta','.cnv'] and p.name!='manifest.sha256']
 (D/'manifest.sha256').write_text(''.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+str(p)+'\n' for p in sorted(files)))
 print('PASS: frozen observed-subset rebuild and both PDFs. Full scientific reproduction remains incomplete.')

@@ -1,0 +1,56 @@
+{
+  "basis": "All nine generated diagnostic pages inspected. Three or fewer selected station windows per candidate; qualitative agent review, not expert-validated onset, phase or event labels.",
+  "data_file": "data/continuation/catalog_frequency_review.npz",
+  "data_sha256": "eda9b63c073796b43ccd522c411072b0c2cebee067f693338b189868bfd6a892",
+  "index_file": "data/continuation/catalog_frequency_review_index.json",
+  "index_sha256": "b1b2b2b36ba52f5e3a908ac2836c0b86f8ac5579221434a2351ff7c4f20c693a",
+  "findings": [
+    {
+      "event_index": 157,
+      "observation": "Persistent long-period oscillations occur before and during alignment at CSOB/COLB/CFB1, without a convincing isolated common onset in these displayed windows.",
+      "status": "unconfirmed; no analytical label or filter added"
+    },
+    {
+      "event_index": 158,
+      "observation": "The selected CNIS/CFB3/CFB1 windows contain sustained oscillations before and after the predicted arrival; the negative FI does not isolate an event onset.",
+      "status": "unconfirmed; no analytical label or filter added"
+    },
+    {
+      "event_index": 165,
+      "observation": "Impulsive energy near the own P pick is visible at CSTH and CSOB, where station FI is positive. The most negative-FI example, CFB1, has negative SNR and persistent oscillatory motion; the negative station mean is not sufficient evidence of a hybrid.",
+      "status": "unconfirmed; no analytical label or filter added"
+    },
+    {
+      "event_index": 201,
+      "observation": "CFB3 and CCAP show persistent slow oscillations, while CLAC has nearly stationary higher-rate oscillations. No secure new common transient is apparent at the predicted alignment in this selection.",
+      "status": "unconfirmed; no analytical label or filter added"
+    },
+    {
+      "event_index": 561,
+      "observation": "CQUE has a clear impulsive packet and positive FI; CAAM also has positive FI. The negative-FI CUMA window is low-SNR and lacks a clear onset. No hybrid classification follows from the station average.",
+      "status": "unconfirmed; no analytical label or filter added"
+    },
+    {
+      "event_index": 569,
+      "observation": "The association already fails causality. CRUS has a later impulsive packet and positive FI; CUMA has persistent low-SNR motion and negative FI. These windows do not validate the initial association or establish a hybrid.",
+      "status": "unconfirmed; no analytical label or filter added"
+    },
+    {
+      "event_index": 570,
+      "observation": "CREM has an impulsive onset and positive FI. CSFT has a later larger packet outside the FI window; CUMA has near-zero SNR and negative FI. The negative mean does not establish a hybrid family.",
+      "status": "unconfirmed; no analytical label or filter added"
+    },
+    {
+      "event_index": 631,
+      "observation": "Large CMIS energy begins before the predicted arrival and decays through the FI window. CUMA/CBAG contain overlapping energy and other provisional arrivals. Coda contamination and association splitting require review; no isolated hybrid is confirmed.",
+      "status": "unconfirmed; no analytical label or filter added"
+    },
+    {
+      "event_index": 632,
+      "observation": "The CMIS FI window lies on the decaying tail of the earlier strong packet. CBAG/CMTS also contain overlapping arrivals. The low mean FI is compatible with coda contamination and does not establish a separate hybrid.",
+      "status": "unconfirmed; no analytical label or filter added"
+    }
+  ],
+  "confirmed_hybrids": 0,
+  "limitations": "These selected windows do not supply complete multistation onset review, a false-positive rate, reviewed ground truth, or a three-year hybrid catalog. Automated station measurement reviewed flags remain false because no reviewed onset annotations were assigned."
+}

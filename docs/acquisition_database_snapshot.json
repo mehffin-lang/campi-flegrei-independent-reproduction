@@ -1,6 +1,6 @@
 {
   "file": "sources/acquisition_checkpoint.sqlite.gz",
-  "bytes": 2429212,
-  "sha256": "caad34b30bd7876c0598ce976159113b4396a40376ee0c680c9322c2da44a550",
+  "bytes": 3136345,
+  "sha256": "749887f162e594aa067ebb46a5027dc292d838e56f9a5e95b6c00d6f05cf33f6",
   "role": "Frozen request/response administrative ledger, including pending jobs; not evidence that pending intervals were observed."
 }

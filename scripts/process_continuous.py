@@ -51,7 +51,7 @@ def pick(job):
         st=read(source);st.merge(method=0);st=st.split()
         begin=max(begin,min(float(tr.stats.starttime) for tr in st))
         end=min(end,max(float(tr.stats.endtime)+1/tr.stats.sampling_rate for tr in st))
-        picks=[];coverage=[]
+        picks=[];coverage=[];prediction_coverage=[]
         for tr in st:
             a=max(begin,float(tr.stats.starttime));b=min(end,float(tr.stats.endtime)+1/tr.stats.sampling_rate)
             if b>a:coverage.append(dict(channel=tr.id,start=a,end=b,file=source,sample_rate=tr.stats.sampling_rate))
@@ -59,12 +59,28 @@ def pick(job):
             block=st.copy().trim(UTCDateTime(t-30),UTCDateTime(min(t+1830,end+30)))
             if not block:continue
             block.detrend('demean');block.filter('highpass',freq=1,corners=4,zerophase=False)
-            result=NET.classify(block,P_threshold=.3,S_threshold=.3,batch_size=128)
+            # Same annotate/aggregate sequence as SeisBench classify, but retain
+            # actual finite-score exposure. Short fragments or absent predictions
+            # must not be confused with the raw channel-hours read above.
+            arguments=dict(NET.default_args,P_threshold=.3,S_threshold=.3,batch_size=128)
+            prepared=NET.classify_stream_pre(block,arguments)
+            annotations=NET.annotate(prepared,**arguments)
+            result=NET.classify_aggregate(annotations,arguments)
+            for tr in annotations:
+                phase=tr.stats.channel.rsplit('_',1)[-1]
+                if phase not in ['P','S']:continue
+                if phase=='S' and tr.stats.station in SETTINGS['exclude_s']:continue
+                mask=np.isfinite(tr.data)
+                edges=np.flatnonzero(np.diff(np.r_[False,mask,False]))
+                for left,right in zip(edges[::2],edges[1::2]):
+                    a=max(t,float(tr.stats.starttime)+left/tr.stats.sampling_rate)
+                    b=min(t+1800,end,float(tr.stats.starttime)+right/tr.stats.sampling_rate)
+                    if b>a:prediction_coverage.append(dict(trace_id='.'.join(tr.id.split('.')[:3]),phase=phase,start=a,end=b,file=source))
             for p in result.picks:
                 if not(t<=float(p.peak_time)<min(t+1800,end)):continue
                 if p.phase=='S' and p.trace_id.split('.')[1] in SETTINGS['exclude_s']:continue
                 picks.append(dict(source=source,trace_id=p.trace_id,phase=p.phase,time=str(p.peak_time),probability=float(p.peak_value)))
-        record=dict(file=source,input_sha256=digest,picks=picks,coverage=coverage,settings=SETTINGS,inference_identity=inference_identity(),core_start=job[1],core_end=job[2])
+        record=dict(file=source,input_sha256=digest,picks=picks,coverage=coverage,prediction_coverage=prediction_coverage,settings=SETTINGS,inference_identity=inference_identity(),core_start=job[1],core_end=job[2])
         path=CACHE/(hashlib.sha256(source.encode()).hexdigest()[:20]+'.json')
         path.with_suffix('.tmp').write_text(json.dumps(record));path.with_suffix('.tmp').replace(path)
         return dict(file=source,picks=len(picks),status='processed')
@@ -113,7 +129,7 @@ def assemble():
     # Old picks are independent outputs generated in this repository, not author
     # picks. Their original preprocessing/source receipts remain preserved.
     frames=[pd.read_csv('data/extended/picks.csv')]
-    coverage=[]
+    coverage=[];prediction=[]
     old=pd.read_csv('data/extended/coverage.csv')
     for r in old.to_dict('records'):
         coverage.append(dict(file=r['file'],channel=r['channel'],start=float(UTCDateTime(r['start'])),end=float(UTCDateTime(r['end']))+1/r['sample_rate'],sample_rate=r['sample_rate']))
@@ -130,11 +146,27 @@ def assemble():
         if not (c.get('input_sha256')==job[3] and c.get('settings')==SETTINGS
                 and c.get('inference_identity')==identity
                 and c.get('core_start')==job[1] and c.get('core_end')==job[2]):continue
-        frames.append(pd.DataFrame(c['picks']));coverage.extend(c['coverage'])
+        frames.append(pd.DataFrame(c['picks']));coverage.extend(c['coverage']);prediction.extend(c['prediction_coverage'])
     allp=pd.concat(frames,ignore_index=True).sort_values('probability',ascending=False)
     # Processing margins are context, not extra study-period observations.
     study_start=float(UTCDateTime('2022-01-21'));study_end=float(UTCDateTime('2025-03-21'))
     coverage=[dict(r,start=max(study_start,r['start']),end=min(study_end,r['end'])) for r in coverage if r['end']>study_start and r['start']<study_end]
+    prediction=[dict(r,start=max(study_start,r['start']),end=min(study_end,r['end'])) for r in prediction if r['end']>study_start and r['start']<study_end]
+    pd.DataFrame(prediction,columns=['trace_id','phase','start','end','file']).to_csv(OUT/'prediction_coverage.csv',index=False)
+    union=[]
+    for (ident,phase),group in pd.DataFrame(prediction).groupby(['trace_id','phase']):
+        spans=[]
+        for a,b in sorted(zip(group.start,group.end)):
+            if spans and a<=spans[-1][1]+1e-6:spans[-1][1]=max(spans[-1][1],b)
+            else:spans.append([a,b])
+        union.append(dict(trace_id=ident,phase=phase,intervals=spans,hours=sum(b-a for a,b in spans)/3600))
+    (OUT/'prediction_coverage_union.json').write_text(json.dumps(union,indent=2)+'\n')
+    (OUT/'prediction_coverage_summary.json').write_text(json.dumps(dict(
+        finite_score_station_hours={phase:sum(r['hours'] for r in union if r['phase']==phase) for phase in ['P','S']},
+        continuous_files_with_prediction_spans=len({r['file'] for r in prediction}),
+        scope='Continuous checkpoint only. Earlier independent baseline files did not save finite-score exposure; their input channel-hours are not silently converted to model exposure.',
+        missing_component_policy='SeisBench default strict=False: missing components are zero-filled for inference only, not counted as observed channel-hours or plotted as observations.',
+        units='station-hours per phase, not channel-hours; finite model scores do not establish detection accuracy.'),indent=2)+'\n')
     accepted=[];seen={}
     for p in allp.to_dict('records'):
         key=(p['trace_id'],p['phase']);t=float(UTCDateTime(p['time']));arr=seen.setdefault(key,[]);i=bisect.bisect_left(arr,t)
@@ -172,6 +204,8 @@ def assemble():
 
 
 def associate():
+    from gamma_reproducibility import install
+    install()
     from gamma.utils import association
     np.random.seed(0)
     frame=assemble();station=pd.read_csv(OUT/'stations.csv')
@@ -184,6 +218,7 @@ def associate():
     config=dict(dims=['x(km)','y(km)','z(km)'],use_dbscan=True,use_amplitude=False,dbscan_eps=10,dbscan_min_samples=3,oversample_factor=5,initial_points=[1,1,1],min_picks_per_eq=6,min_p_picks_per_eq=0,min_s_picks_per_eq=0,max_sigma11=2,xlim=[-12,12],ylim=[-12,12],zlim=[0,8],bfgs_bounds=[(-12,12),(-12,12),(0,8),(None,None)],vel={'p':3.,'s':1.7},ncpu=6,covariance_prior=[1.])
     config['eikonal']=dict(vel=dict(z=z,p=p,s=s),h=.1,xlim=[-12,12],ylim=[-12,12],zlim=[-.5,8])
     config.update({'x(km)':[-12,12],'y(km)':[-12,12],'z(km)':[0,8]})
+    config['random_initialization']={'cluster_seed':'(42 + deterministic DBSCAN label) modulo 2^32','job_shuffle_seed':0,'role':'Optimizer initialization only; no synthetic observations. Explicit reproducibility choice, not a recovered author setting.'}
     Path('config/continuation_association.json').write_text(json.dumps(config,indent=2)+'\n')
     table=frame.rename(columns=dict(trace_id='id',time='timestamp',phase='type',probability='prob'))
     table['timestamp']=pd.to_datetime(table.timestamp,utc=True,format='ISO8601');table=table[table.id.isin(station.id)]

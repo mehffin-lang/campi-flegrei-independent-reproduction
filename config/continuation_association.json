@@ -120,5 +120,10 @@
   "z(km)": [
     0,
     8
-  ]
+  ],
+  "random_initialization": {
+    "cluster_seed": "(42 + deterministic DBSCAN label) modulo 2^32",
+    "job_shuffle_seed": 0,
+    "role": "Optimizer initialization only; no synthetic observations. Explicit reproducibility choice, not a recovered author setting."
+  }
 }

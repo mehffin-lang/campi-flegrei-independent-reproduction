@@ -1,0 +1,48 @@
+{
+  "assessed_utc": "2026-10-13T02:14:19.182366+00:00",
+  "scope": "Deferred assessment after current observation processing, magnitude/velocity/differential-time checks, and all nine negative-mean-FI candidate waveform inspections. No new contact or request draft.",
+  "exact_numeric_profile_verified": false,
+  "source_sha256": {
+    "inputs/extended/calo2018_supp.pdf": "f7beb6a83ec1aa58e04f381e134ffef28cd88546ffeeb27968c03143c8c23422",
+    "inputs/revision/calo2018_publisher.html": "c0247703ae806bf686bba441a2329a677879de10e651e5ba09c5deb84c3b268f",
+    "inputs/continuation/calo_files.txt": "7a0d144555651dd1efac500fc7e15572718a249c0cbc6ef08778dacba99c6419",
+    "docs/velocity_profile_search.json": "78e665a5c495d43e5bd68ea338d9b35e89a933f7a5e13fd85398d0eda0f0c055",
+    "config/alternative_starting_profile.json": "e09ff791a5ac10d64f3c25b58324317a9af1c828c21e6d690aa19f16b1f60d20"
+  },
+  "findings": "The readable 2018 supplement describes Vp inherited from previous studies and a depth-dependent Vp/Vs revised using Wadati diagrams; it shows layered and interpolated profiles graphically, without a numerical table in the inspected text. The saved official repository inventory lists only the article PDF. The inspected article states supporting data are available on request from INGV; this is not proof that every possible public copy has been exhausted.",
+  "missing_fields": [
+    "Numerical layer tops or interpolation node depths",
+    "Vp and Vs, or depth-dependent Vp/Vs",
+    "Units and depth datum",
+    "Layer-top, discontinuity and interpolation conventions",
+    "Version actually used by Tan for GaMMA-1D"
+  ],
+  "alternative": "Verified Tramelli et al. (2021), Table 1; explicit exploratory assumption, not asserted identical",
+  "affected_analyses": [
+    "Exact GaMMA-1D association and all dependent independent location/magnitude catalog analyses"
+  ],
+  "affected_panels": [
+    "2A",
+    "2B",
+    "3/map",
+    "3/northing-depth",
+    "3/easting-depth",
+    "4A",
+    "4B",
+    "S6/all",
+    "S7/all",
+    "S8A",
+    "S8B",
+    "S9/all",
+    "S10/all",
+    "S11/all",
+    "S12/all",
+    "S13/all"
+  ],
+  "additional_dependence": "Independent hybrid locations/Table S2 need an accepted catalog. Standalone observed template spectra, context panels, station maps and weight inference do not require this profile.",
+  "other_blockers": "Supplying this profile would not resolve sparse coverage, phase-review failures, unverified 2008 grid/regional averaging, missing relocation, or focal/hybrid validation.",
+  "contact_made": false,
+  "request_drafted": false,
+  "figure_digitized": false,
+  "author_fitted_model_used": false
+}

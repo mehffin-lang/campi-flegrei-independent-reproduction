@@ -7,7 +7,7 @@ The study is **not fully reproduced**. Both PDFs are provisional. The pipeline p
 - [Executed counts and checks](data/continuation/analysis_summary.json), [rebuild outcome](data/continuation/rebuild_status.json), [panel record](docs/panel_record.json).
 - [Current procedure](docs/CONTINUATION.md), [blockers](docs/BLOCKERS.md), [replacement record](docs/REPLACEMENTS.md).
 
-Partial counterparts are **1A–C, S1, S2, S5 (three views), S8A–B and S15C**. No panel is fully reproduced. All other main/supplement panels remain unreproduced. S6 has been withdrawn: its old background-grid-dependent locations and fitted models are [quarantined](quarantine/unverified_background/README.md). The [grid provenance investigation](docs/background_grid_provenance.json) found undocumented differences from the original 2008 written grid specification.
+Partial counterparts are **1A–C, S1, S2, S4A, S5 (three views), S8A–B and S15C**. No panel is fully reproduced. All other main/supplement panels remain unreproduced. S6 has been withdrawn: its old background-grid-dependent locations and fitted models are [quarantined](quarantine/unverified_background/README.md). The [grid provenance investigation](docs/background_grid_provenance.json) found undocumented differences from the original 2008 written grid specification.
 
 Figure 1B distinguishes leveling surveys, source-provided estimates/reconstruction, and daily GNSS observations. Routine INGV events in 1A/1C/S5 are not independently detected events. S2 now uses an audited local projection, corrected coastline handling, numbered labels and explicit unresolved station metadata. The 51 identifiers have not been reconciled to 48 instruments.
 
@@ -17,7 +17,7 @@ Use the existing Python 3.11 environment, or follow dependency setup in [CONTINU
 
 ```bash
 .venv/bin/python scripts/restore_inputs.py --continuation
-.venv/bin/python scripts/rebuild_continuation.py --fresh
+.venv/bin/python scripts/rebuild_continuation.py
 ```
 
 This checks source readability and hashes, regenerates the frozen observation checkpoint, reruns the eligible analyses and numerical checks, and builds both PDFs. It does not complete the pending multiyear retrieval queue or bypass missing scientific prerequisites. Large waveforms remain local under ignored `inputs/`, with download URLs and checksums. The ordinary rebuild reuses only matching per-file inference caches, whose keys include observations, time cores, weights, preprocessing, inference code and software versions.

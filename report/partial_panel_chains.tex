@@ -36,7 +36,7 @@ The same plotting command composes the report figure: \path{figures/figure_1_com
 
 \paragraph{S1 --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
 
-608 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+825 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
 
 Data command: \par\noindent \path{.venv/bin/python scripts/process_continuous.py all --frozen}\par
 
@@ -53,6 +53,16 @@ Data command: \par\noindent \path{.venv/bin/python scripts/station_geometry.py}\
 Saved numerical output: \path{data/continuation/figure_S2.csv}, \path{data/continuation/station_geometry_qa.csv}, \path{data/continuation/station_geometry_epochs.csv}.
 
 Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \path{figures/continuation_stations.pdf}.
+
+\paragraph{S4A --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
+
+Inputs: \path{inputs/resumption/S4_CSOB_20240520.mseed}, \path{inputs/resumption/s4_anchor.html}.
+
+Data command: \par\noindent \path{.venv/bin/python scripts/benchmark_window.py}\par
+
+Saved numerical output: \path{data/continuation/figure_S4A.npz}, \path{data/continuation/figure_S4A_picks.json}.
+
+Plot command: \path{.venv/bin/python scripts/benchmark_window.py}\par Output: \path{figures/figure_S4A.pdf}.
 
 \paragraph{S5/map --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
 
@@ -86,7 +96,7 @@ Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \
 
 \paragraph{S8A --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
 
-631 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+848 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
 
 Data command: \par\noindent \path{.venv/bin/python scripts/downstream_checks.py --dataset continuation}\par\noindent \path{.venv/bin/python scripts/magnitude_statistics.py}\par
 
@@ -96,7 +106,7 @@ Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \
 
 \paragraph{S8B --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
 
-631 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+848 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
 
 Data command: \par\noindent \path{.venv/bin/python scripts/downstream_checks.py --dataset continuation}\par\noindent \path{.venv/bin/python scripts/magnitude_statistics.py}\par
 

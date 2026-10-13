@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "input": "inputs/extended/waveforms/IV_CMIS_2024-01-01T12:00:00_2024-01-01T12:30:00.mseed",
+  "input_sha256": "ddf7cc73f9ea427cd65327acc6a245cb6657c193ecdb9ed86a99291efdce061c",
+  "picks": 79,
+  "check": "Exact identity of classify and explicit annotate/aggregate on one real 30-minute recording. A code-path equivalence test, not an accuracy estimate."
+}

@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "classification": "Synthetic test only; not an observation or figure result",
+  "same": {
+    "delay_y_minus_x_s": -6.8781882959705e-20,
+    "integer_lag_s": 0.0,
+    "residual_delay_s": -6.8781882959705e-20,
+    "correlation": 1.0,
+    "mean_coherence": 1.0,
+    "at_search_boundary": false,
+    "measurement_pass": true
+  },
+  "forward": {
+    "delay_y_minus_x_s": 0.07,
+    "integer_lag_s": 0.07,
+    "residual_delay_s": -3.06231700932902e-19,
+    "correlation": 0.9414427996620623,
+    "mean_coherence": 1.0,
+    "at_search_boundary": false,
+    "measurement_pass": true
+  },
+  "reverse": {
+    "delay_y_minus_x_s": -0.07,
+    "integer_lag_s": -0.07,
+    "residual_delay_s": 1.5476949224078294e-19,
+    "correlation": 0.9414427996620623,
+    "mean_coherence": 1.0,
+    "at_search_boundary": false,
+    "measurement_pass": true
+  },
+  "fractional": {
+    "delay_y_minus_x_s": 0.07338215735133188,
+    "integer_lag_s": 0.07,
+    "residual_delay_s": 0.0033821573513318735,
+    "correlation": 0.9189356871584661,
+    "mean_coherence": 0.9993757340443664,
+    "at_search_boundary": false,
+    "measurement_pass": true
+  },
+  "known_fractional_delay_s": 0.0735,
+  "fractional_error_tolerance_s": 0.001
+}

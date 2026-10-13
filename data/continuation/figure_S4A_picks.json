@@ -1,0 +1,158 @@
+[
+  {
+    "model": "original",
+    "phase": "P",
+    "time": "2024-05-20T20:10:21.930000Z",
+    "probability": 0.7093428373336792
+  },
+  {
+    "model": "original",
+    "phase": "S",
+    "time": "2024-05-20T20:10:22.650000Z",
+    "probability": 0.8796195983886719
+  },
+  {
+    "model": "original",
+    "phase": "P",
+    "time": "2024-05-20T20:11:00.240000Z",
+    "probability": 0.6474853157997131
+  },
+  {
+    "model": "original",
+    "phase": "S",
+    "time": "2024-05-20T20:11:00.660000Z",
+    "probability": 0.4505489468574524
+  },
+  {
+    "model": "original",
+    "phase": "P",
+    "time": "2024-05-20T20:11:10.390000Z",
+    "probability": 0.65666663646698
+  },
+  {
+    "model": "original",
+    "phase": "S",
+    "time": "2024-05-20T20:11:10.900000Z",
+    "probability": 0.41731002926826477
+  },
+  {
+    "model": "original",
+    "phase": "P",
+    "time": "2024-05-20T20:11:21.140000Z",
+    "probability": 0.33529898524284363
+  },
+  {
+    "model": "original",
+    "phase": "S",
+    "time": "2024-05-20T20:11:23.350000Z",
+    "probability": 0.4640633463859558
+  },
+  {
+    "model": "original",
+    "phase": "P",
+    "time": "2024-05-20T20:11:40.070000Z",
+    "probability": 0.9057753086090088
+  },
+  {
+    "model": "original",
+    "phase": "S",
+    "time": "2024-05-20T20:11:41.070000Z",
+    "probability": 0.6976255178451538
+  },
+  {
+    "model": "retrained",
+    "phase": "P",
+    "time": "2024-05-20T20:10:04.190000Z",
+    "probability": 0.39687129855155945
+  },
+  {
+    "model": "retrained",
+    "phase": "S",
+    "time": "2024-05-20T20:10:22.600000Z",
+    "probability": 0.976168692111969
+  },
+  {
+    "model": "retrained",
+    "phase": "S",
+    "time": "2024-05-20T20:10:23.590000Z",
+    "probability": 0.6871112585067749
+  },
+  {
+    "model": "retrained",
+    "phase": "P",
+    "time": "2024-05-20T20:10:30.980000Z",
+    "probability": 0.40815940499305725
+  },
+  {
+    "model": "retrained",
+    "phase": "S",
+    "time": "2024-05-20T20:10:31.460000Z",
+    "probability": 0.772309422492981
+  },
+  {
+    "model": "retrained",
+    "phase": "P",
+    "time": "2024-05-20T20:10:33.820000Z",
+    "probability": 0.49566638469696045
+  },
+  {
+    "model": "retrained",
+    "phase": "S",
+    "time": "2024-05-20T20:10:34.850000Z",
+    "probability": 0.7403144240379333
+  },
+  {
+    "model": "retrained",
+    "phase": "P",
+    "time": "2024-05-20T20:10:36.390000Z",
+    "probability": 0.3903207778930664
+  },
+  {
+    "model": "retrained",
+    "phase": "S",
+    "time": "2024-05-20T20:10:38.630000Z",
+    "probability": 0.8514275550842285
+  },
+  {
+    "model": "retrained",
+    "phase": "S",
+    "time": "2024-05-20T20:11:00.560000Z",
+    "probability": 0.9460222125053406
+  },
+  {
+    "model": "retrained",
+    "phase": "S",
+    "time": "2024-05-20T20:11:23.320000Z",
+    "probability": 0.9389930367469788
+  },
+  {
+    "model": "retrained",
+    "phase": "S",
+    "time": "2024-05-20T20:11:40.040000Z",
+    "probability": 0.9185298681259155
+  },
+  {
+    "model": "retrained",
+    "phase": "S",
+    "time": "2024-05-20T20:11:41.010000Z",
+    "probability": 0.8839896321296692
+  },
+  {
+    "model": "retrained",
+    "phase": "P",
+    "time": "2024-05-20T20:11:42.170000Z",
+    "probability": 0.6333248615264893
+  },
+  {
+    "model": "retrained",
+    "phase": "P",
+    "time": "2024-05-20T20:11:42.540000Z",
+    "probability": 0.7430983781814575
+  },
+  {
+    "model": "retrained",
+    "phase": "S",
+    "time": "2024-05-20T20:11:44.270000Z",
+    "probability": 0.9735205769538879
+  }
+]

@@ -202,7 +202,9 @@ def main():
         col=i//26;line=i%26
         key.text(col*.51,.98-line*.031,f'{i+1:2d}  {r.id}',family='monospace',fontsize=13,color='#176b9a' if verified.iloc[i] else '#996118',va='top')
     key.text(0,.12,f'{int(verified.sum())} official epoch matches; {int((~verified).sum())} unresolved.\n{len(stations)} identifiers ≠ verified 48 instruments.\nTwo coordinate-coincident pairs are retained.\nSee station_geometry_qa.csv for every entry.',fontsize=11,va='top',linespacing=1.6)
-    fig.savefig(F/'continuation_stations.pdf');plt.close(fig)
+    # Include the full identifier key even when its longest labels extend
+    # slightly beyond the constrained-layout axes.
+    fig.savefig(F/'continuation_stations.pdf',bbox_inches='tight',pad_inches=.1);plt.close(fig)
 
 
 if __name__=='__main__': main()

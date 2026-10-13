@@ -26,6 +26,8 @@ assign=pd.read_csv(OUT/'associations.csv');stations=pd.read_csv(OUT/'stations.cs
 coverage=pd.read_csv(OUT/'processed_coverage.csv') if args.dataset=='continuation' else None
 config=json.loads(Path('config/continuation_association.json' if args.dataset=='continuation' else 'config/association.json').read_text());eik=initialize_eikonal(config['eikonal'])
 quality=[];measurements=[];waveforms={};errors=[];inventories={}
+causality=(pd.read_csv(OUT/'association_quality.csv').set_index('event_index').passes_causality.to_dict()
+           if args.dataset=='continuation' else {int(e):True for e in events.event_index})
 @lru_cache(maxsize=32)
 def original_stream(source):
     # Per-worker cache of unchanged observations. Every measured window is copied
@@ -44,9 +46,10 @@ def evaluate_event(e):
     gap=float(np.diff(np.r_[az,az[0]+360]).max());rms=float(np.sqrt(np.mean(residual**2)))
     # Generic VELEST guidance defines geometry/minimum observations; Tan's
     # 0.25-s RMS rejection belongs AFTER location, not before calibration.
-    eligible=len(ep)>6 and gap<180
+    causal=bool(causality[e['event_index']])
+    eligible=len(ep)>6 and gap<180 and causal
     quality.append(dict(event_index=e['event_index'],picks=len(ep),stations=len(unique_xyz),rms_s=rms,azimuthal_gap_deg=gap,
-        calibration_eligible=eligible,reason='VELEST manual geometry screen: >6 picks and gap<180 degrees; candidates still require waveform review'))
+        passes_causality=causal,calibration_eligible=eligible,reason='Necessary travel-time and S>P causality, >6 picks, gap<180 degrees; candidates still require waveform review. Causality is an explicit additional screen.'))
     grouped={ident:g for ident,g in ep.groupby('trace_id')}
     # Include recorded stations even when the picker/association has no phase
     # there; the written method explicitly permits theoretical P arrivals.
@@ -106,20 +109,22 @@ def main():
             xa=np.array([a[k] for k in config['dims']]);xb=np.array([b[k] for k in config['dims']]);separation=np.linalg.norm(xa-xb)
             left=passing.get(aid,{});right=passing.get(bid,{})
             common=sorted(set(left)&set(right));valid=[]
-            for channel in common:
+            causal_pair=bool(causality[aid] and causality[bid])
+            for channel in (common if causal_pair else []):
                 la,rb=left[channel],right[channel];st=positions[la['station']]
                 if separation>=min(np.linalg.norm(xa-st),np.linalg.norm(xb-st))/5:continue
                 wa=normalized.get((aid,channel));wb=normalized.get((bid,channel))
                 if wa is None or wb is None or len(wa)!=len(wb):continue
                 cc=float(np.dot(wa,wb));valid.append(dict(event_a=aid,event_b=bid,station=la['station'],channel=channel,delta_M=np.log10(la['peak_velocity_m_s']/rb['peak_velocity_m_s']),weight=cc**2))
             passing_stations=len({r['station'] for r in valid})
-            pair_audit.append(dict(event_a=aid,event_b=bid,separation_km=float(separation),snr_common_stations=len({left[c]['station'] for c in common}),qualifying_common_stations=passing_stations,accepted=passing_stations>=2))
+            pair_audit.append(dict(event_a=aid,event_b=bid,separation_km=float(separation),snr_common_stations=len({left[c]['station'] for c in common}),qualifying_common_stations=passing_stations,causality_eligible_pair=causal_pair,accepted=passing_stations>=2))
             if passing_stations>=2:edges.extend(valid)
-    pd.DataFrame(pair_audit,columns=['event_a','event_b','separation_km','snr_common_stations','qualifying_common_stations','accepted']).to_csv(OUT/'magnitude_pair_audit.csv',index=False)
+    pd.DataFrame(pair_audit,columns=['event_a','event_b','separation_km','snr_common_stations','qualifying_common_stations','causality_eligible_pair','accepted']).to_csv(OUT/'magnitude_pair_audit.csv',index=False)
     pd.DataFrame(edges,columns=['event_a','event_b','station','channel','delta_M','weight']).to_csv(OUT/'magnitude_edges.csv',index=False)
     external=pd.read_csv(OUT/('routine_catalog.csv' if args.dataset=='continuation' else 'external_routine_catalog.csv'));external['epoch']=pd.to_datetime(external.time,utc=True,format='ISO8601').map(lambda t:t.timestamp())
     matches=[]
     for e in events.to_dict('records'):
+        if not causality[e['event_index']]:continue
         # Match after independent detection/location. Never seeds the event list.
         near=external[abs(external.epoch-float(UTCDateTime(e['time'])))<=2]
         if len(near)==1:
@@ -162,7 +167,7 @@ def main():
     pd.DataFrame(estimates,columns=['event_index','ML','formal_sigma_ML','residual_dof','regularization_lambda','status']).to_csv(OUT/'magnitudes.csv',index=False)
     (OUT/'magnitude_inversion_checks.json').write_text(json.dumps(dict(components=inversion_checks,
         uncertainty='Residual-scaled inverse normal matrix of the weighted amplitude/prior system. Conditional on unit Md prior weight and independent homoscedastic weighted errors; excludes absolute calibration, response, association, location and exposure errors. Undefined when residual degrees of freedom are zero.'),indent=2)+'\n')
-    summary=dict(events_evaluated=len(events),calibration_eligible=len(eligible),amplitude_measurements=len(m),snr_passing=int(m.snr_pass.sum()) if len(m) else 0,event_pairs_checked=len(pair_audit),pairs_with_two_snr_stations=sum(r['snr_common_stations']>=2 for r in pair_audit),magnitude_edges=len(edges),calibrated_magnitudes=len(estimates),routine_matches=len(matches),ambiguous_reference_claims_rejected=len(ambiguous),measurement_errors=errors,
+    summary=dict(events_evaluated=len(events),causality_excluded_events=sum(not bool(v) for v in causality.values()),calibration_eligible=len(eligible),amplitude_measurements=len(m),snr_passing=int(m.snr_pass.sum()) if len(m) else 0,event_pairs_checked=len(pair_audit),pairs_with_two_snr_stations=sum(r['snr_common_stations']>=2 for r in pair_audit),magnitude_edges=len(edges),calibrated_magnitudes=len(estimates),routine_matches=len(matches),ambiguous_reference_claims_rejected=len(ambiguous),measurement_errors=errors,
         focal_mechanisms=0,relocated_events=0,remaining='This magnitude pilot uses initial associations. See the separate VELEST record for its later inversion. TomoDD, HypoDD and focal processing remain unfinished; these magnitudes are not final relocated-catalog values.')
     (OUT/'downstream_summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(summary)
 

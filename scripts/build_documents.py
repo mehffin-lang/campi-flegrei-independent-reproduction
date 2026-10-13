@@ -98,7 +98,8 @@ def comparison_page(item):
                   r'\includegraphics[width=\linewidth,height=4.3in,keepaspectratio]{' + path + '}',
                   r'\par\smallskip{\small ' + tex(item['caption']) + r'}\par\medskip']
     if item['missing']:
-        label = 'Panels A and C' if figure == '1' else ('Panels A, B and D' if figure == 'S15' else 'All panels/views')
+        missing_panels=[p for p in item['panels'] if p not in item['partial_panels']]
+        label = 'Missing: '+', '.join(missing_panels) if missing_panels else 'Remaining limitations'
         lines += [r'\unavailable{' + label + '}{' + tex(item['missing']) + '}']
     lines += [r'\end{minipage}', r'\vfill', r'\newpage']
     return '\n'.join(lines) + '\n'

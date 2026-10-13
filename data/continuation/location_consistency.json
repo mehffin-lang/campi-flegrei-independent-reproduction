@@ -1,8 +1,8 @@
 {
-  "paired_observations": 1405,
-  "nonpositive_sp": 57,
-  "rms_sp_residual_s": 0.6509915527976293,
-  "associated_cpoz_p_picks": 64,
+  "paired_observations": 1703,
+  "nonpositive_sp": 58,
+  "rms_sp_residual_s": 0.5857612106476389,
+  "associated_cpoz_p_picks": 137,
   "sector_gathers_generated": 0,
   "scope": "Same independently fitted provisional travel-time model: internal consistency only, not independent location accuracy. No author picks or locations used. Relocated ring sectors are not established."
 }

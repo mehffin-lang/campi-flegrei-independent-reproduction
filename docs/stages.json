@@ -1,19 +1,19 @@
 [
   {
     "stage": "1. Collection",
-    "status": "Partial: 434 segmented waveform requests downloaded; 74234 pending. 608 total processed files, 4278.694 channel-hours, 26 stations. RAN credentials missing."
+    "status": "Partial: 651 segmented waveform requests downloaded; 73994 pending. 825 total processed files, 7807.737 channel-hours, 26 stations. RAN credentials missing."
   },
   {
     "stage": "2. Phase picking",
-    "status": "Executed: 90017 merged picks; exclusions/probability bounds checked. Full-period inference unfinished."
+    "status": "Executed: 126133 merged picks; exclusions/probability bounds checked. Full-period inference unfinished."
   },
   {
     "stage": "3. Training / S3--S4",
-    "status": "Retraining not run. STEAD short links return 403; local labels and exact selections/splits missing. Original/retrained inference comparison executed on unlabeled CSOB/CMIS windows, not the exact S4 benchmark."
+    "status": "Retraining not run: exact local labels, cleaned examples, splits and augmentation manifests missing. Both permitted models ran on the caption-defined CSOB swarm window (partial S4A); exact S4B window/labeled accuracy remain unavailable."
   },
   {
     "stage": "4. Association",
-    "status": "Executed: 908 provisional GaMMA events, 6526 assigned picks. Explicit Tramelli 2021 alternative; exact 2018 numerical profile still missing."
+    "status": "Executed: 1003 provisional GaMMA events, 7268 assigned picks. Explicit Tramelli 2021 alternative; exact 2018 numerical profile still missing."
   },
   {
     "stage": "5. VELEST",
@@ -21,7 +21,7 @@
   },
   {
     "stage": "6. TomoDD",
-    "status": "Generic TomoDD source retrieved, classified and compiled. Scientific differential-time pairing and both relocation rounds remain unfinished, not executed."
+    "status": "Exploratory differential times executed: 19580 channel pairs, 811 passing declared criteria. Generic TomoDD compiled, but neither relocation round was run: accepted calibration and verified fixed grid missing."
   },
   {
     "stage": "7. HypoDD SVD",
@@ -29,11 +29,11 @@
   },
   {
     "stage": "8. Magnitudes",
-    "status": "Executed: 60092 amplitudes, 3868 SNR passes, 651 amplitude-ratio equations, 53 provisional magnitudes. Initial locations; final relocated-catalog calibration unfinished."
+    "status": "Executed: 61681 amplitudes, 4705 SNR passes, 1163 amplitude-ratio equations, 119 provisional magnitudes. Initial locations; final relocated-catalog calibration unfinished."
   },
   {
     "stage": "9. Completeness / b",
-    "status": "Pilot histogram and maximum-curvature calculation executed on 53 values; conditional b=1.0077551513777105 from 21 values at/above pilot Mc. Full-period completeness/b not established; selection and systematic limitations remain."
+    "status": "Pilot histogram and maximum-curvature calculation executed on 119 values; conditional b=0.6573450644531221 from 103 values at/above pilot Mc. Full-period completeness/b not established; selection and systematic limitations remain."
   },
   {
     "stage": "10. Focal mechanisms",
@@ -41,11 +41,11 @@
   },
   {
     "stage": "11. Location checks",
-    "status": "Internal S-P checks: 1405 pairs, 57 nonpositive. 64 CPOZ P arrivals. Relocated sector gathers and manual deep-event review unfinished."
+    "status": "Internal S-P checks: 1703 pairs, 58 nonpositive. 137 CPOZ P arrivals. Relocated sector gathers and manual deep-event review unfinished."
   },
   {
     "stage": "12. Hybrid search",
-    "status": "Executed 75.797 common CAAM/COLB scan hours; 822 unconfirmed crossings. Three-year review, clustering and catalog-wide FI incomplete."
+    "status": "Executed 75.797 common CAAM/COLB scan hours; 822 unconfirmed crossings. 30 pass the mean threshold despite nonpositive similarity at one station. Six examples saved for inspection; no confirmed hybrids. Three-year exposure, full onset/coda review and clustering remain incomplete."
   },
   {
     "stage": "13. Historical context",
