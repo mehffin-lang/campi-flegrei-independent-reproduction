@@ -1,5 +1,7 @@
 # Campi Flegrei: provisional observational reproduction
 
+The [13 October calibration and relocation follow-up](docs/CALIBRATION_FOLLOWUP.md) executes two VELEST calibration rounds, five catalog passes and exploratory HypoDD tests. Calibration fails convergence and physical checks; no new accepted locations or TomoDD results are claimed. Figure 1A and S5 now follow the publication's plotting style while retaining the original saved routine-catalog values and explicit scale differences. [Follow-up rebuild outcome](data/calibration_followup/rebuild_status.json).
+
 The study is **not fully reproduced**. Both PDFs are provisional. The pipeline processes retrieved observations independently; routine-catalog panels are external context, and the explicitly cited 2021 starting profile is an exploratory alternative.
 
 - [Scientific report](report/report.pdf), source [report/report.tex](report/report.tex).

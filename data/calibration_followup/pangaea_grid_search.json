@@ -1,0 +1,8 @@
+{
+  "source_url": "https://doi.pangaea.de/10.1594/PANGAEA.875535?format=textfile",
+  "file": "inputs/calibration_followup/pangaea875535.txt",
+  "bytes": 4751,
+  "sha256": "130d00563b62d5e925021701705a86cf28b30687c1af2ac7316e2b5c7a1b9539",
+  "classification": "Published source-availability metadata only",
+  "inspection": "Eight listed items: derived 1983--1984 locations, attenuation products and synthetic tests, geochemical spreadsheet, geographic shapes, seismicity plot data and README. No original numerical Battaglia Vp/Vs grid identified. Linked result payloads were not used or downloaded as analysis inputs."
+}

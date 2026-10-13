@@ -1,0 +1,120 @@
+{
+  "events": 46,
+  "selection": "Prior 130-event set plus >=4P, >=2S and no initial depth-bound hit; explicit alternative selection, no author catalog.",
+  "runs": [
+    {
+      "name": "strict_all_round1",
+      "bits": 64,
+      "events": 46,
+      "picks": 723,
+      "returncode": 0,
+      "residual_rms_s": 0.23527189179870045,
+      "event_rms_s": 0.23757378716480085,
+      "depth_min_km": 0.37,
+      "depth_max_km": 5.54,
+      "workdir": "tmp/calibration_followup/velest/strict_all_round1"
+    },
+    {
+      "name": "strict_all_round2",
+      "bits": 64,
+      "events": 46,
+      "picks": 723,
+      "returncode": 0,
+      "residual_rms_s": 0.21062566678258182,
+      "event_rms_s": 0.21570410489734593,
+      "depth_min_km": 0.19,
+      "depth_max_km": 5.7,
+      "workdir": "tmp/calibration_followup/velest/strict_all_round2"
+    },
+    {
+      "name": "strict_extra1",
+      "bits": 64,
+      "events": 46,
+      "picks": 723,
+      "returncode": 0,
+      "residual_rms_s": 0.21177852219232252,
+      "event_rms_s": 0.21694018410211804,
+      "depth_min_km": 0.28,
+      "depth_max_km": 5.76,
+      "workdir": "tmp/calibration_followup/velest/strict_extra1",
+      "change": {
+        "max_horizontal_m": 44.42048882503527,
+        "max_depth_km": 0.09000000000000002,
+        "max_origin_s": 0.03,
+        "max_rms_s": 0.02999999999999997
+      },
+      "max_velocity_change_km_s": 0.010000000000000009
+    },
+    {
+      "name": "strict_extra2",
+      "bits": 64,
+      "events": 46,
+      "picks": 723,
+      "returncode": 0,
+      "residual_rms_s": 0.21132413665517885,
+      "event_rms_s": 0.2138823325427162,
+      "depth_min_km": 0.19,
+      "depth_max_km": 7.52,
+      "workdir": "tmp/calibration_followup/velest/strict_extra2",
+      "change": {
+        "max_horizontal_m": 802.8763493363941,
+        "max_depth_km": 1.7599999999999998,
+        "max_origin_s": 0.37,
+        "max_rms_s": 0.1
+      },
+      "max_velocity_change_km_s": 0.18000000000000016
+    },
+    {
+      "name": "strict_extra3",
+      "bits": 64,
+      "events": 46,
+      "picks": 723,
+      "returncode": 0,
+      "residual_rms_s": 0.2131948407224013,
+      "event_rms_s": 0.2155478359093809,
+      "depth_min_km": 0.28,
+      "depth_max_km": 7.55,
+      "workdir": "tmp/calibration_followup/velest/strict_extra3",
+      "change": {
+        "max_horizontal_m": 23.75892537223478,
+        "max_depth_km": 0.09000000000000002,
+        "max_origin_s": 0.06,
+        "max_rms_s": 0.03999999999999998
+      },
+      "max_velocity_change_km_s": 0.010000000000000009
+    },
+    {
+      "name": "strict_extra4",
+      "bits": 64,
+      "events": 46,
+      "picks": 723,
+      "returncode": 0,
+      "residual_rms_s": 0.21512318192721497,
+      "event_rms_s": 0.21695020466537437,
+      "depth_min_km": 0.36,
+      "depth_max_km": 7.58,
+      "workdir": "tmp/calibration_followup/velest/strict_extra4",
+      "change": {
+        "max_horizontal_m": 20.200831200161108,
+        "max_depth_km": 0.07999999999999996,
+        "max_origin_s": 0.03,
+        "max_rms_s": 0.040000000000000036
+      },
+      "max_velocity_change_km_s": 0.010000000000000009
+    },
+    {
+      "name": "strict_extra5",
+      "status": "rejected",
+      "error": "Nonphysical Vp <= Vs",
+      "workdir": "tmp/calibration_followup/velest/strict_extra5"
+    },
+    {
+      "name": "strict_validation_round1",
+      "status": "rejected",
+      "error": "Nonphysical Vp <= Vs",
+      "workdir": "tmp/calibration_followup/velest/strict_validation_round1"
+    }
+  ],
+  "accepted_scientific_calibration": false,
+  "interpretation": "Selection sensitivity only. No manual phase review, independent absolute-location truth, verified 2008 grid or representative multiyear coverage; no promotion to accepted calibration."
+}

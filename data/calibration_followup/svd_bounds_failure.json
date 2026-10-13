@@ -1,0 +1,92 @@
+{
+  "status": "exploratory",
+  "not_TomoDD": true,
+  "not_published_S7": true,
+  "accepted_scientific_result": false,
+  "events": 238,
+  "measurement": {
+    "neighbor_pairs": 1653,
+    "catalog_pair_phases": 6362,
+    "measured_channels": 10882,
+    "accepted_channels": 737,
+    "accepted_phase_delays": 517,
+    "window_failures": 13,
+    "max_cnv_rounding_s": 0.0016090000000001936
+  },
+  "runs": [
+    {
+      "name": "hypodd_round1",
+      "returncode": 0,
+      "starting_events": 238,
+      "svd": false,
+      "workdir": "tmp/calibration_followup/hypodd_round1",
+      "output_events": 127,
+      "clusters": 1,
+      "median_depth_km": 2.358,
+      "max_error_z_m": 52.9,
+      "max_depth_km": 8.354
+    },
+    {
+      "name": "hypodd_round2",
+      "returncode": 0,
+      "starting_events": 127,
+      "svd": false,
+      "workdir": "tmp/calibration_followup/hypodd_round2",
+      "output_events": 126,
+      "clusters": 2,
+      "median_depth_km": 2.3795,
+      "max_error_z_m": 45.5,
+      "max_depth_km": 8.283
+    },
+    {
+      "name": "svd_NW",
+      "returncode": 0,
+      "starting_events": 46,
+      "svd": true,
+      "workdir": "tmp/calibration_followup/svd_NW",
+      "output_events": 40,
+      "clusters": 1,
+      "median_depth_km": 1.4024999999999999,
+      "max_error_z_m": 4494.8,
+      "max_depth_km": 13.786
+    },
+    {
+      "name": "svd_NE",
+      "returncode": 2,
+      "starting_events": 33,
+      "svd": true,
+      "workdir": "tmp/calibration_followup/svd_NE",
+      "error": "\n 8  8 100  97 100   52  -5.1    3  20.4   175   24   19   58   17    1   0\n\nwriting out results ...\n\nRELOCATION OF CLUSTER: 3     Tue Oct 13 09:28:02 2026\u0000\n----------------------\nReading data ...   Tue Oct 13 09:28:02 2026\u0000\n# events =     4\n# stations < maxdist =     26\n# stations w/ neg. elevation (set to 0) =    2\n# cross corr P dtimes =       2 (no OTC for      0 event pairs)\n# cross corr S dtimes =       3 (no OTC for      0 event pairs)\n# catalog P dtimes =      15\n# catalog S dtimes =      23\n# dtimes total =       43\n    after gap/distance check:       43 (100%)\n    nccp,nccs,nctp,ncts:            2           3          15          23\n# events after dtime match =          4\n# stations =      6\nInitial trial sources =     4\n1D ray tracing.\n\n  IT   EV  CT  CC    RMSCT      RMSCC   RMSST   DX   DY   DZ   DT   OS  AQ\n        %   %   %   ms     %   ms     %    ms    m    m    m   ms    m \n 1  1 100 100 100   54 -27.8   45  71.1   121  403  659  647  329    2   0\n 2    100 100 100   51  -6.2   45   0.1   121  681  490  549  254    2   1\n 3     75  61 100   47  -7.3   45  -1.6   121  844  495  986  118    2   1\n >>> Warning: ndt < 4*nev\nAt line 950 of file hypoDD.f\nFortran runtime error: Index '0' of dimension 1 of array 'sta_lab' below lower bound of 1\n\nError termination. Backtrace:\n#0  0x7f2642018171 in ???\n#1  0x7f2642018d19 in ???\n#2  0x7f26420190fb in ???\n#3  0x40b3e2 in ???\n#4  0x40137c in ???\n#5  0x7f26414827e4 in ???\n#6  0x4013bd in ???\n#7  0xffffffffffffffff in ???\n"
+    },
+    {
+      "name": "svd_SW",
+      "returncode": 0,
+      "starting_events": 23,
+      "svd": true,
+      "workdir": "tmp/calibration_followup/svd_SW",
+      "output_events": 16,
+      "clusters": 1,
+      "median_depth_km": 3.504,
+      "max_error_z_m": 662.9,
+      "max_depth_km": 5.997
+    },
+    {
+      "name": "svd_SE",
+      "returncode": 2,
+      "starting_events": 24,
+      "svd": true,
+      "workdir": "tmp/calibration_followup/svd_SE",
+      "error": "9   92  -4.7   245  119   48  207   58    1   0\n 4  4 100 100 100  102   1.2   94   1.6   424   36   30  169   41    2   0\n 5  5 100  95  86   63 -38.6   16 -82.7   177  126  117  183   60    2   0\n 6  6 100  92  84   60  -4.9   10 -37.0   188   52   68  141   46    2   0\n 7  7 100  90  84   56  -5.7   10  -4.7   294   26   41   98   27    2   0\n 8  8 100  90  83   56  -1.5    9 -11.3   159   19   19   54   19    2   0\n\nwriting out results ...\n\nRELOCATION OF CLUSTER: 2     Tue Oct 13 09:28:04 2026\u0000\n----------------------\nReading data ...   Tue Oct 13 09:28:04 2026\u0000\n# events =     2\n# stations < maxdist =     26\n# stations w/ neg. elevation (set to 0) =    2\n# cross corr P dtimes =       0 (no OTC for      0 event pairs)\n# cross corr S dtimes =       0 (no OTC for      0 event pairs)\n# catalog P dtimes =       3\n# catalog S dtimes =       3\n# dtimes total =        6\n    after gap/distance check:        6 (100%)\n    nccp,nccs,nctp,ncts:            0           0           3           3\n# events after dtime match =          2\n# stations =      4\nInitial trial sources =     2\n1D ray tracing.\n >>> Warning: ndt < 4*nev\n >>> Warning: ndt < 4*nev\nAt line 950 of file hypoDD.f\nFortran runtime error: Index '0' of dimension 1 of array 'sta_lab' below lower bound of 1\n\nError termination. Backtrace:\n#0  0x7f7c53b2f171 in ???\n#1  0x7f7c53b2fd19 in ???\n#2  0x7f7c53b300fb in ???\n#3  0x40b3e2 in ???\n#4  0x40137c in ???\n#5  0x7f7c52f997e4 in ???\n#6  0x4013bd in ???\n#7  0xffffffffffffffff in ???\n"
+    }
+  ],
+  "settings": "10 nearest neighbors; existing 2 s observed windows and coherency delay method; six-phase cluster links; variable Vp/Vs alternative fit; two four-iteration weight blocks; LSQR damping 50, no SVD damping; magnitudes and initial errors zero only as unused format fields.",
+  "input_sha256": {
+    "data/calibration_followup/filtered_events.csv": "9fb795fbb0a3756f661d7f70eb76e00354c51bc265ece5992bf93c998b3963c4",
+    "data/calibration_followup/located_events.cnv": "932aecfa1fd2b4c365cd6d038b906044cb1181ee53cf86b8c15ffb321f2a264c",
+    "data/calibration_followup/calibration_64_round2_model.csv": "49857bdf4c8c76873d9e0c6d3dab66c4eee473d4cb105eb1b2095cfabf824d12",
+    "data/continuation/picks.csv": "1687c9df8fbeb6a02a5349ff7c1333290a1f8670b652097b2ae2d1b07cb23b66",
+    "data/continuation/associations.csv": "c49815bd8ba33a6e5d4c6627f1e0fa4b628e87f7cec9070b004b92d55c406f27",
+    "data/continuation/differential_waveform_windows.npz": "26e7757d90db055574c5b3f7a1180530285d0c29a0d68630d6832ffdacabe43f"
+  },
+  "limitation": "HypoDD pilot is a separate alternative-model test, not the requested fixed-3D TomoDD rounds or S7 after accepted calibration. Weak/disconnected components and waveform identities require review; covariance is conditional, not absolute accuracy."
+}

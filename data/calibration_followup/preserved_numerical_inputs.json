@@ -1,0 +1,32 @@
+[
+  {
+    "file": "data/continuation/figure_1A.csv",
+    "sha256": "4adc37ce0c534961f17a90e3310788bde3a137b5c16d76c4370d806b8a04e6c1",
+    "unchanged_from_commit": "adb0938264301fccd691d339694a0f80bb8955db"
+  },
+  {
+    "file": "data/continuation/figure_S5.csv",
+    "sha256": "70d4d9e2007100017028a8a0c40e1a9e33b85977d715063eae078a998e2560e0",
+    "unchanged_from_commit": "adb0938264301fccd691d339694a0f80bb8955db"
+  },
+  {
+    "file": "data/continuation/picks.csv",
+    "sha256": "1687c9df8fbeb6a02a5349ff7c1333290a1f8670b652097b2ae2d1b07cb23b66",
+    "unchanged_from_commit": "adb0938264301fccd691d339694a0f80bb8955db"
+  },
+  {
+    "file": "data/continuation/associations.csv",
+    "sha256": "c49815bd8ba33a6e5d4c6627f1e0fa4b628e87f7cec9070b004b92d55c406f27",
+    "unchanged_from_commit": "adb0938264301fccd691d339694a0f80bb8955db"
+  },
+  {
+    "file": "data/continuation/initial_events.csv",
+    "sha256": "4b2525c09a2e061c15f1c7859710838ddd9e61ed8ed661a20ecd52067b7972a2",
+    "unchanged_from_commit": "adb0938264301fccd691d339694a0f80bb8955db"
+  },
+  {
+    "file": "data/continuation/magnitudes.csv",
+    "sha256": "4fc1e801e43a351fd5f16b574bc9ccbb3150e1dc002ab372c10c68d4ad169951",
+    "unchanged_from_commit": "adb0938264301fccd691d339694a0f80bb8955db"
+  }
+]

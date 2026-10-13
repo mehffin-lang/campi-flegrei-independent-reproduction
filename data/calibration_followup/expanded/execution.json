@@ -1,0 +1,9 @@
+{
+  "command": ".venv/bin/python scripts/extend_calibration_observations.py --workers 8 --freeze",
+  "returncode": 0,
+  "log": "data/calibration_followup/expanded/execution.log.gz",
+  "log_sha256": "94d0ff70400441f7f7bddbf5fe25c503922d99491c8d2cd6dce433dc52308b7a",
+  "new_file_inference_log": "data/calibration_followup/expanded/inference_last_run.json",
+  "model_output": "data/calibration_followup/expanded/analysis_summary.json",
+  "note": "43 uncached input files processed; compatible previous own inference reused; association rerun across all observed dates."
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "files": "data/calibration_followup/additional_inputs.json; expanded/input_jobs.json",
+    "class": "Original observations",
+    "role": "Original INGV IV/2I waveform observations; hashes and retrieval URLs; no author event list selects dates"
+  },
+  {
+    "files": "inputs/models/phasenet_retrained.pt; inputs/models/phasenet_retrained.json",
+    "class": "Permitted method/weight",
+    "role": "Released retrained PhaseNet artifacts credited in docs/CALIBRATION_FOLLOWUP.md and existing method receipts"
+  },
+  {
+    "files": "data/continuation/alternative_starting_profile.csv",
+    "class": "Permitted method resource",
+    "role": "External Tramelli 2021 Table 1 alternative starting model, explicitly different from exact required profile"
+  },
+  {
+    "files": "data/continuation/figure_1A.csv; data/continuation/figure_S5.csv",
+    "class": "External contextual reference",
+    "role": "Permitted routine INGV catalog; unchanged numerical selection; never seeds independent association/calibration locations"
+  },
+  {
+    "files": "data/calibration_followup/expanded/{picks,associations,initial_events}.csv",
+    "class": "Independently computed provisional results",
+    "role": "Separate checkpoint; no author picks/events or synthetic fixtures; not accepted locations"
+  },
+  {
+    "files": "data/calibration_followup/*_locations.csv; *_model.csv; relocation/*.csv; run_records.zip",
+    "class": "Independently computed exploratory or rejected results",
+    "role": "Own observations and explicitly alternative model; no claim of accepted calibration, TomoDD or reproduced S6/S7"
+  },
+  {
+    "files": "tests/check_hypodd_matrix.py; tests/results/hypodd_matrix.json",
+    "class": "Synthetic software fixture",
+    "role": "Isolated arithmetic assertion only; no link into observations, magnitude estimates or empirical plotting"
+  },
+  {
+    "files": "report/reference_assets/F1.png; report/reference_assets/FS5.png",
+    "class": "Published reference material",
+    "role": "Viewed solely for visual style; comparison PDF only; never read by empirical plot scripts"
+  },
+  {
+    "files": "quarantine/unverified_background; inputs/extended/background_3d_vmod",
+    "class": "Unverified background method artifact",
+    "role": "Excluded from new calibration, delay and relocation workflow; original numerical grid provenance unresolved"
+  },
+  {
+    "files": "science.adw9038_data_s1_to_s3.zip; science.adw9038_interactive_plot_s1.zip",
+    "class": "Published derived results",
+    "role": "Previously listed, not executed; not analysis inputs or replacements for missing results"
+  }
+]

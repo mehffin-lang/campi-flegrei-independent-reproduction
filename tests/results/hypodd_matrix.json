@@ -1,0 +1,9 @@
+{
+  "classification": "synthetic arithmetic software test only; not observations or a scientific panel",
+  "passed": true,
+  "output": [
+    -2.0,
+    -1.0,
+    0.0
+  ]
+}

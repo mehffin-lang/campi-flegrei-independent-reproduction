@@ -1,0 +1,42 @@
+{
+  "1A": {
+    "input": "data/continuation/figure_1A.csv",
+    "sha256": "4adc37ce0c534961f17a90e3310788bde3a137b5c16d76c4370d806b8a04e6c1",
+    "events": 16046,
+    "missing_magnitude": 488,
+    "depth_range_km": [
+      0.0,
+      7.2
+    ],
+    "color_limits_km": [
+      0,
+      8.0
+    ],
+    "palette": "jet_r",
+    "circle_area_points_squared": "0.7 + 3 * 10**(Md - 2); points squared; additive visibility offset; exact publication law unspecified; no clipping",
+    "missing_magnitude_symbol": "fixed-size cross colored by observed depth",
+    "status": "Partial reconstruction from external routine catalog, not independent detections",
+    "output": "figures/figure_1A_routine.pdf"
+  },
+  "S5": {
+    "input": "data/continuation/figure_S5.csv",
+    "sha256": "70d4d9e2007100017028a8a0c40e1a9e33b85977d715063eae078a998e2560e0",
+    "events": 12503,
+    "missing_magnitude": 384,
+    "depth_range_km": [
+      0.1,
+      5.4
+    ],
+    "color_limits_km": [
+      0,
+      6.0
+    ],
+    "palette": "jet_r",
+    "circle_area_points_squared": "0.7 + 3 * 10**(Md - 2); points squared; additive visibility offset; exact publication law unspecified; no clipping",
+    "missing_magnitude_symbol": "fixed-size cross colored by observed depth",
+    "status": "Partial reconstruction from external routine catalog, not independent detections",
+    "output": "figures/figure_S5_routine.pdf"
+  },
+  "reference_use": "Published 1A and S5 viewed only for aesthetics. No image or author numerical result read by plotting code; no relief or geographic features inferred from pixels.",
+  "unavailable": "Figure 3 and 4A\u2013B have no accepted independent data; no new counterpart or stylistic placeholder generated."
+}

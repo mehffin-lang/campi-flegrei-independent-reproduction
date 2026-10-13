@@ -1,0 +1,138 @@
+{
+  "reviewed_utc": "2026-10-13T17:30:48.487508+00:00",
+  "source_base_commit": "adb0938264301fccd691d339694a0f80bb8955db",
+  "scientific_rebuild_receipt": "data/calibration_followup/rebuild_status.json",
+  "scientific_rebuild_passed": true,
+  "scientific_calibration_accepted": false,
+  "presentation_commands": [
+    {
+      "command": "SOURCE_DATE_EPOCH=1791849600 .venv/bin/python scripts/plot_continuation.py --routine-style-only",
+      "returncode": 0
+    },
+    {
+      "command": ".venv/bin/python scripts/verify_calibration_followup.py",
+      "returncode": 0
+    },
+    {
+      "command": ".venv/bin/python scripts/continuation_report.py",
+      "returncode": 0
+    },
+    {
+      "command": ".venv/bin/python scripts/build_documents.py --clean",
+      "returncode": 0
+    },
+    {
+      "command": ".venv/bin/python scripts/verify_current_outputs.py",
+      "returncode": 0
+    }
+  ],
+  "attempt_notes": [
+    "One document rebuild was stopped after detecting overlap with a data-writing verification process; it was rerun after verification completed.",
+    "The new raw-HTML depth check was first stopped for slow lxml traversal. A streaming parser initially missed depth values in span elements; it was corrected to accept both span and td fields. The complete corrected check passed without changing numerical observations.",
+    "The final document-only rebuild corrects one stale description of the frozen 1003-event cohort; the separate expanded checkpoint has 1015 provisional events."
+  ],
+  "style_validation": {
+    "tables_byte_identical_to_base": [
+      "data/continuation/figure_1A.csv",
+      "data/continuation/figure_S5.csv"
+    ],
+    "raw_S5_HTML_matches": true,
+    "empirical_data_digitized": false,
+    "limitations": "External routine catalog; assumed marker-area law; extended full-depth color ranges; coarse shoreline; original relief not reconstructed."
+  },
+  "visual_review": [
+    {
+      "pdf": "report/report.pdf",
+      "page": 2,
+      "image": "tmp/calibration_followup/final_review/report_2.png",
+      "sha256": "6e70374f79456fa2952300db40ae42eb16ada1ddbab10bb5f96e6bed1dd0b99a",
+      "unchanged_from_reviewed_render": false
+    },
+    {
+      "pdf": "report/report.pdf",
+      "page": 9,
+      "image": "tmp/calibration_followup/final_review/report_9.png",
+      "sha256": "4dfa1d12fd360471ae60633dad58a98db2976771cc645763fd186c6a5b0de955",
+      "unchanged_from_reviewed_render": true
+    },
+    {
+      "pdf": "report/report.pdf",
+      "page": 20,
+      "image": "tmp/calibration_followup/final_review/report_20.png",
+      "sha256": "f45cb8b212764c6e9c8363f8a3167ecf7af83fff25212c2daf2f281e573e2275",
+      "unchanged_from_reviewed_render": true
+    },
+    {
+      "pdf": "report/report.pdf",
+      "page": 21,
+      "image": "tmp/calibration_followup/final_review/report_21.png",
+      "sha256": "bbea18d0604039edbc1985202a3f73c8afe4ffec33c82288df59a74d4feeb108",
+      "unchanged_from_reviewed_render": true
+    },
+    {
+      "pdf": "report/comparison.pdf",
+      "page": 1,
+      "image": "tmp/calibration_followup/final_review/comparison_1.png",
+      "sha256": "4a88697f6e6037156736e82f0805ef151f45cfd3188a89b8c5e22810b9c2f8fe",
+      "unchanged_from_reviewed_render": true
+    },
+    {
+      "pdf": "report/comparison.pdf",
+      "page": 2,
+      "image": "tmp/calibration_followup/final_review/comparison_2.png",
+      "sha256": "1585532ce2b753a6e32fde7de6e248cc2d82a832d0012f1927bd83acf2395e5d",
+      "unchanged_from_reviewed_render": false
+    },
+    {
+      "pdf": "report/comparison.pdf",
+      "page": 3,
+      "image": "tmp/calibration_followup/final_review/comparison_3.png",
+      "sha256": "2f499ec658ff53de44ea81eec0ba012ec08728406448efc47883b6b9095c237b",
+      "unchanged_from_reviewed_render": true
+    },
+    {
+      "pdf": "report/comparison.pdf",
+      "page": 4,
+      "image": "tmp/calibration_followup/final_review/comparison_4.png",
+      "sha256": "1f1e240ba76deda0e883d11542cd6b46e2a78ed547911a2bc61f9269f1461100",
+      "unchanged_from_reviewed_render": true
+    },
+    {
+      "pdf": "report/comparison.pdf",
+      "page": 9,
+      "image": "tmp/calibration_followup/final_review/comparison_9.png",
+      "sha256": "80f65156f0eb77cd0b75487d32d92d9b2478d0af5d55290b5f9d17e6f8bf0418",
+      "unchanged_from_reviewed_render": true
+    }
+  ],
+  "visual_findings": [
+    "Figure 1A and S5 labels, depth-color scales, magnitude keys and map/section layout checked.",
+    "No styled substitutes for Figure 3 or 4A\u2013B; comparison pages identify missing independent results.",
+    "Rejected-calibration and conditional SVD diagnostics occur only after the supplement.",
+    "Published images are confined to the labeled comparison PDF; document-source checks confirm separation."
+  ],
+  "report_pages": 38,
+  "comparison_pages": 19,
+  "panel_views": {
+    "independently_reproduced": 0,
+    "partial": 12,
+    "not_reproduced": 51
+  },
+  "sha256": {
+    "report/report.pdf": "e9d63bb81525b4798a336456b913b260def47669b888849a117f199d75102bc4",
+    "report/comparison.pdf": "14e8dd25eec56b406dd783666caaa7e1cf74fd3d3f8d0ba15d19ec073734886b",
+    "report/report.tex": "db9361d68efbc48fda47cc8601041d2339c2ad3afaa35f9e8728ced23474cac6",
+    "report/comparison.tex": "4cb5e677636a7563f7a529c8a5044a8e3eff212bd9e0061aacedd720838678db",
+    "report/document_build.json": "80e2d54e617a3e7333b4b7127e12251738c60d1cd2e413071eadf5f632c7a20c",
+    "figures/figure_1A_routine.pdf": "3f4762697e038468d4f8851faa90826f11b0b5e9be24de18cf6bcf1d0784e8c5",
+    "figures/figure_S5_routine.pdf": "4ebe18ba231dbe1a5e7d2699ffdd0ae689cd24ed31eb48dcf62ec10b4ecbe305",
+    "figures/figure_1_combined.pdf": "52f23cee5fdb764011efffef34b05f861caa509ce718df32894c92c9301f9f13",
+    "data/continuation/routine_plot_style.json": "07914beb5acefae1ce1ca916c3d3b159f7739722538a6f442f8e2473f071ccb6",
+    "data/calibration_followup/routine_depth_precision.json": "606590a82475a8d7f04581cdb523e730960aab2f2f6b8dc5d397938a7eb06cd4",
+    "data/calibration_followup/verification.json": "34805b7b5de1a07de3a096444f580c7bf87d12b6f71c46d4c7c252ed9e0ebce6",
+    "data/calibration_followup/rebuild_status.json": "e26da9af4d3f6e52f48b2627736d974c75d374955372fc71bf2aca454eda467b",
+    "scripts/routine_plot_style.py": "8e57aecbcfdc044632165afeb5ce371f6ff9c15bb4e053c054d35700b8f471ff",
+    "scripts/plot_continuation.py": "3bcec1cef16e7e4f63ebab6f592254c659082c39f832eaf5108ff82a42498bf2",
+    "scripts/verify_calibration_followup.py": "6e0c3ab3f1c9103ef0caef705dd16ed5e07990be8d1999091b8ab34e25a7e326"
+  }
+}

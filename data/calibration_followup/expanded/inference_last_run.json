@@ -1,0 +1,217 @@
+[
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220128T000000_20220128T060000.mseed",
+    "picks": 0,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220127T180000_20220128T000000.mseed",
+    "picks": 187,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220127T180000_20220128T000000.mseed",
+    "picks": 123,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220127T180000_20220128T000000.mseed",
+    "picks": 274,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220127T180000_20220128T000000.mseed",
+    "picks": 71,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220127T180000_20220128T000000.mseed",
+    "picks": 171,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220127T180000_20220128T000000.mseed",
+    "picks": 387,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220127T180000_20220128T000000.mseed",
+    "picks": 132,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220128T000000_20220128T060000.mseed",
+    "picks": 295,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220128T000000_20220128T060000.mseed",
+    "picks": 73,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220128T000000_20220128T060000.mseed",
+    "picks": 185,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220128T000000_20220128T060000.mseed",
+    "picks": 58,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220128T000000_20220128T060000.mseed",
+    "picks": 56,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220128T000000_20220128T060000.mseed",
+    "picks": 146,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220128T000000_20220128T060000.mseed",
+    "picks": 358,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220128T060000_20220128T120000.mseed",
+    "picks": 0,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220128T060000_20220128T120000.mseed",
+    "picks": 197,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220128T060000_20220128T120000.mseed",
+    "picks": 131,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220128T060000_20220128T120000.mseed",
+    "picks": 122,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220128T060000_20220128T120000.mseed",
+    "picks": 64,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220128T060000_20220128T120000.mseed",
+    "picks": 651,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220128T060000_20220128T120000.mseed",
+    "picks": 108,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220128T120000_20220128T180000.mseed",
+    "picks": 1,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220128T120000_20220128T180000.mseed",
+    "picks": 99,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220128T060000_20220128T120000.mseed",
+    "picks": 267,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220128T120000_20220128T180000.mseed",
+    "picks": 130,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220128T120000_20220128T180000.mseed",
+    "picks": 143,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CAAM_20220128T180000_20220129T000000.mseed",
+    "picks": 68,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220128T120000_20220128T180000.mseed",
+    "picks": 524,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220128T120000_20220128T180000.mseed",
+    "picks": 81,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220128T120000_20220128T180000.mseed",
+    "picks": 83,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSTH_20220128T120000_20220128T180000.mseed",
+    "picks": 153,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFB1_20220128T180000_20220129T000000.mseed",
+    "picks": 0,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CFMN_20220128T180000_20220129T000000.mseed",
+    "picks": 123,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMIS_20220128T180000_20220129T000000.mseed",
+    "picks": 183,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CMSN_20220128T180000_20220129T000000.mseed",
+    "picks": 116,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CPOZ_20220128T180000_20220129T000000.mseed",
+    "picks": 41,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSFT_20220128T180000_20220129T000000.mseed",
+    "picks": 77,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_CSOB_20220128T180000_20220129T000000.mseed",
+    "picks": 71,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220128T000000_20220128T060000.mseed",
+    "picks": 274,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220128T060000_20220128T120000.mseed",
+    "picks": 180,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220128T120000_20220128T180000.mseed",
+    "picks": 108,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/continuation/waveforms/IV_COLB_20220128T180000_20220129T000000.mseed",
+    "picks": 108,
+    "status": "processed"
+  }
+]

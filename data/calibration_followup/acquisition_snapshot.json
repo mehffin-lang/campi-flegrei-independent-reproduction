@@ -1,0 +1,7 @@
+{
+  "file": "data/calibration_followup/acquisition.sqlite.gz",
+  "bytes": 3268511,
+  "sha256": "6ed868d83e2c54df47ef7cec2170fab127533601f3e67a5d0375aa794065dad6",
+  "frozen_utc": "2026-10-13T16:40:13.626632+00:00",
+  "role": "Actual request ledger; pending requests are not coverage"
+}

@@ -78,6 +78,22 @@ for r in rows:
         r['blocker']='Accepted independent locations/model, reviewed P polarities and S/P ratios, Green functions and event-specific gCAP settings are missing or unfinished. SKHASH/gCAP not run. The written methods and figure caption use different counts; no supplied mechanism table is used to resolve this in the scientific report.'
     r['input_observation_files']=sorted(set(r.get('input_observation_files',[])))
     r['report_figure']='figures/figure_1_combined.pdf' if p in ['1A','1B','1C'] else r.get('generated_figure')
+    if p=='1A' or p.startswith('S5'):
+        r['input_observation_files']=sorted(set(r['input_observation_files']+['inputs/continuation/coastline.zip']))
+        r['parameters']=r['parameters'].split(' Display:')[0]+' Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Full color ranges: 0--8 km for 1A, 0--6 km for S5. Display bounds and off-view counts saved in routine_plot_scope.csv.'
+        r['style_record']='data/continuation/routine_plot_style.json'
+    if (ROOT/'data/calibration_followup/summary.json').exists() and (p.startswith('S6') or p.startswith('S7')):
+        r['related_data_command']='.venv/bin/python scripts/rebuild_calibration_followup.py'
+        r['related_saved_data']='data/calibration_followup/summary.json; data/calibration_followup/validation.json; data/calibration_followup/relocation/summary.json'
+        r['attempt']='Executed alternative-profile two-round calibration, five fixed-model catalog passes and separate HypoDD LSQR/SVD diagnostics. Scientific validation fails; diagnostics are not panel counterparts.'
+        r['blocker']='No accepted calibration: continued iterations move locations by kilometers; a stricter selection produces nonphysical layers. Original Battaglia grid/regional averages unverified. Exploratory HypoDD is not fixed-3D TomoDD; NE SVD diverges and three other alternative subsets have conditional large errors. No author results substituted.'
+    if p=='S1' and (ROOT/'data/calibration_followup/expanded/analysis_summary.json').exists():
+        expanded=json.loads((ROOT/'data/calibration_followup/expanded/analysis_summary.json').read_text())
+        r.update(generated_figure='figures/followup_coverage.pdf',report_figure='figures/followup_coverage.pdf',
+            saved_data='data/calibration_followup/expanded/processed_coverage_union.json',
+            input_observation_files=sorted(pd.read_csv(ROOT/'data/calibration_followup/expanded/processed_coverage.csv').file.unique()),
+            data_command='.venv/bin/python scripts/extend_calibration_observations.py --workers 8',plot_command='.venv/bin/python scripts/plot_calibration_followup.py',
+            blocker=f"Expanded processed subset: {expanded['files']} files, {expanded['processed_channel_hours']:.3f} channel-hours; full-period queue remains unfinished. No requested-but-failed interval is counted.")
 (ROOT/'docs/panel_record.json').write_text(json.dumps(rows,indent=2)+'\n');(ROOT/'docs/panels.json').write_text(json.dumps(rows,indent=2)+'\n')
 layout=json.loads((R/'figure_layout.json').read_text())
 for item in layout:
@@ -95,13 +111,21 @@ for item in layout:
             caption=f"Partial S4A inference comparison on original CSOB observations, 20 May 2024 20:10:03--20:12:03 UTC. The caption's two-hour offset is interpreted literally; exact published alignment is unverified. Original weights: {counts['original']['P']} P and {counts['original']['S']} S; retrained weights: {counts['retrained']['P']} P and {counts['retrained']['S']} S. No labeled accuracy or retraining claim.")
     elif item['figure'] in ['S6','S8']:
         item.update(partial_panels=[],file_labels=[],independent_files=[],missing='No accepted current result. For S6, the unverified background grid and dependent previous pilot were quarantined; alternative-profile arithmetic tests are not validated locations. No older output is substituted.',caption='Not reproduced at the current checkpoint.')
-    elif item['figure']=='2':item['missing']=f"Panels A and B need multiyear calibrated/relocated events and magnitudes. The current {s['events']} initial associations remain provisional."
+    elif item['figure']=='2':item['missing']=f"Panels A and B need multiyear calibrated/relocated events and magnitudes. The frozen {s['events']}-event calibration cohort and the expanded associations remain provisional."
     elif item['figure']=='S12':item['missing']=f"Panels A--H need relocated sector selections and manual depth review. {loc.get('associated_cpoz_p_picks',0)} independent CPOZ P arrivals now exist, but the required sector gathers remain unfinished."
     elif item['figure']=='S14':item['missing']=f"The cluster histories require three-year exposure, confirmed events and relative magnitudes. The present {h.get('valid_hours',0):.3f} hour scan produced {h.get('candidates',0)} unconfirmed threshold crossings, not reviewed families."
+    if item['figure'] in ['1','S5']:
+        item['caption']+=' Depth colors run red to blue on a dark background; the color scale extends to '+('8' if item['figure']=='1' else '6')+' km to include the observed range. Circle area includes an exponential Md term and a small visibility offset, an explicit display assumption; crosses indicate missing Md. Published pixels are not plotting inputs.'
+    if item['figure']=='S5':item['caption']+=' The public source reports depths in 0.1 km steps; the resulting bands are not jittered or smoothed.'
+    if item['figure'] in ['S6','S7'] and (ROOT/'data/calibration_followup/summary.json').exists():
+        item['missing']='No validated independent counterpart. Alternative-profile VELEST and HypoDD trials are retained as diagnostics after the supplement: calibration fails convergence/physical checks and one SVD subset diverges. The fixed 3D background is unverified; TomoDD and the specified regional uncertainty analysis are not completed.'
+    if item['figure']=='S1' and (ROOT/'data/calibration_followup/expanded/analysis_summary.json').exists():
+        expanded=json.loads((ROOT/'data/calibration_followup/expanded/analysis_summary.json').read_text())
+        item.update(independent_files=['figures/followup_coverage.pdf'],caption=f"Partial: expanded checkpoint, {expanded['files']} processed files, {len(expanded['stations'])} station names, {expanded['processed_channel_hours']:.3f} union channel-hours. Empty intervals are neither connected nor counted. The separately frozen calibration cohort retains its older event identifiers.")
 (R/'figure_layout.json').write_text(json.dumps(layout,indent=2)+'\n')
 numbers=dict(CurrentFiles=s['files'],CurrentPicks=s['picks'],CurrentPPicks=s['p_picks'],CurrentSPicks=s['s_picks'],CurrentEvents=s['events'],CurrentAssigned=s['assigned_picks'],CurrentHours=f"{s['processed_channel_hours']:.3f}",CurrentAmplitudes=m.get('amplitude_measurements',0),CurrentSNR=m.get('snr_passing',0),CurrentMagnitudeEdges=m.get('magnitude_edges',0),CurrentMagnitudes=m.get('calibrated_magnitudes',0),CurrentCalibration=v.get('calibration_events',0),CurrentHybridHours=f"{h.get('valid_hours',0):.3f}",CurrentHybridCandidates=h.get('candidates',0),CurrentCPOZ=loc.get('associated_cpoz_p_picks',0),CurrentSPPairs=loc.get('paired_observations',0),CurrentBadSP=loc.get('nonpositive_sp',0))
 plot_scope=pd.read_csv(D/'routine_plot_scope.csv').set_index('panel')
-numbers.update(CurrentRoutineOffMap=int(plot_scope.loc['1A','outside_view']),CurrentStudyOffMap=int(plot_scope.loc['S5/map','outside_view']),CurrentStudyOffEastDepth=int(plot_scope.loc['S5/easting-depth','outside_view']))
+numbers.update(CurrentRoutineOffMap=int(plot_scope.loc['1A','outside_view']),CurrentStudyOffMap=int(plot_scope.loc['S5/map','outside_view']),CurrentStudyOffNorthDepth=int(plot_scope.loc['S5/northing-depth','outside_view']),CurrentStudyOffEastDepth=int(plot_scope.loc['S5/easting-depth','outside_view']))
 benchmark=read('benchmark_window')
 for model in benchmark['models']:
     for phase in ['P','S']:numbers['Benchmark'+model['model'].title()+phase]=model['counts'][phase]
@@ -229,6 +253,16 @@ updates={
     12:f"Executed: {c['leveling_rows']} source historical entries with estimates/reconstruction distinguished, {c['gnss_rows']} daily GNSS through 2025-03-20, {c['routine_located']} historical and {c['routine_study_located']} study-period located routine events. External contextual/calibration roles only; historical count difference unresolved."
 }
 for i,status in updates.items():stages[i]['status']=status
+followup=ROOT/'data/calibration_followup'
+if (followup/'expanded/analysis_summary.json').exists():
+    expanded=json.loads((followup/'expanded/analysis_summary.json').read_text())
+    acquired=json.loads((followup/'acquisition_checkpoint.json').read_text())
+    stages[0]['status']=f"Expanded checkpoint: {expanded['files']} processed files, {expanded['processed_channel_hours']:.3f} union channel-hours; {acquired['files']} successful segmented requests, {acquired['jobs_by_status']['pending']} pending. Full-period retrieval/inference unfinished; RAN credentials unavailable. Figure S1 shows the expanded subset; calibration retains the separate older event identifiers."
+    stages[1]['status']=f"Expanded checkpoint: {expanded['picks']} own merged picks; frozen 1003-event cohort retained for calibration. No full-period coverage claim."
+    stages[3]['status']=f"Expanded checkpoint: {expanded['events']} provisional associations from {expanded['assigned_picks']} assigned picks, separate identifier set. Alternative 2021 profile; no accepted event catalog."
+    stages[4]['status']='Executed alternative-profile two-round 32/64-bit calibration and five fixed-model catalog passes; 238 numerical-filter passes. Not accepted: continued iterations move locations by kilometers, held-out metrics are mixed, stricter selection yields nonphysical layers. Verified original grid and reviewed phases missing.'
+    stages[5]['status']='Measured 10882 new channel comparisons, retained 517 phase delays. Two exploratory HypoDD LSQR rounds returned 127/126 events; these are not fixed-3D TomoDD. Both requested TomoDD rounds remain uncompleted because accepted calibration and verified background grid are missing.'
+    stages[6]['status']='Executed exploratory largest-component quadrant SVD: NW/SW/SE return 40/16/22 conditional estimates; NE diverges. These subsets/model are not the specified S7 experiment and no panel is promoted.'
 (ROOT/'docs/stages.json').write_text(json.dumps(stages,indent=2)+'\n')
 # Superseded displays are removed only after their current counterparts exist.
 # Their source scripts/data and earlier versions remain in the repository/history.

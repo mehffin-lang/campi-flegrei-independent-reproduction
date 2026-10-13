@@ -1,0 +1,13 @@
+{
+  "events": 12503,
+  "unique_depths": 51,
+  "fraction_on_0_1_km_grid": 1.0,
+  "raw_HTML_values_match": true,
+  "source_sha256": {
+    "inputs/continuation/routine_2022.html": "75b7996d42aa9bf75d5757fc481623c7772e49b8c2a5ecc453109907108faf07",
+    "inputs/continuation/routine_2023.html": "c8dd3cf0dec5381b455367951767624a6f85262861419137b1134c0ab328674f",
+    "inputs/continuation/routine_2024.html": "d37e3799fd481ffbb70bd4bd1c6a7bb724970f7248e495d9b02850938a75b642",
+    "inputs/continuation/routine_2025.html": "c085d87dc87d12feaa5505946a19f627e7b6fa00ca25c04cc1b1b08cdace62ed"
+  },
+  "meaning": "Precision of the permitted public routine-catalog snapshot, not depth accuracy; values are neither jittered nor smoothed to resemble the publication."
+}

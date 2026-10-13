@@ -1,0 +1,1522 @@
+{
+  "sha": "fb40407fb768cbdc23a11e27bc841f5d4a98abb7",
+  "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/fb40407fb768cbdc23a11e27bc841f5d4a98abb7",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7308218cc0ab4c8153ba58db23aa24e6f55493fa",
+      "size": 186,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/7308218cc0ab4c8153ba58db23aa24e6f55493fa"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e4db011875001e665b233c1626df359817bad2e",
+      "size": 14,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/5e4db011875001e665b233c1626df359817bad2e"
+    },
+    {
+      "path": "Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0de169f5447a5493759e321be6dca9f348d8faef",
+      "size": 300,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/0de169f5447a5493759e321be6dca9f348d8faef"
+    },
+    {
+      "path": "README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6db429b36359ae5012404ddf8d05b463aebab61e",
+      "size": 5366,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/6db429b36359ae5012404ddf8d05b463aebab61e"
+    },
+    {
+      "path": "doc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b40a01ffdfbf5ff74c0c9d23e9614dcac8c468e7",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/b40a01ffdfbf5ff74c0c9d23e9614dcac8c468e7"
+    },
+    {
+      "path": "doc/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b7e0c797fb2d6e100360b290dc860d8bb6b2b65",
+      "size": 665,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/5b7e0c797fb2d6e100360b290dc860d8bb6b2b65"
+    },
+    {
+      "path": "doc/Waldhauser_Ellsworth_BSSA2000.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06f4cc6f652486636a3b52da88617c4f6307154f",
+      "size": 342165,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/06f4cc6f652486636a3b52da88617c4f6307154f"
+    },
+    {
+      "path": "doc/hypoDD2_UserGuide.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "488eb64e17728e04cc4af7a079caec3f03ce39fe",
+      "size": 825810,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/488eb64e17728e04cc4af7a079caec3f03ce39fe"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a141cfc8eab19f4586dc376f33746fb490d5ff6",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/6a141cfc8eab19f4586dc376f33746fb490d5ff6"
+    },
+    {
+      "path": "examples/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "521843a681ed7ce6c97275117272c99807d89240",
+      "size": 1463,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/521843a681ed7ce6c97275117272c99807d89240"
+    },
+    {
+      "path": "examples/example1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "20e5165409460dd1da2a244d89e759eccd37c233",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/20e5165409460dd1da2a244d89e759eccd37c233"
+    },
+    {
+      "path": "examples/example1/El16.arc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "039f9a41b41a87ed8b63a8ddda4f61a49a9984e2",
+      "size": 89859,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/039f9a41b41a87ed8b63a8ddda4f61a49a9984e2"
+    },
+    {
+      "path": "examples/example1/El16.pha",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91094eb8daf44c072342e117d4efdd6f64ac480b",
+      "size": 18266,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/91094eb8daf44c072342e117d4efdd6f64ac480b"
+    },
+    {
+      "path": "examples/example1/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ef4ceec4381c07626424ed322ad0bbb683a371e",
+      "size": 906,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/8ef4ceec4381c07626424ed322ad0bbb683a371e"
+    },
+    {
+      "path": "examples/example1/dt.cc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19822026ba190d189b0f84c02068ecfd24e271b4",
+      "size": 843668,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/19822026ba190d189b0f84c02068ecfd24e271b4"
+    },
+    {
+      "path": "examples/example1/dt.ct",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4510a1e7404e23311db046f5ef6623ceb3c975a3",
+      "size": 68618,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/4510a1e7404e23311db046f5ef6623ceb3c975a3"
+    },
+    {
+      "path": "examples/example1/eqplot.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "889dd45f8b90508e5792e282665553d8edd1d737",
+      "size": 7190,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/889dd45f8b90508e5792e282665553d8edd1d737"
+    },
+    {
+      "path": "examples/example1/event.dat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "011f9bdbf018bf380ad9c5faa6d3cc66cace9ed5",
+      "size": 1440,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/011f9bdbf018bf380ad9c5faa6d3cc66cace9ed5"
+    },
+    {
+      "path": "examples/example1/event.sel",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "011f9bdbf018bf380ad9c5faa6d3cc66cace9ed5",
+      "size": 1440,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/011f9bdbf018bf380ad9c5faa6d3cc66cace9ed5"
+    },
+    {
+      "path": "examples/example1/hypoDD.inp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07aeae3ed83f5088ad65058fbe5102c475c43d4d",
+      "size": 4018,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/07aeae3ed83f5088ad65058fbe5102c475c43d4d"
+    },
+    {
+      "path": "examples/example1/hypoDD.inp.v1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9ceca18cd6342ab156a6b57d3dc15c4d2fc1a7d",
+      "size": 2732,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/d9ceca18cd6342ab156a6b57d3dc15c4d2fc1a7d"
+    },
+    {
+      "path": "examples/example1/hypoDD.loc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6706630c338ea263452234002392771bc2733029",
+      "size": 2160,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/6706630c338ea263452234002392771bc2733029"
+    },
+    {
+      "path": "examples/example1/hypoDD.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7364b7dd553dbf53c0942f039b4d753e747f993e",
+      "size": 29961,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/7364b7dd553dbf53c0942f039b4d753e747f993e"
+    },
+    {
+      "path": "examples/example1/hypoDD.reloc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7268b6c11c5c8e6ee1179941bbd07fb40d90a587",
+      "size": 2784,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/7268b6c11c5c8e6ee1179941bbd07fb40d90a587"
+    },
+    {
+      "path": "examples/example1/hypoDD.res",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83bae1445e0368ce3691da1f4eafa1eb14c31e71",
+      "size": 296844,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/83bae1445e0368ce3691da1f4eafa1eb14c31e71"
+    },
+    {
+      "path": "examples/example1/hypoDD.src",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aad334692740270462a9db46def379e4276fad7e",
+      "size": 185888,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/aad334692740270462a9db46def379e4276fad7e"
+    },
+    {
+      "path": "examples/example1/hypoDD.sta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "862bfcf3b8dc1897c6facc0e688633909c667bd0",
+      "size": 7696,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/862bfcf3b8dc1897c6facc0e688633909c667bd0"
+    },
+    {
+      "path": "examples/example1/ph2dt.inp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f1b895ea4c9cf32ecc236946e980936ab3ae5b0",
+      "size": 585,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/3f1b895ea4c9cf32ecc236946e980936ab3ae5b0"
+    },
+    {
+      "path": "examples/example1/ph2dt.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96bb60047c615e10c84308e8765fe8bb90beca90",
+      "size": 1311,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/96bb60047c615e10c84308e8765fe8bb90beca90"
+    },
+    {
+      "path": "examples/example1/station.dat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d86762104ee570a7db83c7363794fa736899780",
+      "size": 45302,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/0d86762104ee570a7db83c7363794fa736899780"
+    },
+    {
+      "path": "examples/example1/station.sel",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09c5c08c7089f596992daa696ed9a9a9a12aade3",
+      "size": 3300,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/09c5c08c7089f596992daa696ed9a9a9a12aade3"
+    },
+    {
+      "path": "examples/example1/vel3D.dat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9a4cf70cc2ea2be56f4107ace120ad4512ed6e0",
+      "size": 27922,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/e9a4cf70cc2ea2be56f4107ace120ad4512ed6e0"
+    },
+    {
+      "path": "examples/example2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b8dc68e40d4343d943c3e9adcd1a7b5db809e81",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/5b8dc68e40d4343d943c3e9adcd1a7b5db809e81"
+    },
+    {
+      "path": "examples/example2/Calaveras.arc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89962d99babfe10042d3f2cb50f33fbec673d7be",
+      "size": 3413988,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/89962d99babfe10042d3f2cb50f33fbec673d7be"
+    },
+    {
+      "path": "examples/example2/Calaveras.pha",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "765cca0ba483b0e087d00ca25ebb71c821a7c462",
+      "size": 439558,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/765cca0ba483b0e087d00ca25ebb71c821a7c462"
+    },
+    {
+      "path": "examples/example2/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a9fc877298b632d959575bd2d06369ce8290ad4",
+      "size": 892,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/7a9fc877298b632d959575bd2d06369ce8290ad4"
+    },
+    {
+      "path": "examples/example2/dt.cc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "523d404a9d1e075ed22f75d84c0fdd2633fbbadf",
+      "size": 2654962,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/523d404a9d1e075ed22f75d84c0fdd2633fbbadf"
+    },
+    {
+      "path": "examples/example2/dt.ct",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ee91da4d6424ddc80dd1836169a7381918f44a8",
+      "size": 2258080,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/3ee91da4d6424ddc80dd1836169a7381918f44a8"
+    },
+    {
+      "path": "examples/example2/eqplot.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83ee26009ff4b789cc0232a0bc3663d5cb872db7",
+      "size": 7500,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/83ee26009ff4b789cc0232a0bc3663d5cb872db7"
+    },
+    {
+      "path": "examples/example2/event.dat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbcfebbca3bffba25c269c5ec57bebdbf71eafca",
+      "size": 27720,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/bbcfebbca3bffba25c269c5ec57bebdbf71eafca"
+    },
+    {
+      "path": "examples/example2/event.sel",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbcfebbca3bffba25c269c5ec57bebdbf71eafca",
+      "size": 27720,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/bbcfebbca3bffba25c269c5ec57bebdbf71eafca"
+    },
+    {
+      "path": "examples/example2/hypoDD.inp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cff254d36f0d1405f1515bdd9695b7652aa107bc",
+      "size": 3821,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/cff254d36f0d1405f1515bdd9695b7652aa107bc"
+    },
+    {
+      "path": "examples/example2/hypoDD.inp.v1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3728967b90f4a68697f214b5a12eb4618ec1d5cb",
+      "size": 2410,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/3728967b90f4a68697f214b5a12eb4618ec1d5cb"
+    },
+    {
+      "path": "examples/example2/hypoDD.loc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1842ce98fa072ec38b8c2053eae397e50f337e8a",
+      "size": 41580,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/1842ce98fa072ec38b8c2053eae397e50f337e8a"
+    },
+    {
+      "path": "examples/example2/hypoDD.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b02cfb6599193040fe5a5907d25eb406125a81b",
+      "size": 59382,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/0b02cfb6599193040fe5a5907d25eb406125a81b"
+    },
+    {
+      "path": "examples/example2/hypoDD.reloc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afe35a86823d74a56b53778d005fc9bcb20c5cda",
+      "size": 53592,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/afe35a86823d74a56b53778d005fc9bcb20c5cda"
+    },
+    {
+      "path": "examples/example2/hypoDD.res",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9d43dd764bc202bb9416c46bcef8acd95c48d2e",
+      "size": 12137022,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/b9d43dd764bc202bb9416c46bcef8acd95c48d2e"
+    },
+    {
+      "path": "examples/example2/hypoDD.src",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5b094e99f11c2c6930ec03d36bc752e94d75a67",
+      "size": 5609296,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/a5b094e99f11c2c6930ec03d36bc752e94d75a67"
+    },
+    {
+      "path": "examples/example2/hypoDD.sta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55cca0d43e4f9a87dfdd0bf69dbdf50b0bc0c545",
+      "size": 12064,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/55cca0d43e4f9a87dfdd0bf69dbdf50b0bc0c545"
+    },
+    {
+      "path": "examples/example2/ph2dt.inp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9af833acb6f9e6ebe157d2f967eaafca2841663",
+      "size": 590,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/c9af833acb6f9e6ebe157d2f967eaafca2841663"
+    },
+    {
+      "path": "examples/example2/ph2dt.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5e9445e9629906e7060bb68cd63fa17bf296245",
+      "size": 106117,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/b5e9445e9629906e7060bb68cd63fa17bf296245"
+    },
+    {
+      "path": "examples/example2/station.dat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d86762104ee570a7db83c7363794fa736899780",
+      "size": 45302,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/0d86762104ee570a7db83c7363794fa736899780"
+    },
+    {
+      "path": "examples/example2/station.sel",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24a7fad26924cd7c011ef523591c3ea471610b28",
+      "size": 11880,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/24a7fad26924cd7c011ef523591c3ea471610b28"
+    },
+    {
+      "path": "examples/example3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff657e88858f7cfcd1c3c8c9b7cf6b16cc8349a4",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/ff657e88858f7cfcd1c3c8c9b7cf6b16cc8349a4"
+    },
+    {
+      "path": "examples/example3/Parkfield_84-04.ps",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "615ca68b3d4a4d9beb250847c175c70bda2964f0",
+      "size": 70985,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/615ca68b3d4a4d9beb250847c175c70bda2964f0"
+    },
+    {
+      "path": "examples/example3/Parkfield_84-04.ps.3d",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ef5d39d2a37d524b6c3cb4954c1561e68f2488b",
+      "size": 70988,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/5ef5d39d2a37d524b6c3cb4954c1561e68f2488b"
+    },
+    {
+      "path": "examples/example3/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4c7f7226bf349aae1a587d61915bad737e07f22",
+      "size": 1000,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/a4c7f7226bf349aae1a587d61915bad737e07f22"
+    },
+    {
+      "path": "examples/example3/dt.cc.w1.cc70.n4-40.nn25",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec6bbbd0008f5d3e2e1345c3ce214ca0790f1c13",
+      "size": 3027240,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/ec6bbbd0008f5d3e2e1345c3ce214ca0790f1c13"
+    },
+    {
+      "path": "examples/example3/dt.ct",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a98be3738fb584c5eb865c108a41394590edb53",
+      "size": 3855797,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/4a98be3738fb584c5eb865c108a41394590edb53"
+    },
+    {
+      "path": "examples/example3/eqplot.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18b819e7b371ea8f1c99257d552ae9bdd5c530c1",
+      "size": 7502,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/18b819e7b371ea8f1c99257d552ae9bdd5c530c1"
+    },
+    {
+      "path": "examples/example3/eqplot.ps",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19aaf0b5124befd62b6a90218d6d813272714a88",
+      "size": 61997,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/19aaf0b5124befd62b6a90218d6d813272714a88"
+    },
+    {
+      "path": "examples/example3/eqplot.ps.3d",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19aaf0b5124befd62b6a90218d6d813272714a88",
+      "size": 61997,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/19aaf0b5124befd62b6a90218d6d813272714a88"
+    },
+    {
+      "path": "examples/example3/event.dat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58c903d9b4527b14f0a43d38fbd4463de886f354",
+      "size": 46530,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/58c903d9b4527b14f0a43d38fbd4463de886f354"
+    },
+    {
+      "path": "examples/example3/event.sel",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58c903d9b4527b14f0a43d38fbd4463de886f354",
+      "size": 46530,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/58c903d9b4527b14f0a43d38fbd4463de886f354"
+    },
+    {
+      "path": "examples/example3/hypoDD.inp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cb68e9a278fc318612b47783728f6ef5b0a3184",
+      "size": 4098,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/9cb68e9a278fc318612b47783728f6ef5b0a3184"
+    },
+    {
+      "path": "examples/example3/hypoDD.inp.v1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "927de63cbad86ecfdbe39e1c4c72afb19835108a",
+      "size": 2389,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/927de63cbad86ecfdbe39e1c4c72afb19835108a"
+    },
+    {
+      "path": "examples/example3/hypoDD.loc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c36360d9ba80192ea930ac34ab79fa94d865acf5",
+      "size": 69795,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/c36360d9ba80192ea930ac34ab79fa94d865acf5"
+    },
+    {
+      "path": "examples/example3/hypoDD.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "967c13cb5503add60752b1929c71c896064726ff",
+      "size": 61401,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/967c13cb5503add60752b1929c71c896064726ff"
+    },
+    {
+      "path": "examples/example3/hypoDD.log.3d",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b54c828d0f758e14a66f7edc86c9d96d0aa7445",
+      "size": 102699,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/7b54c828d0f758e14a66f7edc86c9d96d0aa7445"
+    },
+    {
+      "path": "examples/example3/hypoDD.reloc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b66c42b91e27db4bbd2dc85c6ac56d2c36213f6",
+      "size": 89958,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/7b66c42b91e27db4bbd2dc85c6ac56d2c36213f6"
+    },
+    {
+      "path": "examples/example3/hypoDD.res",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d216d23d30e70152c247fc9ac731669872f47466",
+      "size": 12473799,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/d216d23d30e70152c247fc9ac731669872f47466"
+    },
+    {
+      "path": "examples/example3/hypoDD.src",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ecdb6365a66dc9b26746d7f14abe95d1eecd4cd",
+      "size": 8766252,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/9ecdb6365a66dc9b26746d7f14abe95d1eecd4cd"
+    },
+    {
+      "path": "examples/example3/hypoDD.sta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce00575d0a66bff9b92e8e4b170431425209cc64",
+      "size": 11232,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/ce00575d0a66bff9b92e8e4b170431425209cc64"
+    },
+    {
+      "path": "examples/example3/hypoDD.sta.3d",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dfe985e9317ade68ea39e5a5b7e535237aade61",
+      "size": 11232,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/5dfe985e9317ade68ea39e5a5b7e535237aade61"
+    },
+    {
+      "path": "examples/example3/ncsn.sta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf1dbdfed082845b9a89264bfdb6312bfc572739",
+      "size": 93080,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/bf1dbdfed082845b9a89264bfdb6312bfc572739"
+    },
+    {
+      "path": "examples/example3/ph2dt.inp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90943703decabdc36ecaa33b741c3a1e96b8030c",
+      "size": 640,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/90943703decabdc36ecaa33b741c3a1e96b8030c"
+    },
+    {
+      "path": "examples/example3/ph2dt.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "963b4a0f2a848d149e339a2c42054369bab60d66",
+      "size": 110742,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/963b4a0f2a848d149e339a2c42054369bab60d66"
+    },
+    {
+      "path": "examples/example3/pkf.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff0e9d1fb995a99646a21e8b5554e745128ede75",
+      "size": 4579,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/ff0e9d1fb995a99646a21e8b5554e745128ede75"
+    },
+    {
+      "path": "examples/example3/pkf05.pha.84_05.3D",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81fd6e6e8d0682325af07afcbd3b751a7bfb6625",
+      "size": 573542,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/81fd6e6e8d0682325af07afcbd3b751a7bfb6625"
+    },
+    {
+      "path": "examples/example3/pkf3D_P.vel",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ced27607ef96a3585106b9e7d9f499627bf7072",
+      "size": 16357,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/4ced27607ef96a3585106b9e7d9f499627bf7072"
+    },
+    {
+      "path": "examples/example3/pkf3D_PS.vel",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1faf48875ec6a9b09d6560c1a085af0fd3875319",
+      "size": 26356,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/1faf48875ec6a9b09d6560c1a085af0fd3875319"
+    },
+    {
+      "path": "examples/example3/reloc2event.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f24ff1ec2a29b72920fb1fa389d3c0e531c493b4",
+      "size": 228,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/f24ff1ec2a29b72920fb1fa389d3c0e531c493b4"
+    },
+    {
+      "path": "examples/example3/sift.lin.1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "624fc1dcf631881a7ae8131e67fa85d1fffa61e8",
+      "size": 13864,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/624fc1dcf631881a7ae8131e67fa85d1fffa61e8"
+    },
+    {
+      "path": "examples/example3/station.sel",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d036021ca7d2bf8d98066eb1459665f93e13d93",
+      "size": 9812,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/7d036021ca7d2bf8d98066eb1459665f93e13d93"
+    },
+    {
+      "path": "examples/example4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a049a95a0bdf976af3a2d1e4fd9a02bcca41899e",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/a049a95a0bdf976af3a2d1e4fd9a02bcca41899e"
+    },
+    {
+      "path": "examples/example4/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b2b0b0ffb98243f01fef413df94636cf4c61276",
+      "size": 628,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/1b2b0b0ffb98243f01fef413df94636cf4c61276"
+    },
+    {
+      "path": "examples/example4/dt.ct",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7de034bc5580f90e233a3fcce6c751f0c7846cd1",
+      "size": 665280,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/7de034bc5580f90e233a3fcce6c751f0c7846cd1"
+    },
+    {
+      "path": "examples/example4/eqplot.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa04e9a6e6918e6b6c46549f649346d6531d9218",
+      "size": 7881,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/fa04e9a6e6918e6b6c46549f649346d6531d9218"
+    },
+    {
+      "path": "examples/example4/event.sel",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb78fc839adde60361f1c36aecab402247bbd4f0",
+      "size": 1890,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/cb78fc839adde60361f1c36aecab402247bbd4f0"
+    },
+    {
+      "path": "examples/example4/event.sel.noise",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a0fef1428b2c38ebaaa81ff4fb2ba55e102e253",
+      "size": 1890,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/4a0fef1428b2c38ebaaa81ff4fb2ba55e102e253"
+    },
+    {
+      "path": "examples/example4/hypoDD.inp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9f05e3599cffa1ff2db4b3651ff3f2df43d9bda",
+      "size": 3034,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/e9f05e3599cffa1ff2db4b3651ff3f2df43d9bda"
+    },
+    {
+      "path": "examples/example4/hypoDD.loc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d330c97a568a09c2f6cb7ea8626a8e98641995ea",
+      "size": 2835,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/d330c97a568a09c2f6cb7ea8626a8e98641995ea"
+    },
+    {
+      "path": "examples/example4/hypoDD.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "895c537f9416f31a415745b674fd79c055d6008d",
+      "size": 19487,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/895c537f9416f31a415745b674fd79c055d6008d"
+    },
+    {
+      "path": "examples/example4/hypoDD.reloc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf58f0ca3be9484c8d3934e642ef8d8291cfa369",
+      "size": 3654,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/bf58f0ca3be9484c8d3934e642ef8d8291cfa369"
+    },
+    {
+      "path": "examples/example4/hypoDD.res",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d449fe256da00c80693505c6f959e858ddfe901",
+      "size": 1315440,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/1d449fe256da00c80693505c6f959e858ddfe901"
+    },
+    {
+      "path": "examples/example4/hypoDD.sta",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01a50b8863979f8afc5bb84cf6e73e53c5651050",
+      "size": 3744,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/01a50b8863979f8afc5bb84cf6e73e53c5651050"
+    },
+    {
+      "path": "examples/example4/ph2dt.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fe9e3bcdc9babb4c88fd0094129920560eb4226",
+      "size": 1027,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/3fe9e3bcdc9babb4c88fd0094129920560eb4226"
+    },
+    {
+      "path": "examples/example4/station.sel.z",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9917efe91e0df8286a7b980502bce7adb5148c7",
+      "size": 941,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/e9917efe91e0df8286a7b980502bce7adb5148c7"
+    },
+    {
+      "path": "include",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "84b2aa4f43ef07be6c69bcec2eafaad4c4b08844",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/84b2aa4f43ef07be6c69bcec2eafaad4c4b08844"
+    },
+    {
+      "path": "include/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fe8b9db1e20554cb2e24f61c90cf912b95bde3b",
+      "size": 315,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/3fe8b9db1e20554cb2e24f61c90cf912b95bde3b"
+    },
+    {
+      "path": "include/compat.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d8060d92bbe2bb52c608ea002a11c561c085389",
+      "size": 368,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/7d8060d92bbe2bb52c608ea002a11c561c085389"
+    },
+    {
+      "path": "include/f77types.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34e0933255c7cbb158a9d1c9610d6a54ecd8840c",
+      "size": 390,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/34e0933255c7cbb158a9d1c9610d6a54ecd8840c"
+    },
+    {
+      "path": "include/geocoord.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3448ecf38a7252bc232440908c636b99c80adc6a",
+      "size": 361,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/3448ecf38a7252bc232440908c636b99c80adc6a"
+    },
+    {
+      "path": "include/hypoDD.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ee8eee39effdf34dddd93801f7c67a4b6ee4fa2",
+      "size": 1493,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/9ee8eee39effdf34dddd93801f7c67a4b6ee4fa2"
+    },
+    {
+      "path": "include/ph2dt.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b7fb7129426b18279edecad4c72425693ed9998",
+      "size": 392,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/8b7fb7129426b18279edecad4c72425693ed9998"
+    },
+    {
+      "path": "include/vel3d.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e07a5a8808c8ebc2c43d37a9dfc65fac4aa9bbc",
+      "size": 1701,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/6e07a5a8808c8ebc2c43d37a9dfc65fac4aa9bbc"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2fcb9cd27b600ef02591f2f8b4a04b95eb75e5ee",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/2fcb9cd27b600ef02591f2f8b4a04b95eb75e5ee"
+    },
+    {
+      "path": "src/Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5c1f5efb7fbdb31fcaa4fbc9483c08fff90d6d2",
+      "size": 222,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/c5c1f5efb7fbdb31fcaa4fbc9483c08fff90d6d2"
+    },
+    {
+      "path": "src/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18743e5873fb2977ca4eb121e6a6bab58067f401",
+      "size": 795,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/18743e5873fb2977ca4eb121e6a6bab58067f401"
+    },
+    {
+      "path": "src/hista2ddsta",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "af9ac00fa6683c5d3d61c605d6b07ccdca534b2e",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/af9ac00fa6683c5d3d61c605d6b07ccdca534b2e"
+    },
+    {
+      "path": "src/hista2ddsta/Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4eb962d0c99712b49404f8aa5131002c82964288",
+      "size": 610,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/4eb962d0c99712b49404f8aa5131002c82964288"
+    },
+    {
+      "path": "src/hista2ddsta/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45cd6a7dc2385449841b2f49e82f05cbf2430776",
+      "size": 1589,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/45cd6a7dc2385449841b2f49e82f05cbf2430776"
+    },
+    {
+      "path": "src/hista2ddsta/hista2ddsta",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "eea7d0a6730b3d6375b80e046e78485f4991b913",
+      "size": 13464,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/eea7d0a6730b3d6375b80e046e78485f4991b913"
+    },
+    {
+      "path": "src/hista2ddsta/hista2ddsta.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb18b021ea341008205aeafd2bd86e1e5d55e822",
+      "size": 936,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/eb18b021ea341008205aeafd2bd86e1e5d55e822"
+    },
+    {
+      "path": "src/hypoDD",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b12ae12a3ba64ca66b009cae315f99002f3aed69",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/b12ae12a3ba64ca66b009cae315f99002f3aed69"
+    },
+    {
+      "path": "src/hypoDD/Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af7bd4f73103a499a887ce210ace8a1171871068",
+      "size": 2548,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/af7bd4f73103a499a887ce210ace8a1171871068"
+    },
+    {
+      "path": "src/hypoDD/aprod.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ea49d3dca14f80cd16f21c012c4ffdcec2f11ec",
+      "size": 1136,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/2ea49d3dca14f80cd16f21c012c4ffdcec2f11ec"
+    },
+    {
+      "path": "src/hypoDD/cluster1.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e78601ba1d696d9a1ab5c08e0ccc2a18f2f956a",
+      "size": 5266,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/8e78601ba1d696d9a1ab5c08e0ccc2a18f2f956a"
+    },
+    {
+      "path": "src/hypoDD/covar.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd839b866ef6c8b2f65c3604b7eb34183552fad6",
+      "size": 525,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/fd839b866ef6c8b2f65c3604b7eb34183552fad6"
+    },
+    {
+      "path": "src/hypoDD/datetime_.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e10c4e6af53d4f6e40108c28a1224c98cc4c6cfc",
+      "size": 395,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/e10c4e6af53d4f6e40108c28a1224c98cc4c6cfc"
+    },
+    {
+      "path": "src/hypoDD/datum.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8e6e717eb3ba538066d66ca610ad4fe27cbfe65",
+      "size": 1184,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/f8e6e717eb3ba538066d66ca610ad4fe27cbfe65"
+    },
+    {
+      "path": "src/hypoDD/delaz.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b41d8ca00dd830030a13f8947d54e6c69758e1f",
+      "size": 1816,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/8b41d8ca00dd830030a13f8947d54e6c69758e1f"
+    },
+    {
+      "path": "src/hypoDD/delaz2.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bcf0ca20051246c8999b250882ca98bbf8df8d9",
+      "size": 2561,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/8bcf0ca20051246c8999b250882ca98bbf8df8d9"
+    },
+    {
+      "path": "src/hypoDD/direct1.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e17efade1d228196d8c929a1d330dd185576fe25",
+      "size": 4998,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/e17efade1d228196d8c929a1d330dd185576fe25"
+    },
+    {
+      "path": "src/hypoDD/dist.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0bc7fca8cc9adc125b60babfaf54a1417d4732a",
+      "size": 834,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/f0bc7fca8cc9adc125b60babfaf54a1417d4732a"
+    },
+    {
+      "path": "src/hypoDD/dtres.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "073bcfc4c5977abeebe20b58b8f55ce48a69025d",
+      "size": 2134,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/073bcfc4c5977abeebe20b58b8f55ce48a69025d"
+    },
+    {
+      "path": "src/hypoDD/exist.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff832659248a3b22e261db4a25674e7c997ea149",
+      "size": 268,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/ff832659248a3b22e261db4a25674e7c997ea149"
+    },
+    {
+      "path": "src/hypoDD/freeunit.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87614914c9c131b9d53d6f0e6d4797baee2e2933",
+      "size": 363,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/87614914c9c131b9d53d6f0e6d4797baee2e2933"
+    },
+    {
+      "path": "src/hypoDD/get_vel3d.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e06d7a64fd13cada2acd9237c205cf6d569f8d8",
+      "size": 7382,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/4e06d7a64fd13cada2acd9237c205cf6d569f8d8"
+    },
+    {
+      "path": "src/hypoDD/getdata.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36d9e7213d0c75999903845b9f69de183ebe3c5f",
+      "size": 25888,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/36d9e7213d0c75999903845b9f69de183ebe3c5f"
+    },
+    {
+      "path": "src/hypoDD/getinp.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84678b224e69db92f1ec839bf88c2f520158a7cf",
+      "size": 9230,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/84678b224e69db92f1ec839bf88c2f520158a7cf"
+    },
+    {
+      "path": "src/hypoDD/getinp2.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cf7316ad62bc4c973c2d157a04aa84494ed4b66",
+      "size": 15189,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/5cf7316ad62bc4c973c2d157a04aa84494ed4b66"
+    },
+    {
+      "path": "src/hypoDD/hypoDD.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91240c04d9353554926c0a7ed485f647b06228ca",
+      "size": 45311,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/91240c04d9353554926c0a7ed485f647b06228ca"
+    },
+    {
+      "path": "src/hypoDD/hypoDD.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/hypoDD/hypot_.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20da036eeef1fb3891e0de6f312a4338814abf37",
+      "size": 176,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/20da036eeef1fb3891e0de6f312a4338814abf37"
+    },
+    {
+      "path": "src/hypoDD/ifindi.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b86541bdc3fa6fea7cc7170c8bec7d70087e0080",
+      "size": 938,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/b86541bdc3fa6fea7cc7170c8bec7d70087e0080"
+    },
+    {
+      "path": "src/hypoDD/indexxi.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91f4e04a9096c0c71182923637233fbd08f281df",
+      "size": 1169,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/91f4e04a9096c0c71182923637233fbd08f281df"
+    },
+    {
+      "path": "src/hypoDD/juliam.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b0f1fc619aa1081fb5407ef9ad2b38331f1b4ef",
+      "size": 880,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/9b0f1fc619aa1081fb5407ef9ad2b38331f1b4ef"
+    },
+    {
+      "path": "src/hypoDD/lsfit_lsqr.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aae3b96a142deedc270fe0514c2ca87b26d77a49",
+      "size": 16126,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/aae3b96a142deedc270fe0514c2ca87b26d77a49"
+    },
+    {
+      "path": "src/hypoDD/lsfit_svd.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ec66e8b0c0835fcadd598388d6d55938020c55e",
+      "size": 14828,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/6ec66e8b0c0835fcadd598388d6d55938020c55e"
+    },
+    {
+      "path": "src/hypoDD/lsqr.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18725c12924badd3672f6bbe75cd303a035d24e0",
+      "size": 18829,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/18725c12924badd3672f6bbe75cd303a035d24e0"
+    },
+    {
+      "path": "src/hypoDD/matmult1.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee7da6082c1dc09cab9b393d27184d01c9e0312f",
+      "size": 533,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/ee7da6082c1dc09cab9b393d27184d01c9e0312f"
+    },
+    {
+      "path": "src/hypoDD/matmult2.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "600abfa805f4578854942788bd2760ed4473d6c4",
+      "size": 444,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/600abfa805f4578854942788bd2760ed4473d6c4"
+    },
+    {
+      "path": "src/hypoDD/matmult3.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b00c4052c38d8987a3d6c2831a73de92d65f926d",
+      "size": 420,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/b00c4052c38d8987a3d6c2831a73de92d65f926d"
+    },
+    {
+      "path": "src/hypoDD/mdian1.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7161d01766863d39147c7be2533dfa47ed21e58",
+      "size": 355,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/d7161d01766863d39147c7be2533dfa47ed21e58"
+    },
+    {
+      "path": "src/hypoDD/normlz.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f95a33aab2995bcc1d1a207665384caa502adfc5",
+      "size": 471,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/f95a33aab2995bcc1d1a207665384caa502adfc5"
+    },
+    {
+      "path": "src/hypoDD/nval.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "859b3a9c804fcba38d36a4e95999dccedd0d11fe",
+      "size": 375,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/859b3a9c804fcba38d36a4e95999dccedd0d11fe"
+    },
+    {
+      "path": "src/hypoDD/partials.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e79e965ec7f1d7a32865332be2e362b6e569fe8",
+      "size": 5166,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/5e79e965ec7f1d7a32865332be2e362b6e569fe8"
+    },
+    {
+      "path": "src/hypoDD/partials_1dmm.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81aca4d8ecb6e83f909b8937f711b436f52154c7",
+      "size": 6424,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/81aca4d8ecb6e83f909b8937f711b436f52154c7"
+    },
+    {
+      "path": "src/hypoDD/partials_1dsr.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ea924ad509db596e9a359c5c949bb4f3d72a914",
+      "size": 5767,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/1ea924ad509db596e9a359c5c949bb4f3d72a914"
+    },
+    {
+      "path": "src/hypoDD/partials_3d.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd3bf7bde67480f39aeec58375f628c506c61292",
+      "size": 4527,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/cd3bf7bde67480f39aeec58375f628c506c61292"
+    },
+    {
+      "path": "src/hypoDD/ran.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5626e8283f4709ba01ec98d78c7c4860b7851446",
+      "size": 402,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/5626e8283f4709ba01ec98d78c7c4860b7851446"
+    },
+    {
+      "path": "src/hypoDD/ray_3d.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27c2fc78558271ed8f92281e894e93592f1d45d7",
+      "size": 39989,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/27c2fc78558271ed8f92281e894e93592f1d45d7"
+    },
+    {
+      "path": "src/hypoDD/redist.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1977dd78c29324d85684ceb6edd58da3e55b4d3b",
+      "size": 1182,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/1977dd78c29324d85684ceb6edd58da3e55b4d3b"
+    },
+    {
+      "path": "src/hypoDD/refract.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22de8ec71a7abf93d5585405a8ff54a4b385c637",
+      "size": 4370,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/22de8ec71a7abf93d5585405a8ff54a4b385c637"
+    },
+    {
+      "path": "src/hypoDD/resstat.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29677464ee38126a9e8b82b4b7a155327e1adf5b",
+      "size": 5646,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/29677464ee38126a9e8b82b4b7a155327e1adf5b"
+    },
+    {
+      "path": "src/hypoDD/scopy.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dc1e54a54596f8ccc84fa5b8285c32e3245a9c6",
+      "size": 1514,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/3dc1e54a54596f8ccc84fa5b8285c32e3245a9c6"
+    },
+    {
+      "path": "src/hypoDD/sdc2.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed8c2cff3c327ca707e29d00b06070744b1ff668",
+      "size": 469,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/ed8c2cff3c327ca707e29d00b06070744b1ff668"
+    },
+    {
+      "path": "src/hypoDD/setorg.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59bbeb644c4612635c247c59d367535ad599ef5b",
+      "size": 4761,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/59bbeb644c4612635c247c59d367535ad599ef5b"
+    },
+    {
+      "path": "src/hypoDD/setorg_3d.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e84c8d35baa56af77854bed7ab4586f2e7df40c",
+      "size": 1814,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/3e84c8d35baa56af77854bed7ab4586f2e7df40c"
+    },
+    {
+      "path": "src/hypoDD/skip.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d877257454271109b7fbe4bd40d09bd7168ebd8d",
+      "size": 9126,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/d877257454271109b7fbe4bd40d09bd7168ebd8d"
+    },
+    {
+      "path": "src/hypoDD/snrm2.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0207403f719875e786a2683195ac6a25828103f2",
+      "size": 3831,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/0207403f719875e786a2683195ac6a25828103f2"
+    },
+    {
+      "path": "src/hypoDD/sort.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eecd961b33325da66926589b694dfe6fd0356324",
+      "size": 936,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/eecd961b33325da66926589b694dfe6fd0356324"
+    },
+    {
+      "path": "src/hypoDD/sorti.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "534ddd8c7d290574059e78455465713e26602127",
+      "size": 841,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/534ddd8c7d290574059e78455465713e26602127"
+    },
+    {
+      "path": "src/hypoDD/sscal.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ead2a654bfba27959ca64b2a54961952a45dcd6",
+      "size": 1049,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/8ead2a654bfba27959ca64b2a54961952a45dcd6"
+    },
+    {
+      "path": "src/hypoDD/svd.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4042b680779dd79a0e6fd217286c5aa0060f4831",
+      "size": 5732,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/4042b680779dd79a0e6fd217286c5aa0060f4831"
+    },
+    {
+      "path": "src/hypoDD/tiddid.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57dae357105e12f74b66ef2a5aa9d3079b5b7d53",
+      "size": 2006,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/57dae357105e12f74b66ef2a5aa9d3079b5b7d53"
+    },
+    {
+      "path": "src/hypoDD/trialsrc.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67314d0f02a3a96b97cc0ea06ab23d6827e710ed",
+      "size": 2552,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/67314d0f02a3a96b97cc0ea06ab23d6827e710ed"
+    },
+    {
+      "path": "src/hypoDD/trimlen.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcbb7648bea01de438e03a8aa67d7a19d1de8179",
+      "size": 266,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/fcbb7648bea01de438e03a8aa67d7a19d1de8179"
+    },
+    {
+      "path": "src/hypoDD/ttime.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69c03d2fe20a41516816d9c6e09e7ebecbb0f136",
+      "size": 2355,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/69c03d2fe20a41516816d9c6e09e7ebecbb0f136"
+    },
+    {
+      "path": "src/hypoDD/vmodel.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fcfebd883c936bff521e4fa78af3e3dadeee92d",
+      "size": 1121,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/8fcfebd883c936bff521e4fa78af3e3dadeee92d"
+    },
+    {
+      "path": "src/hypoDD/weighting.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a72caa3fa35e5ded80baab6ccb504bab1700e8e8",
+      "size": 6845,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/a72caa3fa35e5ded80baab6ccb504bab1700e8e8"
+    },
+    {
+      "path": "src/ncsn2pha",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f993cc52dbdda11088edcbd143ff76f9cc104d53",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/f993cc52dbdda11088edcbd143ff76f9cc104d53"
+    },
+    {
+      "path": "src/ncsn2pha/Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a967c9a0d4dd2f934e6b522958183da3cabe553d",
+      "size": 584,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/a967c9a0d4dd2f934e6b522958183da3cabe553d"
+    },
+    {
+      "path": "src/ncsn2pha/ncsn2pha.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b27369ffe670932287c134fcd7b7705de00d9f1b",
+      "size": 9788,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/b27369ffe670932287c134fcd7b7705de00d9f1b"
+    },
+    {
+      "path": "src/ph2dt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "520cee57dc7e500efbb81d8517ea10de19bfb350",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/520cee57dc7e500efbb81d8517ea10de19bfb350"
+    },
+    {
+      "path": "src/ph2dt/Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "423b519ef291e6ed4b22f6f9e4bf507e08779ca1",
+      "size": 875,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/423b519ef291e6ed4b22f6f9e4bf507e08779ca1"
+    },
+    {
+      "path": "src/ph2dt/cluster.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db017d681f79f21edeefbf8495a38df8082e565c",
+      "size": 4486,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/db017d681f79f21edeefbf8495a38df8082e565c"
+    },
+    {
+      "path": "src/ph2dt/datetime.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8190f6c02a0ea33258ada3d40c0683a982ac3ebc",
+      "size": 267,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/8190f6c02a0ea33258ada3d40c0683a982ac3ebc"
+    },
+    {
+      "path": "src/ph2dt/datetime_.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b29836ab742c8670cd7aba402b35394fec500372",
+      "size": 406,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/b29836ab742c8670cd7aba402b35394fec500372"
+    },
+    {
+      "path": "src/ph2dt/delaz.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9eebde5c2d7937c81ebabc5f44f0c724c900f7f",
+      "size": 2438,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/b9eebde5c2d7937c81ebabc5f44f0c724c900f7f"
+    },
+    {
+      "path": "src/ph2dt/ifindi.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b86541bdc3fa6fea7cc7170c8bec7d70087e0080",
+      "size": 938,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/b86541bdc3fa6fea7cc7170c8bec7d70087e0080"
+    },
+    {
+      "path": "src/ph2dt/indexx.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d7da9637a7a544c8499fb28dd46431a38894014",
+      "size": 1079,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/6d7da9637a7a544c8499fb28dd46431a38894014"
+    },
+    {
+      "path": "src/ph2dt/indexxi.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91f4e04a9096c0c71182923637233fbd08f281df",
+      "size": 1169,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/91f4e04a9096c0c71182923637233fbd08f281df"
+    },
+    {
+      "path": "src/ph2dt/ph2dt.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dca28511e634159001b97d9b1f5c961e0972fc23",
+      "size": 24369,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/dca28511e634159001b97d9b1f5c961e0972fc23"
+    },
+    {
+      "path": "src/ph2dt/rpad_.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd03031b1cbd687ba23cca87f156210ced149b31",
+      "size": 388,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/fd03031b1cbd687ba23cca87f156210ced149b31"
+    },
+    {
+      "path": "src/ph2dt/sorti.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "534ddd8c7d290574059e78455465713e26602127",
+      "size": 841,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/534ddd8c7d290574059e78455465713e26602127"
+    },
+    {
+      "path": "src/ph2dt/trimlen.f",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcbb7648bea01de438e03a8aa67d7a19d1de8179",
+      "size": 266,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/fcbb7648bea01de438e03a8aa67d7a19d1de8179"
+    },
+    {
+      "path": "util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "da53376ef23476e6654ebed9e5a8ea275697d441",
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/trees/da53376ef23476e6654ebed9e5a8ea275697d441"
+    },
+    {
+      "path": "util/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0f267ca8cdccd35b9622a9cf9602487aa39437c",
+      "size": 113,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/f0f267ca8cdccd35b9622a9cf9602487aa39437c"
+    },
+    {
+      "path": "util/eqplot.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08bf56f8a8c69a71558be16cdcc4f66722aa13a1",
+      "size": 7879,
+      "url": "https://api.github.com/repos/fwaldhauser/HypoDD/git/blobs/08bf56f8a8c69a71558be16cdcc4f66722aa13a1"
+    }
+  ],
+  "truncated": false
+}

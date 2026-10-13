@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "neighbor_pairs": 1653,
+    "catalog_pair_phases": 6362,
+    "measured_channels": 10882,
+    "accepted_channels": 737,
+    "accepted_phase_delays": 517,
+    "window_failures": 13,
+    "max_cnv_rounding_s": 0.0016090000000001936
+  },
+  "files": {
+    "data/calibration_followup/filtered_events.csv": "9fb795fbb0a3756f661d7f70eb76e00354c51bc265ece5992bf93c998b3963c4",
+    "data/calibration_followup/relocation/retained_picks.csv": "42e8e37ac1628ad65c3cbf3ff8f6ea2467ed866f63e95a4a9bd4d3a22a04a24c",
+    "data/calibration_followup/relocation/phase_pair_times.csv": "be596731e6d5ad0b942c31d9b6ab14d62b9935c5a73a54e14536718464b95a5a",
+    "data/calibration_followup/relocation/accepted_differential_times.csv": "14b8808821f2c084ded8215fe0ab8cd7b480fc9ba5b9163d6e86128a04c10f77",
+    "data/calibration_followup/relocation/observed_windows.npz": "ab0217b8a572656ca0e48f1979a2adede4d82d688c968a35d9be579898b4273e"
+  }
+}

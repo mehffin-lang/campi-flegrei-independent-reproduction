@@ -1,0 +1,225 @@
+{
+  "started_utc": "2026-10-13T16:59:22.682044+00:00",
+  "procedure_passed": true,
+  "scientific_calibration_accepted": false,
+  "expanded_mode": "reuse hash-verified own association checkpoint",
+  "runs": [
+    {
+      "label": "input_hashes",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/followup_inventory.py"
+      ],
+      "returncode": 0,
+      "seconds": 3.398651123046875,
+      "log": "tmp/calibration_followup/rebuild_input_hashes.log"
+    },
+    {
+      "label": "build_velest",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/build_velest.py"
+      ],
+      "returncode": 0,
+      "seconds": 14.191955327987671,
+      "log": "tmp/calibration_followup/rebuild_build_velest.log"
+    },
+    {
+      "label": "compile_32",
+      "command": [
+        "gfortran",
+        "-std=legacy",
+        "-O2",
+        "-fcheck=bounds",
+        "-I",
+        "build",
+        "build/velest-portable.f",
+        "-o",
+        "build/velest32"
+      ],
+      "returncode": 0,
+      "seconds": 13.953972578048706,
+      "log": "tmp/calibration_followup/rebuild_compile_32.log"
+    },
+    {
+      "label": "compile_64",
+      "command": [
+        "gfortran",
+        "-std=legacy",
+        "-O2",
+        "-fcheck=bounds",
+        "-fdefault-real-8",
+        "-fdefault-double-8",
+        "-I",
+        "build",
+        "build/velest-portable.f",
+        "-o",
+        "build/velest64"
+      ],
+      "returncode": 0,
+      "seconds": 14.362350225448608,
+      "log": "tmp/calibration_followup/rebuild_compile_64.log"
+    },
+    {
+      "label": "build_hypodd",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/build_hypodd21.py"
+      ],
+      "returncode": 0,
+      "seconds": 9.633130073547363,
+      "log": "tmp/calibration_followup/rebuild_build_hypodd.log"
+    },
+    {
+      "label": "isolated_matrix_test",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "tests/check_hypodd_matrix.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.4802548885345459,
+      "log": "tmp/calibration_followup/rebuild_isolated_matrix_test.log"
+    },
+    {
+      "label": "calibration",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/calibration_chain.py"
+      ],
+      "returncode": 0,
+      "seconds": 169.29964923858643,
+      "log": "tmp/calibration_followup/rebuild_calibration.log"
+    },
+    {
+      "label": "observed_delays_and_hypodd",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/relocation_followup.py"
+      ],
+      "returncode": 0,
+      "seconds": 95.21094250679016,
+      "log": "tmp/calibration_followup/rebuild_observed_delays_and_hypodd.log"
+    },
+    {
+      "label": "validation",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/calibration_validation.py"
+      ],
+      "returncode": 0,
+      "seconds": 6.8595452308654785,
+      "log": "tmp/calibration_followup/rebuild_validation.log"
+    },
+    {
+      "label": "selection_sensitivity",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/calibration_selection_check.py"
+      ],
+      "returncode": 0,
+      "seconds": 3.137380599975586,
+      "log": "tmp/calibration_followup/rebuild_selection_sensitivity.log"
+    },
+    {
+      "label": "expanded_response_audit",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/audit_continuation.py",
+        "--data-dir",
+        "data/calibration_followup/expanded"
+      ],
+      "returncode": 0,
+      "seconds": 12.852048635482788,
+      "log": "tmp/calibration_followup/rebuild_expanded_response_audit.log"
+    },
+    {
+      "label": "request_ledger",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/acquisition_ledger.py",
+        "--data-dir",
+        "data/calibration_followup/expanded",
+        "--snapshot",
+        "data/calibration_followup/acquisition_snapshot.json"
+      ],
+      "returncode": 0,
+      "seconds": 7.946525812149048,
+      "log": "tmp/calibration_followup/rebuild_request_ledger.log"
+    },
+    {
+      "label": "diagnostics",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/plot_calibration_followup.py"
+      ],
+      "returncode": 0,
+      "seconds": 85.60600304603577,
+      "log": "tmp/calibration_followup/rebuild_diagnostics.log"
+    },
+    {
+      "label": "publication_panels",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/plot_continuation.py"
+      ],
+      "returncode": 0,
+      "seconds": 84.25420808792114,
+      "log": "tmp/calibration_followup/rebuild_publication_panels.log"
+    },
+    {
+      "label": "panel_record",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/continuation_report.py"
+      ],
+      "returncode": 0,
+      "seconds": 1.3040597438812256,
+      "log": "tmp/calibration_followup/rebuild_panel_record.log"
+    },
+    {
+      "label": "followup_record",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/followup_report.py"
+      ],
+      "returncode": 0,
+      "seconds": 42.16135907173157,
+      "log": "tmp/calibration_followup/rebuild_followup_record.log"
+    },
+    {
+      "label": "documents",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/build_documents.py",
+        "--clean"
+      ],
+      "returncode": 0,
+      "seconds": 52.80814838409424,
+      "log": "tmp/calibration_followup/rebuild_documents.log"
+    },
+    {
+      "label": "existing_result_checks",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/verify_current_outputs.py"
+      ],
+      "returncode": 0,
+      "seconds": 8.119331359863281,
+      "log": "tmp/calibration_followup/rebuild_existing_result_checks.log"
+    },
+    {
+      "label": "followup_checks",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/verify_calibration_followup.py"
+      ],
+      "returncode": 0,
+      "seconds": 41.38255858421326,
+      "log": "tmp/calibration_followup/rebuild_followup_checks.log"
+    }
+  ],
+  "expanded_checkpoint_sha256": "77ee273426885666552497ac5ccb367fa80234c40364614ec064d7f67fc16d19",
+  "scientific_outcome": "Calibration rejected: nonconvergence and nonphysical stricter-selection fits. HypoDD exploratory only, NE SVD diverged. No fixed-3D TomoDD or accepted-location magnitude solution.",
+  "finished_utc": "2026-10-13T17:10:30.257957+00:00",
+  "script_sha256": "4c2de67609dffee711caf7f08e091a4a515c201e2287e5d8507262b75d4008dd"
+}

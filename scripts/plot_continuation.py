@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import shapefile
 from continue_context import PROJ
+import routine_plot_style as style
 
 ROOT=Path(__file__).resolve().parents[1]
 D=ROOT/'data/continuation'
@@ -45,36 +46,32 @@ def historical(ax,lev):
                 ms=3.3 if kind!='leveling survey' else 1.8,color=color,label=label)
 
 
-def spatial(ax,cat,title):
-    coast(ax)
-    sc=ax.scatter(cat.x_km,cat.y_km,c=cat.depth_km,s=np.where(cat.Md.notna(),np.clip(10**(.5*(cat.Md.fillna(0)-1)),1,100),1),cmap='viridis_r',vmin=0,vmax=6,alpha=.65,rasterized=True,zorder=2)
-    large=cat[cat.Md>=4]
-    ax.scatter(large.x_km,large.y_km,marker='*',s=75,color='crimson',edgecolor='white',linewidth=.4,zorder=3,label=r'$M_d\geq4$')
-    ax.set(xlim=(-9,9),ylim=(-6,7),xlabel='Easting from reference (km)',ylabel='Northing from reference (km)',title=title)
-    outside=int((~(cat.x_km.between(-9,9)&cat.y_km.between(-6,7))).sum())
-    if outside:ax.text(.02,.02,f'{outside} selected routine events outside this map view',transform=ax.transAxes,fontsize=7,va='bottom')
-    ax.set_aspect('equal')
-    return sc
+def combined_figure():
+    lev=pd.read_csv(D/'historical_leveling.csv');g=pd.read_csv(D/'rite_gnss.csv')
+    t=pd.to_datetime(g.time,utc=True,format='ISO8601');y=g.leveling_datum_m.copy();y.loc[t.diff()>pd.Timedelta(days=7)]=np.nan
+    cum=pd.read_csv(D/'figure_1C_cumulative.csv');large=cum[cum.Md>=4]
+    # Compact corresponding original panels in one figure for the manuscript
+    # and side-by-side comparison; every artist reads the saved CSV outputs.
+    cat=pd.read_csv(D/'figure_1A.csv');counts=pd.read_csv(D/'figure_1C.csv')
+    fig=plt.figure(figsize=(11.5,6.3),layout='constrained')
+    left,right=fig.subfigures(1,2,width_ratios=[1.4,1]);left.set_facecolor('black')
+    a=left.subplots();b,cax=right.subplots(2,1)
+    sc=style.map_panel(a,cat,'1A',coast,'A · Routine-catalog locations');style.depth_bar(left,a,sc)
+    historical(b,lev)
+    b.plot(pd.to_datetime(g.time,utc=True,format='ISO8601'),y,lw=.7,color='#176b9a',label='Daily GNSS')
+    b.axvspan(pd.Timestamp('2024-01-01'),pd.Timestamp('2025-03-21'),color='#e1a63b',alpha=.2)
+    b.set(ylabel='Vertical deformation (m)',title='B · Displacement\nExtended through March 2025');b.legend(fontsize=7,ncol=2)
+    ct=pd.to_datetime(counts.month+'-01');cax.bar(ct,counts.events,width=counts.bin_days,align='edge',color='.5');cax.axvspan(pd.Timestamp('2022-01-21'),pd.Timestamp('2025-03-21'),color='#eee2c9',alpha=.5)
+    twin=cax.twinx();twin.step(pd.to_datetime(cum.time,utc=True,format='ISO8601'),cum.cumulative,where='post',color='#ba3c39',lw=1.2);twin.set_ylabel(r'Cumulative $M_d>0.2$',color='#ba3c39')
+    twin.scatter(pd.to_datetime(large.time,utc=True,format='ISO8601'),large.cumulative,marker='x',color='crimson',s=20,zorder=5)
+    cax.set(ylabel='Events/month',title='C · Routine-catalog seismicity',xlabel='Year')
+    fig.savefig(F/'figure_1_combined.pdf');plt.close(fig)
 
 
 def main():
     F.mkdir(exist_ok=True)
     for name in ['figure_S6_pilot.pdf','figure_S8_pilot.pdf']:(F/name).unlink(missing_ok=True)
-    c=pd.read_csv(D/'figure_1A.csv')
-    scope=[]
-    for panel,source,first,second,limits1,limits2 in [
-        ('1A','figure_1A.csv','x_km','y_km',(-9,9),(-6,7)),
-        ('S5/map','figure_S5.csv','x_km','y_km',(-9,9),(-6,7)),
-        ('S5/northing-depth','figure_S5.csv','depth_km','y_km',(0,7),(-6,7)),
-        ('S5/easting-depth','figure_S5.csv','x_km','depth_km',(-9,9),(0,7))]:
-        values=pd.read_csv(D/source);inside=values[first].between(*limits1)&values[second].between(*limits2)
-        scope.append(dict(panel=panel,saved_input='data/continuation/'+source,selected_events=len(values),in_view=int(inside.sum()),outside_view=int((~inside).sum()),
-                          first_axis=first,first_min=limits1[0],first_max=limits1[1],second_axis=second,second_min=limits2[0],second_max=limits2[1],units='km',role='Display extent only; excluded points remain in the selected numerical table'))
-    pd.DataFrame(scope).to_csv(D/'routine_plot_scope.csv',index=False)
-    fig,ax=plt.subplots(figsize=(7,4.8),layout='constrained')
-    sc=spatial(ax,c,'1A · Routine-catalog data, 2005–20 March 2025')
-    ax.legend(loc='upper right');fig.colorbar(sc,ax=ax,label='Depth below sea level (km)',extend='max')
-    fig.savefig(F/'figure_1A_routine.pdf');plt.close(fig)
+    style.standalone(ROOT,coast)
 
     lev=pd.read_csv(D/'historical_leveling.csv');g=pd.read_csv(D/'rite_gnss.csv')
     t=pd.to_datetime(g.time,utc=True,format='ISO8601')
@@ -101,18 +98,6 @@ def main():
     large=cum[cum.Md>=4];twin.scatter(pd.to_datetime(large.time,utc=True,format='ISO8601'),large.cumulative,marker='x',color='crimson',s=25,zorder=5)
     ax.text(.02,.95,'March 2025 includes days 1–20 only',transform=ax.transAxes,va='top',fontsize=8)
     fig.savefig(F/'figure_1C_routine.pdf');plt.close(fig)
-
-    c=pd.read_csv(D/'figure_S5.csv')
-    fig=plt.figure(figsize=(9,7),layout='constrained');grid=fig.add_gridspec(2,2,width_ratios=[1.5,1],height_ratios=[1.5,1])
-    a=fig.add_subplot(grid[0,0]);b=fig.add_subplot(grid[0,1]);d=fig.add_subplot(grid[1,0]);key=fig.add_subplot(grid[1,1]);key.axis('off')
-    sc=spatial(a,c,'S5 · Routine-catalog locations')
-    b.scatter(c.depth_km,c.y_km,s=2,c=c.depth_km,cmap='viridis_r',vmin=0,vmax=6,alpha=.65,rasterized=True)
-    b.set(xlabel='Depth (km)',ylabel='Northing (km)',xlim=(0,7),ylim=(-6,7))
-    d.scatter(c.x_km,c.depth_km,s=2,c=c.depth_km,cmap='viridis_r',vmin=0,vmax=6,alpha=.65,rasterized=True)
-    d.set(xlabel='Easting (km)',ylabel='Depth (km)',xlim=(-9,9),ylim=(7,0))
-    key.text(0,.9,f'{len(c):,} located routine events\n21 Jan 2022–20 Mar 2025\nSnapshot retrieved 12 Oct 2026\n\nExternal routine catalog;\nnot independent detections.\nDepth relative to sea level.',va='top',linespacing=1.5)
-    fig.colorbar(sc,ax=key,orientation='horizontal',label='Depth (km)',fraction=.18)
-    fig.savefig(F/'figure_S5_routine.pdf');plt.close(fig)
 
     # S6 is withdrawn. Its unverified-grid plotting recipe remains in Git
     # history; arithmetic experiments cannot reactivate it as a paper result.
@@ -143,21 +128,7 @@ def main():
         fig.suptitle('Partial pilot: initial locations; incomplete magnitude sample. No full-period Mc or b claim.',fontsize=9)
         fig.savefig(F/'figure_S8_pilot.pdf');plt.close(fig)
 
-    # Compact corresponding original panels in one figure for the manuscript
-    # and side-by-side comparison; every artist reads the saved CSV outputs.
-    cat=pd.read_csv(D/'figure_1A.csv');counts=pd.read_csv(D/'figure_1C.csv')
-    fig=plt.figure(figsize=(11,6),layout='constrained');grid=fig.add_gridspec(2,2,width_ratios=[1,1.3])
-    a=fig.add_subplot(grid[:,0]);b=fig.add_subplot(grid[0,1]);cax=fig.add_subplot(grid[1,1])
-    sc=spatial(a,cat,'A · Routine-catalog locations');fig.colorbar(sc,ax=a,orientation='horizontal',fraction=.08,label='Depth (km)',extend='max')
-    historical(b,lev)
-    b.plot(pd.to_datetime(g.time,utc=True,format='ISO8601'),y,lw=.7,color='#176b9a',label='Daily GNSS')
-    b.axvspan(pd.Timestamp('2024-01-01'),pd.Timestamp('2025-03-21'),color='#e1a63b',alpha=.2)
-    b.set(ylabel='Vertical deformation (m)',title='B · Displacement, extended through March 2025');b.legend(fontsize=7,ncol=2)
-    ct=pd.to_datetime(counts.month+'-01');cax.bar(ct,counts.events,width=counts.bin_days,align='edge',color='.5');cax.axvspan(pd.Timestamp('2022-01-21'),pd.Timestamp('2025-03-21'),color='#eee2c9',alpha=.5)
-    twin=cax.twinx();twin.step(pd.to_datetime(cum.time,utc=True,format='ISO8601'),cum.cumulative,where='post',color='#ba3c39',lw=1.2);twin.set_ylabel(r'Cumulative $M_d>0.2$',color='#ba3c39')
-    twin.scatter(pd.to_datetime(large.time,utc=True,format='ISO8601'),large.cumulative,marker='x',color='crimson',s=20,zorder=5)
-    cax.set(ylabel='Events/month',title='C · Routine-catalog seismicity',xlabel='Year')
-    fig.savefig(F/'figure_1_combined.pdf');plt.close(fig)
+    combined_figure()
 
     coverage_file=D/'processed_coverage_union.json'
     if coverage_file.exists():
@@ -207,4 +178,11 @@ def main():
     fig.savefig(F/'continuation_stations.pdf',bbox_inches='tight',pad_inches=.1);plt.close(fig)
 
 
-if __name__=='__main__': main()
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--routine-style-only',action='store_true')
+    args=parser.parse_args()
+    if args.routine_style_only:
+        style.standalone(ROOT,coast);combined_figure()
+    else:main()

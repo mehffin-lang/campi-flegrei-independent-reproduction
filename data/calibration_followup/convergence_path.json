@@ -1,0 +1,78 @@
+[
+  {
+    "name": "convergence_extra2",
+    "bits": 64,
+    "events": 130,
+    "picks": 1408,
+    "returncode": 0,
+    "residual_rms_s": 0.3254662335421854,
+    "event_rms_s": 0.3119319452405259,
+    "depth_min_km": 0.13,
+    "depth_max_km": 16.24,
+    "workdir": "tmp/calibration_followup/velest/convergence_extra2",
+    "change": {
+      "max_horizontal_m": 4194.48639524146,
+      "max_depth_km": 4.059999999999999,
+      "max_origin_s": 1.35,
+      "max_rms_s": 0.25
+    },
+    "max_velocity_change_km_s": 0.48
+  },
+  {
+    "name": "convergence_extra3",
+    "bits": 64,
+    "events": 130,
+    "picks": 1408,
+    "returncode": 0,
+    "residual_rms_s": 0.3315224147862129,
+    "event_rms_s": 0.311453169711077,
+    "depth_min_km": 0.15,
+    "depth_max_km": 16.3,
+    "workdir": "tmp/calibration_followup/velest/convergence_extra3",
+    "change": {
+      "max_horizontal_m": 220.4385838218544,
+      "max_depth_km": 0.09000000000000002,
+      "max_origin_s": 0.11,
+      "max_rms_s": 0.039999999999999925
+    },
+    "max_velocity_change_km_s": 0.010000000000000009
+  },
+  {
+    "name": "convergence_extra4",
+    "bits": 64,
+    "events": 130,
+    "picks": 1408,
+    "returncode": 0,
+    "residual_rms_s": 0.3383461363079907,
+    "event_rms_s": 0.3109699466062721,
+    "depth_min_km": 0.16,
+    "depth_max_km": 16.36,
+    "workdir": "tmp/calibration_followup/velest/convergence_extra4",
+    "change": {
+      "max_horizontal_m": 168.62566249295386,
+      "max_depth_km": 0.07999999999999996,
+      "max_origin_s": 0.11,
+      "max_rms_s": 0.02999999999999997
+    },
+    "max_velocity_change_km_s": 0.010000000000000009
+  },
+  {
+    "name": "convergence_extra5",
+    "bits": 64,
+    "events": 130,
+    "picks": 1408,
+    "returncode": 0,
+    "residual_rms_s": 0.34050040569492585,
+    "event_rms_s": 0.31612071696158683,
+    "depth_min_km": 0.12,
+    "depth_max_km": 18.4,
+    "workdir": "tmp/calibration_followup/velest/convergence_extra5",
+    "change": {
+      "max_horizontal_m": 4935.498929069977,
+      "max_depth_km": 2.039999999999999,
+      "max_origin_s": 0.92,
+      "max_rms_s": 0.22000000000000008
+    },
+    "max_velocity_change_km_s": 0.1299999999999999
+  }
+]

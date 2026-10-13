@@ -1,12 +1,16 @@
 """Measure observation gaps and response-epoch coverage from saved actual spans."""
 from pathlib import Path
-import json
+import argparse,json
 import numpy as np
 import pandas as pd
 from obspy import read_inventory, UTCDateTime
 from pyproj import Geod
 
-ROOT=Path(__file__).resolve().parents[1];D=ROOT/'data/continuation'
+ROOT=Path(__file__).resolve().parents[1]
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--data-dir',default='data/continuation')
+args=parser.parse_args();D=(ROOT/args.data_dir).resolve()
+assert D.is_relative_to(ROOT/'data')
 start=float(UTCDateTime('2022-01-21'));end=float(UTCDateTime('2025-03-21'))
 epochs={};details=[]
 for file in sorted((ROOT/'inputs/extended/responses').glob('*.xml'))+sorted((ROOT/'inputs/continuation').glob('*_responses.xml')):

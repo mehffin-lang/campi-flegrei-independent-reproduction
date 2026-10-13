@@ -1,11 +1,16 @@
 """Freeze every requested/pending interval and observed station/month exposure."""
 from pathlib import Path
-import gzip,hashlib,json,sqlite3
+import argparse,gzip,hashlib,json,sqlite3
 import pandas as pd
 ROOT=Path(__file__).resolve().parents[1];D=ROOT/'data/continuation'
 
 def main():
-    meta=json.loads((ROOT/'docs/acquisition_database_snapshot.json').read_text());raw=(ROOT/meta['file']).read_bytes()
+    global D
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--data-dir',default='data/continuation')
+    parser.add_argument('--snapshot',default='docs/acquisition_database_snapshot.json')
+    args=parser.parse_args();D=(ROOT/args.data_dir).resolve();assert D.is_relative_to(ROOT/'data')
+    meta=json.loads((ROOT/args.snapshot).read_text());raw=(ROOT/meta['file']).read_bytes()
     assert hashlib.sha256(raw).hexdigest()==meta['sha256']
     checkpoint=ROOT/'tmp/continuation/request_ledger.sqlite'
     checkpoint.parent.mkdir(parents=True,exist_ok=True)
@@ -32,7 +37,7 @@ def main():
     # Union-of-samples exposure remains authoritative if future requests overlap.
     (D/'request_ledger_note.json').write_text(json.dumps(dict(requests=len(rows),statuses=rows.status.value_counts().to_dict(),
         role='Request ledger is not a completeness claim. Per-request hours can overlap; authoritative processed exposure is processed_coverage_union.json. Pending, no_data and failed requests contribute zero.',
-        missing_intervals='data/continuation/unobserved_channel_intervals.csv'),indent=2)+'\n')
+        missing_intervals=str((D/'unobserved_channel_intervals.csv').relative_to(ROOT))),indent=2)+'\n')
     print('Saved',len(rows),'requests, including pending and failed intervals.')
 
 if __name__=='__main__':main()

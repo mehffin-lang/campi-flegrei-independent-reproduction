@@ -1,0 +1,361 @@
+[
+  {
+    "url": "https://www.nature.com/articles/s41598-017-08192-7",
+    "http": 200,
+    "file": "inputs/calibration_followup/desiena2017.html",
+    "sha256": "df39c8885f0973a8ead1ff9ecd5d0ffd50bda25cd039439752485a1169500894",
+    "bytes": 534533,
+    "supplement_links": [
+      {
+        "text": "S6",
+        "href": "/articles/s41598-017-08192-7#MOESM1"
+      },
+      {
+        "text": "S2",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S5",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S1",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S2",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S6",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S2a\u2013c",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S3",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S5",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S1",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S6",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S1",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S6",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S6",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S6",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S1",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S3",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S5",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S1",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S2a",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S1",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S2b",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S3",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S5",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S2c",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S3",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S5",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S4",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S5",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S4",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S3",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S4",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S5",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "S4",
+        "href": "/articles/s41598-017-08192-7#MOESM2"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=1996JVGR...74..179O"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2010JGRB..11512210W"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2016NatSR...632245D"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=1984BVol...47..175B"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2010JVGR..195...48D"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2008E%26PSL.272..181A"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2005JGRB..110.3201V"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2014JGRB..119..858A"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=1991JVGR...48..199D"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=1991JVGR...48..139A"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2015Sci...349..617V"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2012Geo....40..943C"
+      },
+      {
+        "text": "Google Scholar",
+        "href": "http://scholar.google.com/scholar_lookup?&title=Early%20signals%20of%20new%20volcanic%20unrest%20at%20Campi%20Flegrei%20caldera%3F%20Insights%20from%20geochemical%20data%20and%20physical%20simulations&journal=Geology&doi=10.1130%2FG33251.1&volume=40&pages=943-946&publication_year=2012&author=Chiodini%2CG&author=Caliro%2CS&author=Martino%2CP&author=Avino%2CR&author=Gherardi%2CF"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2013E%26PSL.367...95M"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2016NatCo...713712C"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2010ChGeo.270..135A"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2011JGRA..116.4313A"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2008GeopP..56..555B"
+      },
+      {
+        "text": "Google Scholar",
+        "href": "http://scholar.google.com/scholar_lookup?&title=Merging%20active%20and%20passive%20data%20sets%20in%20traveltime%20tomography%3A%20the%20case%20study%20of%20Campi%20Flegrei%20caldera%20%28Southern%20Italy%29&journal=Geophysical%20Prospecting&doi=10.1111%2Fj.1365-2478.2007.00687.x&volume=56&pages=555-573&publication_year=2008&author=Battaglia%2CJ&author=Zollo%2CA&author=Virieux%2CJ&author=Dello%20Iacono%2CD"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2015SGeo...36..693P"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2014JVGR..277...22D"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2010RSEnv.114.2373V"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2014IJEaS.103..801V"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2013GGG....14.4681C"
+      },
+      {
+        "text": "Google Scholar",
+        "href": "http://scholar.google.com/scholar_lookup?&title=The%20active%20portion%20of%20the%20Campi%20Flegrei%20caldera%20structure%20imaged%20by%203-D%20inversion%20of%20gravity%20data&journal=Geochemistry%2C%20Geophysics%2C%20Geosystems&doi=10.1002%2Fggge.20276&volume=14&pages=4681-4697&publication_year=2013&author=Capuano%2CP"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2001GeoJI.146..313L"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2014JGRB..119.2252R"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2014IJEaS.103..401P"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=1975Geop...40..224W"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2015GeoRL..42.3880T"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=1979JGR....84.4731I"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2014GeoRL..41.3081A"
+      },
+      {
+        "text": "Google Scholar",
+        "href": "http://scholar.google.com/scholar_lookup?&title=Clues%20to%20the%20cause%20of%20the%202011%E2%80%932013%20Campi%20Flegrei%20caldera%20unrest%2C%20Italy%2C%20from%20continuous%20GPS%20data&journal=Geophysical%20Research%20Letters&doi=10.1002%2F2014GL059539&volume=41&pages=3081-3088&publication_year=2014&author=Amoruso%2CA"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2015JGRB..120.5467A"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2011E%26PSL.302..287B"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2015E%26PSL.414...58C"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2008JVGR..177.1035C"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2015GeoRL..42.7498D"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2004TeNov..16..205M"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2007GeCoA..71.3040C"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=1991Geop...56.1940M"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2016GGG....17.4153D"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=1988GeoRu..77..319S"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2016NatGe...9..249S"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2015Sci...348.1224G"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2013JGRB..118..212K"
+      },
+      {
+        "text": "ADS",
+        "href": "http://adsabs.harvard.edu/cgi-bin/nph-data_query?link_type=ABSTRACT&bibcode=2016GeoJI.205.1221R"
+      },
+      {
+        "text": "Supplementary Video (download MOV )",
+        "href": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-017-08192-7/MediaObjects/41598_2017_8192_MOESM1_ESM.mov"
+      },
+      {
+        "text": "Supplementary Figures (download PDF )",
+        "href": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-017-08192-7/MediaObjects/41598_2017_8192_MOESM2_ESM.pdf"
+      },
+      {
+        "text": "Contact us",
+        "href": "https://support.nature.com/support/home"
+      },
+      {
+        "text": "Research data",
+        "href": "https://www.springernature.com/gp/authors/research-data"
+      }
+    ],
+    "availability_text": [
+      " specifics: a minimum of either eight P-phases or six P-phases and two S-phases available; a root-mean-square error lower than 0.30; an azimuthal gap lower than 180\u2009\u00b0 C ; a single maximum in the PDF; the main axis of the 68% Gaussian ellipsoid smaller than 4\u2009km. On April 1, 1984, 202 microearthquakes are recorded in a single cl",
+      " source-station configuration derived by the use of NonLinLoc 33 , both readily available online. MuRAT inverts the coda-normalised body-wave intensities filtered at 6\u2009Hz and averaged over different components for \\({Q}_{s}^{-1}\\) in a grid of 0.5\u2009km spaced nodes. The locations and directivity analysis improve the attenuation m",
+      "formation), geomorphological, and geochemical parameters in the main text. Data availability The datasets analysed during the current study are available in the PANGAEA repository, doi:10.1594/ PANGAEA .875535. References Orsi, G., Vita, S. D. & Vito, M. D. The restless resurgent Campi Flegrei caldera (Italy): constraints on its e",
+      " read this content: Get shareable link Sorry, a shareable link is not currently available for this article. Copy shareable link to clipboard Provided by the Springer Nature SharedIt content-sharing initiative Download PDF Associated content Collection Top 100 in Earth Science Advertisement Explore content Research articles News"
+    ]
+  },
+  {
+    "url": "https://zenodo.org/api/records/15106480",
+    "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='zenodo.org', port=443): Read timed out. (read timeout=30)\"))"
+  }
+]

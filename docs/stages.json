@@ -1,11 +1,11 @@
 [
   {
     "stage": "1. Collection",
-    "status": "Partial: 651 segmented waveform requests downloaded; 73994 pending. 825 total processed files, 7807.737 channel-hours, 26 stations. RAN credentials missing."
+    "status": "Expanded checkpoint: 868 processed files, 8511.520 union channel-hours; 694 successful segmented requests, 73946 pending. Full-period retrieval/inference unfinished; RAN credentials unavailable. Figure S1 shows the expanded subset; calibration retains the separate older event identifiers."
   },
   {
     "stage": "2. Phase picking",
-    "status": "Executed: 126133 merged picks; exclusions/probability bounds checked. Full-period inference unfinished."
+    "status": "Expanded checkpoint: 132733 own merged picks; frozen 1003-event cohort retained for calibration. No full-period coverage claim."
   },
   {
     "stage": "3. Training / S3--S4",
@@ -13,19 +13,19 @@
   },
   {
     "stage": "4. Association",
-    "status": "Executed: 1003 provisional GaMMA events, 7268 assigned picks. Explicit Tramelli 2021 alternative; exact 2018 numerical profile still missing."
+    "status": "Expanded checkpoint: 1015 provisional associations from 7351 assigned picks, separate identifier set. Alternative 2021 profile; no accepted event catalog."
   },
   {
     "stage": "5. VELEST",
-    "status": "Blocked: unverified 2008 background grid and previous dependent pilot quarantined. The separate 2021-profile arithmetic experiment is exploratory; no accepted calibrated locations or fitted model."
+    "status": "Executed alternative-profile two-round 32/64-bit calibration and five fixed-model catalog passes; 238 numerical-filter passes. Not accepted: continued iterations move locations by kilometers, held-out metrics are mixed, stricter selection yields nonphysical layers. Verified original grid and reviewed phases missing."
   },
   {
     "stage": "6. TomoDD",
-    "status": "Exploratory differential times executed: 19580 channel pairs, 811 passing declared criteria. Generic TomoDD compiled, but neither relocation round was run: accepted calibration and verified fixed grid missing."
+    "status": "Measured 10882 new channel comparisons, retained 517 phase delays. Two exploratory HypoDD LSQR rounds returned 127/126 events; these are not fixed-3D TomoDD. Both requested TomoDD rounds remain uncompleted because accepted calibration and verified background grid are missing."
   },
   {
     "stage": "7. HypoDD SVD",
-    "status": "Not run. Depends on independently relocated regional subsets and fitted model; generic software source accessible."
+    "status": "Executed exploratory largest-component quadrant SVD: NW/SW/SE return 40/16/22 conditional estimates; NE diverges. These subsets/model are not the specified S7 experiment and no panel is promoted."
   },
   {
     "stage": "8. Magnitudes",

@@ -1,0 +1,358 @@
+[
+  {
+    "name": "HYPODD/doc/README",
+    "bytes": 377
+  },
+  {
+    "name": "HYPODD/doc/hypoDD.pdf",
+    "bytes": 599228
+  },
+  {
+    "name": "HYPODD/doc/hypoDD.ps",
+    "bytes": 2388972
+  },
+  {
+    "name": "HYPODD/include/README",
+    "bytes": 315
+  },
+  {
+    "name": "HYPODD/include/compat.h",
+    "bytes": 368
+  },
+  {
+    "name": "HYPODD/include/f77types.h",
+    "bytes": 390
+  },
+  {
+    "name": "HYPODD/include/geocoord.inc",
+    "bytes": 361
+  },
+  {
+    "name": "HYPODD/include/hypoDD.inc",
+    "bytes": 2490
+  },
+  {
+    "name": "HYPODD/include/ph2dt.inc",
+    "bytes": 545
+  },
+  {
+    "name": "HYPODD/README",
+    "bytes": 3528
+  },
+  {
+    "name": "HYPODD/src/hista2ddsta/Makefile",
+    "bytes": 594
+  },
+  {
+    "name": "HYPODD/src/hista2ddsta/README",
+    "bytes": 1589
+  },
+  {
+    "name": "HYPODD/src/hista2ddsta/hista2ddsta.f",
+    "bytes": 901
+  },
+  {
+    "name": "HYPODD/src/hypoDD/aprod.f",
+    "bytes": 1136
+  },
+  {
+    "name": "HYPODD/src/hypoDD/cluster1.f",
+    "bytes": 5266
+  },
+  {
+    "name": "HYPODD/src/hypoDD/covar.f",
+    "bytes": 525
+  },
+  {
+    "name": "HYPODD/src/hypoDD/datum.f",
+    "bytes": 1184
+  },
+  {
+    "name": "HYPODD/src/hypoDD/delaz.f",
+    "bytes": 1816
+  },
+  {
+    "name": "HYPODD/src/hypoDD/delaz2.f",
+    "bytes": 2561
+  },
+  {
+    "name": "HYPODD/src/hypoDD/direct1.f",
+    "bytes": 4956
+  },
+  {
+    "name": "HYPODD/src/hypoDD/dist.f",
+    "bytes": 834
+  },
+  {
+    "name": "HYPODD/src/hypoDD/dtres.f",
+    "bytes": 2135
+  },
+  {
+    "name": "HYPODD/src/hypoDD/exist.f",
+    "bytes": 267
+  },
+  {
+    "name": "HYPODD/src/hypoDD/freeunit.f",
+    "bytes": 363
+  },
+  {
+    "name": "HYPODD/src/hypoDD/getdata.f",
+    "bytes": 18285
+  },
+  {
+    "name": "HYPODD/src/hypoDD/getinp.f",
+    "bytes": 7863
+  },
+  {
+    "name": "HYPODD/src/hypoDD/hypoDD.f",
+    "bytes": 31871
+  },
+  {
+    "name": "HYPODD/src/hypoDD/ifindi.f",
+    "bytes": 938
+  },
+  {
+    "name": "HYPODD/src/hypoDD/indexxi.f",
+    "bytes": 1169
+  },
+  {
+    "name": "HYPODD/src/hypoDD/juliam.f",
+    "bytes": 880
+  },
+  {
+    "name": "HYPODD/src/hypoDD/lsfit_lsqr.f",
+    "bytes": 10434
+  },
+  {
+    "name": "HYPODD/src/hypoDD/lsfit_svd.f",
+    "bytes": 10011
+  },
+  {
+    "name": "HYPODD/src/hypoDD/lsfit_svd_zfix.f",
+    "bytes": 10467
+  },
+  {
+    "name": "HYPODD/src/hypoDD/lsqr.f",
+    "bytes": 18829
+  },
+  {
+    "name": "HYPODD/src/hypoDD/matmult1.f",
+    "bytes": 533
+  },
+  {
+    "name": "HYPODD/src/hypoDD/matmult2.f",
+    "bytes": 444
+  },
+  {
+    "name": "HYPODD/src/hypoDD/matmult3.f",
+    "bytes": 420
+  },
+  {
+    "name": "HYPODD/src/hypoDD/mdian1.f",
+    "bytes": 355
+  },
+  {
+    "name": "HYPODD/src/hypoDD/normlz.f",
+    "bytes": 471
+  },
+  {
+    "name": "HYPODD/src/hypoDD/partials.f",
+    "bytes": 3173
+  },
+  {
+    "name": "HYPODD/src/hypoDD/partials_1D.f",
+    "bytes": 4406
+  },
+  {
+    "name": "HYPODD/src/hypoDD/ran.f",
+    "bytes": 402
+  },
+  {
+    "name": "HYPODD/src/hypoDD/redist.f",
+    "bytes": 1182
+  },
+  {
+    "name": "HYPODD/src/hypoDD/refract.f",
+    "bytes": 4286
+  },
+  {
+    "name": "HYPODD/src/hypoDD/resstat.f",
+    "bytes": 5646
+  },
+  {
+    "name": "HYPODD/src/hypoDD/scopy.f",
+    "bytes": 1514
+  },
+  {
+    "name": "HYPODD/src/hypoDD/sdc2.f",
+    "bytes": 469
+  },
+  {
+    "name": "HYPODD/src/hypoDD/setorg.f",
+    "bytes": 4761
+  },
+  {
+    "name": "HYPODD/src/hypoDD/skip.f",
+    "bytes": 8427
+  },
+  {
+    "name": "HYPODD/src/hypoDD/snrm2.f",
+    "bytes": 3831
+  },
+  {
+    "name": "HYPODD/src/hypoDD/sort.f",
+    "bytes": 936
+  },
+  {
+    "name": "HYPODD/src/hypoDD/sorti.f",
+    "bytes": 841
+  },
+  {
+    "name": "HYPODD/src/hypoDD/sscal.f",
+    "bytes": 1049
+  },
+  {
+    "name": "HYPODD/src/hypoDD/svd.f",
+    "bytes": 5732
+  },
+  {
+    "name": "HYPODD/src/hypoDD/tiddid.f",
+    "bytes": 1998
+  },
+  {
+    "name": "HYPODD/src/hypoDD/trialsrc.f",
+    "bytes": 2552
+  },
+  {
+    "name": "HYPODD/src/hypoDD/trimlen.f",
+    "bytes": 266
+  },
+  {
+    "name": "HYPODD/src/hypoDD/ttime.f",
+    "bytes": 2347
+  },
+  {
+    "name": "HYPODD/src/hypoDD/vmodel.f",
+    "bytes": 1121
+  },
+  {
+    "name": "HYPODD/src/hypoDD/weighting.f",
+    "bytes": 6832
+  },
+  {
+    "name": "HYPODD/src/hypoDD/atoangle.c",
+    "bytes": 650
+  },
+  {
+    "name": "HYPODD/src/hypoDD/atoangle_.c",
+    "bytes": 502
+  },
+  {
+    "name": "HYPODD/src/hypoDD/datetime_.c",
+    "bytes": 529
+  },
+  {
+    "name": "HYPODD/src/hypoDD/hypot_.c",
+    "bytes": 296
+  },
+  {
+    "name": "HYPODD/src/hypoDD/rpad_.c",
+    "bytes": 507
+  },
+  {
+    "name": "HYPODD/src/hypoDD/sscanf3_.c",
+    "bytes": 452
+  },
+  {
+    "name": "HYPODD/src/hypoDD/Makefile",
+    "bytes": 2058
+  },
+  {
+    "name": "HYPODD/src/Makefile",
+    "bytes": 188
+  },
+  {
+    "name": "HYPODD/src/ncsn2pha/Makefile",
+    "bytes": 510
+  },
+  {
+    "name": "HYPODD/src/ncsn2pha/ncsn2pha.f",
+    "bytes": 9668
+  },
+  {
+    "name": "HYPODD/src/ncsn2pha/Makefile",
+    "bytes": 510
+  },
+  {
+    "name": "HYPODD/src/ph2dt/atoangle.c",
+    "bytes": 649
+  },
+  {
+    "name": "HYPODD/src/ph2dt/atoangle_.c",
+    "bytes": 496
+  },
+  {
+    "name": "HYPODD/src/ph2dt/datetime_.c",
+    "bytes": 529
+  },
+  {
+    "name": "HYPODD/src/ph2dt/rpad_.c",
+    "bytes": 507
+  },
+  {
+    "name": "HYPODD/src/ph2dt/sscanf3_.c",
+    "bytes": 452
+  },
+  {
+    "name": "HYPODD/src/ph2dt/cluster.f",
+    "bytes": 4486
+  },
+  {
+    "name": "HYPODD/src/ph2dt/datetime.f",
+    "bytes": 267
+  },
+  {
+    "name": "HYPODD/src/ph2dt/delaz.f",
+    "bytes": 2438
+  },
+  {
+    "name": "HYPODD/src/ph2dt/ifindi.f",
+    "bytes": 938
+  },
+  {
+    "name": "HYPODD/src/ph2dt/indexx.f",
+    "bytes": 1079
+  },
+  {
+    "name": "HYPODD/src/ph2dt/indexxi.f",
+    "bytes": 1169
+  },
+  {
+    "name": "HYPODD/src/ph2dt/ph2dt.f",
+    "bytes": 21418
+  },
+  {
+    "name": "HYPODD/src/ph2dt/sorti.f",
+    "bytes": 841
+  },
+  {
+    "name": "HYPODD/src/ph2dt/trimlen.f",
+    "bytes": 266
+  },
+  {
+    "name": "HYPODD/src/ph2dt/Makefile",
+    "bytes": 786
+  },
+  {
+    "name": "HYPODD/src/README",
+    "bytes": 739
+  },
+  {
+    "name": "HYPODD/util/README",
+    "bytes": 113
+  },
+  {
+    "name": "HYPODD/util/eqplot.m",
+    "bytes": 7835
+  }
+]

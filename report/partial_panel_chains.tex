@@ -1,6 +1,6 @@
 \paragraph{1A --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
 
-21 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+22 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
 
 Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
 
@@ -36,13 +36,13 @@ The same plotting command composes the report figure: \path{figures/figure_1_com
 
 \paragraph{S1 --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
 
-825 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+868 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
 
-Data command: \par\noindent \path{.venv/bin/python scripts/process_continuous.py all --frozen}\par
+Data command: \par\noindent \path{.venv/bin/python scripts/extend_calibration_observations.py --workers 8}\par
 
-Saved numerical output: \path{data/continuation/processed_coverage_union.json}.
+Saved numerical output: \path{data/calibration_followup/expanded/processed_coverage_union.json}.
 
-Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \path{figures/continuation_coverage.pdf}.
+Plot command: \path{.venv/bin/python scripts/plot_calibration_followup.py}\par Output: \path{figures/followup_coverage.pdf}.
 
 \paragraph{S2 --- partial data-to-plot chain.} Own processing of observations/metadata; trained weights and external Md calibration are identified in the method record.
 
@@ -66,7 +66,7 @@ Plot command: \path{.venv/bin/python scripts/benchmark_window.py}\par Output: \p
 
 \paragraph{S5/map --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
 
-21 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+22 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
 
 Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
 
@@ -76,7 +76,7 @@ Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \
 
 \paragraph{S5/northing-depth --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
 
-21 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+22 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
 
 Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
 
@@ -86,7 +86,7 @@ Plot command: \path{.venv/bin/python scripts/plot_continuation.py}\par Output: \
 
 \paragraph{S5/easting-depth --- partial data-to-plot chain.} External routine-catalog context; not independent detections.
 
-21 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
+22 exact input files are listed under this panel in \path{docs/panel_record.json}; waveform hashes and intervals are in \path{docs/continuation_processed_inputs.json}, with source receipts in the input manifests.
 
 Data command: \par\noindent \path{.venv/bin/python scripts/continue_context.py}\par
 

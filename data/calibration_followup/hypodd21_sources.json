@@ -1,0 +1,478 @@
+[
+  {
+    "file": "inputs/external/hypodd21/README",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/README",
+    "bytes": 5366,
+    "sha256": "9496c05a3d6f84170040217c6de8f3411758ecfb19fe41ed38cd80c0590fe7b5",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/doc/README",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/doc/README",
+    "bytes": 665,
+    "sha256": "248314a7995d36a305d6e69425cd67b3744c9711b6fe443a0b57a19bcdc151ef",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/doc/Waldhauser_Ellsworth_BSSA2000.pdf",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/doc/Waldhauser_Ellsworth_BSSA2000.pdf",
+    "bytes": 342165,
+    "sha256": "4785086f4959d525637afe77080e0546fd10104f7bc4c1828ad81a2e7be1dc60",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/doc/hypoDD2_UserGuide.pdf",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/doc/hypoDD2_UserGuide.pdf",
+    "bytes": 825810,
+    "sha256": "8f73c2c7663c7ae0b49ff02973110c14ad90575c7b4b2c3b35536f9bf571157a",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/include/README",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/include/README",
+    "bytes": 315,
+    "sha256": "0f2ba3d58debe7e6b95fb3ee6734ef001a6f397adedb052ae4fdaa2c93880248",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/include/compat.h",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/include/compat.h",
+    "bytes": 368,
+    "sha256": "1a9d6aa4f5f4dd8aa1d4477f2c86ba15a62ae047d40ec7943da4957b2abc0cfb",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/include/f77types.h",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/include/f77types.h",
+    "bytes": 390,
+    "sha256": "bd470be04d7b77095027986f13ca9e8625cc4fa92a6d8f4fc44471bffd809e1e",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/include/geocoord.inc",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/include/geocoord.inc",
+    "bytes": 361,
+    "sha256": "4ee4d47d739a8f44be0618a2ea36205c449df0a9719863cbfa3e1ba4f6a3696d",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/include/hypoDD.inc",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/include/hypoDD.inc",
+    "bytes": 1493,
+    "sha256": "ab81c2fe35139634bdad073574ef60f85438cfce40a3705270d039fc7c75b699",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/include/ph2dt.inc",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/include/ph2dt.inc",
+    "bytes": 392,
+    "sha256": "56382e32e7de790c047fae0793df8c69079096b9fc8bf0278ee06e6be4f13ac3",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/include/vel3d.inc",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/include/vel3d.inc",
+    "bytes": 1701,
+    "sha256": "7989690550b53bc83c4bdc5ead77a94f60fb33f7e898e2db5431827d23f891a1",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/Makefile",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/Makefile",
+    "bytes": 2548,
+    "sha256": "939cc2cb9e4c2b19713025dfccdc43e563c213e7f4041113199caf2db063e26d",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/aprod.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/aprod.f",
+    "bytes": 1136,
+    "sha256": "e659a557ee430ad41d71e4cd2eb94fd98af71901401d57f75c164dcd17193877",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/cluster1.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/cluster1.f",
+    "bytes": 5266,
+    "sha256": "0f0fd0e3023cf70a8c6c4fff086ea49c11a1a141985e64564ac8669ebc6f70c8",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/covar.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/covar.f",
+    "bytes": 525,
+    "sha256": "bc46e0623ddf4d2537af0ea9b1980129ca96dca31e420b05e04e4ebc44a3faaf",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/datetime_.c",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/datetime_.c",
+    "bytes": 395,
+    "sha256": "d76d38b4fe3d14cb68dba6768aa9226fc7477d304e6dff3b1adf20a6a69c8fda",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/datum.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/datum.f",
+    "bytes": 1184,
+    "sha256": "769b9b584a84effa8283597262e0649bfeedc42702b597b279432a809ed1e702",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/delaz.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/delaz.f",
+    "bytes": 1816,
+    "sha256": "4d90ee58f57091f95c41974ba28ae0fa8fbd72c3bc7906996fc26935ee460dd3",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/delaz2.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/delaz2.f",
+    "bytes": 2561,
+    "sha256": "e3650361a2777af4c8e835b98540b60feb2f3e23393952877444f8caf9c0dfe2",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/direct1.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/direct1.f",
+    "bytes": 4998,
+    "sha256": "aff35187d4ba05e3cdc7805049f598a3bfb0324483f7c1524436fb9207dc6b2f",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/dist.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/dist.f",
+    "bytes": 834,
+    "sha256": "6f2c457cd3d9ec6640896251081d04a30c09585a5a6336fc3e06e2d05aabffda",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/dtres.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/dtres.f",
+    "bytes": 2134,
+    "sha256": "41b9f82f4162d4e37dac6bbccdd8caa9cda3cefb42cb9291843c3c078708f7b7",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/exist.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/exist.f",
+    "bytes": 268,
+    "sha256": "e89a72f2badaad98047900d8660cc52fdda90e629b683c276d128c08e3c3a532",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/freeunit.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/freeunit.f",
+    "bytes": 363,
+    "sha256": "731b860ccb2b1570c4c29b2b2763d62b9a3adf6018eeba539f6c5090bdf93e61",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/get_vel3d.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/get_vel3d.f",
+    "bytes": 7382,
+    "sha256": "f1f97f6cf5e556bf5d1e2261c685aa49e5eab7c8cf461784aaeb865329604333",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/getdata.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/getdata.f",
+    "bytes": 25888,
+    "sha256": "bc54ac9b4b6650650b396334d622f3b203ad556294f300598be056fd7394b392",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/getinp.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/getinp.f",
+    "bytes": 9230,
+    "sha256": "de2b10ba20c42d1b37c78d093f56cf5cdf797d979f7451efac0ee952e593332d",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/getinp2.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/getinp2.f",
+    "bytes": 15189,
+    "sha256": "090ba1ca3ef63e5d502cea2df3370f2fa98dbed578a9aa57709227ca6bff840d",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/hypoDD.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/hypoDD.f",
+    "bytes": 45311,
+    "sha256": "e03738bad17d12674875a75d7102c37f0ae983b672cc10bef2c8c3f7c73f3c37",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/hypoDD.log",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/hypoDD.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/hypot_.c",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/hypot_.c",
+    "bytes": 176,
+    "sha256": "281b1b78c37c127774d5129bce72bca4cbf4ceaddabcff0d7747aec5c8163e4d",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/ifindi.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/ifindi.f",
+    "bytes": 938,
+    "sha256": "55ffc3028398f1dd02226d1b66aff7b08c39d151cbac6cc3310e00e74126740a",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/indexxi.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/indexxi.f",
+    "bytes": 1169,
+    "sha256": "ba2bf5eafca24e22cf07cfe35d218bafd085ea213ec5c1c264cb5363f79792e9",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/juliam.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/juliam.f",
+    "bytes": 880,
+    "sha256": "c85825a28c276ba6202ad527f5147f56ed9f48d07e9705829f218a9e84d62992",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/lsfit_lsqr.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/lsfit_lsqr.f",
+    "bytes": 16126,
+    "sha256": "6a12fcbc1d5f6dbfa2ff6abfa261bdd1c3005a4d14876efd1be43563aff4e494",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/lsfit_svd.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/lsfit_svd.f",
+    "bytes": 14828,
+    "sha256": "5504e960d72e017d141759c31e4f2dd0c950e5947ecd061a694d4379841e729f",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/lsqr.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/lsqr.f",
+    "bytes": 18829,
+    "sha256": "5f585a5d2bbb1c93aedf4735012fd7666700e620c6699a4d862ac8fba4aa983f",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/matmult1.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/matmult1.f",
+    "bytes": 533,
+    "sha256": "0b890ba4caa2bfbd03645dc3c8e762714d92c3f1c6b144c3bd230007366e0224",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/matmult2.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/matmult2.f",
+    "bytes": 444,
+    "sha256": "58c87259b96d8dca3a5aaaa1f0cbbafd905022e0c90101fb3bbce67357883ae9",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/matmult3.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/matmult3.f",
+    "bytes": 420,
+    "sha256": "9eb526e4010c2a36b80e4522e507faab50d94873b4268dfcc62a04c7a42bcad4",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/mdian1.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/mdian1.f",
+    "bytes": 355,
+    "sha256": "ff1391a235e112f1fabeada976be5ec7b3dc1be7c383521b264d5caf7b3054d5",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/normlz.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/normlz.f",
+    "bytes": 471,
+    "sha256": "6f4336065394771a53eff72bd4cbe97520db5ad4ca8be4fa701e8aa418467b33",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/nval.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/nval.f",
+    "bytes": 375,
+    "sha256": "b56e2a439d97541a2c6cd9e39c06b83710cf1164da17b2882a21cbcfc9f605de",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/partials.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/partials.f",
+    "bytes": 5166,
+    "sha256": "4fd37e93a427d05b346c481e4f5dfdf9113b37b658ec3aa4d1efb7ca2c676206",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/partials_1dmm.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/partials_1dmm.f",
+    "bytes": 6424,
+    "sha256": "ce7293ab269b38be9365eff8413a9524391ac73ce0b1d5ac6406ea893d424b44",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/partials_1dsr.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/partials_1dsr.f",
+    "bytes": 5767,
+    "sha256": "d543ddb37e23c4a1f926aa33126b06756788f9733fc726db45b96ad2a59df278",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/partials_3d.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/partials_3d.f",
+    "bytes": 4527,
+    "sha256": "1a32c13dd80fe1000f1e440963d9fe66c9ffcb60c2894b0b94703eab0c3686c4",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/ran.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/ran.f",
+    "bytes": 402,
+    "sha256": "ab66d6c26b4a4cdb27401a23b92b82a2d52d6c978d4700c9a3565b1be8b1b711",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/ray_3d.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/ray_3d.f",
+    "bytes": 39989,
+    "sha256": "db6cc301d709a919ad6c4241b5c52f957776a2ac7f9a9351efc5b3a3b810e690",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/redist.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/redist.f",
+    "bytes": 1182,
+    "sha256": "65d12b1d967a6670ccfc90234fbe639c96cb01981aa872dc8ba127cf84b294f4",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/refract.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/refract.f",
+    "bytes": 4370,
+    "sha256": "d133d092fadbaa198114ae867167cd7039a20c3e84c24993421dd66ad3e8ecdf",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/resstat.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/resstat.f",
+    "bytes": 5646,
+    "sha256": "ae4f389d85c8174783e1a212779e3cd300335040322b2da29310a6a6bd686bc6",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/scopy.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/scopy.f",
+    "bytes": 1514,
+    "sha256": "0a9799a7b6dfc1f1c02595a2fe407783274589a16c0c19e34629dfd355ba2c1a",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/sdc2.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/sdc2.f",
+    "bytes": 469,
+    "sha256": "73c8e00589dbac6613004149ada063ebc16b1a3a36eff5dafda917bde019a861",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/setorg.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/setorg.f",
+    "bytes": 4761,
+    "sha256": "851e168cea37165cba27c230c7c3642cd1fde3e5b2df1e2d083dc19f96e42e60",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/setorg_3d.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/setorg_3d.f",
+    "bytes": 1814,
+    "sha256": "8995377acd8bae1335b126642737a0a9360fb491f2de3eef6e31f4c41db671b6",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/skip.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/skip.f",
+    "bytes": 9126,
+    "sha256": "c09b2e6dc8af5ca05006e9afa056b9a218b5ad4bea2654e57f059cd500474029",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/snrm2.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/snrm2.f",
+    "bytes": 3831,
+    "sha256": "f0a540cff21eb2c7b8b2aab889897f8d9bc1e41b5cea2ea6d57c2a07c63c8ef3",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/sort.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/sort.f",
+    "bytes": 936,
+    "sha256": "c2eb3fd0ecce053278f206d0fc2ae24bf4e0d4e945489a7d095340e23ed1b56e",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/sorti.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/sorti.f",
+    "bytes": 841,
+    "sha256": "38648412b0110278b927bcd58c99d41dbaba46119d083adda75856f8ecdf4a54",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/sscal.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/sscal.f",
+    "bytes": 1049,
+    "sha256": "d690b80c64004a3f1cd24c37f9c25fe76c1e3fa9ec7190a474434ca4451b282c",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/svd.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/svd.f",
+    "bytes": 5732,
+    "sha256": "04e02a33a36f4ac5d6958d30678c0ca7793225b3326901c2c37a91a630c028cb",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/tiddid.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/tiddid.f",
+    "bytes": 2006,
+    "sha256": "1b8997659307415f2ddb96f4bc07282a2c03b0021104cbad44943cf23853bb1e",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/trialsrc.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/trialsrc.f",
+    "bytes": 2552,
+    "sha256": "a9c0a42318427906fbf0fcc51cb012ca80567829bc8848e9a7c048f971ba41c2",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/trimlen.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/trimlen.f",
+    "bytes": 266,
+    "sha256": "e398112c11a9dcd06caf4226b8fafc72c29238b032e45962da53098b1ad8857e",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/ttime.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/ttime.f",
+    "bytes": 2355,
+    "sha256": "a9a7d4835ea595eddfa0b67cb3545583e6e5bd49135039dc34bff6de187ed01d",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/vmodel.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/vmodel.f",
+    "bytes": 1121,
+    "sha256": "35ce1faf8b1be599cf4e33ec5d1f498737a3d3269e01ee224d52674e8d5f8d59",
+    "classification": "generic method software/documentation"
+  },
+  {
+    "file": "inputs/external/hypodd21/src/hypoDD/weighting.f",
+    "url": "https://raw.githubusercontent.com/fwaldhauser/HypoDD/fb40407fb768cbdc23a11e27bc841f5d4a98abb7/src/hypoDD/weighting.f",
+    "bytes": 6845,
+    "sha256": "89b7eb6cebc037e2c58f7464060e4cd925c9e257bc536790e8b7351dfbd8b32a",
+    "classification": "generic method software/documentation"
+  }
+]

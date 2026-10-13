@@ -1,0 +1,22 @@
+{
+  "classification": "Independently computed inference/association checkpoint; not accepted earthquake locations",
+  "command": ".venv/bin/python scripts/extend_calibration_observations.py --workers 8",
+  "inference": "Compatible per-file caches are reused only after input/settings/model/implementation hash checks.",
+  "files": {
+    "data/calibration_followup/expanded/input_jobs.json": "00d8ed697b02ebe12d54830e170651894e11b939def79b6f0ef9f9002417d31a",
+    "data/calibration_followup/expanded/picks.csv": "33aaed5b713b104b61950afa9cb5a0cffa214ca53ffd9a9b9c386fa4bd12dbac",
+    "data/calibration_followup/expanded/initial_events.csv": "57bffba2307f385a87f6c7b3fe09d9c7cf82fa39f5413a06afab2499e76621cb",
+    "data/calibration_followup/expanded/associations.csv": "5b0da5e7dbb792dcb3549d9549ea70e76a41755e3565fe3fc9caaa66cc837a1f",
+    "data/calibration_followup/expanded/analysis_summary.json": "4bf60b5196070f7fdbc7d4dab67fe96c57edd44ef294ac615328bc1063071f0e",
+    "data/calibration_followup/expanded/processed_coverage.csv": "4ccc62fca2ea32acdbebceafbba2357d52724b4ee93fbf38e0b64037839e5a58",
+    "data/calibration_followup/expanded/processed_coverage_union.json": "92230a9eefae006e7ce9ae19be0b4a63397a6a89800faf3a159ea587758d7e73",
+    "data/calibration_followup/expanded/stations.csv": "83f3bd10a60529750a7ad3c9e7baa155cae39d33d1372554ee0cab0eb72960a7",
+    "data/calibration_followup/expanded/alternative_starting_profile.csv": "3f65a13dd484418370b4bbd85302c3f434107464277c305c2a34c937b64eaaab",
+    "scripts/process_continuous.py": "9a07ce7f14d510f1496b53421b24d25d2bd4cb7efc88f63f208b033ea7c4b538",
+    "scripts/gamma_reproducibility.py": "e8a54c9848b11664184dc9893163cccbd83a519aae174b070873eed8fc527ff5",
+    "config/continuation_association.json": "b6f2be8b8e5e4e4026664ff149b49666eec946d352780ac5deb59689c1b26c01",
+    "data/extended/picks.csv": "c46e3fefcb07e559b8d2677cfe72bc0db503399bd6ad1b1f5ea75d3a17868919",
+    "inputs/models/phasenet_retrained.pt": "7f2b2d4345b82232ded67ea554794f7ff148bee235d50b1772f3516833500059",
+    "inputs/models/phasenet_retrained.json": "75cd9e14d6f2927d84ec684b44d815abffc6649f6d7751488ae9b1a35da45958"
+  }
+}

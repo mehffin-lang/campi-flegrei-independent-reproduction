@@ -1,0 +1,12 @@
+{
+  "rms_formula": "Sample standard deviation of residual times normalized VELEST weights, not unweighted RMS; weight S/P=0.5 and sum(weights)=n.",
+  "maximum_rms_serialization_difference_s": 0.005221278277151339,
+  "rms_agrees_with_printed_precision": true,
+  "station_epoch_rows": 656,
+  "max_static_coordinate_offset_m": 12.98990295229366,
+  "all_listed_responses_complete": true,
+  "station_day_groups": 132,
+  "missing_station_day_groups": [],
+  "epoch_sampling": "First retained arrival per station and UTC day; complete interval intersections audited separately.",
+  "interpretation": "Precision agreement is established, but continued iterations do not converge to stable locations. Fitted model remains exploratory; residual and covariance reductions do not establish accuracy."
+}

@@ -1,0 +1,8 @@
+{
+  "successful_requests": 43,
+  "new_no_data": 5,
+  "bytes": 525189120,
+  "channel_hours": 703.7852083322059,
+  "selected_by": "Chronological queue; no event catalog; requests are six-hour intervals with processing margins",
+  "request_command": ".venv/bin/python scripts/collect_continuous.py run --workers 6 --max-jobs 48"
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "file": "tanmodel.pdf",
+    "bytes": 2140554,
+    "sha256": "9651e54e369eed320504ffe9b7a04807c90f687d0b479f806799e4608ded9740",
+    "text_chars": 58492,
+    "captions_readable": true
+  },
+  {
+    "file": "tanmodelsupp.pdf",
+    "bytes": 62164947,
+    "sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+    "text_chars": 55624,
+    "captions_readable": true
+  },
+  {
+    "file": "science.adw9038_data_s1_to_s3.zip",
+    "bytes": 12960255,
+    "members": [
+      {
+        "name": "science.adw9038_data_s1.csv",
+        "bytes": 9400054
+      },
+      {
+        "name": "science.adw9038_data_s2.csv",
+        "bytes": 58591381
+      },
+      {
+        "name": "science.adw9038_data_s3.csv",
+        "bytes": 17807
+      },
+      {
+        "name": "__MACOSX/",
+        "bytes": 0
+      },
+      {
+        "name": "__MACOSX/._3d-27.html",
+        "bytes": 368
+      },
+      {
+        "name": "__MACOSX/._catalog.csv",
+        "bytes": 312
+      },
+      {
+        "name": "__MACOSX/._focal_mechanism-5.csv",
+        "bytes": 312
+      },
+      {
+        "name": "__MACOSX/._picking-2.csv",
+        "bytes": 822
+      }
+    ],
+    "classification": "published derived results/reference only; not extracted or used"
+  },
+  {
+    "file": "science.adw9038_interactive_plot_s1.zip",
+    "bytes": 8852485,
+    "members": [
+      {
+        "name": "__MACOSX/",
+        "bytes": 0
+      },
+      {
+        "name": "__MACOSX/._3d-27.html",
+        "bytes": 368
+      },
+      {
+        "name": "__MACOSX/._catalog.csv",
+        "bytes": 312
+      },
+      {
+        "name": "__MACOSX/._focal_mechanism-5.csv",
+        "bytes": 312
+      },
+      {
+        "name": "__MACOSX/._picking-2.csv",
+        "bytes": 822
+      },
+      {
+        "name": "interactive_plot_s1.html",
+        "bytes": 24247307
+      }
+    ],
+    "classification": "published derived results/reference only; not extracted or used"
+  }
+]
