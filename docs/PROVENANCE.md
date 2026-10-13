@@ -1,3 +1,5 @@
+> Current continuation: [GRID_WORKFLOW.md](GRID_WORKFLOW.md). The Tan-distributed reference grid is now explicitly authorized; the records below describe earlier checkpoints and their then-current restrictions/results.
+
 > Historical baseline record. The current continuation updates are in [CONTINUATION.md](CONTINUATION.md), the post-supplement report documentation, and `data/continuation/`. Preserve the settings below as provenance for the earlier independent subset; they are not the current completion record.
 
 # Earlier provenance record

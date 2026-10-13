@@ -1,3 +1,5 @@
+> Current continuation: [GRID_WORKFLOW.md](GRID_WORKFLOW.md). The Tan-distributed reference grid is now explicitly authorized; the records below describe earlier checkpoints and their then-current restrictions/results.
+
 # Calibration and relocation follow-up
 
 This is an executed exploratory continuation, not an accepted regional calibration or a complete reproduction. Start from the existing project checkout and its Python environment. The main paper and supplement remain `tanmodel.pdf` and `tanmodelsupp.pdf`. Their readable methods and captions were checked before new analysis; the archive listings contain author-derived catalogs, phases, mechanisms and an interactive plot, not initial observations. None enters this workflow.

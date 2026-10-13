@@ -52,8 +52,9 @@ def observations():
     return events,aliases,frame
 
 
-def measure(events,picks):
-    arrays=dict(np.load(D/'differential_waveform_windows.npz'))
+def measure(events,picks,cache_path=None):
+    cache=Path(cache_path) if cache_path is not None else D/'differential_waveform_windows.npz'
+    arrays=dict(np.load(cache)) if cache.exists() else {}
     missing=[]
     for r in picks.to_dict('records'):
         if any(f'e{r["event_index"]}_{r["trace_id"]}_{r["phase"]}_{c}' not in arrays for c in (['Z'] if r['phase']=='P' else ['N','E'])):missing.append(r)

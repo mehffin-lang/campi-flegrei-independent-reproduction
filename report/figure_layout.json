@@ -24,7 +24,7 @@
       "figures/figure_1_combined.pdf"
     ],
     "missing": "",
-    "caption": "Partial contextual reconstruction. A: external routine catalog, 16,046 located events and five Md>=4 stars. B: 114 leveling surveys (circles), 13 source-provided estimates (triangles), one source-provided reconstruction (cross), and daily GNSS through 20 March 2025; extension beyond 2023 shaded. Historical estimates are not raw observations or reconstructions made here. C: all routine monthly counts and cumulative Md>0.2; March includes days 1--20 only. Routine events are not independent detections. Datum joining is an assumption; basemap and live snapshot differ from the publication. Depth colors run red to blue on a dark background; the color scale extends to 8 km to include the observed range. Circle area includes an exponential Md term and a small visibility offset, an explicit display assumption; crosses indicate missing Md. Published pixels are not plotting inputs.",
+    "caption": "Partial contextual reconstruction. A: external routine catalog, 16,046 located events and five Md>=4 stars. B: 114 leveling surveys (circles), 13 source-provided estimates (triangles), one source-provided reconstruction (cross), and daily GNSS through 20 March 2025; Historical estimates are not raw observations or reconstructions made here. C: all routine monthly counts and cumulative Md>0.2; March includes days 1--20 only. Routine events are not independent detections. Datum joining is an assumption; basemap and live snapshot differ from the publication. Depth colors: fixed 0\u20135 km, red to blue; magenta >5 km, no data clipping. S5 limits/ticks are printed; 1A endpoints are unlabeled and 0\u20135 km is an explicit approximation. Circle area law is an explicit display assumption, not recovered exactly. Missing magnitudes are crosses. Routine events are external context.",
     "file_labels": [
       "1A--C"
     ]
@@ -46,7 +46,7 @@
     ],
     "partial_panels": [],
     "independent_files": [],
-    "missing": "Panels A and B need multiyear calibrated/relocated events and magnitudes. The frozen 1003-event calibration cohort and the expanded associations remain provisional.",
+    "missing": "Panels A and B need a validated multiyear relocated catalog and independent magnitudes. The expanded 1,015 associations now enter grid-derived calibration and two TomoDD trials, but path sensitivity and sparse coverage prevent acceptance.",
     "caption": "Seismicity rates by region and depth versus time are not reproduced."
   },
   {
@@ -111,7 +111,7 @@
       "figures/followup_coverage.pdf"
     ],
     "missing": "",
-    "caption": "Partial: expanded checkpoint, 868 processed files, 26 station names, 8511.520 union channel-hours. Empty intervals are neither connected nor counted. The separately frozen calibration cohort retains its older event identifiers."
+    "caption": "Partial: expanded checkpoint, 868 processed files, 26 station names, 8511.520 union channel-hours. Empty intervals are neither connected nor counted. Current grid-derived calibration uses this expanded checkpoint. Earlier diagnostics retain separate identifiers. Vertical ticks show observed-interval midpoints where durations are too short to resolve; ticks do not imply continuous coverage."
   },
   {
     "figure": "S2",
@@ -134,7 +134,7 @@
       "figures/continuation_stations.pdf"
     ],
     "missing": "",
-    "caption": "Partial station inventory: 51 released identifiers audited against official study-period response epochs. Filled triangles: 42 official coordinate matches; open triangles: 9 released coordinates with unresolved epochs or channel codes. Two coincident-coordinate pairs remain distinct identifiers. No verified geographic outlier. Local WGS84 projection and clipped coastline; the original 48-instrument membership is not established."
+    "caption": "Partial station inventory: 51 released identifiers audited against official study-period response epochs. Filled triangles: 42 official coordinate matches; open triangles: 9 released coordinates with unresolved epochs or channel codes. Two coincident-coordinate pairs remain distinct identifiers. No verified geographic outlier. Local WGS84 projection and clipped coastline; the original 48-instrument membership is not established. Colors distinguish broadband (red), short period (yellow) and accelerometer (white) instruments; no independent relief raster is available."
   },
   {
     "figure": "S3",
@@ -210,7 +210,7 @@
       "figures/figure_S5_routine.pdf"
     ],
     "missing": "",
-    "caption": "External routine-catalog data, independently selected and plotted: 12,503 located events, 21 January 2022--20 March 2025. This is 420 more than the published historical snapshot. No author-derived catalog is used to adjust that difference; these are not independent detections. Depth colors run red to blue on a dark background; the color scale extends to 6 km to include the observed range. Circle area includes an exponential Md term and a small visibility offset, an explicit display assumption; crosses indicate missing Md. Published pixels are not plotting inputs. The public source reports depths in 0.1 km steps; the resulting bands are not jittered or smoothed.",
+    "caption": "External routine-catalog data, independently selected and plotted: 12,503 located events, 21 January 2022--20 March 2025. This is 420 more than the published historical snapshot. No author-derived catalog is used to adjust that difference; these are not independent detections. Depth colors: fixed 0\u20135 km, red to blue; magenta >5 km, no data clipping. S5 limits/ticks are printed; 1A endpoints are unlabeled and 0\u20135 km is an explicit approximation. Circle area law is an explicit display assumption, not recovered exactly. Missing magnitudes are crosses. Routine events are external context.",
     "file_labels": [
       "S5, all views"
     ]
@@ -233,7 +233,7 @@
     ],
     "partial_panels": [],
     "independent_files": [],
-    "missing": "No validated independent counterpart. Alternative-profile VELEST and HypoDD trials are retained as diagnostics after the supplement: calibration fails convergence/physical checks and one SVD subset diverges. The fixed 3D background is unverified; TomoDD and the specified regional uncertainty analysis are not completed.",
+    "missing": "No validated independent counterpart. Authorized-grid VELEST now runs on the expanded cohort but remains path-sensitive; both fixed-grid rounds executed; validation pending. Diagnostics are retained after the supplement. No rejected locations are presented as reproduced structure.",
     "caption": "Not reproduced at the current checkpoint.",
     "file_labels": []
   },
@@ -260,7 +260,7 @@
     ],
     "partial_panels": [],
     "independent_files": [],
-    "missing": "No validated independent counterpart. Alternative-profile VELEST and HypoDD trials are retained as diagnostics after the supplement: calibration fails convergence/physical checks and one SVD subset diverges. The fixed 3D background is unverified; TomoDD and the specified regional uncertainty analysis are not completed.",
+    "missing": "No validated independent counterpart. Authorized-grid VELEST now runs on the expanded cohort but remains path-sensitive; both fixed-grid rounds executed; validation pending. Diagnostics are retained after the supplement. No rejected locations are presented as reproduced structure.",
     "caption": "Regional locations, uncertainty-versus-count panels and uncertainty distributions are not reproduced."
   },
   {

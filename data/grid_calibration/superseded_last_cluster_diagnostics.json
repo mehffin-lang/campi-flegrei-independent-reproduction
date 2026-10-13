@@ -1,0 +1,58 @@
+{
+  "status": "both fixed-grid rounds executed; validation pending",
+  "accepted_scientific_catalog": false,
+  "measurement": {
+    "neighbor_pairs": 1464,
+    "catalog_pair_phases": 5802,
+    "measured_channels": 9794,
+    "accepted_channels": 767,
+    "accepted_phase_delays": 546,
+    "window_failures": 13,
+    "max_cnv_rounding_s": 0.0016090000000001936
+  },
+  "runs": [
+    {
+      "round": 1,
+      "starting_events": 216,
+      "returncode": 0,
+      "workdir": "tmp/grid_calibration/tomodd/round1",
+      "output_events": 132,
+      "gap_passing_events": 126,
+      "clusters": 2,
+      "depth_range_km": [
+        0.104,
+        7.811
+      ],
+      "fixed_vp_max_rounding_km_s": 0.0005000000000006111,
+      "fixed_vs_max_rounding_km_s": 0.000500000000000167,
+      "residual_RMS_s": {
+        "waveform": 0.05105010003510222,
+        "phase": 0.11159481514627347
+      },
+      "solver_statistic_caution": "output.reloc RMS columns divide summed residual squares by cluster event count, not observation count. Per-observation RMS is recomputed separately from output.res."
+    },
+    {
+      "round": 2,
+      "starting_events": 126,
+      "returncode": 0,
+      "workdir": "tmp/grid_calibration/tomodd/round2",
+      "output_events": 126,
+      "gap_passing_events": 125,
+      "clusters": 3,
+      "depth_range_km": [
+        0.112,
+        7.965
+      ],
+      "fixed_vp_max_rounding_km_s": 0.0005000000000006111,
+      "fixed_vs_max_rounding_km_s": 0.000500000000000167,
+      "residual_RMS_s": {
+        "waveform": 0.04465136950144479,
+        "phase": 0.10944467340842112
+      },
+      "solver_statistic_caution": "output.reloc RMS columns divide summed residual squares by cluster event count, not observation count. Per-observation RMS is recomputed separately from output.res."
+    }
+  ],
+  "grid_sha256": "dc36fe2a542fc7a3b6c473c48ec109c53ddd77a1721f509b920fea97fb0166f3",
+  "settings": "JOINT=0 fixed 3D; ten nearest neighbors; 2-second response-corrected windows; 1\u201315 Hz; coherence/correlation >=0.6; maximum lag .25 s; six common phase links; LSQR damping 50; 4+4 iterations; all connected clusters; absolute and phase-pair times from own picks, no author corrections; unnamed settings are explicit assumptions, not recovered Tan settings. Unused event magnitude/error format fields are zero, never empirical magnitudes.",
+  "limitations": "Incomplete waveform coverage; calibration subset unreviewed; alternative GaMMA start and explicit inversion assumptions. Iteration passage does not establish correct event identity or absolute depth. No exact reproduction claim."
+}

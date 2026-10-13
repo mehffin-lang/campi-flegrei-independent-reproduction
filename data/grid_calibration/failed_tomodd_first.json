@@ -1,0 +1,23 @@
+{
+  "status": "relocation failed; diagnostic preserved",
+  "accepted_scientific_catalog": false,
+  "measurement": {
+    "neighbor_pairs": 1464,
+    "catalog_pair_phases": 5802,
+    "measured_channels": 9794,
+    "accepted_channels": 767,
+    "accepted_phase_delays": 546,
+    "window_failures": 13,
+    "max_cnv_rounding_s": 0.0016090000000001936
+  },
+  "runs": [
+    {
+      "round": 1,
+      "error": "RuntimeError('=         468\\n 3     99  98 100  160 -15.5  104  -4.0   918   68  102  165   42  288   1   22\\n j=        5106\\n new_loc=:         464   4*nev=         464\\n 4  2  98  98 100  161   0.2  104  -0.1   817   68  102  165   42  454   0   22\\n j=        5106\\n new_loc=:         464   4*nev=         464\\n 5     98  98 100  147  -8.3  101  -3.0   817   46   70  105   26  454   1   22\\n j=        5073\\n new_loc=:         460   4*nev=         460\\n 6  3  97  97 100  148   0.2  101  -0.0   753   45   70  105   26  560   0   22\\n j=        5073\\n new_loc=:         460   4*nev=         460\\n 7  4  97  97 100  141  -4.5   98  -2.6   712   38   53   72   18  625   0   21\\n j=        4698\\n new_loc=:         460   4*nev=         460\\n 8  5  97  91  83   79 -44.1   35 -64.8   248   41   32   25    6  627   0   26\\n j=        4631\\n new_loc=:         460   4*nev=         460\\n 9  6  97  89  82   77  -1.8   29 -17.2   229   29   23   18    4  626   0   26\\n j=        4577\\n new_loc=:         460   4*nev=         460\\n10  7  97  88  81   76  -1.8   26  -9.3   213   21   17   15    3  625   0   24\\n j=        4551\\n new_loc=:         460   4*nev=         460\\n11  8  97  88  81   75  -1.1   24  -6.1   200   16   14   14    3  622   0   24\\n\\nwriting out results ...\\n\\nRELOCATION OF CLUSTER: 2     Tue Oct 13 11:07:02 2026\\x00\\n----------------------\\nReading data ...   Tue Oct 13 11:07:02 2026 \\n# events =    17\\n# stations < maxdist =     26\\n# cross corr P dtimes =      15 (no OTC for      0 event pairs)\\n# cross corr S dtimes =      41 (no OTC for      0 event pairs)\\n# catalog P dtimes =     176\\n# catalog S dtimes =     310\\nAt line 513 of file getdata_SPDR.f (unit = 17)\\nFortran runtime error: File already opened in another unit\\n\\nError termination. Backtrace:\\n#0  0x7f734ed98171 in ???\\n#1  0x7f734ed98d19 in ???\\n#2  0x7f734ed99521 in ???\\n#3  0x7f734ef9d1d3 in ???\\n#4  0x7f734ef9d58c in ???\\n#5  0x42280e in ???\\n#6  0x40f396 in ???\\n#7  0x4014cc in ???\\n#8  0x7f734e2027e4 in ???\\n#9  0x40150d in ???\\n#10  0xffffffffffffffff in ???\\n')",
+      "workdir": "tmp/grid_calibration/tomodd/round1"
+    }
+  ],
+  "grid_sha256": "dc36fe2a542fc7a3b6c473c48ec109c53ddd77a1721f509b920fea97fb0166f3",
+  "settings": "JOINT=0 fixed 3D; ten nearest neighbors; 2-second response-corrected windows; 1\u201315 Hz; coherence/correlation >=0.6; maximum lag .25 s; six common phase links; LSQR damping 50; 4+4 iterations; all connected clusters; absolute and phase-pair times from own picks, no author corrections; unnamed settings are explicit assumptions, not recovered Tan settings. Unused event magnitude/error format fields are zero, never empirical magnitudes.",
+  "limitations": "Incomplete waveform coverage; calibration subset unreviewed; alternative GaMMA start and explicit inversion assumptions. Iteration passage does not establish correct event identity or absolute depth. No exact reproduction claim."
+}

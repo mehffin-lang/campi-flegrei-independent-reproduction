@@ -57,7 +57,9 @@ def main():
     for key in ['1A','S5']:
         entry=style[key];assert sha(ROOT/entry['input'])==entry['sha256']
         values=pd.read_csv(ROOT/entry['input']);assert len(values)==entry['events']
-        assert values.depth_km.between(*entry['color_limits_km']).all()
+        lo,hi=entry['color_limits_km'];assert [lo,hi]==[0.,5.] and entry['clip'] is False
+        assert int(values.depth_km.lt(lo).sum())==entry['under_count']
+        assert int(values.depth_km.gt(hi).sum())==entry['over_count']
     routine=pd.read_csv(ROOT/'data/continuation/figure_S5.csv',dtype={'id':str});source_hashes={}
     for source,group in routine.groupby('source'):
         parser=DepthCells();parser.feed((ROOT/source).read_text());parser.close()

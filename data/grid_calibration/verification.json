@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "grid_original_sha256": "dc36fe2a542fc7a3b6c473c48ec109c53ddd77a1721f509b920fea97fb0166f3",
+  "usable_events": 916,
+  "calibration_candidates": 38,
+  "filter_passing": 216,
+  "retained_own_picks": 1917,
+  "all_current_figure_files": 34,
+  "figure_groups": 25,
+  "publication_panel_views": 63,
+  "scientific_catalog_accepted": false,
+  "tomodd_execution_status": "both fixed-grid rounds executed; validation pending",
+  "limitations": "Checks explicit file identities, own-pick handoffs, numerical filters and display scales; not absolute event/location accuracy, manual phase validation or proof about unexamined inputs.",
+  "relocation_checks": [
+    {
+      "round": 1,
+      "output_events": 132,
+      "residual_events": 132,
+      "gap_passes": 124,
+      "minimum_retained_travel_s": 0.26
+    },
+    {
+      "round": 2,
+      "output_events": 124,
+      "residual_events": 124,
+      "gap_passes": 123,
+      "minimum_retained_travel_s": 0.26
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+> Current continuation: [GRID_WORKFLOW.md](GRID_WORKFLOW.md). The Tan-distributed reference grid is now explicitly authorized; the records below describe earlier checkpoints and their then-current restrictions/results.
+
 # Provisional observation checkpoint and rebuild
 
 This workflow is incomplete scientifically. A successful build means the frozen retrieved subset and both PDFs were regenerated, not that the publication was reproduced. Actual counts are in `data/continuation/analysis_summary.json`, `downstream_summary.json`, `hybrid_summary.json`, `catalog_frequency_index.json`, `panel_status.json` and `rebuild_status.json`.

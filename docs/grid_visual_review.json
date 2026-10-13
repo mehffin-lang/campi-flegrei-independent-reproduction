@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-13",
+  "source_commit": "9854bfc1cc8f6821059919e2f9315cddc41db4db",
+  "report_pages_inspected": [
+    1,
+    2,
+    24,
+    25,
+    26
+  ],
+  "comparison_pages_inspected": [
+    1,
+    9,
+    10
+  ],
+  "standalone_figures_inspected": [
+    "figure_1_combined",
+    "continuation_stations",
+    "figure_S8_pilot",
+    "figure_S5_routine",
+    "figure_S4A",
+    "hybrid_E3",
+    "followup_coverage",
+    "association_review_diagnostic",
+    "cpoz_gather_diagnostic",
+    "relocation_uncertainty_diagnostic",
+    "grid_calibration_diagnostic"
+  ],
+  "findings": "Labels and figures fit the inspected pages; published images are distinct and confined to the comparison document. S5 uses fixed 0\u20135 km depth color, retains deeper values with magenta, and uses the requested panel arrangement. Sparse actual coverage is visible with disclosed midpoint ticks. No valid Figure 3 or 4 counterpart is invented. Document generation checks all 19 comparison-page headers, figure order and 63 panel records. This visual review does not validate absolute locations or prove absence of unexamined inputs.",
+  "sha256": {
+    "report/report.pdf": "76818943dada119ac661db7de1e6c53de4f0c6bb4e145ceaa6bf13ad8b6f1521",
+    "report/comparison.pdf": "da582e204501e3b04d9feac22289472cd2bcee572ace6701b7ac26751c6187a9",
+    "data/grid_calibration/verification.json": "8e2ea9cc9e2fd0f859770099345b6779ff8325fa589de896ed49f458eed951a7",
+    "data/grid_calibration/rebuild_status.json": "1d20f487db03790165a513bbb31d7a5b86ccdbddd3f084703e1a0f42ca06342d",
+    "data/grid_calibration/style/plot_inventory.json": "1ba1dbd4568f38fafe27f37f26f7d65135269ed8c2f71ec6a05a2e2f93f66abe"
+  }
+}

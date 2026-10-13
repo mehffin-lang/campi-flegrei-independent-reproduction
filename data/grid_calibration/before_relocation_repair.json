@@ -1,0 +1,305 @@
+{
+  "started_utc": "2026-10-13T18:11:53.136729+00:00",
+  "procedure_passed": true,
+  "runs": [
+    {
+      "label": "velest_source",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/build_velest.py"
+      ],
+      "returncode": 0,
+      "seconds": 14.266390562057495,
+      "log": "tmp/grid_calibration/rebuild_velest_source.log"
+    },
+    {
+      "label": "velest32",
+      "command": [
+        "gfortran",
+        "-std=legacy",
+        "-O2",
+        "-fcheck=bounds",
+        "-I",
+        "build",
+        "build/velest-portable.f",
+        "-o",
+        "build/velest32"
+      ],
+      "returncode": 0,
+      "seconds": 13.503620624542236,
+      "log": "tmp/grid_calibration/rebuild_velest32.log"
+    },
+    {
+      "label": "velest64",
+      "command": [
+        "gfortran",
+        "-std=legacy",
+        "-O2",
+        "-fcheck=bounds",
+        "-fdefault-real-8",
+        "-fdefault-double-8",
+        "-I",
+        "build",
+        "build/velest-portable.f",
+        "-o",
+        "build/velest64"
+      ],
+      "returncode": 0,
+      "seconds": 13.739284038543701,
+      "log": "tmp/grid_calibration/rebuild_velest64.log"
+    },
+    {
+      "label": "tomodd_build",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/build_grid_tomodd.py"
+      ],
+      "returncode": 0,
+      "seconds": 22.14848518371582,
+      "log": "tmp/grid_calibration/rebuild_tomodd_build.log"
+    },
+    {
+      "label": "grid_profiles",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/prepare_grid_calibration.py"
+      ],
+      "returncode": 0,
+      "seconds": 15.695285320281982,
+      "log": "tmp/grid_calibration/rebuild_grid_profiles.log"
+    },
+    {
+      "label": "eight_layer_trial",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/run_grid_velest.py"
+      ],
+      "returncode": 0,
+      "seconds": 2.6951138973236084,
+      "log": "tmp/grid_calibration/rebuild_eight_layer_trial.log"
+    },
+    {
+      "label": "four_layer_calibration",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/run_grid_velest.py",
+        "--coarse-four"
+      ],
+      "returncode": 0,
+      "seconds": 178.58885884284973,
+      "log": "tmp/grid_calibration/rebuild_four_layer_calibration.log"
+    },
+    {
+      "label": "precision_validation",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/validate_grid_velest.py"
+      ],
+      "returncode": 0,
+      "seconds": 2.0564637184143066,
+      "log": "tmp/grid_calibration/rebuild_precision_validation.log"
+    },
+    {
+      "label": "differential_and_tomodd",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/run_grid_tomodd.py",
+        "--reuse-measurements"
+      ],
+      "returncode": 0,
+      "seconds": 14.731337785720825,
+      "log": "tmp/grid_calibration/rebuild_differential_and_tomodd.log"
+    },
+    {
+      "label": "all_plots",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/publication_plots.py"
+      ],
+      "returncode": 0,
+      "seconds": 81.45151090621948,
+      "log": "tmp/grid_calibration/rebuild_all_plots.log"
+    },
+    {
+      "label": "current_record",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_report.py"
+      ],
+      "returncode": 0,
+      "seconds": 2.7798516750335693,
+      "log": "tmp/grid_calibration/rebuild_current_record.log"
+    },
+    {
+      "label": "provenance_checks",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/verify_grid_workflow.py"
+      ],
+      "returncode": 0,
+      "seconds": 2.453172445297241,
+      "log": "tmp/grid_calibration/rebuild_provenance_checks.log"
+    },
+    {
+      "label": "both_documents",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/build_documents.py",
+        "--clean"
+      ],
+      "returncode": 1,
+      "seconds": 47.85992646217346,
+      "log": "tmp/grid_calibration/rebuild_both_documents.log"
+    },
+    {
+      "label": "all_plots_repair",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/publication_plots.py"
+      ],
+      "returncode": 0,
+      "seconds": 80.94630980491638,
+      "log": "tmp/grid_calibration/rebuild_all_plots_repair.log"
+    },
+    {
+      "label": "current_record_repair",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_report.py"
+      ],
+      "returncode": 0,
+      "seconds": 2.8579156398773193,
+      "log": "tmp/grid_calibration/rebuild_current_record_repair.log"
+    },
+    {
+      "label": "provenance_recheck",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/verify_grid_workflow.py"
+      ],
+      "returncode": 0,
+      "seconds": 2.489299774169922,
+      "log": "tmp/grid_calibration/rebuild_provenance_recheck.log"
+    },
+    {
+      "label": "documents_repair",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/build_documents.py",
+        "--clean"
+      ],
+      "returncode": 0,
+      "seconds": 51.42582082748413,
+      "log": "tmp/grid_calibration/rebuild_documents_repair.log"
+    },
+    {
+      "label": "tomodd_output_fix_build",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/build_grid_tomodd.py"
+      ],
+      "returncode": 0,
+      "seconds": 29.613789796829224,
+      "log": "tmp/grid_calibration/rebuild_tomodd_output_fix_build.log"
+    },
+    {
+      "label": "tomodd_all_cluster_validation",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/run_grid_tomodd.py",
+        "--reuse-measurements"
+      ],
+      "returncode": 0,
+      "seconds": 15.045647382736206,
+      "log": "tmp/grid_calibration/rebuild_tomodd_all_cluster_validation.log"
+    },
+    {
+      "label": "all_plots_repair",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/publication_plots.py"
+      ],
+      "returncode": 0,
+      "seconds": 82.24706363677979,
+      "log": "tmp/grid_calibration/rebuild_all_plots_repair.log"
+    },
+    {
+      "label": "current_record_repair",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_report.py"
+      ],
+      "returncode": 0,
+      "seconds": 3.0408380031585693,
+      "log": "tmp/grid_calibration/rebuild_current_record_repair.log"
+    },
+    {
+      "label": "provenance_recheck",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/verify_grid_workflow.py"
+      ],
+      "returncode": 0,
+      "seconds": 4.156466722488403,
+      "log": "tmp/grid_calibration/rebuild_provenance_recheck.log"
+    },
+    {
+      "label": "documents_repair",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/build_documents.py",
+        "--clean"
+      ],
+      "returncode": 1,
+      "seconds": 48.515055656433105,
+      "log": "tmp/grid_calibration/rebuild_documents_repair.log"
+    },
+    {
+      "label": "current_record_repair",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_report.py"
+      ],
+      "returncode": 0,
+      "seconds": 3.1183345317840576,
+      "log": "tmp/grid_calibration/rebuild_current_record_repair.log"
+    },
+    {
+      "label": "provenance_recheck",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/verify_grid_workflow.py"
+      ],
+      "returncode": 0,
+      "seconds": 4.067152976989746,
+      "log": "tmp/grid_calibration/rebuild_provenance_recheck.log"
+    },
+    {
+      "label": "documents_repair",
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/build_documents.py",
+        "--clean"
+      ],
+      "returncode": 0,
+      "seconds": 51.57300424575806,
+      "log": "tmp/grid_calibration/rebuild_documents_repair.log"
+    }
+  ],
+  "scope": "Verified expanded independent picking/association checkpoint; calibration rerun; optional verified own delay reuse; all current plots and both documents. No new waveform acquisition or full-period inference claimed.",
+  "finished_utc": "2026-10-13T18:30:17.975280+00:00",
+  "resumed_utc": "2026-10-13T18:29:19.055627+00:00",
+  "previous_error": "CalledProcessError(1, ['/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python', 'scripts/build_documents.py', '--clean'], None, None)",
+  "presentation_resume": "Scientific stages completed in this recorded full rebuild; independent input/measurement hashes rechecked. Inversions are not repeated for formatting changes.",
+  "scientific_outcome": {
+    "summary": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
+    "calibration_scientifically_accepted": false,
+    "tomodd_status": "both fixed-grid rounds executed; validation pending",
+    "panel_counts": {
+      "independently reproduced": 0,
+      "partially reproduced": 12,
+      "not reproduced": 51
+    }
+  },
+  "relocation_resume": "Calibration unchanged; rebuild generic solver with complete per-cluster residual output, rerun both rounds and active-observation gap filters."
+}

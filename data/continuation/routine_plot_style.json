@@ -9,10 +9,21 @@
       7.2
     ],
     "color_limits_km": [
-      0,
-      8.0
+      0.0,
+      5.0
     ],
     "palette": "jet_r",
+    "ticks": [
+      0,
+      2,
+      4
+    ],
+    "under_count": 0,
+    "over_count": 4,
+    "under_color": "white",
+    "over_color": "magenta",
+    "clip": false,
+    "limit_basis": "S5: printed limits/ticks 0\u20135 km. 1A: printed ticks 0,2,4; endpoints unlabeled, 0\u20135 km is a disclosed approximation consistent with S5, not a recovered exact normalization.",
     "circle_area_points_squared": "0.7 + 3 * 10**(Md - 2); points squared; additive visibility offset; exact publication law unspecified; no clipping",
     "missing_magnitude_symbol": "fixed-size cross colored by observed depth",
     "status": "Partial reconstruction from external routine catalog, not independent detections",
@@ -28,10 +39,24 @@
       5.4
     ],
     "color_limits_km": [
-      0,
-      6.0
+      0.0,
+      5.0
     ],
     "palette": "jet_r",
+    "ticks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "under_count": 0,
+    "over_count": 2,
+    "under_color": "white",
+    "over_color": "magenta",
+    "clip": false,
+    "limit_basis": "S5: printed limits/ticks 0\u20135 km. 1A: printed ticks 0,2,4; endpoints unlabeled, 0\u20135 km is a disclosed approximation consistent with S5, not a recovered exact normalization.",
     "circle_area_points_squared": "0.7 + 3 * 10**(Md - 2); points squared; additive visibility offset; exact publication law unspecified; no clipping",
     "missing_magnitude_symbol": "fixed-size cross colored by observed depth",
     "status": "Partial reconstruction from external routine catalog, not independent detections",

@@ -17,15 +17,15 @@
   },
   {
     "stage": "5. VELEST",
-    "status": "Executed alternative-profile two-round 32/64-bit calibration and five fixed-model catalog passes; 238 numerical-filter passes. Not accepted: continued iterations move locations by kilometers, held-out metrics are mixed, stricter selection yields nonphysical layers. Verified original grid and reviewed phases missing."
+    "status": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed."
   },
   {
     "stage": "6. TomoDD",
-    "status": "Measured 10882 new channel comparisons, retained 517 phase delays. Two exploratory HypoDD LSQR rounds returned 127/126 events; these are not fixed-3D TomoDD. Both requested TomoDD rounds remain uncompleted because accepted calibration and verified background grid are missing."
+    "status": "both fixed-grid rounds executed; validation pending. round 1: 132 outputs, 124 gap passes; round 2: 124 outputs, 123 gap passes. Independently measured delays; no scientifically accepted relocated catalog."
   },
   {
     "stage": "7. HypoDD SVD",
-    "status": "Executed exploratory largest-component quadrant SVD: NW/SW/SE return 40/16/22 conditional estimates; NE diverges. These subsets/model are not the specified S7 experiment and no panel is promoted."
+    "status": "Earlier alternative-model quadrant SVD diagnostics remain historical. No S7 uncertainty from accepted current-grid calibration/relocation; precise regional selection and reviewed phases unresolved."
   },
   {
     "stage": "8. Magnitudes",

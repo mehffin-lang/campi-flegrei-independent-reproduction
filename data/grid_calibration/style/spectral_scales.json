@@ -1,0 +1,287 @@
+[
+  {
+    "panel": "figure_S4A",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "jet",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 1539,
+    "over_count": 0,
+    "data_range_dB": [
+      -159.88121006321845,
+      -19.082607231106625
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "picker_comparison_CSOB",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "jet",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 662,
+    "over_count": 0,
+    "data_range_dB": [
+      -144.07644610722417,
+      -11.815636565070225
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "picker_comparison_CMIS",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "jet",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 21794,
+    "over_count": 0,
+    "data_range_dB": [
+      -185.43298222485515,
+      -4.9372871504958376
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "E1 CAAMZ",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "gist_rainbow_r",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 193,
+    "over_count": 0,
+    "data_range_dB": [
+      -101.88099338364393,
+      -10.385854976272848
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "E1 CAAME",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "gist_rainbow_r",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 31,
+    "over_count": 0,
+    "data_range_dB": [
+      -93.56199501903502,
+      -8.03396531097373
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "E1 COLBZ",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "gist_rainbow_r",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 191,
+    "over_count": 0,
+    "data_range_dB": [
+      -109.95313345026902,
+      -17.22763824113513
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "E1 COLBE",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "gist_rainbow_r",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 89,
+    "over_count": 0,
+    "data_range_dB": [
+      -101.70436285748661,
+      -11.487016021465426
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "E2 CAAMZ",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "gist_rainbow_r",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 5,
+    "over_count": 0,
+    "data_range_dB": [
+      -85.8195060174698,
+      -10.819387690882492
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "E2 CAAME",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "gist_rainbow_r",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 4,
+    "over_count": 0,
+    "data_range_dB": [
+      -88.82927231342187,
+      -15.122711997913182
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "E2 COLBZ",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "gist_rainbow_r",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 3,
+    "over_count": 0,
+    "data_range_dB": [
+      -100.3483715484328,
+      -22.429214757194188
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "E2 COLBE",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "gist_rainbow_r",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 9,
+    "over_count": 0,
+    "data_range_dB": [
+      -86.66678359322077,
+      -23.06307106664976
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "E3 CAAMZ",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "gist_rainbow_r",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 46,
+    "over_count": 0,
+    "data_range_dB": [
+      -95.38947241285705,
+      -6.582260870242757
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "E3 CAAME",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "gist_rainbow_r",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 3,
+    "over_count": 0,
+    "data_range_dB": [
+      -94.76361441114196,
+      -8.47435128740387
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "E3 COLBZ",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "gist_rainbow_r",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 22,
+    "over_count": 0,
+    "data_range_dB": [
+      -87.89291037205487,
+      -13.523129043741607
+    ],
+    "clipped": false
+  },
+  {
+    "panel": "E3 COLBE",
+    "limits_dB": [
+      -80,
+      0
+    ],
+    "ticks": null,
+    "paper_limits": "No numerical limits/colorbar printed; this is an explicit independent display normalization.",
+    "palette": "gist_rainbow_r",
+    "under_color": "white",
+    "over_color": "black",
+    "under_count": 8,
+    "over_count": 0,
+    "data_range_dB": [
+      -88.60825567667261,
+      -10.973986454445527
+    ],
+    "clipped": false
+  }
+]

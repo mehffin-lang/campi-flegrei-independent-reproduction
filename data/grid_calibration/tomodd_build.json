@@ -1,0 +1,378 @@
+{
+  "source_receipt": "docs/tomodd_source_receipt.json",
+  "files": [
+    {
+      "source": "inputs/external/tomodd/syn_time_PDR.f",
+      "sha256": "68a5023e16e2cb3ad6bd965537c05d57d7778c573c835535102a4c80158b74b2"
+    },
+    {
+      "source": "inputs/external/tomodd/dtres_FDD_lm5.f",
+      "sha256": "ce9a63b616cccb36b87f8d5b25668852b7c700fd788e441af985f9f238a54165"
+    },
+    {
+      "source": "inputs/external/tomodd/sorti.f",
+      "sha256": "4dab8ef3f2852eed625249e8343a4273a9907a10c3a34ddb119f5c90c3c75079"
+    },
+    {
+      "source": "inputs/external/tomodd/sscal.f",
+      "sha256": "7bb6b81919b15c8c93597d57b970eb25f230bf65869a3bf7cff4a750c789d729"
+    },
+    {
+      "source": "inputs/external/tomodd/get_dims.f",
+      "sha256": "acddd8e75b59d0db516ea2becb28b0dac50cfc452323792cb1813430caee5a82"
+    },
+    {
+      "source": "inputs/external/tomodd/hypot_.c",
+      "sha256": "f85dcf757a62858697f64a38b72bd86cad930c4beb5dd12606dd98889e6e8fa0"
+    },
+    {
+      "source": "inputs/external/tomodd/aprod.f",
+      "sha256": "e659a557ee430ad41d71e4cd2eb94fd98af71901401d57f75c164dcd17193877"
+    },
+    {
+      "source": "inputs/external/tomodd/Time_3d.c",
+      "sha256": "100f0ba5f34d50d05597c333b0e3d71d9c5ddd5519ecc0dc637f5f8d6ae84aa5"
+    },
+    {
+      "source": "inputs/external/tomodd/covar.f",
+      "sha256": "d6791de747fd2b0206867cee45a7ed605c8d06ee8affe50372ca31a3fe4009d1"
+    },
+    {
+      "source": "inputs/external/tomodd/indexxi.f",
+      "sha256": "a3e5a56ce48bf30ee50295f8a67dbc3c9e116962b0715d94c4b17fb86109ef24"
+    },
+    {
+      "source": "inputs/external/tomodd/sscanf3_.c",
+      "sha256": "38cf3711ec46948e2db92d5d26aef72c5290c77084b188979a7c79ac6f3b9c35"
+    },
+    {
+      "source": "inputs/external/tomodd/test.f",
+      "sha256": "fb7beeaed7a9de2ab068c6863179313573529adf658c32c40e50587dfd2605f9"
+    },
+    {
+      "source": "inputs/external/tomodd/scopy.f",
+      "sha256": "bcd678c85a55d0fd3eaaa0a4fd70c3d3946428f920dabc10cfd83e8886f14b4a"
+    },
+    {
+      "source": "inputs/external/tomodd/atoangle_.c",
+      "sha256": "7abd781e46eafa8558b857b0aa628bda0baaa257a22759c423b0c0c756069d7d"
+    },
+    {
+      "source": "inputs/external/tomodd/atoangle.c",
+      "sha256": "74f3de0224467d5121b798d49b5ed226905539efbec414b90fe86c13f9234040"
+    },
+    {
+      "source": "inputs/external/tomodd/exist.f",
+      "sha256": "980a293721a3da824592eb6da99ee83c5012a1e85b376b3ee9ca2a64045be17e"
+    },
+    {
+      "source": "inputs/external/tomodd/Sumatra-pwP-it2.f",
+      "sha256": "aad5a35e35f743010abcb43a2c5c77ad788f3c13aedf92d70106d41068835982"
+    },
+    {
+      "source": "inputs/external/tomodd/dtres_FDD.f",
+      "sha256": "6708ae31b30bf0d6e3958df467221f8c8d55063612187076f701a4a3f8a6ef6f"
+    },
+    {
+      "source": "inputs/external/tomodd/vmodel.f",
+      "sha256": "bc20d607a3bb2581a983d3149ab34a310d8419d2ceb28cbb3e18d9ceebe35a03"
+    },
+    {
+      "source": "inputs/external/tomodd/Time_3d_g77.c",
+      "sha256": "100f0ba5f34d50d05597c333b0e3d71d9c5ddd5519ecc0dc637f5f8d6ae84aa5"
+    },
+    {
+      "source": "inputs/external/tomodd/RayFDD.f",
+      "sha256": "1d865d99fd26e938bbf1e5b4a44233c6df8232f3f3f7b8f98e8ec1151a1be30c"
+    },
+    {
+      "source": "inputs/external/tomodd/transform_r_gfortran.c",
+      "sha256": "2ee0246fb061ec9b45a79c9191e073b01f23f606caeb6c0f14b8e74faa6dc529"
+    },
+    {
+      "source": "inputs/external/tomodd/cluster1.f",
+      "sha256": "2129faf6d6c0d806110ed628888af150e38ff70220825a85ba3bdd9b34a04a68"
+    },
+    {
+      "source": "inputs/external/tomodd/matmult2.f",
+      "sha256": "7ae71627c41bfdf992b44a5ea919fd3be8b72a65f3674453dabcc3ee39a017e2"
+    },
+    {
+      "source": "inputs/external/tomodd/lsfitHFDD_lsqr_lm5_LV.f",
+      "sha256": "17350edef59a821d2e5e0c2f7717e6af4d06806e6139f42eb84c348e0d868c9e"
+    },
+    {
+      "source": "inputs/external/tomodd/RaySPDR2.f",
+      "sha256": "c8fafc2c4009e46882fc51305e97889cca34f76e96a2516026a5e32b7963514d"
+    },
+    {
+      "source": "inputs/external/tomodd/direct1.f",
+      "sha256": "eed71d4cb6d8ef747e8ab827a9992ce8127d043418edc2ecf3df64ed1dd2e6b8"
+    },
+    {
+      "source": "inputs/external/tomodd/ntransform_r_absoft.c",
+      "sha256": "3589a963305634817f998c8d10dc396a399ef05e8f3721a68375615bafe7cf01"
+    },
+    {
+      "source": "inputs/external/tomodd/nrpad_.c",
+      "sha256": "a463ba235d3f4d0ca8b25d9db910afb0325d3495c59b75f9d7c0112b60926078"
+    },
+    {
+      "source": "inputs/external/tomodd/redist.f",
+      "sha256": "9bc4e907cef8a6460e537a6d19213e6800dc1bef23c8d24f71c96f9ec3ad398d"
+    },
+    {
+      "source": "inputs/external/tomodd/syn_time_PDR2.f",
+      "sha256": "0f937a4d8a7707a18d8d2b71cee73ac4721f298e184c0466ec204c189045ef5f"
+    },
+    {
+      "source": "inputs/external/tomodd/skipFDD.f",
+      "sha256": "c5ca09e25bb45a12d0e10dadefde432fcdbbb35a8b00387a87d03c0ec44e01e7"
+    },
+    {
+      "source": "inputs/external/tomodd/freeunit.f",
+      "sha256": "03138134cfb8b5b3935856e756021f02a9500ef58323a4a9905885352b38949b"
+    },
+    {
+      "source": "inputs/external/tomodd/Time_3d_f77.c",
+      "sha256": "756b4def63a998ce08ebc7fe79a2daf1dd907ee37154198b7c6a0fb6d042de22"
+    },
+    {
+      "source": "inputs/external/tomodd/ran.f",
+      "sha256": "6dc21f6b199c0ba07c0f66a5bff0ee2fa1f4c15738bdda2b78b67b19ee64e6c3"
+    },
+    {
+      "source": "inputs/external/tomodd/tomoDD-SE_syn.f",
+      "sha256": "0788eac4165b965c78a399b82aa9fa86fe2eb2435de3bdd3266ceaf4bbbfeefd"
+    },
+    {
+      "source": "inputs/external/tomodd/tiddid.f",
+      "sha256": "5d305a734be948508ee8984c8980eb3066e073334975af1cff70225301156182"
+    },
+    {
+      "source": "inputs/external/tomodd/RaySPDR.f",
+      "sha256": "694f33b535d5788e3ca25463c19bde1a2fdfe1fe5a34c20ccedc9d2c0ee03095"
+    },
+    {
+      "source": "inputs/external/tomodd/weighting_FDD.f",
+      "sha256": "675b841266cd5d4b7c3a5fdd522ced9c6b96a2338adc7828c7086ffa27e44c05"
+    },
+    {
+      "source": "inputs/external/tomodd/ndatetime_.c",
+      "sha256": "6d5273c31ee52daf856886ccbd8def9d7a0fb2314b65204060ba6802cf743358"
+    },
+    {
+      "source": "inputs/external/tomodd/datum.f",
+      "sha256": "443e12f4762598eeb8a17f2d689bac84c952c2701b2bc9ff55bb6fddc4d77f3a"
+    },
+    {
+      "source": "inputs/external/tomodd/matmult1.f",
+      "sha256": "5ae71bd31615123d59cc34803f4da7c68c6f52e3ec0e3a19838140e2c7d42555"
+    },
+    {
+      "source": "inputs/external/tomodd/add_sta.f",
+      "sha256": "fda91296a2fb85e9c49e353ce3c8a3e2c9180a971aa31ebffa5daabe6f554d41"
+    },
+    {
+      "source": "inputs/external/tomodd/find_id2.f",
+      "sha256": "68c9231c585e0a200885b11ea8dd14dc1701fe83b0d2d501ebc65626b5c03a6c"
+    },
+    {
+      "source": "inputs/external/tomodd/datetime_.c",
+      "sha256": "48cca6b4bdfa3e589e8af7c98f4c71e0a4bd5618478d32b60a98fb941e2f019c"
+    },
+    {
+      "source": "inputs/external/tomodd/syn_time_new2.f",
+      "sha256": "3d5db446def0cb49aa6d3a177b5d752f2f68414bb1b7ac255b412c9f0c91784d"
+    },
+    {
+      "source": "inputs/external/tomodd/sdc2.f",
+      "sha256": "59a377ef9495b15f302c8bd1c247e9914875075ebc10ddef8debefb2bc730ab8"
+    },
+    {
+      "source": "inputs/external/tomodd/nhypot_.c",
+      "sha256": "559d16842ba36e73dc40f86baa050a90306ae25e8f21d7facc948ba02961db91"
+    },
+    {
+      "source": "inputs/external/tomodd/delaz.f",
+      "sha256": "878cc7008579d13a3e818db070ad368116591b4f8f32fe3ba3582ae99dcadbcb"
+    },
+    {
+      "source": "inputs/external/tomodd/lsqrmv5.f",
+      "sha256": "87fa4be5e13ad73de996476570339a6219e90fecb1424fc23a65b8ef433bc6ae"
+    },
+    {
+      "source": "inputs/external/tomodd/sort.f",
+      "sha256": "482e60aa82201b6b4a2d62807ae32ecd2aba5e539322aae4e51a0e5f055bc11c"
+    },
+    {
+      "source": "inputs/external/tomodd/trialsrc_FDD_shot.f",
+      "sha256": "22431f68ce71c45e73f3f60c1bd2c0926535f7d11eea11cb79b8067e02e7a5b8"
+    },
+    {
+      "source": "inputs/external/tomodd/punch_1_ft.c",
+      "sha256": "9adc79f085247fea68b6d970ed3f3d067593e88fdcd25de0d22e55e5c1d38202"
+    },
+    {
+      "source": "inputs/external/tomodd/Makefile",
+      "sha256": "83353624b9b09b919ec1864cf07283a8c7357d92c8dc14257ac474f779e43145"
+    },
+    {
+      "source": "inputs/external/tomodd/getinpSPDR.f",
+      "sha256": "20a381397ed7ed8b9c0227c94c13c24219e8d6094650c15a962fcb9f85791d77"
+    },
+    {
+      "source": "inputs/external/tomodd/mdian1.f",
+      "sha256": "fb0e7c1c0e7054b9fc58adada44f177a02725e2a67ef89e29c817eec5ded4bb4"
+    },
+    {
+      "source": "inputs/external/tomodd/snrm2.f",
+      "sha256": "a21aa638072642893ad9f2fa0022580dad477833e26e0d2cd74c935a8555beef"
+    },
+    {
+      "source": "inputs/external/tomodd/dist.f",
+      "sha256": "d97002f058545a0e1e6b31b0a0304aa0ab810584bf23a1ceaf253bd94f669f31"
+    },
+    {
+      "source": "inputs/external/tomodd/chtof_.c",
+      "sha256": "2979f7a076b393e92d6dfcfc2bc6c73060ff16aba5058aa26f84d44a527e1518"
+    },
+    {
+      "source": "inputs/external/tomodd/transform_r_intel.c",
+      "sha256": "9a1a5530a7cabe7ff5f4459ad684f9bbd9077dd27b063ee769fd950810ade134"
+    },
+    {
+      "source": "inputs/external/tomodd/juliam.f",
+      "sha256": "048d1a5b80268a4da307c3f8a171343d42f161f4c7bf345c935829bd5269859b"
+    },
+    {
+      "source": "inputs/external/tomodd/delaz2.f",
+      "sha256": "dbefcb24c915169c621dfd36bbcb0994d132fe168c0cece0f320c20affa0b17c"
+    },
+    {
+      "source": "inputs/external/tomodd/getdata_SPDR.f",
+      "sha256": "90e804d10aa40cdd9fd631e6e00b4109aa2128632641bf8cb729148e5eb35158"
+    },
+    {
+      "source": "inputs/external/tomodd/normlz.f",
+      "sha256": "bdc22671f4ddc39d433b8a4c3fd9861235660eeb0a97c310934f0b8eac722512"
+    },
+    {
+      "source": "inputs/external/tomodd/trimlen.f",
+      "sha256": "cda04f2ae38919c5bba9be1ea452b562305f67b546fcfdb45c19461be8d5d3ad"
+    },
+    {
+      "source": "inputs/external/tomodd/geometry.h",
+      "sha256": "57735f732df97aa45696bd5c7d83a6cc4789782f395af74f74521555e02f1c54"
+    },
+    {
+      "source": "inputs/external/tomodd/ifindi.f",
+      "sha256": "d72908b1d8b1fde83cb8867f1425e4870d6b0b95da708e2ffc79e587d8d9378a"
+    },
+    {
+      "source": "inputs/external/tomodd/setorg.f",
+      "sha256": "dd52d3281e8b2ee7c6b469c5d8d6dacbbea9c91b215886370bcc0a0114174679"
+    },
+    {
+      "source": "inputs/external/tomodd/transform_r_g77.c",
+      "sha256": "7b8aaffdc95329c9a8afd482f61dc72fd9804a42885d3351f86129c63b54aef6"
+    },
+    {
+      "source": "inputs/external/tomodd/sph2car.f",
+      "sha256": "eb64f7b90ede80ef59f63f425df4b61902f1ec0a31819bc0a37648ed96c56617"
+    },
+    {
+      "source": "inputs/external/tomodd/rpad_.c",
+      "sha256": "0fec4fc12577f3514c3c8d51421767db163bf00e7146659e408b4cd9f2d887ca"
+    },
+    {
+      "source": "inputs/external/tomodd/matmult3.f",
+      "sha256": "a74835f9de878ce9f3628869d10927c1629b495c320ce1608593ce5eb3e3e8e1"
+    },
+    {
+      "source": "inputs/external/tomodd/getinpSPDR2.f",
+      "sha256": "610df653be5df7ff0cc5afc429cf315f02045ad683c08ad14cebcab73b1384f6"
+    },
+    {
+      "source": "inputs/external/tomodd/sscanf4_.c",
+      "sha256": "dd9a9e5d3d53bdacdc433207ea8a7099a939811b4932751231d12dded14452fc"
+    },
+    {
+      "source": "inputs/external/tomodd/svd.f",
+      "sha256": "014cdec81325409c120f8898a1744fe60c978376591834d7c7d1996947f10828"
+    },
+    {
+      "source": "inputs/external/tomodd/lsqr.f",
+      "sha256": "7163fadc970076c60f29f9ec7db1da28d3b6d3ba44761c0536914c1f192c978f"
+    },
+    {
+      "source": "inputs/external/tomodd/skipFDD_shot.f",
+      "sha256": "f4331b230ba4c1f730ee2284f62ed02bc64c191fbad8e3587746eaaf0c9e171c"
+    },
+    {
+      "source": "inputs/external/tomodd/Time_3d_intel.c",
+      "sha256": "ce88238b93263f72da6d29fc2e192c83709ea95b402b9bd7f5986c939c9342e7"
+    },
+    {
+      "source": "inputs/external/tomodd/cover_FDD_Roecker.f",
+      "sha256": "91a1e3154fdc986640fe491f87e4dfbee193089bbf1c675d39fa51fc492274e5"
+    },
+    {
+      "source": "inputs/external/tomodd/lsfitHFDD_lsqr_lm5.f",
+      "sha256": "a98c9bc12f435bd67c2777826ffe8c81f3aadd8e6cd47bcb5d3abf457c8fb333"
+    },
+    {
+      "source": "inputs/external/tomodd/tomoDD-SE.f",
+      "sha256": "97774dfc0d0de4d7a1d0171fe0224df3598e367d358467586cdb3bf682f1eac0"
+    },
+    {
+      "source": "inputs/external/tomodd/resstat_FDD.f",
+      "sha256": "d42afaa193627bb62053023f33f0b8bc03337fbd13156c1aad897c028aeaa7eb"
+    },
+    {
+      "source": "inputs/external/tomodd/RaySPDR2_lupan_fix_lat_lon.f",
+      "sha256": "191d3cf96938992755180eb7d505d160e85b3a3899782dd720a0d80eb21eb3f9"
+    },
+    {
+      "source": "inputs/external/tomodd/densemv.f",
+      "sha256": "4c91f7338d9137eeb18d3810a43efc0b4781cd37de54d87b439cff58166853b2"
+    },
+    {
+      "source": "inputs/external/tomodd/RaySPDR3.f",
+      "sha256": "0f351cbe3cb2e26a580e512d42bc46cfd2b2768abf0de393aa6da8e428c84a54"
+    },
+    {
+      "source": "inputs/external/tomodd/include/compat.h",
+      "sha256": "1a9d6aa4f5f4dd8aa1d4477f2c86ba15a62ae047d40ec7943da4957b2abc0cfb"
+    },
+    {
+      "source": "inputs/external/tomodd/include/f77types.h",
+      "sha256": "bd470be04d7b77095027986f13ca9e8625cc4fa92a6d8f4fc44471bffd809e1e"
+    },
+    {
+      "source": "inputs/external/tomodd/include/matvec6.h",
+      "sha256": "f46413997c524bd4a8097b3493892ba56cbdf523891d73476f373c9ddebc5dc2"
+    },
+    {
+      "source": "inputs/external/tomodd/include/geocoord.inc",
+      "sha256": "4ee4d47d739a8f44be0618a2ea36205c449df0a9719863cbfa3e1ba4f6a3696d"
+    },
+    {
+      "source": "inputs/external/tomodd/include/tomoFDD.inc",
+      "sha256": "b44c6f6231a4d1d975682b818ce8bc28275e719e159de2672c59c334519eb829"
+    },
+    {
+      "source": "inputs/external/tomodd/include/RaySPDR.inc",
+      "sha256": "2bc906d49a22fd97038707b6ba1b68318c8edf4a0c6d1153d6dc13e87aa8bbc2"
+    }
+  ],
+  "returncode": 0,
+  "command": [
+    "make",
+    "-B",
+    "FFLAGS=-O2 -I./include -ffixed-line-length-none -ffloat-store -fcheck=bounds -m64 -mcmodel=medium"
+  ],
+  "changes": "No equation changes; bounds checking and O2 compilation. getdata_SPDR.f: close the absolute-arrival unit at EOF label 108. tomoDD-SE.f: append per-cluster residual tables rather than overwrite earlier clusters. The wrapper deletes old output files before each run.",
+  "patched_getdata_sha256": "1567aaa6fe3a39a5a59547b02e58b3fba0d15c4596a19408b1fb78200eb270ed",
+  "patched_main_sha256": "bbdfb85b0d131619d31329628121b92f45e4afe900e6f5a80d34e0fbadbc4753"
+}

@@ -15,6 +15,9 @@ from matplotlib.cm import ScalarMappable
 from matplotlib.ticker import MultipleLocator
 
 MAP_LIMITS={'1A':((-7,5),(-5,5)), 'S5':((-5.8,3.5),(-3.5,3.5))}
+DEPTH_LIMITS=(0.,5.)
+def depth_cmap():
+    cm=plt.get_cmap('jet_r').copy();cm.set_under('white');cm.set_over('#ff00ff');return cm
 
 
 def areas(magnitude):
@@ -40,10 +43,10 @@ def points(ax,cat,x,y,norm):
     known=cat.Md.notna()
     # Missing magnitudes have an explicitly distinct, fixed-size symbol.
     d=cat.loc[known].sort_values('Md')
-    ax.scatter(d[x],d[y],c=d.depth_km,s=areas(d.Md),cmap='jet_r',norm=norm,
+    ax.scatter(d[x],d[y],c=d.depth_km,s=areas(d.Md),cmap=depth_cmap(),norm=norm,
                alpha=.75,linewidths=0,rasterized=True,zorder=2)
     d=cat.loc[~known]
-    if len(d):ax.scatter(d[x],d[y],c=d.depth_km,s=2,marker='x',cmap='jet_r',norm=norm,
+    if len(d):ax.scatter(d[x],d[y],c=d.depth_km,s=2,marker='x',cmap=depth_cmap(),norm=norm,
                          alpha=.65,linewidths=.35,rasterized=True,zorder=2)
 
 
@@ -59,8 +62,7 @@ def size_key(ax,stars=False,location='upper left'):
 
 
 def map_panel(ax,cat,panel,coast,title):
-    depth_max=float(np.ceil(cat.depth_km.max()))
-    norm=Normalize(vmin=0,vmax=depth_max)
+    norm=Normalize(*DEPTH_LIMITS,clip=False)
     coast(ax)
     for line in ax.lines:line.set_color('white');line.set_linewidth(.5)
     points(ax,cat,'x_km','y_km',norm)
@@ -77,15 +79,17 @@ def map_panel(ax,cat,panel,coast,title):
     if panel=='1A':
         ax.text(.02,.02,f'{outside} events outside view; retained in table',transform=ax.transAxes,color='white',fontsize=6,
                 bbox=dict(facecolor='black',edgecolor='none',alpha=.8,pad=2),va='bottom')
-    return ScalarMappable(norm=norm,cmap='jet_r')
+    sm=ScalarMappable(norm=norm,cmap=depth_cmap());sm.paper_panel=panel
+    sm.extend='both' if cat.depth_km.lt(0).any() else 'max' if cat.depth_km.gt(5).any() else 'neither'
+    return sm
 
 
 def depth_bar(fig,ax,mappable,vertical=False):
     cb=fig.colorbar(mappable,ax=ax,orientation='vertical' if vertical else 'horizontal',
-                    fraction=.07 if vertical else .045,pad=.06,aspect=22)
+                    fraction=.07 if vertical else .045,pad=.06,aspect=22,extend=mappable.extend)
     top=mappable.norm.vmax
-    cb.set_ticks(np.arange(0,top+1,1 if top<=6 else 2))
-    cb.set_label(f'Depth (km); scale extended to {top:g} km',color='white',family='DejaVu Serif',fontsize=9)
+    cb.set_ticks([0,2,4] if mappable.paper_panel=='1A' else np.arange(0,6))
+    cb.set_label('Depth (km); magenta >5 km',color='white',family='DejaVu Serif',fontsize=9)
     cb.ax.tick_params(colors='white',labelsize=8,length=3,width=.6);cb.outline.set_edgecolor('.8')
     if vertical:cb.ax.invert_yaxis()
     return cb
@@ -121,7 +125,10 @@ def standalone(root,coast):
             inside=cat[x].between(*xlim)&cat[y].between(*ylim)
             scopes.append(dict(panel=name,saved_input='data/continuation/'+filename,selected_events=len(cat),in_view=int(inside.sum()),outside_view=int((~inside).sum()),first_axis=x,first_min=xlim[0],first_max=xlim[1],second_axis=y,second_min=ylim[0],second_max=ylim[1],units='km',role='Display extent only; excluded points remain in the selected numerical table'))
         record[panel]=dict(input='data/continuation/'+filename,sha256=hashlib.sha256((data/filename).read_bytes()).hexdigest(),events=len(cat),missing_magnitude=int(cat.Md.isna().sum()),
-            depth_range_km=[float(cat.depth_km.min()),float(cat.depth_km.max())],color_limits_km=[0,maximum],palette='jet_r',
+            depth_range_km=[float(cat.depth_km.min()),float(cat.depth_km.max())],color_limits_km=list(DEPTH_LIMITS),palette='jet_r',
+            ticks=[0,2,4] if panel=='1A' else list(range(6)),under_count=int(cat.depth_km.lt(0).sum()),over_count=int(cat.depth_km.gt(5).sum()),
+            under_color='white',over_color='magenta',clip=False,
+            limit_basis='S5: printed limits/ticks 0–5 km. 1A: printed ticks 0,2,4; endpoints unlabeled, 0–5 km is a disclosed approximation consistent with S5, not a recovered exact normalization.',
             circle_area_points_squared='0.7 + 3 * 10**(Md - 2); points squared; additive visibility offset; exact publication law unspecified; no clipping',missing_magnitude_symbol='fixed-size cross colored by observed depth',
             status='Partial reconstruction from external routine catalog, not independent detections',output='figures/'+target)
     pd.DataFrame(scopes).to_csv(data/'routine_plot_scope.csv',index=False)

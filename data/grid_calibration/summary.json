@@ -1,0 +1,78 @@
+{
+  "status": "no physical two-round fit",
+  "accepted": false,
+  "calibration_events": 38,
+  "whole_catalog_events": 916,
+  "reference_station": "IV.CFB3.",
+  "regions": {
+    "caldera": {
+      "runs": [
+        {
+          "name": "caldera_prelocation",
+          "bits": 64,
+          "events": 38,
+          "picks": 653,
+          "returncode": 0,
+          "residual_rms_s": 0.2505080442720812,
+          "event_rms_s": 0.2759338212039447,
+          "depth_min_km": 0.1,
+          "depth_max_km": 5.87,
+          "workdir": "tmp/grid_calibration/velest/caldera_prelocation"
+        },
+        {
+          "name": "caldera_round1",
+          "bits": 64,
+          "events": 38,
+          "picks": 653,
+          "returncode": 0,
+          "residual_rms_s": 0.2367664475577718,
+          "event_rms_s": 0.25296140749966295,
+          "depth_min_km": 0.07,
+          "depth_max_km": 6.22,
+          "workdir": "tmp/grid_calibration/velest/caldera_round1"
+        }
+      ],
+      "accepted": false,
+      "status": "failed validation or solver",
+      "error": "AssertionError('Nonphysical Vp <= Vs')"
+    },
+    "Pozzuoli_Solfatara": {
+      "runs": [
+        {
+          "name": "Pozzuoli_Solfatara_prelocation",
+          "bits": 64,
+          "events": 38,
+          "picks": 653,
+          "returncode": 0,
+          "residual_rms_s": 0.24636329142739644,
+          "event_rms_s": 0.26723240427526157,
+          "depth_min_km": 0.1,
+          "depth_max_km": 5.61,
+          "workdir": "tmp/grid_calibration/velest/Pozzuoli_Solfatara_prelocation"
+        },
+        {
+          "name": "Pozzuoli_Solfatara_round1",
+          "bits": 64,
+          "events": 38,
+          "picks": 653,
+          "returncode": 0,
+          "residual_rms_s": 0.23508421481488326,
+          "event_rms_s": 0.2464377790586671,
+          "depth_min_km": 0.08,
+          "depth_max_km": 6.6,
+          "workdir": "tmp/grid_calibration/velest/Pozzuoli_Solfatara_round1"
+        }
+      ],
+      "accepted": false,
+      "status": "failed validation or solver",
+      "error": "AssertionError('Nonphysical Vp <= Vs')"
+    }
+  },
+  "selection": "All causally consistent associations enter whole-catalog runs; calibration requires >=4 P, >=2 S, >10 total picks, gap<180 and no initial 0/8-km bound hit. Not the authors' manually selected 373-event subset.",
+  "corrections": [
+    "Grid-derived solid-earth regional profiles, with disclosed coarse layering; previous alternative profile not used.",
+    "LOWVELOCLAY=0 per generic guide, instead of previous 1.",
+    "Fixed-model prelocation (14 iterations) before two seven-iteration calibration rounds, guide p7."
+  ],
+  "acceptance": "Physical layers; extra seven-iteration change <=100 m in every horizontal/depth location, <=0.05 km/s velocity and <=0.02 s station delays; these are numerical stability gates, not absolute location accuracy. Held-out checks and waveform review are separate."
+}

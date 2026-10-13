@@ -7,7 +7,7 @@
     "parameters": "2005-01-01 to 2025-03-20; origin 14.14 E, 40.82 N; sea-level depth; Md>=4 markers Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Full color ranges: 0--8 km for 1A, 0--6 km for S5. Display bounds and off-view counts saved in routine_plot_scope.csv.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/continue_context.py",
-    "plot_command": ".venv/bin/python scripts/plot_continuation.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
     "blocker": "Current catalog snapshot differs from the historical snapshot: 12,503 located study events versus 12,083. No tuning to published counts. Natural Earth coastline is a display substitute; the original relief/inland-zero contour has not been reconstructed.",
     "attempt": "Executed directly from expressly permitted external routine-catalog records; not independent detections.",
     "notes": "",
@@ -38,7 +38,7 @@
     "generated_figure": "figures/figure_1A_routine.pdf",
     "saved_data": "data/continuation/figure_1A.csv",
     "report_figure": "figures/figure_1_combined.pdf",
-    "style_record": "data/continuation/routine_plot_style.json"
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "1B",
@@ -48,7 +48,7 @@
     "parameters": "128 historical entries: 114 leveling surveys, 13 source-provided estimates and one source-provided graphical reconstruction. Source classes preserved separately. Daily GNSS 2000-05-29 through 2025-03-20; median datum from 23 overlapping leveling epochs, +/-15 days. Month-only dates placed on day 15 for display.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/continue_context.py",
-    "plot_command": ".venv/bin/python scripts/plot_continuation.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
     "blocker": "Benchmark equivalence and datum-joining convention are assumed because the exact original stitching recipe is not specified. Calendar gaps remain unfilled; no missing recent-data blocker through 2025-03-20.",
     "attempt": "Original text series and format notes verified; 2020--2025 daily coverage is available. Source-reconstructed history is labeled and not described as raw observations. No JPG or digitization by this implementation.",
     "notes": "",
@@ -61,7 +61,8 @@
     ],
     "generated_figure": "figures/figure_1B_displacement.pdf",
     "saved_data": "data/continuation/rite_gnss.csv; data/continuation/historical_leveling.csv",
-    "report_figure": "figures/figure_1_combined.pdf"
+    "report_figure": "figures/figure_1_combined.pdf",
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "1C",
@@ -71,7 +72,7 @@
     "parameters": "2005-2025; cumulative Md>0.2; study interval 2022-01-21 to 2025-03-20",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/continue_context.py",
-    "plot_command": ".venv/bin/python scripts/plot_continuation.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
     "blocker": "Monthly counts and exact-time cumulative Md>0.2 reconstructed from the current routine snapshot; historical count differences unresolved. March 2025 is a partial month.",
     "attempt": "Executed directly from expressly permitted external routine-catalog records; not independent detections.",
     "notes": "",
@@ -100,7 +101,8 @@
     ],
     "generated_figure": "figures/figure_1C_routine.pdf",
     "saved_data": "data/continuation/figure_1C.csv; data/continuation/figure_1C_cumulative.csv",
-    "report_figure": "figures/figure_1_combined.pdf"
+    "report_figure": "figures/figure_1_combined.pdf",
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "2A",
@@ -111,11 +113,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "1003 provisional GaMMA events are not a complete calibrated, TomoDD-relocated catalog. Multiyear acquisition and downstream processing remain incomplete.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "2B",
@@ -126,11 +130,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "1003 provisional GaMMA events are not a complete calibrated, TomoDD-relocated catalog. Multiyear acquisition and downstream processing remain incomplete.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "3/map",
@@ -141,11 +147,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "1003 provisional GaMMA events are not a complete calibrated, TomoDD-relocated catalog. Multiyear acquisition and downstream processing remain incomplete.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "Views are not lettered in the caption.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "3/northing-depth",
@@ -156,11 +164,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "1003 provisional GaMMA events are not a complete calibrated, TomoDD-relocated catalog. Multiyear acquisition and downstream processing remain incomplete.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "Views are not lettered in the caption.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "3/easting-depth",
@@ -171,11 +181,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "1003 provisional GaMMA events are not a complete calibrated, TomoDD-relocated catalog. Multiyear acquisition and downstream processing remain incomplete.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "Views are not lettered in the caption.",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "4A",
@@ -186,11 +198,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "Accepted independent locations/model, reviewed P polarities and S/P ratios, Green functions and event-specific gCAP settings are missing or unfinished. SKHASH/gCAP not run. The written methods and figure caption use different counts; no supplied mechanism table is used to resolve this in the scientific report.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "4B",
@@ -201,11 +215,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "Accepted independent locations/model, reviewed P polarities and S/P ratios, Green functions and event-specific gCAP settings are missing or unfinished. SKHASH/gCAP not run. The written methods and figure caption use different counts; no supplied mechanism table is used to resolve this in the scientific report.",
-    "attempt": "Written-method audit followed by actual FDSN retrieval and independent inference; this panel is not numerically generated unless marked partial.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "",
     "input_observation_files": [],
-    "report_figure": null
+    "report_figure": null,
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "S1",
@@ -215,7 +231,7 @@
     "parameters": "48 stations; continuous-data availability",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/extend_calibration_observations.py --workers 8",
-    "plot_command": ".venv/bin/python scripts/plot_calibration_followup.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
     "blocker": "Expanded processed subset: 868 files, 8511.520 channel-hours; full-period queue remains unfinished. No requested-but-failed interval is counted.",
     "attempt": "Executed actual sample-span union for the frozen processed checkpoint; no requested interval is counted as covered.",
     "notes": "",
@@ -1091,7 +1107,8 @@
     ],
     "generated_figure": "figures/followup_coverage.pdf",
     "saved_data": "data/calibration_followup/expanded/processed_coverage_union.json",
-    "report_figure": "figures/followup_coverage.pdf"
+    "report_figure": "figures/followup_coverage.pdf",
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S2",
@@ -1101,7 +1118,7 @@
     "parameters": "23 broadband, 9 short-period, 16 accelerometers",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/station_geometry.py",
-    "plot_command": ".venv/bin/python scripts/plot_continuation.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
     "blocker": "The published 48-instrument membership is not verified. Two released-coordinate pairs coincide; no deployment alias mapping justifies collapsing or removing identifiers.",
     "attempt": "All 51 candidate identifiers audited: 42 official coordinate/epoch matches and 9 unresolved. Coastline vertices were masked before local projection. Numbered labels retain network codes and separate verified/unverified metadata.",
     "notes": "",
@@ -1135,7 +1152,8 @@
       "inputs/continuation/2I_responses.xml"
     ],
     "saved_data": "data/continuation/figure_S2.csv; data/continuation/station_geometry_qa.csv; data/continuation/station_geometry_epochs.csv",
-    "report_figure": "figures/continuation_stations.pdf"
+    "report_figure": "figures/continuation_stations.pdf",
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S3A",
@@ -1205,7 +1223,7 @@
     "parameters": "120 s CSOB window at 2024-05-20 20:10:03 UTC, interpreting the caption two-hour offset literally; 1 Hz highpass, released model settings, thresholds 0.3.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/benchmark_window.py",
-    "plot_command": ".venv/bin/python scripts/benchmark_window.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
     "blocker": "Exact published start is not specified in the caption; no reference phase labels. Different pick counts do not establish accuracy or successful retraining.",
     "attempt": "Both permitted models executed on original observations at the caption-defined station/date. Official bulletin used solely to identify the written contextual anchor; these observations/picks never seed the independent catalog.",
     "notes": "",
@@ -1221,7 +1239,8 @@
       "inputs/models/original.pt.v1",
       "inputs/models/phasenet_retrained.json",
       "inputs/models/phasenet_retrained.pt"
-    ]
+    ],
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S4B",
@@ -1249,7 +1268,7 @@
     "parameters": "12083 events; 1D model and HYPO71 Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Full color ranges: 0--8 km for 1A, 0--6 km for S5. Display bounds and off-view counts saved in routine_plot_scope.csv.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/continue_context.py",
-    "plot_command": ".venv/bin/python scripts/plot_continuation.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
     "blocker": "Current catalog snapshot differs from the historical snapshot: 12,503 located study events versus 12,083. No tuning to published counts. Natural Earth coastline is a display substitute; the original relief/inland-zero contour has not been reconstructed.",
     "attempt": "Executed directly from expressly permitted external routine-catalog records; not independent detections.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
@@ -1280,7 +1299,7 @@
     "generated_figure": "figures/figure_S5_routine.pdf",
     "saved_data": "data/continuation/figure_S5.csv",
     "report_figure": "figures/figure_S5_routine.pdf",
-    "style_record": "data/continuation/routine_plot_style.json"
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S5/northing-depth",
@@ -1290,7 +1309,7 @@
     "parameters": "12083 events; 1D model and HYPO71 Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Full color ranges: 0--8 km for 1A, 0--6 km for S5. Display bounds and off-view counts saved in routine_plot_scope.csv.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/continue_context.py",
-    "plot_command": ".venv/bin/python scripts/plot_continuation.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
     "blocker": "Current catalog snapshot differs from the historical snapshot: 12,503 located study events versus 12,083. No tuning to published counts. Natural Earth coastline is a display substitute; the original relief/inland-zero contour has not been reconstructed.",
     "attempt": "Executed directly from expressly permitted external routine-catalog records; not independent detections.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
@@ -1321,7 +1340,7 @@
     "generated_figure": "figures/figure_S5_routine.pdf",
     "saved_data": "data/continuation/figure_S5.csv",
     "report_figure": "figures/figure_S5_routine.pdf",
-    "style_record": "data/continuation/routine_plot_style.json"
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S5/easting-depth",
@@ -1331,7 +1350,7 @@
     "parameters": "12083 events; 1D model and HYPO71 Display: depth-colored jet_r circles, area=0.7+3*10**(Md-2) points squared; missing Md shown as crosses. Exact publication area law unspecified. Full color ranges: 0--8 km for 1A, 0--6 km for S5. Display bounds and off-view counts saved in routine_plot_scope.csv.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/continue_context.py",
-    "plot_command": ".venv/bin/python scripts/plot_continuation.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
     "blocker": "Current catalog snapshot differs from the historical snapshot: 12,503 located study events versus 12,083. No tuning to published counts. Natural Earth coastline is a display substitute; the original relief/inland-zero contour has not been reconstructed.",
     "attempt": "Executed directly from expressly permitted external routine-catalog records; not independent detections.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
@@ -1362,7 +1381,7 @@
     "generated_figure": "figures/figure_S5_routine.pdf",
     "saved_data": "data/continuation/figure_S5.csv",
     "report_figure": "figures/figure_S5_routine.pdf",
-    "style_record": "data/continuation/routine_plot_style.json"
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S6/map",
@@ -1373,15 +1392,15 @@
     "status": "not reproduced",
     "data_command": "Not run: provenance/validation prerequisites unresolved",
     "plot_command": "Not generated",
-    "blocker": "No accepted calibration: continued iterations move locations by kilometers; a stricter selection produces nonphysical layers. Original Battaglia grid/regional averages unverified. Exploratory HypoDD is not fixed-3D TomoDD; NE SVD diverges and three other alternative subsets have conditional large errors. No author results substituted.",
-    "attempt": "Executed alternative-profile two-round calibration, five fixed-model catalog passes and separate HypoDD LSQR/SVD diagnostics. Scientific validation fails; diagnostics are not panel counterparts.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
     "input_observation_files": [],
     "generated_figure": "",
     "saved_data": "",
     "report_figure": "",
-    "related_data_command": ".venv/bin/python scripts/rebuild_calibration_followup.py",
-    "related_saved_data": "data/calibration_followup/summary.json; data/calibration_followup/validation.json; data/calibration_followup/relocation/summary.json"
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "S6/northing-depth",
@@ -1392,15 +1411,15 @@
     "status": "not reproduced",
     "data_command": "Not run: provenance/validation prerequisites unresolved",
     "plot_command": "Not generated",
-    "blocker": "No accepted calibration: continued iterations move locations by kilometers; a stricter selection produces nonphysical layers. Original Battaglia grid/regional averages unverified. Exploratory HypoDD is not fixed-3D TomoDD; NE SVD diverges and three other alternative subsets have conditional large errors. No author results substituted.",
-    "attempt": "Executed alternative-profile two-round calibration, five fixed-model catalog passes and separate HypoDD LSQR/SVD diagnostics. Scientific validation fails; diagnostics are not panel counterparts.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
     "input_observation_files": [],
     "generated_figure": "",
     "saved_data": "",
     "report_figure": "",
-    "related_data_command": ".venv/bin/python scripts/rebuild_calibration_followup.py",
-    "related_saved_data": "data/calibration_followup/summary.json; data/calibration_followup/validation.json; data/calibration_followup/relocation/summary.json"
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "S6/easting-depth",
@@ -1411,15 +1430,15 @@
     "status": "not reproduced",
     "data_command": "Not run: provenance/validation prerequisites unresolved",
     "plot_command": "Not generated",
-    "blocker": "No accepted calibration: continued iterations move locations by kilometers; a stricter selection produces nonphysical layers. Original Battaglia grid/regional averages unverified. Exploratory HypoDD is not fixed-3D TomoDD; NE SVD diverges and three other alternative subsets have conditional large errors. No author results substituted.",
-    "attempt": "Executed alternative-profile two-round calibration, five fixed-model catalog passes and separate HypoDD LSQR/SVD diagnostics. Scientific validation fails; diagnostics are not panel counterparts.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
     "input_observation_files": [],
     "generated_figure": "",
     "saved_data": "",
     "report_figure": "",
-    "related_data_command": ".venv/bin/python scripts/rebuild_calibration_followup.py",
-    "related_saved_data": "data/calibration_followup/summary.json; data/calibration_followup/validation.json; data/calibration_followup/relocation/summary.json"
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "S7A/map",
@@ -1430,13 +1449,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "No accepted calibration: continued iterations move locations by kilometers; a stricter selection produces nonphysical layers. Original Battaglia grid/regional averages unverified. Exploratory HypoDD is not fixed-3D TomoDD; NE SVD diverges and three other alternative subsets have conditional large errors. No author results substituted.",
-    "attempt": "Executed alternative-profile two-round calibration, five fixed-model catalog passes and separate HypoDD LSQR/SVD diagnostics. Scientific validation fails; diagnostics are not panel counterparts.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "",
     "input_observation_files": [],
     "report_figure": null,
-    "related_data_command": ".venv/bin/python scripts/rebuild_calibration_followup.py",
-    "related_saved_data": "data/calibration_followup/summary.json; data/calibration_followup/validation.json; data/calibration_followup/relocation/summary.json"
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "S7A/easting-depth",
@@ -1447,13 +1466,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "No accepted calibration: continued iterations move locations by kilometers; a stricter selection produces nonphysical layers. Original Battaglia grid/regional averages unverified. Exploratory HypoDD is not fixed-3D TomoDD; NE SVD diverges and three other alternative subsets have conditional large errors. No author results substituted.",
-    "attempt": "Executed alternative-profile two-round calibration, five fixed-model catalog passes and separate HypoDD LSQR/SVD diagnostics. Scientific validation fails; diagnostics are not panel counterparts.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "",
     "input_observation_files": [],
     "report_figure": null,
-    "related_data_command": ".venv/bin/python scripts/rebuild_calibration_followup.py",
-    "related_saved_data": "data/calibration_followup/summary.json; data/calibration_followup/validation.json; data/calibration_followup/relocation/summary.json"
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "S7B",
@@ -1464,13 +1483,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "No accepted calibration: continued iterations move locations by kilometers; a stricter selection produces nonphysical layers. Original Battaglia grid/regional averages unverified. Exploratory HypoDD is not fixed-3D TomoDD; NE SVD diverges and three other alternative subsets have conditional large errors. No author results substituted.",
-    "attempt": "Executed alternative-profile two-round calibration, five fixed-model catalog passes and separate HypoDD LSQR/SVD diagnostics. Scientific validation fails; diagnostics are not panel counterparts.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "Caption labeling retained; methods prose uses inconsistent letter references.",
     "input_observation_files": [],
     "report_figure": null,
-    "related_data_command": ".venv/bin/python scripts/rebuild_calibration_followup.py",
-    "related_saved_data": "data/calibration_followup/summary.json; data/calibration_followup/validation.json; data/calibration_followup/relocation/summary.json"
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "S7D",
@@ -1481,13 +1500,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "No accepted calibration: continued iterations move locations by kilometers; a stricter selection produces nonphysical layers. Original Battaglia grid/regional averages unverified. Exploratory HypoDD is not fixed-3D TomoDD; NE SVD diverges and three other alternative subsets have conditional large errors. No author results substituted.",
-    "attempt": "Executed alternative-profile two-round calibration, five fixed-model catalog passes and separate HypoDD LSQR/SVD diagnostics. Scientific validation fails; diagnostics are not panel counterparts.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "Caption labeling retained; methods prose uses inconsistent letter references.",
     "input_observation_files": [],
     "report_figure": null,
-    "related_data_command": ".venv/bin/python scripts/rebuild_calibration_followup.py",
-    "related_saved_data": "data/calibration_followup/summary.json; data/calibration_followup/validation.json; data/calibration_followup/relocation/summary.json"
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "S7F",
@@ -1498,13 +1517,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "No accepted calibration: continued iterations move locations by kilometers; a stricter selection produces nonphysical layers. Original Battaglia grid/regional averages unverified. Exploratory HypoDD is not fixed-3D TomoDD; NE SVD diverges and three other alternative subsets have conditional large errors. No author results substituted.",
-    "attempt": "Executed alternative-profile two-round calibration, five fixed-model catalog passes and separate HypoDD LSQR/SVD diagnostics. Scientific validation fails; diagnostics are not panel counterparts.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "Caption labeling retained; methods prose uses inconsistent letter references.",
     "input_observation_files": [],
     "report_figure": null,
-    "related_data_command": ".venv/bin/python scripts/rebuild_calibration_followup.py",
-    "related_saved_data": "data/calibration_followup/summary.json; data/calibration_followup/validation.json; data/calibration_followup/relocation/summary.json"
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "S7C",
@@ -1515,13 +1534,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "No accepted calibration: continued iterations move locations by kilometers; a stricter selection produces nonphysical layers. Original Battaglia grid/regional averages unverified. Exploratory HypoDD is not fixed-3D TomoDD; NE SVD diverges and three other alternative subsets have conditional large errors. No author results substituted.",
-    "attempt": "Executed alternative-profile two-round calibration, five fixed-model catalog passes and separate HypoDD LSQR/SVD diagnostics. Scientific validation fails; diagnostics are not panel counterparts.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "Caption labeling retained; methods prose also refers to panels H/I.",
     "input_observation_files": [],
     "report_figure": null,
-    "related_data_command": ".venv/bin/python scripts/rebuild_calibration_followup.py",
-    "related_saved_data": "data/calibration_followup/summary.json; data/calibration_followup/validation.json; data/calibration_followup/relocation/summary.json"
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "S7E",
@@ -1532,13 +1551,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "No accepted calibration: continued iterations move locations by kilometers; a stricter selection produces nonphysical layers. Original Battaglia grid/regional averages unverified. Exploratory HypoDD is not fixed-3D TomoDD; NE SVD diverges and three other alternative subsets have conditional large errors. No author results substituted.",
-    "attempt": "Executed alternative-profile two-round calibration, five fixed-model catalog passes and separate HypoDD LSQR/SVD diagnostics. Scientific validation fails; diagnostics are not panel counterparts.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "Caption labeling retained; methods prose also refers to panels H/I.",
     "input_observation_files": [],
     "report_figure": null,
-    "related_data_command": ".venv/bin/python scripts/rebuild_calibration_followup.py",
-    "related_saved_data": "data/calibration_followup/summary.json; data/calibration_followup/validation.json; data/calibration_followup/relocation/summary.json"
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "S7G",
@@ -1549,13 +1568,13 @@
     "status": "not reproduced",
     "data_command": null,
     "plot_command": null,
-    "blocker": "No accepted calibration: continued iterations move locations by kilometers; a stricter selection produces nonphysical layers. Original Battaglia grid/regional averages unverified. Exploratory HypoDD is not fixed-3D TomoDD; NE SVD diverges and three other alternative subsets have conditional large errors. No author results substituted.",
-    "attempt": "Executed alternative-profile two-round calibration, five fixed-model catalog passes and separate HypoDD LSQR/SVD diagnostics. Scientific validation fails; diagnostics are not panel counterparts.",
+    "blocker": "Grid input explicitly authorized; historical transformation and averaging masks not recovered exactly. Local calibration convergence passes, full-path precision and start-model dependence do not. Unreviewed phases and sparse coverage; no accepted relocated scientific catalog. both fixed-grid rounds executed; validation pending",
+    "attempt": "The expanded 1015-association checkpoint supplies 916 causally usable events and 38 calibration candidates. The explicitly authorized Tan-distributed reference grid now supplies independently averaged starting profiles. Four-layer fits converge locally, and 216 events pass the paper's numerical filters after five catalog passes. Full 32/64-bit inversion paths still differ by 0.89 km in depth; their locations remain exploratory. Both fixed-grid rounds executed; validation pending. No validated multiyear structural or mechanism result is claimed.",
     "notes": "Caption labeling retained; methods prose also refers to panels H/I.",
     "input_observation_files": [],
     "report_figure": null,
-    "related_data_command": ".venv/bin/python scripts/rebuild_calibration_followup.py",
-    "related_saved_data": "data/calibration_followup/summary.json; data/calibration_followup/validation.json; data/calibration_followup/relocation/summary.json"
+    "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py",
+    "related_saved_data": "data/grid_calibration/merged4/summary.json; data/grid_calibration/merged4/validation.json; data/grid_calibration/merged4/tomodd/summary.json"
   },
   {
     "panel": "S8A",
@@ -1565,7 +1584,7 @@
     "parameters": "5 s signal, 2 s preceding noise; SNR >=5 dB; all available recorded stations; own picked or predicted P arrivals; >=2 shared stations; separation < one fifth of station distance; squared zero-lag correlation weights; Md regularization lambda=1 for unique one-to-one matches within 2 s. Initial locations. B uses 0.1 magnitude bins, maximum-curvature Mc, half-bin-corrected likelihood b and formal Shi-Bolt sampling error; no arbitrary minimum sample cutoff.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/downstream_checks.py --dataset continuation && .venv/bin/python scripts/magnitude_statistics.py",
-    "plot_command": ".venv/bin/python scripts/plot_continuation.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
     "blocker": "61681 channel measurements, 4705 passing SNR, 1163 relative-amplitude equations, 119 provisional magnitudes. Final relocated locations/full exposure remain missing; routine Md is an allowed regularizer, not independent validation.",
     "attempt": "Executed amplitude-ratio inversion on initial locations; partial pilot comparison/distribution only. No claim of full-period completeness or b-value.",
     "notes": "",
@@ -2421,7 +2440,8 @@
     ],
     "generated_figure": "figures/figure_S8_pilot.pdf",
     "saved_data": "data/continuation/figure_S8A.csv",
-    "report_figure": "figures/figure_S8_pilot.pdf"
+    "report_figure": "figures/figure_S8_pilot.pdf",
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S8B",
@@ -2431,7 +2451,7 @@
     "parameters": "5 s signal, 2 s preceding noise; SNR >=5 dB; all available recorded stations; own picked or predicted P arrivals; >=2 shared stations; separation < one fifth of station distance; squared zero-lag correlation weights; Md regularization lambda=1 for unique one-to-one matches within 2 s. Initial locations. B uses 0.1 magnitude bins, maximum-curvature Mc, half-bin-corrected likelihood b and formal Shi-Bolt sampling error; no arbitrary minimum sample cutoff.",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/downstream_checks.py --dataset continuation && .venv/bin/python scripts/magnitude_statistics.py",
-    "plot_command": ".venv/bin/python scripts/plot_continuation.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
     "blocker": "61681 channel measurements, 4705 passing SNR, 1163 relative-amplitude equations, 119 provisional magnitudes. Final relocated locations/full exposure remain missing; routine Md is an allowed regularizer, not independent validation.",
     "attempt": "Executed amplitude-ratio inversion on initial locations; partial pilot comparison/distribution only. No claim of full-period completeness or b-value.",
     "notes": "",
@@ -3287,7 +3307,8 @@
     ],
     "generated_figure": "figures/figure_S8_pilot.pdf",
     "saved_data": "data/continuation/figure_S8B.csv; data/continuation/magnitude_statistics.json",
-    "report_figure": "figures/figure_S8_pilot.pdf"
+    "report_figure": "figures/figure_S8_pilot.pdf",
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S9/map",
@@ -3720,7 +3741,7 @@
     "parameters": "CAAM/COLB HHZ/HHE; amplitudes normalized by CAAM maximum",
     "status": "partially reproduced",
     "data_command": ".venv/bin/python scripts/analyze_observations.py",
-    "plot_command": ".venv/bin/python scripts/plot_observations.py",
+    "plot_command": ".venv/bin/python scripts/publication_plots.py",
     "blocker": "Written template times used; exact published example alignment, display filtering and spectral settings incompletely specified. Sensitivity-corrected velocities and stated independent display settings used.",
     "attempt": "Numerical processing executed from permitted observations/metadata; saved outputs plotted.",
     "notes": "Caption spells CCAM once; interpreted as CAAM consistently with methods. Each entry covers the traces/spectrograms of that labeled example.",
@@ -3731,7 +3752,8 @@
     ],
     "generated_figure": "figures/hybrid_E3.pdf",
     "saved_data": "data/observations/E3_waveforms.csv; data/observations/E3_CAAM_Z_spectrum.npz; data/observations/E3_CAAM_E_spectrum.npz; data/observations/E3_COLB_Z_spectrum.npz; data/observations/E3_COLB_E_spectrum.npz",
-    "report_figure": "figures/hybrid_E3.pdf"
+    "report_figure": "figures/hybrid_E3.pdf",
+    "style_record": "data/grid_calibration/style/plot_inventory.json"
   },
   {
     "panel": "S15D",

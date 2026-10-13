@@ -1,0 +1,415 @@
+[
+  {
+    "files": [
+      "figures/figure_1A_routine.pdf"
+    ],
+    "corresponding_panel": "1A",
+    "note": "Depth color 0\u20135 km, jet_r; >5 magenta, <0 white. S5 ticks 0..5. 1A ticks 0,2,4; unlabeled endpoints not exactly recoverable. Data unmodified; extent exclusions disclosed.",
+    "inputs": {
+      "data/continuation/figure_1A.csv": "4adc37ce0c534961f17a90e3310788bde3a137b5c16d76c4370d806b8a04e6c1",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/figure_1A_routine.pdf": "5a17e4eada51cbe4fb948ef770737b1f0db9b949e7a181d94b4e0492684be2f9"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S5_routine.pdf"
+    ],
+    "corresponding_panel": "S5",
+    "note": "Depth color 0\u20135 km, jet_r; >5 magenta, <0 white. S5 ticks 0..5. 1A ticks 0,2,4; unlabeled endpoints not exactly recoverable. Data unmodified; extent exclusions disclosed.",
+    "inputs": {
+      "data/continuation/figure_S5.csv": "70d4d9e2007100017028a8a0c40e1a9e33b85977d715063eae078a998e2560e0",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/figure_S5_routine.pdf": "57ef392bf449b44e69eab4926c39dbc5fa6331e63f4546e5a42b0ecc178a2a77"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_1B_displacement.pdf"
+    ],
+    "corresponding_panel": "1B",
+    "note": "Black background, white labels. Source estimates remain distinct; full data range retained.",
+    "inputs": {
+      "data/continuation/historical_leveling.csv": "64527b24e117b7d7715bb1d75bd05e2bc991bac8bf20cb3140ede50521ccb1aa",
+      "data/continuation/rite_gnss.csv": "00ab05b594a1fa5f655a8f35cf6cdecb59fd523ee88aa140b603d2ac94a0eec6"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/figure_1B_displacement.pdf": "26b42b6876e33ebc7d42d896b3d442b6289d752efc968b15062dc68bc4c5339d"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_1C_routine.pdf"
+    ],
+    "corresponding_panel": "1C",
+    "note": "Black background, white labels. Source estimates remain distinct; full data range retained.",
+    "inputs": {
+      "data/continuation/figure_1C.csv": "d745981459c6f16cbbfd29118bf6832a1432f3351b3c71f2fbbb9a62fa5a5420",
+      "data/continuation/figure_1C_cumulative.csv": "5be4f3876d5048352cfd09fb8dc08af008f72c73a02528b8c79b54bb2efac08f"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/figure_1C_routine.pdf": "f94b4d5d66b60d05668666615e2a111ebe8b2a6a32c5759bfd89581878ffea04"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_1_combined.pdf"
+    ],
+    "corresponding_panel": "1A\u2013C",
+    "note": "Original panel arrangement; contextual observations, not independent earthquake detections.",
+    "inputs": {
+      "data/continuation/figure_1A.csv": "4adc37ce0c534961f17a90e3310788bde3a137b5c16d76c4370d806b8a04e6c1",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017",
+      "data/continuation/historical_leveling.csv": "64527b24e117b7d7715bb1d75bd05e2bc991bac8bf20cb3140ede50521ccb1aa",
+      "data/continuation/rite_gnss.csv": "00ab05b594a1fa5f655a8f35cf6cdecb59fd523ee88aa140b603d2ac94a0eec6",
+      "data/continuation/figure_1C.csv": "d745981459c6f16cbbfd29118bf6832a1432f3351b3c71f2fbbb9a62fa5a5420",
+      "data/continuation/figure_1C_cumulative.csv": "5be4f3876d5048352cfd09fb8dc08af008f72c73a02528b8c79b54bb2efac08f"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/figure_1_combined.pdf": "e524d118bbb808a3e3a1d75ffb5b99ec1884d26ae2e73b94851c7a2577b153fc"
+    }
+  },
+  {
+    "files": [
+      "figures/continuation_coverage.pdf"
+    ],
+    "corresponding_panel": "S1",
+    "note": "White background, blue actual intervals and vertical midpoint ticks for otherwise invisible short intervals. Ticks do not imply duration. Right-hand instrument labels; no unavailable intervals drawn.",
+    "inputs": {
+      "data/continuation/processed_coverage_union.json": "75bdcdde573ff927ff8e20d77f09228fbabdf0b42f9702f5aa344ae55de31cba"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/continuation_coverage.pdf": "b3102ab0a29a8da564a4a26fdab9d81f3436d662a7e1faf98ccc14a090e6263e"
+    }
+  },
+  {
+    "files": [
+      "figures/followup_coverage.pdf"
+    ],
+    "corresponding_panel": "S1",
+    "note": "White background, blue actual intervals and vertical midpoint ticks for otherwise invisible short intervals. Ticks do not imply duration. Right-hand instrument labels; no unavailable intervals drawn.",
+    "inputs": {
+      "data/calibration_followup/expanded/processed_coverage_union.json": "92230a9eefae006e7ce9ae19be0b4a63397a6a89800faf3a159ea587758d7e73"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/followup_coverage.pdf": "78548c12d7abd4ce9aa03bc0fb3b3507594ec2e9b79cb0481a7ad3b87264da01"
+    }
+  },
+  {
+    "files": [
+      "figures/continuation_stations.pdf"
+    ],
+    "corresponding_panel": "S2",
+    "note": "Instrument-type colors from saved band metadata. No topography inferred or copied. Expanded extent retains all stations; leader labels replace overlap.",
+    "inputs": {
+      "data/continuation/figure_S2.csv": "359228191a58b32d3745b5aa4a4997403149da5ba70a572a24f0669af544196c",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/continuation_stations.pdf": "f2cebc931f9a8b869afd7a91cba3f569470b82a29d28036008b2ce19ceca05a6"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S4A.pdf",
+      "figures/figure_S4A.png"
+    ],
+    "corresponding_panel": "S4A",
+    "note": "S4 blue P/orange S; teal/red own saved pick marks for S4A, score-peak indicators for separate diagnostics. Spectral limits undisclosed in paper; explicit own normalization. No published reference annotations.",
+    "inputs": {
+      "data/continuation/figure_S4A.npz": "a47e46e7df9f47a82fc55eb8ff1da74be815c967c123263ad37ceceb0770370b",
+      "data/grid_calibration/style/figure_S4A_display.npz": "003d36faa8891c138b3399c735eb5b29f6d0ec86be1508e5a15566f175b1c5bf",
+      "data/continuation/figure_S4A_picks.json": "10030373709f2398f0c1dc3d8e761a45be8b4766f9883f542eee1cf5084d4263"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/figure_S4A.pdf": "1542d2a0781cfa6725ff6d6e5e57b9c726aae73afc7be7cc427790b1c280ae68",
+      "figures/figure_S4A.png": "14a3ae54f264a73c53b2c0271cb8ebacbaa7a4d66b7346cc3acd0410a8262a07"
+    }
+  },
+  {
+    "files": [
+      "figures/picker_comparison_CSOB.pdf",
+      "figures/picker_comparison_CSOB.png"
+    ],
+    "corresponding_panel": "diagnostic resembling S4",
+    "note": "S4 blue P/orange S; teal/red own saved pick marks for S4A, score-peak indicators for separate diagnostics. Spectral limits undisclosed in paper; explicit own normalization. No published reference annotations.",
+    "inputs": {
+      "data/extended/picker_comparison_CSOB.npz": "fa5a1eaee05363468ffb2eb1f1afe51ce5023773d6beb2992d7499e00db578ff",
+      "data/grid_calibration/style/picker_comparison_CSOB_display.npz": "21c0d9f40e5dbba5f606898f885fd8f13df3404ede9d74b7c48e65d067489770"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/picker_comparison_CSOB.pdf": "f91f8b8d9aa198aaff00c4b3155062e58228f62020f596798f37dcca7be4ebeb",
+      "figures/picker_comparison_CSOB.png": "8ac05575826037c6e113bc751015e195334f61e40190ee4674198e18550c25ab"
+    }
+  },
+  {
+    "files": [
+      "figures/picker_comparison_CMIS.pdf",
+      "figures/picker_comparison_CMIS.png"
+    ],
+    "corresponding_panel": "diagnostic resembling S4",
+    "note": "S4 blue P/orange S; teal/red own saved pick marks for S4A, score-peak indicators for separate diagnostics. Spectral limits undisclosed in paper; explicit own normalization. No published reference annotations.",
+    "inputs": {
+      "data/extended/picker_comparison_CMIS.npz": "833afc9f89a132274b71fe367a0e2a49eaf2950a3ebebec0b51b7f3701107325",
+      "data/grid_calibration/style/picker_comparison_CMIS_display.npz": "54c4d3a68bc081f5fd71e2a1d6129bb73efd681167712a8ec9affabd1a8ff15d"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/picker_comparison_CMIS.pdf": "04e69f51ba1cfa705e85bb94ae9d314a88c8f03d26ed1a326fd516b2e47bdf6f",
+      "figures/picker_comparison_CMIS.png": "ed49d5d5e7c222f457d901434ac88642153ba1efa19fdafe17471d3335516fdc"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S8_pilot.pdf"
+    ],
+    "corresponding_panel": "S8A\u2013B",
+    "note": "Blue small dots, thin histogram and orange own conditional likelihood curve; full observed axes, not published data range. Formal errors retained in source table.",
+    "inputs": {
+      "data/continuation/figure_S8A.csv": "2187256efc693855a04f196c784b270040e94d51a2d27c46cee605c69366e280",
+      "data/continuation/figure_S8B.csv": "9b05cfd4fec4600eeed356a0b4731fcae779dfa378a67fa1834b241f499ba805",
+      "data/continuation/magnitude_statistics.json": "cfb4da200a2f503dda59696dde8d6d2e78fd1a12ed0ea91064ff29bfa33d70a6"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/figure_S8_pilot.pdf": "af65938b58e1efe34425427f50e9e0e7cb35fe09fdd2bafca1eb3adb96c22581"
+    }
+  },
+  {
+    "files": [
+      "figures/hybrid_E1.pdf",
+      "figures/hybrid_E1.png"
+    ],
+    "corresponding_panel": "diagnostic, S15-style layout",
+    "note": "Four component columns, waveforms above log-frequency spectra. Closest visible rainbow palette; exact palette/normalization not published. Observed window is not truncated to force reference onset.",
+    "inputs": {
+      "data/observations/E1_waveforms.csv": "d064c5a33f1da547af1dbd1cabfdd8386b73989e5559bc08503d729ed8290f34",
+      "data/observations/E1_CAAM_Z_spectrum.npz": "4ee5c33f713ad436e8217372c0de02ee5fc048a94aedd639e25dd4b7331100f3",
+      "data/observations/E1_CAAM_E_spectrum.npz": "2c8ea3d1ade6aa70508388370a5cb5d9ad853038850e91ca8934e36ec93624a7",
+      "data/observations/E1_COLB_Z_spectrum.npz": "8ad20193c9fef2ccc50f963edd59e0a186ef0cd25ab10a031d814c1afb392742",
+      "data/observations/E1_COLB_E_spectrum.npz": "24499870264977880a3f7722f1c82695229c06a933750fd4d33b985abff8696a"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/hybrid_E1.pdf": "bdc4a9c864823ab9c82324bc58deda6cf26c4348b97221e94efc8905c601267a",
+      "figures/hybrid_E1.png": "82dad745caa0742ee999a2a07a554ba5dfc02661374bf070985743b3689084c6"
+    }
+  },
+  {
+    "files": [
+      "figures/hybrid_E2.pdf",
+      "figures/hybrid_E2.png"
+    ],
+    "corresponding_panel": "diagnostic, S15-style layout",
+    "note": "Four component columns, waveforms above log-frequency spectra. Closest visible rainbow palette; exact palette/normalization not published. Observed window is not truncated to force reference onset.",
+    "inputs": {
+      "data/observations/E2_waveforms.csv": "47345e0804b90bac0ab1d340cd815d5f3e6823ca0290eff424d98fa25111dd90",
+      "data/observations/E2_CAAM_Z_spectrum.npz": "05ee63b677630852bb6195fd15051cd9f0f10d12708b28461d25e98e6b4c8f70",
+      "data/observations/E2_CAAM_E_spectrum.npz": "937d75635a0fef2c9f96af4da56688e3c37dcd18feb5df2d0f020707c13fe098",
+      "data/observations/E2_COLB_Z_spectrum.npz": "ae36906a1b7de2f790ec1e6fe036ccaf75a9de41cb85e0f2427a9fb3c9245111",
+      "data/observations/E2_COLB_E_spectrum.npz": "c6576ac2c9cfa4d75386439c842d1075b9b2746922acdadfbda8dd37e9d07329"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/hybrid_E2.pdf": "ed434aaac37ff5942f2a523d57d8eadb978c875a509f3f476ad009757df448fc",
+      "figures/hybrid_E2.png": "5875b26e32d116ab75f56bb165ec515a84e9b1a8523bbb686e9f7245af4281e7"
+    }
+  },
+  {
+    "files": [
+      "figures/hybrid_E3.pdf",
+      "figures/hybrid_E3.png"
+    ],
+    "corresponding_panel": "S15C",
+    "note": "Four component columns, waveforms above log-frequency spectra. Closest visible rainbow palette; exact palette/normalization not published. Observed window is not truncated to force reference onset.",
+    "inputs": {
+      "data/observations/E3_waveforms.csv": "b962ea04bf891b3c9da67b0f61004825801482b81aa4e7aaf4d96c69be313e7f",
+      "data/observations/E3_CAAM_Z_spectrum.npz": "7100d42a3ce3ac1b460a56a4b53c830542093cb4be4056383449ab65527452e8",
+      "data/observations/E3_CAAM_E_spectrum.npz": "98d177920e528c8a9df783aa870862bd0f77925069d4690a28af710bedd0127d",
+      "data/observations/E3_COLB_Z_spectrum.npz": "646371f8a278459b608fd1f5e7701a297b2db61ef9e7829b845e3d580688e45f",
+      "data/observations/E3_COLB_E_spectrum.npz": "738a3880a9014ebb1020eb3368ea4b10f34af84d876d4d82aafc2be471bc0c0c"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/hybrid_E3.pdf": "93f9958a6e0ad0ebc06967dcca2d80eb4c40caef8d88415e63e5e9264dcdf89e",
+      "figures/hybrid_E3.png": "a44a842c60cf3a52d15cee2f4c263bfc29c3056930436d91fddfc70ebba50f24"
+    }
+  },
+  {
+    "files": [
+      "figures/continuation_sp_diagnostic.pdf",
+      "figures/continuation_sp_diagnostic.png"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "",
+    "inputs": {
+      "data/continuation/sp_consistency.csv": "c599346b324b89e90f6d71e3d59ab8d91f4f96c5433aa2a0045347b81f9d5f76"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/continuation_sp_diagnostic.pdf": "525d7b9f3272961159776024ad4b527d2d1f915a0a23e206f9337020d19ea5c7",
+      "figures/continuation_sp_diagnostic.png": "3852847d1527c49ad29f693f6822326a79ef7bc7a220a0fddf137afb3ac99621"
+    }
+  },
+  {
+    "files": [
+      "figures/independent_picks.pdf",
+      "figures/independent_picks.png"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "",
+    "inputs": {
+      "data/observations/hourly_counts.csv": "8bccec4eac589ee2b97db21110e34b6ce9eb37f56d1947ae5410b3e9a07c3300"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/independent_picks.pdf": "88b7121dd7c80ec12bcd88a6074eae8a5813887aa974230964a714c57294c614",
+      "figures/independent_picks.png": "99aefc9f194d59ec8a8c76df8496b509122b94f9b008ec59d938139ecd094528"
+    }
+  },
+  {
+    "files": [
+      "figures/calibration_convergence_diagnostic.pdf"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "",
+    "inputs": {
+      "data/calibration_followup/convergence_plot.csv": "80d60bff6a180d25d73e0822183f8e13338e80d5a2eb04f658bee6d9c4f5efda"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/calibration_convergence_diagnostic.pdf": "24867f2d481b3a54c61a934d56ca428d39ab1f81e36a5d9102cd9d7c768e385a"
+    }
+  },
+  {
+    "files": [
+      "figures/relocation_uncertainty_diagnostic.pdf"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "",
+    "inputs": {
+      "data/calibration_followup/svd_diagnostic_plot.csv": "e14da4f9b2f44c474101589917a3800d9ee721859cbf5b027d286776133df428"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/relocation_uncertainty_diagnostic.pdf": "efa6c8cab2afe982ea98b565906f31e0dcf284a528687c691df99203f03d7f1d"
+    }
+  },
+  {
+    "files": [
+      "figures/cpoz_gather_diagnostic.pdf"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "",
+    "inputs": {
+      "data/continuation/cpoz_gather_index.csv": "0b08e176b52e451cb63038664253c89d53ceac374162b54b4c3a521200f62a64",
+      "data/continuation/cpoz_gathers.npz": "4462fcf32c7cda88e3cd42f4bf4b661abf8ce294ac34dd102be08593ca395138"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/cpoz_gather_diagnostic.pdf": "da3d6417829d5e1d8d50321f03f2ac36c28faac4dd1811a19d897dc1a6dadc3d"
+    }
+  },
+  {
+    "files": [
+      "figures/hybrid_candidate_review.pdf",
+      "figures/hybrid_candidate_review.png"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "",
+    "inputs": {
+      "data/extended/hybrid_review_waveforms.csv": "4940dff68b0e1ce958bc89773d170e3705f857dcf5f645e26da42d0648d9fcf3",
+      "data/extended/hybrid_review_metrics.csv": "9835394d1aaf88b3136e257c23bbbd528920dd5385cbe5747c54c76f8340afc5"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/hybrid_candidate_review.pdf": "8ddf79cb78b93bcb617eced4a641275964509128bda275c347e5a8e424c7128b",
+      "figures/hybrid_candidate_review.png": "425ca9be9bdbfefb99fd64225a7946bcf74d4376d29006c8ede046b22bf9e4ae"
+    }
+  },
+  {
+    "files": [
+      "figures/association_review_diagnostic.pdf"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "Saved normalized observations with own associated pick marks; not an accepted event solution.",
+    "inputs": {
+      "data/continuation/association_quality.json": "35fa4420c014082554f96d96adf634e840193422573b3c1a4f6ece30ea639068",
+      "data/continuation/association_review/event_345.npz": "3592ac77a96bfce859b9b439a6fecff03bf95ddb0acd383340b15fbe2a7d9a1d",
+      "data/continuation/association_review/event_345_picks.csv": "1c3e44c9e25986408f1b97202f1f93557b01673e9cc500ab8cefcfb43eef54de",
+      "data/continuation/association_review/event_567.npz": "82af528427ff31c78eecc693ee16aca6e0f56799bdebdb51b0301863168f3aac",
+      "data/continuation/association_review/event_567_picks.csv": "52542a0c14c8b24a94f925f1f1b96d7b914fb15506ade2dc121c1a6aaf17dbdd",
+      "data/continuation/association_review/event_105.npz": "35e284a9924e3ef6fed978c8085dc41dfdfdee33d26fdae4becd0f1df320761b",
+      "data/continuation/association_review/event_105_picks.csv": "544704d6d017192ba463644407193a5bbb295bba78f4b1031030c7a38522f6d9",
+      "data/continuation/association_review/event_24.npz": "e1eeabed24315e86cf05c46544e7de008237129e28dbea4d5b80d2792e043df3",
+      "data/continuation/association_review/event_24_picks.csv": "e2e119ab3e3ba339c44960b7b437cf73de69e9b1d2c66953e3ed5e91b3395417",
+      "data/continuation/association_review/event_294.npz": "71d04d1ce1b25fb59d32d2c08469694d34c8adc8083b4fb4adca619c3b2cae4c",
+      "data/continuation/association_review/event_294_picks.csv": "5ff1dc3518667d5081dfd425d04439da52877a2968839805afd7ab138105fa40"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/association_review_diagnostic.pdf": "9ff251c464df6149669675ec9f8220567e86cc0a67265ee1af042351e83cb7e2"
+    }
+  },
+  {
+    "files": [
+      "figures/catalog_frequency_review_diagnostic.pdf"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "Saved low-frequency reviews, no confirmed hybrid classification.",
+    "inputs": {
+      "data/continuation/catalog_frequency_review.npz": "eda9b63c073796b43ccd522c411072b0c2cebee067f693338b189868bfd6a892",
+      "data/continuation/catalog_frequency_review_index.json": "b1b2b2b36ba52f5e3a908ac2836c0b86f8ac5579221434a2351ff7c4f20c693a"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/catalog_frequency_review_diagnostic.pdf": "218843dee6ec232bd3014378256a3237f589c3bc679ed578db0f3953ee65f8b7"
+    }
+  },
+  {
+    "files": [
+      "figures/hybrid_review_diagnostic.pdf"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "Saved measured velocities; gray spectral window, no confirmed classification.",
+    "inputs": {
+      "data/continuation/hybrid_review_windows.csv": "94b334e616251cba54f2700474dcd029efe88e83207340dd90a8a888ed80a8fb",
+      "data/continuation/hybrid_review_windows.npz": "c9655dde59ced19885d011fed40df17fb52a3f40106610e9909cebe29b32a0ba"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/hybrid_review_diagnostic.pdf": "130fbcac071ba68b5a240b0f971a14e3d6892d6291a4f96c534b830637ba11dc"
+    }
+  },
+  {
+    "files": [
+      "figures/grid_calibration_diagnostic.pdf"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "Own numerical experiments, not S6/Figure 3. Fixed depth colors 0\u20135 km; all points retained, >5 magenta. No magnitude sizing because accepted magnitudes are unavailable.",
+    "inputs": {
+      "data/grid_calibration/merged4/caldera_convergence3_model.csv": "eb6971800911707223b7260635443bbf8c63242d9a81973828e1f7adc0d6c501",
+      "data/grid_calibration/merged4/starting_profiles.csv": "7915afdc964de05d4d8120c1a396a6d4cba6f58d330e7375625193e276f52e94",
+      "data/grid_calibration/merged4/tomodd/round1_locations.csv": "e3e0915a8ed54f46625a8daa97a35109d6c62f1365ff9393f51c6105737ce90b",
+      "data/grid_calibration/merged4/tomodd/round2_locations.csv": "7526f2397fc5c866c1d64e9c1102f6bb7b526c7fbb41740315d7b156d8a1e91d"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/grid_calibration_diagnostic.pdf": "a346885cbe6dd9ea1e8b31da03634a424a671d5d5145714b299278df7a71a53c"
+    }
+  }
+]
