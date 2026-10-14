@@ -1,0 +1,83 @@
+ Input number_of_layers layer_src_at_botom rcv_layer
+ Input thickness of each layer and velocity
+ Input the number of distance ranges
+ Input distance range (in km)
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+ Input number_of_layers layer_src_at_botom rcv_layer
+ Input thickness of each layer and velocity
+ Input the number of distance ranges
+ Input distance range (in km)
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Input nlay src_layer src_type rcv_layer updn
+ Input thickness Vp Vs rho Qa Qb for layer           1
+   1   1.50   2.33   1.20   1.52 0.10E+04 0.50E+03
+ Input thickness Vp Vs rho Qa Qb for layer           2
+   2   1.25   3.39   1.93   1.85 0.10E+04 0.50E+03
+ Input thickness Vp Vs rho Qa Qb for layer           3
+   3   0.75   3.39   1.93   1.85 0.10E+04 0.50E+03
+ Input thickness Vp Vs rho Qa Qb for layer           4
+   4   2.00   4.76   2.91   2.29 0.10E+04 0.50E+03
+ Input thickness Vp Vs rho Qa Qb for layer           5
+   5   0.00   5.48   3.42   2.52 0.10E+04 0.50E+03
+source-station    2.754
+Input sigma NFFT dt lp nb smooth_factor wc1 wc2
+Input pmin pmax dk kc
+Input number of distance ranges to compute
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+  **** WARNING **** dk =   0.300000012      larger than max    2.55830828E-02
+  dk =  0.12750  kmax =  5.45  pmax =0.5181     N =    70826
+  start F-K computation, iw-range:           2           3         358         512
+  10% done
+  20% done
+  30% done
+  40% done
+  50% done
+  60% done
+  70% done
+  80% done
+  90% done
+    70166           100% done, writing files ... 
+model_2.754/1.516.grn.0
+model_2.754/1.516.grn.5
+model_2.754/3.286.grn.0
+model_2.754/3.286.grn.5
+model_2.754/7.392.grn.0
+model_2.754/7.392.grn.5
+model_2.754/1.312.grn.0
+model_2.754/1.312.grn.5
+model_2.754/1.857.grn.0
+model_2.754/1.857.grn.5
+model_2.754/2.265.grn.0
+model_2.754/2.265.grn.5
+model_2.754/4.219.grn.0
+model_2.754/4.219.grn.5
+model_2.754/1.317.grn.0
+model_2.754/1.317.grn.5
+model_2.754/0.666.grn.0
+model_2.754/0.666.grn.5
+model_2.754/6.025.grn.0
+model_2.754/6.025.grn.5
+model_2.754/1.548.grn.0
+model_2.754/1.548.grn.5
+model_2.754/4.105.grn.0
+model_2.754/4.105.grn.5
+model_2.754/2.054.grn.0
+model_2.754/2.054.grn.5
+model_2.754/4.082.grn.0
+model_2.754/4.082.grn.5
+model_2.754/5.121.grn.0
+model_2.754/5.121.grn.5

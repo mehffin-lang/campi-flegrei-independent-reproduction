@@ -1,0 +1,15 @@
+{
+  "method": "Guard zero-correlation diagnostic logging in the generic HypoDD solver.",
+  "command": [
+    "make",
+    "FC=gfortran",
+    "LDFLAGS=",
+    "FFLAGS=-O2 -std=legacy -fcheck=bounds -I../../include"
+  ],
+  "returncode": 0,
+  "original_source_sha256": "e03738bad17d12674875a75d7102c37f0ae983b672cc10bef2c8c3f7c73f3c37",
+  "patched_main_sha256": "d72689f3b5422ef7684e48ceea8533d9f1cefc96aa10107df8dff67e7c6a26ea",
+  "prior_binary_sha256": "b04ce621f614902aadd40462b604d5f5d869f6a6c3ea35e1b48f1a501993617e",
+  "binary_sha256": "4ea7f43b374173290f1780b37fc673fe0c31f2ccff28f2df63c0a311862009f1",
+  "changes": "Only guards for missing observations in diagnostic averages/station-index reporting. Existing capacities, matmult2 dummy extent correction, bounds checks, equations and controls unchanged."
+}

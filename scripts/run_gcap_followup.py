@@ -9,17 +9,19 @@ import os,json,subprocess,re,hashlib,sys
 import numpy as np,pandas as pd
 from obspy import read,read_inventory,UTCDateTime,Trace
 import run_velest as v
-ROOT=Path(__file__).resolve().parents[1];D=ROOT/'data/mechanism_followup';W=ROOT/'tmp/mechanism_followup/gcap';FK=ROOT/'build/method_followup/fk';CAP=ROOT/'build/method_followup/gcap/cap_followup'
+ROOT=Path(__file__).resolve().parents[1];D=ROOT/os.environ.get('CF_MECH_OUT','data/mechanism_followup');WROOT=ROOT/os.environ.get('CF_MECH_WORK','tmp/mechanism_followup');W=WROOT/'gcap';FK=ROOT/'build/method_followup/fk';CAP=ROOT/'build/method_followup/gcap/cap_followup'
 
 def main():
     global W
     high='--high-band' in sys.argv;band=(1.,5.) if high else (.2,2.)
     G=D/('gcap_1_5' if high else 'gcap')
-    W=ROOT/'tmp/mechanism_followup'/G.name
-    W.mkdir(exist_ok=True);G.mkdir(exist_ok=True)
-    f=pd.read_csv(D/'review_decisions.csv');events=pd.read_csv(ROOT/'data/coverage_extension/calibration/merged4/uncertainty/relocated_events.csv').set_index('event_index')
+    W=WROOT/G.name
+    W.mkdir(parents=True,exist_ok=True);G.mkdir(exist_ok=True)
+    location_file=ROOT/os.environ.get('CF_MECH_LOCATIONS','data/coverage_extension/calibration/merged4/uncertainty/relocated_events.csv')
+    model_file=ROOT/os.environ.get('CF_MECH_MODEL','data/coverage_extension/calibration/merged4/independent_calibrated.mod')
+    f=pd.read_csv(D/'review_decisions.csv');events=pd.read_csv(location_file).set_index('event_index')
     inv=read_inventory(str(ROOT/'inputs/continuation/IV_responses.xml'))+read_inventory(str(ROOT/'inputs/continuation/2I_responses.xml'))
-    model=v.model_table(ROOT/'data/coverage_extension/calibration/merged4/independent_calibrated.mod')
+    model=v.model_table(model_file)
     thick=np.r_[np.diff(model.layer_top_km),0.]
     # FK's vacuum free surface is at the own model's -0.5-km top. Source
     # depths move by +0.5 km; all receivers use this flat surface approximation.
@@ -89,4 +91,5 @@ def main():
     pd.DataFrame(solutions).to_csv(G/'solutions.csv',index=False);pd.DataFrame(fits).to_csv(G/'fit_index.csv',index=False);np.savez_compressed(G/'fit_waveforms.npz',**saved)
     (G/'execution.json').write_text(json.dumps(records,indent=2)+'\n')
     (G/'method.json').write_text(json.dumps(dict(classification='Independent exploratory waveform inversion using generic gCAP/FK; no synthetic observations',source_model='data/coverage_extension/calibration/merged4/independent_calibrated.mod',model=lines,source_depth='Own bsl depth +0.5 km; reference free surface at -0.5 km bsl',receiver_depth='Flat model surface; topographic receiver correction not implemented',rho='FK documented fallback rho=0.77+0.32 Vp in g/cm3',Q='FK defaults Qs=500 Qp=1000; not measured here',filter=f'Both data and Green functions prefiltered {band[0]}–{band[1]} Hz, 4-pole zero-phase, then 20 Hz. Different ordering from stock gCAP segment filtering; exploratory assumption.',windows='Own P-.3 to P+1.2; own S-.3 to S+4.7 s; maximum shifts .5 and 1 s; Pnl weight 2 and distance powers 1/.5; no automatic trace rejection',source='Fixed own provisional location/depth, DC only, 10-degree strike/dip/rake grid, Mw step .1, 0.2-s trapezoidal duration. Settings are generic/disclosed, not recovered Tan event controls.',rotation='Metadata-verified ZNE -> upward Z, outward radial R, counterclockwise T; cm/s; horizontal energy check passed for saved records',validation='Finite Green functions and fit arrays; counts; rotation energy; eigensolver consistency. No model/path or source-depth sensitivity acceptance. Raw variance reduction is not a validation of source mechanism.',software='Official FK 3.3 and generic Zhu gCAP, with disclosed cap_followup eigensolver/external-filter port; archive/extraction manifests in inputs/method_followup/'),indent=2)+'\n')
+    method=json.loads((G/'method.json').read_text());method.update(source_model=str(model_file.relative_to(ROOT)),source_locations=str(location_file.relative_to(ROOT)),source_hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [model_file,location_file,D/'review_decisions.csv']});(G/'method.json').write_text(json.dumps(method,indent=2)+'\n')
 if __name__=='__main__':main()

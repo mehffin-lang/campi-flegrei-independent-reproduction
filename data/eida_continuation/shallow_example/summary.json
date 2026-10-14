@@ -1,0 +1,210 @@
+{
+  "method": "Observed S15D analogue selected from own provisional shallow locations.\n\nThe event is not identified as a verified VT source or the published example.\nThe explicit 2 km CAAM proximity screen substitutes neither for the unpublished\nwest-Accademia polygon nor for absolute-depth validation. No reference event\ntime, location or figure value is read.\n",
+  "selection": "Depth 0\u20130.6 km and latitude <40.83 N in own relocated trial; <=2 km from CAAM; retained own P at both stations; four complete continuous components; CAAM Z power SNR >=5 dB. Highest CAAM SNR among eligible events. These display choices are not recovered Tan settings.",
+  "attempts": [
+    {
+      "event_index": 15,
+      "time": "2022-01-21T03:55:43.910000Z",
+      "latitude": 40.822338,
+      "longitude": 14.145538,
+      "depth_km": 0.381,
+      "distance_to_CAAM_km": 0.38775046178707917,
+      "eligible": false,
+      "reason": "ValueError('Independent retained P missing at CAAM or COLB')"
+    },
+    {
+      "event_index": 16,
+      "time": "2022-01-21T03:55:54.680000Z",
+      "latitude": 40.824371,
+      "longitude": 14.142015,
+      "depth_km": 0.571,
+      "distance_to_CAAM_km": 0.47819193922846864,
+      "eligible": false,
+      "reason": "ValueError('Independent retained P missing at CAAM or COLB')"
+    },
+    {
+      "event_index": 17,
+      "time": "2022-01-21T03:55:59.890000Z",
+      "latitude": 40.824471,
+      "longitude": 14.144575,
+      "depth_km": 0.516,
+      "distance_to_CAAM_km": 0.5336785091169522,
+      "eligible": false,
+      "reason": "ValueError('Independent retained P missing at CAAM or COLB')"
+    },
+    {
+      "event_index": 412,
+      "time": "2024-05-20T18:17:50.600000Z",
+      "latitude": 40.806164,
+      "longitude": 14.131894,
+      "depth_km": 0.031,
+      "distance_to_CAAM_km": 1.7655452322128875,
+      "eligible": false,
+      "reason": "ValueError('Independent retained P missing at CAAM or COLB')"
+    },
+    {
+      "event_index": 503,
+      "time": "2024-05-20T18:26:42.620000Z",
+      "latitude": 40.825413,
+      "longitude": 14.143008,
+      "depth_km": 0.222,
+      "distance_to_CAAM_km": 0.5993828949275216,
+      "eligible": false,
+      "reason": "ValueError('Independent retained P missing at CAAM or COLB')"
+    },
+    {
+      "event_index": 601,
+      "time": "2024-05-20T18:40:43.580000Z",
+      "latitude": 40.829395,
+      "longitude": 14.139381,
+      "depth_km": 0.094,
+      "distance_to_CAAM_km": 1.0602645222031564,
+      "eligible": false,
+      "reason": "ValueError('Independent retained P missing at CAAM or COLB')"
+    },
+    {
+      "event_index": 1279,
+      "time": "2024-05-20T20:33:05.380000Z",
+      "latitude": 40.819096,
+      "longitude": 14.107293,
+      "depth_km": 0.461,
+      "distance_to_CAAM_km": 2.9341356262954426,
+      "eligible": false,
+      "reason": "ValueError('Beyond the explicit 2 km CAAM proximity screen')"
+    },
+    {
+      "event_index": 1370,
+      "time": "2024-05-20T20:50:31.340000Z",
+      "latitude": 40.812302,
+      "longitude": 14.171097,
+      "depth_km": 0.358,
+      "distance_to_CAAM_km": 2.5979406103095544,
+      "eligible": false,
+      "reason": "ValueError('Beyond the explicit 2 km CAAM proximity screen')"
+    },
+    {
+      "event_index": 1760,
+      "time": "2024-05-20T22:55:54.500000Z",
+      "latitude": 40.81834,
+      "longitude": 14.143435,
+      "depth_km": 0.296,
+      "distance_to_CAAM_km": 0.22442922753375735,
+      "eligible": false,
+      "reason": "ValueError('Independent retained P missing at CAAM or COLB')"
+    },
+    {
+      "event_index": 1887,
+      "time": "2024-05-20T23:31:52.640000Z",
+      "latitude": 40.818241,
+      "longitude": 14.139899,
+      "depth_km": 0.497,
+      "distance_to_CAAM_km": 0.2718991214558422,
+      "eligible": false,
+      "reason": "ValueError('Independent retained P missing at CAAM or COLB')"
+    },
+    {
+      "event_index": 1912,
+      "time": "2024-05-20T23:43:06.500000Z",
+      "latitude": 40.820381,
+      "longitude": 14.139832,
+      "depth_km": 0.309,
+      "distance_to_CAAM_km": 0.19029716870994665,
+      "eligible": false,
+      "reason": "ValueError('Independent retained P missing at CAAM or COLB')"
+    },
+    {
+      "event_index": 1920,
+      "time": "2024-05-20T23:45:18.100000Z",
+      "latitude": 40.818527,
+      "longitude": 14.123704,
+      "depth_km": 0.215,
+      "distance_to_CAAM_km": 1.557063354377385,
+      "eligible": false,
+      "reason": "ValueError('Independent retained P missing at CAAM or COLB')"
+    },
+    {
+      "event_index": 1929,
+      "time": "2024-05-20T23:55:06.160000Z",
+      "latitude": 40.820507,
+      "longitude": 14.142138,
+      "depth_km": 0.54,
+      "distance_to_CAAM_km": 0.04965523989027843,
+      "eligible": false,
+      "reason": "ValueError('Independent retained P missing at CAAM or COLB')"
+    },
+    {
+      "event_index": 2314,
+      "time": "2025-03-18T09:36:24.870000Z",
+      "latitude": 40.827633,
+      "longitude": 14.139634,
+      "depth_km": 0.591,
+      "distance_to_CAAM_km": 0.8647701547617611,
+      "sources": [
+        {
+          "file": "inputs/continuation/waveforms/IV_CAAM_20250318T060000_20250318T120000.mseed",
+          "sha256": "b8e39a189c1623306b1e44e9300313ab8b9491d6147da79800d241a9225dcdcc"
+        },
+        {
+          "file": "inputs/continuation/waveforms/IV_COLB_20250318T060000_20250318T120000.mseed",
+          "sha256": "1d8a8093caa4da38370bc0aab70898e6862a5315079f7203b8c0eacc64a5084a"
+        }
+      ],
+      "power_SNR_dB": 12.805718736424236,
+      "p_alignment": "2025-03-18T09:36:25.410000Z",
+      "eligible": true
+    },
+    {
+      "event_index": 2486,
+      "time": "2025-03-19T07:26:33.860000Z",
+      "latitude": 40.776558,
+      "longitude": 14.119351,
+      "depth_km": 0.2,
+      "distance_to_CAAM_km": 5.197317970547361,
+      "eligible": false,
+      "reason": "ValueError('Beyond the explicit 2 km CAAM proximity screen')"
+    },
+    {
+      "event_index": 1350,
+      "time": "2024-05-20T20:47:42.640000Z",
+      "latitude": 40.802616,
+      "longitude": 14.120436,
+      "depth_km": 0.176,
+      "distance_to_CAAM_km": 2.660868199057515,
+      "eligible": false,
+      "reason": "ValueError('Beyond the explicit 2 km CAAM proximity screen')"
+    }
+  ],
+  "available": true,
+  "accepted_source_classification": false,
+  "inputs": {
+    "data/eida_continuation/calibration/merged4/uncertainty/relocated_events.csv": "db9a5694fc31b2d60a955a53f4434fbe6a943dde7221aa5ca4c0a95db0b49f19",
+    "data/eida_continuation/calibration/merged4/tomodd/retained_picks.csv": "fffc162fee71b58ed569c2f10b7180a1498ed1fde62cecc64acf9223eaadc561",
+    "data/eida_continuation/processed_coverage.csv": "dacbe628513e96c34611568ebae55c67393ecc693a8917abd11178f4a2c95135",
+    "inputs/continuation/IV_responses.xml": "07545b22de0f7b9030f2064467b52ce428365b213c136477b05a5768c4dd62a3",
+    "scripts/eida_shallow_example.py": "420673ae8da8dd7bda726c6656642985008b4b668e5dc46601089e40214da45c"
+  },
+  "selected": {
+    "event_index": 2314,
+    "time": "2025-03-18T09:36:24.870000Z",
+    "latitude": 40.827633,
+    "longitude": 14.139634,
+    "depth_km": 0.591,
+    "distance_to_CAAM_km": 0.8647701547617611,
+    "sources": [
+      {
+        "file": "inputs/continuation/waveforms/IV_CAAM_20250318T060000_20250318T120000.mseed",
+        "sha256": "b8e39a189c1623306b1e44e9300313ab8b9491d6147da79800d241a9225dcdcc"
+      },
+      {
+        "file": "inputs/continuation/waveforms/IV_COLB_20250318T060000_20250318T120000.mseed",
+        "sha256": "1d8a8093caa4da38370bc0aab70898e6862a5315079f7203b8c0eacc64a5084a"
+      }
+    ],
+    "power_SNR_dB": 12.805718736424236,
+    "p_alignment": "2025-03-18T09:36:25.410000Z",
+    "eligible": true
+  },
+  "normalization_CAAM_velocity_m_s": 3.385827452112784e-05,
+  "normalization": "One maximum across CAAM Z/E velocity, applied also to COLB; relative amplitudes retained.",
+  "spectral_settings": "Hann is not assumed: scipy.signal.spectrogram default Tukey(0.25), 128 samples, 112 overlap, density scaling; 100 Hz; display 1\u201320 Hz and -80\u20130 dB normalized velocity squared per Hz, explicit alternative because published normalization unspecified."
+}

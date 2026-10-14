@@ -1,0 +1,742 @@
+[
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_849.log",
+    "returncode": 0,
+    "started_utc": "2026-10-13T23:34:39.004775+00:00",
+    "ended_utc": "2026-10-13T23:35:57.412240+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_857.log",
+    "returncode": 0,
+    "started_utc": "2026-10-13T23:36:12.475766+00:00",
+    "ended_utc": "2026-10-13T23:37:32.594732+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_866.log",
+    "returncode": 0,
+    "started_utc": "2026-10-13T23:38:32.845809+00:00",
+    "ended_utc": "2026-10-13T23:39:55.532886+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_874.log",
+    "returncode": 0,
+    "started_utc": "2026-10-13T23:40:25.656378+00:00",
+    "ended_utc": "2026-10-13T23:41:44.473366+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_883.log",
+    "returncode": 0,
+    "started_utc": "2026-10-13T23:42:59.783220+00:00",
+    "ended_utc": "2026-10-13T23:44:15.184326+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_893.log",
+    "returncode": 0,
+    "started_utc": "2026-10-13T23:45:30.490625+00:00",
+    "ended_utc": "2026-10-13T23:46:54.214067+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_901.log",
+    "returncode": 0,
+    "started_utc": "2026-10-13T23:48:09.518444+00:00",
+    "ended_utc": "2026-10-13T23:49:32.591195+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_909.log",
+    "returncode": 0,
+    "started_utc": "2026-10-13T23:51:48.152940+00:00",
+    "ended_utc": "2026-10-13T23:53:12.136638+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_919.log",
+    "returncode": 0,
+    "started_utc": "2026-10-13T23:54:57.573873+00:00",
+    "ended_utc": "2026-10-13T23:56:25.478999+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_927.log",
+    "returncode": 0,
+    "started_utc": "2026-10-13T23:58:10.910879+00:00",
+    "ended_utc": "2026-10-13T23:59:37.249832+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_935.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:01:07.635184+00:00",
+    "ended_utc": "2026-10-14T00:02:36.423321+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_944.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:03:51.733842+00:00",
+    "ended_utc": "2026-10-14T00:05:20.968995+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_955.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:05:36.032347+00:00",
+    "ended_utc": "2026-10-14T00:07:09.147878+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_966.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:07:24.211289+00:00",
+    "ended_utc": "2026-10-14T00:08:54.583868+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_977.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:09:09.646708+00:00",
+    "ended_utc": "2026-10-14T00:10:44.443737+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_988.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:10:59.505316+00:00",
+    "ended_utc": "2026-10-14T00:12:31.763772+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_996.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:12:46.826716+00:00",
+    "ended_utc": "2026-10-14T00:14:20.650322+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_1005.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:14:50.776477+00:00",
+    "ended_utc": "2026-10-14T00:16:16.248897+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_1013.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:16:46.374419+00:00",
+    "ended_utc": "2026-10-14T00:18:19.865629+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_1022.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:18:34.928763+00:00",
+    "ended_utc": "2026-10-14T00:20:10.679986+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_1031.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:20:55.867316+00:00",
+    "ended_utc": "2026-10-14T00:22:45.484769+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_1040.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:23:15.608432+00:00",
+    "ended_utc": "2026-10-14T00:24:53.157812+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_1054.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:25:08.219067+00:00",
+    "ended_utc": "2026-10-14T00:26:46.447555+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_1067.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:27:01.511735+00:00",
+    "ended_utc": "2026-10-14T00:28:46.357768+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_1076.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:29:01.420828+00:00",
+    "ended_utc": "2026-10-14T00:30:43.093934+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_1089.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:30:58.156195+00:00",
+    "ended_utc": "2026-10-14T00:32:47.028237+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py",
+      "--freeze",
+      "--pick-only",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/picking_1117.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:33:02.089713+00:00",
+    "ended_utc": "2026-10-14T00:35:08.492618+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_eida_followup.py"
+    ],
+    "log": "tmp/eida_continuation/association.log",
+    "returncode": 0,
+    "started_utc": "2026-10-14T00:35:08.494212+00:00",
+    "ended_utc": "2026-10-14T01:22:26.429861+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/calibrate_eida_followup.py"
+    ],
+    "log": "tmp/eida_continuation/calibration.log",
+    "returncode": 1,
+    "started_utc": "2026-10-14T01:22:26.431166+00:00",
+    "ended_utc": "2026-10-14T01:34:24.674860+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/calibrate_eida_followup.py"
+    ],
+    "log": "tmp/eida_continuation/regularized_calibration.log",
+    "returncode": 1,
+    "state": "finished",
+    "started_utc": "2026-10-14T01:36:29.845088+00:00",
+    "reason": "Explicit uniform velocity damping after archived negative-bulk-modulus trial; unchanged observations and gates.",
+    "ended_utc": "2026-10-14T02:03:19.033026+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/run_grid_tomodd.py",
+      "--reuse-measurements"
+    ],
+    "log": "tmp/eida_continuation/continued_run_grid_tomodd.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T02:05:04.467241+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation"
+    },
+    "ended_utc": "2026-10-14T02:06:58.656478+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/grid_uncertainty.py"
+    ],
+    "log": "tmp/eida_continuation/continued_grid_uncertainty.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T02:06:58.658264+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation"
+    },
+    "ended_utc": "2026-10-14T02:10:03.610138+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/downstream_checks.py",
+      "--dataset",
+      "grid",
+      "--workers",
+      "4"
+    ],
+    "log": "tmp/eida_continuation/continued_downstream_checks.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T02:10:03.612016+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation"
+    },
+    "ended_utc": "2026-10-14T02:59:23.332159+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/magnitude_statistics.py",
+      "--grid"
+    ],
+    "log": "tmp/eida_continuation/continued_magnitude_statistics.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T02:59:23.334122+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation"
+    },
+    "ended_utc": "2026-10-14T02:59:24.338145+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/grid_panel_data.py"
+    ],
+    "log": "tmp/eida_continuation/continued_grid_panel_data.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T02:59:24.339993+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation"
+    },
+    "ended_utc": "2026-10-14T03:00:00.886326+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/grid_location_checks.py"
+    ],
+    "log": "tmp/eida_continuation/continued_grid_location_checks.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T03:00:00.888476+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation"
+    },
+    "ended_utc": "2026-10-14T03:00:20.147520+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/validate_eida_holdout.py"
+    ],
+    "log": "tmp/eida_continuation/continued_validate_eida_holdout.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T03:00:20.149548+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation"
+    },
+    "ended_utc": "2026-10-14T03:00:21.448592+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/eida_shallow_example.py"
+    ],
+    "log": "tmp/eida_continuation/continued_eida_shallow_example.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T03:00:21.450672+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation"
+    },
+    "ended_utc": "2026-10-14T03:00:24.994969+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/grid_focal_attempt.py"
+    ],
+    "log": "tmp/eida_continuation/continued_grid_focal_attempt.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T03:00:24.996941+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation"
+    },
+    "ended_utc": "2026-10-14T03:00:37.570828+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/link_eida_candidates.py"
+    ],
+    "log": "tmp/eida_continuation/continued_link_eida_candidates.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T03:00:37.572910+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation"
+    },
+    "ended_utc": "2026-10-14T03:00:41.379756+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/mechanism_measurements.py"
+    ],
+    "log": "tmp/eida_continuation/continued_mechanism_measurements.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T03:00:41.381857+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation",
+      "CF_MECH_OUT": "data/mechanism_eida",
+      "CF_MECH_OBSERVATIONS": "data/eida_continuation",
+      "CF_MECH_WORK": "tmp/mechanism_eida",
+      "CF_MECH_DECISIONS": "config/mechanism_eida_decisions.json",
+      "CF_MECH_LOCATIONS": "data/mechanism_eida/candidate_locations.csv",
+      "CF_MECH_MODEL": "data/eida_continuation/calibration/merged4/independent_calibrated.mod"
+    },
+    "ended_utc": "2026-10-14T03:03:11.691210+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/mechanism_unpicked.py"
+    ],
+    "log": "tmp/eida_continuation/continued_mechanism_unpicked.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T03:03:11.693461+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation",
+      "CF_MECH_OUT": "data/mechanism_eida",
+      "CF_MECH_OBSERVATIONS": "data/eida_continuation",
+      "CF_MECH_WORK": "tmp/mechanism_eida",
+      "CF_MECH_DECISIONS": "config/mechanism_eida_decisions.json",
+      "CF_MECH_LOCATIONS": "data/mechanism_eida/candidate_locations.csv",
+      "CF_MECH_MODEL": "data/eida_continuation/calibration/merged4/independent_calibrated.mod"
+    },
+    "ended_utc": "2026-10-14T03:03:46.277052+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/prepare_eida_mechanism_review.py"
+    ],
+    "log": "tmp/eida_continuation/continued_prepare_eida_mechanism_review.py.log",
+    "returncode": 0,
+    "state": "finished",
+    "started_utc": "2026-10-14T03:03:46.279384+00:00",
+    "environment": {
+      "CF_GRID_BASE": "data/eida_continuation/calibration",
+      "CF_GRID_WORK": "tmp/eida_continuation",
+      "CF_OBSERVATIONS": "data/eida_continuation",
+      "CF_MECH_OUT": "data/mechanism_eida",
+      "CF_MECH_OBSERVATIONS": "data/eida_continuation",
+      "CF_MECH_WORK": "tmp/mechanism_eida",
+      "CF_MECH_DECISIONS": "config/mechanism_eida_decisions.json",
+      "CF_MECH_LOCATIONS": "data/mechanism_eida/candidate_locations.csv",
+      "CF_MECH_MODEL": "data/eida_continuation/calibration/merged4/independent_calibrated.mod"
+    },
+    "ended_utc": "2026-10-14T03:03:47.771596+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/run_reviewed_skhash.py"
+    ],
+    "log": "tmp/eida_continuation/run_reviewed_skhash.py.log",
+    "state": "finished",
+    "started_utc": "2026-10-14T03:17:54.617479+00:00",
+    "environment": {
+      "CF_MECH_OUT": "data/mechanism_eida",
+      "CF_MECH_OBSERVATIONS": "data/eida_continuation",
+      "CF_MECH_WORK": "tmp/mechanism_eida",
+      "CF_MECH_DECISIONS": "config/mechanism_eida_decisions.json",
+      "CF_MECH_LOCATIONS": "data/mechanism_eida/candidate_locations.csv",
+      "CF_MECH_MODEL": "data/eida_continuation/calibration/merged4/independent_calibrated.mod"
+    },
+    "returncode": 0,
+    "ended_utc": "2026-10-14T03:18:05.072561+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/run_gcap_followup.py"
+    ],
+    "log": "tmp/eida_continuation/run_gcap_followup.py.log",
+    "state": "finished",
+    "started_utc": "2026-10-14T03:18:05.075046+00:00",
+    "environment": {
+      "CF_MECH_OUT": "data/mechanism_eida",
+      "CF_MECH_OBSERVATIONS": "data/eida_continuation",
+      "CF_MECH_WORK": "tmp/mechanism_eida",
+      "CF_MECH_DECISIONS": "config/mechanism_eida_decisions.json",
+      "CF_MECH_LOCATIONS": "data/mechanism_eida/candidate_locations.csv",
+      "CF_MECH_MODEL": "data/eida_continuation/calibration/merged4/independent_calibrated.mod"
+    },
+    "returncode": 0,
+    "ended_utc": "2026-10-14T03:20:29.385448+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/run_gcap_followup.py",
+      "--high-band"
+    ],
+    "log": "tmp/eida_continuation/run_gcap_followup.py_high.log",
+    "state": "finished",
+    "started_utc": "2026-10-14T03:20:29.387880+00:00",
+    "environment": {
+      "CF_MECH_OUT": "data/mechanism_eida",
+      "CF_MECH_OBSERVATIONS": "data/eida_continuation",
+      "CF_MECH_WORK": "tmp/mechanism_eida",
+      "CF_MECH_DECISIONS": "config/mechanism_eida_decisions.json",
+      "CF_MECH_LOCATIONS": "data/mechanism_eida/candidate_locations.csv",
+      "CF_MECH_MODEL": "data/eida_continuation/calibration/merged4/independent_calibrated.mod"
+    },
+    "returncode": 0,
+    "ended_utc": "2026-10-14T03:22:53.978625+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/validate_mechanism_followup.py"
+    ],
+    "log": "tmp/eida_continuation/validate_mechanism_followup.py.log",
+    "state": "finished",
+    "started_utc": "2026-10-14T03:22:53.981176+00:00",
+    "environment": {
+      "CF_MECH_OUT": "data/mechanism_eida",
+      "CF_MECH_OBSERVATIONS": "data/eida_continuation",
+      "CF_MECH_WORK": "tmp/mechanism_eida",
+      "CF_MECH_DECISIONS": "config/mechanism_eida_decisions.json",
+      "CF_MECH_LOCATIONS": "data/mechanism_eida/candidate_locations.csv",
+      "CF_MECH_MODEL": "data/eida_continuation/calibration/merged4/independent_calibrated.mod"
+    },
+    "returncode": 0,
+    "ended_utc": "2026-10-14T03:22:57.961616+00:00"
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "scripts/mechanism_measurements.py"
+    ],
+    "environment": {
+      "CF_MECH_OUT": "data/mechanism_eida",
+      "CF_MECH_OBSERVATIONS": "data/eida_continuation",
+      "CF_MECH_LOCATIONS": "data/mechanism_eida/candidate_locations.csv",
+      "CF_MECH_ARRIVALS": "config/mechanism_eida_arrivals.csv"
+    },
+    "returncode": 0,
+    "state": "finished",
+    "log": "tmp/mechanism_eida/additional_measurements.log",
+    "recorded_utc": "2026-10-14T03:24:07.933040+00:00",
+    "note": "Executed after eight additional downstream AI onset marks and before reviewed mechanism inversions. This appended receipt records an observed completed shell run; append order is not execution order.",
+    "outputs": {
+      "data/mechanism_eida/measurements.csv": "9cef72df79797eb7a2e667d097622735fd328b7c2d5d82d07315e639f969154d",
+      "data/mechanism_eida/new_visual_review.json": "04e7cea837c00592583765cf1fc58551f276a188f4e00eb8e3bfe9abd3871d12"
+    }
+  }
+]

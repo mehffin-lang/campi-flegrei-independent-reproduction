@@ -6,7 +6,7 @@ is an assumption. Its events remain unreviewed. Outputs are exploratory, even
 when they pass Tan's subsequent numerical catalog filters.
 """
 from pathlib import Path
-import hashlib, json, re, subprocess, shutil
+import hashlib, json, re, subprocess, shutil, os, time
 import numpy as np
 import pandas as pd
 from obspy import UTCDateTime
@@ -50,7 +50,9 @@ def run(name,model,stations,cnv,ids,bits=64,corrections=False,fixed=False,iterat
     for f,text in [('input.mod',model),('input.sta',stations),('input.cnv',cnv),
                    ('velest.cmn',v.controls(len(ids),corrections,fixed,iterations))]:
         (work/f).write_text(text)
-    r=subprocess.run([str(ROOT/f'build/velest{bits}')],cwd=work,capture_output=True,text=True,timeout=300)
+    binary_hash=sha(ROOT/f'build/velest{bits}')
+    started=time.monotonic();timeout=int(os.environ.get('CF_VELEST_TIMEOUT','300'))
+    r=subprocess.run([str(ROOT/f'build/velest{bits}')],cwd=work,capture_output=True,text=True,timeout=timeout)
     (work/'console.log').write_text(r.stdout+r.stderr)
     if r.returncode or not (work/'output.cnv').exists():
         raise RuntimeError(f'{name}: VELEST failed; inspect {work.relative_to(ROOT)}/console.log')
@@ -69,7 +71,7 @@ def run(name,model,stations,cnv,ids,bits=64,corrections=False,fixed=False,iterat
                 residual_rms_s=float(np.sqrt(np.mean(residual**2))),
                 event_rms_s=float(np.sqrt(np.mean(located.rms_s**2))),
                 depth_min_km=float(located.depth_km.min()),depth_max_km=float(located.depth_km.max()),
-                workdir=str(work.relative_to(ROOT)))
+                workdir=str(work.relative_to(ROOT)),wall_seconds=time.monotonic()-started,timeout_seconds=timeout,binary_sha256=binary_hash)
     if fixed:
         assert np.array_equal(v.model_table(work/'input.mod').to_numpy(),fitted.to_numpy()), 'Fixed model changed'
         before=normalize_stations(stations);after=normalize_stations((work/'output.sta').read_text())

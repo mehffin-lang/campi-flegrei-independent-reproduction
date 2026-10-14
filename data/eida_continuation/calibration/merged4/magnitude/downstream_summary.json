@@ -1,0 +1,25 @@
+{
+  "events_evaluated": 1050,
+  "causality_excluded_events": 0,
+  "calibration_eligible": 768,
+  "amplitude_measurements": 56689,
+  "snr_passing": 17112,
+  "event_pairs_checked": 550725,
+  "pairs_with_two_snr_stations": 361096,
+  "magnitude_edges": 167234,
+  "calibrated_magnitudes": 868,
+  "routine_matches": 374,
+  "ambiguous_reference_claims_rejected": 55,
+  "measurement_errors": [],
+  "focal_mechanisms": 0,
+  "relocated_events": 1050,
+  "remaining": "Own two-round TomoDD trial locations, with unresolved calibration path sensitivity. Routine Md anchors only after independent detection/location. Theoretical P windows use own calibrated 1D fit without station delay; amplitudes are response-corrected velocity maxima. Unit regularization and unshifted normalized correlation squared are disclosed assumptions. Formal errors exclude location, calibration and coverage bias.",
+  "sources": {
+    "data/eida_continuation/picks.csv": "db6f60b9ba762642348d89fa2b7dda5bb843cd7c692985b66820180183570903",
+    "data/eida_continuation/associations.csv": "feb29d6ad8d6e8db065d9464262d27dfff46d17206522124d35813761e1c55f8",
+    "data/eida_continuation/stations.csv": "83f3bd10a60529750a7ad3c9e7baa155cae39d33d1372554ee0cab0eb72960a7",
+    "data/eida_continuation/calibration/merged4/uncertainty/relocated_events.csv": "db9a5694fc31b2d60a955a53f4434fbe6a943dde7221aa5ca4c0a95db0b49f19",
+    "data/eida_continuation/calibration/merged4/independent_calibrated.mod": "7f45c5b50bfe3a1e1c51b3f70a7148526cc60d945cc00e5ec4c77a9cfb94cfff",
+    "data/continuation/routine_catalog.csv": "f4f4b2d349589db056defecfc9b3a959c807d96b3d46830fc656b157f0947fc1"
+  }
+}

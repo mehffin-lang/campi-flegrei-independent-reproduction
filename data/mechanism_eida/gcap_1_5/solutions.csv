@@ -1,0 +1,13 @@
+event_id,strike,dip,rake,Mw_exploratory,variance_reduction_percent,stations,latitude,longitude,depth_km,accepted,status
+212,140.0,47.0,-133.0,1.51,6.2,5,40.798096,14.1163,3.93,False,"Provisional fixed-source DC waveform fit; unvalidated model, windows, density and Q; no publication-quality selection"
+312,42.0,40.0,-31.0,1.89,6.3,5,40.828289,14.090479,3.972,False,"Provisional fixed-source DC waveform fit; unvalidated model, windows, density and Q; no publication-quality selection"
+315,161.0,71.0,-118.0,1.8,7.6,4,40.827492,14.090491,4.049,False,"Provisional fixed-source DC waveform fit; unvalidated model, windows, density and Q; no publication-quality selection"
+359,62.0,9.0,-42.0,1.69,2.3,8,40.797817,14.117245,4.335,False,"Provisional fixed-source DC waveform fit; unvalidated model, windows, density and Q; no publication-quality selection"
+373,38.0,15.0,-16.0,1.7,5.2,5,40.803802,14.107624,3.636,False,"Provisional fixed-source DC waveform fit; unvalidated model, windows, density and Q; no publication-quality selection"
+649,234.0,28.0,-122.0,2.15,3.2,10,40.806076,14.106861,3.787,False,"Provisional fixed-source DC waveform fit; unvalidated model, windows, density and Q; no publication-quality selection"
+815,250.0,73.0,-130.0,1.61,2.3,6,40.839329,14.124897,2.568,False,"Provisional fixed-source DC waveform fit; unvalidated model, windows, density and Q; no publication-quality selection"
+100331,9.0,69.0,-139.0,3.21,5.9,12,40.82436,14.139455,2.187,False,"Provisional fixed-source DC waveform fit; unvalidated model, windows, density and Q; no publication-quality selection"
+100946,208.0,61.0,24.0,3.23,9.1,13,40.828056,14.137944,2.734,False,"Provisional fixed-source DC waveform fit; unvalidated model, windows, density and Q; no publication-quality selection"
+101038,50.0,63.0,-163.0,2.76,1.4,15,40.822414,14.126809,2.254,False,"Provisional fixed-source DC waveform fit; unvalidated model, windows, density and Q; no publication-quality selection"
+101400,319.0,52.0,151.0,2.76,1.9,16,40.820271,14.12332,2.559,False,"Provisional fixed-source DC waveform fit; unvalidated model, windows, density and Q; no publication-quality selection"
+101760,102.0,9.0,-163.0,1.62,3.7,8,40.81834,14.143435,0.296,False,"Provisional fixed-source DC waveform fit; unvalidated model, windows, density and Q; no publication-quality selection"

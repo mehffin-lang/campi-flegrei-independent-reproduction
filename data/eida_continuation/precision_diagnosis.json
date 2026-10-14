@@ -1,0 +1,69 @@
+{
+  "sources": {
+    "data/eida_continuation/calibration/merged4/Pozzuoli_Solfatara_prelocation_locations.csv": "9689f13d7eedb2dd3bbf5ac5b114d6f29d17e9d119f86443b664f2192beac60c",
+    "data/eida_continuation/calibration/merged4/precision32_prelocation_locations.csv": "1ce69a894bf40e92d0f1776af89e72f0533bf78b6749797485f49f434e1159f0",
+    "data/eida_continuation/calibration/merged4/Pozzuoli_Solfatara_round1_locations.csv": "ce1a5796ff0cad54fa342174a90455e411cf153d6fa8beed8ad9023decc6f472",
+    "data/eida_continuation/calibration/merged4/precision32_round1_locations.csv": "806dd88bace8ac2cd001ca4ea10bd5fb84b11087ca4f21e44bb409ba4d557471",
+    "data/eida_continuation/calibration/merged4/Pozzuoli_Solfatara_round2_locations.csv": "2c906d1a4c9d0ee5651f7dd4b48cfecfc8596450d4fd96f6098d9e463e0ff3ed",
+    "data/eida_continuation/calibration/merged4/precision32_round2_locations.csv": "d0e43b7740f3a781a4af1f5bf0e5b2bc2a0492cdb6c813772bf165b99417526a",
+    "data/eida_continuation/calibration/merged4/Pozzuoli_Solfatara_convergence1_locations.csv": "c54db2684da4a6b7a6d922eea6997462d6ada9203ec0dd64eac2f9f00a7672d8",
+    "data/eida_continuation/calibration/merged4/precision32_convergence1_locations.csv": "f262ba616df7962bbbeebd86115f629784f016d0b1290604f9414af034835a9d",
+    "data/eida_continuation/calibration/merged4/Pozzuoli_Solfatara_convergence2_locations.csv": "36e1842136147a1300f27c17d2594f5edd501cbb152e14801756531f50479188",
+    "data/eida_continuation/calibration/merged4/precision32_convergence2_locations.csv": "e3c64d5d048e92d7e6206f122cb4b74b1beb4be8bafcecf8f24dc0cad0f48018",
+    "data/eida_continuation/calibration/merged4/Pozzuoli_Solfatara_convergence3_locations.csv": "ff381bb55ee665622a52b3c7f715199cd62b4f780e38130c6bd5921561f8c0fe",
+    "data/eida_continuation/calibration/merged4/precision32_convergence3_locations.csv": "5d7f381aa5a18a8462ae22c0723278fd49fddd8152b8b32dfae22aea752740ac"
+  },
+  "initial_inputs_identical": true,
+  "interpretation": "Identical observations, initial conditions and controls. Differences already occur in fixed-model prelocation, before model/station fitting, and amplify through later global update paths. Common-intermediate-start differences are smaller but nonzero. Both precision builds share the checked optimization. This excludes a simple input/setup mismatch and the tested zero-term optimization as explanations. The exact ill-conditioned mode or ray-path switch was not isolated; no assertion that the discrepancy is harmless rounding.",
+  "common_start": [
+    {
+      "stage": "round1",
+      "comparison": {
+        "max_horizontal_m": 23.758772282847314,
+        "max_depth_km": 0.10999999999999988,
+        "max_origin_s": 0.02,
+        "max_rms_s": 0.0
+      },
+      "run": {
+        "name": "common_start32_round1",
+        "bits": 32,
+        "events": 552,
+        "picks": 9529,
+        "returncode": 0,
+        "residual_rms_s": 0.21738814460556216,
+        "event_rms_s": 0.22219589215994437,
+        "depth_min_km": 0.05,
+        "depth_max_km": 7.54,
+        "workdir": "tmp/eida_continuation/heldout/common_start32_round1",
+        "wall_seconds": 3.7225797560531646,
+        "timeout_seconds": 300,
+        "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+      }
+    },
+    {
+      "stage": "round2",
+      "comparison": {
+        "max_horizontal_m": 124.75051335352781,
+        "max_depth_km": 0.07000000000000006,
+        "max_origin_s": 0.01,
+        "max_rms_s": 0.010000000000000009
+      },
+      "run": {
+        "name": "common_start32_round2",
+        "bits": 32,
+        "events": 552,
+        "picks": 9529,
+        "returncode": 0,
+        "residual_rms_s": 0.19397965706870066,
+        "event_rms_s": 0.20368613963218232,
+        "depth_min_km": 0.01,
+        "depth_max_km": 6.59,
+        "workdir": "tmp/eida_continuation/heldout/common_start32_round2",
+        "wall_seconds": 7.363828727975488,
+        "timeout_seconds": 300,
+        "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+      }
+    }
+  ],
+  "accepted": false
+}

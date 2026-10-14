@@ -1,83 +1,267 @@
-\paragraph{Figure 1.} 1A, 1B, 1C. Data: \path{.venv/bin/python scripts/continue_context.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}.
+\paragraph{1A.}
+\par Data: \texttt{.venv/bin/python scripts/continue\_context.py}.
+\par Plot: \texttt{.venv/bin/python scripts/publication\_plots.py}.
 \par\path{data/continuation/figure_1A.csv}
+\paragraph{1B.}
+\par Data: \texttt{.venv/bin/python scripts/continue\_context.py}.
+\par Plot: \texttt{.venv/bin/python scripts/publication\_plots.py}.
+\par\path{data/continuation/rite_gnss.csv}
+\par\path{data/continuation/historical_leveling.csv}
+\paragraph{1C.}
+\par Data: \texttt{.venv/bin/python scripts/continue\_context.py}.
+\par Plot: \texttt{.venv/bin/python scripts/publication\_plots.py}.
 \par\path{data/continuation/figure_1C.csv}
 \par\path{data/continuation/figure_1C_cumulative.csv}
-\par\path{data/continuation/historical_leveling.csv}
-\par\path{data/continuation/rite_gnss.csv}
-\par Output: \path{figures/figure_1_combined.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure 2.} 2A, 2B. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
-\par\path{data/local_extension/calibration/merged4/panels/relocated.csv}
-\par\path{data/local_extension/calibration/merged4/panels/weekly_counts.csv}
-\par Output: \path{figures/figure_2_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure 3.} 3/map, 3/northing-depth, 3/easting-depth. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
-\par\path{data/local_extension/calibration/merged4/panels/relocated.csv}
-\par Output: \path{figures/figure_3_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure 4.} 4A, 4B. Data: \path{.venv/bin/python scripts/mechanism_measurements.py && .venv/bin/python scripts/run_reviewed_skhash.py && .venv/bin/python scripts/run_gcap_followup.py && .venv/bin/python scripts/run_gcap_followup.py --high-band && .venv/bin/python scripts/validate_mechanism_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
-\par\path{data/mechanism_followup/candidate_requirements.csv}
-\par\path{data/mechanism_followup/gcap/solutions.csv}
-\par\path{data/mechanism_followup/gcap_1_5/solutions.csv}
-\par Output: \path{figures/figure_4_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S1.} S1. Data: \path{.venv/bin/python scripts/process_local_followup.py --frozen --workers 4}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
-\par\path{data/local_extension/processed_coverage.csv}
-\par\path{data/local_extension/processed_coverage_union.json}
-\par\path{data/local_extension/short_window_inputs.json}
-\par Output: \path{figures/coverage_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S2.} S2. Data: \path{.venv/bin/python scripts/station_geometry.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}.
+\paragraph{2A.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/weekly_counts.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/sectors.csv}
+\paragraph{2B.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/weekly_counts.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/sectors.csv}
+\paragraph{3/map.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/relocated.csv}
+\paragraph{3/northing-depth.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/relocated.csv}
+\paragraph{3/easting-depth.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/relocated.csv}
+\paragraph{4A.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/mechanism_eida/gcap/solutions.csv}
+\par\path{data/mechanism_eida/gcap_1_5/solutions.csv}
+\par\path{data/mechanism_eida/candidate_requirements.csv}
+\paragraph{4B.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/mechanism_eida/gcap/solutions.csv}
+\par\path{data/mechanism_eida/gcap_1_5/solutions.csv}
+\par\path{data/mechanism_eida/candidate_requirements.csv}
+\paragraph{S1.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/processed_coverage.csv}
+\paragraph{S2.}
+\par Data: \texttt{.venv/bin/python scripts/station\_geometry.py}.
+\par Plot: \texttt{.venv/bin/python scripts/publication\_plots.py}.
 \par\path{data/continuation/figure_S2.csv}
-\par\path{data/continuation/station_geometry_epochs.csv}
 \par\path{data/continuation/station_geometry_qa.csv}
-\par Output: \path{figures/continuation_stations.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S4.} S4A. Data: \path{.venv/bin/python scripts/benchmark_window.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}.
+\par\path{data/continuation/station_geometry_epochs.csv}
+\paragraph{S4A.}
+\par Data: \texttt{.venv/bin/python scripts/benchmark\_window.py}.
+\par Plot: \texttt{.venv/bin/python scripts/publication\_plots.py}.
 \par\path{data/continuation/figure_S4A.npz}
 \par\path{data/continuation/figure_S4A_picks.json}
-\par Output: \path{figures/figure_S4A.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S5.} S5/map, S5/northing-depth, S5/easting-depth. Data: \path{.venv/bin/python scripts/continue_context.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}.
+\paragraph{S5/map.}
+\par Data: \texttt{.venv/bin/python scripts/continue\_context.py}.
+\par Plot: \texttt{.venv/bin/python scripts/publication\_plots.py}.
 \par\path{data/continuation/figure_S5.csv}
-\par Output: \path{figures/figure_S5_routine.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S6.} S6/map, S6/northing-depth, S6/easting-depth. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
-\par\path{data/local_extension/calibration/merged4/panels/velest.csv}
-\par Output: \path{figures/figure_S6_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S7.} S7A/map, S7A/easting-depth, S7B, S7D, S7F, S7C, S7E, S7G. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
-\par\path{data/local_extension/calibration/merged4/panels/relocated.csv}
-\par\path{data/local_extension/calibration/merged4/uncertainty/regional_svd.csv}
-\par Output: \path{figures/figure_S7_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S8.} S8A, S8B. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
-\par\path{data/local_extension/calibration/merged4/magnitude/figure_S8A.csv}
-\par\path{data/local_extension/calibration/merged4/magnitude/figure_S8B.csv}
-\par Output: \path{figures/figure_S8_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S10.} S10/2022, S10/2023, S10/2024, S10/2025. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
-\par\path{data/local_extension/calibration/merged4/panels/relocated.csv}
-\par Output: \path{figures/figure_S10_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S11.} S11/swarm-2. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
-\par\path{data/local_extension/calibration/merged4/panels/swarm-2.csv}
-\par Output: \path{figures/figure_S11_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S12.} S12A, S12B, S12C, S12D, S12E, S12F, S12G, S12H. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
-\par\path{data/local_extension/calibration/merged4/panels/cpoz_gathers.npz}
-\par\path{data/local_extension/calibration/merged4/panels/cpoz_index.csv}
-\par\path{data/local_extension/calibration/merged4/panels/sectors.csv}
-\par Output: \path{figures/figure_S12_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S13.} S13A, S13B. Data: \path{.venv/bin/python scripts/calibrate_local_followup.py}. Plot: \path{.venv/bin/python scripts/plot_local_followup.py}.
-\par\path{data/local_extension/calibration/merged4/panels/relocated.csv}
-\par Output: \path{figures/figure_S13_local_followup.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S14.} S14/1, S14/2, S14/3. Data: \path{.venv/bin/python scripts/extend_hybrid_scan.py --dataset grid; .venv/bin/python scripts/grid_hybrid_candidates.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}.
-\par\path{data/grid_calibration/merged4/hybrid/display_candidates.csv}
-\par\path{data/grid_calibration/merged4/hybrid/display_waveforms.npz}
-\par\path{data/grid_calibration/merged4/hybrid/hybrid_candidates.csv}
-\par Output: \path{figures/figure_S14_candidates.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
-\paragraph{Figure S15.} S15A, S15B, S15C. Data: \path{.venv/bin/python scripts/analyze_observations.py}. Plot: \path{.venv/bin/python scripts/publication_plots.py}.
-\par\path{data/observations/E1_CAAM_E_spectrum.npz}
-\par\path{data/observations/E1_CAAM_Z_spectrum.npz}
-\par\path{data/observations/E1_COLB_E_spectrum.npz}
-\par\path{data/observations/E1_COLB_Z_spectrum.npz}
+\paragraph{S5/northing-depth.}
+\par Data: \texttt{.venv/bin/python scripts/continue\_context.py}.
+\par Plot: \texttt{.venv/bin/python scripts/publication\_plots.py}.
+\par\path{data/continuation/figure_S5.csv}
+\paragraph{S5/easting-depth.}
+\par Data: \texttt{.venv/bin/python scripts/continue\_context.py}.
+\par Plot: \texttt{.venv/bin/python scripts/publication\_plots.py}.
+\par\path{data/continuation/figure_S5.csv}
+\paragraph{S6/map.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/velest.csv}
+\paragraph{S6/northing-depth.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/velest.csv}
+\paragraph{S6/easting-depth.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/velest.csv}
+\paragraph{S7A/map.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv}
+\paragraph{S7A/easting-depth.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv}
+\paragraph{S7B.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv}
+\paragraph{S7D.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv}
+\paragraph{S7F.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv}
+\paragraph{S7C.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv}
+\paragraph{S7E.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv}
+\paragraph{S7G.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv}
+\paragraph{S8A.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/magnitude/figure_S8A.csv}
+\par\path{data/eida_continuation/calibration/merged4/magnitude/figure_S8B.csv}
+\paragraph{S8B.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/magnitude/figure_S8A.csv}
+\par\path{data/eida_continuation/calibration/merged4/magnitude/figure_S8B.csv}
+\paragraph{S10/2022.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/relocated.csv}
+\paragraph{S10/2023.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/relocated.csv}
+\paragraph{S10/2024.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/relocated.csv}
+\paragraph{S10/2025.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/relocated.csv}
+\paragraph{S11/swarm-1.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/swarm-1.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/swarm-2.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/swarm-3.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/swarm-4.csv}
+\paragraph{S11/swarm-2.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/swarm-1.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/swarm-2.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/swarm-3.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/swarm-4.csv}
+\paragraph{S11/swarm-3.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/swarm-1.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/swarm-2.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/swarm-3.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/swarm-4.csv}
+\paragraph{S12A.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_index.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz}
+\par\path{data/eida_continuation/calibration/merged4/panels/sectors.csv}
+\paragraph{S12B.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_index.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz}
+\par\path{data/eida_continuation/calibration/merged4/panels/sectors.csv}
+\paragraph{S12C.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_index.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz}
+\par\path{data/eida_continuation/calibration/merged4/panels/sectors.csv}
+\paragraph{S12D.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_index.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz}
+\par\path{data/eida_continuation/calibration/merged4/panels/sectors.csv}
+\paragraph{S12E.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_index.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz}
+\par\path{data/eida_continuation/calibration/merged4/panels/sectors.csv}
+\paragraph{S12F.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_index.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz}
+\par\path{data/eida_continuation/calibration/merged4/panels/sectors.csv}
+\paragraph{S12G.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_index.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz}
+\par\path{data/eida_continuation/calibration/merged4/panels/sectors.csv}
+\paragraph{S12H.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_index.csv}
+\par\path{data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz}
+\par\path{data/eida_continuation/calibration/merged4/panels/sectors.csv}
+\paragraph{S13A.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/relocated.csv}
+\paragraph{S13B.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/calibration/merged4/panels/relocated.csv}
+\paragraph{S14/1.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/hybrid/display_candidates.csv}
+\par\path{data/eida_continuation/hybrid/display_waveforms.npz}
+\paragraph{S14/2.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/hybrid/display_candidates.csv}
+\par\path{data/eida_continuation/hybrid/display_waveforms.npz}
+\paragraph{S14/3.}
+\par Data: \texttt{.venv/bin/python scripts/rebuild\_eida\_followup.py --analysis}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/hybrid/display_candidates.csv}
+\par\path{data/eida_continuation/hybrid/display_waveforms.npz}
+\paragraph{S15A.}
+\par Data: \texttt{.venv/bin/python scripts/analyze\_observations.py}.
+\par Plot: \texttt{.venv/bin/python scripts/publication\_plots.py}.
 \par\path{data/observations/E1_waveforms.csv}
-\par\path{data/observations/E2_CAAM_E_spectrum.npz}
-\par\path{data/observations/E2_CAAM_Z_spectrum.npz}
-\par\path{data/observations/E2_COLB_E_spectrum.npz}
-\par\path{data/observations/E2_COLB_Z_spectrum.npz}
+\par\path{data/observations/E1_CAAM_Z_spectrum.npz}
+\par\path{data/observations/E1_CAAM_E_spectrum.npz}
+\par\path{data/observations/E1_COLB_Z_spectrum.npz}
+\par\path{data/observations/E1_COLB_E_spectrum.npz}
+\paragraph{S15B.}
+\par Data: \texttt{.venv/bin/python scripts/analyze\_observations.py}.
+\par Plot: \texttt{.venv/bin/python scripts/publication\_plots.py}.
 \par\path{data/observations/E2_waveforms.csv}
-\par\path{data/observations/E3_CAAM_E_spectrum.npz}
-\par\path{data/observations/E3_CAAM_Z_spectrum.npz}
-\par\path{data/observations/E3_COLB_E_spectrum.npz}
-\par\path{data/observations/E3_COLB_Z_spectrum.npz}
+\par\path{data/observations/E2_CAAM_Z_spectrum.npz}
+\par\path{data/observations/E2_CAAM_E_spectrum.npz}
+\par\path{data/observations/E2_COLB_Z_spectrum.npz}
+\par\path{data/observations/E2_COLB_E_spectrum.npz}
+\paragraph{S15C.}
+\par Data: \texttt{.venv/bin/python scripts/analyze\_observations.py}.
+\par Plot: \texttt{.venv/bin/python scripts/publication\_plots.py}.
 \par\path{data/observations/E3_waveforms.csv}
-\par Output: \path{figures/hybrid_E1.pdf}. Upstream input manifests and limitations are in \path{docs/panel_record.json}.
+\par\path{data/observations/E3_CAAM_Z_spectrum.npz}
+\par\path{data/observations/E3_CAAM_E_spectrum.npz}
+\par\path{data/observations/E3_COLB_Z_spectrum.npz}
+\par\path{data/observations/E3_COLB_E_spectrum.npz}
+\paragraph{S15D.}
+\par Data: \texttt{.venv/bin/python scripts/eida\_shallow\_example.py}.
+\par Plot: \texttt{.venv/bin/python scripts/plot\_eida\_followup.py}.
+\par\path{data/eida_continuation/shallow_example/waveforms.csv}
+\par\path{data/eida_continuation/shallow_example/spectra.npz}
+\par\path{data/eida_continuation/shallow_example/summary.json}

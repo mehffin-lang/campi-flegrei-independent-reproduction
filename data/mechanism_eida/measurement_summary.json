@@ -1,0 +1,24 @@
+{
+  "cohort": "Explicit candidate_mapping.csv; old review labels linked to current own locations, with new independently selected larger candidates where available.",
+  "candidate_events": 14,
+  "records": 303,
+  "reviewable": 205,
+  "amplitude_qc_pass": 150,
+  "human_manual_reviews": 0,
+  "method": "Upward vertical verified from StationXML. Polarity raw counts and VEL, no additional bandpass. S/P = peak three-component velocity norm in P to min(P+.30,S-.10) and S to S+.50; 1\u201315 Hz 4-pole zero-phase. Noise P-3 to P-1; both peak/noise RMS >=3. Window/filter choices are exploratory; S/P and additional arrival identity need review.",
+  "sources": {
+    "data/coverage_extension/calibration/merged4/tomodd/retained_picks.csv": "6cdd2a85a619824e17b18ea282d4d469c28a0fd52b5d82f291b888c07d629cb5",
+    "data/coverage_extension/calibration/merged4/uncertainty/relocated_events.csv": "a8261fa4fc814006a8d5ad656ef2f2d85e316c628c6cc7f8f5c26891c18c898d",
+    "inputs/continuation/IV_responses.xml": "07545b22de0f7b9030f2064467b52ce428365b213c136477b05a5768c4dd62a3",
+    "inputs/continuation/2I_responses.xml": "91c213556e69c7934686d80a497d25f43f8281ffe2411b6d39a5df4e77b9a784",
+    "config/mechanism_eida_arrivals.csv": "fcc496ed2571e2622ff41e6e8ed703dbecfb02daf897250572b02109cfed41b5",
+    "data/eida_continuation/picks.csv": "db6f60b9ba762642348d89fa2b7dda5bb843cd7c692985b66820180183570903",
+    "data/eida_continuation/processed_coverage.csv": "dacbe628513e96c34611568ebae55c67393ecc693a8917abd11178f4a2c95135",
+    "data/mechanism_eida/candidate_locations.csv": "649341da530e28cb38405382b718b6189283c5ae1b79e3b4d45bddc343ada695",
+    "data/eida_continuation/calibration/merged4/tomodd/retained_picks.csv": "fffc162fee71b58ed569c2f10b7180a1498ed1fde62cecc64acf9223eaadc561",
+    "data/mechanism_eida/candidate_mapping.csv": "25104709dd575fb9fc66e290ffc063a3be72516d2bcab2c6f6c90e1f4a3c2595"
+  },
+  "observation_checkpoint": "data/eida_continuation",
+  "amplitude_clipping_check": "Reject possible clipping if a raw P-through-S+.5 s component has >=3 consecutive extrema samples and peak-to-peak range >100 counts. Conservative exploratory QA, not a recovered Tan setting or proof of instrument saturation. Polarity remains a separate visual judgment.",
+  "location_source": "data/mechanism_eida/candidate_locations.csv"
+}

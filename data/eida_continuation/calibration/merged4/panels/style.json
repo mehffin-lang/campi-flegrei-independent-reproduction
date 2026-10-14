@@ -1,0 +1,48 @@
+[
+  {
+    "figure": "S6",
+    "depth_limits_km": [
+      0,
+      5
+    ],
+    "ticks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "under": 0,
+    "over": 39,
+    "depth_range": [
+      0.01,
+      14.67
+    ],
+    "clip": false,
+    "plotted": 1435
+  },
+  {
+    "figure": "3",
+    "depth_limits_km": [
+      0,
+      5
+    ],
+    "ticks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "under": 0,
+    "over": 16,
+    "depth_range": [
+      0.031,
+      8.303
+    ],
+    "clip": false,
+    "plotted": 1050
+  }
+]

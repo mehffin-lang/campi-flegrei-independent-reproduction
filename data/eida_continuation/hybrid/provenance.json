@@ -1,0 +1,743 @@
+{
+  "template_times": {
+    "E1": "2024-05-06T22:11:10",
+    "E2": "2024-03-08T17:40:54",
+    "E3": "2025-02-17T08:06:48"
+  },
+  "templates": [
+    {
+      "file": "inputs/waveforms/E1_CAAM.mseed",
+      "sha256": "ccba37062237ac60eeac753fd866b73c93503d83a051e9d231662fc75a0ca656",
+      "role": "Original event-selected waveform used only as a documented matching template, not independent detection or exposure"
+    },
+    {
+      "file": "inputs/waveforms/E1_COLB.mseed",
+      "sha256": "36ba87e5240885fec99fa075432df96ebc4e48d01a57d19a40c88681f80e0ac4",
+      "role": "Original event-selected waveform used only as a documented matching template, not independent detection or exposure"
+    },
+    {
+      "file": "inputs/waveforms/E2_CAAM.mseed",
+      "sha256": "5d8bcf8c4cbb0a3caf1038877f7b7a050e25f2e8967d8a0ce9f180cc025bc9f2",
+      "role": "Original event-selected waveform used only as a documented matching template, not independent detection or exposure"
+    },
+    {
+      "file": "inputs/waveforms/E2_COLB.mseed",
+      "sha256": "d5d245e8f1133107ae73242b968dbbbdc0dcf6170ee216fdabc982bc8f0ba4c2",
+      "role": "Original event-selected waveform used only as a documented matching template, not independent detection or exposure"
+    },
+    {
+      "file": "inputs/waveforms/E3_CAAM.mseed",
+      "sha256": "9786cebcec2cd1bd81464ed84e0dded0e6b36f68b6349058d683d92bbb5b49c8",
+      "role": "Original event-selected waveform used only as a documented matching template, not independent detection or exposure"
+    },
+    {
+      "file": "inputs/waveforms/E3_COLB.mseed",
+      "sha256": "ffa33ef4a7ccdf5d32991880368855af674c0569da5b871716fbd158c054b422",
+      "role": "Original event-selected waveform used only as a documented matching template, not independent detection or exposure"
+    }
+  ],
+  "observations": [
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220128T180000_20220129T000000.mseed",
+      "sha256": "322f09a4c717f1771b27625f35fcaa8f8d36b69d72ac0d99a7c27125f1bff6df",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T000000_20220129T003000.mseed",
+      "sha256": "3f650a93d24c6ecf6815a3a52b5321da50f3043a288e7d7024b338d577b26785",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T003000_20220129T010000.mseed",
+      "sha256": "9efba38cbd47a9157770aef91443ca589c5547d2aef43fbc6176411a7fd8bec9",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T010000_20220129T013000.mseed",
+      "sha256": "08b353eb58142c17a0255a38091cb2238755435917869c9da1854cee9fb6027e",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T013000_20220129T020000.mseed",
+      "sha256": "5759a3ec219d36e634a0517cb46a071b2d3ed9e7722d23d61200b9718bfb581e",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T020000_20220129T023000.mseed",
+      "sha256": "095ccc33fa010718b506625f28a5c736bfdc7bb24196201c8653043870658a4d",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T023000_20220129T030000.mseed",
+      "sha256": "05993ddd06c7abbce5001e5a249503995d6943e4c08ef9cd0330479e2d2cc430",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T030000_20220129T033000.mseed",
+      "sha256": "295e31504c1dc69b83e9ca4309cfdf3c05f6a70d7e5ecae2239c0249e5eeb61e",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T033000_20220129T040000.mseed",
+      "sha256": "5bdefa755ddb6ebeadc6aae1bab6f6fadad12e32eb5fda63b3b01e955436f20b",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T040000_20220129T043000.mseed",
+      "sha256": "a633c09d10fe05cc2e457de4927eef9b19ed9980f7692ac2ef4a91c4d6e2e621",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T043000_20220129T050000.mseed",
+      "sha256": "529341d8ea6df7133f3811578669b64a1557d7f51b0ce8069c1c03c6f11d1970",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T050000_20220129T053000.mseed",
+      "sha256": "e552be59e5bb95ca65c886151d551c9e864259901fcb37efaac2426be63df649",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T053000_20220129T060000.mseed",
+      "sha256": "f6e3192da73cfc8bb4f81259c657b1c334be4989620fbd55efe746d2d5e8bbae",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T060000_20220129T063000.mseed",
+      "sha256": "3bd846cc8710f7dd8c3e4a391f814f361ccd4c4ab40b16408d823fa1b0bb6bee",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T063000_20220129T070000.mseed",
+      "sha256": "0f6f5b091445e23330f33dc06660557a4f042ebb4f205aba442bd8f8251777fd",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T070000_20220129T073000.mseed",
+      "sha256": "5e0cd0555dfcbac60353e67116f5f444d2d98712919375e64ea6c2483c48d768",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T073000_20220129T080000.mseed",
+      "sha256": "87f961163d49b8a391e192899b9bf3c991c5448aa538a1a1fe3aeb405ee35e1a",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T080000_20220129T083000.mseed",
+      "sha256": "55b66e4e45f6e40e476576cad7a1f35f55a31e87b3b958d2af45f9c375537b71",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T083000_20220129T090000.mseed",
+      "sha256": "22a68608b6401cb27c329d7ecf85809087cde3910c8b7c4d3c8d78cd5eaaf26b",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T090000_20220129T093000.mseed",
+      "sha256": "6f1946663f9c69386884c22c42c7907782d0c64b51921d86ab57ed5d09e4e8d7",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T093000_20220129T100000.mseed",
+      "sha256": "c2e1232c096304df337039d1911451a4255392592865111ac2b107004f06cafc",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T100000_20220129T103000.mseed",
+      "sha256": "ce14513e9414478a9ea962a6c934a6b902a2d8ab8cfae25d0a0dc17710e11d35",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T103000_20220129T110000.mseed",
+      "sha256": "3137cc020f94130407d2cc96df2bdc4bc7bb5e91fc0e81315e53d6bbe9f9d93c",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T110000_20220129T113000.mseed",
+      "sha256": "0da25413ff91c2dd8dec3ef892c58ae762dafd70eb08df2187bc146c278fe95c",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T113000_20220129T120000.mseed",
+      "sha256": "3ff51bb2794d679ec085fe89344b6180a439d4cf39573f1a64484f287454c56e",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220129T120000_20220129T180000.mseed",
+      "sha256": "3e9a1df5b64830773ca47de466698a491a9cc0b415a63d0448d7649da5a5a2c4",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220201T000000_20220201T060000.mseed",
+      "sha256": "0511fa4be5a1f6e7e86efd504db406586fcc1f4c8861a45e53909ce547f06149",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20220301T000000_20220301T060000.mseed",
+      "sha256": "e83ffefeeeb16c9d2ef0397c9ca34f2047c6b58aa499a7a64d6eb8c6b0a505b4",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20230101T000000_20230101T003000.mseed",
+      "sha256": "8a7552e9958f66d2eaff2b7082e62c9e183ebd71a7203aa2b00661b4d20da49c",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20230101T000000_20230101T060000.mseed",
+      "sha256": "f4f1cb9339eea1006ba85b684d76a556d4680d670cb4c306bd15029e6d896f61",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20230401T000000_20230401T003000.mseed",
+      "sha256": "65070cadcbce3d2f220d5cd66b4d7d6ed4d0e90b965a22871ec89ab2272c60d2",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20230701T000000_20230701T003000.mseed",
+      "sha256": "d4d36b5cea2058694c9639bee72f7ac7f9765ebe979109234d27ba31a7e9b0d5",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20231001T000000_20231001T003000.mseed",
+      "sha256": "a253006735b052cd46720d4ca34ab4d40be1ef6c74c4514dba9b15118abb9796",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20240101T000000_20240101T003000.mseed",
+      "sha256": "bf13ebbb6567b3eaf4f02586db134958384d87594a30e70a68226d9c460837ce",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20240101T000000_20240101T060000.mseed",
+      "sha256": "aa776dfe1361013bde20fecad3f9a0adcad9267656b359d735a038a2088ed2d1",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20240201T000000_20240201T060000.mseed",
+      "sha256": "ec3d48a60314ecfd948e434282ce8bb8aac7dd1c5708866125c15f8ee3d73d6d",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20240401T000000_20240401T003000.mseed",
+      "sha256": "46508801a037eac2bc06adc823e2a45ab4bad96606a8cb2daec17572f303e6db",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20240520T180000_20240521T000000.mseed",
+      "sha256": "03e389b9c4b03919a663164e0930d564386a61dabce32f1c4fb53d5b18fd2fb4",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20240701T000000_20240701T003000.mseed",
+      "sha256": "f3f8e58698024a1bd73aa3acbd635ff4a5762308c38bd4cf3df5b1fc2b7372ba",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20241001T000000_20241001T003000.mseed",
+      "sha256": "3ca15a0d637a2093b4dc6bce2edf920d765a03673340bd085112d1f35dd4c22d",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250101T000000_20250101T003000.mseed",
+      "sha256": "627c8b682f40fbf4ca830c17b3500b41ad1743016f8a8d4c4c0b45cd53d15659",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250101T000000_20250101T060000.mseed",
+      "sha256": "0c4fcb9fbc3f08c4768fde80edf374cef7dde232a359df97238d75a8024dba6e",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250201T000000_20250201T060000.mseed",
+      "sha256": "37cf1b8c9d6e6761960de15217ba85cb6cd92cb00b3ab7a5474046080dbea479",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250301T000000_20250301T003000.mseed",
+      "sha256": "b06ef8f57f3f896b8d6aef085bb30233a843b488d79e05500b38e2671ec69c99",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250318T000000_20250318T060000.mseed",
+      "sha256": "095956a707ed1584f15c02f91a6a4925ca4e1082c289bfe8171351dbdc9f4e7e",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250318T060000_20250318T120000.mseed",
+      "sha256": "b8e39a189c1623306b1e44e9300313ab8b9491d6147da79800d241a9225dcdcc",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250318T120000_20250318T180000.mseed",
+      "sha256": "ccaadc9590f1ceffbf665a871748378dc5b605aa34aedbbbe9ecd0a7e08e8acc",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250318T180000_20250319T000000.mseed",
+      "sha256": "41b856152fae8a4ef9a22f78a55a34d470873449453aa6b4c1ef3f45bca58451",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250319T000000_20250319T060000.mseed",
+      "sha256": "57e8f71baad13402bac2e527c7891fd6cbb4df5379dc4dad9ed146b1a804072b",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250319T060000_20250319T120000.mseed",
+      "sha256": "117e8dd64d60e5bf7bda563b9014f7c59aa44a9e88bc7fc5a4aecc927ad0a5c1",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250319T120000_20250319T180000.mseed",
+      "sha256": "668feb1e736b71282675ae6cd251dc73e7a9a451ccb8d3178f8fe6eb674250cc",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250319T180000_20250320T000000.mseed",
+      "sha256": "145f88c642f7f34cd758c6af6d14bb182d054e33aafb0057ad9e39692593fabc",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250320T000000_20250320T060000.mseed",
+      "sha256": "427d8001cc47cd9fb2e092e6298f05e61988dbe9470a4cbc84c0835245fc10cd",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250320T060000_20250320T120000.mseed",
+      "sha256": "05e0b0fed3204fb9348e96db1afdc882dbb8240636bac76e069f83deeebc9ecb",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250320T120000_20250320T180000.mseed",
+      "sha256": "0326507931ecc1c7cb47e48290c9eb1ab7901b4499659fadd77837c849e8c503",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_CAAM_20250320T180000_20250321T000000.mseed",
+      "sha256": "18cf461c9d35c0cb1fc5815f91d5f70a8cb5f5a5d3455455f8d9c5701071b960",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220128T180000_20220129T000000.mseed",
+      "sha256": "e5b53a7a4c6b811788f1a1b8940a359535ab0b7b96cfc145cf9b5d5f686e96ed",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T000000_20220129T003000.mseed",
+      "sha256": "b877bb3cd237b83cb392000ad5f3f4be5356df5d5f682697042370552d1676db",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T003000_20220129T010000.mseed",
+      "sha256": "81bdc24e3d2ef57bc7139af7836fea79c96d108e5617a4a23ea0e77ec6bfee4f",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T010000_20220129T013000.mseed",
+      "sha256": "99aefca345bc3a27727d91bd96519ff5fbd73e6353aaacfcdc374bba58e0f9ee",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T013000_20220129T020000.mseed",
+      "sha256": "6c3819a981c13822f17f9e6253f688a1914783f75a86c1a540ce2d545fb52460",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T020000_20220129T023000.mseed",
+      "sha256": "1e0d7017ae6c2e65fe7e3f87afe20ff8ff78b8173cf057767808f9a2546f277d",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T023000_20220129T030000.mseed",
+      "sha256": "f4d06787df5db895619f7b068114c543b65818661d338641bb2c7d2d9331825e",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T030000_20220129T033000.mseed",
+      "sha256": "68c88ecdffff83d7aa15655e07ffce87ce0bba32a6ef7d61f83d72db37945d24",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T033000_20220129T040000.mseed",
+      "sha256": "f080b9b35792fc5df1958f650333aaac0551c20483f4f1e230b771e564aa4901",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T040000_20220129T043000.mseed",
+      "sha256": "a45abf80b67fd73ca7f19acba58657962aa17d03fb6b50133b8cddbf2ff80aa6",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T043000_20220129T050000.mseed",
+      "sha256": "a274f8d70c2f24e9095fdccb9672344f4fcf55b866d1bc3b417dd3781387ff71",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T050000_20220129T053000.mseed",
+      "sha256": "7784ff3d2b74da7d83d71a105164beac3462f3f3ba861caa7ab0a1dbcf7fde8b",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T053000_20220129T060000.mseed",
+      "sha256": "32e55107a5ee5802b6bb90f5449ee92a593cd9fdced8f17c1236085ccdf9d2d8",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T060000_20220129T120000.mseed",
+      "sha256": "6c5200d6337d2f80fbab561afd7e235473f21d7e4a664475358870551eb31f14",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220129T120000_20220129T180000.mseed",
+      "sha256": "3e606b7b528910280d444dc40ca8c61216ffcb7b84f061a6cfedf71ad505a059",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220201T000000_20220201T060000.mseed",
+      "sha256": "ed475d80c2e92a0c10ec88ab94aeb83c6396f91fa6962ad2ea66f7f7f1001f02",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20220301T000000_20220301T060000.mseed",
+      "sha256": "516fed3a47321e70b1aab3ffbdb9c0ef553a90dccad2a283272cb3fd17dcffaf",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20230101T000000_20230101T003000.mseed",
+      "sha256": "99421cd5144a64c74477e9623669a1948f77cffe310ea67bdd783ec48edecd68",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20230101T000000_20230101T060000.mseed",
+      "sha256": "daf53281cebd31982b2b46a7f6fe572a15c0b94e1c40a4997fafadad111462ee",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20230401T000000_20230401T003000.mseed",
+      "sha256": "15e6b42fdd999fcd5813c0a9d6abeadd09444fdbfc197f64a602f58297608712",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20230701T000000_20230701T003000.mseed",
+      "sha256": "1e12551367b560f9bb1f0412495a0e8e013101e8cc0d62a3b485e7a39e0d1cd6",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20231001T000000_20231001T003000.mseed",
+      "sha256": "06ff6db61f65ad492398cdca52f8652388bdaf78043272036ae99805be1183ee",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20240101T000000_20240101T003000.mseed",
+      "sha256": "42574a6c72b3b16199234b5b1e6ae9f6d3fde375cbf7bdc2f463250d61118069",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20240101T000000_20240101T060000.mseed",
+      "sha256": "3049bfa86b8a780d8e1adc45802ce630a2570ce266cc6b8e5a850ccb600f6f8f",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20240201T000000_20240201T060000.mseed",
+      "sha256": "f4cb20f6877a846c72784ab3a1c57eb273311a1b839411516bbeb8c85abc1dd5",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20240401T000000_20240401T003000.mseed",
+      "sha256": "dbfd6b973abc7b101045871f6912d9310d00af46a20d28602005558fa0d8cfca",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20240520T180000_20240521T000000.mseed",
+      "sha256": "b6c05b4cc883cd0ab8ef4fb9077516b813b6b19d50acb439be9f7d540d16bdda",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20240701T000000_20240701T003000.mseed",
+      "sha256": "0b7ee6f7a59d5b3bcb87ba44ada50d0ff94fa01021a7da32b575bf9a3ff1dbd5",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20241001T000000_20241001T003000.mseed",
+      "sha256": "4e8f3129a8cc73f4ef966414c9b8be2ea4540db125655a174ad3c6eebce4b107",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250101T000000_20250101T003000.mseed",
+      "sha256": "ae05957d981bb2eda8ac83c341c7d10fad70dc5c671bc83088127e1701c67495",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250101T000000_20250101T060000.mseed",
+      "sha256": "eaff77194309c6f88f89e5fd09feaf59704879147ac5f46e8760b6295caa3d0e",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250201T000000_20250201T060000.mseed",
+      "sha256": "ef19398049045e019d09efd3c81215e8ed25208098bbbde39be4653e8b5bad50",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250301T000000_20250301T003000.mseed",
+      "sha256": "b0bf5f170424821c5633a51f6a204a97d45ee5fa42e994270adab5b8fd6e0dfa",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250318T000000_20250318T060000.mseed",
+      "sha256": "d1a61ac17df836db3a0cadffb4cbb9cc88ac270c1b560046b10b2c45d91509ca",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250318T060000_20250318T120000.mseed",
+      "sha256": "1d8a8093caa4da38370bc0aab70898e6862a5315079f7203b8c0eacc64a5084a",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250318T120000_20250318T180000.mseed",
+      "sha256": "2a0022b2cf50d26d740f0cdf07e3c12ae78467b730dc08f8b57e0e5cd027ba88",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250318T180000_20250319T000000.mseed",
+      "sha256": "f0d017aee078fa5ce977058f7024819272376b29b0c3790936ac6447698ffc0f",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250319T000000_20250319T060000.mseed",
+      "sha256": "ef8046a6de6ac0a58de41bebf3667a647c38e71e86cb999d05635fcda50d4e0d",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250319T060000_20250319T120000.mseed",
+      "sha256": "8de299a0e1350d857d9d1f9a08f834a162f317016ecd7ede86ac5e81726d4107",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250319T120000_20250319T180000.mseed",
+      "sha256": "68f83d1c4a92323b045d8801c4c6bccf58537b039a001f42d7be04e5d8487968",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250319T180000_20250320T000000.mseed",
+      "sha256": "c746a6786b5627c50fe05a3f41e25fe87e0ea2f7164a07296d8d8a2954bae767",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250320T000000_20250320T060000.mseed",
+      "sha256": "b98d9a3160ea3f851710bc54ab4b895dd8aaea507396148146c12329adb197c0",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250320T060000_20250320T120000.mseed",
+      "sha256": "845f0f6bdd328eb0507770e4b4a1b3851ce09aeadd088faa2eaf8fe5e0c071ab",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250320T120000_20250320T180000.mseed",
+      "sha256": "cdd33f1e076e86ee244ca43bd45dceed05476d959c8ac538435ab82c4874d124",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/continuation/waveforms/IV_COLB_20250320T180000_20250321T000000.mseed",
+      "sha256": "446e66123082acb57311fea53ce9c3e61763a4e1a16eccfbde294042b3de518c",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/extended/waveforms/IV_CAAM_2024-01-01T12:00:00_2024-01-01T12:30:00.mseed",
+      "sha256": "7218feca356a0550fbc190c142ad370ef92ad16e32bf733670184cc80505afbb",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/extended/waveforms/IV_COLB_2024-01-01T12:00:00_2024-01-01T12:30:00.mseed",
+      "sha256": "b204548489ba361e31091677dfa60807b0c1366d877bd19e039963446b657f14",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_06.mseed",
+      "sha256": "c0299460c3631877b44b97915b10fa4f4c395d81e1f3f0555724f2ca6e78f177",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_07.mseed",
+      "sha256": "3105cf7fa30e6364fa61828475c51c3ca050858df4a7a77c8c7a823e19dbc8a8",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_08.mseed",
+      "sha256": "1cf9802fca07de8067cc5e65fe075bf26bdd97057d9ff9a55d6805b81c05d63b",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_09.mseed",
+      "sha256": "54d498e49a84d6905ba3604e86244cdd1aefded85de15f5b9d2452d309d98bfa",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_10.mseed",
+      "sha256": "813c3b4a80b2dd08a086dff17dcd57e15f411bd8d2ac146df3a7acf6b569ed62",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_11.mseed",
+      "sha256": "5a77d1b8f9049fa37dc5da5c6ba44b68f24a1da0e780be9c10e3426dc2b7b099",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_12.mseed",
+      "sha256": "024260d8434cbf2acf00e69ba5c8fd3886779d9ee35df4249f0ce33ee0a22776",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_13.mseed",
+      "sha256": "a9ad1e9e92f26aa341ef352b7b845f72a3fc2c9bae861384a0b132202bb0f02f",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_14.mseed",
+      "sha256": "a32f755c36b6999eaae023c84bd706ba1bb5d7cc5550f422cb8e57702e399c1b",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_15.mseed",
+      "sha256": "0536191d239455d79c4ae42ad71af249fe5dc60c46a5d9defd7242d7c5491ad1",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_16.mseed",
+      "sha256": "d1d0840f731a9563bc21e882f50f85c46f653392f3e6298b2b062f05c80dee5f",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_17.mseed",
+      "sha256": "69389b82ad9a18472fdd6e644e31f00c3e1f53140a920c5585967b9a2c872309",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_18.mseed",
+      "sha256": "483ef285fa0649f638e400ec4de493a9ad64faf023041d6cb3dde87332044d25",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_19.mseed",
+      "sha256": "945a3b981724e4305a5d6cf3d06958179c43df98e0de0afe3fdda907b5edb53e",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_20.mseed",
+      "sha256": "744ecb558552cc741c34545ffbf852539798f137b52c6f2d6f8ee33eb8959fe0",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_21.mseed",
+      "sha256": "a36f28af3d0951ec957864e874f16e4ba98f253301e9a91da3d0c62a81fca486",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_22.mseed",
+      "sha256": "f73596dacca68e312aad6acaa392bc524752d9a55ab9912eeebd145341932397",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_CAAM_23.mseed",
+      "sha256": "9b1b9b24ee9ad617aaa47c9c3771be66e216bbe513cd68c2e6fe86119ea4c1ec",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_06.mseed",
+      "sha256": "beac67a6df16370a6fedc287961092db75373516e2d066e1de5f188cf9086961",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_07.mseed",
+      "sha256": "6a582414beec71191564aeaa6f9965cb6ad09af3aab17582b1f20fe976af6bf4",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_08.mseed",
+      "sha256": "071403b2ff7b6c63076f5bf90dae6029a9390b04bd01a097febc1d6edeee98fb",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_09.mseed",
+      "sha256": "baf94ab828c2f7dd06030f9b1708d78554b24b69706a3f24f0e8b618f01a53d0",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_10.mseed",
+      "sha256": "4eb672df35ee272849d9631c9811e5dbffba2317a4cb28fca6cfffe5557873ac",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_11.mseed",
+      "sha256": "350450312232ef40ef4d693ad56df9fbca4d74916d697240c9e82e8f6b264ecf",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_12.mseed",
+      "sha256": "d53aeda8650fe5e89909a808b19e4c24a8c874379ab6a1625b7609223a185d6a",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_13.mseed",
+      "sha256": "ebebfcdee9991984f4c95198cf266d696bc29a33cfc9d8e18c8f16819f65cb44",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_14.mseed",
+      "sha256": "212a6235340ed082aa07b8e5eb9c69120733dceead526240e0c0a471f620bcc8",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_15.mseed",
+      "sha256": "f10ee87a01d78fbe9b3046d9fbe33bb8f4b28d3f8fc6d7dc4170df68aaeec4ed",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_16.mseed",
+      "sha256": "ec1ec2c3efba7f52298781797e1c7d1fde9e9795c31677462a80fc9cf6170458",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_17.mseed",
+      "sha256": "3a525a8be7c1b4920c53e5f8169d06c1a8842949fff8491ed1a9ed2161dcde81",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_18.mseed",
+      "sha256": "e6ca854849e198921beb51b29e937b605095cacf214445e0c74aad9dfe012c3a",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_19.mseed",
+      "sha256": "dfa8a95057f8d7b3062522772999e0f6e1080697899313ed0b1ab5077fd10534",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_20.mseed",
+      "sha256": "ece9433a85d984dd7c0eaae49ec9b38143c195ace1315e89bec90026acd1c31b",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_21.mseed",
+      "sha256": "5c13c2d3cc8be9a0547adef6dbae821c5405345276abd21c5ba9ffe624c20ad7",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_22.mseed",
+      "sha256": "a3eb22ec11a548bb8cf91782dc7bf91a125b4518d7c3bedda469020a1a6de7aa",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    },
+    {
+      "file": "inputs/waveforms/day_COLB_23.mseed",
+      "sha256": "2f3c744e60330ba70de8f5eded0c86ed7be8e395a1102606585a0952515738f5",
+      "role": "Original continuous samples searched for similarity; sparse exposure"
+    }
+  ],
+  "inputs": [
+    {
+      "file": "config/observations.json",
+      "sha256": "4769157afa4ffb5d70ef73aeb90bf5bd29d79b3790486ba63d9555ebfda97ab9"
+    }
+  ],
+  "limitation": "Template events are specified in the written methods. Matching scores are newly computed; the known template events are not independently discovered. No author picks, catalog or result table is used."
+}

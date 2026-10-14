@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "neighbor_pairs": 9439,
+    "catalog_pair_phases": 57494,
+    "measured_channels": 97862,
+    "accepted_channels": 4250,
+    "accepted_phase_delays": 3169,
+    "window_failures": 14,
+    "max_cnv_rounding_s": 0.0016090000000001936
+  },
+  "files": {
+    "data/eida_continuation/calibration/merged4/filtered_events.csv": "5f38c6a28ff5446e735919098e31e1d588f6ccf7d4557163132314ad00c541d8",
+    "data/eida_continuation/picks.csv": "db6f60b9ba762642348d89fa2b7dda5bb843cd7c692985b66820180183570903",
+    "data/eida_continuation/associations.csv": "feb29d6ad8d6e8db065d9464262d27dfff46d17206522124d35813761e1c55f8",
+    "data/eida_continuation/calibration/merged4/tomodd/retained_picks.csv": "fffc162fee71b58ed569c2f10b7180a1498ed1fde62cecc64acf9223eaadc561",
+    "data/eida_continuation/calibration/merged4/tomodd/observed_windows.npz": "c9aeff64847a2b07661430f935dfe8e92bdb1b77ae1bab70b2da262f5f379ed4",
+    "data/eida_continuation/calibration/merged4/tomodd/phase_pair_times.csv": "2f720d9a6e88639c7e62071ec7438779a94a77927b0541ee6bca4d4125c7dfe8",
+    "data/eida_continuation/calibration/merged4/tomodd/accepted_differential_times.csv": "6b479d3d455867fe48bad9f6dab1a142d0baaf9f9da979df43e866e8a773c127"
+  }
+}

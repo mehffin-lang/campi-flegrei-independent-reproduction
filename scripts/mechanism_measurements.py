@@ -6,7 +6,7 @@ Amplitude windows and gates below are explicit exploratory choices, not claimed
 Tan settings. Visual decisions are a separate, versioned input to SKHASH.
 """
 from pathlib import Path
-import hashlib,json,sys
+import hashlib,json,sys,os
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -16,19 +16,30 @@ from obspy import read,read_inventory,UTCDateTime
 from obspy.geodetics import gps2dist_azimuth
 
 ROOT=Path(__file__).resolve().parents[1]
-BASE=ROOT/'data/coverage_extension';B=BASE/'calibration/merged4';D=ROOT/'data/mechanism_followup'
+BASE=ROOT/'data/coverage_extension';B=BASE/'calibration/merged4';D=ROOT/os.environ.get('CF_MECH_OUT','data/mechanism_followup')
+OBS=ROOT/os.environ.get('CF_MECH_OBSERVATIONS','data/coverage_extension')
+LOCATIONS=ROOT/os.environ.get('CF_MECH_LOCATIONS','data/coverage_extension/calibration/merged4/uncertainty/relocated_events.csv')
 
 def main():
     D.mkdir(exist_ok=True);(D/'review').mkdir(exist_ok=True)
     if '--plots-only' in sys.argv:
         render(pd.read_csv(D/'measurements.csv'),np.load(D/'review_waveforms.npz'))
         return
-    events=pd.read_csv(B/'uncertainty/relocated_events.csv').set_index('event_index')
+    events=pd.read_csv(LOCATIONS).set_index('event_index')
     old=pd.read_csv(B/'focal/polarity_screen.csv');ids=sorted(old.event_id.unique())
-    picks=pd.read_csv(BASE/'picks.csv');picks['epoch']=picks.time.map(lambda t:float(UTCDateTime(t)))
+    picks=pd.read_csv(OBS/'picks.csv');picks['epoch']=picks.time.map(lambda t:float(UTCDateTime(t)))
     retained=pd.read_csv(B/'tomodd/retained_picks.csv')
-    reviewed=pd.read_csv(ROOT/'config/mechanism_review_arrivals.csv')
-    coverage=pd.read_csv(BASE/'processed_coverage.csv')
+    if os.environ.get('CF_MECH_LOCATIONS'):
+        ids=sorted(events.index)
+        current=pd.read_csv(OBS/'calibration/merged4/tomodd/retained_picks.csv');mapped=[]
+        for eid in ids:
+            new_id=events.loc[eid].get('current_event_index')
+            part=current[current.event_index==int(new_id)].copy() if pd.notna(new_id) else retained[retained.event_index==eid].copy()
+            part['event_index']=eid;mapped.append(part)
+        retained=pd.concat(mapped,ignore_index=True)
+    arrival_file=ROOT/os.environ.get('CF_MECH_ARRIVALS','config/mechanism_review_arrivals.csv')
+    reviewed=pd.read_csv(arrival_file)
+    coverage=pd.read_csv(OBS/'processed_coverage.csv')
     inv=read_inventory(str(ROOT/'inputs/continuation/IV_responses.xml'))+read_inventory(str(ROOT/'inputs/continuation/2I_responses.xml'))
     rows=[];waves={};stations=[]
     for eid in ids:
@@ -91,13 +102,30 @@ def main():
                     amplitude=np.linalg.norm(yy,axis=0);sp=float(stime-pt);pend=min(.30,sp-.10)
                     if pend<.08:raise ValueError('P and S windows overlap')
                     ap=float(max(amplitude[(t>=0)&(t<=pend)]));ass=float(max(amplitude[(t>=sp)&(t<=sp+.50)]));noise=float(np.sqrt(np.mean(amplitude[(t>=-3)&(t<=-1)]**2)))
-                    usable=ap/noise>=3 and ass/noise>=3
-                    row.update(amp_p=ap,amp_s=ass,noise_p=noise,noise_s=noise,sp_ratio=ass/ap,p_snr=ap/noise,s_snr=ass/noise,sp_usable=usable,sp_reason='Passes amplitude QC; arrival identity requires review' if usable else 'P or S vector peak below 3x vector noise RMS',p_window_end_s=pend,s_minus_p_s=sp)
+                    clipping=[]
+                    for raw_tr in stream.copy().trim(pt,stime+.5):
+                        y=raw_tr.data;extreme=(y==np.min(y))|(y==np.max(y))
+                        edges=np.flatnonzero(np.diff(np.r_[False,extreme,False]));longest=max((b-a for a,b in zip(edges[::2],edges[1::2])),default=0)
+                        if longest>=3 and float(np.max(y))-float(np.min(y))>100:clipping.append(raw_tr.id)
+                    usable=ap/noise>=3 and ass/noise>=3 and not clipping
+                    reason='Repeated raw extrema for >=3 samples; possible clipping: '+','.join(clipping) if clipping else 'Passes amplitude QC; arrival identity requires review' if usable else 'P or S vector peak below 3x vector noise RMS'
+                    row.update(amp_p=ap,amp_s=ass,noise_p=noise,noise_s=noise,sp_ratio=ass/ap,p_snr=ap/noise,s_snr=ass/noise,sp_usable=usable,sp_reason=reason,possible_clipping_channels=';'.join(clipping),p_window_end_s=pend,s_minus_p_s=sp)
             except Exception as exc:row['error']=str(exc)
             rows.append(row)
         print(eid,len([r for r in rows if r['event_id']==eid]),flush=True)
     frame=pd.DataFrame(rows);frame.to_csv(D/'measurements.csv',index=False);pd.DataFrame(stations).drop_duplicates().to_csv(D/'stations.csv',index=False);np.savez_compressed(D/'review_waveforms.npz',**waves)
     meta=dict(cohort='data/coverage_extension',candidate_events=len(ids),records=len(frame),reviewable=int(frame.p_time.notna().sum()),amplitude_qc_pass=int(frame.sp_usable.fillna(False).sum()),human_manual_reviews=0,method='Upward vertical verified from StationXML. Polarity raw counts and VEL, no additional bandpass. S/P = peak three-component velocity norm in P to min(P+.30,S-.10) and S to S+.50; 1–15 Hz 4-pole zero-phase. Noise P-3 to P-1; both peak/noise RMS >=3. Window/filter choices are exploratory; S/P and additional arrival identity need review.',sources={str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in [BASE/'picks.csv',B/'tomodd/retained_picks.csv',B/'uncertainty/relocated_events.csv',ROOT/'inputs/continuation/IV_responses.xml',ROOT/'inputs/continuation/2I_responses.xml']})
+    meta['observation_checkpoint']=str(OBS.relative_to(ROOT))
+    meta['amplitude_clipping_check']='Reject possible clipping if a raw P-through-S+.5 s component has >=3 consecutive extrema samples and peak-to-peak range >100 counts. Conservative exploratory QA, not a recovered Tan setting or proof of instrument saturation. Polarity remains a separate visual judgment.'
+    meta['location_source']=str(LOCATIONS.relative_to(ROOT))
+    meta['sources'][str(arrival_file.relative_to(ROOT))]=hashlib.sha256(arrival_file.read_bytes()).hexdigest()
+    meta['sources'].pop(str((BASE/'picks.csv').relative_to(ROOT)),None)
+    for file in [OBS/'picks.csv',OBS/'processed_coverage.csv']:
+        meta['sources'][str(file.relative_to(ROOT))]=hashlib.sha256(file.read_bytes()).hexdigest()
+    if os.environ.get('CF_MECH_LOCATIONS'):
+        meta['cohort']='Explicit candidate_mapping.csv; old review labels linked to current own locations, with new independently selected larger candidates where available.'
+        for file in [LOCATIONS,OBS/'calibration/merged4/tomodd/retained_picks.csv',D/'candidate_mapping.csv']:
+            meta['sources'][str(file.relative_to(ROOT))]=hashlib.sha256(file.read_bytes()).hexdigest()
     (D/'measurement_summary.json').write_text(json.dumps(meta,indent=2)+'\n')
     if '--measurements-only' not in sys.argv:render(frame,waves)
 

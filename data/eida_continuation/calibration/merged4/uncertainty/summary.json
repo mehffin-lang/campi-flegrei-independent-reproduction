@@ -1,0 +1,792 @@
+{
+  "common_events": 1057,
+  "max_horizontal_m": 1830.2883107918826,
+  "median_horizontal_m": 80.60922680102105,
+  "max_depth_km": 1.1540000000000004,
+  "median_absolute_depth_km": 0.17900000000000005,
+  "gap_passing": 1050,
+  "zero_cc_events": 404,
+  "more_than_100_cc": 0,
+  "interpretation": "Between-round changes test stability; LSQR errors are not SVD uncertainties. Different accepted observations prevent treating aggregate RMS change as a like-for-like fit improvement.",
+  "matched_observations": {
+    "cc": {
+      "n": 2935,
+      "round1_rms_s": 0.012926992343702131,
+      "round2_rms_s": 0.01314673990459481
+    },
+    "picked": {
+      "n": 57395,
+      "round1_rms_s": 0.10073538758731933,
+      "round2_rms_s": 0.0991405181296521
+    }
+  },
+  "svd_runs": [
+    {
+      "region": "Central",
+      "component": 0,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 1,
+      "starting_events": 3,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_Central_2",
+      "returncode": 0,
+      "starting_events": 63,
+      "svd": true,
+      "workdir": "tmp/eida_continuation/uncertainty/svd_Central_2",
+      "cluster_selection": "largest connected component only",
+      "output_events": 52,
+      "clusters": 1,
+      "median_depth_km": 2.3945,
+      "max_error_z_m": 2989.2,
+      "max_depth_km": 8.433,
+      "region": "Central",
+      "component": 2
+    },
+    {
+      "region": "Central",
+      "component": 3,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 4,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 5,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 6,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 7,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_Central_8",
+      "returncode": 0,
+      "starting_events": 32,
+      "svd": true,
+      "workdir": "tmp/eida_continuation/uncertainty/svd_Central_8",
+      "cluster_selection": "largest connected component only",
+      "output_events": 32,
+      "clusters": 1,
+      "median_depth_km": 1.9445000000000001,
+      "max_error_z_m": 682.9,
+      "max_depth_km": 2.431,
+      "region": "Central",
+      "component": 8
+    },
+    {
+      "region": "Central",
+      "component": 9,
+      "starting_events": 3,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 10,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 11,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 12,
+      "starting_events": 3,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_Central_13",
+      "returncode": 0,
+      "starting_events": 5,
+      "svd": true,
+      "workdir": "tmp/eida_continuation/uncertainty/svd_Central_13",
+      "cluster_selection": "largest connected component only",
+      "output_events": 5,
+      "clusters": 1,
+      "median_depth_km": 2.562,
+      "max_error_z_m": 356.7,
+      "max_depth_km": 2.646,
+      "region": "Central",
+      "component": 13
+    },
+    {
+      "region": "Central",
+      "component": 14,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 15,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 16,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_Central_17",
+      "returncode": 0,
+      "starting_events": 4,
+      "svd": true,
+      "workdir": "tmp/eida_continuation/hypodd_logging_repair/svd_Central_17",
+      "cluster_selection": "largest connected component only",
+      "output_events": 3,
+      "clusters": 1,
+      "median_depth_km": 1.105,
+      "max_error_z_m": 1827.7,
+      "max_depth_km": 1.987,
+      "region": "Central",
+      "component": 17,
+      "input_byte_equality": {
+        "event.dat": true,
+        "station.dat": true,
+        "dt.ct": true,
+        "dt.cc": true,
+        "hypoDD.inp": true
+      },
+      "previous_error": "Preserved in hypodd_logging_failure.zip; logging station index zero with no CC data."
+    },
+    {
+      "region": "Central",
+      "component": 18,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 19,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 20,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_Central_21",
+      "returncode": 0,
+      "starting_events": 11,
+      "svd": true,
+      "workdir": "tmp/eida_continuation/uncertainty/svd_Central_21",
+      "cluster_selection": "largest connected component only",
+      "error": " (hypoDD2.0 format)\nINPUT FILES:\n cross dtime data: dt.cc\n catalog dtime data: dt.ct\n events: event.dat\n stations: station.dat\nOUTPUT FILES:\n initial locations: output.loc\n relocated events: output.reloc\n event pair residuals: output.res\n station residuals: output.sta\n source parameters: output.src\nUse local layered 1D model.\nRelocate cluster number    1\nRelocate all events\nRemove air quakes.\nReading data ...   Tue Oct 13 19:07:12 2026\u0000\n# events =    11\n# stations < maxdist =     26\n# stations w/ neg. elevation (set to 0) =    2\n# cross corr P dtimes =       4 (no OTC for      0 event pairs)\n# cross corr S dtimes =      15 (no OTC for      0 event pairs)\n# catalog P dtimes =      62\n# catalog S dtimes =     171\n# dtimes total =      252\n    after gap/distance check:      252 (100%)\n    nccp,nccs,nctp,ncts:            4          15          62         171\n# events after dtime match =         11\n# stations =     14\nclustering ...  \nClustered events:    11\nIsolated events:     0\n# clusters:    1\nCluster   1:    11 events\n\nRELOCATION OF CLUSTER: 1     Tue Oct 13 19:07:12 2026\u0000\n----------------------\nInitial trial sources =    11\n1D ray tracing.\n\n  IT   EV  CT  CC    RMSCT      RMSCC   RMSST   DX   DY   DZ   DT   OS  AQ\n        %   %   %   ms     %   ms     %    ms    m    m    m   ms    m \n 1  1 100 100 100   98 -10.9   63  79.0   212   83   80   74   37    0   0\n Warning: number of non-airquakes < 2\n    skipping this cluster\n   Program hypoDD finished. Tue Oct 13 19:07:12 2026\u0000\n",
+      "region": "Central",
+      "component": 21
+    },
+    {
+      "name": "svd_Central_22",
+      "returncode": 0,
+      "starting_events": 7,
+      "svd": true,
+      "workdir": "tmp/eida_continuation/uncertainty/svd_Central_22",
+      "cluster_selection": "largest connected component only",
+      "output_events": 7,
+      "clusters": 1,
+      "median_depth_km": 1.779,
+      "max_error_z_m": 382.5,
+      "max_depth_km": 2.43,
+      "region": "Central",
+      "component": 22
+    },
+    {
+      "region": "Central",
+      "component": 23,
+      "starting_events": 2,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 24,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 25,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 26,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 27,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 28,
+      "starting_events": 2,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 29,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 30,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 31,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 32,
+      "starting_events": 2,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 33,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 34,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 35,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 36,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 37,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 38,
+      "starting_events": 2,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 39,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 40,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 41,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 42,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 43,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 44,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 45,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 46,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Central",
+      "component": 47,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 0,
+      "starting_events": 3,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 1,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 2,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_North_3",
+      "returncode": 0,
+      "starting_events": 132,
+      "svd": true,
+      "workdir": "tmp/eida_continuation/uncertainty/svd_North_3",
+      "cluster_selection": "largest connected component only",
+      "output_events": 97,
+      "clusters": 1,
+      "median_depth_km": 1.659,
+      "max_error_z_m": 1387.1,
+      "max_depth_km": 2.833,
+      "region": "North",
+      "component": 3
+    },
+    {
+      "region": "North",
+      "component": 4,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 5,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 6,
+      "starting_events": 2,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 7,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 8,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 9,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 10,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 11,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 12,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_North_13",
+      "returncode": 0,
+      "starting_events": 6,
+      "svd": true,
+      "workdir": "tmp/eida_continuation/uncertainty/svd_North_13",
+      "cluster_selection": "largest connected component only",
+      "output_events": 6,
+      "clusters": 1,
+      "median_depth_km": 1.6005,
+      "max_error_z_m": 136.4,
+      "max_depth_km": 1.732,
+      "region": "North",
+      "component": 13
+    },
+    {
+      "region": "North",
+      "component": 14,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 15,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 16,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 17,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 18,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 19,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 20,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 21,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 22,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 23,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "North",
+      "component": 24,
+      "starting_events": 2,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 0,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_Southwest_1",
+      "returncode": 0,
+      "starting_events": 104,
+      "svd": true,
+      "workdir": "tmp/eida_continuation/uncertainty/svd_Southwest_1",
+      "cluster_selection": "largest connected component only",
+      "output_events": 67,
+      "clusters": 1,
+      "median_depth_km": 1.209,
+      "max_error_z_m": 3499.1,
+      "max_depth_km": 7.039,
+      "region": "Southwest",
+      "component": 1
+    },
+    {
+      "region": "Southwest",
+      "component": 2,
+      "starting_events": 2,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_Southwest_3",
+      "returncode": 0,
+      "starting_events": 36,
+      "svd": true,
+      "workdir": "tmp/eida_continuation/uncertainty/svd_Southwest_3",
+      "cluster_selection": "largest connected component only",
+      "output_events": 35,
+      "clusters": 1,
+      "median_depth_km": 3.985,
+      "max_error_z_m": 1595.1,
+      "max_depth_km": 8.254,
+      "region": "Southwest",
+      "component": 3
+    },
+    {
+      "region": "Southwest",
+      "component": 4,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 5,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 6,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 7,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 8,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 9,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 10,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 11,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 12,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 13,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 14,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 15,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 16,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 17,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 18,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 19,
+      "starting_events": 2,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "Southwest",
+      "component": 20,
+      "starting_events": 2,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "name": "svd_East_0",
+      "returncode": 0,
+      "starting_events": 63,
+      "svd": true,
+      "workdir": "tmp/eida_continuation/uncertainty/svd_East_0",
+      "cluster_selection": "largest connected component only",
+      "output_events": 48,
+      "clusters": 1,
+      "median_depth_km": 2.6675,
+      "max_error_z_m": 1634.2,
+      "max_depth_km": 4.824,
+      "region": "East",
+      "component": 0
+    },
+    {
+      "region": "East",
+      "component": 1,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 2,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 3,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 4,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 5,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 6,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 7,
+      "starting_events": 3,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 8,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 9,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 10,
+      "starting_events": 1,
+      "error": "Fewer than four connected events for regional SVD"
+    },
+    {
+      "region": "East",
+      "component": 11,
+      "starting_events": 2,
+      "error": "Fewer than four connected events for regional SVD"
+    }
+  ],
+  "svd_events": 352,
+  "masks": {
+    "Central": "longitude 14.14 E and latitude 40.82 N quadrant boundary; explicit alternative to unspecified paper masks",
+    "North": "longitude 14.14 E and latitude 40.82 N quadrant boundary; explicit alternative to unspecified paper masks",
+    "Southwest": "longitude 14.14 E and latitude 40.82 N quadrant boundary; explicit alternative to unspecified paper masks",
+    "East": "longitude 14.14 E and latitude 40.82 N quadrant boundary; explicit alternative to unspecified paper masks"
+  },
+  "uncertainty": "Generic HypoDD SVD reported 2-sigma errors in m; includes conditional measurement covariance, excludes velocity-grid/calibration/association/systematic bias. Every >=4-event six-phase-linked component of each sampled region attempted, not only the largest.",
+  "sampling": {
+    "maximum_events": {
+      "Central": 174,
+      "North": 165,
+      "Southwest": 175,
+      "East": 166
+    },
+    "seed": 42,
+    "method": "Tan supplement S5 samples 174/165/175/166 events in four regions. Sample without replacement only when more events are available; otherwise retain all. Original regional boundaries unavailable, so masks remain explicit alternatives. Seed 42 is a disclosed reproducibility choice; no published coordinates or errors enter selection."
+  },
+  "sources": {
+    "data/eida_continuation/calibration/merged4/tomodd/round1_locations.csv": "f7b8a7027a69a0fd4685f02b75058e4b265e3e58322a6179539e658aa3fa4aa6",
+    "data/eida_continuation/calibration/merged4/tomodd/round2_locations.csv": "cbf0c1dce7b87f41c2503a22dae68c2d505dfe33dbbdee9b136b30f20bcb6ad8",
+    "data/eida_continuation/calibration/merged4/tomodd/phase_pair_times.csv": "2f720d9a6e88639c7e62071ec7438779a94a77927b0541ee6bca4d4125c7dfe8",
+    "data/eida_continuation/calibration/merged4/tomodd/accepted_differential_times.csv": "6b479d3d455867fe48bad9f6dab1a142d0baaf9f9da979df43e866e8a773c127",
+    "data/eida_continuation/calibration/merged4/independent_calibrated.mod": "7f45c5b50bfe3a1e1c51b3f70a7148526cc60d945cc00e5ec4c77a9cfb94cfff"
+  },
+  "round2_output_zero_cc_events": 406,
+  "zero_cc_scope": "Final gap-passing set. Between-round change statistics use all common round-2 outputs, before its final gap filter.",
+  "logging_repair": "data/eida_continuation/hypodd_logging_repair.json"
+}

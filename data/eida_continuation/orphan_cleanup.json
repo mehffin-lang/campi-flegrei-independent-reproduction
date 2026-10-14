@@ -1,0 +1,37 @@
+[
+  {
+    "pid": 2474902,
+    "action": "SIGTERM",
+    "reason": "Orphaned idle worker/resource tracker from intentionally interrupted physically inadmissible 18:34 calibration downstream attempt; exact project and CF environment verified."
+  },
+  {
+    "pid": 2474903,
+    "action": "SIGTERM",
+    "reason": "Orphaned idle worker/resource tracker from intentionally interrupted physically inadmissible 18:34 calibration downstream attempt; exact project and CF environment verified."
+  },
+  {
+    "pid": 2474906,
+    "action": "SIGTERM",
+    "reason": "Orphaned idle worker/resource tracker from intentionally interrupted physically inadmissible 18:34 calibration downstream attempt; exact project and CF environment verified."
+  },
+  {
+    "pid": 2474907,
+    "action": "SIGTERM",
+    "reason": "Orphaned idle worker/resource tracker from intentionally interrupted physically inadmissible 18:34 calibration downstream attempt; exact project and CF environment verified."
+  },
+  {
+    "pid": 2474908,
+    "action": "SIGTERM",
+    "reason": "Orphaned idle worker/resource tracker from intentionally interrupted physically inadmissible 18:34 calibration downstream attempt; exact project and CF environment verified."
+  },
+  {
+    "pid": 2474909,
+    "action": "SIGTERM",
+    "reason": "Orphaned idle worker/resource tracker from intentionally interrupted physically inadmissible 18:34 calibration downstream attempt; exact project and CF environment verified."
+  },
+  {
+    "pid": 2474910,
+    "action": "SIGTERM",
+    "reason": "Orphaned idle worker/resource tracker from intentionally interrupted physically inadmissible 18:34 calibration downstream attempt; exact project and CF environment verified."
+  }
+]

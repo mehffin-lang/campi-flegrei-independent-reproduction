@@ -1,0 +1,7 @@
+{
+  "velocity_layer_damping": 100.0,
+  "reason": "One disclosed regularization change after physically inadmissible unconstrained fit; same observations, causal/quality filters and numerical acceptance gates.",
+  "trial_record": "data/eida_continuation/velocity_regularization/summary.json",
+  "original_trial": "data/eida_continuation/unconstrained_calibration.zip",
+  "accepted": false
+}

@@ -1,0 +1,8 @@
+{
+  "method": "Keep review labels while linking own candidates through shared observed picks.\n\nNo cross-cohort integer-ID join or author catalog. Unmatched candidates retain\nexplicitly labeled historical own geometry for downstream waveform checks only.\n",
+  "candidates": 14,
+  "new_larger_candidates": 6,
+  "mapped": 14,
+  "model": "data/eida_continuation/calibration/merged4/independent_calibrated.mod",
+  "accepted": false
+}

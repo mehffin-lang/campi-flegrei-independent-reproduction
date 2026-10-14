@@ -127,3 +127,38 @@ The initial TomoDD residual file represented only the last cluster. Appending al
 ## 13 October 2026: local-file and mechanism continuation
 
 See [the executed continuation and exact replacement list](local_followup.md). Current Figures 2–4, S1, S6–S8 and S10–S13 now use the new numerical outputs; both PDFs and their panel records are rebuilt. Earlier numerical cohorts and figures remain preserved, clearly historical. No accepted mechanism or calibrated structural result is claimed.
+
+## 14 October 2026 UTC: eligible EIDA continuation
+
+The new numerical checkpoint is `data/eida_continuation/`, with mechanism
+measurements and solver trials in `data/mechanism_eida/`. The previous
+`data/local_extension/`, `data/coverage_extension/`, `data/mechanism_followup/`,
+their figures, and the separate assessment remain intact. All 14 known
+event-selected snippets are excluded from current continuous detection and
+exposure; they are preserved for explicitly identified template demonstrations.
+Current and previous event identifiers must not be joined as identical events.
+
+The current report and comparison PDF, their main/supplement text and generated
+fragments, `report/figure_layout.json`, `docs/panel_record.json`, `docs/panels.json`,
+and README supersede the previous presentation. Figures 2–4, S1, S6–S8,
+S10–S14 and the new S15D analogue use new saved numerical outputs and filenames
+ending in `_eida_followup`. S11 now has three nonempty swarm selections; the
+fourth remains unavailable. S9 has no qualifying event and remains a text
+notice in the paper and a comparison placeholder. S15A–C retain their numerical
+observations, but their common amplitude-axis scale is corrected to preserve
+the measured interstation ratios. Their prior renderings remain in Git history.
+The new mechanism fit diagnostic is supporting evidence, not a paper panel.
+
+Live acquisition receipts and coverage summaries are updated; earlier scientific
+cohort data are not overwritten. The negative-bulk-modulus calibration, failed
+generic solver logging runs, and pre-addition mechanism measurements are retained
+in hashed archives. Storage-capacity and diagnostic-logging fixes, the checked
+zero-term Cholesky optimization, and the disclosed uniform-damping trial are
+documented separately; they do not establish scientific acceptance.
+
+The supplied PDFs and ZIPs, guidance files, trained weights, original waveform
+observations, reference-grid bytes, and unrelated user work are preserved.
+No RAN acquisition, Calò–Tramelli search, author contact, synthetic empirical
+data, or author-derived event substitution was performed. See
+[EIDA_CONTINUATION.md](EIDA_CONTINUATION.md) and the executed rebuild receipt for
+current counts, commands, failed scientific checks and remaining work.

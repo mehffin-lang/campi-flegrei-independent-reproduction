@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-14T01:34:24.614752+00:00",
+  "reason": "Both independently fitted regional 3\u20135 km layers have Vp/Vs below sqrt(4/3), implying negative isotropic bulk modulus. Preserve this unconstrained trial; do not propagate it as an accepted elastic reference.",
+  "stopped_stage": "run_grid_tomodd.py",
+  "signal": "SIGTERM",
+  "next": "One disclosed uniform velocity-layer damping=100 trial; identical observations, event selections and acceptance gates."
+}

@@ -1,0 +1,70 @@
+{
+  "events": 1050,
+  "velest_events": 1435,
+  "magnitudes": 868,
+  "above_5km": 16,
+  "above_5km_velest": 39,
+  "best_located_events": 0,
+  "groups": [
+    {
+      "panel": "S11/swarm-1",
+      "events": 2,
+      "start": "2022-03-01",
+      "end_inclusive": "2022-04-01"
+    },
+    {
+      "panel": "S11/swarm-2",
+      "events": 1,
+      "start": "2023-09-25",
+      "end_inclusive": "2023-10-03"
+    },
+    {
+      "panel": "S11/swarm-3",
+      "events": 795,
+      "start": "2024-05-18",
+      "end_inclusive": "2024-05-25"
+    },
+    {
+      "panel": "S11/swarm-4",
+      "events": 0,
+      "start": "2025-02-12",
+      "end_inclusive": "2025-02-19"
+    },
+    {
+      "panel": "S10/2022",
+      "events": 88
+    },
+    {
+      "panel": "S10/2023",
+      "events": 11
+    },
+    {
+      "panel": "S10/2024",
+      "events": 825
+    },
+    {
+      "panel": "S10/2025",
+      "events": 126
+    }
+  ],
+  "cpoz_events": 584,
+  "cpoz_traces": 1168,
+  "cpoz_sectors": {
+    "East": 58,
+    "North": 108,
+    "Other": 920,
+    "Southwest": 82
+  },
+  "errors": [],
+  "sector_masks": "Explicit alternative: North y>=1.5 km; remaining East x>=1 km; remaining Southwest x<=-2 or y<=-1 km; remainder Other. Local WGS84 AEQD centered 40.82N 14.14E. No depth filter. These are not the unpublished original masks.",
+  "counts": "Seven-day bins anchored 21 January 2022; sparse observed-window counts, not exposure-corrected rates. Routine counts are separate context and never seed events. Unobserved weeks are not empirical zeros.",
+  "swarm_dates": "Written panel-title date ranges from S11; only selection metadata read, never plotted coordinates, magnitudes or count values. End day inclusive assumed.",
+  "input_hashes": {
+    "data/eida_continuation/calibration/merged4/uncertainty/relocated_events.csv": "db9a5694fc31b2d60a955a53f4434fbe6a943dde7221aa5ca4c0a95db0b49f19",
+    "data/eida_continuation/calibration/merged4/filtered_events.csv": "5f38c6a28ff5446e735919098e31e1d588f6ccf7d4557163132314ad00c541d8",
+    "data/eida_continuation/calibration/merged4/magnitude/magnitudes.csv": "e1a4c6eb8a8f2a1b8057c62902afcfae5ff7d8a0b9f4edba02ecc590709560e1",
+    "data/eida_continuation/calibration/merged4/tomodd/retained_picks.csv": "fffc162fee71b58ed569c2f10b7180a1498ed1fde62cecc64acf9223eaadc561",
+    "data/eida_continuation/processed_coverage.csv": "dacbe628513e96c34611568ebae55c67393ecc693a8917abd11178f4a2c95135",
+    "data/continuation/figure_S5.csv": "70d4d9e2007100017028a8a0c40e1a9e33b85977d715063eae078a998e2560e0"
+  }
+}

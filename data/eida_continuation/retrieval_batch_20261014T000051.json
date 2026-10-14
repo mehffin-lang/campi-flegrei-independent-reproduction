@@ -1,0 +1,495 @@
+{
+  "selection": "Bounded resume of the existing calendar-based EIDA queue, without catalogs.\n\nComplete the last three study days first (also useful for downstream waveform\nreview), then alternate years and months. This is incomplete calendar sampling,\nnot a completeness experiment. No attempted request is retried.\n",
+  "purpose": "Complete the six-hour calendar block containing the previously specified S4 swarm benchmark. All recorded phases are inferred independently, without supplied picks or event seeds. Purposeful continuous-window sampling; no population completeness or independent discovery of the known swarm is claimed.",
+  "core_start": "2024-05-20T18:00:00",
+  "core_end": "2024-05-21T00:00:00",
+  "requested_limit": 20,
+  "requests": [
+    {
+      "request": {
+        "id": "IV_CAWE_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CAWE",
+        "channel": "EH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CAWE_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 10874880,
+        "sha256": "675d1fb677bac7be85fb797c490f0eda1ef4c25520445a42e8e9f058d56e7d89",
+        "file": "inputs/continuation/waveforms/IV_CAWE_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAWE&loc=%2A&cha=EH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:00:51.814979+00:00",
+        "elapsed_s": 83.9822593969293
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CAAM_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CAAM",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CAAM_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 16125440,
+        "sha256": "03e389b9c4b03919a663164e0930d564386a61dabce32f1c4fb53d5b18fd2fb4",
+        "file": "inputs/continuation/waveforms/IV_CAAM_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:00:51.808381+00:00",
+        "elapsed_s": 120.74630789703224
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CBAG_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CBAG",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CBAG_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 9061376,
+        "sha256": "c80d7f89dfeb082357a46b93a50872e916a1f3e86db4f1de981e9c18c6a5b30e",
+        "file": "inputs/continuation/waveforms/IV_CBAG_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAG&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:02:52.564976+00:00",
+        "elapsed_s": 60.86303487303667
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CBAC_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CBAC",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CBAC_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 14536192,
+        "sha256": "92f91fd69eb1290e0cbe53bbdabd58744e9491b8ff9d364875f1348dd495b059",
+        "file": "inputs/continuation/waveforms/IV_CBAC_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAC&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:02:15.807258+00:00",
+        "elapsed_s": 98.66407014301512
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CFB1_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CFB1",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CFB1_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 3332096,
+        "sha256": "7fdea7c50f21e99162938bb8b9ba0355aa8b773c24742f04241a46b69340004f",
+        "file": "inputs/continuation/waveforms/IV_CFB1_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:03:54.481021+00:00",
+        "elapsed_s": 15.574784236960113
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CFB3_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CFB3",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CFB3_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 3489792,
+        "sha256": "a4ccaebad8ddd646cf1c44e33f4d603120542a5a936bac31614c4a71da444700",
+        "file": "inputs/continuation/waveforms/IV_CFB3_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB3&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:04:10.067528+00:00",
+        "elapsed_s": 23.74390394205693
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CCAP_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CCAP",
+        "channel": "EH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CCAP_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 13073408,
+        "sha256": "4559da8651661ec93b7043e9492fccde43a3de390ffae2fab928fa5fa431e936",
+        "file": "inputs/continuation/waveforms/IV_CCAP_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:03:53.438763+00:00",
+        "elapsed_s": 70.52163110196125
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CFMN_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CFMN",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CFMN_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 16223232,
+        "sha256": "ccc6d1509fb3d78fe723db60f978fb25590865c2013b208abfe28c2a81fb3a88",
+        "file": "inputs/continuation/waveforms/IV_CFMN_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:04:33.818064+00:00",
+        "elapsed_s": 92.71714093198534
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CMIS_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CMIS",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CMIS_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 13487616,
+        "sha256": "e6cd8608669c42b56b7be19fbcb2f98a95460f16d2b06660dd4c6bb4f8878006",
+        "file": "inputs/continuation/waveforms/IV_CMIS_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:05:03.967217+00:00",
+        "elapsed_s": 75.24505058093928
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CMSN_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CMSN",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CMSN_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 11049984,
+        "sha256": "cdf7e589f7aff794d3944ccd5272ffbc628f36db76f3c3083e308a320b310d01",
+        "file": "inputs/continuation/waveforms/IV_CMSN_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:06:06.546088+00:00",
+        "elapsed_s": 52.095063247019425
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CMTS_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CMTS",
+        "channel": "EH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CMTS_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 12389888,
+        "sha256": "bd2960a5650f3ab8947d5022e3d963fbe73d69f7148bc298e6e5047d2e2d5ff8",
+        "file": "inputs/continuation/waveforms/IV_CMTS_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:06:19.231435+00:00",
+        "elapsed_s": 57.32840682496317
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CNIS_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CNIS",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CNIS_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 10075648,
+        "sha256": "ea27f7e5db5afe74e9f07d225675804252816b51a4fc01cad22c529641d98451",
+        "file": "inputs/continuation/waveforms/IV_CNIS_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CNIS&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:06:58.652569+00:00",
+        "elapsed_s": 46.24866624199785
+      }
+    },
+    {
+      "request": {
+        "id": "IV_COLB_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "COLB",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_COLB_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 16110080,
+        "sha256": "b6c05b4cc883cd0ab8ef4fb9077516b813b6b19d50acb439be9f7d540d16bdda",
+        "file": "inputs/continuation/waveforms/IV_COLB_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:07:16.573238+00:00",
+        "elapsed_s": 75.38266103796195
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CPIS_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CPIS",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CPIS_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 16951808,
+        "sha256": "a3970352afb8c4ae8a7c4bb144f2bb37e5208992d757fb3e6b19b70cf416d43b",
+        "file": "inputs/continuation/waveforms/IV_CPIS_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPIS&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:07:44.913279+00:00",
+        "elapsed_s": 79.9711661139736
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CPOZ_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CPOZ",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CPOZ_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 12361728,
+        "sha256": "8c83da515b16269a1684f882d2f53c89354e90dd826bf62c35e75a3b50f64639",
+        "file": "inputs/continuation/waveforms/IV_CPOZ_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:08:31.966535+00:00",
+        "elapsed_s": 64.90072847995907
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CQUE_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CQUE",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CQUE_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 15871488,
+        "sha256": "ed17fab706e2253a73513949e5f52e3c19c8955b1f6ec9d6c3a9d71050d1ba01",
+        "file": "inputs/continuation/waveforms/IV_CQUE_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CQUE&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:09:04.896125+00:00",
+        "elapsed_s": 67.18499954603612
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CSFT_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CSFT",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CSFT_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 15395328,
+        "sha256": "60cdb0a15ef45c20abde1298b7ed78d11fa92158f383bc7593fc3ccf94c6b058",
+        "file": "inputs/continuation/waveforms/IV_CSFT_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:09:36.879209+00:00",
+        "elapsed_s": 60.968593772966415
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CSOB_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CSOB",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CSOB_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 16376832,
+        "sha256": "01285b86cc27f2d8b0258d719f4b018ffc67cb01d352bb91b9a5e3dd11f79b04",
+        "file": "inputs/continuation/waveforms/IV_CSOB_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:10:12.091799+00:00",
+        "elapsed_s": 76.19614412891679
+      }
+    },
+    {
+      "request": {
+        "id": "IV_CSTH_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "CSTH",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_CSTH_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 16526336,
+        "sha256": "b71f0556a4c78045d06a587d0cb4c3f27c3c366c8b25526fb6899728819ac7f3",
+        "file": "inputs/continuation/waveforms/IV_CSTH_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:10:37.868631+00:00",
+        "elapsed_s": 75.33422769990284
+      }
+    },
+    {
+      "request": {
+        "id": "IV_PTMR_20240520T180000_20240521T000000",
+        "network": "IV",
+        "station": "PTMR",
+        "channel": "HH?",
+        "start": 1716228000.0,
+        "end": 1716249600.0
+      },
+      "outcome": {
+        "id": "IV_PTMR_20240520T180000_20240521T000000",
+        "status": "downloaded",
+        "http": 200,
+        "bytes": 9573888,
+        "sha256": "88ed69daedeb03192e17d1355f5d459c8df1a6b4375ad55c788e0391687bb7bd",
+        "file": "inputs/continuation/waveforms/IV_PTMR_20240520T180000_20240521T000000.mseed",
+        "error": null,
+        "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=PTMR&loc=%2A&cha=HH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+        "retrieved_utc": "2026-10-14T00:11:28.308938+00:00",
+        "elapsed_s": 42.21063361596316
+      }
+    }
+  ],
+  "summary": {
+    "study_start": "2022-01-21T00:00:00.000000Z",
+    "study_end_exclusive": "2025-03-21T00:00:00.000000Z",
+    "request_hours": "6-hour full-period queue plus 0.5-hour calendar coverage checks",
+    "priority": "short requests first, then chronological; no event catalog",
+    "jobs_by_status": {
+      "downloaded": 994,
+      "failed": 11,
+      "no_data": 36,
+      "pending": 73761,
+      "running": 4
+    },
+    "full_collection_complete": false,
+    "downloaded_bytes": 8395584512,
+    "files": 994,
+    "channel_hours": 11122.982852772608,
+    "stations": [
+      "CAAM",
+      "CAWE",
+      "CBAC",
+      "CBAG",
+      "CCAP",
+      "CFB1",
+      "CFB3",
+      "CFMN",
+      "CGAU",
+      "CLAC",
+      "CMIS",
+      "CMSN",
+      "CMTS",
+      "CNIS",
+      "COLB",
+      "CPIS",
+      "CPOZ",
+      "CQUE",
+      "CREM",
+      "CRUS",
+      "CSFT",
+      "CSOB",
+      "CSOC",
+      "CSTH",
+      "CUMA",
+      "PTMR"
+    ],
+    "accounting": "Union of clipped, successfully read sample intervals. Availability metadata and failed requests do not count as coverage."
+  }
+}

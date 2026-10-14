@@ -1,0 +1,9 @@
+{
+  "intervals": 1033,
+  "valid_hours": 140.6564361111109,
+  "candidates": 1843,
+  "one_station_nonpositive_score": 42,
+  "reviewed_hybrid_events": 0,
+  "full_study_search_complete": false,
+  "score_caveat": "The documented two-station mean threshold can pass when one station has weak or negative similarity. Individual station scores are retained for review; no additional station threshold was imposed."
+}

@@ -1,0 +1,61 @@
+{
+  "review": "Codex AI visual inspection, not human review. Highest-SNR single station for each of ten selected events; not all stations or candidates.",
+  "inspected_events": [
+    331,
+    1400,
+    1759,
+    945,
+    1760,
+    946,
+    1809,
+    1881,
+    1038,
+    332
+  ],
+  "negative_mean_events": 107,
+  "negative_mean_with_no_station_above_5dB": 62,
+  "confirmed_hybrids": 0,
+  "inputs": {
+    "data/eida_continuation/catalog_frequency_review.npz": "009e451570f136f2e63ac6356b5fbc54839de96211dfea9c6a210b1ce0059bec",
+    "data/eida_continuation/catalog_frequency_review_index.json": "71f0a7e8da2e90e50ef085eb3788e904634c1e1bc753ae79e1a80d10c872b0f0",
+    "data/eida_continuation/catalog_frequency_index.csv": "a78e59ea72fd3ee937e1abec77d7b9ca5fdfa3da20e969c396b56dd83f41ab4e",
+    "data/eida_continuation/catalog_frequency_index_events.csv": "6523452503bce5e491f36cda26599aa08be25d38678dba16f96ed1e519fd8401"
+  },
+  "displays": [
+    "tmp/eida_continuation/frequency_screen/sheet1.png",
+    "tmp/eida_continuation/frequency_screen/sheet2.png"
+  ],
+  "limitations": "62 negative-mean candidates have no measured station above 5 dB signal/noise. This is a diagnostic, not a new exclusion threshold or changed FI estimator. Selected strong examples still require multi-station onset/source review; an individual station can have positive FI while the unweighted mean is negative. No catalog, mechanism or hybrid classification is changed.",
+  "review_array_hashes": {
+    "e331_IV_CNIS_": "0eaf4909da670aa53ef6fb2f4e838bd0d0822b90f9da7ef94f68d857a9d65f1c",
+    "e331_IV_CBAG_": "eae611a0906511fc9f56f1b4bf7b79f55fb511c233839fe4b1e9278d114cb10e",
+    "e331_IV_PTMR_": "e1558add31c5baa2a5d120b3e17af55f291c9c38c4e278afd9465d7cf9cc1b04",
+    "e332_IV_CMIS_": "0f9b691feb8e789c0ffa011147214804a792d25ecfe2991cdd70e4c712a0ae2b",
+    "e332_IV_CBAC_": "88fa03750c5db3f3685485493bed018d3e1ed07b8a550a3084fef17f8b6fdd6a",
+    "e332_IV_PTMR_": "d8a93fdf27d94d545c99eb9ecf710943f43b0cf86468879bbb455d3259d63f86",
+    "e945_IV_CPOZ_": "6479d20ba7f2e40d01add294fb481b0dcf0af51f02c26029754d9d093ed621b5",
+    "e945_IV_CMIS_": "edc864e1fe690e56a997a1c87f56cc61cd8c2f5e71e0301bcbb09aea875527e4",
+    "e945_IV_PTMR_": "26f3231f74ee6819b9eb5c841169a570d44648bc3d9dc338fafc1d31f34bb11d",
+    "e946_IV_CMIS_": "dfb2bcfe51bdeba51fe74278cbdffefc1df369898e9e660bc37937d9f1c7ee3b",
+    "e946_IV_CQUE_": "49d0d7b1bc9ad9cda93842c37383f4ffab65522bc6dd68c348c47be347f28167",
+    "e946_IV_PTMR_": "41df87c977d923bdc8d6ee75a139966d60006c432ee97d02457abe92111ed5c2",
+    "e1038_IV_CNIS_": "8ca3322a8178f64be451dd9dfe1e833cb5582ff311889f38cf0bf127fb5d90d6",
+    "e1038_IV_CPOZ_": "a69de95faebb03f0f454c866502e48ad417dd06f28fa835cec9792f0f1f4e97e",
+    "e1038_IV_CMSN_": "e3e14d9f5dd7b241e23dad40d5f6743e921e7bbb98b1e066f04e71e8785af341",
+    "e1400_IV_CNIS_": "018b020c28238430e0767054bd3e5ac5e2f08121bf7c4fb1fd8d9ac6e3c21b45",
+    "e1400_IV_CFMN_": "c8d37989fd46a61d9f5dcca9c1b6e4e08e6ca188f0ef5b942db73962b592c259",
+    "e1400_IV_CMSN_": "322c493bb5b08de3665ca810536e8a93ed9f1f248410fd7f899e1c2e9ff9c694",
+    "e1759_IV_CSOB_": "4071063e20354ff1455e1fb770bf754864c50f31fb7b77d1f376336a73593cc1",
+    "e1759_IV_CFB3_": "ea87eb80ebcd85d68b17d4bb728d9718714643d9a94663c35154f4e373e2f313",
+    "e1759_IV_PTMR_": "486a797ca99eff64349f280eb0d00004426723da4eb0a06684fbf132fa8709b1",
+    "e1760_IV_CFB3_": "035b08ca20efb6164f9ff24faa8487b0cc0daad217920c0934039955776d95e2",
+    "e1760_IV_CPOZ_": "a2fcdb0c4e6275064b2d888b00a95cdaccdec69e98eceefb49b64c4042c65bd2",
+    "e1760_IV_PTMR_": "1d6ed1e1f2cb5c38bc936e77674c3ed963f68c8d21dd7683bf4a2581a1b4d947",
+    "e1809_IV_CSOB_": "8cb163eeab9d4df357bc50041e68a4a24324d3fc47f1dd468eabff630dc6d936",
+    "e1809_IV_CSTH_": "a5ff3dedd65c654b6b1fe2cc65bdec7dcaf75bdb8cdbcfd7ad9a7a324dcb3d28",
+    "e1809_IV_CNIS_": "f2c926136916d78fac31d1c945083ac5678255c3c9de74aee84ab1a5908d6a6a",
+    "e1881_IV_CSOB_": "419343cdb6544492a0c5ec73e46e2ff195cf40f2eebed423d870a665019e4218",
+    "e1881_IV_CSTH_": "9429569c577fae65e230fc19a01fb5392bf7c4efafda4a56aaa93970ab572804",
+    "e1881_IV_CNIS_": "19702629531c6f742f1e6707f9c47a5d52e8f352c3e58e6c728ceb29fc49909b"
+  }
+}

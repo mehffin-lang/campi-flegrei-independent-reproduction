@@ -1,0 +1,42 @@
+[
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/extend_hybrid_scan.py",
+      "--dataset",
+      "grid",
+      "--output",
+      "data/eida_continuation/hybrid",
+      "--input-manifest",
+      "data/eida_continuation/input_jobs.json"
+    ],
+    "returncode": 0,
+    "log": "tmp/eida_continuation/post_extend_hybrid_scan.py.log"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/hybrid_eida_followup.py"
+    ],
+    "returncode": 0,
+    "log": "tmp/eida_continuation/post_hybrid_eida_followup.py.log"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/audit_continuation.py",
+      "--data-dir",
+      "data/eida_continuation"
+    ],
+    "returncode": 0,
+    "log": "tmp/eida_continuation/post_audit_continuation.py.log"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/catalog_frequency_index.py"
+    ],
+    "returncode": 0,
+    "log": "tmp/eida_continuation/post_catalog_frequency_index.py.log"
+  }
+]

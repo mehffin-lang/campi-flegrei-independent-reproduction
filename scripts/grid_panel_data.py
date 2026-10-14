@@ -38,7 +38,8 @@ def main():
         x.to_csv(OUT/(name+'.csv'),index=False);groups.append(dict(panel='S11/'+name,events=len(x),start=a,end_inclusive=b))
     for year in range(2022,2026):
         x=e[t.dt.year==year];x.to_csv(OUT/f'year{year}.csv',index=False);groups.append(dict(panel=f'S10/{year}',events=len(x)))
-    high=e[(e.ncc_p+e.ncc_s)>100];high.to_csv(OUT/'best_located.csv',index=False)
+    # Supplement p. S8 removes sums below 100; retain equality at 100.
+    high=e[(e.ncc_p+e.ncc_s)>=100];high.to_csv(OUT/'best_located.csv',index=False)
     # CPOZ independently picked arrivals, now joined to the same-cohort relocated
     # IDs; old 1003-event gathers are not eligible for this join.
     picks=pd.read_csv(BASE/'tomodd/retained_picks.csv');p=picks[(picks.trace_id.str.split('.').str[1]=='CPOZ')&(picks.phase=='P')].merge(e,on='event_index',suffixes=('_pick','_event'))

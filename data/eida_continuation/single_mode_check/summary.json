@@ -1,0 +1,30 @@
+{
+  "method": "Compare generic fixed-model location modes on 20 existing own events.\n\nVELEST guide pp. 3, 13 and appendix recommend single-event mode for locating a\ncatalog with fixed velocities and station corrections. This is a method check,\nnot additional observations or accepted event locations.\n",
+  "events": 20,
+  "runs": [
+    {
+      "name": "simultaneous",
+      "bits": 64,
+      "events": 20,
+      "picks": 146,
+      "returncode": 0,
+      "residual_rms_s": 0.30577487465879655,
+      "event_rms_s": 0.2104281350010022,
+      "depth_min_km": 0.12,
+      "depth_max_km": 2.4,
+      "workdir": "tmp/eida_continuation/single_mode_check/simultaneous",
+      "wall_seconds": 0.04312155197840184
+    },
+    {
+      "name": "single",
+      "error": "RuntimeError('single: VELEST failed; inspect tmp/eida_continuation/single_mode_check/single/console.log')",
+      "wall_seconds": 0.038807447999715805
+    }
+  ],
+  "input_files": {
+    "tmp/local_extension/merged4/whole_catalog_pass1/input.cnv": "71e9c9b55305f07300219be10c54bd19043fbbe04c1acc7f8605c8d236d75aa4",
+    "tmp/local_extension/merged4/whole_catalog_pass1/input.mod": "7ec777db1a8d45558a68896d3eb845cc64f4c20ca80cae4d2ad6a054461cfa68",
+    "tmp/local_extension/merged4/whole_catalog_pass1/input.sta": "466070d5505bb31cd77bf2325baa00eeaf0565436b0b8a5f45d2c7f77791de45",
+    "inputs/extended/velest_guide.pdf": "06cea94a27ff916ab45bcabfdd29459167ebb623f1bec9e4cef8eac16b24204e"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "runs": [
+    {
+      "name": "precision32_prelocation",
+      "bits": 32,
+      "events": 552,
+      "picks": 9529,
+      "returncode": 0,
+      "residual_rms_s": 0.23033652599232415,
+      "event_rms_s": 0.23488510913370736,
+      "depth_min_km": 0.04,
+      "depth_max_km": 8.57,
+      "workdir": "tmp/eida_continuation/merged4/precision32_prelocation",
+      "wall_seconds": 6.334722905070521,
+      "timeout_seconds": 1800,
+      "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+    },
+    {
+      "name": "precision32_round1",
+      "bits": 32,
+      "events": 552,
+      "picks": 9529,
+      "returncode": 0,
+      "residual_rms_s": 0.217407679650356,
+      "event_rms_s": 0.22219589215994437,
+      "depth_min_km": 0.05,
+      "depth_max_km": 7.54,
+      "workdir": "tmp/eida_continuation/merged4/precision32_round1",
+      "wall_seconds": 3.7576539400033653,
+      "timeout_seconds": 1800,
+      "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+    },
+    {
+      "name": "precision32_round2",
+      "bits": 32,
+      "events": 552,
+      "picks": 9529,
+      "returncode": 0,
+      "residual_rms_s": 0.1939254711528189,
+      "event_rms_s": 0.20359762462667189,
+      "depth_min_km": 0.01,
+      "depth_max_km": 6.62,
+      "workdir": "tmp/eida_continuation/merged4/precision32_round2",
+      "wall_seconds": 7.256535431952216,
+      "timeout_seconds": 1800,
+      "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+    },
+    {
+      "name": "precision32_convergence1",
+      "bits": 32,
+      "events": 552,
+      "picks": 9529,
+      "returncode": 0,
+      "residual_rms_s": 0.19225160687030005,
+      "event_rms_s": 0.2046090297920983,
+      "depth_min_km": 0.01,
+      "depth_max_km": 6.4,
+      "workdir": "tmp/eida_continuation/merged4/precision32_convergence1",
+      "wall_seconds": 7.973408832098357,
+      "timeout_seconds": 1800,
+      "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+    },
+    {
+      "name": "precision32_convergence2",
+      "bits": 32,
+      "events": 552,
+      "picks": 9529,
+      "returncode": 0,
+      "residual_rms_s": 0.19122740919516484,
+      "event_rms_s": 0.20337728201689517,
+      "depth_min_km": 0.07,
+      "depth_max_km": 6.17,
+      "workdir": "tmp/eida_continuation/merged4/precision32_convergence2",
+      "wall_seconds": 7.552416856051423,
+      "timeout_seconds": 1800,
+      "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+    },
+    {
+      "name": "precision32_convergence3",
+      "bits": 32,
+      "events": 552,
+      "picks": 9529,
+      "returncode": 0,
+      "residual_rms_s": 0.19150468229622727,
+      "event_rms_s": 0.20300237379921432,
+      "depth_min_km": 0.09,
+      "depth_max_km": 6.09,
+      "workdir": "tmp/eida_continuation/merged4/precision32_convergence3",
+      "wall_seconds": 8.34134542196989,
+      "timeout_seconds": 1800,
+      "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+    }
+  ],
+  "precision_difference": {
+    "max_horizontal_m": 1075.1956872200683,
+    "max_depth_km": 0.8499999999999996,
+    "max_origin_s": 0.54,
+    "max_rms_s": 0.10000000000000003
+  },
+  "velocity_difference_km_s": 0.0,
+  "station_delay_difference_s": 0.10999999999999999,
+  "precision_gate_passed": false,
+  "same_converged_start_precision": {
+    "max_horizontal_m": 1330.0499087140831,
+    "max_depth_km": 1.29,
+    "max_origin_s": 0.33,
+    "max_rms_s": 0.18
+  },
+  "same_converged_start_velocity_difference_km_s": 0.0,
+  "accepted_scientific_catalog": false,
+  "limitation": "Held-out refitting and identical-input precision diagnostics were executed on this cohort. Absolute locations and phases remain unvalidated; regional-start and precision gates are retained. See the heldout record for failures as well as successful runs.",
+  "sources": {
+    "data/eida_continuation/calibration/merged4/independent_calibrated.mod": "7f45c5b50bfe3a1e1c51b3f70a7148526cc60d945cc00e5ec4c77a9cfb94cfff",
+    "data/eida_continuation/calibration/merged4/independent_calibrated.sta": "bb647e70d57a14ebcb0881e48be7cac86503b21d36bfdf324b8057046a2f83be",
+    "data/eida_continuation/calibration/merged4/filtered_events.csv": "5f38c6a28ff5446e735919098e31e1d588f6ccf7d4557163132314ad00c541d8"
+  },
+  "heldout_check": "data/eida_continuation/calibration/merged4/heldout/summary.json",
+  "heldout_result": 0.03218345172807313
+}

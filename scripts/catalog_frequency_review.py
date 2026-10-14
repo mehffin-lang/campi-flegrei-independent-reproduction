@@ -14,14 +14,16 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
-D=ROOT/'data/continuation'
+D=ROOT/os.environ.get('CF_OBSERVATIONS','data/continuation')
 
 
 def main():
     means=pd.read_csv(D/'catalog_frequency_index_events.csv')
     low=means[means.mean_FI<0]
     measurements=pd.read_csv(D/'catalog_frequency_index.csv')
-    quality=pd.read_csv(D/'association_quality.csv').set_index('event_index')
+    quality_path=D/'association_quality.csv'
+    if not quality_path.exists():quality_path=D/'calibration/input_quality.csv'
+    quality=pd.read_csv(quality_path).rename(columns={'causal':'passes_causality'}).set_index('event_index')
     inventories={n:read_inventory(str(ROOT/f'inputs/continuation/{n}_responses.xml')) for n in ['IV','2I']}
     arrays={};rows=[];failures=[]
     for event in low.itertuples():
@@ -52,7 +54,7 @@ def main():
     # Plot from the saved numerical products, not from a second waveform read.
     saved=np.load(D/'catalog_frequency_review.npz')
     rows=json.loads((D/'catalog_frequency_review_index.json').read_text())
-    with PdfPages(ROOT/'figures/catalog_frequency_review_diagnostic.pdf') as pdf:
+    with PdfPages(ROOT/os.environ.get('CF_FREQUENCY_DIAGNOSTIC','figures/catalog_frequency_review_diagnostic.pdf')) as pdf:
         for event in low.itertuples():
             selected=[r for r in rows if r['event_index']==event.event_index]
             if not selected:continue
@@ -72,7 +74,7 @@ def main():
         saved_station_windows=len(rows),failures=failures,confirmed_hybrids=0,
         selection='For each negative-mean-FI provisional event: two highest station SNRs and the lowest station FI, deduplicated. Diagnostic selection, not an accuracy sample.',
         display_method='Z velocity; response removal on up to -35/+31 s context, then -20/+16 s display, with a separate causal four-pole 0.2--6 Hz curve. FI/SNR labels retain the original saved measurements, whose response-removal context was -10/+10 s; no FI is re-estimated from the display.',
-        input_sha256={n:hashlib.sha256((D/n).read_bytes()).hexdigest() for n in ['catalog_frequency_index.csv','catalog_frequency_index_events.csv','association_quality.csv']},
+        input_sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [D/'catalog_frequency_index.csv',D/'catalog_frequency_index_events.csv',quality_path]},
         limitations='Predicted/picked alignment is unreviewed. Other provisional arrivals are warnings, not validated coda labels. Plots and negative FI do not establish hybrid events.')
     (D/'catalog_frequency_review.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary,indent=2))
 

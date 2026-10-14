@@ -1,0 +1,9 @@
+{
+  "candidates": 36,
+  "station_windows": 72,
+  "errors": [],
+  "method": "Two-station observed windows for review of the 36 displayed crossings.\n\nThis diagnostic does not label events automatically. The time origin is template\nalignment, not a reviewed phase onset. No paper result table is used.\n",
+  "filter": "Response-corrected vertical velocity, causal four-pole 0.2\u20136 Hz, -10 to +16 s context. FI/SNR retained from saved broadband measurements; gray area is their 8-s signal window.",
+  "human_reviews": 0,
+  "confirmed_hybrids": 0
+}

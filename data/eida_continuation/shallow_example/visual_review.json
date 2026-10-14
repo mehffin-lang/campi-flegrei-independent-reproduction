@@ -1,0 +1,10 @@
+{
+  "review": "Codex AI inspection of four observed waveform/spectral panels; no human review.",
+  "event_index": 2314,
+  "observations": "A coherent short packet is visible at both stations near the own P alignment, with low-frequency background motion. Source type and 0.591 km trial depth are not validated by these traces.",
+  "display_correction": "Common waveform amplitude axes are required to preserve CAAM/COLB amplitude ratios. Numerical waveform and spectral arrays are unchanged.",
+  "source_files": {
+    "data/eida_continuation/shallow_example/waveforms.csv": "31aefc0529e23602d17ee960eef3a602ab466fe635a697a41a3b625238ce162c",
+    "data/eida_continuation/shallow_example/spectra.npz": "259626c6d6241c0d103602254d979d2034290bbcbe1de3e21bf156c18334bde6"
+  }
+}

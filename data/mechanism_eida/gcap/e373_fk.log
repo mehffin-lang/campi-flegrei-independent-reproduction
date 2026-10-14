@@ -1,0 +1,53 @@
+ Input number_of_layers layer_src_at_botom rcv_layer
+ Input thickness of each layer and velocity
+ Input the number of distance ranges
+ Input distance range (in km)
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+ Input number_of_layers layer_src_at_botom rcv_layer
+ Input thickness of each layer and velocity
+ Input the number of distance ranges
+ Input distance range (in km)
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Input nlay src_layer src_type rcv_layer updn
+ Input thickness Vp Vs rho Qa Qb for layer           1
+   1   1.50   2.33   1.20   1.52 0.10E+04 0.50E+03
+ Input thickness Vp Vs rho Qa Qb for layer           2
+   2   2.00   3.39   1.93   1.85 0.10E+04 0.50E+03
+ Input thickness Vp Vs rho Qa Qb for layer           3
+   3   0.64   4.76   2.91   2.29 0.10E+04 0.50E+03
+ Input thickness Vp Vs rho Qa Qb for layer           4
+   4   1.36   4.76   2.91   2.29 0.10E+04 0.50E+03
+ Input thickness Vp Vs rho Qa Qb for layer           5
+   5   0.00   5.48   3.42   2.52 0.10E+04 0.50E+03
+source-station    4.136
+Input sigma NFFT dt lp nb smooth_factor wc1 wc2
+Input pmin pmax dk kc
+Input number of distance ranges to compute
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+Input x t0 output_name (2f10.3,1x,a)
+  **** WARNING **** dk =   0.300000012      larger than max    1.45285157E-02
+  dk =  0.22787  kmax =  3.63  pmax =0.3436     N =    26296
+  start F-K computation, iw-range:           2           3         358         512
+  10% done
+  20% done
+  30% done
+  40% done
+  50% done
+  60% done
+  70% done
+  80% done
+  90% done
+    25733           100% done, writing files ... 
+model_4.136/3.420.grn.0
+model_4.136/3.420.grn.5
+model_4.136/3.260.grn.0
+model_4.136/3.260.grn.5
+model_4.136/2.149.grn.0
+model_4.136/2.149.grn.5
+model_4.136/2.783.grn.0
+model_4.136/2.783.grn.5
+model_4.136/2.415.grn.0
+model_4.136/2.415.grn.5

@@ -1,0 +1,38 @@
+========================
+SKHASH v1.1 (2025-12-17)
+========================
+Control file: /home/mehffin/campi-flegrei-independent-reproduction/data/eida_continuation/calibration/merged4/focal/control.txt
+Discarded 179 earthquakes with fewer than 8 polarities.
+Creating lookup table (0/0): /home/mehffin/campi-flegrei-independent-reproduction/data/eida_continuation/calibration/merged4/focal/velocity.csv
+	Created table.
+Computing mechanisms in serial...
+0 / 11	(1038)
+	Maximum azimuthal gap (127.414) > max_agap (90). Skipping.
+1 / 11	(1109)
+	Maximum azimuthal gap (139.329) > max_agap (90). Skipping.
+2 / 11	(1142)
+	Maximum azimuthal gap (199.274) > max_agap (90). Skipping.
+*WARNING: Perturbed locations for event_id '1158' are shallower than lookup table depth range (0). Setting these perturbed depths to 0 km.
+3 / 11	(1158)
+	Maximum azimuthal gap (134.538) > max_agap (90). Skipping.
+4 / 11	(1400)
+	Maximum azimuthal gap (106.816) > max_agap (90). Skipping.
+*WARNING: Perturbed locations for event_id '1517' are shallower than lookup table depth range (0). Setting these perturbed depths to 0 km.
+5 / 11	(1517)
+	Maximum azimuthal gap (178.823) > max_agap (90). Skipping.
+6 / 11	(2897)
+	Maximum azimuthal gap (130.12) > max_agap (90). Skipping.
+*WARNING: Perturbed locations for event_id '331' are shallower than lookup table depth range (0). Setting these perturbed depths to 0 km.
+7 / 11	(331)
+	Maximum azimuthal gap (112.37) > max_agap (90). Skipping.
+*WARNING: Perturbed locations for event_id '862' are shallower than lookup table depth range (0). Setting these perturbed depths to 0 km.
+8 / 11	(862)
+	Maximum azimuthal gap (146.57) > max_agap (90). Skipping.
+9 / 11	(932)
+	Maximum azimuthal gap (173.61) > max_agap (90). Skipping.
+10 / 11	(939)
+	Maximum azimuthal gap (161.053) > max_agap (90). Skipping.
+11 / 11	(946)
+	Maximum azimuthal gap (118.875) > max_agap (90). Skipping.
+Mech computation runtime: 0.06 sec
+Total runtime: 0.90 sec

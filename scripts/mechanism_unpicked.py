@@ -1,14 +1,14 @@
 """Inspect local candidate records lacking an independent PhaseNet P pick."""
 from pathlib import Path
-import json
+import json,os
 import numpy as np,pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from obspy import read,read_inventory,UTCDateTime
-ROOT=Path(__file__).resolve().parents[1];D=ROOT/'data/mechanism_followup'
+ROOT=Path(__file__).resolve().parents[1];D=ROOT/os.environ.get('CF_MECH_OUT','data/mechanism_followup')
 def main():
-    f=pd.read_csv(D/'measurements.csv');events=pd.read_csv(ROOT/'data/coverage_extension/calibration/merged4/uncertainty/relocated_events.csv').set_index('event_index')
+    f=pd.read_csv(D/'measurements.csv');events=pd.read_csv(ROOT/os.environ.get('CF_MECH_LOCATIONS','data/coverage_extension/calibration/merged4/uncertainty/relocated_events.csv')).set_index('event_index')
     inv=read_inventory(str(ROOT/'inputs/continuation/IV_responses.xml'))+read_inventory(str(ROOT/'inputs/continuation/2I_responses.xml'))
     arrays={};rows=[]
     for eid,g in f[f.p_time.isna()].groupby('event_id'):

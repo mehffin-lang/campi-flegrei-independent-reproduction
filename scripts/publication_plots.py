@@ -153,12 +153,12 @@ def hybrids():
     for event in ['E1','E2','E3']:
         path='data/observations/'+event+'_waveforms.csv';x=pd.read_csv(ROOT/path);inputs=[path];fig,axes=plt.subplots(2,4,figsize=(12,2.9),sharex='col',gridspec_kw={'height_ratios':[1,1]},layout='constrained')
         for k,(sta,comp) in enumerate([(s,c) for s in ['CAAM','COLB'] for c in ['Z','E']]):
-            g=x[(x.station==sta)&(x.component==comp)];axes[0,k].plot(g.time_s,g.normalized,color='black',lw=.55,label=sta+' HH'+comp);axes[0,k].legend(fontsize=6);axes[0,k].set_yticks([])
+            g=x[(x.station==sta)&(x.component==comp)];axes[0,k].plot(g.time_s,g.normalized,color='black',lw=.55,label=sta+' HH'+comp);axes[0,k].legend(fontsize=6);axes[0,k].set_yticks([]);axes[0,k].set_ylim(-1.05*x.normalized.abs().max(),1.05*x.normalized.abs().max())
             file=f'data/observations/{event}_{sta}_{comp}_spectrum.npz';inputs.append(file);a=np.load(ROOT/file);f=a['frequency'];keep=(f>=1)&(f<=20);values=10*np.log10(np.maximum(a['power'][keep],np.finfo(float).tiny))
             axes[1,k].pcolormesh(a['time'],f[keep],values,cmap=spectral_cmap('gist_rainbow_r',values,event+' '+sta+comp),vmin=-80,vmax=0,shading='auto',rasterized=True);axes[1,k].set(yscale='log',ylim=(1,20),xlabel='Time from written template (s)',ylabel='Hz' if k==0 else '',xlim=(g.time_s.min(),g.time_s.max()))
         label={'E1':'S15A analogue · E1 template, different event','E2':'S15B analogue · E2 template, different event','E3':'S15C · Partial'}[event]
-        fig.suptitle(label+'; normalized spectra −80…0 dB; paper scale unspecified.',fontsize=8)
-        save(fig,'hybrid_'+event,inputs,{'E1':'S15A analogue','E2':'S15B analogue','E3':'S15C'}[event],'Four component columns, waveforms above log-frequency spectra. E1/E2 are alternative documented family templates, not the published example events. Closest visible rainbow palette; exact palette/normalization not published. Observed window is not truncated to force reference onset.',png=True)
+        fig.suptitle(label+'; common waveform scale, CAAM normalization per component; normalized spectra −80…0 dB; paper scale unspecified.',fontsize=8)
+        save(fig,'hybrid_'+event,inputs,{'E1':'S15A analogue','E2':'S15B analogue','E3':'S15C'}[event],'Four component columns, waveforms above log-frequency spectra. All waveform axes share limits: COLB/CAAM amplitude ratios remain visible; each component is normalized to its corresponding CAAM maximum, not a Z/E polarization measure. E1/E2 are alternative documented family templates, not the published example events. Closest visible rainbow palette; exact palette/normalization not published. Observed window is not truncated to force reference onset.',png=True)
 
 
 def main():

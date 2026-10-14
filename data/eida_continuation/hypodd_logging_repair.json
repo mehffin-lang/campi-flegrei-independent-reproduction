@@ -1,0 +1,52 @@
+{
+  "repaired_run": {
+    "name": "svd_Central_17",
+    "returncode": 0,
+    "starting_events": 4,
+    "svd": true,
+    "workdir": "tmp/eida_continuation/hypodd_logging_repair/svd_Central_17",
+    "cluster_selection": "largest connected component only",
+    "output_events": 3,
+    "clusters": 1,
+    "median_depth_km": 1.105,
+    "max_error_z_m": 1827.7,
+    "max_depth_km": 1.987,
+    "region": "Central",
+    "component": 17,
+    "input_byte_equality": {
+      "event.dat": true,
+      "station.dat": true,
+      "dt.ct": true,
+      "dt.cc": true,
+      "hypoDD.inp": true
+    },
+    "previous_error": "Preserved in hypodd_logging_failure.zip; logging station index zero with no CC data."
+  },
+  "added_estimates": 3,
+  "total_estimates": 352,
+  "same_input_files": {
+    "event.dat": true,
+    "station.dat": true,
+    "dt.ct": true,
+    "dt.cc": true,
+    "hypoDD.inp": true
+  },
+  "successful_component_comparison": {
+    "reference": "svd_Central_13",
+    "byte_identical": true,
+    "run": {
+      "name": "logging_check",
+      "returncode": 0,
+      "starting_events": 5,
+      "svd": true,
+      "workdir": "tmp/eida_continuation/hypodd_logging_repair/logging_check",
+      "cluster_selection": "largest connected component only",
+      "output_events": 5,
+      "clusters": 1,
+      "median_depth_km": 2.562,
+      "max_error_z_m": 356.7,
+      "max_depth_km": 2.646
+    }
+  },
+  "accepted_scientific_locations": false
+}

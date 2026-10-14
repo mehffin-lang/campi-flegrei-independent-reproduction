@@ -1,0 +1,104 @@
+{
+  "method": "Compare sparse arithmetic with six saved dense runs on observed events.",
+  "events": 552,
+  "phase_observations": 9529,
+  "all_identical": true,
+  "runs": [
+    {
+      "stage": "prelocation",
+      "wall_seconds": 3.2502118799602613,
+      "identical": {
+        "output.cnv": true,
+        "output.sta": true,
+        "residuals.txt": true,
+        "velocity_model": true
+      },
+      "input_sha256": {
+        "input.mod": "eea9d713eb7f5c44143c380d6a9d79249494be2df3f35e5d4dd941ab7ebc1a8a",
+        "input.sta": "18e1aba52e0483234b486868e6690bc7bb8b5a216cacf5f10b7c93b877bbb470",
+        "input.cnv": "bed4b6665d479fec87bab91caf98a824a70bd2eeff6afa16127ae29e11e67db2",
+        "velest.cmn": "759dc743bea1527e42d16c81003b9aff1eb56f8d259ab303a35ce7320b518548"
+      }
+    },
+    {
+      "stage": "round1",
+      "wall_seconds": 4.580043553025462,
+      "identical": {
+        "output.cnv": true,
+        "output.sta": true,
+        "residuals.txt": true,
+        "velocity_model": true
+      },
+      "input_sha256": {
+        "input.mod": "eea9d713eb7f5c44143c380d6a9d79249494be2df3f35e5d4dd941ab7ebc1a8a",
+        "input.sta": "18e1aba52e0483234b486868e6690bc7bb8b5a216cacf5f10b7c93b877bbb470",
+        "input.cnv": "dfc9c99b89119ba15f0982bfac3b0f45b033cf0f2356bb4c9b7d389e190d331c",
+        "velest.cmn": "21d9332fc9d0f51a9e93800eeae75b402f1fc5712cb5e8272ac3259e21d19e00"
+      }
+    },
+    {
+      "stage": "round2",
+      "wall_seconds": 7.809181821066886,
+      "identical": {
+        "output.cnv": true,
+        "output.sta": true,
+        "residuals.txt": true,
+        "velocity_model": true
+      },
+      "input_sha256": {
+        "input.mod": "3215670b7b28d72d8c8394c1a16644417d4e8835217c5e3ccfac1465f996f3bb",
+        "input.sta": "18e1aba52e0483234b486868e6690bc7bb8b5a216cacf5f10b7c93b877bbb470",
+        "input.cnv": "ea0f9837d9c81116d150f36dd8bf29216d68a986c325b61b71abadebb2ad7acd",
+        "velest.cmn": "cdd2fdfc81d7ac30ced1c9c077c77007f4c8210d15c95f4f692e2178f3a9695e"
+      }
+    },
+    {
+      "stage": "convergence1",
+      "wall_seconds": 8.755643998971209,
+      "identical": {
+        "output.cnv": true,
+        "output.sta": true,
+        "residuals.txt": true,
+        "velocity_model": true
+      },
+      "input_sha256": {
+        "input.mod": "4095a0e1eb7946bdfdfd0c4d71e4ccb0a256ecc4681dbaa68ebef55abcb64b39",
+        "input.sta": "7c89c88e9b89ed3314fe7372c9afb594a7168c5953c582512cc7c449970351bb",
+        "input.cnv": "37ab3d5448ef4f88af00f2b0e6543d501e308b05bd10dd3eb048eaef0e2925e2",
+        "velest.cmn": "cdd2fdfc81d7ac30ced1c9c077c77007f4c8210d15c95f4f692e2178f3a9695e"
+      }
+    },
+    {
+      "stage": "convergence2",
+      "wall_seconds": 2.929298721952364,
+      "identical": {
+        "output.cnv": true,
+        "output.sta": true,
+        "residuals.txt": true,
+        "velocity_model": true
+      },
+      "input_sha256": {
+        "input.mod": "e986574320aec13b8f8cd116190493c16b532ffa1125807ab0e46a61aa9129b2",
+        "input.sta": "9a75b523965ce5bbd94c1627bd990f87cc546ca12e8ffe7a6d6818bf3f0bd07f",
+        "input.cnv": "df59ebee4d416203297fbb9f3a0fbb8f14a4a01943015032544d7fd6c303acd4",
+        "velest.cmn": "cdd2fdfc81d7ac30ced1c9c077c77007f4c8210d15c95f4f692e2178f3a9695e"
+      }
+    },
+    {
+      "stage": "convergence3",
+      "wall_seconds": 2.9306048279395327,
+      "identical": {
+        "output.cnv": true,
+        "output.sta": true,
+        "residuals.txt": true,
+        "velocity_model": true
+      },
+      "input_sha256": {
+        "input.mod": "e986574320aec13b8f8cd116190493c16b532ffa1125807ab0e46a61aa9129b2",
+        "input.sta": "9a75b523965ce5bbd94c1627bd990f87cc546ca12e8ffe7a6d6818bf3f0bd07f",
+        "input.cnv": "d7ba6af09001a8cb28fc64ced7a173ec72614b6cca0bee9db29c63830cb99b80",
+        "velest.cmn": "cdd2fdfc81d7ac30ced1c9c077c77007f4c8210d15c95f4f692e2178f3a9695e"
+      }
+    }
+  ]
+}

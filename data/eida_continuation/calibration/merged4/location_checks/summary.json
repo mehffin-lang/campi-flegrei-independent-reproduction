@@ -1,0 +1,9 @@
+{
+  "pairs": 4368,
+  "events": 1034,
+  "positive_observed_sp": true,
+  "sp_rms_s": 0.18202452644943717,
+  "deep_events_tested": 130,
+  "method": "0.1 km eikonal approximation to own piecewise-constant VELEST profile plus own station delay difference, evaluated at provisional TomoDD locations. Observations are original independently picked S-P differences. Not a fixed-3D ray retracing or manual phase validation.",
+  "limitation": "Large residuals flag inconsistencies among picks, 1-D travel-time approximation and trial locations. They do not alone prove which phase or depth is wrong. No published depth band is imposed, no event is removed by this diagnostic."
+}

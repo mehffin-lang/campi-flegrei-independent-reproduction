@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "scientifically_accepted": false,
+  "post_build_noninput_hashes_checked": 417,
+  "original_input_hash_check": "Executed by scripts/rebuild_eida_followup.py before plotting; no new retrieval occurred during the build.",
+  "figures_checked": 17,
+  "panel_views": 63,
+  "panel_status_counts": {
+    "partially reproduced": 53,
+    "not reproduced": 10
+  },
+  "previous_numerical_checkpoints_unchanged": [
+    "data/local_extension",
+    "data/coverage_extension",
+    "data/mechanism_followup"
+  ],
+  "returned_observation_extrema_UTC": [
+    "2022-01-21 00:00:00+00:00",
+    "2025-03-21 00:00:00+00:00"
+  ],
+  "observation_extrema_warning": "Endpoints do not imply intervening coverage; use union intervals and request ledger.",
+  "current_picks": 246668,
+  "reviewed_AI_polarities": 99,
+  "reviewed_AI_SP": 108,
+  "human_reviews": 0,
+  "report_pages": 61,
+  "comparison_pages": 19,
+  "published_images_only_in_comparison": true,
+  "PDFs": {
+    "report/report.pdf": "4bb066be45e02005577cffc5dab8631e3a77b0a1697de95c66822df522dae00a",
+    "report/comparison.pdf": "d59c6e955b3bf7df9b62fe5b47b0e57f0f807697f78f939d233276ef21eae05c"
+  },
+  "visual_inspection": {
+    "reviewer": "AI assistant; no human review claimed",
+    "report_pages": [
+      1,
+      4,
+      5,
+      14,
+      21,
+      23,
+      26
+    ],
+    "comparison_pages": [
+      3,
+      4,
+      11,
+      19
+    ],
+    "final_render_checks": [
+      {
+        "document": "report",
+        "page": 1,
+        "identical_to_visually_inspected_render": true
+      },
+      {
+        "document": "report",
+        "page": 4,
+        "identical_to_visually_inspected_render": true
+      },
+      {
+        "document": "report",
+        "page": 5,
+        "identical_to_visually_inspected_render": true
+      },
+      {
+        "document": "report",
+        "page": 14,
+        "identical_to_visually_inspected_render": true
+      },
+      {
+        "document": "report",
+        "page": 21,
+        "identical_to_visually_inspected_render": true
+      },
+      {
+        "document": "report",
+        "page": 23,
+        "identical_to_visually_inspected_render": true
+      },
+      {
+        "document": "report",
+        "page": 26,
+        "identical_to_visually_inspected_render": true
+      },
+      {
+        "document": "comparison",
+        "page": 3,
+        "identical_to_visually_inspected_render": true
+      },
+      {
+        "document": "comparison",
+        "page": 4,
+        "identical_to_visually_inspected_render": true
+      },
+      {
+        "document": "comparison",
+        "page": 11,
+        "identical_to_visually_inspected_render": true
+      },
+      {
+        "document": "comparison",
+        "page": 19,
+        "identical_to_visually_inspected_render": true
+      }
+    ],
+    "scope": "Sampled delivered pages inspected for labels, legibility, layout and reference separation; not a review of every pixel of every page. Final renders are pixel-identical to the inspected preceding layout; final change corrected S15A/B metadata paths only. S14 generated PNG also inspected after spacing correction."
+  }
+}

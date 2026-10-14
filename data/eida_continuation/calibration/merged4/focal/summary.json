@@ -1,0 +1,24 @@
+{
+  "candidate_events": 197,
+  "measured_polarities": 1969,
+  "stable_screen_polarities": 782,
+  "events_with_eight_stable": 12,
+  "returncode": 0,
+  "solutions": 0,
+  "scientifically_accepted": 0,
+  "reviewed_polarities": 0,
+  "failures": [],
+  "method": "SKHASH 1.1.5 generic USGS software; https://code.usgs.gov/esc/SKHASH ; Skoumal et al. 2024 doi:10.1785/0220230329. Isolated .venv-skhash; no example/author event data used.",
+  "assumptions": "Peak signs agree in 0.01\u20130.06/0.10/0.15 s after own P and exceed 3x preceding 0.45-s RMS. Upward Z metadata verified. Weight 0.5. This screen is not manual polarity review; S/P ratios not supplied. Perturbation scales use maxima of the current own regional-start and precision shifts; these are sensitivity-based assumptions, not measured Gaussian uncertainties. Default eight-polarity, 90-degree azimuth and 60-degree plunge-gap gates are not relaxed.",
+  "gcap": "This automatic screening stage does not run gCAP. Separate waveform review and FK/gCAP execution records determine its status.",
+  "perturbation_scales_km": {
+    "horizontal": 1.5277261492342449,
+    "vertical": 1.5199999999999998
+  },
+  "sources": {
+    "data/eida_continuation/calibration/merged4/tomodd/retained_picks.csv": "fffc162fee71b58ed569c2f10b7180a1498ed1fde62cecc64acf9223eaadc561",
+    "data/eida_continuation/calibration/merged4/uncertainty/relocated_events.csv": "db9a5694fc31b2d60a955a53f4434fbe6a943dde7221aa5ca4c0a95db0b49f19",
+    "data/eida_continuation/calibration/merged4/independent_calibrated.mod": "7f45c5b50bfe3a1e1c51b3f70a7148526cc60d945cc00e5ec4c77a9cfb94cfff",
+    ".venv-skhash/lib/python3.11/site-packages/SKHASH/SKHASH.py": "a6ee84fd49636ceb8b677514272010e2f04015a91632b2d80f30b303ea99fbe6"
+  }
+}

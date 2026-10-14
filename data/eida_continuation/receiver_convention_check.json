@@ -1,0 +1,23 @@
+{
+  "stations": [
+    {
+      "station": "CFB1",
+      "channel": "HHZ",
+      "elevation_m": -40.4,
+      "depth_below_surface_m": 0.0,
+      "hypodd_elevation_used_m": 0.0
+    },
+    {
+      "station": "CFB3",
+      "channel": "HHZ",
+      "elevation_m": -38.7,
+      "depth_below_surface_m": 0.0,
+      "hypodd_elevation_used_m": 0.0
+    }
+  ],
+  "interpretation": "Public metadata report negative elevations and zero additional channel depth. Generic HypoDD clips negative station elevations to sea level. This 38.7\u201340.4 m receiver-datum approximation is an additional limitation of the conditional SVD calculation; metadata were not changed. The gCAP trial separately uses a flat -0.5 km free surface, as disclosed in its method record.",
+  "sources": {
+    "inputs/continuation/IV_responses.xml": "07545b22de0f7b9030f2064467b52ce428365b213c136477b05a5768c4dd62a3",
+    "build/hypodd21/src/hypoDD/getdata.f": "bc54ac9b4b6650650b396334d622f3b203ad556294f300598be056fd7394b392"
+  }
+}

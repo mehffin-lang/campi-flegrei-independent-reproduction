@@ -1,0 +1,62 @@
+{
+  "status": "both fixed-grid rounds executed; validation pending",
+  "accepted_scientific_catalog": false,
+  "measurement": {
+    "neighbor_pairs": 9439,
+    "catalog_pair_phases": 57494,
+    "measured_channels": 97862,
+    "accepted_channels": 4250,
+    "accepted_phase_delays": 3169,
+    "window_failures": 14,
+    "max_cnv_rounding_s": 0.0016090000000001936
+  },
+  "runs": [
+    {
+      "round": 1,
+      "starting_events": 1435,
+      "returncode": 0,
+      "workdir": "tmp/eida_continuation/tomodd/round1",
+      "output_events": 1086,
+      "gap_passing_events": 1066,
+      "clusters": 9,
+      "depth_range_km": [
+        0.034,
+        7.914
+      ],
+      "fixed_vp_max_rounding_km_s": 0.0005000000000006111,
+      "fixed_vs_max_rounding_km_s": 0.000500000000000167,
+      "residual_RMS_s": {
+        "waveform": 0.013516615561912087,
+        "phase": 0.10220854455111839
+      },
+      "gap_observation_basis": "Stations with positive-weight final residuals in every cluster; rejected or downweighted-to-zero observations do not count.",
+      "residual_events": 1086,
+      "solver_statistic_caution": "output.reloc RMS columns divide summed residual squares by cluster event count, not observation count. Per-observation RMS is recomputed separately from output.res."
+    },
+    {
+      "round": 2,
+      "starting_events": 1066,
+      "returncode": 0,
+      "workdir": "tmp/eida_continuation/tomodd/round2",
+      "output_events": 1057,
+      "gap_passing_events": 1050,
+      "clusters": 10,
+      "depth_range_km": [
+        0.031,
+        8.303
+      ],
+      "fixed_vp_max_rounding_km_s": 0.0005000000000006111,
+      "fixed_vs_max_rounding_km_s": 0.000500000000000167,
+      "residual_RMS_s": {
+        "waveform": 0.01352354414207433,
+        "phase": 0.10124015666343639
+      },
+      "gap_observation_basis": "Stations with positive-weight final residuals in every cluster; rejected or downweighted-to-zero observations do not count.",
+      "residual_events": 1057,
+      "solver_statistic_caution": "output.reloc RMS columns divide summed residual squares by cluster event count, not observation count. Per-observation RMS is recomputed separately from output.res."
+    }
+  ],
+  "grid_sha256": "dc36fe2a542fc7a3b6c473c48ec109c53ddd77a1721f509b920fea97fb0166f3",
+  "settings": "JOINT=0 fixed 3D; ten nearest neighbors; 2-second response-corrected windows; 1\u201315 Hz; coherence/correlation >=0.6; maximum lag .25 s; six common phase links; LSQR damping 50; 4+4 iterations; all connected clusters; absolute and phase-pair times from own picks, no author corrections; unnamed settings are explicit assumptions, not recovered Tan settings. Unused event magnitude/error format fields are zero, never empirical magnitudes.",
+  "limitations": "Incomplete waveform coverage; calibration subset unreviewed; alternative GaMMA start and explicit inversion assumptions. Iteration passage does not establish correct event identity or absolute depth. No exact reproduction claim."
+}

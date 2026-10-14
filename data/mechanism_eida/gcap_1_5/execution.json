@@ -1,0 +1,509 @@
+[
+  {
+    "event_id": 212,
+    "stations_requested": 5,
+    "accepted": false,
+    "runs": [
+      {
+        "command": [
+          "perl",
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk/fk.pl",
+          "-Mmodel/4.430",
+          "-N1024/0.05",
+          "-H0.02/0.04",
+          "6.031",
+          "3.334",
+          "3.332",
+          "3.203",
+          "3.267"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e212",
+        "returncode": 0
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap/cap_followup",
+          "obs",
+          "model_4.430"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e212",
+        "returncode": 0
+      }
+    ],
+    "errors": [],
+    "green_functions": 45,
+    "stations_used": 5,
+    "variance_reduction_percent": 6.2,
+    "computed": true
+  },
+  {
+    "event_id": 312,
+    "stations_requested": 5,
+    "accepted": false,
+    "runs": [
+      {
+        "command": [
+          "perl",
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk/fk.pl",
+          "-Mmodel/4.472",
+          "-N1024/0.05",
+          "-H0.02/0.04",
+          "2.545",
+          "3.276",
+          "3.217",
+          "2.104",
+          "0.517"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e312",
+        "returncode": 0
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap/cap_followup",
+          "obs",
+          "model_4.472"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e312",
+        "returncode": 0
+      }
+    ],
+    "errors": [],
+    "green_functions": 45,
+    "stations_used": 5,
+    "variance_reduction_percent": 6.3,
+    "computed": true
+  },
+  {
+    "event_id": 315,
+    "stations_requested": 4,
+    "accepted": false,
+    "runs": [
+      {
+        "command": [
+          "perl",
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk/fk.pl",
+          "-Mmodel/4.549",
+          "-N1024/0.05",
+          "-H0.02/0.04",
+          "2.517",
+          "3.348",
+          "3.203",
+          "0.605"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e315",
+        "returncode": 0
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap/cap_followup",
+          "obs",
+          "model_4.549"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e315",
+        "returncode": 0
+      }
+    ],
+    "errors": [],
+    "green_functions": 36,
+    "stations_used": 4,
+    "variance_reduction_percent": 7.6,
+    "computed": true
+  },
+  {
+    "event_id": 359,
+    "stations_requested": 8,
+    "accepted": false,
+    "runs": [
+      {
+        "command": [
+          "perl",
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk/fk.pl",
+          "-Mmodel/4.835",
+          "-N1024/0.05",
+          "-H0.02/0.04",
+          "3.961",
+          "4.435",
+          "4.510",
+          "6.066",
+          "3.240",
+          "2.587",
+          "2.991",
+          "3.899"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e359",
+        "returncode": 0
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap/cap_followup",
+          "obs",
+          "model_4.835"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e359",
+        "returncode": 0
+      }
+    ],
+    "errors": [],
+    "green_functions": 72,
+    "stations_used": 8,
+    "variance_reduction_percent": 2.3,
+    "computed": true
+  },
+  {
+    "event_id": 373,
+    "stations_requested": 5,
+    "accepted": false,
+    "runs": [
+      {
+        "command": [
+          "perl",
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk/fk.pl",
+          "-Mmodel/4.136",
+          "-N1024/0.05",
+          "-H0.02/0.04",
+          "3.420",
+          "3.260",
+          "2.149",
+          "2.783",
+          "2.415"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e373",
+        "returncode": 0
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap/cap_followup",
+          "obs",
+          "model_4.136"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e373",
+        "returncode": 0
+      }
+    ],
+    "errors": [],
+    "green_functions": 45,
+    "stations_used": 5,
+    "variance_reduction_percent": 5.2,
+    "computed": true
+  },
+  {
+    "event_id": 649,
+    "stations_requested": 10,
+    "accepted": false,
+    "runs": [
+      {
+        "command": [
+          "perl",
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk/fk.pl",
+          "-Mmodel/4.287",
+          "-N1024/0.05",
+          "-H0.02/0.04",
+          "4.833",
+          "3.351",
+          "3.771",
+          "3.494",
+          "3.291",
+          "3.454",
+          "2.633",
+          "1.960",
+          "2.282",
+          "4.424"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e649",
+        "returncode": 0
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap/cap_followup",
+          "obs",
+          "model_4.287"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e649",
+        "returncode": 0
+      }
+    ],
+    "errors": [],
+    "green_functions": 90,
+    "stations_used": 10,
+    "variance_reduction_percent": 3.2,
+    "computed": true
+  },
+  {
+    "event_id": 698,
+    "stations_requested": 1,
+    "accepted": false,
+    "runs": [],
+    "errors": [],
+    "blocker": "Fewer than four reviewed three-component P/S packets; no waveform inversion attempted"
+  },
+  {
+    "event_id": 815,
+    "stations_requested": 6,
+    "accepted": false,
+    "runs": [
+      {
+        "command": [
+          "perl",
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk/fk.pl",
+          "-Mmodel/3.068",
+          "-N1024/0.05",
+          "-H0.02/0.04",
+          "2.085",
+          "1.783",
+          "1.679",
+          "2.151",
+          "2.335",
+          "1.761"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e815",
+        "returncode": 0
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap/cap_followup",
+          "obs",
+          "model_3.068"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e815",
+        "returncode": 0
+      }
+    ],
+    "errors": [],
+    "green_functions": 54,
+    "stations_used": 6,
+    "variance_reduction_percent": 2.3,
+    "computed": true
+  },
+  {
+    "event_id": 100331,
+    "stations_requested": 12,
+    "accepted": false,
+    "runs": [
+      {
+        "command": [
+          "perl",
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk/fk.pl",
+          "-Mmodel/2.687",
+          "-N1024/0.05",
+          "-H0.02/0.04",
+          "4.246",
+          "6.904",
+          "0.836",
+          "3.299",
+          "0.534",
+          "1.755",
+          "4.937",
+          "0.736",
+          "5.188",
+          "4.882",
+          "3.531",
+          "4.050"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e100331",
+        "returncode": 0
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap/cap_followup",
+          "obs",
+          "model_2.687"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e100331",
+        "returncode": 0
+      }
+    ],
+    "errors": [],
+    "green_functions": 108,
+    "stations_used": 12,
+    "variance_reduction_percent": 5.9,
+    "computed": true
+  },
+  {
+    "event_id": 100946,
+    "stations_requested": 13,
+    "accepted": false,
+    "runs": [
+      {
+        "command": [
+          "perl",
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk/fk.pl",
+          "-Mmodel/3.234",
+          "-N1024/0.05",
+          "-H0.02/0.04",
+          "4.047",
+          "6.530",
+          "0.763",
+          "3.605",
+          "0.189",
+          "1.768",
+          "5.016",
+          "1.151",
+          "5.202",
+          "0.973",
+          "6.918",
+          "3.943",
+          "4.029"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e100946",
+        "returncode": 0
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap/cap_followup",
+          "obs",
+          "model_3.234"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e100946",
+        "returncode": 0
+      }
+    ],
+    "errors": [],
+    "green_functions": 117,
+    "stations_used": 13,
+    "variance_reduction_percent": 9.1,
+    "computed": true
+  },
+  {
+    "event_id": 100948,
+    "stations_requested": 0,
+    "accepted": false,
+    "runs": [],
+    "errors": [],
+    "blocker": "Fewer than four reviewed three-component P/S packets; no waveform inversion attempted"
+  },
+  {
+    "event_id": 101038,
+    "stations_requested": 15,
+    "accepted": false,
+    "runs": [
+      {
+        "command": [
+          "perl",
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk/fk.pl",
+          "-Mmodel/2.754",
+          "-N1024/0.05",
+          "-H0.02/0.04",
+          "1.516",
+          "3.286",
+          "7.392",
+          "1.312",
+          "1.857",
+          "2.265",
+          "4.219",
+          "1.317",
+          "0.666",
+          "6.025",
+          "1.548",
+          "4.105",
+          "2.054",
+          "4.082",
+          "5.121"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e101038",
+        "returncode": 0
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap/cap_followup",
+          "obs",
+          "model_2.754"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e101038",
+        "returncode": 0
+      }
+    ],
+    "errors": [],
+    "green_functions": 135,
+    "stations_used": 15,
+    "variance_reduction_percent": 1.4,
+    "computed": true
+  },
+  {
+    "event_id": 101400,
+    "stations_requested": 16,
+    "accepted": false,
+    "runs": [
+      {
+        "command": [
+          "perl",
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk/fk.pl",
+          "-Mmodel/3.059",
+          "-N1024/0.05",
+          "-H0.02/0.04",
+          "1.873",
+          "3.113",
+          "7.716",
+          "1.580",
+          "2.226",
+          "2.617",
+          "4.444",
+          "1.694",
+          "0.366",
+          "6.357",
+          "1.801",
+          "3.754",
+          "2.419",
+          "5.508",
+          "4.163",
+          "5.481"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e101400",
+        "returncode": 0
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap/cap_followup",
+          "obs",
+          "model_3.059"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e101400",
+        "returncode": 0
+      }
+    ],
+    "errors": [],
+    "green_functions": 144,
+    "stations_used": 16,
+    "variance_reduction_percent": 1.9,
+    "computed": true
+  },
+  {
+    "event_id": 101760,
+    "stations_requested": 8,
+    "accepted": false,
+    "runs": [
+      {
+        "command": [
+          "perl",
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/fk/fk.pl",
+          "-Mmodel/0.796",
+          "-N1024/0.05",
+          "-H0.02/0.04",
+          "0.904",
+          "4.758",
+          "2.746",
+          "2.074",
+          "5.368",
+          "1.330",
+          "6.412",
+          "2.791"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e101760",
+        "returncode": 0
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/build/method_followup/gcap/cap_followup",
+          "obs",
+          "model_0.796"
+        ],
+        "cwd": "tmp/mechanism_eida/gcap_1_5/e101760",
+        "returncode": 0
+      }
+    ],
+    "errors": [],
+    "green_functions": 72,
+    "stations_used": 8,
+    "variance_reduction_percent": 3.7,
+    "computed": true
+  }
+]

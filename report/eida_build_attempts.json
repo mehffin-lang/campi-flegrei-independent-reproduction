@@ -1,0 +1,71 @@
+[
+  {
+    "passed": false,
+    "analysis_requested": false,
+    "runs": [
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/plot_eida_followup.py"
+        ],
+        "returncode": 0,
+        "log": "tmp/eida_rebuild/plot_eida_followup.py.log"
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/eida_report.py"
+        ],
+        "returncode": 0,
+        "log": "tmp/eida_rebuild/eida_report.py.log"
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/build_documents.py",
+          "--clean"
+        ],
+        "returncode": 1,
+        "log": "tmp/eida_rebuild/build_documents.py.log"
+      }
+    ],
+    "failure": "Document overfull command paragraphs: 1.26422pt and 8.2139pt. Numerical stages and plot generation passed."
+  },
+  {
+    "passed": true,
+    "analysis_requested": false,
+    "numerical_checkpoint_verified": true,
+    "scientific_acceptance": false,
+    "runs": [
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/plot_eida_followup.py"
+        ],
+        "returncode": 0,
+        "log": "tmp/eida_rebuild/plot_eida_followup.py.log"
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/eida_report.py"
+        ],
+        "returncode": 0,
+        "log": "tmp/eida_rebuild/eida_report.py.log"
+      },
+      {
+        "command": [
+          "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+          "scripts/build_documents.py",
+          "--clean"
+        ],
+        "returncode": 0,
+        "log": "tmp/eida_rebuild/build_documents.py.log"
+      }
+    ],
+    "plots": 17,
+    "document_order_verified": true,
+    "analysis_execution": "data/eida_continuation/pipeline_execution.json",
+    "note": "Successful build after fixing command-line overflow; subsequent visual inspection requested only extra S14 label spacing."
+  }
+]

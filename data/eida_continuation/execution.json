@@ -1,0 +1,84 @@
+{
+  "started_utc": "2026-10-14T01:36:29.919228+00:00",
+  "scientifically_accepted": false,
+  "runs": [
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/prepare_grid_calibration.py"
+      ],
+      "environment": {
+        "CF_VELEST_TIMEOUT": "1800",
+        "CF_VELEST_LAYER_DAMPING": "100.0",
+        "CF_GRID_BASE": "data/eida_continuation/calibration",
+        "CF_GRID_WORK": "tmp/eida_continuation",
+        "CF_OBSERVATIONS": "data/eida_continuation"
+      },
+      "returncode": 0,
+      "log": "tmp/eida_continuation/prepare_grid_calibration.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/run_grid_velest.py",
+        "--coarse-four"
+      ],
+      "environment": {
+        "CF_VELEST_TIMEOUT": "1800",
+        "CF_VELEST_LAYER_DAMPING": "100.0",
+        "CF_GRID_BASE": "data/eida_continuation/calibration",
+        "CF_GRID_WORK": "tmp/eida_continuation",
+        "CF_OBSERVATIONS": "data/eida_continuation"
+      },
+      "returncode": 0,
+      "log": "tmp/eida_continuation/run_grid_velest.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/validate_grid_velest.py"
+      ],
+      "environment": {
+        "CF_VELEST_TIMEOUT": "1800",
+        "CF_VELEST_LAYER_DAMPING": "100.0",
+        "CF_GRID_BASE": "data/eida_continuation/calibration",
+        "CF_GRID_WORK": "tmp/eida_continuation",
+        "CF_OBSERVATIONS": "data/eida_continuation"
+      },
+      "returncode": 0,
+      "log": "tmp/eida_continuation/validate_grid_velest.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/run_grid_tomodd.py"
+      ],
+      "environment": {
+        "CF_VELEST_TIMEOUT": "1800",
+        "CF_VELEST_LAYER_DAMPING": "100.0",
+        "CF_GRID_BASE": "data/eida_continuation/calibration",
+        "CF_GRID_WORK": "tmp/eida_continuation",
+        "CF_OBSERVATIONS": "data/eida_continuation"
+      },
+      "returncode": 0,
+      "log": "tmp/eida_continuation/run_grid_tomodd.py.log"
+    },
+    {
+      "command": [
+        "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+        "scripts/grid_uncertainty.py"
+      ],
+      "environment": {
+        "CF_VELEST_TIMEOUT": "1800",
+        "CF_VELEST_LAYER_DAMPING": "100.0",
+        "CF_GRID_BASE": "data/eida_continuation/calibration",
+        "CF_GRID_WORK": "tmp/eida_continuation",
+        "CF_OBSERVATIONS": "data/eida_continuation"
+      },
+      "returncode": 1,
+      "log": "tmp/eida_continuation/grid_uncertainty.py.log"
+    }
+  ],
+  "failed_stage": "grid_uncertainty.py",
+  "finished_utc": "2026-10-14T02:03:19.001038+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "check": "FK/gCAP unit and component conventions inspected before new waveform inversions",
+  "source_sha256": {
+    "build/method_followup/fk/README": "1fc9997f362a0c3465fc63937bd65da29d5502b2ad09be6c89e4f9b2acadac00",
+    "build/method_followup/gcap/cap.c": "9eb7feab9fc342bc31f605a8417fb4cf66896d437e7f3c63ed0e12b7a608c0e1",
+    "build/method_followup/gcap/cap_followup.c": "a511a6e94ac0a5c51dd9759c8532703cc61f250dbc7192c7f8185a8d16373468"
+  },
+  "findings": [
+    "FK README FAQ1 specifies upward Z, radial outward and counterclockwise transverse components, and dyne-cm/centimeter normalization.",
+    "FK README FAQ2 describes impulse-source Green functions; cap.c lines 382/408 integrate observations/predictions together when useDisp=1. The current useDisp=0 choice uses response-corrected velocity consistently.",
+    "No additional integration or differentiation was introduced to improve fit. Existing data rotation is Z, N*cos(az)+E*sin(az), N*sin(az)-E*cos(az); its horizontal-energy assertion is retained."
+  ],
+  "scope": "Code/convention check only, not waveform-fit or source-mechanism validation."
+}

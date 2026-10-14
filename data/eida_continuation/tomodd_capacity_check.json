@@ -1,0 +1,8 @@
+{
+  "events": 1435,
+  "absolute_picks": 16042,
+  "neighbor_pairs": 9439,
+  "phase_pairs": 57494,
+  "upper_bound_absolute_plus_phase_and_correlated_times": 131030,
+  "compiled_MAXDATA": 40000
+}

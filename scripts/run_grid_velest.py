@@ -53,12 +53,17 @@ def main():
       acceptance='Physical layers; extra seven-iteration change <=100 m in every horizontal/depth location, <=0.05 km/s velocity and <=0.02 s station delays; these are numerical stability gates, not absolute location accuracy. Held-out checks and waveform review are separate.')
     def save():(OUT/'summary.json').write_text(json.dumps(record,indent=2)+'\n')
     if args.coarse_four:record['corrections'].append('Merge similar layers to four tops -0.5,1,3,5 km; deepest velocity damping 100 instead of 1, per guide pp8 and appendix: shallow calibration events do not resolve deeper velocities. Not an exact Tan discretization.')
+    damping_override=os.environ.get('CF_VELEST_LAYER_DAMPING')
+    if damping_override:
+        damping_override=float(damping_override);assert damping_override>0
+        record['velocity_layer_damping_override']=damping_override
+        record['corrections'].append('Uniform velocity-layer damping '+str(damping_override)+' after the unconstrained new-cohort fit produced negative isotropic bulk modulus. One disclosed regularization alternative; no observation, event selection, or numerical gate relaxed. Not Tan\'s documented setting.')
     save();fits={}
     for region,prof in profiles.groupby('region',sort=False):
         r=record['regions'][region]=dict(runs=[],accepted=False);save()
         lines=['Tan-distributed grid regional start; '+region]
         for field in ['Vp_km_s','Vs_km_s']:
-            lines.append(str(len(prof)));lines.extend(f'{row[field]:5.2f}     {row["layer_top_km"]:7.2f}  {100. if args.coarse_four and row["layer_top_km"]>=5 else 1.:7.3f}' for row in prof.to_dict('records'))
+            lines.append(str(len(prof)));lines.extend(f'{row[field]:5.2f}     {row["layer_top_km"]:7.2f}  {damping_override if damping_override else 100. if args.coarse_four and row["layer_top_km"]>=5 else 1.:7.3f}' for row in prof.to_dict('records'))
         model='\n'.join(lines)+'\n';(OUT/f'{region}_starting.mod').write_text(model)
         try:
             w,loc,rr=c.run(region+'_prelocation',model,sta,cnv,ids,fixed=True,iterations=14);r['runs'].append(rr)
@@ -75,15 +80,21 @@ def main():
                 last,previous=wn,ln;save()
             r['accepted']=False;r['local_change_gate_passed']=r['converged'];r['validated_workdir']=str(last.relative_to(ROOT));r['status']='executed; local-change gate is not scientific acceptance'
             fits[region]=(last,previous)
+            physical=v.model_table(last/'velout.mod')
+            bulk=physical.Vp_km_s**2-4*physical.Vs_km_s**2/3
+            r['bulk_over_density_km2_s2']=bulk.tolist();r['positive_isotropic_bulk_modulus']=bool((bulk>0).all())
         except Exception as exc:r.update(status='failed validation or solver',error=repr(exc))
         save()
     if not fits:
         record.update(status='no physical two-round fit',accepted=False);save();return
+    fits={name:fit for name,fit in fits.items() if record['regions'][name].get('positive_isotropic_bulk_modulus',False)}
+    if not fits:
+        record.update(status='No physically admissible final fit; negative isotropic bulk modulus',accepted=False);save();return
     eligible={name:fit for name,fit in fits.items() if record['regions'][name].get('converged',False)}
     best=min(eligible or fits,key=lambda name:record['regions'][name]['runs'][-1]['residual_rms_s']);w,loc=fits[best]
     record['lowest_converged_phase_RMS_region']=best;record['iteration_stability_passed']=bool(eligible)
     record['accepted']=False
-    record['selection_note']='Lowest phase RMS among converged regional fits, including the declared extra iterations. Acceptance awaits independent precision and location validation.'
+    record['selection_note']=('Lowest phase RMS among converged, physically admissible regional fits.' if eligible else 'No regional fit passes the iteration-stability gate. Lowest phase RMS among physically admissible fits retained only as a provisional calculation.')+' Declared extra iterations included; independent precision and location validation remain separate.'
     record['starting_model_dependence']=c.compare(fits['caldera'][1],fits['Pozzuoli_Solfatara'][1]) if len(fits)==2 else None
     fixed_model=(w/'velout.mod').read_text();fixed_sta=c.normalize_stations((w/'output.sta').read_text())
     (OUT/'independent_calibrated.mod').write_text(fixed_model);(OUT/'independent_calibrated.sta').write_text(fixed_sta)

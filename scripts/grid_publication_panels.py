@@ -93,10 +93,10 @@ def generate(p,extension=False,base_override=None):
         fig,axes=plt.subplots(2,2,figsize=(10,7),layout='constrained');inputs=[]
         for ax,name in zip(axes.flat,names):
             path=D+name+'.csv';inputs.append(path);d=table(path)
-            p.coast(ax);ax.scatter(d.x_km,d.y_km,s=3,c='black',lw=0);ax.set(xlim=(-6,3.5),ylim=(-3.5,3.5),xlabel='Easting (km)',ylabel='Northing (km)',title=name+f' · {len(d)} provisional events');ax.grid(alpha=.25,lw=.5)
+            p.coast(ax);ax.scatter(d.x_km,d.y_km,s=3,c='black',lw=0);ax.set(xlim=(min(-6.,e.x_km.min()-.2),max(3.5,e.x_km.max()+.2)),ylim=(min(-3.5,e.y_km.min()-.2),max(3.5,e.y_km.max()+.2)),xlabel='Easting (km)',ylabel='Northing (km)',title=name+f' · {len(d)} provisional events');ax.grid(alpha=.25,lw=.5)
             if d.empty:ax.text(.5,.5,'No relocated result in this window\nSparse exposure; not evidence of no earthquakes',transform=ax.transAxes,ha='center',fontsize=8)
-        fig.suptitle(title+' · Partial observed subsets; calendar selections, no inferred events',fontsize=10)
-        save(fig,filename,inputs+['inputs/continuation/coastline.zip'],title,'Fixed original geographic display, black points; no magnitude-size mapping in these simple maps. Empty selection explicitly marked, not an empirical absence.')
+        fig.suptitle(title+' · Partial observed subsets; calendar selections, no substituted events',fontsize=10)
+        save(fig,filename,inputs+['inputs/continuation/coastline.zip'],title,'Shared geographic axes expand beyond the original display when needed to retain every own location; black points; no magnitude-size mapping in these simple maps. Empty selection explicitly marked, not an empirical absence.')
     # S12: coordinate-ordered traces from actual original P picks, no author values.
     idx=table(D+'cpoz_index.csv');waves=np.load(ROOT/(D+'cpoz_gathers.npz'))
     fig=plt.figure(figsize=(11,10),layout='constrained');grid=fig.add_gridspec(3,3);a=fig.add_subplot(grid[0,:2]);b=fig.add_subplot(grid[0,2]);p.coast(a)

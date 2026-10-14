@@ -1,0 +1,15 @@
+review_event,current_event,matched,common_phases,role
+212,2445,True,14.0,"Current own trial, linked by >=4 identical observed phases and unique maximum overlap, origin within 2 s"
+312,2555,True,30.0,"Current own trial, linked by >=4 identical observed phases and unique maximum overlap, origin within 2 s"
+315,2559,True,26.0,"Current own trial, linked by >=4 identical observed phases and unique maximum overlap, origin within 2 s"
+359,2600,True,25.0,"Current own trial, linked by >=4 identical observed phases and unique maximum overlap, origin within 2 s"
+373,2617,True,28.0,"Current own trial, linked by >=4 identical observed phases and unique maximum overlap, origin within 2 s"
+649,2897,True,28.0,"Current own trial, linked by >=4 identical observed phases and unique maximum overlap, origin within 2 s"
+698,2946,True,20.0,"Current own trial, linked by >=4 identical observed phases and unique maximum overlap, origin within 2 s"
+815,3063,True,25.0,"Current own trial, linked by >=4 identical observed phases and unique maximum overlap, origin within 2 s"
+100331,331,True,,New own relocated candidate with own provisional ML>=2.2 and >=8 retained P picks; alternative to paper Md selection
+100946,946,True,,New own relocated candidate with own provisional ML>=2.2 and >=8 retained P picks; alternative to paper Md selection
+100948,948,True,,New own relocated candidate with own provisional ML>=2.2 and >=8 retained P picks; alternative to paper Md selection
+101038,1038,True,,New own relocated candidate with own provisional ML>=2.2 and >=8 retained P picks; alternative to paper Md selection
+101400,1400,True,,New own relocated candidate with own provisional ML>=2.2 and >=8 retained P picks; alternative to paper Md selection
+101760,1760,True,,New own relocated candidate with own provisional ML>=2.2 and >=8 retained P picks; alternative to paper Md selection

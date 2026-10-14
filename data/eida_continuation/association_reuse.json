@@ -1,0 +1,238 @@
+{
+  "parent": "data/coverage_extension",
+  "parent_checkpoint_sha256": "85cff2539c9dec2443f9ecfaa0e5ef7d72b1f612990ca9cd2756b93779714c7f",
+  "policy": "Reuse an own daily solve only for an identical multiset of numerical inputs.\n\nThis is an optimization of repeated inference extensions, not a catalog seed.\nChanged days run GaMMA normally. Parent event and pick IDs are explicitly\nremapped. Identical-time row permutations reuse the recorded original solve;\nthis does not assert bitwise equality for a fresh solve in a different order.\nComparison uses precisely id, timestamp, type and probability, the columns\nconsumed with use_amplitude=False. Source filenames for duplicate recordings\nare not association inputs; the current original-waveform identity is retained.\n",
+  "days": [
+    {
+      "day": "2022-01-21",
+      "picks": 9899,
+      "reused": true,
+      "input_sha256": "a660a79bd90a67650befa4c8a93b1eec6d5f2c85b76af3de39a3dd95235bc8f0",
+      "events": 49
+    },
+    {
+      "day": "2022-01-22",
+      "picks": 4861,
+      "reused": true,
+      "input_sha256": "06693faee4a94996cebdfbc96937ab86b8bd80e096c16ce99ee6d2b0adbd5ef1",
+      "events": 5
+    },
+    {
+      "day": "2022-01-23",
+      "picks": 5700,
+      "reused": true,
+      "input_sha256": "5d2555ff9ea06064264777da0aeeb4118b6a5c51c1a84bcc891d54e7ebe65306",
+      "events": 7
+    },
+    {
+      "day": "2022-01-24",
+      "picks": 4998,
+      "reused": true,
+      "input_sha256": "14846dfd37bdb9fa1319017a5c7b6e5c59c39aa7027b75053e8a0eaf8c35c10c",
+      "events": 26
+    },
+    {
+      "day": "2022-01-25",
+      "picks": 6019,
+      "reused": true,
+      "input_sha256": "fac5ebf4c4236ed6ee56f50ca5fe0791b76fcb4089e422fbeee221440a9b9718",
+      "events": 30
+    },
+    {
+      "day": "2022-01-26",
+      "picks": 8059,
+      "reused": true,
+      "input_sha256": "542f0f0c0447de0be21fff91e0ab221e5d0cc48ecf6307e0b11bb29d70dc7d44",
+      "events": 38
+    },
+    {
+      "day": "2022-01-27",
+      "picks": 6980,
+      "reused": true,
+      "input_sha256": "d38a8b977cae4576b1c6a9587a194969e186d2db1b1590afa640490510ecd72b",
+      "events": 3
+    },
+    {
+      "day": "2022-01-28",
+      "picks": 5586,
+      "reused": true,
+      "input_sha256": "1a433c66c2575879293ae4dce010d00df2ab7c54784962264d274b5e84eb6768",
+      "events": 13
+    },
+    {
+      "day": "2022-01-29",
+      "picks": 3198,
+      "reused": false,
+      "input_sha256": "bebc2237950649fa333d96108753d2864f7bc170c860cdd3c1d7e50f0d83fc90",
+      "events": 5
+    },
+    {
+      "day": "2022-02-01",
+      "picks": 2095,
+      "reused": false,
+      "input_sha256": "586a61cf0c5e78d8a4f4237cedea565e057ec7cc916bb3e570e1b944e58ac949",
+      "events": 9
+    },
+    {
+      "day": "2022-03-01",
+      "picks": 1981,
+      "reused": false,
+      "input_sha256": "2597e72e642fa572fe748f55151132ebb9de0a00bd08bf9f92d169e9ac18dffe",
+      "events": 4
+    },
+    {
+      "day": "2022-04-01",
+      "picks": 339,
+      "reused": true,
+      "input_sha256": "f8c6dd0af2cecc1496648842310d5acf6bc632751286a49376965c3f9b79042e",
+      "events": 4
+    },
+    {
+      "day": "2022-07-01",
+      "picks": 195,
+      "reused": true,
+      "input_sha256": "d40b15ecbd9212321c3075503bf5e83a38ee34be4b9a185274ecaf1eec3eb702",
+      "events": 0
+    },
+    {
+      "day": "2022-10-01",
+      "picks": 187,
+      "reused": true,
+      "input_sha256": "cffa28cbc15a0e65107212bd4b0095598a3ea0a56271fc9aa6c95e66efcf02d6",
+      "events": 0
+    },
+    {
+      "day": "2023-01-01",
+      "picks": 3985,
+      "reused": false,
+      "input_sha256": "fbf24a09c82375e851021261cff11fd2d368710488c101b7e12332e5ab0f0dd4",
+      "events": 4
+    },
+    {
+      "day": "2023-02-01",
+      "picks": 3353,
+      "reused": false,
+      "input_sha256": "f1b9d0d0fb332b50f51375c90e12761808a3c499c612b60bb7ff1023436dd121",
+      "events": 4
+    },
+    {
+      "day": "2023-03-01",
+      "picks": 3169,
+      "reused": false,
+      "input_sha256": "3f3a635524f9097f104df46a84bb039580c04a60dda0bdeb79b006508d80abf9",
+      "events": 23
+    },
+    {
+      "day": "2023-04-01",
+      "picks": 308,
+      "reused": true,
+      "input_sha256": "33e11450cad71115e2f424ebee0bcc441a16ed78e5b3b3a15b998af24c438ca3",
+      "events": 0
+    },
+    {
+      "day": "2023-07-01",
+      "picks": 270,
+      "reused": true,
+      "input_sha256": "59d73ab026ef808c62af70573898d338835b658ec00fe2129fbc34fe999b4a3b",
+      "events": 0
+    },
+    {
+      "day": "2023-10-01",
+      "picks": 273,
+      "reused": true,
+      "input_sha256": "7e4cfbed46805fc68f8a1732aa30e8e56c9afb848d395b4254746ed814a804d9",
+      "events": 2
+    },
+    {
+      "day": "2024-01-01",
+      "picks": 6371,
+      "reused": false,
+      "input_sha256": "68906f1b5eb2d7a9d131dacdc58159506be6f4c677539ffbabbae9a1639e1a6d",
+      "events": 18
+    },
+    {
+      "day": "2024-02-01",
+      "picks": 5391,
+      "reused": false,
+      "input_sha256": "bb16e284eed371b40a1c3c9542063ce4f128d45d8f64f47ab6189be1e9c24f81",
+      "events": 45
+    },
+    {
+      "day": "2024-03-01",
+      "picks": 3521,
+      "reused": false,
+      "input_sha256": "92d68c0594be551a0a085c037711eecb36955e1c7a6056ab8154ed641dbc2b1d",
+      "events": 4
+    },
+    {
+      "day": "2024-04-01",
+      "picks": 630,
+      "reused": true,
+      "input_sha256": "a9246ebfcb0f43c95d35ce7186b32a11a8490fa560623a57558679767e5e32a3",
+      "events": 4
+    },
+    {
+      "day": "2024-05-20",
+      "picks": 28425,
+      "reused": false,
+      "input_sha256": "1b14deeb88e9b21b84ef3651739433c143b921281f7ef55964f4623b2894d54f",
+      "events": 1644
+    },
+    {
+      "day": "2024-07-01",
+      "picks": 511,
+      "reused": true,
+      "input_sha256": "13ab5a3906da0aa6d218ef3edd69e154f030f846492ddb853faba5c5488528df",
+      "events": 2
+    },
+    {
+      "day": "2024-10-01",
+      "picks": 427,
+      "reused": true,
+      "input_sha256": "c66d56e4bc49b3a50cccd9b04cfffc5bff343037e0dc6947ee4c2ae99dd26729",
+      "events": 0
+    },
+    {
+      "day": "2025-01-01",
+      "picks": 8198,
+      "reused": false,
+      "input_sha256": "f7f0a1a769981d5bc3b2decbdd2c262e2a070fbc053a3dc86039fa479911e9de",
+      "events": 34
+    },
+    {
+      "day": "2025-02-01",
+      "picks": 12038,
+      "reused": false,
+      "input_sha256": "42ba2f6d3ac216b6bf83f7fc223e525d7186b22be2193d2cb0de97c7064a2daf",
+      "events": 191
+    },
+    {
+      "day": "2025-03-01",
+      "picks": 788,
+      "reused": true,
+      "input_sha256": "66cfbfde17a07e92b580f63c1cbac30f51b2d9a744ea564032a0a2572863a359",
+      "events": 10
+    },
+    {
+      "day": "2025-03-18",
+      "picks": 33941,
+      "reused": false,
+      "input_sha256": "2343e9d2b0b99a0246401ab743d8c79bb42bf0b2b94ef77e62596f44b24c5479",
+      "events": 259
+    },
+    {
+      "day": "2025-03-19",
+      "picks": 33640,
+      "reused": false,
+      "input_sha256": "766c2fa62785d0ac0f46ece8e4ece3ded41cc043131a9302df25fceb4e12f36c",
+      "events": 326
+    },
+    {
+      "day": "2025-03-20",
+      "picks": 41332,
+      "reused": true,
+      "input_sha256": "663d71b0981db6af7e8f9281ed4fb8f0a22c6cb541e2265789c91905c41d8fd1",
+      "events": 508
+    }
+  ]
+}

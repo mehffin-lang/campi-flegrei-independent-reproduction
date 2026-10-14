@@ -1,0 +1,22 @@
+{
+  "method": "Check 32-bit zero-term optimization against the preserved dense executable.",
+  "events": 552,
+  "phase_observations": 9529,
+  "stage": "Identical current regularized 14-iteration fixed-model prelocation",
+  "wall_seconds": 61.011347181978635,
+  "dense_binary_sha256": "6638e594444bd72b6e94fbd19f116177f9a1fa0a95b10332be2e9d28263761ab",
+  "sparse_binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+  "input_sha256": {
+    "input.mod": "e6534f4e8d6bb94d80ce2bd9bb31c74a5fa218d00d2115b4fd11ac50d5c524e4",
+    "input.sta": "18e1aba52e0483234b486868e6690bc7bb8b5a216cacf5f10b7c93b877bbb470",
+    "input.cnv": "bed4b6665d479fec87bab91caf98a824a70bd2eeff6afa16127ae29e11e67db2",
+    "velest.cmn": "759dc743bea1527e42d16c81003b9aff1eb56f8d259ab303a35ce7320b518548"
+  },
+  "identical": {
+    "output.cnv": true,
+    "output.sta": true,
+    "residuals.txt": true,
+    "velocity_model": true
+  },
+  "all_identical": true
+}

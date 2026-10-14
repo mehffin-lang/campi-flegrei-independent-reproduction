@@ -1,0 +1,311 @@
+[
+  {
+    "files": [
+      "figures/figure_S6_eida_followup.pdf",
+      "figures/figure_S6_eida_followup.png"
+    ],
+    "corresponding_panel": "S6",
+    "note": "Separately frozen extended cohort; independent identifiers. Depth 0\u20135 km, integer ticks, jet_r; magenta above 5, white below 0. Full location axes. Uniform 3-point-squared symbols for S6; exact printed area unspecified.",
+    "inputs": {
+      "data/eida_continuation/calibration/merged4/panels/velest.csv": "192540964048ca28be95101516cf5f6ecae4687fcd249f92f06aaf395d936e8d",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/figure_S6_eida_followup.pdf": "380489c3b939b2ee3166d6c2a52a7e797f8a5e8f794e5be49554b941f2c27451",
+      "figures/figure_S6_eida_followup.png": "49a73a49a75f28deaeaaf26bd39d7d98c1941c894663f658e57054611f6d4f35"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_3_eida_followup.pdf",
+      "figures/figure_3_eida_followup.png"
+    ],
+    "corresponding_panel": "3",
+    "note": "Separately frozen extended cohort; independent identifiers. Depth 0\u20135 km, integer ticks, jet_r; magenta above 5, white below 0. Full location axes. Own ML sizes where available; crosses otherwise. Published size formula unspecified: 0.7+3*10**(ML-2) points squared is explicit display assumption.",
+    "inputs": {
+      "data/eida_continuation/calibration/merged4/panels/relocated.csv": "77e6a5de78019055f830180cfda3ef548e3f3166819b115552b679933d0405c2",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/figure_3_eida_followup.pdf": "68842c1c71acbe5f254178a54992e16676c0507b52ca44f483cbc1c33873399d",
+      "figures/figure_3_eida_followup.png": "e4d8987e434d9a6b7a00c764a44cd7506c23a5f3fde67e5be8d4ceeda10f171a"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_2_eida_followup.pdf",
+      "figures/figure_2_eida_followup.png"
+    ],
+    "corresponding_panel": "2A\u2013B",
+    "note": "Separately frozen extended cohort; independent identifiers. Weekly counts; no false zeros in unobserved weeks. Alternative masks. External routine counts distinct axis. No invented hybrid timings or magnitudes.",
+    "inputs": {
+      "data/eida_continuation/calibration/merged4/panels/weekly_counts.csv": "925e3b43e01c5a21ab369e9a021db672b52f27c51f59eeb627a8e2099c61fdb2",
+      "data/eida_continuation/calibration/merged4/panels/sectors.csv": "b78f2e1558bd645f66d81bd8a2ffb02018e15498f5abd4e66122bacd89a7c14d"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/figure_2_eida_followup.pdf": "bfb722a68c220621b431f838e17f806c44ac75bd8a2df5d690eb68f3057b6a3a",
+      "figures/figure_2_eida_followup.png": "51da7a85c5d0bf75abb9460180cb4310eb2d0c566e215e9341b742129ad66ee9"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S7_eida_followup.pdf",
+      "figures/figure_S7_eida_followup.png"
+    ],
+    "corresponding_panel": "S7 all views",
+    "note": "Separately frozen extended cohort; independent identifiers. Positive 2-sigma errors; zero NCC observations excluded only from log-count axes. Scott KDE in log10(error), explicitly differing from unspecified paper bandwidth. All outliers retained. No fixed 10 m target.",
+    "inputs": {
+      "data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv": "fa101463aea48da883955b8b5ff4f46cf7318691b57f8d1f326d8d6122431667",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/figure_S7_eida_followup.pdf": "aac13eda82798ebf2f83409f6d92a17f3216a0d854844cd1d9309d796b597379",
+      "figures/figure_S7_eida_followup.png": "fe40a89fdbc9fa4d334c4e13363768f8d4037c81feab33e60fc7198f4730252a"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S10_eida_followup.pdf",
+      "figures/figure_S10_eida_followup.png"
+    ],
+    "corresponding_panel": "S10",
+    "note": "Separately frozen extended cohort; independent identifiers. Shared geographic axes expand beyond the original display when needed to retain every own location; black points; no magnitude-size mapping in these simple maps. Empty selection explicitly marked, not an empirical absence.",
+    "inputs": {
+      "data/eida_continuation/calibration/merged4/panels/year2022.csv": "78d8c03e3c044b07e4fd5c875ef56a983e199d704b31f33aacfff3c96c6dea07",
+      "data/eida_continuation/calibration/merged4/panels/year2023.csv": "e06fc28a5585551fad0d15e45b09ddbf429674b2f7a09d347abf6e9290347280",
+      "data/eida_continuation/calibration/merged4/panels/year2024.csv": "41759e1e007328c6ffb07befc121eea5ff135ce150668bc11e9f955a21665bbb",
+      "data/eida_continuation/calibration/merged4/panels/year2025.csv": "3909002f2cdf3f25eed1c4042caa8efb456c2cef6a138fa5174a466d394ad840",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/figure_S10_eida_followup.pdf": "4531800f00d3dcf19fa7d32ca455bf558478301df01c1422b0123a043d6fc863",
+      "figures/figure_S10_eida_followup.png": "6582e75de2655495109162c3987ca8dccb4cd31c94329e4d1a018582e0a6b74b"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S11_eida_followup.pdf",
+      "figures/figure_S11_eida_followup.png"
+    ],
+    "corresponding_panel": "S11",
+    "note": "Separately frozen extended cohort; independent identifiers. Shared geographic axes expand beyond the original display when needed to retain every own location; black points; no magnitude-size mapping in these simple maps. Empty selection explicitly marked, not an empirical absence.",
+    "inputs": {
+      "data/eida_continuation/calibration/merged4/panels/swarm-1.csv": "b45db72c5de69f01500cbb0fe9b71c4f35a2375fc3a1fbacf915a92b506dee36",
+      "data/eida_continuation/calibration/merged4/panels/swarm-2.csv": "6eb2d886332faf1148017a88fcb84965d374888f3fe5be26f2342ce0921f512c",
+      "data/eida_continuation/calibration/merged4/panels/swarm-3.csv": "76e372744abe1cf6de99e94718c83d64f80d08ce260ce60dfd768f50039a520b",
+      "data/eida_continuation/calibration/merged4/panels/swarm-4.csv": "2214cd41d20dd741e7ee52101c93e75e0a3d8babbc4d4c610224c79f997eb3c5",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/figure_S11_eida_followup.pdf": "5baed5b394b31c2f3f74ca738fcbd676e6148ea568b27bab34a975cafab8d54b",
+      "figures/figure_S11_eida_followup.png": "bef25a9c104de9ff48a8767d114ae4c44f5135e0dc3c582e3c41e19d40a1744e"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S12_eida_followup.pdf",
+      "figures/figure_S12_eida_followup.png"
+    ],
+    "corresponding_panel": "S12",
+    "note": "Separately frozen extended cohort; independent identifiers. Actual P-aligned eight-second traces; normalized amplitudes -1..1, seismic diverging palette. No traces inferred between coordinates; 0.040 km display strip width only, not spatial averaging or uncertainty. Sector membership differs from unpublished masks.",
+    "inputs": {
+      "data/eida_continuation/calibration/merged4/panels/sectors.csv": "b78f2e1558bd645f66d81bd8a2ffb02018e15498f5abd4e66122bacd89a7c14d",
+      "data/eida_continuation/calibration/merged4/panels/cpoz_index.csv": "a70348e01ac1231706d6b3dbbf14c941a7f67b8fc0806ef5096a2b061987f402",
+      "data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz": "19ea5704942461579a8eaa399fcec4f2d8d6279f22bdc33058a42abae3db68d6",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/figure_S12_eida_followup.pdf": "bedf30f3a6a59369ef9ba87f4c5c746eff0f4f7068527729bbabf8e0e0c499e9",
+      "figures/figure_S12_eida_followup.png": "58d67b0b0ca575a9da2fd03c82fb10bad05e84d6241cb097792137f088095b32"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S13_eida_followup.pdf",
+      "figures/figure_S13_eida_followup.png"
+    ],
+    "corresponding_panel": "S13A\u2013B",
+    "note": "Separately frozen extended cohort; independent identifiers. Own locations; no copied satellite/DEM or figure pixels. Basemap mismatch disclosed. Full data in saved table, explicit onshore display window.",
+    "inputs": {
+      "data/eida_continuation/calibration/merged4/panels/relocated.csv": "77e6a5de78019055f830180cfda3ef548e3f3166819b115552b679933d0405c2",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/figure_S13_eida_followup.pdf": "57c8c9006a45123e8d228fd8c99985bfcce0628a110fecde30ab1cca72f44da3",
+      "figures/figure_S13_eida_followup.png": "4a91c0e4f67b4c55318f248b540ea375e1c89ac94b41988b1604966c53c66641"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S8_eida_followup.pdf",
+      "figures/figure_S8_eida_followup.png"
+    ],
+    "corresponding_panel": "S8A\u2013B",
+    "note": "Blue small dots, red own calibration fit, histogram and orange own conditional likelihood curve; full observed axes. Formal errors retained in source table.",
+    "inputs": {
+      "data/eida_continuation/calibration/merged4/magnitude/figure_S8A.csv": "1e39077108107f752d7e3506068caeb8eaf834149f205d3a64992357e766eccf",
+      "data/eida_continuation/calibration/merged4/magnitude/figure_S8B.csv": "d24b18160ac379d27adbb0aa3e200dd150dfc8833897f1fca0de81bf03b625d7",
+      "data/eida_continuation/calibration/merged4/magnitude/magnitude_statistics.json": "932125b8ecca71678f6d2c9f8a1bcf3b6f616af68023041391604aa7c6d60b8a"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/figure_S8_eida_followup.pdf": "eaf13a5d3050df4f5eaabe9bc0cb8aa4dbc7ba148145d6ab06803e8bd46eaf5e",
+      "figures/figure_S8_eida_followup.png": "b75d3cf7c91cd8e1fe540cdbf417394bf877159bf7f0f27cb7efdb933d9a44ca"
+    }
+  },
+  {
+    "files": [
+      "figures/coverage_eida_followup.pdf",
+      "figures/coverage_eida_followup.png"
+    ],
+    "corresponding_panel": "S1",
+    "note": "Only successful observed samples; no failed/pending request or event-selected snippet counted.",
+    "inputs": {
+      "data/eida_continuation/processed_coverage.csv": "dacbe628513e96c34611568ebae55c67393ecc693a8917abd11178f4a2c95135"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/coverage_eida_followup.pdf": "b549727aea51238052b819b1f1f71bb7f20e291a80ebe3778831e9725c41ecd5",
+      "figures/coverage_eida_followup.png": "e9db53b5055cb6a1c829fb221c8017e402d66148e94ca11cf119929d11044259"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_4_eida_followup.pdf",
+      "figures/figure_4_eida_followup.png"
+    ],
+    "corresponding_panel": "4A\u2013B",
+    "note": "Gray unvalidated trials, separate review IDs, explicit shared-phase location mapping and current own model. Background new catalog not joined by integer IDs. Depth 0\u20135 km jet_r, reversed integer colorbar, magenta >5, no clipping. Uniform beachball area; depth rather than unavailable terrain elevation in B.",
+    "inputs": {
+      "data/mechanism_eida/gcap/solutions.csv": "00cec15ab0cf6b9c074c25a43445583ee5b30d6c8e565e6d9e3cf4bd6a1d3a64",
+      "data/eida_continuation/calibration/merged4/panels/relocated.csv": "77e6a5de78019055f830180cfda3ef548e3f3166819b115552b679933d0405c2",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/figure_4_eida_followup.pdf": "c12dea16edc8cf7c3da7347d4bee6543451f868038a2cf90984c7c8f85b26a0b",
+      "figures/figure_4_eida_followup.png": "0fc21c57a6c7fd3d25b356f9ccb7e2d7d24e6a4a0dbe40eef98acda28a59d219"
+    }
+  },
+  {
+    "files": [
+      "figures/mechanism_eida_fit_diagnostic.pdf",
+      "figures/mechanism_eida_fit_diagnostic.png"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "Fixed four-event CPOZ comparison, common observed-peak normalization per pair; theoretical amplitudes not independently normalized. Saved SAC a includes fitted window lag. Supporting documentation only, never a paper-panel counterpart.",
+    "inputs": {
+      "data/mechanism_eida/gcap/fit_index.csv": "e78f36373c48fae1ba9fdd2ab5d7dff301bf2daf850172ef9f497eb08b064196",
+      "data/mechanism_eida/gcap/fit_waveforms.npz": "dc30160d691726fe94272b2b95f586e3ea5bbc9608f863cf44ba1835de1253a2",
+      "data/mechanism_eida/gcap/solutions.csv": "00cec15ab0cf6b9c074c25a43445583ee5b30d6c8e565e6d9e3cf4bd6a1d3a64"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/mechanism_eida_fit_diagnostic.pdf": "52093a9f5a099d3d766bf1c4c20834f22c4013574e308df6b5c429a88c1470d8",
+      "figures/mechanism_eida_fit_diagnostic.png": "befa8f51b7fad73b261ee5033b32435edaff8cb67d785eb3d45360de1344df8d"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S14_eida_followup.pdf",
+      "figures/figure_S14_eida_followup.png"
+    ],
+    "corresponding_panel": "S14/1\u20133",
+    "note": "Measured original CAAM 1\u201310 Hz waveforms. FI<0 red. Own correlations, spectral indices and amplitude ratios; no confirmed family or unclustered sample.",
+    "inputs": {
+      "data/eida_continuation/hybrid/display_candidates.csv": "57173d13f80d487661ecc703912a9b80798c05f824f153027925a0d9086a195f",
+      "data/eida_continuation/hybrid/display_waveforms.npz": "c98fd72220e76adb26fa4160a24b8cb1315f4ec8b130298f6b7781b0428ba041"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/figure_S14_eida_followup.pdf": "dee5db52513e25e9e60a88188a48447a7f0ea806ed3ace8f829a4767da9c9826",
+      "figures/figure_S14_eida_followup.png": "5fca8977611856c5dc6c88342b15e6ea1b6f3ee370844f9a6a2e66afeafe3f4b"
+    }
+  },
+  {
+    "files": [
+      "figures/hybrid_E1.pdf",
+      "figures/hybrid_E1.png"
+    ],
+    "corresponding_panel": "S15A analogue",
+    "note": "Four component columns, waveforms above log-frequency spectra. All waveform axes share limits: COLB/CAAM amplitude ratios remain visible; each component is normalized to its corresponding CAAM maximum, not a Z/E polarization measure. E1/E2 are alternative documented family templates, not the published example events. Closest visible rainbow palette; exact palette/normalization not published. Observed window is not truncated to force reference onset.",
+    "inputs": {
+      "data/observations/E1_waveforms.csv": "d064c5a33f1da547af1dbd1cabfdd8386b73989e5559bc08503d729ed8290f34",
+      "data/observations/E1_CAAM_Z_spectrum.npz": "4ee5c33f713ad436e8217372c0de02ee5fc048a94aedd639e25dd4b7331100f3",
+      "data/observations/E1_CAAM_E_spectrum.npz": "2c8ea3d1ade6aa70508388370a5cb5d9ad853038850e91ca8934e36ec93624a7",
+      "data/observations/E1_COLB_Z_spectrum.npz": "8ad20193c9fef2ccc50f963edd59e0a186ef0cd25ab10a031d814c1afb392742",
+      "data/observations/E1_COLB_E_spectrum.npz": "24499870264977880a3f7722f1c82695229c06a933750fd4d33b985abff8696a"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/hybrid_E1.pdf": "1ee253db6ea9fdd0007d0265dfe8c22c9d05c82388378dbd015f44c02c810ed4",
+      "figures/hybrid_E1.png": "f11d5d2c25bc80a833b4c7fd9e891715aed5724d37a92fb000fafacf57f99921"
+    }
+  },
+  {
+    "files": [
+      "figures/hybrid_E2.pdf",
+      "figures/hybrid_E2.png"
+    ],
+    "corresponding_panel": "S15B analogue",
+    "note": "Four component columns, waveforms above log-frequency spectra. All waveform axes share limits: COLB/CAAM amplitude ratios remain visible; each component is normalized to its corresponding CAAM maximum, not a Z/E polarization measure. E1/E2 are alternative documented family templates, not the published example events. Closest visible rainbow palette; exact palette/normalization not published. Observed window is not truncated to force reference onset.",
+    "inputs": {
+      "data/observations/E2_waveforms.csv": "47345e0804b90bac0ab1d340cd815d5f3e6823ca0290eff424d98fa25111dd90",
+      "data/observations/E2_CAAM_Z_spectrum.npz": "05ee63b677630852bb6195fd15051cd9f0f10d12708b28461d25e98e6b4c8f70",
+      "data/observations/E2_CAAM_E_spectrum.npz": "937d75635a0fef2c9f96af4da56688e3c37dcd18feb5df2d0f020707c13fe098",
+      "data/observations/E2_COLB_Z_spectrum.npz": "ae36906a1b7de2f790ec1e6fe036ccaf75a9de41cb85e0f2427a9fb3c9245111",
+      "data/observations/E2_COLB_E_spectrum.npz": "c6576ac2c9cfa4d75386439c842d1075b9b2746922acdadfbda8dd37e9d07329"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/hybrid_E2.pdf": "6fc60146fe32df8f7ccc94d2b6fb04961dc9587406715a972bd2c9c1daf87b36",
+      "figures/hybrid_E2.png": "060e47f054896d60a8002d4ecad3119ab42a48b4dec9d53c7a7e6f893c59a4c4"
+    }
+  },
+  {
+    "files": [
+      "figures/hybrid_E3.pdf",
+      "figures/hybrid_E3.png"
+    ],
+    "corresponding_panel": "S15C",
+    "note": "Four component columns, waveforms above log-frequency spectra. All waveform axes share limits: COLB/CAAM amplitude ratios remain visible; each component is normalized to its corresponding CAAM maximum, not a Z/E polarization measure. E1/E2 are alternative documented family templates, not the published example events. Closest visible rainbow palette; exact palette/normalization not published. Observed window is not truncated to force reference onset.",
+    "inputs": {
+      "data/observations/E3_waveforms.csv": "b962ea04bf891b3c9da67b0f61004825801482b81aa4e7aaf4d96c69be313e7f",
+      "data/observations/E3_CAAM_Z_spectrum.npz": "7100d42a3ce3ac1b460a56a4b53c830542093cb4be4056383449ab65527452e8",
+      "data/observations/E3_CAAM_E_spectrum.npz": "98d177920e528c8a9df783aa870862bd0f77925069d4690a28af710bedd0127d",
+      "data/observations/E3_COLB_Z_spectrum.npz": "646371f8a278459b608fd1f5e7701a297b2db61ef9e7829b845e3d580688e45f",
+      "data/observations/E3_COLB_E_spectrum.npz": "738a3880a9014ebb1020eb3368ea4b10f34af84d876d4d82aafc2be471bc0c0c"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/hybrid_E3.pdf": "29df99cb05bd548c248fe20eb728328dd020a1add0d1653ae7a57bafcb96d956",
+      "figures/hybrid_E3.png": "e58574ac435adfb77a702a2ef3ec62b7ebc976c9f849fc156a5561e82cec1eca"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S15D_eida_followup.pdf",
+      "figures/figure_S15D_eida_followup.png"
+    ],
+    "corresponding_panel": "S15D",
+    "note": "Different independently associated waveform example, not an identified published VT event. Provisional shallow location; CAAM proximity is an explicit alternative to unavailable west-Accademia polygon. No figure pixels or reference event result supplies input.",
+    "inputs": {
+      "data/eida_continuation/shallow_example/waveforms.csv": "31aefc0529e23602d17ee960eef3a602ab466fe635a697a41a3b625238ce162c",
+      "data/eida_continuation/shallow_example/spectra.npz": "259626c6d6241c0d103602254d979d2034290bbcbe1de3e21bf156c18334bde6",
+      "data/eida_continuation/shallow_example/summary.json": "d1da9399fb93343d079b672a99279a9e139eb655d374e4a12fe83e8da58b2041"
+    },
+    "command": ".venv/bin/python scripts/plot_eida_followup.py",
+    "outputs": {
+      "figures/figure_S15D_eida_followup.pdf": "e3968c344fbc5041cbe8595064aacbebda94da9edf5cbea446e9b8c5b76f9394",
+      "figures/figure_S15D_eida_followup.png": "680eb97f07c7238f09ed69b2bef16f7e1c6bade864d737b408d2591d15576f1d"
+    }
+  }
+]

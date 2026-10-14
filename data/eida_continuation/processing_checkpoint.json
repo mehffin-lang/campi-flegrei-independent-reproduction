@@ -1,0 +1,27 @@
+{
+  "classification": "Own sparse continuous-observation inference and alternative-profile association; all known event-selected snippets excluded.",
+  "command": ".venv/bin/python scripts/process_eida_followup.py",
+  "inference": "Compatible per-file caches are reused only after input/settings/model/implementation hash checks.",
+  "files": {
+    "data/eida_continuation/input_jobs.json": "79af4a532ca58540e5640c4bc4f02ddcbca3ce55dafcc4d077b52a73adeab60a",
+    "data/eida_continuation/picks.csv": "db6f60b9ba762642348d89fa2b7dda5bb843cd7c692985b66820180183570903",
+    "data/eida_continuation/initial_events.csv": "51b3950e92eebcf5abbff3bc7a6ad11c83cbcdb0baef9cdd570f2ddd7cddaea6",
+    "data/eida_continuation/associations.csv": "feb29d6ad8d6e8db065d9464262d27dfff46d17206522124d35813761e1c55f8",
+    "data/eida_continuation/analysis_summary.json": "e157a21295964827671ab4dfc54d758e5bb412d7f6af4a877ba4b81110509e61",
+    "data/eida_continuation/processed_coverage.csv": "dacbe628513e96c34611568ebae55c67393ecc693a8917abd11178f4a2c95135",
+    "data/eida_continuation/processed_coverage_union.json": "73a1324e4eb916b3536fc138e40766b5bae5b8669485f41cd4e4eee60606b6c7",
+    "data/eida_continuation/stations.csv": "83f3bd10a60529750a7ad3c9e7baa155cae39d33d1372554ee0cab0eb72960a7",
+    "data/eida_continuation/alternative_starting_profile.csv": "3f65a13dd484418370b4bbd85302c3f434107464277c305c2a34c937b64eaaab",
+    "scripts/process_continuous.py": "9a07ce7f14d510f1496b53421b24d25d2bd4cb7efc88f63f208b033ea7c4b538",
+    "scripts/gamma_reproducibility.py": "e8a54c9848b11664184dc9893163cccbd83a519aae174b070873eed8fc527ff5",
+    "config/continuation_association.json": "b6f2be8b8e5e4e4026664ff149b49666eec946d352780ac5deb59689c1b26c01",
+    "data/extended/picks.csv": "c46e3fefcb07e559b8d2677cfe72bc0db503399bd6ad1b1f5ea75d3a17868919",
+    "inputs/models/phasenet_retrained.pt": "7f2b2d4345b82232ded67ea554794f7ff148bee235d50b1772f3516833500059",
+    "inputs/models/phasenet_retrained.json": "75cd9e14d6f2927d84ec684b44d815abffc6649f6d7751488ae9b1a35da45958",
+    "scripts/extend_calibration_observations.py": "bb94fcfc2a9cb732e294676fb895b56a7af154e4d3be53c32ba5a869e6d12ea7",
+    "scripts/reuse_own_associations.py": "0a49e3b188956250935a1148a98e9ead69936b35e3669804bafd09723ea74ce2",
+    "scripts/process_eida_followup.py": "8bef7cf271d2f1e4d75962b27b0dff25ee609fc44df49fbc4095448c307c1b8a",
+    "data/eida_continuation/all_observation_inputs.json": "0a2ccd4e511291c8a36beb87de4b21028500225ce4515a52136f6248bceb1bec",
+    "data/eida_continuation/eligibility.json": "5f7744a8b9d01c7e9aae34023e151ddb1caa928c858831f8445a5f8695d7275b"
+  }
+}

@@ -15,8 +15,20 @@ def main():
     OUT.mkdir(exist_ok=True)
     events=pd.read_csv(B/'uncertainty/relocated_events.csv').set_index('event_index');picks=pd.read_csv(B/'tomodd/retained_picks.csv');p=picks[(picks.phase=='P')&picks.event_index.isin(events.index)]
     counts=p.groupby('event_index').size();ids=counts[counts>=8].index;p=p[p.event_index.isin(ids)]
+    identity_files=[B/'tomodd/retained_picks.csv',B/'uncertainty/relocated_events.csv',B/'independent_calibrated.mod',B/'summary.json',B/'validation.json',Path(__file__),ROOT/'scripts/run_velest.py']
+    identity_files += [ROOT/f for f in sorted(set(p.source))]+[ROOT/f'inputs/continuation/{n}_responses.xml' for n in ['IV','2I']]
+    identity_files += list((ROOT/'.venv-skhash/lib/python3.11/site-packages/SKHASH').rglob('*.py'))
+    identity={str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in identity_files};manifest=OUT/'execution_manifest.json'
+    if manifest.exists():
+        cached=json.loads(manifest.read_text())
+        if cached['inputs']==identity and all((ROOT/n).exists() and hashlib.sha256((ROOT/n).read_bytes()).hexdigest()==h for n,h in cached['outputs'].items()):
+            print('Reused automatic polarity screen after exact input/software/output hash checks.');return
     inv=read_inventory(str(ROOT/'inputs/continuation/IV_responses.xml'))+read_inventory(str(ROOT/'inputs/continuation/2I_responses.xml'))
     rows=[];stations=[];waves={};failures=[]
+    regional=json.loads((B/'summary.json').read_text())['starting_model_dependence']
+    precision=json.loads((B/'validation.json').read_text())['precision_difference']
+    horizontal=max(regional['max_horizontal_m'],precision['max_horizontal_m'])/1000
+    vertical=max(regional['max_depth_km'],precision['max_depth_km'])
     for source,group in p.groupby('source'):
         st=read(str(ROOT/source)).merge(method=0).split()
         for r in group.itertuples():
@@ -37,7 +49,7 @@ def main():
                 a=tr.copy().trim(t-.5,t+.6);key=f'e{r.event_index}_{sta}';waves[key]=np.vstack([a.times()+float(a.stats.starttime-t),a.data])
                 e=events.loc[r.event_index]
                 rows.append(dict(event_id=str(r.event_index),network=net,station=sta,location=loc or '--',channel=tr.stats.channel,p_polarity=.5*signs[0] if stable else 0.,origin_latitude=e.latitude,origin_longitude=e.longitude,origin_depth_km=e.depth_km,
-                    horz_uncert_km=.655,vert_uncert_km=1.04,source=source,p_time=r.time,array_key=key,sign_60ms=signs[0],sign_100ms=signs[1],sign_150ms=signs[2],minimum_peak_noise_ratio=min(ratios),stable=stable,reviewed=False))
+                    horz_uncert_km=horizontal,vert_uncert_km=vertical,source=source,p_time=r.time,array_key=key,sign_60ms=signs[0],sign_100ms=signs[1],sign_150ms=signs[2],minimum_peak_noise_ratio=min(ratios),stable=stable,reviewed=False))
                 stations.append(dict(network=net,station=sta,location=loc or '--',channel=tr.stats.channel,latitude=meta.latitude,longitude=meta.longitude,elevation=meta.elevation))
             except Exception as exc:failures.append(dict(event_index=r.event_index,station=r.trace_id,error=repr(exc)))
     frame=pd.DataFrame(rows);frame.to_csv(OUT/'polarity_screen.csv',index=False);frame[frame.stable].to_csv(OUT/'polarities.csv',index=False);pd.DataFrame(stations).drop_duplicates().to_csv(OUT/'stations.csv',index=False);np.savez_compressed(OUT/'review_windows.npz',**waves)
@@ -61,9 +73,11 @@ def main():
     solutions=pd.read_csv(OUT/'solutions.csv') if (OUT/'solutions.csv').exists() and (OUT/'solutions.csv').stat().st_size else pd.DataFrame()
     summary=dict(candidate_events=len(ids),measured_polarities=len(frame),stable_screen_polarities=int(frame.stable.sum()),events_with_eight_stable=int((frame[frame.stable].groupby('event_id').size()>=8).sum()),returncode=result.returncode,solutions=len(solutions),scientifically_accepted=0,reviewed_polarities=0,failures=failures,
         method='SKHASH 1.1.5 generic USGS software; https://code.usgs.gov/esc/SKHASH ; Skoumal et al. 2024 doi:10.1785/0220230329. Isolated .venv-skhash; no example/author event data used.',
-        assumptions='Peak signs agree in 0.01–0.06/0.10/0.15 s after own P and exceed 3x preceding 0.45-s RMS. Upward Z metadata verified. Weight 0.5. This screen is not manual polarity review; S/P ratios not supplied. Horizontal .655 km and vertical 1.04 km perturbation scales use own regional-start maximum shifts as conservative assumed errors, not measured Gaussian uncertainties. Default eight-polarity, 90-degree azimuth and 60-degree plunge-gap gates are not relaxed.',
-        gcap='No reviewed suitable source solution yet; independent FK library and event-specific filters/window weights, density and attenuation choices remain unimplemented/unspecified. Generic gCAP archive is present, but no author Green functions or solution can replace this stage.',
+        assumptions='Peak signs agree in 0.01–0.06/0.10/0.15 s after own P and exceed 3x preceding 0.45-s RMS. Upward Z metadata verified. Weight 0.5. This screen is not manual polarity review; S/P ratios not supplied. Perturbation scales use maxima of the current own regional-start and precision shifts; these are sensitivity-based assumptions, not measured Gaussian uncertainties. Default eight-polarity, 90-degree azimuth and 60-degree plunge-gap gates are not relaxed.',
+        gcap='This automatic screening stage does not run gCAP. Separate waveform review and FK/gCAP execution records determine its status.',
+        perturbation_scales_km=dict(horizontal=horizontal,vertical=vertical),
         sources={str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in [B/'tomodd/retained_picks.csv',B/'uncertainty/relocated_events.csv',B/'independent_calibrated.mod',source]})
     (OUT/'summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary,indent=2))
+    manifest.write_text(json.dumps(dict(inputs=identity,outputs={str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in OUT.iterdir() if f.is_file() and f!=manifest}),indent=2)+'\n')
 
 if __name__=='__main__':main()

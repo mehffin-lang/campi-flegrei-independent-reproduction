@@ -96,4 +96,5 @@ def main():
     record['status']='both fixed-grid rounds executed; validation pending' if len(record['runs'])==2 and 'error' not in record['runs'][-1] else 'relocation failed; diagnostic preserved'
     record['limitations']='Incomplete waveform coverage; calibration subset unreviewed; alternative GaMMA start and explicit inversion assumptions. Iteration passage does not establish correct event identity or absolute depth. No exact reproduction claim.'
     (DEST/'summary.json').write_text(json.dumps(record,indent=2)+'\n');print(json.dumps(record,indent=2))
+    if record['status'].startswith('relocation failed'):raise SystemExit(1)
 if __name__=='__main__':main()

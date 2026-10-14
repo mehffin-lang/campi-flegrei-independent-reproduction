@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-14T01:30:08.351067+00:00",
+  "method": "Atomic executable replacement after six same-input observed-cohort comparisons. Running processes retain their original inode. Both precisions use the identical optimization; scientific controls unchanged.",
+  "binaries": {
+    "32": {
+      "before": "6638e594444bd72b6e94fbd19f116177f9a1fa0a95b10332be2e9d28263761ab",
+      "after": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+    },
+    "64": {
+      "before": "5d2eccce6ced8636e42da92b5b76910575b5701e96384b7cb3b410a9d6c84dee",
+      "after": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+    }
+  },
+  "existing_solver_directories": [
+    "Pozzuoli_Solfatara_prelocation",
+    "Pozzuoli_Solfatara_round1",
+    "Pozzuoli_Solfatara_round2",
+    "Pozzuoli_Solfatara_convergence1",
+    "Pozzuoli_Solfatara_convergence2",
+    "Pozzuoli_Solfatara_convergence3",
+    "caldera_prelocation",
+    "caldera_round1",
+    "caldera_round2",
+    "caldera_convergence1"
+  ]
+}

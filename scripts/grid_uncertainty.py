@@ -29,15 +29,20 @@ def main():
     common.to_csv(OUT/'matched_round_residuals.csv',index=False)
     stats['matched_observations']={label:dict(n=len(r),round1_rms_s=float(np.sqrt(np.mean(r.residual_ms_1**2))/1000),round2_rms_s=float(np.sqrt(np.mean(r.residual_ms_2**2))/1000)) for label,r in [('cc',common[common.phase_index<=2]),('picked',common[common.phase_index>2])]}
     picks=pd.read_csv(T/'retained_picks.csv');events=b[b.gap_deg<=300].copy();events.to_csv(OUT/'relocated_events.csv')
+    stats['round2_output_zero_cc_events']=stats['zero_cc_events'];stats['zero_cc_events']=int((events.ncc_p+events.ncc_s).eq(0).sum());stats['zero_cc_scope']='Final gap-passing set. Between-round change statistics use all common round-2 outputs, before its final gap filter.'
     rf.OUT=BASE;rf.D=ROOT/os.environ.get('CF_OBSERVATIONS','data/calibration_followup/expanded');rf.DEST=OUT;rf.RUN_ROOT=ROOT/os.environ.get('CF_GRID_WORK','tmp/grid_calibration')/'uncertainty'
     model=v.model_table(BASE/'independent_calibrated.mod');model.to_csv(OUT/'model.csv',index=False);rf.MODEL_PATH=OUT/'model.csv'
     aliases=pd.read_csv(BASE/'station_aliases.csv').set_index('alias');ct=pd.read_csv(T/'phase_pair_times.csv');cc=pd.read_csv(T/'accepted_differential_times.csv')
     # These numerical masks are explicit alternatives because the original
     # regional selection boundaries are not supplied numerically. No graph is digitized.
     masks={'Central':(events.latitude>=40.82)&(events.longitude<14.14),'North':(events.latitude>=40.82)&(events.longitude>=14.14),'Southwest':(events.latitude<40.82)&(events.longitude<14.14),'East':(events.latitude<40.82)&(events.longitude>=14.14)}
-    results=[];runs=[]
+    results=[];runs=[];membership=[]
+    sample_limits={'Central':174,'North':165,'Southwest':175,'East':166}
     for region,mask in masks.items():
-        group=events[mask];ids=group.index.tolist();index={e:i for i,e in enumerate(ids)}
+        available=events[mask]
+        group=available.sample(sample_limits[region],random_state=42).sort_index() if len(available)>sample_limits[region] else available
+        membership.extend(dict(event_index=int(eid),region=region,selected=eid in group.index) for eid in available.index)
+        ids=group.index.tolist();index={e:i for i,e in enumerate(ids)}
         pairs=ct[ct.event_a.isin(ids)&ct.event_b.isin(ids)].groupby(['event_a','event_b']).size();pairs=pairs[pairs>=6]
         graph=coo_matrix((np.ones(len(pairs)),([index[a] for a,b in pairs.index],[index[b] for a,b in pairs.index])),shape=(len(ids),len(ids)))
         if not ids:runs.append(dict(region=region,starting_events=0,error='No provisional relocated events in this explicit region'));continue
@@ -45,15 +50,20 @@ def main():
         for k in range(n):
             subset=group.iloc[np.flatnonzero(labels==k)];name=f'svd_{region}_{k}'
             if len(subset)<4:runs.append(dict(region=region,component=k,starting_events=len(subset),error='Fewer than four connected events for regional SVD'));continue
-            out,r=rf.execute(name,subset,aliases,ct,cc,svd=True);r.update(region=region,component=k);runs.append(r)
+            try:out,r=rf.execute(name,subset,aliases,ct,cc,svd=True)
+            except Exception as exc:
+                runs.append(dict(region=region,component=k,starting_events=len(subset),error=repr(exc)));continue
+            r.update(region=region,component=k);runs.append(r)
             if out is not None:
                 out=out.reset_index();out['region']=region;out['component']=k
                 out['finite_positive_errors']=(out[['error_x_m','error_y_m','error_z_m']]>0).all(axis=1)
                 results.append(out)
     combined=pd.concat(results,ignore_index=True) if results else pd.DataFrame(columns=['event_index','region','error_x_m','error_y_m','error_z_m'])
     combined.to_csv(OUT/'regional_svd.csv',index=False)
+    pd.DataFrame(membership).to_csv(OUT/'regional_sample_membership.csv',index=False)
     stats.update(svd_runs=runs,svd_events=len(combined),masks={k:'longitude 14.14 E and latitude 40.82 N quadrant boundary; explicit alternative to unspecified paper masks' for k in masks},
-        uncertainty='Generic HypoDD SVD reported 2-sigma errors in m; includes conditional measurement covariance, excludes velocity-grid/calibration/association/systematic bias. Every >=4-event six-phase-linked component attempted, not only the largest.',
+        uncertainty='Generic HypoDD SVD reported 2-sigma errors in m; includes conditional measurement covariance, excludes velocity-grid/calibration/association/systematic bias. Every >=4-event six-phase-linked component of each sampled region attempted, not only the largest.',
+        sampling=dict(maximum_events=sample_limits,seed=42,method='Tan supplement S5 samples 174/165/175/166 events in four regions. Sample without replacement only when more events are available; otherwise retain all. Original regional boundaries unavailable, so masks remain explicit alternatives. Seed 42 is a disclosed reproducibility choice; no published coordinates or errors enter selection.'),
         sources={str(p.relative_to(ROOT)):rf.sha(p) for p in [T/'round1_locations.csv',T/'round2_locations.csv',T/'phase_pair_times.csv',T/'accepted_differential_times.csv',BASE/'independent_calibrated.mod']})
     (OUT/'summary.json').write_text(json.dumps(stats,indent=2)+'\n');print(json.dumps(stats,indent=2))
 

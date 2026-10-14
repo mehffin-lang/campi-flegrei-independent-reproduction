@@ -1,0 +1,15 @@
+{
+  "check": "First connected cluster iteration locations before/after zero-correlation logging fix",
+  "identical": {
+    "output.reloc.001.001": true,
+    "output.reloc.001.002": true,
+    "output.reloc.001.003": true,
+    "output.reloc.001.004": true,
+    "output.reloc.001.005": true,
+    "output.reloc.001.006": true,
+    "output.reloc.001.007": true,
+    "output.reloc.001.008": true
+  },
+  "all_identical": true,
+  "current_binary_sha256": "58a8cea316cacfdec4e636d589197023a1298671133f93c7f4fd1bea6a9bbab1"
+}

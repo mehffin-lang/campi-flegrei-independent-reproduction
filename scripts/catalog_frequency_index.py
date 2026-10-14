@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 from obspy import read,read_inventory,UTCDateTime
 from gamma.seismic_ops import initialize_eikonal,calc_time
-D=ROOT/'data/continuation'
+D=ROOT/os.environ.get('CF_OBSERVATIONS','data/continuation')
 
 def initialize_measurements(arrivals):
     global INVENTORIES,ARRIVALS
