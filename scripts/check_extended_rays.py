@@ -4,7 +4,7 @@ import numpy as np,pandas as pd
 from extend_velocity_training import R,D,dump
 
 def main():
-    F=D/'fits';W=R/'tmp/velocity_holdout_review/training_extension_20261015/fits'
+    F=D/'fits';W=R/'tmp/velocity_holdout_review'/D.name/'fits'
     aliases=pd.read_csv(R/'data/velocity_holdout_review/station_aliases.csv').set_index('alias').id
     rows=[];checks=[]
     for family in ['four_regularized','three_regularized','three_zero_delays']:

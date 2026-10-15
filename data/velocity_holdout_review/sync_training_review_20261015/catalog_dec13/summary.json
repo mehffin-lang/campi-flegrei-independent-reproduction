@@ -1,0 +1,32 @@
+{
+  "input_files": 6,
+  "picks": 1085,
+  "P": 163,
+  "S": 922,
+  "events": 0,
+  "assigned_picks": 0,
+  "stations": [
+    "2I.CGAU.",
+    "2I.CLAC.",
+    "2I.CREM.",
+    "2I.CSOC.",
+    "IV.CRUS."
+  ],
+  "input_channel_hours": 36.0,
+  "configuration_sha256": "2fb61ec26d268ecf7fc54aea4f61ee21fb286db4c86b4c444574ec819f4263a3",
+  "weights": {
+    "artifacts": {
+      "inputs/models/phasenet_retrained.pt": "7f2b2d4345b82232ded67ea554794f7ff148bee235d50b1772f3516833500059",
+      "inputs/models/phasenet_retrained.json": "75cd9e14d6f2927d84ec684b44d815abffc6649f6d7751488ae9b1a35da45958"
+    },
+    "software": {
+      "torch": "2.14.1+cpu",
+      "seisbench": "0.12.6",
+      "obspy": "1.5.1"
+    },
+    "implementation_sha256": "239d6a294b83b5fe722e31601c185afc85680b9e4a52f653bc5ddf86b24cd413"
+  },
+  "base_picks": null,
+  "base_picks_sha256": null,
+  "scope": "Targeted pre-2025 station data; provisional alternative-profile associations. Calendar-selected continuous windows only; exact durations in input_jobs.json."
+}

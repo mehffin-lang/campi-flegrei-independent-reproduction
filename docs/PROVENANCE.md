@@ -83,3 +83,21 @@ set uses project observations only. All 18 fits were frozen before the identical
 holdout location/origin fitting with fixed velocities/delays remains the same
 previously disclosed validation procedure, not independent known-hypocenter truth.
 The previous 602 velocity-trial files and empirical figures are preserved.
+
+## Synchronized PDFs and reviewed training exclusions, 15 October 2026
+
+`data/velocity_holdout_review/sync_training_review_20261015/` preserves the next
+experiment. Six original EIDA files add 36 channel-hours on 13 December 2024;
+1,085 project picks yield no associations. No new calibration event is invented.
+Six ambiguous inherited phases and event1532 are retained in the audit trail but
+excluded from this training fit after waveform review. The unchanged quality
+screen also excludes event159. Training is 51 events/816 arrivals. No 2025
+arrivals are edited or used to estimate velocities or delays, or to select a
+model. All 18 fits were frozen before final evaluation; none is validated.
+All 1,332 earlier velocity-result files are hash-checked and preserved.
+
+The same generated figure files and status records supply both PDFs; per-panel
+hashes are in `report/document_build.json`. The comparison alone uses published
+reference images. No new failed profile replaces empirical panel data. Native
+P/S logging counters are uninitialized; independently counted input tokens and
+ray records supply counts, not those printed aggregate counters.

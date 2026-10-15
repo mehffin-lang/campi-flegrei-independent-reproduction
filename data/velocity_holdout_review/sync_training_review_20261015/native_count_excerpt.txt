@@ -1,0 +1,51 @@
+5898: cek added separate report of P and S phases 20.8.98
+5899: c
+5900:       implicit none
+5901:       include 'vel_com.f'
+5902:       integer i,nofreadings,k,nobsp(ist),nobss(ist),nofreadp,nofreads
+5903: c
+5904:       do i=1,nsta
+5905:          nactualsta(i)=0
+5906:          nobsp(i)=0
+5907:          nobss(i)=0
+5908:       enddo
+5909:       nstaeff=0
+5910:       nofreadings=0
+5911:       do i=1,legs  ! = neqs+nshot
+5912:          do k=1,knobs(i)
+5913:             nactualsta( istm(k,i) ) = nactualsta( istm(k,i) ) + 1
+5914:             if(nsp.eq.2) then
+5915:              if(sphase(k,i).eq.0.0) nobsp(istm(k,i))=nobsp(istm(k,i))+1
+5916:              if(sphase(k,i).eq.1.0) nobss(istm(k,i))=nobss(istm(k,i))+1
+5917:             endif
+5918:             nofreadings=nofreadings+1
+5919:          enddo
+5920:       enddo
+5921:       if(.not.single_turbo) write(16,*)
+5922:       do i=1,nsta
+5923:          if(nactualsta(i).gt.0)then
+5924:             if(.not.single_turbo)then
+5925:                if(nsp.eq.2) then
+5926:                write(16,'('' readings for station '',a4,'' : tot='',
+5927:      &                  i4,''  P:'',i4,''  S:'',i4)')
+5928:      &                  stn(i),nactualsta(i),nobsp(i),nobss(i)
+5929:                else
+5930:                write(16,'('' readings for station '',a4,'' :'',i4)')
+5931:      &                  stn(i),nactualsta(i)
+5932:                endif
+5933:             endif
+5934:             nstaeff=nstaeff+1
+5935:          endif
+5936:          nofreadp=nofreadp+nobsp(i)
+5937:          nofreads=nofreads+nobss(i)
+5938:       enddo
+5939:       if(.not.single_turbo)then
+5940:          write(16,*)
+5941:          write(16,'('' Total number of stations with readings:'',i4)')
+5942:      &           nstaeff
+5943:          write(16,*)
+5944:          write(16,'('' Total number of readings: '',i7)') nofreadings
+5945:          write(16,'('' Total number of P readings: '',i7)') nofreadp
+5946:          write(16,'('' Total number of S readings: '',i7)') nofreads
+5947:          write(16,*)
+5948:       endif

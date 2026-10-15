@@ -1,0 +1,12 @@
+{
+  "events": 76,
+  "causal": 76,
+  "calibration": 75,
+  "selection": "Same pre-inversion screen as prior checkpoint; necessary checks, not manual phase review.",
+  "inputs": {
+    "data/velocity_holdout_review/sync_training_review_20261015/training_catalog/initial_events.csv": "0cd8c744ec0c58e381fdb314db390388c22c68d949ca7ab08172eb5fdd37f301",
+    "data/velocity_holdout_review/sync_training_review_20261015/training_catalog/picks.csv": "48462807a63a90e7111d87f4cbdc410db0cc0986def9d1afe99294ee00a41aca",
+    "data/velocity_holdout_review/sync_training_review_20261015/training_catalog/associations.csv": "64161c85df4811daec073916234ea08f1e1603f4d98d9abc0d42431cc28ced4c",
+    "data/velocity_holdout_review/sync_training_review_20261015/training_catalog/stations.csv": "83f3bd10a60529750a7ad3c9e7baa155cae39d33d1372554ee0cab0eb72960a7"
+  }
+}

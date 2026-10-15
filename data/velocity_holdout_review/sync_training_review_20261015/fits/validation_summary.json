@@ -1,0 +1,4704 @@
+{
+  "accepted": false,
+  "plan_sha256": "60299dd1bf7c283ff4b6c1e3a533314308a2e85c512d6f65dfe6f68249aa618a",
+  "runs": {
+    "four_regularized_base": {
+      "family": "four_regularized",
+      "variant": "base",
+      "training_events": 51,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "four_regularized_base_prelocation",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20394964055460588,
+          "event_rms_s": 0.215624946717811,
+          "depth_min_km": 0.3,
+          "depth_max_km": 5.54,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_base_prelocation",
+          "wall_seconds": 0.40924268309026957,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "four_regularized_base_velocity_only",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19898565385770017,
+          "event_rms_s": 0.2085195246418492,
+          "depth_min_km": 0.31,
+          "depth_max_km": 5.88,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_base_velocity_only",
+          "wall_seconds": 0.5121770709520206,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 701.4465275154406,
+            "max_depth_km": 0.9,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.03999999999999998
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.1200000000000001
+        },
+        {
+          "name": "four_regularized_base_joint1",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16028534604530367,
+          "event_rms_s": 0.16995962611692203,
+          "depth_min_km": 0.31,
+          "depth_max_km": 5.99,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_base_joint1",
+          "wall_seconds": 0.4279055299703032,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1096.6420971109933,
+            "max_depth_km": 1.0899999999999999,
+            "max_origin_s": 0.26,
+            "max_rms_s": 0.12
+          },
+          "station_change_s": 0.42,
+          "max_velocity_change_km_s": 0.13999999999999968
+        },
+        {
+          "name": "four_regularized_base_joint2",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15846545055502742,
+          "event_rms_s": 0.16780591029344516,
+          "depth_min_km": 0.33,
+          "depth_max_km": 6.3,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_base_joint2",
+          "wall_seconds": 0.3964222939684987,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 567.3250969461125,
+            "max_depth_km": 0.49,
+            "max_origin_s": 0.13,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.21000000000000002,
+          "max_velocity_change_km_s": 0.11000000000000032
+        },
+        {
+          "name": "four_regularized_base_joint3",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15724048024427734,
+          "event_rms_s": 0.166827373500333,
+          "depth_min_km": 0.35,
+          "depth_max_km": 6.49,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_base_joint3",
+          "wall_seconds": 0.5229538839776069,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 268.6480095198011,
+            "max_depth_km": 0.25,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.08999999999999997,
+          "max_velocity_change_km_s": 0.06000000000000005
+        },
+        {
+          "name": "four_regularized_base_joint4",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15755705082510868,
+          "event_rms_s": 0.16653327995729061,
+          "depth_min_km": 0.36,
+          "depth_max_km": 6.65,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_base_joint4",
+          "wall_seconds": 0.5464774139691144,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 362.8503193780344,
+            "max_depth_km": 0.18999999999999995,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.07000000000000006,
+          "max_velocity_change_km_s": 0.04999999999999982
+        },
+        {
+          "name": "four_regularized_base_joint5",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15840248747799288,
+          "event_rms_s": 0.1647755454919111,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.83,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_base_joint5",
+          "wall_seconds": 0.5678377680014819,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 473.97738578403187,
+            "max_depth_km": 0.39,
+            "max_origin_s": 0.2,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.040000000000000036,
+          "max_velocity_change_km_s": 0.040000000000000036
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 514.2338839535659,
+          "max_depth_km": 0.41000000000000003,
+          "max_origin_s": 0.22,
+          "max_rms_s": 0.03
+        },
+        "station_s": 0.1100000000000001,
+        "velocity_km_s": 0.08999999999999986
+      },
+      "training_rays": {
+        "arrivals": 816,
+        "ray_count": 816,
+        "vertices_resolution_km": 0.01,
+        "interpretation": "Actual native ray vertices rounded to 0.01 km. Layer intersections are independently summed; horizontal segments are not automatically identified as head waves."
+      },
+      "holdout": {
+        "initialization": {
+          "name": "four_regularized_base_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24062050459187168,
+          "event_rms_s": 0.25778523194017844,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_base_holdout_initialization",
+          "wall_seconds": 1.2203622299712151,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "four_regularized_base_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23881704746442287,
+          "event_rms_s": 0.25882800367014186,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_base_holdout_initialization_extra",
+          "wall_seconds": 1.0916295039933175,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 793.1686948286849,
+            "max_depth_km": 0.30000000000000027,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "four_regularized_base_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24316225383504908,
+          "event_rms_s": 0.25519442303543216,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.78,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_base_holdout_fitted",
+          "wall_seconds": 0.8811905819457024,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "four_regularized_base_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24319030782824436,
+          "event_rms_s": 0.2551564984664851,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.79,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_base_holdout_fitted_extra",
+          "wall_seconds": 0.8964184479555115,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 320.1634707983836,
+            "max_depth_km": 0.7000000000000002,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improves": false,
+      "holdout_location_converged": false,
+      "accepted": false
+    },
+    "four_regularized_slow": {
+      "family": "four_regularized",
+      "variant": "slow",
+      "training_events": 51,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "four_regularized_slow_prelocation",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.21077051687632625,
+          "event_rms_s": 0.2202894708795501,
+          "depth_min_km": 0.39,
+          "depth_max_km": 5.41,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_slow_prelocation",
+          "wall_seconds": 0.40852521802298725,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "four_regularized_slow_velocity_only",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20016673197171225,
+          "event_rms_s": 0.2085571346930441,
+          "depth_min_km": 0.38,
+          "depth_max_km": 6.0,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_slow_velocity_only",
+          "wall_seconds": 0.8385517760179937,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 456.60874479050005,
+            "max_depth_km": 0.81,
+            "max_origin_s": 0.16,
+            "max_rms_s": 0.07
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.10000000000000009
+        },
+        {
+          "name": "four_regularized_slow_joint1",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15987790608130062,
+          "event_rms_s": 0.1699711624906748,
+          "depth_min_km": 0.36,
+          "depth_max_km": 6.02,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_slow_joint1",
+          "wall_seconds": 0.4332846360048279,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 967.4926815301066,
+            "max_depth_km": 1.0499999999999998,
+            "max_origin_s": 0.26,
+            "max_rms_s": 0.1
+          },
+          "station_change_s": 0.4,
+          "max_velocity_change_km_s": 0.14000000000000012
+        },
+        {
+          "name": "four_regularized_slow_joint2",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15778161875100113,
+          "event_rms_s": 0.16796941831832388,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.36,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_slow_joint2",
+          "wall_seconds": 0.392507902928628,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 490.93853615401673,
+            "max_depth_km": 0.34000000000000075,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.20999999999999996,
+          "max_velocity_change_km_s": 0.08999999999999986
+        },
+        {
+          "name": "four_regularized_slow_joint3",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1570789501130799,
+          "event_rms_s": 0.16666274505190204,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.57,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_slow_joint3",
+          "wall_seconds": 0.4943659360287711,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 804.1099118089068,
+            "max_depth_km": 0.4600000000000002,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.01999999999999999
+          },
+          "station_change_s": 0.08999999999999997,
+          "max_velocity_change_km_s": 0.06999999999999984
+        },
+        {
+          "name": "four_regularized_slow_joint4",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15709203309762432,
+          "event_rms_s": 0.1662917351418001,
+          "depth_min_km": 0.4,
+          "depth_max_km": 6.73,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_slow_joint4",
+          "wall_seconds": 0.8253698319895193,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 460.28095683629255,
+            "max_depth_km": 0.20999999999999996,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.05999999999999994,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "four_regularized_slow_joint5",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15853902531875114,
+          "event_rms_s": 0.16420933555176742,
+          "depth_min_km": 0.41,
+          "depth_max_km": 6.86,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_slow_joint5",
+          "wall_seconds": 0.5812826179899275,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 126.54814678899542,
+            "max_depth_km": 0.20000000000000007,
+            "max_origin_s": 0.19,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.030000000000000027,
+          "max_velocity_change_km_s": 0.03000000000000025
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 559.3385702150999,
+          "max_depth_km": 0.29000000000000004,
+          "max_origin_s": 0.12,
+          "max_rms_s": 0.019999999999999962
+        },
+        "station_s": 0.08999999999999997,
+        "velocity_km_s": 0.07000000000000028
+      },
+      "holdout": {
+        "initialization": {
+          "name": "four_regularized_slow_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.25489902078690313,
+          "event_rms_s": 0.2690574947550634,
+          "depth_min_km": 0.72,
+          "depth_max_km": 5.89,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_slow_holdout_initialization",
+          "wall_seconds": 1.4419173280475661,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "four_regularized_slow_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2512258060665799,
+          "event_rms_s": 0.2707933386515712,
+          "depth_min_km": 0.73,
+          "depth_max_km": 5.89,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_slow_holdout_initialization_extra",
+          "wall_seconds": 1.5650460979668424,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 434.3524134384759,
+            "max_depth_km": 0.17999999999999994,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.030000000000000027
+          }
+        },
+        "fitted": {
+          "name": "four_regularized_slow_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2414636686675347,
+          "event_rms_s": 0.25366983876049237,
+          "depth_min_km": 0.12,
+          "depth_max_km": 7.71,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_slow_holdout_fitted",
+          "wall_seconds": 0.8519947549793869,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "four_regularized_slow_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24182467749981043,
+          "event_rms_s": 0.2538827517042133,
+          "depth_min_km": 0.12,
+          "depth_max_km": 7.71,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_slow_holdout_fitted_extra",
+          "wall_seconds": 1.0074686519801617,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 269.7015928237166,
+            "max_depth_km": 0.7500000000000004,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.009999999999999981
+          }
+        }
+      },
+      "holdout_improves": false,
+      "holdout_location_converged": false
+    },
+    "four_regularized_fast": {
+      "family": "four_regularized",
+      "variant": "fast",
+      "training_events": 51,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "four_regularized_fast_prelocation",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20192930657272407,
+          "event_rms_s": 0.2137664109053912,
+          "depth_min_km": 0.2,
+          "depth_max_km": 5.64,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_fast_prelocation",
+          "wall_seconds": 0.5864475349662825,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "four_regularized_fast_velocity_only",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20135344436791622,
+          "event_rms_s": 0.20999066272425676,
+          "depth_min_km": 0.24,
+          "depth_max_km": 5.78,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_fast_velocity_only",
+          "wall_seconds": 0.4637016529450193,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 155.76676880453542,
+            "max_depth_km": 0.33999999999999986,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.03999999999999998
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.1299999999999999
+        },
+        {
+          "name": "four_regularized_fast_joint1",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1609950142328735,
+          "event_rms_s": 0.1720749950503228,
+          "depth_min_km": 0.26,
+          "depth_max_km": 5.95,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_fast_joint1",
+          "wall_seconds": 0.6880943309515715,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1380.8414571949716,
+            "max_depth_km": 1.1000000000000005,
+            "max_origin_s": 0.29,
+            "max_rms_s": 0.13
+          },
+          "station_change_s": 0.45,
+          "max_velocity_change_km_s": 0.1299999999999999
+        },
+        {
+          "name": "four_regularized_fast_joint2",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1592584416145348,
+          "event_rms_s": 0.16905736350973521,
+          "depth_min_km": 0.28,
+          "depth_max_km": 6.31,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_fast_joint2",
+          "wall_seconds": 0.5787543050246313,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 470.29191000099263,
+            "max_depth_km": 0.35999999999999943,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.020000000000000004
+          },
+          "station_change_s": 0.22999999999999998,
+          "max_velocity_change_km_s": 0.11000000000000032
+        },
+        {
+          "name": "four_regularized_fast_joint3",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15795621756254696,
+          "event_rms_s": 0.16694486585485077,
+          "depth_min_km": 0.28,
+          "depth_max_km": 6.53,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_fast_joint3",
+          "wall_seconds": 0.39651794894598424,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 571.4230757998612,
+            "max_depth_km": 0.4800000000000001,
+            "max_origin_s": 0.2,
+            "max_rms_s": 0.03
+          },
+          "station_change_s": 0.10999999999999999,
+          "max_velocity_change_km_s": 0.08999999999999986
+        },
+        {
+          "name": "four_regularized_fast_joint4",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15773470296547884,
+          "event_rms_s": 0.16674507959345441,
+          "depth_min_km": 0.3,
+          "depth_max_km": 6.68,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_fast_joint4",
+          "wall_seconds": 0.5511351770255715,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 216.26275786890164,
+            "max_depth_km": 0.20999999999999996,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.050000000000000044,
+          "max_velocity_change_km_s": 0.04999999999999982
+        },
+        {
+          "name": "four_regularized_fast_joint5",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15893261073455617,
+          "event_rms_s": 0.16547021531642106,
+          "depth_min_km": 0.31,
+          "depth_max_km": 6.83,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_fast_joint5",
+          "wall_seconds": 0.8496821350418031,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 363.1139751151931,
+            "max_depth_km": 0.2599999999999998,
+            "max_origin_s": 0.19,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.06999999999999995,
+          "max_velocity_change_km_s": 0.040000000000000036
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 436.7152062688931,
+          "max_depth_km": 0.46999999999999975,
+          "max_origin_s": 0.12,
+          "max_rms_s": 0.030000000000000027
+        },
+        "station_s": 0.12,
+        "velocity_km_s": 0.08999999999999986
+      },
+      "holdout": {
+        "initialization": {
+          "name": "four_regularized_fast_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23330617011576119,
+          "event_rms_s": 0.25188963276954096,
+          "depth_min_km": 0.23,
+          "depth_max_km": 6.77,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_fast_holdout_initialization",
+          "wall_seconds": 0.8571339760674164,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "four_regularized_fast_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23285328149765325,
+          "event_rms_s": 0.2525642684098829,
+          "depth_min_km": 0.23,
+          "depth_max_km": 6.77,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_fast_holdout_initialization_extra",
+          "wall_seconds": 0.8805362220155075,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 349.6079225176016,
+            "max_depth_km": 0.18999999999999995,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.010000000000000009
+          }
+        },
+        "fitted": {
+          "name": "four_regularized_fast_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24519890172766007,
+          "event_rms_s": 0.2568450015840481,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.85,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_fast_holdout_fitted",
+          "wall_seconds": 0.8616558579960838,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "four_regularized_fast_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24501590252116884,
+          "event_rms_s": 0.2569925315847186,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.86,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_fast_holdout_fitted_extra",
+          "wall_seconds": 0.8741825839970261,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 215.01594373005128,
+            "max_depth_km": 0.7000000000000002,
+            "max_origin_s": 0.24,
+            "max_rms_s": 0.009999999999999981
+          }
+        }
+      },
+      "holdout_improves": false,
+      "holdout_location_converged": false
+    },
+    "four_regularized_selection": {
+      "family": "four_regularized",
+      "variant": "selection",
+      "training_events": 62,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "four_regularized_selection_prelocation",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.21681526601864595,
+          "event_rms_s": 0.2312518526516895,
+          "depth_min_km": 0.19,
+          "depth_max_km": 5.54,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_selection_prelocation",
+          "wall_seconds": 0.5039167520590127,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "four_regularized_selection_velocity_only",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.21158292701684378,
+          "event_rms_s": 0.2249085835795111,
+          "depth_min_km": 0.15,
+          "depth_max_km": 5.96,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_selection_velocity_only",
+          "wall_seconds": 0.6823159469058737,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 622.3973258357299,
+            "max_depth_km": 0.88,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.07
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.14000000000000012
+        },
+        {
+          "name": "four_regularized_selection_joint1",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.1761544440668287,
+          "event_rms_s": 0.1904027988409089,
+          "depth_min_km": 0.28,
+          "depth_max_km": 6.46,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_selection_joint1",
+          "wall_seconds": 0.5496795399812981,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1160.8740986900038,
+            "max_depth_km": 1.4400000000000004,
+            "max_origin_s": 0.3,
+            "max_rms_s": 0.12
+          },
+          "station_change_s": 0.44,
+          "max_velocity_change_km_s": 0.1200000000000001
+        },
+        {
+          "name": "four_regularized_selection_joint2",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.1745461746968518,
+          "event_rms_s": 0.18884624228669855,
+          "depth_min_km": 0.18,
+          "depth_max_km": 6.96,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_selection_joint2",
+          "wall_seconds": 0.5066416030749679,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 497.3374835226522,
+            "max_depth_km": 0.5,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.19999999999999996,
+          "max_velocity_change_km_s": 0.07999999999999963
+        },
+        {
+          "name": "four_regularized_selection_joint3",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.1744058979844296,
+          "event_rms_s": 0.18802453511829678,
+          "depth_min_km": 0.24,
+          "depth_max_km": 7.23,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_selection_joint3",
+          "wall_seconds": 0.6025792689761147,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 464.1297602471189,
+            "max_depth_km": 0.4700000000000001,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.01999999999999999
+          },
+          "station_change_s": 0.08000000000000007,
+          "max_velocity_change_km_s": 0.050000000000000266
+        },
+        {
+          "name": "four_regularized_selection_joint4",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.17481006457303333,
+          "event_rms_s": 0.18828170383762732,
+          "depth_min_km": 0.06,
+          "depth_max_km": 7.36,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_selection_joint4",
+          "wall_seconds": 0.717852573026903,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 232.70826624471366,
+            "max_depth_km": 0.18,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.05999999999999997,
+          "max_velocity_change_km_s": 0.029999999999999805
+        },
+        {
+          "name": "four_regularized_selection_joint5",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.17570669745513906,
+          "event_rms_s": 0.18642649680149392,
+          "depth_min_km": 0.07,
+          "depth_max_km": 7.46,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_selection_joint5",
+          "wall_seconds": 0.7744875969365239,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 573.8553160003116,
+            "max_depth_km": 0.29000000000000004,
+            "max_origin_s": 0.18,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.030000000000000027,
+          "max_velocity_change_km_s": 0.03000000000000025
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 556.3736696238158,
+          "max_depth_km": 0.28,
+          "max_origin_s": 0.09,
+          "max_rms_s": 0.010000000000000009
+        },
+        "station_s": 0.08999999999999997,
+        "velocity_km_s": 0.06000000000000005
+      },
+      "holdout": {
+        "initialization": {
+          "name": "four_regularized_selection_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24062050459187168,
+          "event_rms_s": 0.25778523194017844,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_selection_holdout_initialization",
+          "wall_seconds": 1.0783322229981422,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "four_regularized_selection_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23881704746442287,
+          "event_rms_s": 0.25882800367014186,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_selection_holdout_initialization_extra",
+          "wall_seconds": 1.0694155099336058,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 793.1686948286849,
+            "max_depth_km": 0.30000000000000027,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "four_regularized_selection_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24272067254897986,
+          "event_rms_s": 0.2524620699713,
+          "depth_min_km": 0.1,
+          "depth_max_km": 8.74,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_selection_holdout_fitted",
+          "wall_seconds": 0.8631722769932821,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "four_regularized_selection_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24244080832216777,
+          "event_rms_s": 0.25238858928247926,
+          "depth_min_km": 0.1,
+          "depth_max_km": 8.77,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_selection_holdout_fitted_extra",
+          "wall_seconds": 1.0230800319695845,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 232.08568024725733,
+            "max_depth_km": 0.4200000000000008,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improves": false,
+      "holdout_location_converged": false
+    },
+    "four_regularized_damping": {
+      "family": "four_regularized",
+      "variant": "damping",
+      "training_events": 51,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "four_regularized_damping_prelocation",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20394964055460588,
+          "event_rms_s": 0.215624946717811,
+          "depth_min_km": 0.3,
+          "depth_max_km": 5.54,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_damping_prelocation",
+          "wall_seconds": 0.409524769987911,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "four_regularized_damping_velocity_only",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20251137101939945,
+          "event_rms_s": 0.20966827207216043,
+          "depth_min_km": 0.28,
+          "depth_max_km": 5.75,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_damping_velocity_only",
+          "wall_seconds": 0.4206573470728472,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 634.3914633863127,
+            "max_depth_km": 0.8400000000000001,
+            "max_origin_s": 0.16,
+            "max_rms_s": 0.04999999999999999
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "four_regularized_damping_joint1",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16429038957846298,
+          "event_rms_s": 0.17306351548537566,
+          "depth_min_km": 0.27,
+          "depth_max_km": 5.65,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_damping_joint1",
+          "wall_seconds": 0.6300855110166594,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 899.901607398236,
+            "max_depth_km": 0.9199999999999999,
+            "max_origin_s": 0.22,
+            "max_rms_s": 0.09999999999999998
+          },
+          "station_change_s": 0.45,
+          "max_velocity_change_km_s": 0.020000000000000018
+        },
+        {
+          "name": "four_regularized_damping_joint2",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16235948676063394,
+          "event_rms_s": 0.17217182479982596,
+          "depth_min_km": 0.28,
+          "depth_max_km": 5.91,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_damping_joint2",
+          "wall_seconds": 0.6694302320247516,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 343.36472356453413,
+            "max_depth_km": 0.2599999999999998,
+            "max_origin_s": 0.05,
+            "max_rms_s": 0.020000000000000004
+          },
+          "station_change_s": 0.19000000000000006,
+          "max_velocity_change_km_s": 0.010000000000000009
+        },
+        {
+          "name": "four_regularized_damping_joint3",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16152020604489184,
+          "event_rms_s": 0.1710807629483233,
+          "depth_min_km": 0.27,
+          "depth_max_km": 6.06,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_damping_joint3",
+          "wall_seconds": 0.6229648139560595,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 249.3723548299204,
+            "max_depth_km": 0.14999999999999947,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.12,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "four_regularized_damping_joint4",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16013708894226208,
+          "event_rms_s": 0.1717270976824315,
+          "depth_min_km": 0.27,
+          "depth_max_km": 6.18,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_damping_joint4",
+          "wall_seconds": 0.5332458049524575,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 228.51595977848578,
+            "max_depth_km": 0.16999999999999993,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.020000000000000004
+          },
+          "station_change_s": 0.08999999999999997,
+          "max_velocity_change_km_s": 0.010000000000000009
+        },
+        {
+          "name": "four_regularized_damping_joint5",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15977910993176872,
+          "event_rms_s": 0.17131555565051043,
+          "depth_min_km": 0.27,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_damping_joint5",
+          "wall_seconds": 0.627637943951413,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 194.3517509890903,
+            "max_depth_km": 0.1299999999999999,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.05999999999999994,
+          "max_velocity_change_km_s": 0.010000000000000231
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 396.7987453966832,
+          "max_depth_km": 0.25,
+          "max_origin_s": 0.1,
+          "max_rms_s": 0.020000000000000004
+        },
+        "station_s": 0.14,
+        "velocity_km_s": 0.020000000000000018
+      },
+      "holdout": {
+        "initialization": {
+          "name": "four_regularized_damping_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24062050459187168,
+          "event_rms_s": 0.25778523194017844,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_damping_holdout_initialization",
+          "wall_seconds": 1.0935569979483262,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "four_regularized_damping_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23881704746442287,
+          "event_rms_s": 0.25882800367014186,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_damping_holdout_initialization_extra",
+          "wall_seconds": 1.0742513670120388,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 793.1686948286849,
+            "max_depth_km": 0.30000000000000027,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "four_regularized_damping_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2524886387068858,
+          "event_rms_s": 0.26949474828804865,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.59,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_damping_holdout_fitted",
+          "wall_seconds": 0.8604565800633281,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "four_regularized_damping_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2523281919087221,
+          "event_rms_s": 0.26934208971180607,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.59,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_damping_holdout_fitted_extra",
+          "wall_seconds": 0.8791653829393908,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 73.90075232049921,
+            "max_depth_km": 0.5099999999999998,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improves": false,
+      "holdout_location_converged": false
+    },
+    "four_regularized_precision32": {
+      "family": "four_regularized",
+      "variant": "precision32",
+      "training_events": 51,
+      "bits": 32,
+      "runs": [
+        {
+          "name": "four_regularized_precision32_prelocation",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.2039534050256789,
+          "event_rms_s": 0.215624946717811,
+          "depth_min_km": 0.3,
+          "depth_max_km": 5.54,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_precision32_prelocation",
+          "wall_seconds": 0.41468853200785816,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+        },
+        {
+          "name": "four_regularized_precision32_velocity_only",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1989844775451632,
+          "event_rms_s": 0.2085195246418492,
+          "depth_min_km": 0.31,
+          "depth_max_km": 5.88,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_precision32_velocity_only",
+          "wall_seconds": 0.5217743309913203,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 701.4465275154406,
+            "max_depth_km": 0.9,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.03999999999999998
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.1200000000000001
+        },
+        {
+          "name": "four_regularized_precision32_joint1",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16033013963840545,
+          "event_rms_s": 0.17073658188026627,
+          "depth_min_km": 0.31,
+          "depth_max_km": 5.97,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_precision32_joint1",
+          "wall_seconds": 0.43598821200430393,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 1076.599258787831,
+            "max_depth_km": 1.0699999999999994,
+            "max_origin_s": 0.24,
+            "max_rms_s": 0.12
+          },
+          "station_change_s": 0.42,
+          "max_velocity_change_km_s": 0.1299999999999999
+        },
+        {
+          "name": "four_regularized_precision32_joint2",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15825328729974766,
+          "event_rms_s": 0.16801610567057518,
+          "depth_min_km": 0.33,
+          "depth_max_km": 6.3,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_precision32_joint2",
+          "wall_seconds": 0.37632358993869275,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 547.4403732622176,
+            "max_depth_km": 0.47,
+            "max_origin_s": 0.13,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.21999999999999997,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "four_regularized_precision32_joint3",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15996081015146718,
+          "event_rms_s": 0.1663801458743695,
+          "depth_min_km": 0.35,
+          "depth_max_km": 6.44,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_precision32_joint3",
+          "wall_seconds": 0.5331249609589577,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 232.68501108719394,
+            "max_depth_km": 0.25,
+            "max_origin_s": 0.14,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.07999999999999996,
+          "max_velocity_change_km_s": 0.06000000000000005
+        },
+        {
+          "name": "four_regularized_precision32_joint4",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1579743867300807,
+          "event_rms_s": 0.1657602804903373,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.6,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_precision32_joint4",
+          "wall_seconds": 0.533389252028428,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 356.0228335224945,
+            "max_depth_km": 0.18999999999999995,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.06999999999999995,
+          "max_velocity_change_km_s": 0.050000000000000266
+        },
+        {
+          "name": "four_regularized_precision32_joint5",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15826062055864637,
+          "event_rms_s": 0.1638925999358284,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.8,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_precision32_joint5",
+          "wall_seconds": 0.5308241600869223,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 497.35283644078027,
+            "max_depth_km": 0.41000000000000003,
+            "max_origin_s": 0.2,
+            "max_rms_s": 0.01999999999999999
+          },
+          "station_change_s": 0.040000000000000036,
+          "max_velocity_change_km_s": 0.03999999999999959
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 536.3032464457015,
+          "max_depth_km": 0.45000000000000007,
+          "max_origin_s": 0.22,
+          "max_rms_s": 0.03
+        },
+        "station_s": 0.10999999999999999,
+        "velocity_km_s": 0.08999999999999986
+      },
+      "holdout": {
+        "initialization": {
+          "name": "four_regularized_precision32_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24062050459187168,
+          "event_rms_s": 0.25778523194017844,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_precision32_holdout_initialization",
+          "wall_seconds": 1.109581847093068,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "four_regularized_precision32_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23881704746442287,
+          "event_rms_s": 0.25882800367014186,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_precision32_holdout_initialization_extra",
+          "wall_seconds": 1.0837513799779117,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 793.1686948286849,
+            "max_depth_km": 0.30000000000000027,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "four_regularized_precision32_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24323872429221702,
+          "event_rms_s": 0.25543763837143146,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.75,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_precision32_holdout_fitted",
+          "wall_seconds": 0.9115288639441133,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "four_regularized_precision32_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2431084381013056,
+          "event_rms_s": 0.25543763837143146,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.75,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/four_regularized_precision32_holdout_fitted_extra",
+          "wall_seconds": 0.9000183989992365,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 235.63311091335592,
+            "max_depth_km": 0.6100000000000003,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.0
+          }
+        }
+      },
+      "holdout_improves": false,
+      "holdout_location_converged": false
+    },
+    "three_regularized_base": {
+      "family": "three_regularized",
+      "variant": "base",
+      "training_events": 51,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_regularized_base_prelocation",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20444210012598082,
+          "event_rms_s": 0.21616986784634412,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_base_prelocation",
+          "wall_seconds": 0.3552665140014142,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_regularized_base_velocity_only",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1992215733652298,
+          "event_rms_s": 0.2093079165286603,
+          "depth_min_km": 0.38,
+          "depth_max_km": 5.88,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_base_velocity_only",
+          "wall_seconds": 0.4378983579808846,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 667.6365385886247,
+            "max_depth_km": 0.8300000000000001,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.04999999999999999
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.1200000000000001
+        },
+        {
+          "name": "three_regularized_base_joint1",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16051172762724333,
+          "event_rms_s": 0.1710177149406734,
+          "depth_min_km": 0.42,
+          "depth_max_km": 5.97,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_base_joint1",
+          "wall_seconds": 0.41617569501977414,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1096.6430443877125,
+            "max_depth_km": 1.0899999999999999,
+            "max_origin_s": 0.21,
+            "max_rms_s": 0.12
+          },
+          "station_change_s": 0.42,
+          "max_velocity_change_km_s": 0.1299999999999999
+        },
+        {
+          "name": "three_regularized_base_joint2",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.158391056299547,
+          "event_rms_s": 0.1682085540246358,
+          "depth_min_km": 0.45,
+          "depth_max_km": 6.28,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_base_joint2",
+          "wall_seconds": 0.3598051769658923,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 549.1673409058008,
+            "max_depth_km": 0.42999999999999994,
+            "max_origin_s": 0.13,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.21999999999999997,
+          "max_velocity_change_km_s": 0.10000000000000009
+        },
+        {
+          "name": "three_regularized_base_joint3",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15904734774126042,
+          "event_rms_s": 0.16782927833565472,
+          "depth_min_km": 0.48,
+          "depth_max_km": 6.45,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_base_joint3",
+          "wall_seconds": 0.4119186740135774,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 255.5619738943951,
+            "max_depth_km": 0.17999999999999994,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.09999999999999998,
+          "max_velocity_change_km_s": 0.08000000000000007
+        },
+        {
+          "name": "three_regularized_base_joint4",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15881506694956898,
+          "event_rms_s": 0.16712681576880356,
+          "depth_min_km": 0.5,
+          "depth_max_km": 6.58,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_base_joint4",
+          "wall_seconds": 0.4994673280743882,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 342.58063116685446,
+            "max_depth_km": 0.2400000000000002,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.050000000000000044,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_regularized_base_joint5",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16032486932940315,
+          "event_rms_s": 0.16470413164335665,
+          "depth_min_km": 0.51,
+          "depth_max_km": 6.71,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_base_joint5",
+          "wall_seconds": 0.49737982195802033,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 139.03088873791143,
+            "max_depth_km": 0.20000000000000007,
+            "max_origin_s": 0.24,
+            "max_rms_s": 0.03999999999999998
+          },
+          "station_change_s": 0.030000000000000027,
+          "max_velocity_change_km_s": 0.029999999999999805
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 417.0889527929019,
+          "max_depth_km": 0.2599999999999998,
+          "max_origin_s": 0.16,
+          "max_rms_s": 0.02999999999999997
+        },
+        "station_s": 0.08000000000000007,
+        "velocity_km_s": 0.06999999999999984
+      },
+      "training_rays": {
+        "arrivals": 816,
+        "ray_count": 816,
+        "vertices_resolution_km": 0.01,
+        "interpretation": "Actual native ray vertices rounded to 0.01 km. Layer intersections are independently summed; horizontal segments are not automatically identified as head waves."
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_regularized_base_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_base_holdout_initialization",
+          "wall_seconds": 0.898387753055431,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_regularized_base_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_base_holdout_initialization_extra",
+          "wall_seconds": 1.1028144829906523,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_regularized_base_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24459060746115324,
+          "event_rms_s": 0.2561658988662142,
+          "depth_min_km": 0.11,
+          "depth_max_km": 7.81,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_base_holdout_fitted",
+          "wall_seconds": 0.7628290319116786,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_regularized_base_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2444454046787229,
+          "event_rms_s": 0.256357864788092,
+          "depth_min_km": 0.11,
+          "depth_max_km": 7.82,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_base_holdout_fitted_extra",
+          "wall_seconds": 0.7934584729373455,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 310.0991389681587,
+            "max_depth_km": 0.4500000000000002,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improves": false,
+      "holdout_location_converged": false,
+      "accepted": false
+    },
+    "three_regularized_slow": {
+      "family": "three_regularized",
+      "variant": "slow",
+      "training_events": 51,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_regularized_slow_prelocation",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.21277914767729122,
+          "event_rms_s": 0.22237135518731527,
+          "depth_min_km": 0.49,
+          "depth_max_km": 5.38,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_slow_prelocation",
+          "wall_seconds": 0.6083305990323424,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_regularized_slow_velocity_only",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20036067356096585,
+          "event_rms_s": 0.20822781641608729,
+          "depth_min_km": 0.45,
+          "depth_max_km": 6.01,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_slow_velocity_only",
+          "wall_seconds": 0.44061173498630524,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 484.18900198473415,
+            "max_depth_km": 1.0300000000000002,
+            "max_origin_s": 0.18,
+            "max_rms_s": 0.08000000000000002
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "three_regularized_slow_joint1",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1602100145886948,
+          "event_rms_s": 0.17031113396645908,
+          "depth_min_km": 0.46,
+          "depth_max_km": 6.01,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_slow_joint1",
+          "wall_seconds": 0.5722643400076777,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 990.7140821062801,
+            "max_depth_km": 1.04,
+            "max_origin_s": 0.25,
+            "max_rms_s": 0.1
+          },
+          "station_change_s": 0.39,
+          "max_velocity_change_km_s": 0.13000000000000034
+        },
+        {
+          "name": "three_regularized_slow_joint2",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15805514519169767,
+          "event_rms_s": 0.1685404472313432,
+          "depth_min_km": 0.48,
+          "depth_max_km": 6.4,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_slow_joint2",
+          "wall_seconds": 0.3449262330541387,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 523.9836820542996,
+            "max_depth_km": 0.39000000000000057,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.20999999999999996,
+          "max_velocity_change_km_s": 0.08999999999999986
+        },
+        {
+          "name": "three_regularized_slow_joint3",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15712841710137704,
+          "event_rms_s": 0.16656859859894269,
+          "depth_min_km": 0.5,
+          "depth_max_km": 6.61,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_slow_joint3",
+          "wall_seconds": 0.3927408390445635,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 601.3293364235917,
+            "max_depth_km": 0.26,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.01999999999999999
+          },
+          "station_change_s": 0.09999999999999998,
+          "max_velocity_change_km_s": 0.08000000000000007
+        },
+        {
+          "name": "three_regularized_slow_joint4",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15815373198624327,
+          "event_rms_s": 0.16568337391590282,
+          "depth_min_km": 0.52,
+          "depth_max_km": 6.73,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_slow_joint4",
+          "wall_seconds": 0.4939021300524473,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 304.18779417631805,
+            "max_depth_km": 0.22999999999999998,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.05999999999999994,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_regularized_slow_joint5",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15938239794440856,
+          "event_rms_s": 0.1640241493458431,
+          "depth_min_km": 0.53,
+          "depth_max_km": 6.84,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_slow_joint5",
+          "wall_seconds": 0.4918343679746613,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 148.44901782262872,
+            "max_depth_km": 0.20000000000000007,
+            "max_origin_s": 0.22,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.030000000000000027,
+          "max_velocity_change_km_s": 0.029999999999999805
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 348.64385435022893,
+          "max_depth_km": 0.2400000000000002,
+          "max_origin_s": 0.14,
+          "max_rms_s": 0.03
+        },
+        "station_s": 0.07999999999999996,
+        "velocity_km_s": 0.06999999999999984
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_regularized_slow_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2556391162292635,
+          "event_rms_s": 0.27278728567476607,
+          "depth_min_km": 0.75,
+          "depth_max_km": 5.84,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_slow_holdout_initialization",
+          "wall_seconds": 1.2806494070682675,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_regularized_slow_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.25709515236754665,
+          "event_rms_s": 0.27141207808244694,
+          "depth_min_km": 0.75,
+          "depth_max_km": 5.84,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_slow_holdout_initialization_extra",
+          "wall_seconds": 1.1660530200460926,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 481.3640400005888,
+            "max_depth_km": 0.19999999999999973,
+            "max_origin_s": 0.16,
+            "max_rms_s": 0.02999999999999997
+          }
+        },
+        "fitted": {
+          "name": "three_regularized_slow_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24234952836082355,
+          "event_rms_s": 0.25363486582347133,
+          "depth_min_km": 0.3,
+          "depth_max_km": 7.74,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_slow_holdout_fitted",
+          "wall_seconds": 1.1843554249498993,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_regularized_slow_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24245435754582292,
+          "event_rms_s": 0.25398120326690166,
+          "depth_min_km": 0.3,
+          "depth_max_km": 7.75,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_slow_holdout_fitted_extra",
+          "wall_seconds": 0.9491291489684954,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 276.22831179823754,
+            "max_depth_km": 0.5700000000000003,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improves": false,
+      "holdout_location_converged": false
+    },
+    "three_regularized_fast": {
+      "family": "three_regularized",
+      "variant": "fast",
+      "training_events": 51,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_regularized_fast_prelocation",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.2018157101970829,
+          "event_rms_s": 0.21392687040751318,
+          "depth_min_km": 0.3,
+          "depth_max_km": 5.62,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_fast_prelocation",
+          "wall_seconds": 0.36194980901200324,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_regularized_fast_velocity_only",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.2016291763483201,
+          "event_rms_s": 0.2099579789890741,
+          "depth_min_km": 0.32,
+          "depth_max_km": 5.76,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_fast_velocity_only",
+          "wall_seconds": 0.49173657305072993,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 292.193228321915,
+            "max_depth_km": 0.44999999999999996,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.06
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.1299999999999999
+        },
+        {
+          "name": "three_regularized_fast_joint1",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1613083911606074,
+          "event_rms_s": 0.1719610078921792,
+          "depth_min_km": 0.38,
+          "depth_max_km": 5.94,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_fast_joint1",
+          "wall_seconds": 0.3977346959291026,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1382.1030032434858,
+            "max_depth_km": 1.1300000000000008,
+            "max_origin_s": 0.31,
+            "max_rms_s": 0.13
+          },
+          "station_change_s": 0.46,
+          "max_velocity_change_km_s": 0.1299999999999999
+        },
+        {
+          "name": "three_regularized_fast_joint2",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1601071485587319,
+          "event_rms_s": 0.1702420422256984,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_fast_joint2",
+          "wall_seconds": 0.347932655015029,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 456.7822322459986,
+            "max_depth_km": 0.3299999999999992,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.020000000000000004
+          },
+          "station_change_s": 0.22000000000000003,
+          "max_velocity_change_km_s": 0.10000000000000009
+        },
+        {
+          "name": "three_regularized_fast_joint3",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15853835281636267,
+          "event_rms_s": 0.1686799963732232,
+          "depth_min_km": 0.41,
+          "depth_max_km": 6.47,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_fast_joint3",
+          "wall_seconds": 0.3492355060297996,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 302.3438932564711,
+            "max_depth_km": 0.2400000000000002,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.10999999999999999,
+          "max_velocity_change_km_s": 0.08999999999999986
+        },
+        {
+          "name": "three_regularized_fast_joint4",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.159389975267224,
+          "event_rms_s": 0.16863349282381832,
+          "depth_min_km": 0.43,
+          "depth_max_km": 6.59,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_fast_joint4",
+          "wall_seconds": 0.5002499960828573,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 286.03009231445753,
+            "max_depth_km": 0.2400000000000002,
+            "max_origin_s": 0.13,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.06,
+          "max_velocity_change_km_s": 0.050000000000000266
+        },
+        {
+          "name": "three_regularized_fast_joint5",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16042747735408694,
+          "event_rms_s": 0.1655945911781269,
+          "depth_min_km": 0.45,
+          "depth_max_km": 6.75,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_fast_joint5",
+          "wall_seconds": 0.5032349120592698,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 603.8406940619022,
+            "max_depth_km": 0.35,
+            "max_origin_s": 0.22,
+            "max_rms_s": 0.040000000000000036
+          },
+          "station_change_s": 0.07000000000000006,
+          "max_velocity_change_km_s": 0.040000000000000036
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 661.7353334894037,
+          "max_depth_km": 0.4,
+          "max_origin_s": 0.24,
+          "max_rms_s": 0.030000000000000027
+        },
+        "station_s": 0.10999999999999999,
+        "velocity_km_s": 0.0900000000000003
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_regularized_fast_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23456570598136295,
+          "event_rms_s": 0.253272134656674,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.71,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_fast_holdout_initialization",
+          "wall_seconds": 0.798869966994971,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_regularized_fast_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2347293196878625,
+          "event_rms_s": 0.25326258208403185,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.71,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_fast_holdout_initialization_extra",
+          "wall_seconds": 0.8149027549661696,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 329.5285504578954,
+            "max_depth_km": 0.15000000000000002,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.010000000000000009
+          }
+        },
+        "fitted": {
+          "name": "three_regularized_fast_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24830464024298296,
+          "event_rms_s": 0.25939756508917644,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.95,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_fast_holdout_fitted",
+          "wall_seconds": 0.7800099129090086,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_regularized_fast_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24787340589928697,
+          "event_rms_s": 0.2588061922777164,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.96,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_fast_holdout_fitted_extra",
+          "wall_seconds": 0.8029434409691021,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 336.40186884902545,
+            "max_depth_km": 0.3500000000000001,
+            "max_origin_s": 0.14,
+            "max_rms_s": 0.01999999999999999
+          }
+        }
+      },
+      "holdout_improves": false,
+      "holdout_location_converged": false
+    },
+    "three_regularized_selection": {
+      "family": "three_regularized",
+      "variant": "selection",
+      "training_events": 62,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_regularized_selection_prelocation",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.21825276357109263,
+          "event_rms_s": 0.23150977127013103,
+          "depth_min_km": 0.03,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_selection_prelocation",
+          "wall_seconds": 0.5141925750067458,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_regularized_selection_velocity_only",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.2130351871708492,
+          "event_rms_s": 0.22457486717738906,
+          "depth_min_km": 0.02,
+          "depth_max_km": 5.96,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_selection_velocity_only",
+          "wall_seconds": 0.590622338000685,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 724.2395141322553,
+            "max_depth_km": 0.8600000000000001,
+            "max_origin_s": 0.13,
+            "max_rms_s": 0.08000000000000002
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.13000000000000034
+        },
+        {
+          "name": "three_regularized_selection_joint1",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.1767580414454939,
+          "event_rms_s": 0.19107083638307823,
+          "depth_min_km": 0.25,
+          "depth_max_km": 6.37,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_selection_joint1",
+          "wall_seconds": 0.5519519329536706,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1072.7512520701678,
+            "max_depth_km": 1.37,
+            "max_origin_s": 0.31,
+            "max_rms_s": 0.13
+          },
+          "station_change_s": 0.42,
+          "max_velocity_change_km_s": 0.13000000000000034
+        },
+        {
+          "name": "three_regularized_selection_joint2",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.17491820699233182,
+          "event_rms_s": 0.18915772561883462,
+          "depth_min_km": 0.28,
+          "depth_max_km": 6.84,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_selection_joint2",
+          "wall_seconds": 0.4422796369763091,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 635.8378259989387,
+            "max_depth_km": 0.46999999999999975,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.01999999999999999
+          },
+          "station_change_s": 0.20999999999999996,
+          "max_velocity_change_km_s": 0.09999999999999964
+        },
+        {
+          "name": "three_regularized_selection_joint3",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.17782245492746207,
+          "event_rms_s": 0.18788294228055938,
+          "depth_min_km": 0.28,
+          "depth_max_km": 7.02,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_selection_joint3",
+          "wall_seconds": 0.6923218669835478,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 161.08964710032947,
+            "max_depth_km": 0.17999999999999972,
+            "max_origin_s": 0.22,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.07000000000000006,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_regularized_selection_joint4",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.1765604479359009,
+          "event_rms_s": 0.1882817038376273,
+          "depth_min_km": 0.28,
+          "depth_max_km": 7.2,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_selection_joint4",
+          "wall_seconds": 0.6079002320766449,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 170.5928942179235,
+            "max_depth_km": 0.1800000000000006,
+            "max_origin_s": 0.14,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.04999999999999993,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_regularized_selection_joint5",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.17535989072140035,
+          "event_rms_s": 0.18777989861159433,
+          "depth_min_km": 0.29,
+          "depth_max_km": 7.37,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_selection_joint5",
+          "wall_seconds": 0.6105194289702922,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 105.49267622800474,
+            "max_depth_km": 0.16999999999999993,
+            "max_origin_s": 0.25,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.030000000000000027,
+          "max_velocity_change_km_s": 0.040000000000000036
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 202.76357781093787,
+          "max_depth_km": 0.35000000000000053,
+          "max_origin_s": 0.39,
+          "max_rms_s": 0.040000000000000036
+        },
+        "station_s": 0.07999999999999996,
+        "velocity_km_s": 0.08000000000000007
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_regularized_selection_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_selection_holdout_initialization",
+          "wall_seconds": 0.9123833370395005,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_regularized_selection_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_selection_holdout_initialization_extra",
+          "wall_seconds": 1.1721889190375805,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_regularized_selection_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24356352093939346,
+          "event_rms_s": 0.25274620701662437,
+          "depth_min_km": 0.04,
+          "depth_max_km": 8.53,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_selection_holdout_fitted",
+          "wall_seconds": 0.7989025850547478,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_regularized_selection_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2434825479859058,
+          "event_rms_s": 0.2522639426755111,
+          "depth_min_km": 0.04,
+          "depth_max_km": 8.55,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_selection_holdout_fitted_extra",
+          "wall_seconds": 0.9137942700181156,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 190.30366927772585,
+            "max_depth_km": 0.8199999999999994,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.01999999999999999
+          }
+        }
+      },
+      "holdout_improves": false,
+      "holdout_location_converged": false
+    },
+    "three_regularized_damping": {
+      "family": "three_regularized",
+      "variant": "damping",
+      "training_events": 51,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_regularized_damping_prelocation",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20444210012598082,
+          "event_rms_s": 0.21616986784634412,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_damping_prelocation",
+          "wall_seconds": 0.3602795749902725,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_regularized_damping_velocity_only",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.2018844007706138,
+          "event_rms_s": 0.2120580756561287,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.77,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_damping_velocity_only",
+          "wall_seconds": 0.2929130189586431,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 313.8669546471792,
+            "max_depth_km": 0.5099999999999998,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.030000000000000027
+        },
+        {
+          "name": "three_regularized_damping_joint1",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16384716844621738,
+          "event_rms_s": 0.17350481713378293,
+          "depth_min_km": 0.36,
+          "depth_max_km": 5.64,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_damping_joint1",
+          "wall_seconds": 0.5317774170543998,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 927.6806576905512,
+            "max_depth_km": 0.9199999999999999,
+            "max_origin_s": 0.2,
+            "max_rms_s": 0.10000000000000003
+          },
+          "station_change_s": 0.46,
+          "max_velocity_change_km_s": 0.020000000000000018
+        },
+        {
+          "name": "three_regularized_damping_joint2",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16194729534817257,
+          "event_rms_s": 0.17302385645326712,
+          "depth_min_km": 0.36,
+          "depth_max_km": 5.86,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_damping_joint2",
+          "wall_seconds": 0.5618503330042586,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 320.13696496311155,
+            "max_depth_km": 0.2599999999999998,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.020000000000000004
+          },
+          "station_change_s": 0.19000000000000006,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "three_regularized_damping_joint3",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16124093301761858,
+          "event_rms_s": 0.17242787636869975,
+          "depth_min_km": 0.35,
+          "depth_max_km": 6.0,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_damping_joint3",
+          "wall_seconds": 0.5613317559473217,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 233.71844405976026,
+            "max_depth_km": 0.17999999999999972,
+            "max_origin_s": 0.05,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.10999999999999999,
+          "max_velocity_change_km_s": 0.010000000000000009
+        },
+        {
+          "name": "three_regularized_damping_joint4",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16152614673306415,
+          "event_rms_s": 0.17146428199482247,
+          "depth_min_km": 0.34,
+          "depth_max_km": 6.14,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_damping_joint4",
+          "wall_seconds": 0.4306109600001946,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 232.06597499335106,
+            "max_depth_km": 0.17999999999999972,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.08999999999999997,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "three_regularized_damping_joint5",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.160330743477106,
+          "event_rms_s": 0.17166999806400102,
+          "depth_min_km": 0.33,
+          "depth_max_km": 6.25,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_damping_joint5",
+          "wall_seconds": 0.3504078070400283,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 186.51085680034146,
+            "max_depth_km": 0.2200000000000002,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.06000000000000005,
+          "max_velocity_change_km_s": 0.020000000000000018
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 418.3587972958528,
+          "max_depth_km": 0.3799999999999999,
+          "max_origin_s": 0.04,
+          "max_rms_s": 0.010000000000000009
+        },
+        "station_s": 0.15000000000000002,
+        "velocity_km_s": 0.03000000000000025
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_regularized_damping_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_damping_holdout_initialization",
+          "wall_seconds": 1.3701782790012658,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_regularized_damping_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_damping_holdout_initialization_extra",
+          "wall_seconds": 1.0733722760342062,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_regularized_damping_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2533385939656417,
+          "event_rms_s": 0.2702865862555473,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.66,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_damping_holdout_fitted",
+          "wall_seconds": 0.7575210640206933,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_regularized_damping_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2532586145061926,
+          "event_rms_s": 0.27034625348651226,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.66,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_damping_holdout_fitted_extra",
+          "wall_seconds": 0.7813259060494602,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 349.34794464588464,
+            "max_depth_km": 0.27,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improves": false,
+      "holdout_location_converged": false
+    },
+    "three_regularized_precision32": {
+      "family": "three_regularized",
+      "variant": "precision32",
+      "training_events": 51,
+      "bits": 32,
+      "runs": [
+        {
+          "name": "three_regularized_precision32_prelocation",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20447954617496972,
+          "event_rms_s": 0.21588395575619135,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_precision32_prelocation",
+          "wall_seconds": 0.35648382001090795,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+        },
+        {
+          "name": "three_regularized_precision32_velocity_only",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1991583670023904,
+          "event_rms_s": 0.2093079165286603,
+          "depth_min_km": 0.38,
+          "depth_max_km": 5.88,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_precision32_velocity_only",
+          "wall_seconds": 0.4391252080677077,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 667.6365385886247,
+            "max_depth_km": 0.8300000000000001,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.04999999999999999
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.1200000000000001
+        },
+        {
+          "name": "three_regularized_precision32_joint1",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.16067780374913973,
+          "event_rms_s": 0.1711094134539331,
+          "depth_min_km": 0.42,
+          "depth_max_km": 5.94,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_precision32_joint1",
+          "wall_seconds": 0.4189302660524845,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 1076.600185034681,
+            "max_depth_km": 1.0600000000000005,
+            "max_origin_s": 0.2,
+            "max_rms_s": 0.12
+          },
+          "station_change_s": 0.42,
+          "max_velocity_change_km_s": 0.1200000000000001
+        },
+        {
+          "name": "three_regularized_precision32_joint2",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.158489975405139,
+          "event_rms_s": 0.1682085540246358,
+          "depth_min_km": 0.45,
+          "depth_max_km": 6.28,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_precision32_joint2",
+          "wall_seconds": 0.37112158501986414,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 543.2419332751126,
+            "max_depth_km": 0.3999999999999999,
+            "max_origin_s": 0.13,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.21999999999999997,
+          "max_velocity_change_km_s": 0.09999999999999964
+        },
+        {
+          "name": "three_regularized_precision32_joint3",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15762765990354188,
+          "event_rms_s": 0.16809194496103708,
+          "depth_min_km": 0.48,
+          "depth_max_km": 6.45,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_precision32_joint3",
+          "wall_seconds": 0.4054597089998424,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 261.9953438217598,
+            "max_depth_km": 0.16999999999999993,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.10999999999999999,
+          "max_velocity_change_km_s": 0.08000000000000007
+        },
+        {
+          "name": "three_regularized_precision32_joint4",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.15889205856338384,
+          "event_rms_s": 0.16748426908864267,
+          "depth_min_km": 0.5,
+          "depth_max_km": 6.57,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_precision32_joint4",
+          "wall_seconds": 0.48970532801467925,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 396.6744719482756,
+            "max_depth_km": 0.2499999999999999,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.050000000000000044,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_regularized_precision32_joint5",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1604408410610969,
+          "event_rms_s": 0.16470413164335665,
+          "depth_min_km": 0.51,
+          "depth_max_km": 6.71,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_precision32_joint5",
+          "wall_seconds": 0.49233061901759356,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 181.05399733929406,
+            "max_depth_km": 0.20000000000000007,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.03999999999999998
+          },
+          "station_change_s": 0.030000000000000027,
+          "max_velocity_change_km_s": 0.040000000000000036
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 410.1230576892143,
+          "max_depth_km": 0.2599999999999998,
+          "max_origin_s": 0.16,
+          "max_rms_s": 0.02999999999999997
+        },
+        "station_s": 0.08000000000000007,
+        "velocity_km_s": 0.08000000000000007
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_regularized_precision32_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_precision32_holdout_initialization",
+          "wall_seconds": 1.2381222189869732,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_regularized_precision32_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_precision32_holdout_initialization_extra",
+          "wall_seconds": 1.1344397079665214,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_regularized_precision32_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24477354294111048,
+          "event_rms_s": 0.2562980875414785,
+          "depth_min_km": 0.11,
+          "depth_max_km": 7.8,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_precision32_holdout_fitted",
+          "wall_seconds": 0.7576537990244105,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_regularized_precision32_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2446619493986919,
+          "event_rms_s": 0.2564899545288149,
+          "depth_min_km": 0.11,
+          "depth_max_km": 7.81,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_regularized_precision32_holdout_fitted_extra",
+          "wall_seconds": 0.7798404630739242,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 310.0991389681587,
+            "max_depth_km": 0.3999999999999999,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improves": false,
+      "holdout_location_converged": false
+    },
+    "three_zero_delays_base": {
+      "family": "three_zero_delays",
+      "variant": "base",
+      "training_events": 51,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_zero_delays_base_prelocation",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20444210012598082,
+          "event_rms_s": 0.21616986784634412,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_base_prelocation",
+          "wall_seconds": 0.3584240609779954,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_zero_delays_base_velocity_only",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1992215733652298,
+          "event_rms_s": 0.2093079165286603,
+          "depth_min_km": 0.38,
+          "depth_max_km": 5.88,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_base_velocity_only",
+          "wall_seconds": 0.44615224795416,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 667.6365385886247,
+            "max_depth_km": 0.8300000000000001,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.04999999999999999
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.1200000000000001
+        },
+        {
+          "name": "three_zero_delays_base_joint1",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19873469234428212,
+          "event_rms_s": 0.2087544762934415,
+          "depth_min_km": 0.39,
+          "depth_max_km": 5.95,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_base_joint1",
+          "wall_seconds": 0.4863347919890657,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 228.8396514476718,
+            "max_depth_km": 0.2999999999999998,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.04999999999999982
+        },
+        {
+          "name": "three_zero_delays_base_joint2",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19847751700104968,
+          "event_rms_s": 0.20748730176123276,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.01,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_base_joint2",
+          "wall_seconds": 0.4862460800213739,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 182.63489626031637,
+            "max_depth_km": 0.6300000000000001,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.03
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_zero_delays_base_joint3",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19834719942466505,
+          "event_rms_s": 0.20757705868933984,
+          "depth_min_km": 0.42,
+          "depth_max_km": 6.05,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_base_joint3",
+          "wall_seconds": 0.4861790289869532,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 101.00998736531682,
+            "max_depth_km": 0.16000000000000003,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        },
+        {
+          "name": "three_zero_delays_base_joint4",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19829311155013757,
+          "event_rms_s": 0.2076573346343706,
+          "depth_min_km": 0.42,
+          "depth_max_km": 6.08,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_base_joint4",
+          "wall_seconds": 0.48617481894325465,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 34.36669905898344,
+            "max_depth_km": 0.10999999999999988,
+            "max_origin_s": 0.01,
+            "max_rms_s": 0.009999999999999995
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        },
+        {
+          "name": "three_zero_delays_base_joint5",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19808370866190614,
+          "event_rms_s": 0.20694794268219277,
+          "depth_min_km": 0.42,
+          "depth_max_km": 6.1,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_base_joint5",
+          "wall_seconds": 0.4962565719615668,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 871.4232797752124,
+            "max_depth_km": 0.4500000000000002,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 888.7164495256826,
+          "max_depth_km": 0.56,
+          "max_origin_s": 0.05,
+          "max_rms_s": 0.020000000000000018
+        },
+        "station_s": 0.0,
+        "velocity_km_s": 0.040000000000000036
+      },
+      "training_rays": {
+        "arrivals": 816,
+        "ray_count": 816,
+        "vertices_resolution_km": 0.01,
+        "interpretation": "Actual native ray vertices rounded to 0.01 km. Layer intersections are independently summed; horizontal segments are not automatically identified as head waves."
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_zero_delays_base_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_base_holdout_initialization",
+          "wall_seconds": 0.8889625259907916,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_zero_delays_base_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_base_holdout_initialization_extra",
+          "wall_seconds": 1.1218052129261196,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_zero_delays_base_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22706984716812964,
+          "event_rms_s": 0.24502139472088502,
+          "depth_min_km": 0.54,
+          "depth_max_km": 7.37,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_base_holdout_fitted",
+          "wall_seconds": 0.7704417810309678,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_zero_delays_base_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2287994980952504,
+          "event_rms_s": 0.24448761430466595,
+          "depth_min_km": 0.54,
+          "depth_max_km": 7.37,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_base_holdout_fitted_extra",
+          "wall_seconds": 0.8203607189934701,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 294.9931099502225,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improves": true,
+      "holdout_location_converged": false,
+      "accepted": false
+    },
+    "three_zero_delays_slow": {
+      "family": "three_zero_delays",
+      "variant": "slow",
+      "training_events": 51,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_zero_delays_slow_prelocation",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.21277914767729122,
+          "event_rms_s": 0.22237135518731527,
+          "depth_min_km": 0.49,
+          "depth_max_km": 5.38,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_slow_prelocation",
+          "wall_seconds": 0.36219969391822815,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_zero_delays_slow_velocity_only",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20036067356096585,
+          "event_rms_s": 0.20822781641608729,
+          "depth_min_km": 0.45,
+          "depth_max_km": 6.01,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_slow_velocity_only",
+          "wall_seconds": 0.44545206404291093,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 484.18900198473415,
+            "max_depth_km": 1.0300000000000002,
+            "max_origin_s": 0.18,
+            "max_rms_s": 0.08000000000000002
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "three_zero_delays_slow_joint1",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19988977967772098,
+          "event_rms_s": 0.20671568046236743,
+          "depth_min_km": 0.47,
+          "depth_max_km": 6.11,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_slow_joint1",
+          "wall_seconds": 0.4910177489509806,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 306.9052049096014,
+            "max_depth_km": 0.19999999999999973,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.06000000000000005
+        },
+        {
+          "name": "three_zero_delays_slow_joint2",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19977299003874274,
+          "event_rms_s": 0.20688634750585577,
+          "depth_min_km": 0.48,
+          "depth_max_km": 6.19,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_slow_joint2",
+          "wall_seconds": 0.49113363097421825,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 394.3568096241177,
+            "max_depth_km": 0.22999999999999998,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.01999999999999999
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_zero_delays_slow_joint3",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19953606423745196,
+          "event_rms_s": 0.2071941402759882,
+          "depth_min_km": 0.5,
+          "depth_max_km": 6.25,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_slow_joint3",
+          "wall_seconds": 0.49147127289325,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 327.39950914783583,
+            "max_depth_km": 0.20999999999999996,
+            "max_origin_s": 0.05,
+            "max_rms_s": 0.01999999999999999
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.03000000000000025
+        },
+        {
+          "name": "three_zero_delays_slow_joint4",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1995772492830096,
+          "event_rms_s": 0.20704266871026047,
+          "depth_min_km": 0.51,
+          "depth_max_km": 6.31,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_slow_joint4",
+          "wall_seconds": 0.4940339520107955,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 374.75864595699323,
+            "max_depth_km": 0.21999999999999975,
+            "max_origin_s": 0.03,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        },
+        {
+          "name": "three_zero_delays_slow_joint5",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19944796362981104,
+          "event_rms_s": 0.20669196556095493,
+          "depth_min_km": 0.53,
+          "depth_max_km": 6.35,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_slow_joint5",
+          "wall_seconds": 0.4917740790406242,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 338.04465150300365,
+            "max_depth_km": 0.21999999999999975,
+            "max_origin_s": 0.05,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 88.43477957628238,
+          "max_depth_km": 0.15000000000000013,
+          "max_origin_s": 0.05,
+          "max_rms_s": 0.010000000000000009
+        },
+        "station_s": 0.0,
+        "velocity_km_s": 0.040000000000000036
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_zero_delays_slow_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2556391162292635,
+          "event_rms_s": 0.27278728567476607,
+          "depth_min_km": 0.75,
+          "depth_max_km": 5.84,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_slow_holdout_initialization",
+          "wall_seconds": 1.2426858310354874,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_zero_delays_slow_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.25709515236754665,
+          "event_rms_s": 0.27141207808244694,
+          "depth_min_km": 0.75,
+          "depth_max_km": 5.84,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_slow_holdout_initialization_extra",
+          "wall_seconds": 1.1748030359158292,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 481.3640400005888,
+            "max_depth_km": 0.19999999999999973,
+            "max_origin_s": 0.16,
+            "max_rms_s": 0.02999999999999997
+          }
+        },
+        "fitted": {
+          "name": "three_zero_delays_slow_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22871839092521143,
+          "event_rms_s": 0.24360531272346417,
+          "depth_min_km": 0.75,
+          "depth_max_km": 7.53,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_slow_holdout_fitted",
+          "wall_seconds": 1.137379206949845,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_zero_delays_slow_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2277586606733915,
+          "event_rms_s": 0.2432077301403062,
+          "depth_min_km": 0.75,
+          "depth_max_km": 7.54,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_slow_holdout_fitted_extra",
+          "wall_seconds": 1.242380126961507,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 256.66684304746366,
+            "max_depth_km": 0.16999999999999993,
+            "max_origin_s": 0.14,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improves": true,
+      "holdout_location_converged": false
+    },
+    "three_zero_delays_fast": {
+      "family": "three_zero_delays",
+      "variant": "fast",
+      "training_events": 51,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_zero_delays_fast_prelocation",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.2018157101970829,
+          "event_rms_s": 0.21392687040751318,
+          "depth_min_km": 0.3,
+          "depth_max_km": 5.62,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_fast_prelocation",
+          "wall_seconds": 0.35761178692337126,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_zero_delays_fast_velocity_only",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.2016291763483201,
+          "event_rms_s": 0.2099579789890741,
+          "depth_min_km": 0.32,
+          "depth_max_km": 5.76,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_fast_velocity_only",
+          "wall_seconds": 0.4275407789973542,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 292.193228321915,
+            "max_depth_km": 0.44999999999999996,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.06
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.1299999999999999
+        },
+        {
+          "name": "three_zero_delays_fast_joint1",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20077892131670105,
+          "event_rms_s": 0.2079592720306777,
+          "depth_min_km": 0.36,
+          "depth_max_km": 5.82,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_fast_joint1",
+          "wall_seconds": 0.48934853298123926,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 207.2602449889925,
+            "max_depth_km": 0.6199999999999999,
+            "max_origin_s": 0.16,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.06999999999999984
+        },
+        {
+          "name": "three_zero_delays_fast_joint2",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20008604766596855,
+          "event_rms_s": 0.20746367506286068,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.87,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_fast_joint2",
+          "wall_seconds": 0.4945762000279501,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 130.5020570738683,
+            "max_depth_km": 0.33999999999999997,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.01999999999999999
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.050000000000000266
+        },
+        {
+          "name": "three_zero_delays_fast_joint3",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20004979772203582,
+          "event_rms_s": 0.2074494977522169,
+          "depth_min_km": 0.38,
+          "depth_max_km": 5.91,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_fast_joint3",
+          "wall_seconds": 0.4876804860541597,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 56.1622572366245,
+            "max_depth_km": 0.15000000000000002,
+            "max_origin_s": 0.05,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.029999999999999805
+        },
+        {
+          "name": "three_zero_delays_fast_joint4",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.199930741684685,
+          "event_rms_s": 0.20729348334015257,
+          "depth_min_km": 0.38,
+          "depth_max_km": 5.95,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_fast_joint4",
+          "wall_seconds": 0.4871484390459955,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 101.22635388444827,
+            "max_depth_km": 0.15000000000000002,
+            "max_origin_s": 0.05,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.03000000000000025
+        },
+        {
+          "name": "three_zero_delays_fast_joint5",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19995785707954347,
+          "event_rms_s": 0.20732185832944985,
+          "depth_min_km": 0.39,
+          "depth_max_km": 5.98,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_fast_joint5",
+          "wall_seconds": 0.4905400240095332,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 92.79082439421745,
+            "max_depth_km": 0.15000000000000002,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 71.27240643110815,
+          "max_depth_km": 0.08999999999999986,
+          "max_origin_s": 0.03,
+          "max_rms_s": 0.010000000000000009
+        },
+        "station_s": 0.0,
+        "velocity_km_s": 0.050000000000000266
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_zero_delays_fast_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23456570598136295,
+          "event_rms_s": 0.253272134656674,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.71,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_fast_holdout_initialization",
+          "wall_seconds": 0.7830432300688699,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_zero_delays_fast_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2347293196878625,
+          "event_rms_s": 0.25326258208403185,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.71,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_fast_holdout_initialization_extra",
+          "wall_seconds": 0.7976645160233602,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 329.5285504578954,
+            "max_depth_km": 0.15000000000000002,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.010000000000000009
+          }
+        },
+        "fitted": {
+          "name": "three_zero_delays_fast_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22741013186557313,
+          "event_rms_s": 0.2455605831561735,
+          "depth_min_km": 0.47,
+          "depth_max_km": 7.4,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_fast_holdout_fitted",
+          "wall_seconds": 0.7798771599773318,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_zero_delays_fast_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22776535574357068,
+          "event_rms_s": 0.24525168112935372,
+          "depth_min_km": 0.47,
+          "depth_max_km": 7.4,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_fast_holdout_fitted_extra",
+          "wall_seconds": 0.8108686439227313,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 288.9061608936685,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.009999999999999995
+          }
+        }
+      },
+      "holdout_improves": true,
+      "holdout_location_converged": false
+    },
+    "three_zero_delays_selection": {
+      "family": "three_zero_delays",
+      "variant": "selection",
+      "training_events": 62,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_zero_delays_selection_prelocation",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.21825276357109263,
+          "event_rms_s": 0.23150977127013103,
+          "depth_min_km": 0.03,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_selection_prelocation",
+          "wall_seconds": 0.533321717986837,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_zero_delays_selection_velocity_only",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.2130351871708492,
+          "event_rms_s": 0.22457486717738906,
+          "depth_min_km": 0.02,
+          "depth_max_km": 5.96,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_selection_velocity_only",
+          "wall_seconds": 0.5911953729810193,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 724.2395141322553,
+            "max_depth_km": 0.8600000000000001,
+            "max_origin_s": 0.13,
+            "max_rms_s": 0.08000000000000002
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.13000000000000034
+        },
+        {
+          "name": "three_zero_delays_selection_joint1",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.21088548804315957,
+          "event_rms_s": 0.22457486717738903,
+          "depth_min_km": 0.04,
+          "depth_max_km": 6.1,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_selection_joint1",
+          "wall_seconds": 0.5959705309942365,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 294.4287788007866,
+            "max_depth_km": 0.21999999999999975,
+            "max_origin_s": 0.22,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.07999999999999963
+        },
+        {
+          "name": "three_zero_delays_selection_joint2",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.21064965661852028,
+          "event_rms_s": 0.22394915897687942,
+          "depth_min_km": 0.07,
+          "depth_max_km": 6.21,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_selection_joint2",
+          "wall_seconds": 0.619801159016788,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 276.1655439888615,
+            "max_depth_km": 0.18000000000000016,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.06000000000000005
+        },
+        {
+          "name": "three_zero_delays_selection_joint3",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.21032307860093846,
+          "event_rms_s": 0.22372938722858338,
+          "depth_min_km": 0.08,
+          "depth_max_km": 6.3,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_selection_joint3",
+          "wall_seconds": 0.6177684400463477,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 324.4941403621807,
+            "max_depth_km": 0.16999999999999993,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.050000000000000266
+        },
+        {
+          "name": "three_zero_delays_selection_joint4",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.21048361708023153,
+          "event_rms_s": 0.22379786386596218,
+          "depth_min_km": 0.1,
+          "depth_max_km": 6.39,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_selection_joint4",
+          "wall_seconds": 0.61805387691129,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 365.2553490297797,
+            "max_depth_km": 0.20999999999999996,
+            "max_origin_s": 0.05,
+            "max_rms_s": 0.01999999999999999
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_zero_delays_selection_joint5",
+          "bits": 64,
+          "events": 62,
+          "picks": 997,
+          "returncode": 0,
+          "residual_rms_s": 0.2097826524854988,
+          "event_rms_s": 0.22265987369716778,
+          "depth_min_km": 0.11,
+          "depth_max_km": 6.49,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_selection_joint5",
+          "wall_seconds": 0.501206785091199,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 384.3781226476781,
+            "max_depth_km": 0.3500000000000001,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.01999999999999999
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.04999999999999982
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 236.6215751767915,
+          "max_depth_km": 0.3500000000000001,
+          "max_origin_s": 0.1,
+          "max_rms_s": 0.020000000000000018
+        },
+        "station_s": 0.0,
+        "velocity_km_s": 0.08999999999999986
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_zero_delays_selection_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_selection_holdout_initialization",
+          "wall_seconds": 0.895690377918072,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_zero_delays_selection_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_selection_holdout_initialization_extra",
+          "wall_seconds": 1.1025003519607708,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_zero_delays_selection_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2251729684657986,
+          "event_rms_s": 0.24123004680982627,
+          "depth_min_km": 0.55,
+          "depth_max_km": 8.28,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_selection_holdout_fitted",
+          "wall_seconds": 1.0460487270029262,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_zero_delays_selection_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22565249780416394,
+          "event_rms_s": 0.2410260325921181,
+          "depth_min_km": 0.55,
+          "depth_max_km": 8.32,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_selection_holdout_fitted_extra",
+          "wall_seconds": 1.0185191120253876,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 457.5517903486865,
+            "max_depth_km": 0.3400000000000003,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.019999999999999962
+          }
+        }
+      },
+      "holdout_improves": true,
+      "holdout_location_converged": false
+    },
+    "three_zero_delays_damping": {
+      "family": "three_zero_delays",
+      "variant": "damping",
+      "training_events": 51,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_zero_delays_damping_prelocation",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20444210012598082,
+          "event_rms_s": 0.21616986784634412,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_damping_prelocation",
+          "wall_seconds": 0.36177192197646946,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_zero_delays_damping_velocity_only",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.2018844007706138,
+          "event_rms_s": 0.2120580756561287,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.77,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_damping_velocity_only",
+          "wall_seconds": 0.2956514270044863,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 313.8669546471792,
+            "max_depth_km": 0.5099999999999998,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.030000000000000027
+        },
+        {
+          "name": "three_zero_delays_damping_joint1",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20149739999782218,
+          "event_rms_s": 0.21127530594454427,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.8,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_damping_joint1",
+          "wall_seconds": 0.49243227404076606,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 246.03033049825302,
+            "max_depth_km": 0.3800000000000001,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "three_zero_delays_damping_joint2",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20247924125019556,
+          "event_rms_s": 0.2090735868202446,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.81,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_damping_joint2",
+          "wall_seconds": 0.5044420670019463,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 770.8781827614097,
+            "max_depth_km": 0.85,
+            "max_origin_s": 0.18,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000009
+        },
+        {
+          "name": "three_zero_delays_damping_joint3",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19976222691970966,
+          "event_rms_s": 0.2106525808147661,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.82,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_damping_joint3",
+          "wall_seconds": 0.47590740805026144,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 160.65968062304324,
+            "max_depth_km": 0.08000000000000007,
+            "max_origin_s": 0.18,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "three_zero_delays_damping_joint4",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20212966620658213,
+          "event_rms_s": 0.20892817041307965,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.83,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_damping_joint4",
+          "wall_seconds": 0.5057306139497086,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 152.24542448064597,
+            "max_depth_km": 0.0900000000000003,
+            "max_origin_s": 0.17,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.009999999999999787
+        },
+        {
+          "name": "three_zero_delays_damping_joint5",
+          "bits": 64,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20140461117352995,
+          "event_rms_s": 0.2089891638057708,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.85,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_damping_joint5",
+          "wall_seconds": 0.4921186270657927,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 135.42465808509883,
+            "max_depth_km": 0.10000000000000009,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000231
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 79.09877027526406,
+          "max_depth_km": 0.08000000000000007,
+          "max_origin_s": 0.16,
+          "max_rms_s": 0.030000000000000027
+        },
+        "station_s": 0.0,
+        "velocity_km_s": 0.020000000000000018
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_zero_delays_damping_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_damping_holdout_initialization",
+          "wall_seconds": 0.8760244050063193,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_zero_delays_damping_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_damping_holdout_initialization_extra",
+          "wall_seconds": 1.0769003570312634,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_zero_delays_damping_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2315693530202474,
+          "event_rms_s": 0.2506604180186619,
+          "depth_min_km": 0.52,
+          "depth_max_km": 6.87,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_damping_holdout_fitted",
+          "wall_seconds": 0.7560611449880525,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_zero_delays_damping_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23154417337810967,
+          "event_rms_s": 0.2506218073563844,
+          "depth_min_km": 0.52,
+          "depth_max_km": 6.87,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_damping_holdout_fitted_extra",
+          "wall_seconds": 0.7809472859371454,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 295.6055437805396,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improves": true,
+      "holdout_location_converged": false
+    },
+    "three_zero_delays_precision32": {
+      "family": "three_zero_delays",
+      "variant": "precision32",
+      "training_events": 51,
+      "bits": 32,
+      "runs": [
+        {
+          "name": "three_zero_delays_precision32_prelocation",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.20447954617496972,
+          "event_rms_s": 0.21588395575619135,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_precision32_prelocation",
+          "wall_seconds": 0.3591649270383641,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+        },
+        {
+          "name": "three_zero_delays_precision32_velocity_only",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.1991583670023904,
+          "event_rms_s": 0.2093079165286603,
+          "depth_min_km": 0.38,
+          "depth_max_km": 5.88,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_precision32_velocity_only",
+          "wall_seconds": 0.44209151808172464,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 667.6365385886247,
+            "max_depth_km": 0.8300000000000001,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.04999999999999999
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.1200000000000001
+        },
+        {
+          "name": "three_zero_delays_precision32_joint1",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19873116817923242,
+          "event_rms_s": 0.2087544762934415,
+          "depth_min_km": 0.39,
+          "depth_max_km": 5.95,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_precision32_joint1",
+          "wall_seconds": 0.4898411389440298,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 228.8396514476718,
+            "max_depth_km": 0.2999999999999998,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.04999999999999982
+        },
+        {
+          "name": "three_zero_delays_precision32_joint2",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19846316705240444,
+          "event_rms_s": 0.20748730176123276,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.01,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_precision32_joint2",
+          "wall_seconds": 0.4878196769859642,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 182.63489626031637,
+            "max_depth_km": 0.6300000000000001,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.03
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_zero_delays_precision32_joint3",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19835024849601618,
+          "event_rms_s": 0.20757705868933984,
+          "depth_min_km": 0.42,
+          "depth_max_km": 6.05,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_precision32_joint3",
+          "wall_seconds": 0.5016609010053799,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 101.00998736531682,
+            "max_depth_km": 0.16000000000000003,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        },
+        {
+          "name": "three_zero_delays_precision32_joint4",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19829563614392903,
+          "event_rms_s": 0.2076573346343706,
+          "depth_min_km": 0.42,
+          "depth_max_km": 6.08,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_precision32_joint4",
+          "wall_seconds": 0.4899396630935371,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 34.36669905898344,
+            "max_depth_km": 0.10999999999999988,
+            "max_origin_s": 0.01,
+            "max_rms_s": 0.009999999999999995
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        },
+        {
+          "name": "three_zero_delays_precision32_joint5",
+          "bits": 32,
+          "events": 51,
+          "picks": 816,
+          "returncode": 0,
+          "residual_rms_s": 0.19809867688683264,
+          "event_rms_s": 0.20694794268219277,
+          "depth_min_km": 0.42,
+          "depth_max_km": 6.1,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_precision32_joint5",
+          "wall_seconds": 0.48886685201432556,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 881.4836926586547,
+            "max_depth_km": 0.4500000000000002,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        }
+      ],
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 888.7164495256826,
+          "max_depth_km": 0.56,
+          "max_origin_s": 0.05,
+          "max_rms_s": 0.020000000000000018
+        },
+        "station_s": 0.0,
+        "velocity_km_s": 0.040000000000000036
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_zero_delays_precision32_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_precision32_holdout_initialization",
+          "wall_seconds": 0.894199856906198,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_zero_delays_precision32_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_precision32_holdout_initialization_extra",
+          "wall_seconds": 1.0996644280385226,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_zero_delays_precision32_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22706984716812964,
+          "event_rms_s": 0.24502139472088502,
+          "depth_min_km": 0.54,
+          "depth_max_km": 7.37,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_precision32_holdout_fitted",
+          "wall_seconds": 0.7737403250066563,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_zero_delays_precision32_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2287994980952504,
+          "event_rms_s": 0.24448761430466595,
+          "depth_min_km": 0.54,
+          "depth_max_km": 7.37,
+          "workdir": "tmp/velocity_holdout_review/sync_training_review_20261015/fits/three_zero_delays_precision32_holdout_fitted_extra",
+          "wall_seconds": 0.8114126310683787,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 294.9931099502225,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improves": true,
+      "holdout_location_converged": false
+    }
+  },
+  "common_initial_rms_s": 0.24062050459187168,
+  "comparisons": {
+    "four_regularized": {
+      "four_regularized_slow": {
+        "locations": {
+          "max_horizontal_m": 366.4697371623201,
+          "max_depth_km": 0.7200000000000002,
+          "max_origin_s": 0.18,
+          "max_rms_s": 0.019999999999999962
+        },
+        "velocity_km_s": 0.29000000000000004,
+        "station_s": 0.06000000000000005
+      },
+      "four_regularized_fast": {
+        "locations": {
+          "max_horizontal_m": 356.24386271924817,
+          "max_depth_km": 0.7200000000000002,
+          "max_origin_s": 0.21,
+          "max_rms_s": 0.020000000000000018
+        },
+        "velocity_km_s": 0.2599999999999998,
+        "station_s": 0.08000000000000002
+      },
+      "four_regularized_selection": {
+        "locations": {
+          "max_horizontal_m": 1069.417087872222,
+          "max_depth_km": 1.6499999999999995,
+          "max_origin_s": 0.19,
+          "max_rms_s": 0.040000000000000036
+        },
+        "velocity_km_s": 0.1499999999999999,
+        "station_s": 0.32
+      },
+      "four_regularized_damping": {
+        "locations": {
+          "max_horizontal_m": 422.33536200028084,
+          "max_depth_km": 0.8200000000000003,
+          "max_origin_s": 0.26,
+          "max_rms_s": 0.04999999999999999
+        },
+        "velocity_km_s": 0.43999999999999995,
+        "station_s": 0.19
+      },
+      "four_regularized_precision32": {
+        "locations": {
+          "max_horizontal_m": 55.28078872853227,
+          "max_depth_km": 0.05000000000000071,
+          "max_origin_s": 0.02,
+          "max_rms_s": 0.010000000000000009
+        },
+        "velocity_km_s": 0.010000000000000231,
+        "station_s": 0.010000000000000009
+      }
+    },
+    "three_regularized": {
+      "three_regularized_slow": {
+        "locations": {
+          "max_horizontal_m": 366.14347162274555,
+          "max_depth_km": 0.8000000000000003,
+          "max_origin_s": 0.17,
+          "max_rms_s": 0.019999999999999962
+        },
+        "velocity_km_s": 0.3000000000000007,
+        "station_s": 0.07
+      },
+      "three_regularized_fast": {
+        "locations": {
+          "max_horizontal_m": 433.428794321258,
+          "max_depth_km": 0.77,
+          "max_origin_s": 0.19,
+          "max_rms_s": 0.020000000000000018
+        },
+        "velocity_km_s": 0.2599999999999998,
+        "station_s": 0.06
+      },
+      "three_regularized_selection": {
+        "locations": {
+          "max_horizontal_m": 1011.8261453450106,
+          "max_depth_km": 0.9400000000000004,
+          "max_origin_s": 0.29,
+          "max_rms_s": 0.040000000000000036
+        },
+        "velocity_km_s": 0.1200000000000001,
+        "station_s": 0.32
+      },
+      "three_regularized_damping": {
+        "locations": {
+          "max_horizontal_m": 542.5744544636411,
+          "max_depth_km": 0.9999999999999996,
+          "max_origin_s": 0.27,
+          "max_rms_s": 0.04999999999999999
+        },
+        "velocity_km_s": 0.3999999999999999,
+        "station_s": 0.2
+      },
+      "three_regularized_precision32": {
+        "locations": {
+          "max_horizontal_m": 244.89417645598454,
+          "max_depth_km": 0.2200000000000002,
+          "max_origin_s": 0.03,
+          "max_rms_s": 0.010000000000000009
+        },
+        "velocity_km_s": 0.010000000000000009,
+        "station_s": 0.019999999999999997
+      }
+    },
+    "three_zero_delays": {
+      "three_zero_delays_slow": {
+        "locations": {
+          "max_horizontal_m": 408.1089522212696,
+          "max_depth_km": 0.8300000000000001,
+          "max_origin_s": 0.39,
+          "max_rms_s": 0.020000000000000018
+        },
+        "velocity_km_s": 0.2599999999999998,
+        "station_s": 0.0
+      },
+      "three_zero_delays_fast": {
+        "locations": {
+          "max_horizontal_m": 272.1290191737742,
+          "max_depth_km": 1.09,
+          "max_origin_s": 0.14,
+          "max_rms_s": 0.020000000000000018
+        },
+        "velocity_km_s": 0.25,
+        "station_s": 0.0
+      },
+      "three_zero_delays_selection": {
+        "locations": {
+          "max_horizontal_m": 733.0576235878509,
+          "max_depth_km": 0.9099999999999993,
+          "max_origin_s": 0.4,
+          "max_rms_s": 0.030000000000000027
+        },
+        "velocity_km_s": 0.32000000000000006,
+        "station_s": 0.0
+      },
+      "three_zero_delays_damping": {
+        "locations": {
+          "max_horizontal_m": 344.3593913316676,
+          "max_depth_km": 0.9300000000000002,
+          "max_origin_s": 0.27,
+          "max_rms_s": 0.020000000000000018
+        },
+        "velocity_km_s": 0.18999999999999995,
+        "station_s": 0.0
+      },
+      "three_zero_delays_precision32": {
+        "locations": {
+          "max_horizontal_m": 0.0,
+          "max_depth_km": 0.0,
+          "max_origin_s": 0.0,
+          "max_rms_s": 0.0
+        },
+        "velocity_km_s": 0.0,
+        "station_s": 0.0
+      }
+    }
+  }
+}

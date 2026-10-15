@@ -11,6 +11,7 @@ import math
 import os
 import re
 import subprocess
+from datetime import datetime, timezone
 
 from PIL import Image, ImageChops
 
@@ -158,6 +159,11 @@ def verify(layout):
         assert 'Reproduction diagnostic' not in normalized
     comparison_inputs = (REPORT / 'comparison.fls').read_text()
     allowed_results = {path for item in layout for path in item['independent_files']}
+    comparison_source = (REPORT / 'comparison_pages.tex').read_text()
+    displayed = re.findall(r'\\includegraphics\[[^\]]*\]\{([^}]+)\}', comparison_source)
+    assert [p for p in displayed if not p.startswith('report/reference_assets/')] == [
+        p for item in layout for p in item['independent_files']]
+    assert all(path in paper_inputs and path in comparison_inputs for path in allowed_results)
     for path in Path('figures').glob('*.pdf'):
         if str(path) not in allowed_results:
             assert str(path) not in comparison_inputs, str(path)
@@ -232,7 +238,25 @@ def main():
     outputs = {str(p.relative_to(ROOT)): digest(p) for p in REPORT.rglob('*')
                if p.is_file() and p.suffix in ['.tex', '.pdf', '.png', '.json']
                and p.name not in ['document_build.json', 'document_build_log.json']}
+    panel_sync = []
+    for item in layout:
+        for panel in item['panels']:
+            row = next(r for r in rows if r['panel'] == panel)
+            numerical = [p.strip() for p in row.get('saved_data', '').split(';') if p.strip()]
+            path = row.get('report_figure')
+            if row['status'] == 'partially reproduced':
+                assert path in item['independent_files'], (panel, path)
+            panel_sync.append(dict(panel=panel, status=row['status'],
+                generated_result_shown=row['status'] == 'partially reproduced',
+                shared_figure=path, shared_figure_sha256=digest(path) if path else None,
+                saved_numerical_sha256={p: digest(p) for p in numerical},
+                data_command=row.get('data_command'), plot_command=row.get('plot_command'),
+                missing_explanation=item['missing'] if row['status'] == 'not reproduced' else None))
     verification.update(build_passed=True, analysis_executed=False,
+                        built_at_utc=datetime.now(timezone.utc).isoformat(),
+                        pdf_file_times_utc={name: datetime.fromtimestamp((REPORT/name).stat().st_mtime, timezone.utc).isoformat() for name in ['report.pdf','comparison.pdf']},
+                        synchronization_inputs_sha256={p: digest(p) for p in ['report/figure_layout.json','docs/panel_record.json','docs/panels.json']},
+                        comparison_matches_report_all_panels=True, panel_synchronization=panel_sync,
                         live_acquisition_indices_excluded=live_excluded,
                         protected_files_checked=len(before), protected_files_unchanged=True,
                         matches_pre_edit_snapshot=historical_match,

@@ -44,6 +44,13 @@ def prepare():
 def fit():
     plan=json.loads((F/'plan.json').read_text())
     for path,digest in plan['inputs'].items():assert sha(R/path)==digest
+    if (F/'training_frozen.json').exists():
+        for path,digest in json.loads((F/'training_frozen.json').read_text()).items():assert sha(R/path)==digest,path
+        summary=json.loads((F/'training_summary.json').read_text())
+        assert all(r['finished'] for r in summary['runs'].values())
+        print('Reusing unchanged frozen training fits; no results overwritten',flush=True)
+        return
+    assert not list(F.glob('*holdout*')), 'Use a new version directory for new training'
     summary=dict(accepted=False,plan_sha256=sha(F/'plan.json'),runs={})
     if (F/'training_summary.json').exists():summary=json.loads((F/'training_summary.json').read_text());assert summary['plan_sha256']==sha(F/'plan.json')
     sta=(R/'tmp/availability_extension/velocity_december/base_prelocation/input.sta').read_text()

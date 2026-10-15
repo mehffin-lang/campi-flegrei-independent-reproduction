@@ -1,0 +1,86 @@
+[
+  {
+    "family": "four_regularized",
+    "file": "input.cnv",
+    "identical": true,
+    "sha64": "b87f93f94130687daba5bbdc0f6e9cf4dbf6d711ac2544699778caec111cdfd8",
+    "sha32": "b87f93f94130687daba5bbdc0f6e9cf4dbf6d711ac2544699778caec111cdfd8"
+  },
+  {
+    "family": "four_regularized",
+    "file": "input.mod",
+    "identical": true,
+    "sha64": "a84a9fc432206dc8c31aa856101742183b40fa7e979f0e74c567430984762052",
+    "sha32": "a84a9fc432206dc8c31aa856101742183b40fa7e979f0e74c567430984762052"
+  },
+  {
+    "family": "four_regularized",
+    "file": "input.sta",
+    "identical": true,
+    "sha64": "18e1aba52e0483234b486868e6690bc7bb8b5a216cacf5f10b7c93b877bbb470",
+    "sha32": "18e1aba52e0483234b486868e6690bc7bb8b5a216cacf5f10b7c93b877bbb470"
+  },
+  {
+    "family": "four_regularized",
+    "file": "velest.cmn",
+    "identical": true,
+    "sha64": "f61aab4f1f011e90a9abac2039cf26c537a27be86c91a0ca01ad441e00833243",
+    "sha32": "f61aab4f1f011e90a9abac2039cf26c537a27be86c91a0ca01ad441e00833243"
+  },
+  {
+    "family": "three_regularized",
+    "file": "input.cnv",
+    "identical": true,
+    "sha64": "b87f93f94130687daba5bbdc0f6e9cf4dbf6d711ac2544699778caec111cdfd8",
+    "sha32": "b87f93f94130687daba5bbdc0f6e9cf4dbf6d711ac2544699778caec111cdfd8"
+  },
+  {
+    "family": "three_regularized",
+    "file": "input.mod",
+    "identical": true,
+    "sha64": "0db111366b7c74e5cdf8a479efe979652cf0b4b36603756ec725e163069761b5",
+    "sha32": "0db111366b7c74e5cdf8a479efe979652cf0b4b36603756ec725e163069761b5"
+  },
+  {
+    "family": "three_regularized",
+    "file": "input.sta",
+    "identical": true,
+    "sha64": "18e1aba52e0483234b486868e6690bc7bb8b5a216cacf5f10b7c93b877bbb470",
+    "sha32": "18e1aba52e0483234b486868e6690bc7bb8b5a216cacf5f10b7c93b877bbb470"
+  },
+  {
+    "family": "three_regularized",
+    "file": "velest.cmn",
+    "identical": true,
+    "sha64": "f61aab4f1f011e90a9abac2039cf26c537a27be86c91a0ca01ad441e00833243",
+    "sha32": "f61aab4f1f011e90a9abac2039cf26c537a27be86c91a0ca01ad441e00833243"
+  },
+  {
+    "family": "three_zero_delays",
+    "file": "input.cnv",
+    "identical": true,
+    "sha64": "b87f93f94130687daba5bbdc0f6e9cf4dbf6d711ac2544699778caec111cdfd8",
+    "sha32": "b87f93f94130687daba5bbdc0f6e9cf4dbf6d711ac2544699778caec111cdfd8"
+  },
+  {
+    "family": "three_zero_delays",
+    "file": "input.mod",
+    "identical": true,
+    "sha64": "0db111366b7c74e5cdf8a479efe979652cf0b4b36603756ec725e163069761b5",
+    "sha32": "0db111366b7c74e5cdf8a479efe979652cf0b4b36603756ec725e163069761b5"
+  },
+  {
+    "family": "three_zero_delays",
+    "file": "input.sta",
+    "identical": true,
+    "sha64": "18e1aba52e0483234b486868e6690bc7bb8b5a216cacf5f10b7c93b877bbb470",
+    "sha32": "18e1aba52e0483234b486868e6690bc7bb8b5a216cacf5f10b7c93b877bbb470"
+  },
+  {
+    "family": "three_zero_delays",
+    "file": "velest.cmn",
+    "identical": true,
+    "sha64": "f61aab4f1f011e90a9abac2039cf26c537a27be86c91a0ca01ad441e00833243",
+    "sha32": "f61aab4f1f011e90a9abac2039cf26c537a27be86c91a0ca01ad441e00833243"
+  }
+]

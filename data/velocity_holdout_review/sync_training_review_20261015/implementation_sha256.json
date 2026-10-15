@@ -1,0 +1,11 @@
+{
+  "scripts/advance_velocity_review.py": "65bb7544513dd8727e11a2a9e0da3c238004ada5bab24a9e72a372ef58f10240",
+  "scripts/present_velocity_sync_review.py": "635cd851883dd3a7cd5379040c47cf1783e695a12c4441e779af27dc37b7ac64",
+  "scripts/extend_velocity_training.py": "a1d0eb8cbc58473ced836b7bb27e96040765939b66a9917eaf7674c0663455ca",
+  "scripts/process_target_training.py": "46fc8a6a0be859fed5bfbb1fb71c24ff252503cc28a9b9e2a60f312ff25e8247",
+  "scripts/review_target_training.py": "245cf38c22b8f76ea3312fd011a5021e664454199822e36c79a208b2a6d5192d",
+  "scripts/fit_extended_training.py": "3e671b381490bcde1e93d669bbb606f96ff136e1f154bba509f865b5e04b76d9",
+  "scripts/check_extended_rays.py": "3c76227d0dfeaf7cbb7112359c3f6a0d340eed97f0f8b708fb25897a4df3de8a",
+  "scripts/check_target_metadata.py": "0515d95579f157feeb7011525c6f8b10dcea9741b9d954bcac60b38287c58b94",
+  "scripts/build_documents.py": "227c7cd458854d50c7b4d27f12957bae977529850d1042b20aada8eb836c271d"
+}

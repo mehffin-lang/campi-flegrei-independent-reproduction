@@ -1,0 +1,61 @@
+{
+  "accepted": false,
+  "training_fits": 18,
+  "training_events": 51,
+  "training_arrivals": 816,
+  "continuous_files": 6,
+  "continuous_bytes": 20906496,
+  "core_channel_hours": 36.0,
+  "picks": 1085,
+  "P": 163,
+  "S": 922,
+  "new_events": 0,
+  "prior_files_unchanged": 1332,
+  "training_frozen_before_validation": true,
+  "holdout_sha256": "39500ad38df90e4c07cdce2da047116cd2441996f11a5f752501798a3599b2b9",
+  "holdout_unchanged": true,
+  "criteria_unchanged": true,
+  "reviewed_uncertain_phases": 6,
+  "reviewed_uncertain_event": 1532,
+  "remaining_gaps": [
+    "CSOC P",
+    "CSOC S",
+    "CUMA P",
+    "CUMA S"
+  ],
+  "metadata": {
+    "unique_epoch": true,
+    "responses": true,
+    "epochs_cover_core": true,
+    "sample_rates": true,
+    "coordinate_max_difference_m": 0.0,
+    "elevation_max_difference_m": 0.0,
+    "metadata_sources": {
+      "inputs/continuation/2I_responses.xml": "91c213556e69c7934686d80a497d25f43f8281ffe2411b6d39a5df4e77b9a784",
+      "inputs/continuation/IV_responses.xml": "07545b22de0f7b9030f2064467b52ce428365b213c136477b05a5768c4dd62a3"
+    },
+    "absolute_clock_verified": false,
+    "note": "Header/epoch/response consistency does not establish absolute timing accuracy."
+  },
+  "scope": "Training-only quality review; no new calibrated model or scientific-panel replacement.",
+  "pdf_file_times_utc": {
+    "report.pdf": "2026-10-15T20:03:48.514856+00:00",
+    "comparison.pdf": "2026-10-15T20:03:49.473856+00:00"
+  },
+  "pdf_pages": {
+    "report": 73,
+    "comparison": 19
+  },
+  "pdf_sha256": {
+    "report.pdf": "e2925cf10ec9eb9cd231882a98aac5adbe6a58ccf4371282730fb5cd175cb1b2",
+    "comparison.pdf": "ce864edf076521582798e7ca8b5e519a85a94bfe1d0d2aea39099b2454bdaa5e"
+  },
+  "all_63_panels_match": true,
+  "scientific_panel_numerical_files_unchanged": true,
+  "comparison_byte_identical_to_inspected_version": true,
+  "report_documentation_pixels_identical_to_inspected_version": true,
+  "final_build_passed": true,
+  "build_guard_failure": "One failed guard during concurrent archive finalization; science hashes unchanged; subsequent sequential build passed.",
+  "free_bytes": 133931241472,
+  "protected_bytes": 51539607552
+}

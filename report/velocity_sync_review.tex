@@ -1,0 +1,85 @@
+\section{Training-arrival review and synchronized figures}
+The report and separate comparison use the same 20 generated figure files and
+63 panel records: 53 partial and ten unreproduced. The document builder now
+records each panel's status, numerical-file hashes, shared figure hash, and PDF
+file timestamps in \path{report/document_build.json}. All 19 comparison pages
+were visually inspected. Published images remain confined to that comparison;
+missing results retain explicit explanations. This synchronization does not
+validate the plotted scientific results or promote the failed velocity profiles.
+
+\paragraph{Targeted observations and review.}
+Existing target-station files were checked before querying EIDA for
+13 December 2024, 00:00--02:00 UTC. All six station requests succeeded, adding
+36 core channel-hours and 20,906,496 bytes against a 20,519,430-byte estimate.
+The 40 GiB free-space reserve plus 8 GiB processing allowance was preserved.
+The broad queue remained stopped. Header epochs, responses, coordinates and
+sampling rates agree with existing StationXML; absolute clock accuracy is untested.
+The permitted trained PhaseNet weights yield 163 P and 922 S picks, but no
+GaMMA association. CUMA has no picks in this window. No new arrival therefore
+enters calibration. CGAU P/S, CLAC S, CREM P/S and CRUS P/S still have one
+training observation each, from the preceding December 12 event. CSOC P/S
+and CUMA P/S remain absent. Available public intervals beyond this bounded
+window have not been exhausted or declared inaccessible.
+
+Six inherited training arrivals remain ambiguous in enlarged raw and filtered
+windows: CFMN P for event 159, CMSN S for 265, CFMN S for 264, and CSFT P,
+CPOZ S and CFMN S for 1055. They are preserved as uncertain and excluded from
+the new fit; no times were forced. Network review of event 1532 places several
+assigned P markers in an earlier decaying packet, without establishing a distinct
+new event. That association is also excluded as uncertain, not declared false.
+After the unchanged event screen, 51 events and 816 arrivals remain; event 159
+fails after its ambiguous P is removed. The selection sensitivity retains
+62 events and 997 arrivals. These are Codex visual reviews, not independent
+human seismologist validation. Other inherited arrivals were not all reviewed.
+
+\paragraph{Numerical diagnosis and refit.}
+Saved 32/64-bit prelocation runs have identical observation, model, station and
+control files. Their first iteration-zero RMS values differ by about
+$2\times10^{-6}$ s. The three-layer prelocation then differs by 0.11 km for
+event 932 near the 3 km interface; the four-layer path reaches a 0.18 km
+difference after its first joint block and 0.65 km later. This is arithmetic
+sensitivity amplified along nonlinear paths, rather than a detected input mismatch.
+The exact ray-branch cause has not been isolated for these updated cohorts.
+An additional native logging defect leaves the aggregate P/S counters
+uninitialized. Those variables are used only for printing; input tokens and
+per-ray records supply the verified counts. No solver equation or binary was
+changed to hide this defect.
+
+All 18 training fits were frozen before evaluating the unchanged 62-event,
+1,065-arrival 2025 set. The same three parameterizations and six sensitivity
+choices were retained. No 2025 data were repicked, reassociated, reweighted or
+used to fit velocities/delays or select a model. The existing evaluation adjusts
+held-out origins and locations with velocities and delays fixed; it tests
+conditional arrival prediction, not independent known-hypocenter accuracy.
+\begin{center}\small\begin{tabular}{lccc}\toprule
+Parameterization & Training RMS (s) & 2025 RMS (s) & All gates\\\midrule
+Four layers, fitted delays & 0.2039 $\to$ 0.1584 & 0.2406 $\to$ 0.2432 & Fail \\
+Three layers, fitted delays & 0.2044 $\to$ 0.1603 & 0.2432 $\to$ 0.2446 & Fail \\
+Three layers, zero delays & 0.2044 $\to$ 0.1981 & 0.2432 $\to$ 0.2271 & Fail \\
+\bottomrule\end{tabular}\end{center}
+No candidate passes every unchanged criterion. The maximum depth changes across
+the registered sensitivities are 1.65, 1.00, 1.09 km in table order.
+The zero-delay case changes by 733 m horizontally and 0.32 km/s in velocity.
+Additional training iterations in that case still move locations by 889 m horizontally and 0.56 km in depth.
+Fixed-model held-out locations also fail the unchanged convergence check.
+The limits remain 100 m horizontally, 0.1 km in depth, 0.05 km/s in velocity
+and 0.02 s in station delay, alongside physical velocities, convergence and
+improved holdout RMS. No failed result is promoted into the catalog or figures.
+
+\paragraph{Depth support and what remains needed.}
+In the zero-delay base fit, 53/363 P, 77/453 S rays extend strictly below 3 km.
+These are model-dependent paths with 0.01 km vertex rounding, not measured depths
+or independent proof of deep resolution. The December 12 event spans 2.70--3.06 km across the fits.
+Independent layerwise travel-time sums agree with serialized residuals to
+0.0050--0.0083 s RMS, subject to rounded native coordinates, velocities and times.
+This is an arithmetic consistency check, not confirmation of phase identity.
+The present observations do not establish a stable profile. Clear pre-2025
+CSOC/CUMA arrivals recorded jointly with the established network are still
+needed, as are repeat events at the seven singly represented station/phase
+combinations. Training associations in coda and events sensitive to layer
+interfaces require further scientific review. More independently constrained
+deep source--receiver paths are needed to test resolution below 3 km; no exact
+number of additional events sufficient for acceptance has been established.
+Logs, decisions, fits, residuals and ray tables are in
+\path{data/velocity_holdout_review/sync_training_review_20261015/}; commands are in
+\path{docs/SYNC_VELOCITY_REVIEW.md}. Earlier runs remain separate checkpoints.

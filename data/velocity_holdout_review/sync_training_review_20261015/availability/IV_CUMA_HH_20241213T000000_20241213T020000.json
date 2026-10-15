@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "net": "IV",
+    "sta": "CUMA",
+    "cha": "HH?",
+    "start": "2024-12-13T00:00:00.000000Z",
+    "end": "2024-12-13T02:00:00.000000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "status": "available",
+  "utc": "2026-10-15T19:51:51.763559Z",
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=CUMA&cha=HH%3F&start=2024-12-13T00%3A00%3A00.000000Z&end=2024-12-13T02%3A00%3A00.000000Z&format=text&show=latestupdate",
+  "file": "inputs/velocity_holdout_review/sync_training_review_20261015/IV_CUMA_HH_20241213T000000_20241213T020000_availability.txt",
+  "sha256": "72c4449a17a8d24fca3669e44016bcb23ef369813f23ddd3f907316bd839c203",
+  "segments": [
+    {
+      "channel": "IV.CUMA..HHE",
+      "start": 1734048000.0,
+      "end": 1734055200.0,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CUMA..HHN",
+      "start": 1734048000.0,
+      "end": 1734055200.0,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CUMA..HHZ",
+      "start": 1734048000.0,
+      "end": 1734055200.0,
+      "sample_rate": 100.0
+    }
+  ]
+}

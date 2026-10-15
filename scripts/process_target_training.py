@@ -53,12 +53,13 @@ def main():
     events.sort(key=lambda e:(e['time'],e['x(km)'],e['y(km)'],e['z(km)']));mapping={e['event_index']:i for i,e in enumerate(events)}
     for i,e in enumerate(events):e['event_index']=i
     assigned=sorted((i,mapping[j],s) for i,j,s in assigned)
-    pd.DataFrame(events).to_csv(out/'initial_events.csv',index=False);pd.DataFrame(assigned,columns=['pick_index','event_index','score']).to_csv(out/'associations.csv',index=False)
+    event_columns=None if events else ['time','event_index','x(km)','y(km)','z(km)','longitude','latitude','num_picks','num_p_picks','num_s_picks']
+    pd.DataFrame(events,columns=event_columns).to_csv(out/'initial_events.csv',index=False);pd.DataFrame(assigned,columns=['pick_index','event_index','score']).to_csv(out/'associations.csv',index=False)
     assert len({i for i,j,s in assigned})==len(assigned)
     dump(out/'summary.json',dict(input_files=len(jobs),picks=len(frame),P=int(frame.phase.eq('P').sum()),S=int(frame.phase.eq('S').sum()),events=len(events),assigned_picks=len(assigned),
         stations=sorted(frame.trace_id.unique()),input_channel_hours=sum(r['end']-r['start'] for r in coverage)/3600,
         configuration_sha256=sha(out/'association_config.json'),weights=identity,base_picks=args.base_picks,
         base_picks_sha256=sha(D/args.base_picks) if args.base_picks else None,
-        scope='Targeted pre-2025 station data; provisional alternative-profile associations. '+('Includes event-selected network tie clips: no completeness/detection-rate claim.' if args.base_picks else 'Calendar-selected six-hour continuous windows only.')))
+        scope='Targeted pre-2025 station data; provisional alternative-profile associations. '+('Includes event-selected network tie clips: no completeness/detection-rate claim.' if args.base_picks else 'Calendar-selected continuous windows only; exact durations in input_jobs.json.')))
 
 if __name__=='__main__':main()

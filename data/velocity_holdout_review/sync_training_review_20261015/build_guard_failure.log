@@ -1,0 +1,11 @@
+Compiling report pass 1
+Compiling report pass 2
+Compiling comparison pass 1
+Compiling comparison pass 2
+Traceback (most recent call last):
+  File "/home/mehffin/campi-flegrei-independent-reproduction/scripts/build_documents.py", line 272, in <module>
+    main()
+  File "/home/mehffin/campi-flegrei-independent-reproduction/scripts/build_documents.py", line 237, in main
+    assert after == before, 'Document build changed protected analysis files.'
+           ^^^^^^^^^^^^^^^
+AssertionError: Document build changed protected analysis files.

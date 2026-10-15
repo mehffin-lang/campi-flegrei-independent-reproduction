@@ -1,7 +1,9 @@
 # Independent Campi Flegrei reproduction
 
 <!-- holdout-review -->
-The latest [targeted training extension](docs/TARGETED_VELOCITY_TRAINING.md) added 216 continuous channel-hours and one reviewed event (20 arrivals), raising training to 53 events/847 arrivals. Seven targeted station/phase gaps gain one observation each; CSOC P/S and CUMA P/S remain unsupported. All 18 predeclared fits ran before the unchanged 2025 holdout was evaluated. The zero-delay trial improves RMS **0.2432 → 0.2272 s**, but depth sensitivity is **1.57 km**; **no profile is validated**. Earlier [52-event tests](docs/VELOCITY_HOLDOUT_REVIEW.md) and empirical panel checkpoints are preserved. Rebuild the [report](report/report.pdf) from saved results with `.venv/bin/python scripts/summarize_training_extension.py` followed by `.venv/bin/python scripts/build_documents.py --clean`.
+The latest [training review and PDF synchronization](docs/SYNC_VELOCITY_REVIEW.md) adds 36 continuous channel-hours and 1,085 picks, but no new association. Six ambiguous training arrivals and one uncertain coda association are excluded; the unchanged event screen leaves **51 events/816 arrivals**. All 18 fits ran before evaluating the unchanged 2025 arrivals. The zero-delay trial changes holdout RMS **0.2432 → 0.2271 s**, but depth sensitivity is **1.09 km**, with **0.56 km** change under additional training iterations. **No profile is validated.** CSOC/CUMA P/S remain absent; seven other target pairs retain one observation each. Both PDFs use the same current figure files and 63 panel statuses, with hashes and timestamps in `report/document_build.json`. Rebuild the [report](report/report.pdf) and [comparison](report/comparison.pdf) from saved results with `.venv/bin/python scripts/present_velocity_sync_review.py` followed by `.venv/bin/python scripts/build_documents.py --clean`.
+
+The preceding [53-event training extension](docs/TARGETED_VELOCITY_TRAINING.md), earlier [52-event tests](docs/VELOCITY_HOLDOUT_REVIEW.md), and empirical panel checkpoints are preserved.
 <!-- /holdout-review -->
 
 <!-- availability-current -->

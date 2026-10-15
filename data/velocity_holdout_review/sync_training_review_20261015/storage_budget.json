@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-15T16:28:18.600120+00:00",
+  "disk": {
+    "total": 1984636002304,
+    "used": 1838638088192,
+    "free": 145997914112
+  },
+  "reserve_bytes": 42949672960,
+  "reason": "Conservative fixed 40 GiB reserve exceeds the existing 20 GiB guard and 20 percent of initial free space; includes processing headroom.",
+  "baseline_commit": "2ee4f6d52cc3cee45b954b70f0c6689d11ec317c",
+  "processing_headroom_bytes": 8589934592,
+  "headroom_reason": "Keep an additional 8 GiB above the fixed 40 GiB reserve for inference caches, frozen tables and later fitting. The protected reserve is not reduced."
+}

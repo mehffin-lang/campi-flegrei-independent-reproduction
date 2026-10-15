@@ -31,7 +31,7 @@
     "S15"
   ],
   "comparison_pages": 19,
-  "report_pages": 71,
+  "report_pages": 73,
   "section_pages": {
     "Main paper": 1,
     "Reproduced supplement": 7,
@@ -41,8 +41,889 @@
   "unrelated_comparison_figures": false,
   "build_passed": true,
   "analysis_executed": false,
+  "built_at_utc": "2026-10-15T20:04:02.582569+00:00",
+  "pdf_file_times_utc": {
+    "report.pdf": "2026-10-15T20:03:48.514856+00:00",
+    "comparison.pdf": "2026-10-15T20:03:49.473856+00:00"
+  },
+  "synchronization_inputs_sha256": {
+    "report/figure_layout.json": "849a43f3df8a6fc5cc23c4f5daec897c8af40f6df0bfc3134a96f412eb7fb914",
+    "docs/panel_record.json": "0bed59e7c5acf9d329eec5cbb1648916cde925267827416f917ff110aecf2914",
+    "docs/panels.json": "0bed59e7c5acf9d329eec5cbb1648916cde925267827416f917ff110aecf2914"
+  },
+  "comparison_matches_report_all_panels": true,
+  "panel_synchronization": [
+    {
+      "panel": "1A",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_1_combined.pdf",
+      "shared_figure_sha256": "7ca67f665f2cf451c5c3ccff8db6fb0f4aaa64f889f4a41e7fc1cb27b29dbb02",
+      "saved_numerical_sha256": {
+        "data/continuation/figure_1A.csv": "4adc37ce0c534961f17a90e3310788bde3a137b5c16d76c4370d806b8a04e6c1"
+      },
+      "data_command": ".venv/bin/python scripts/continue_context.py",
+      "plot_command": ".venv/bin/python scripts/publication_plots.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "1B",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_1_combined.pdf",
+      "shared_figure_sha256": "7ca67f665f2cf451c5c3ccff8db6fb0f4aaa64f889f4a41e7fc1cb27b29dbb02",
+      "saved_numerical_sha256": {
+        "data/continuation/rite_gnss.csv": "00ab05b594a1fa5f655a8f35cf6cdecb59fd523ee88aa140b603d2ac94a0eec6",
+        "data/continuation/historical_leveling.csv": "64527b24e117b7d7715bb1d75bd05e2bc991bac8bf20cb3140ede50521ccb1aa"
+      },
+      "data_command": ".venv/bin/python scripts/continue_context.py",
+      "plot_command": ".venv/bin/python scripts/publication_plots.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "1C",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_1_combined.pdf",
+      "shared_figure_sha256": "7ca67f665f2cf451c5c3ccff8db6fb0f4aaa64f889f4a41e7fc1cb27b29dbb02",
+      "saved_numerical_sha256": {
+        "data/continuation/figure_1C.csv": "d745981459c6f16cbbfd29118bf6832a1432f3351b3c71f2fbbb9a62fa5a5420",
+        "data/continuation/figure_1C_cumulative.csv": "5be4f3876d5048352cfd09fb8dc08af008f72c73a02528b8c79b54bb2efac08f"
+      },
+      "data_command": ".venv/bin/python scripts/continue_context.py",
+      "plot_command": ".venv/bin/python scripts/publication_plots.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "2A",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_2_eida_followup.pdf",
+      "shared_figure_sha256": "bfb722a68c220621b431f838e17f806c44ac75bd8a2df5d690eb68f3057b6a3a",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/weekly_counts.csv": "925e3b43e01c5a21ab369e9a021db672b52f27c51f59eeb627a8e2099c61fdb2",
+        "data/eida_continuation/calibration/merged4/panels/sectors.csv": "b78f2e1558bd645f66d81bd8a2ffb02018e15498f5abd4e66122bacd89a7c14d"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "2B",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_2_eida_followup.pdf",
+      "shared_figure_sha256": "bfb722a68c220621b431f838e17f806c44ac75bd8a2df5d690eb68f3057b6a3a",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/weekly_counts.csv": "925e3b43e01c5a21ab369e9a021db672b52f27c51f59eeb627a8e2099c61fdb2",
+        "data/eida_continuation/calibration/merged4/panels/sectors.csv": "b78f2e1558bd645f66d81bd8a2ffb02018e15498f5abd4e66122bacd89a7c14d"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "3/map",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_3_eida_followup.pdf",
+      "shared_figure_sha256": "68842c1c71acbe5f254178a54992e16676c0507b52ca44f483cbc1c33873399d",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/relocated.csv": "77e6a5de78019055f830180cfda3ef548e3f3166819b115552b679933d0405c2"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "3/northing-depth",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_3_eida_followup.pdf",
+      "shared_figure_sha256": "68842c1c71acbe5f254178a54992e16676c0507b52ca44f483cbc1c33873399d",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/relocated.csv": "77e6a5de78019055f830180cfda3ef548e3f3166819b115552b679933d0405c2"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "3/easting-depth",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_3_eida_followup.pdf",
+      "shared_figure_sha256": "68842c1c71acbe5f254178a54992e16676c0507b52ca44f483cbc1c33873399d",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/relocated.csv": "77e6a5de78019055f830180cfda3ef548e3f3166819b115552b679933d0405c2"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "4A",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_4_eida_followup.pdf",
+      "shared_figure_sha256": "c12dea16edc8cf7c3da7347d4bee6543451f868038a2cf90984c7c8f85b26a0b",
+      "saved_numerical_sha256": {
+        "data/mechanism_eida/gcap/solutions.csv": "00cec15ab0cf6b9c074c25a43445583ee5b30d6c8e565e6d9e3cf4bd6a1d3a64",
+        "data/mechanism_eida/gcap_1_5/solutions.csv": "4b495545c42d37db2310e40b2b57cb0eea43f86e02fa9e9bb0b5ba536a21e6d2",
+        "data/mechanism_eida/candidate_requirements.csv": "96436107e8b823d7443301a2b6e84c13d5280b2e60dd43ce6a16375573aa0f8c"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "4B",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_4_eida_followup.pdf",
+      "shared_figure_sha256": "c12dea16edc8cf7c3da7347d4bee6543451f868038a2cf90984c7c8f85b26a0b",
+      "saved_numerical_sha256": {
+        "data/mechanism_eida/gcap/solutions.csv": "00cec15ab0cf6b9c074c25a43445583ee5b30d6c8e565e6d9e3cf4bd6a1d3a64",
+        "data/mechanism_eida/gcap_1_5/solutions.csv": "4b495545c42d37db2310e40b2b57cb0eea43f86e02fa9e9bb0b5ba536a21e6d2",
+        "data/mechanism_eida/candidate_requirements.csv": "96436107e8b823d7443301a2b6e84c13d5280b2e60dd43ce6a16375573aa0f8c"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S1",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/coverage_availability_extension.pdf",
+      "shared_figure_sha256": "30db3c2e4a30b6faadbf816b8ca8b0d1a19d9938e8aea2318addbd48fb31ff39",
+      "saved_numerical_sha256": {
+        "data/availability_extension/catalog_december/processed_coverage_union.json": "59a94faaf93ea18ab4ce64a265a7814fb58c5dde25187c818efee78758168593"
+      },
+      "data_command": "CF_AVAIL_CATALOG=data/availability_extension/catalog_december .venv/bin/python scripts/process_availability_extension.py --workers 4",
+      "plot_command": ".venv/bin/python scripts/plot_observational_profile.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S2",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/continuation_stations.pdf",
+      "shared_figure_sha256": "b663540f8648deb915737da40d2b41ec1bceea312f72adb58c644ffc2bb0113b",
+      "saved_numerical_sha256": {
+        "data/continuation/figure_S2.csv": "359228191a58b32d3745b5aa4a4997403149da5ba70a572a24f0669af544196c",
+        "data/continuation/station_geometry_qa.csv": "359228191a58b32d3745b5aa4a4997403149da5ba70a572a24f0669af544196c",
+        "data/continuation/station_geometry_epochs.csv": "7df720a5587f57ad4c855965c29f65d7c2269ed92867939100b02f81072f00ca"
+      },
+      "data_command": ".venv/bin/python scripts/station_geometry.py",
+      "plot_command": ".venv/bin/python scripts/publication_plots.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S3A",
+      "status": "not reproduced",
+      "generated_result_shown": false,
+      "shared_figure": null,
+      "shared_figure_sha256": null,
+      "saved_numerical_sha256": {},
+      "data_command": null,
+      "plot_command": null,
+      "missing_explanation": "Panels A--D require the specified training traces, annotations and augmentation examples. These were not reconstructed; downstream use of trained weights is not retraining."
+    },
+    {
+      "panel": "S3B",
+      "status": "not reproduced",
+      "generated_result_shown": false,
+      "shared_figure": null,
+      "shared_figure_sha256": null,
+      "saved_numerical_sha256": {},
+      "data_command": null,
+      "plot_command": null,
+      "missing_explanation": "Panels A--D require the specified training traces, annotations and augmentation examples. These were not reconstructed; downstream use of trained weights is not retraining."
+    },
+    {
+      "panel": "S3C",
+      "status": "not reproduced",
+      "generated_result_shown": false,
+      "shared_figure": null,
+      "shared_figure_sha256": null,
+      "saved_numerical_sha256": {},
+      "data_command": null,
+      "plot_command": null,
+      "missing_explanation": "Panels A--D require the specified training traces, annotations and augmentation examples. These were not reconstructed; downstream use of trained weights is not retraining."
+    },
+    {
+      "panel": "S3D",
+      "status": "not reproduced",
+      "generated_result_shown": false,
+      "shared_figure": null,
+      "shared_figure_sha256": null,
+      "saved_numerical_sha256": {},
+      "data_command": null,
+      "plot_command": null,
+      "missing_explanation": "Panels A--D require the specified training traces, annotations and augmentation examples. These were not reconstructed; downstream use of trained weights is not retraining."
+    },
+    {
+      "panel": "S4A",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S4A.pdf",
+      "shared_figure_sha256": "0ad07d2bf9bb6db2e2b00548aa1cdc5ae94e4903486ead416f7480f68fb042b3",
+      "saved_numerical_sha256": {
+        "data/continuation/figure_S4A.npz": "a47e46e7df9f47a82fc55eb8ff1da74be815c967c123263ad37ceceb0770370b",
+        "data/continuation/figure_S4A_picks.json": "10030373709f2398f0c1dc3d8e761a45be8b4766f9883f542eee1cf5084d4263"
+      },
+      "data_command": ".venv/bin/python scripts/benchmark_window.py",
+      "plot_command": ".venv/bin/python scripts/publication_plots.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S4B",
+      "status": "not reproduced",
+      "generated_result_shown": false,
+      "shared_figure": null,
+      "shared_figure_sha256": null,
+      "saved_numerical_sha256": {},
+      "data_command": null,
+      "plot_command": null,
+      "missing_explanation": "S4B: exact CMIS noise-window timing and reference labels are unavailable. Other calendar-window diagnostics are not inserted as that panel."
+    },
+    {
+      "panel": "S5/map",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S5_routine.pdf",
+      "shared_figure_sha256": "36cb8ba439a324135b91fa8af3f33159e720b74bbcdb5d507e9e0c3f22a3b1bc",
+      "saved_numerical_sha256": {
+        "data/continuation/figure_S5.csv": "70d4d9e2007100017028a8a0c40e1a9e33b85977d715063eae078a998e2560e0"
+      },
+      "data_command": ".venv/bin/python scripts/continue_context.py",
+      "plot_command": ".venv/bin/python scripts/publication_plots.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S5/northing-depth",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S5_routine.pdf",
+      "shared_figure_sha256": "36cb8ba439a324135b91fa8af3f33159e720b74bbcdb5d507e9e0c3f22a3b1bc",
+      "saved_numerical_sha256": {
+        "data/continuation/figure_S5.csv": "70d4d9e2007100017028a8a0c40e1a9e33b85977d715063eae078a998e2560e0"
+      },
+      "data_command": ".venv/bin/python scripts/continue_context.py",
+      "plot_command": ".venv/bin/python scripts/publication_plots.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S5/easting-depth",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S5_routine.pdf",
+      "shared_figure_sha256": "36cb8ba439a324135b91fa8af3f33159e720b74bbcdb5d507e9e0c3f22a3b1bc",
+      "saved_numerical_sha256": {
+        "data/continuation/figure_S5.csv": "70d4d9e2007100017028a8a0c40e1a9e33b85977d715063eae078a998e2560e0"
+      },
+      "data_command": ".venv/bin/python scripts/continue_context.py",
+      "plot_command": ".venv/bin/python scripts/publication_plots.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S6/map",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S6_availability_extension.pdf",
+      "shared_figure_sha256": "28e393fac09cf6b1e0f6b0309c141f6156af68f4d48183a8351fda11b49e6b5a",
+      "saved_numerical_sha256": {
+        "data/availability_extension/catalog_december/locations_canonical/panels/velest.csv": "bfb28c246933eeb99e5d201e7c7f88563dcd7b7c132323f17709bd1f10ccf095"
+      },
+      "data_command": ".venv/bin/python scripts/locate_observational_profile.py --observations data/availability_extension/catalog_december --profile data/availability_extension/velocity_december --result-name locations_canonical",
+      "plot_command": ".venv/bin/python scripts/plot_observational_profile.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S6/northing-depth",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S6_availability_extension.pdf",
+      "shared_figure_sha256": "28e393fac09cf6b1e0f6b0309c141f6156af68f4d48183a8351fda11b49e6b5a",
+      "saved_numerical_sha256": {
+        "data/availability_extension/catalog_december/locations_canonical/panels/velest.csv": "bfb28c246933eeb99e5d201e7c7f88563dcd7b7c132323f17709bd1f10ccf095"
+      },
+      "data_command": ".venv/bin/python scripts/locate_observational_profile.py --observations data/availability_extension/catalog_december --profile data/availability_extension/velocity_december --result-name locations_canonical",
+      "plot_command": ".venv/bin/python scripts/plot_observational_profile.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S6/easting-depth",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S6_availability_extension.pdf",
+      "shared_figure_sha256": "28e393fac09cf6b1e0f6b0309c141f6156af68f4d48183a8351fda11b49e6b5a",
+      "saved_numerical_sha256": {
+        "data/availability_extension/catalog_december/locations_canonical/panels/velest.csv": "bfb28c246933eeb99e5d201e7c7f88563dcd7b7c132323f17709bd1f10ccf095"
+      },
+      "data_command": ".venv/bin/python scripts/locate_observational_profile.py --observations data/availability_extension/catalog_december --profile data/availability_extension/velocity_december --result-name locations_canonical",
+      "plot_command": ".venv/bin/python scripts/plot_observational_profile.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S7A/map",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S7_eida_followup.pdf",
+      "shared_figure_sha256": "aac13eda82798ebf2f83409f6d92a17f3216a0d854844cd1d9309d796b597379",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv": "fa101463aea48da883955b8b5ff4f46cf7318691b57f8d1f326d8d6122431667"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S7A/easting-depth",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S7_eida_followup.pdf",
+      "shared_figure_sha256": "aac13eda82798ebf2f83409f6d92a17f3216a0d854844cd1d9309d796b597379",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv": "fa101463aea48da883955b8b5ff4f46cf7318691b57f8d1f326d8d6122431667"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S7B",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S7_eida_followup.pdf",
+      "shared_figure_sha256": "aac13eda82798ebf2f83409f6d92a17f3216a0d854844cd1d9309d796b597379",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv": "fa101463aea48da883955b8b5ff4f46cf7318691b57f8d1f326d8d6122431667"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S7D",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S7_eida_followup.pdf",
+      "shared_figure_sha256": "aac13eda82798ebf2f83409f6d92a17f3216a0d854844cd1d9309d796b597379",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv": "fa101463aea48da883955b8b5ff4f46cf7318691b57f8d1f326d8d6122431667"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S7F",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S7_eida_followup.pdf",
+      "shared_figure_sha256": "aac13eda82798ebf2f83409f6d92a17f3216a0d854844cd1d9309d796b597379",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv": "fa101463aea48da883955b8b5ff4f46cf7318691b57f8d1f326d8d6122431667"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S7C",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S7_eida_followup.pdf",
+      "shared_figure_sha256": "aac13eda82798ebf2f83409f6d92a17f3216a0d854844cd1d9309d796b597379",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv": "fa101463aea48da883955b8b5ff4f46cf7318691b57f8d1f326d8d6122431667"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S7E",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S7_eida_followup.pdf",
+      "shared_figure_sha256": "aac13eda82798ebf2f83409f6d92a17f3216a0d854844cd1d9309d796b597379",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv": "fa101463aea48da883955b8b5ff4f46cf7318691b57f8d1f326d8d6122431667"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S7G",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S7_eida_followup.pdf",
+      "shared_figure_sha256": "aac13eda82798ebf2f83409f6d92a17f3216a0d854844cd1d9309d796b597379",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/uncertainty/regional_svd.csv": "fa101463aea48da883955b8b5ff4f46cf7318691b57f8d1f326d8d6122431667"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S8A",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S8_eida_followup.pdf",
+      "shared_figure_sha256": "eaf13a5d3050df4f5eaabe9bc0cb8aa4dbc7ba148145d6ab06803e8bd46eaf5e",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/magnitude/figure_S8A.csv": "1e39077108107f752d7e3506068caeb8eaf834149f205d3a64992357e766eccf",
+        "data/eida_continuation/calibration/merged4/magnitude/figure_S8B.csv": "d24b18160ac379d27adbb0aa3e200dd150dfc8833897f1fca0de81bf03b625d7"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S8B",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S8_eida_followup.pdf",
+      "shared_figure_sha256": "eaf13a5d3050df4f5eaabe9bc0cb8aa4dbc7ba148145d6ab06803e8bd46eaf5e",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/magnitude/figure_S8A.csv": "1e39077108107f752d7e3506068caeb8eaf834149f205d3a64992357e766eccf",
+        "data/eida_continuation/calibration/merged4/magnitude/figure_S8B.csv": "d24b18160ac379d27adbb0aa3e200dd150dfc8833897f1fca0de81bf03b625d7"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S9/map",
+      "status": "not reproduced",
+      "generated_result_shown": false,
+      "shared_figure": null,
+      "shared_figure_sha256": null,
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/best_located.csv": "2214cd41d20dd741e7ee52101c93e75e0a3d8babbc4d4c610224c79f997eb3c5"
+      },
+      "data_command": ".venv/bin/python scripts/calibrate_eida_followup.py",
+      "plot_command": null,
+      "missing_explanation": "No own retained event satisfies NCCP+NCCS >=100; no coordinates can be plotted for this selection."
+    },
+    {
+      "panel": "S9/northing-depth",
+      "status": "not reproduced",
+      "generated_result_shown": false,
+      "shared_figure": null,
+      "shared_figure_sha256": null,
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/best_located.csv": "2214cd41d20dd741e7ee52101c93e75e0a3d8babbc4d4c610224c79f997eb3c5"
+      },
+      "data_command": ".venv/bin/python scripts/calibrate_eida_followup.py",
+      "plot_command": null,
+      "missing_explanation": "No own retained event satisfies NCCP+NCCS >=100; no coordinates can be plotted for this selection."
+    },
+    {
+      "panel": "S9/easting-depth",
+      "status": "not reproduced",
+      "generated_result_shown": false,
+      "shared_figure": null,
+      "shared_figure_sha256": null,
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/best_located.csv": "2214cd41d20dd741e7ee52101c93e75e0a3d8babbc4d4c610224c79f997eb3c5"
+      },
+      "data_command": ".venv/bin/python scripts/calibrate_eida_followup.py",
+      "plot_command": null,
+      "missing_explanation": "No own retained event satisfies NCCP+NCCS >=100; no coordinates can be plotted for this selection."
+    },
+    {
+      "panel": "S10/2022",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S10_eida_followup.pdf",
+      "shared_figure_sha256": "4531800f00d3dcf19fa7d32ca455bf558478301df01c1422b0123a043d6fc863",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/relocated.csv": "77e6a5de78019055f830180cfda3ef548e3f3166819b115552b679933d0405c2"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S10/2023",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S10_eida_followup.pdf",
+      "shared_figure_sha256": "4531800f00d3dcf19fa7d32ca455bf558478301df01c1422b0123a043d6fc863",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/relocated.csv": "77e6a5de78019055f830180cfda3ef548e3f3166819b115552b679933d0405c2"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S10/2024",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S10_eida_followup.pdf",
+      "shared_figure_sha256": "4531800f00d3dcf19fa7d32ca455bf558478301df01c1422b0123a043d6fc863",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/relocated.csv": "77e6a5de78019055f830180cfda3ef548e3f3166819b115552b679933d0405c2"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S10/2025",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S10_eida_followup.pdf",
+      "shared_figure_sha256": "4531800f00d3dcf19fa7d32ca455bf558478301df01c1422b0123a043d6fc863",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/relocated.csv": "77e6a5de78019055f830180cfda3ef548e3f3166819b115552b679933d0405c2"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S11/swarm-1",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S11_eida_followup.pdf",
+      "shared_figure_sha256": "5baed5b394b31c2f3f74ca738fcbd676e6148ea568b27bab34a975cafab8d54b",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/swarm-1.csv": "b45db72c5de69f01500cbb0fe9b71c4f35a2375fc3a1fbacf915a92b506dee36",
+        "data/eida_continuation/calibration/merged4/panels/swarm-2.csv": "6eb2d886332faf1148017a88fcb84965d374888f3fe5be26f2342ce0921f512c",
+        "data/eida_continuation/calibration/merged4/panels/swarm-3.csv": "76e372744abe1cf6de99e94718c83d64f80d08ce260ce60dfd768f50039a520b",
+        "data/eida_continuation/calibration/merged4/panels/swarm-4.csv": "2214cd41d20dd741e7ee52101c93e75e0a3d8babbc4d4c610224c79f997eb3c5"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S11/swarm-2",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S11_eida_followup.pdf",
+      "shared_figure_sha256": "5baed5b394b31c2f3f74ca738fcbd676e6148ea568b27bab34a975cafab8d54b",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/swarm-1.csv": "b45db72c5de69f01500cbb0fe9b71c4f35a2375fc3a1fbacf915a92b506dee36",
+        "data/eida_continuation/calibration/merged4/panels/swarm-2.csv": "6eb2d886332faf1148017a88fcb84965d374888f3fe5be26f2342ce0921f512c",
+        "data/eida_continuation/calibration/merged4/panels/swarm-3.csv": "76e372744abe1cf6de99e94718c83d64f80d08ce260ce60dfd768f50039a520b",
+        "data/eida_continuation/calibration/merged4/panels/swarm-4.csv": "2214cd41d20dd741e7ee52101c93e75e0a3d8babbc4d4c610224c79f997eb3c5"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S11/swarm-3",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S11_eida_followup.pdf",
+      "shared_figure_sha256": "5baed5b394b31c2f3f74ca738fcbd676e6148ea568b27bab34a975cafab8d54b",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/swarm-1.csv": "b45db72c5de69f01500cbb0fe9b71c4f35a2375fc3a1fbacf915a92b506dee36",
+        "data/eida_continuation/calibration/merged4/panels/swarm-2.csv": "6eb2d886332faf1148017a88fcb84965d374888f3fe5be26f2342ce0921f512c",
+        "data/eida_continuation/calibration/merged4/panels/swarm-3.csv": "76e372744abe1cf6de99e94718c83d64f80d08ce260ce60dfd768f50039a520b",
+        "data/eida_continuation/calibration/merged4/panels/swarm-4.csv": "2214cd41d20dd741e7ee52101c93e75e0a3d8babbc4d4c610224c79f997eb3c5"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S11/swarm-4",
+      "status": "not reproduced",
+      "generated_result_shown": false,
+      "shared_figure": "figures/figure_S11_eida_followup.pdf",
+      "shared_figure_sha256": "5baed5b394b31c2f3f74ca738fcbd676e6148ea568b27bab34a975cafab8d54b",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/swarm-1.csv": "b45db72c5de69f01500cbb0fe9b71c4f35a2375fc3a1fbacf915a92b506dee36",
+        "data/eida_continuation/calibration/merged4/panels/swarm-2.csv": "6eb2d886332faf1148017a88fcb84965d374888f3fe5be26f2342ce0921f512c",
+        "data/eida_continuation/calibration/merged4/panels/swarm-3.csv": "76e372744abe1cf6de99e94718c83d64f80d08ce260ce60dfd768f50039a520b",
+        "data/eida_continuation/calibration/merged4/panels/swarm-4.csv": "2214cd41d20dd741e7ee52101c93e75e0a3d8babbc4d4c610224c79f997eb3c5"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": "S11/swarm-4: no retained independently relocated event in these written calendar windows. Check the coverage and selection ledgers; this is not evidence of no earthquakes."
+    },
+    {
+      "panel": "S12A",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S12_eida_followup.pdf",
+      "shared_figure_sha256": "bedf30f3a6a59369ef9ba87f4c5c746eff0f4f7068527729bbabf8e0e0c499e9",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/cpoz_index.csv": "a70348e01ac1231706d6b3dbbf14c941a7f67b8fc0806ef5096a2b061987f402",
+        "data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz": "19ea5704942461579a8eaa399fcec4f2d8d6279f22bdc33058a42abae3db68d6",
+        "data/eida_continuation/calibration/merged4/panels/sectors.csv": "b78f2e1558bd645f66d81bd8a2ffb02018e15498f5abd4e66122bacd89a7c14d"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S12B",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S12_eida_followup.pdf",
+      "shared_figure_sha256": "bedf30f3a6a59369ef9ba87f4c5c746eff0f4f7068527729bbabf8e0e0c499e9",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/cpoz_index.csv": "a70348e01ac1231706d6b3dbbf14c941a7f67b8fc0806ef5096a2b061987f402",
+        "data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz": "19ea5704942461579a8eaa399fcec4f2d8d6279f22bdc33058a42abae3db68d6",
+        "data/eida_continuation/calibration/merged4/panels/sectors.csv": "b78f2e1558bd645f66d81bd8a2ffb02018e15498f5abd4e66122bacd89a7c14d"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S12C",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S12_eida_followup.pdf",
+      "shared_figure_sha256": "bedf30f3a6a59369ef9ba87f4c5c746eff0f4f7068527729bbabf8e0e0c499e9",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/cpoz_index.csv": "a70348e01ac1231706d6b3dbbf14c941a7f67b8fc0806ef5096a2b061987f402",
+        "data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz": "19ea5704942461579a8eaa399fcec4f2d8d6279f22bdc33058a42abae3db68d6",
+        "data/eida_continuation/calibration/merged4/panels/sectors.csv": "b78f2e1558bd645f66d81bd8a2ffb02018e15498f5abd4e66122bacd89a7c14d"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S12D",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S12_eida_followup.pdf",
+      "shared_figure_sha256": "bedf30f3a6a59369ef9ba87f4c5c746eff0f4f7068527729bbabf8e0e0c499e9",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/cpoz_index.csv": "a70348e01ac1231706d6b3dbbf14c941a7f67b8fc0806ef5096a2b061987f402",
+        "data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz": "19ea5704942461579a8eaa399fcec4f2d8d6279f22bdc33058a42abae3db68d6",
+        "data/eida_continuation/calibration/merged4/panels/sectors.csv": "b78f2e1558bd645f66d81bd8a2ffb02018e15498f5abd4e66122bacd89a7c14d"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S12E",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S12_eida_followup.pdf",
+      "shared_figure_sha256": "bedf30f3a6a59369ef9ba87f4c5c746eff0f4f7068527729bbabf8e0e0c499e9",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/cpoz_index.csv": "a70348e01ac1231706d6b3dbbf14c941a7f67b8fc0806ef5096a2b061987f402",
+        "data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz": "19ea5704942461579a8eaa399fcec4f2d8d6279f22bdc33058a42abae3db68d6",
+        "data/eida_continuation/calibration/merged4/panels/sectors.csv": "b78f2e1558bd645f66d81bd8a2ffb02018e15498f5abd4e66122bacd89a7c14d"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S12F",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S12_eida_followup.pdf",
+      "shared_figure_sha256": "bedf30f3a6a59369ef9ba87f4c5c746eff0f4f7068527729bbabf8e0e0c499e9",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/cpoz_index.csv": "a70348e01ac1231706d6b3dbbf14c941a7f67b8fc0806ef5096a2b061987f402",
+        "data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz": "19ea5704942461579a8eaa399fcec4f2d8d6279f22bdc33058a42abae3db68d6",
+        "data/eida_continuation/calibration/merged4/panels/sectors.csv": "b78f2e1558bd645f66d81bd8a2ffb02018e15498f5abd4e66122bacd89a7c14d"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S12G",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S12_eida_followup.pdf",
+      "shared_figure_sha256": "bedf30f3a6a59369ef9ba87f4c5c746eff0f4f7068527729bbabf8e0e0c499e9",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/cpoz_index.csv": "a70348e01ac1231706d6b3dbbf14c941a7f67b8fc0806ef5096a2b061987f402",
+        "data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz": "19ea5704942461579a8eaa399fcec4f2d8d6279f22bdc33058a42abae3db68d6",
+        "data/eida_continuation/calibration/merged4/panels/sectors.csv": "b78f2e1558bd645f66d81bd8a2ffb02018e15498f5abd4e66122bacd89a7c14d"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S12H",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S12_eida_followup.pdf",
+      "shared_figure_sha256": "bedf30f3a6a59369ef9ba87f4c5c746eff0f4f7068527729bbabf8e0e0c499e9",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/cpoz_index.csv": "a70348e01ac1231706d6b3dbbf14c941a7f67b8fc0806ef5096a2b061987f402",
+        "data/eida_continuation/calibration/merged4/panels/cpoz_gathers.npz": "19ea5704942461579a8eaa399fcec4f2d8d6279f22bdc33058a42abae3db68d6",
+        "data/eida_continuation/calibration/merged4/panels/sectors.csv": "b78f2e1558bd645f66d81bd8a2ffb02018e15498f5abd4e66122bacd89a7c14d"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S13A",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S13_eida_followup.pdf",
+      "shared_figure_sha256": "57c8c9006a45123e8d228fd8c99985bfcce0628a110fecde30ab1cca72f44da3",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/relocated.csv": "77e6a5de78019055f830180cfda3ef548e3f3166819b115552b679933d0405c2"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S13B",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S13_eida_followup.pdf",
+      "shared_figure_sha256": "57c8c9006a45123e8d228fd8c99985bfcce0628a110fecde30ab1cca72f44da3",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/calibration/merged4/panels/relocated.csv": "77e6a5de78019055f830180cfda3ef548e3f3166819b115552b679933d0405c2"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S14/1",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S14_eida_followup.pdf",
+      "shared_figure_sha256": "dee5db52513e25e9e60a88188a48447a7f0ea806ed3ace8f829a4767da9c9826",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/hybrid/display_candidates.csv": "57173d13f80d487661ecc703912a9b80798c05f824f153027925a0d9086a195f",
+        "data/eida_continuation/hybrid/display_waveforms.npz": "c98fd72220e76adb26fa4160a24b8cb1315f4ec8b130298f6b7781b0428ba041"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S14/2",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S14_eida_followup.pdf",
+      "shared_figure_sha256": "dee5db52513e25e9e60a88188a48447a7f0ea806ed3ace8f829a4767da9c9826",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/hybrid/display_candidates.csv": "57173d13f80d487661ecc703912a9b80798c05f824f153027925a0d9086a195f",
+        "data/eida_continuation/hybrid/display_waveforms.npz": "c98fd72220e76adb26fa4160a24b8cb1315f4ec8b130298f6b7781b0428ba041"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S14/3",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S14_eida_followup.pdf",
+      "shared_figure_sha256": "dee5db52513e25e9e60a88188a48447a7f0ea806ed3ace8f829a4767da9c9826",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/hybrid/display_candidates.csv": "57173d13f80d487661ecc703912a9b80798c05f824f153027925a0d9086a195f",
+        "data/eida_continuation/hybrid/display_waveforms.npz": "c98fd72220e76adb26fa4160a24b8cb1315f4ec8b130298f6b7781b0428ba041"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S14/unclustered",
+      "status": "not reproduced",
+      "generated_result_shown": false,
+      "shared_figure": "figures/figure_S14_eida_followup.pdf",
+      "shared_figure_sha256": "dee5db52513e25e9e60a88188a48447a7f0ea806ed3ace8f829a4767da9c9826",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/hybrid/display_candidates.csv": "57173d13f80d487661ecc703912a9b80798c05f824f153027925a0d9086a195f",
+        "data/eida_continuation/hybrid/display_waveforms.npz": "c98fd72220e76adb26fa4160a24b8cb1315f4ec8b130298f6b7781b0428ba041"
+      },
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": "S14/unclustered: no independent unclustered hybrid sample or validated family assignment. The three-template threshold scan cannot itself supply that class."
+    },
+    {
+      "panel": "S15A",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/hybrid_E1.pdf",
+      "shared_figure_sha256": "1ee253db6ea9fdd0007d0265dfe8c22c9d05c82388378dbd015f44c02c810ed4",
+      "saved_numerical_sha256": {
+        "data/observations/E1_waveforms.csv": "d064c5a33f1da547af1dbd1cabfdd8386b73989e5559bc08503d729ed8290f34",
+        "data/observations/E1_CAAM_Z_spectrum.npz": "4ee5c33f713ad436e8217372c0de02ee5fc048a94aedd639e25dd4b7331100f3",
+        "data/observations/E1_CAAM_E_spectrum.npz": "2c8ea3d1ade6aa70508388370a5cb5d9ad853038850e91ca8934e36ec93624a7",
+        "data/observations/E1_COLB_Z_spectrum.npz": "8ad20193c9fef2ccc50f963edd59e0a186ef0cd25ab10a031d814c1afb392742",
+        "data/observations/E1_COLB_E_spectrum.npz": "24499870264977880a3f7722f1c82695229c06a933750fd4d33b985abff8696a"
+      },
+      "data_command": ".venv/bin/python scripts/analyze_observations.py",
+      "plot_command": ".venv/bin/python scripts/publication_plots.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S15B",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/hybrid_E2.pdf",
+      "shared_figure_sha256": "6fc60146fe32df8f7ccc94d2b6fb04961dc9587406715a972bd2c9c1daf87b36",
+      "saved_numerical_sha256": {
+        "data/observations/E2_waveforms.csv": "47345e0804b90bac0ab1d340cd815d5f3e6823ca0290eff424d98fa25111dd90",
+        "data/observations/E2_CAAM_Z_spectrum.npz": "05ee63b677630852bb6195fd15051cd9f0f10d12708b28461d25e98e6b4c8f70",
+        "data/observations/E2_CAAM_E_spectrum.npz": "937d75635a0fef2c9f96af4da56688e3c37dcd18feb5df2d0f020707c13fe098",
+        "data/observations/E2_COLB_Z_spectrum.npz": "ae36906a1b7de2f790ec1e6fe036ccaf75a9de41cb85e0f2427a9fb3c9245111",
+        "data/observations/E2_COLB_E_spectrum.npz": "c6576ac2c9cfa4d75386439c842d1075b9b2746922acdadfbda8dd37e9d07329"
+      },
+      "data_command": ".venv/bin/python scripts/analyze_observations.py",
+      "plot_command": ".venv/bin/python scripts/publication_plots.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S15C",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/hybrid_E3.pdf",
+      "shared_figure_sha256": "29df99cb05bd548c248fe20eb728328dd020a1add0d1653ae7a57bafcb96d956",
+      "saved_numerical_sha256": {
+        "data/observations/E3_waveforms.csv": "b962ea04bf891b3c9da67b0f61004825801482b81aa4e7aaf4d96c69be313e7f",
+        "data/observations/E3_CAAM_Z_spectrum.npz": "7100d42a3ce3ac1b460a56a4b53c830542093cb4be4056383449ab65527452e8",
+        "data/observations/E3_CAAM_E_spectrum.npz": "98d177920e528c8a9df783aa870862bd0f77925069d4690a28af710bedd0127d",
+        "data/observations/E3_COLB_Z_spectrum.npz": "646371f8a278459b608fd1f5e7701a297b2db61ef9e7829b845e3d580688e45f",
+        "data/observations/E3_COLB_E_spectrum.npz": "738a3880a9014ebb1020eb3368ea4b10f34af84d876d4d82aafc2be471bc0c0c"
+      },
+      "data_command": ".venv/bin/python scripts/analyze_observations.py",
+      "plot_command": ".venv/bin/python scripts/publication_plots.py",
+      "missing_explanation": null
+    },
+    {
+      "panel": "S15D",
+      "status": "partially reproduced",
+      "generated_result_shown": true,
+      "shared_figure": "figures/figure_S15D_eida_followup.pdf",
+      "shared_figure_sha256": "e3968c344fbc5041cbe8595064aacbebda94da9edf5cbea446e9b8c5b76f9394",
+      "saved_numerical_sha256": {
+        "data/eida_continuation/shallow_example/waveforms.csv": "31aefc0529e23602d17ee960eef3a602ab466fe635a697a41a3b625238ce162c",
+        "data/eida_continuation/shallow_example/spectra.npz": "259626c6d6241c0d103602254d979d2034290bbcbe1de3e21bf156c18334bde6",
+        "data/eida_continuation/shallow_example/summary.json": "d1da9399fb93343d079b672a99279a9e139eb655d374e4a12fe83e8da58b2041"
+      },
+      "data_command": ".venv/bin/python scripts/eida_shallow_example.py",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "missing_explanation": null
+    }
+  ],
   "live_acquisition_indices_excluded": [],
-  "protected_files_checked": 4253,
+  "protected_files_checked": 4897,
   "protected_files_unchanged": true,
   "matches_pre_edit_snapshot": false,
   "removed_since_historical_baseline": [
@@ -173,18 +1054,18 @@
     "report/resume_numbers.tex": "dbd916b29e66304bebdd0e776b74e1e54618574082760409046be4e10e46f3a2",
     "report/availability_extension.tex": "cd411476ad9a6982c213ee3ccdb493a3a1824567d368c5aceed63269d6584cbe",
     "report/layout_baseline.json": "64840874146f426c02a7f2894c4f7794d376a4b39fd69224b69613c4b1cbcf0f",
-    "report/reproduction_documentation.tex": "f5ba4d802ccac2505a47f6ca0c9f7a522983782898ac2267a30cf2672b3c1db2",
+    "report/reproduction_documentation.tex": "96a26102ac2591819efc3ab707837296df2966514be6256df10b2942bf8fcd5e",
     "report/report.tex": "713cba19ee521975507554d05cd6ba6f756816e6be6cd0d6912351322d8975f8",
-    "report/main_paper.tex": "1cea7e38a2d47e0b5283284c46e59e8b53d112b255c7910caf5cb2aaf09a4181",
+    "report/main_paper.tex": "853d1685e875d16bdd8a2d3b78314f5fc1a49c897fb902a4911dc506af1aa645",
     "report/reproduced_supplement.tex": "0d88544ef87765f6a9d8f9160fdf967fed03755d60b1938790be7a4a99a0459a",
     "report/comparison.tex": "7e669390c912eec7ab345df396d661cc22c72c2a7b3eac0f298315ad415d2d81",
     "report/figure_layout.json": "849a43f3df8a6fc5cc23c4f5daec897c8af40f6df0bfc3134a96f412eb7fb914",
     "report/reference_crops.json": "ad005a6fb625e63a69cd83e6d8e722ace7dace05635538d3c1d43590e47f1b00",
     "report/comparison_pages.tex": "575b1eb74f5a1cc1ef85d916507636bf45bcba8055ac420d89fa598dae768d5f",
     "report/eida_build_attempts.json": "fa1918e1d4984ef7987f01fb9fa94eeeac0387909c772f8f0815d61e6b77bb3e",
-    "report/comparison.pdf": "ce864edf076521582798e7ca8b5e519a85a94bfe1d0d2aea39099b2454bdaa5e",
     "report/grid_calibration.tex": "b2f5b8ded59524d40547b52d95f63290651792d8d890fedde0d0ea2fa37368a6",
     "report/provisional_visual_review.json": "55d862001a9a09c696fe55f2c67ef59722fc90d07e22fc1bc47fe03e68bad204",
+    "report/velocity_sync_review.tex": "cb55a6da56ac99de66453c17db7cfd07f50a68c1ff927b66a07236ec17168311",
     "report/continuation_numbers.tex": "e52b0803b2c8211a230e1c08fdc360d026f0706e5a28e55192223b426c7d277f",
     "report/continuation_panel_summary.tex": "74dfd5f1248d4e509820c2aa473ec0f52bc33d0b9c414112bad0b954e27ec799",
     "report/continuation_results.tex": "ad9d2b6d750ab527f87a89f04c3d7de977aa9421b456bdb75937e25ef06bb0d8",
@@ -196,11 +1077,12 @@
     "report/continuation_magnitude_statistics.tex": "10d0889f6bd10da2621cef5ffa0aefcf8e376f495da4cbc421140587e82e14e3",
     "report/coverage_extension.tex": "409e35af6c85be25a16380e6533f459cb4534b93010f3a162e34d0982a4fbdfe",
     "report/local_followup.tex": "77146595509e4a866d0b68c06a3a13a311d4ad26517e63637c284dea5118539b",
-    "report/report.pdf": "0c68060c118d9293cd3c384043a57bd912de531b4948d0d4aead890fb921a9b8",
+    "report/report.pdf": "e2925cf10ec9eb9cd231882a98aac5adbe6a58ccf4371282730fb5cd175cb1b2",
     "report/experimental_velocity_table.tex": "cd9d17d7a600ef8a688902438950a87e3dc5a92db846ff7cb89a8ced0dce92cd",
     "report/revision_findings.tex": "f5c6cd030bebbfa2f7eb1bb6b4b4a22cf927846d1b397cbfede2195717db5764",
     "report/partial_panel_chains.tex": "623970adc6edaaf4620ce8ec1b8c69f0b3d6f2964ffef00c074c28c881693045",
     "report/presentation_review.json": "613500f57c22099b84a33ee07ddd735e23de078896b6ef16e98938fcae721064",
+    "report/comparison.pdf": "ce864edf076521582798e7ca8b5e519a85a94bfe1d0d2aea39099b2454bdaa5e",
     "report/followup_numbers.tex": "bf40d1a572f24248941c14af85bc0f055e4cfccf26c7118500c78ff7ce1a08f3",
     "report/calibration_followup.tex": "f1cbfb86081780eb00b3b10ea815000c4248f54bfd1437645e152412d9d313f9",
     "report/grid_narrative.tex": "b942640bd8cd4523d6b1ec97e2e6266a39613472beb338de927b381d491aa76c",

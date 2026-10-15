@@ -5,15 +5,17 @@ are eligible for new retrieval. December 12 is the first complete calendar day
 after all six stations have advertised simultaneous coverage; December 19 adds
 a second day one week later. These dates do not use catalog/holdout outcomes.
 """
-import argparse, json, hashlib, shutil, sqlite3, concurrent.futures
+import argparse, json, hashlib, shutil, sqlite3, concurrent.futures, os
 from pathlib import Path
 import numpy as np, pandas as pd, requests
 from obspy import UTCDateTime as U, read
 import availability_extension as av
 
 R=Path(__file__).resolve().parents[1]
-D=R/'data/velocity_holdout_review/training_extension_20261015'
-I=R/'inputs/velocity_holdout_review/training_extension_20261015'
+VERSION=os.environ.get('VELOCITY_REVIEW_VERSION','training_extension_20261015')
+assert '/' not in VERSION and VERSION not in ('.','..')
+D=R/'data/velocity_holdout_review'/VERSION
+I=R/'inputs/velocity_holdout_review'/VERSION
 C=R/'data/availability_extension/catalog_december'
 TARGET={'CGAU':('2I','HH'),'CLAC':('2I','HH'),'CREM':('2I','HH'),
         'CSOC':('2I','EH'),'CRUS':('IV','EH'),'CUMA':('IV','HH')}

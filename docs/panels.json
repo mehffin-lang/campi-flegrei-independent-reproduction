@@ -180,6 +180,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -258,6 +267,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -333,6 +351,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -408,6 +435,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -483,6 +519,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -536,6 +581,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -589,6 +643,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -1014,6 +1077,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -1109,6 +1181,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -1204,6 +1285,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -1279,6 +1369,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -1354,6 +1453,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -1429,6 +1537,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -1504,6 +1621,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -1579,6 +1705,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -1654,6 +1789,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -1729,6 +1873,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {
@@ -1804,6 +1957,15 @@
       "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
       "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
       "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
+    },
+    "reviewed_training_validation": {
+      "record": "data/velocity_holdout_review/sync_training_review_20261015",
+      "accepted": false,
+      "training_events": 51,
+      "training_arrivals": 816,
+      "new_continuous_channel_hours": 36,
+      "new_associations": 0,
+      "note": "No replacement of plotted catalog. Reviewed training exclusions still fail unchanged validation; 2025 arrivals unchanged."
     }
   },
   {

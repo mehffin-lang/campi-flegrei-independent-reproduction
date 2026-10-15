@@ -1,0 +1,7 @@
+family,support,arrivals,station_phase_pairs,initial_rms_s,fitted_rms_s
+four_regularized,represented,1043,42,0.238816432832006,0.24231795511485538
+four_regularized,unrepresented,22,4,0.3144903525041457,0.28028629843591907
+three_regularized,represented,1043,42,0.24145295451199084,0.24362713955058296
+three_regularized,unrepresented,22,4,0.3166417534059588,0.2865745183114761
+three_zero_delays,represented,1043,42,0.24145295451199084,0.22618867856849054
+three_zero_delays,unrepresented,22,4,0.3166417534059588,0.2655104004126255

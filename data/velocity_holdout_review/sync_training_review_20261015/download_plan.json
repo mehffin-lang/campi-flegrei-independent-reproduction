@@ -1,0 +1,70 @@
+{
+  "requests": [
+    {
+      "id": "2I_CGAU_HH_20241213T000000_20241213T020000",
+      "net": "2I",
+      "sta": "CGAU",
+      "band": "HH",
+      "start": 1734048000.0,
+      "end": 1734055200.0,
+      "missing_channel_s": 21600.0,
+      "estimated_bytes": 3419905.111721931
+    },
+    {
+      "id": "2I_CLAC_HH_20241213T000000_20241213T020000",
+      "net": "2I",
+      "sta": "CLAC",
+      "band": "HH",
+      "start": 1734048000.0,
+      "end": 1734055200.0,
+      "missing_channel_s": 21600.0,
+      "estimated_bytes": 3419905.111721931
+    },
+    {
+      "id": "2I_CREM_HH_20241213T000000_20241213T020000",
+      "net": "2I",
+      "sta": "CREM",
+      "band": "HH",
+      "start": 1734048000.0,
+      "end": 1734055200.0,
+      "missing_channel_s": 21600.0,
+      "estimated_bytes": 3419905.111721931
+    },
+    {
+      "id": "2I_CSOC_EH_20241213T000000_20241213T020000",
+      "net": "2I",
+      "sta": "CSOC",
+      "band": "EH",
+      "start": 1734048000.0,
+      "end": 1734055200.0,
+      "missing_channel_s": 21600.0,
+      "estimated_bytes": 3419905.111721931
+    },
+    {
+      "id": "IV_CRUS_EH_20241213T000000_20241213T020000",
+      "net": "IV",
+      "sta": "CRUS",
+      "band": "EH",
+      "start": 1734048000.0,
+      "end": 1734055200.0,
+      "missing_channel_s": 21600.0,
+      "estimated_bytes": 3419905.111721931
+    },
+    {
+      "id": "IV_CUMA_HH_20241213T000000_20241213T020000",
+      "net": "IV",
+      "sta": "CUMA",
+      "band": "HH",
+      "start": 1734048000.0,
+      "end": 1734055200.0,
+      "missing_channel_s": 21600.0,
+      "estimated_bytes": 3419905.111721931
+    }
+  ],
+  "estimated_bytes": 20519430.67033159,
+  "measured_bytes_per_channel_s": 158.3289403574968,
+  "free_bytes": 134991118336,
+  "protected_bytes": 51539607552,
+  "selection": "Next calendar day after previous December12 window, 00--02UTC; no event catalog or holdout used. Six targets only; no backlog.",
+  "uncertainty": "Measured compressed rate; twofold size allowance."
+}

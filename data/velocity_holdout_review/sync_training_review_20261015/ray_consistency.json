@@ -1,0 +1,23 @@
+[
+  {
+    "family": "four_regularized",
+    "arrivals": 816,
+    "ray_travel_vs_serialized_residual_rms_s": 0.005024146011007289,
+    "max_abs_s": 0.01598405524917751,
+    "note": "Independent layerwise travel-time sum with station delays; native vertices/velocities/arrival times rounded. Not a test of true phase identity."
+  },
+  {
+    "family": "three_regularized",
+    "arrivals": 816,
+    "ray_travel_vs_serialized_residual_rms_s": 0.008245901785189764,
+    "max_abs_s": 0.024021446950910345,
+    "note": "Independent layerwise travel-time sum with station delays; native vertices/velocities/arrival times rounded. Not a test of true phase identity."
+  },
+  {
+    "family": "three_zero_delays",
+    "arrivals": 816,
+    "ray_travel_vs_serialized_residual_rms_s": 0.005762754298511025,
+    "max_abs_s": 0.019003518099145883,
+    "note": "Independent layerwise travel-time sum with station delays; native vertices/velocities/arrival times rounded. Not a test of true phase identity."
+  }
+]

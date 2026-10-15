@@ -1,0 +1,24 @@
+{
+  "counts": [
+    {
+      "cap": 5,
+      "events": 51,
+      "arrivals": 816,
+      "removed_event_ids": [
+        159,
+        1532
+      ]
+    },
+    {
+      "cap": 8,
+      "events": 62,
+      "arrivals": 997,
+      "removed_event_ids": [
+        159
+      ]
+    }
+  ],
+  "phase_and_event_exclusions": 21,
+  "removed_ambiguous_phases": 6,
+  "holdout_modified": false
+}

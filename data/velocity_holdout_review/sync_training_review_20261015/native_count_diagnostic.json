@@ -1,0 +1,8 @@
+{
+  "source": "build/velest-sparse.f",
+  "sha256": "2fb9c663d1b1322579338c4eb815cd62eda1898105f2083da252c37a9d50ac27",
+  "lines": "5902,5904--5912,5936--5946",
+  "finding": "nofreadp and nofreads are local integer accumulators never initialized before addition. All occurrences are their declaration, accumulation and diagnostic writes in ACTUALSTATIONS; they do not enter the inversion equations. Native summary P/S totals can be garbage. Own input-token and per-ray counts are used instead.",
+  "binary_changed": false,
+  "interpretation": "Not evidence that the valid per-station phase counts or actual input ray arrays were corrupted; numerical sensitivity remains separately assessed."
+}

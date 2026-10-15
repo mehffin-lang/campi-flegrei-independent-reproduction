@@ -224,3 +224,18 @@ the new failed-model checkpoint. Existing background-acquisition changes were
 preserved, the broad collector was stopped, and twelve successful targeted
 requests were recorded in its ledger to prevent duplicate retrieval. No source
 waveform, unrelated work or Git history was deleted.
+
+## Synchronized documents and reviewed training exclusions, 15 October 2026
+
+Added `data/velocity_holdout_review/sync_training_review_20261015/`, its review,
+coverage, numerical fits and native evidence archive. All 1,332 previous velocity
+result files remain unchanged. Six uncertain phases and one uncertain association
+are excluded only from the new experiment; original records are preserved.
+No scientific figure or publication-panel numerical file was replaced.
+
+Both PDFs were rebuilt from the common layout and current panel records. The
+builder now records per-panel hashes and actual UTC file times. The main paper's
+short velocity-test paragraph and README now describe the latest failed trial;
+`report/velocity_sync_review.tex` adds the verified details after the supplement.
+Older experiments remain explicitly labeled checkpoints. The comparison PDF
+remains separate and may be byte-identical because no empirical panel changed.

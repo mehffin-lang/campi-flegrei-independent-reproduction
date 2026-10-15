@@ -1,0 +1,129 @@
+{
+  "families": {
+    "four_regularized": {
+      "tops": [
+        -0.5,
+        0.5,
+        1.0,
+        3.0
+      ],
+      "vp": [
+        1.7,
+        2.0,
+        3.0,
+        5.5
+      ],
+      "station_fit": true
+    },
+    "three_regularized": {
+      "tops": [
+        -0.5,
+        1.0,
+        3.0
+      ],
+      "vp": [
+        1.8,
+        3.0,
+        5.5
+      ],
+      "station_fit": true
+    },
+    "three_zero_delays": {
+      "tops": [
+        -0.5,
+        1.0,
+        3.0
+      ],
+      "vp": [
+        1.8,
+        3.0,
+        5.5
+      ],
+      "station_fit": false
+    }
+  },
+  "variants": [
+    [
+      "base",
+      1.0,
+      5,
+      1.0,
+      64
+    ],
+    [
+      "slow",
+      0.95,
+      5,
+      1.0,
+      64
+    ],
+    [
+      "fast",
+      1.05,
+      5,
+      1.0,
+      64
+    ],
+    [
+      "selection",
+      1.0,
+      8,
+      1.0,
+      64
+    ],
+    [
+      "damping",
+      1.0,
+      5,
+      10.0,
+      64
+    ],
+    [
+      "precision32",
+      1.0,
+      5,
+      1.0,
+      32
+    ]
+  ],
+  "initial_ratio": 1.78,
+  "layer_damping": 10,
+  "station_damping": 10,
+  "reference_station": "IV.CSOB.",
+  "weights": {
+    "P": 1,
+    "S": 0.5
+  },
+  "iteration_schedule": "21 fixed prelocation, 14 velocity-only, then five joint 14-iteration blocks; compare blocks 3 and 5 for extra-iteration sensitivity. Holdout 35 fixed-model iterations then another 35 solely to check nuisance-location convergence.",
+  "gates": {
+    "holdout_rms_improves": true,
+    "max_horizontal_m": 100,
+    "max_depth_km": 0.1,
+    "max_velocity_km_s": 0.05,
+    "max_station_s": 0.02,
+    "positive_bulk_modulus": true,
+    "monotonic_velocities": true
+  },
+  "training_rule": "Preserve preceding cap5/cap8 selections; exclude unresolved training phases/events only after raw-waveform review, reapply unchanged event screen. Add any newly reviewed eligible events. No review or selection on 2025.",
+  "comparison": "All three previously declared families, all six sensitivities; no family selected using 2025 scores.",
+  "holdout": "Hash-locked. All training fits and sensitivity outputs must be frozen before final 2025 evaluation. Never repick, reassociate, reweight or remove its arrivals.",
+  "gate_on_refitting": "Only after justified training observation changes; no refit of unchanged input.",
+  "source_plan_sha256": "842fbf42c22ed26c661ab6b106d5aa62ff7e65125c12526b87e4b13a75b0ee2b",
+  "registered_before_new_association_and_review": true,
+  "inference_at_registration": "Two of twelve target files had already been picked; no new batch association or waveform review had occurred.",
+  "registered_before_new_inference": true,
+  "prior_source": "data/velocity_holdout_review/training_extension_20261015",
+  "inputs": {
+    "data/velocity_holdout_review/sync_training_review_20261015/reviewed_arrivals.csv": "5926d79ac79afce4881201e23cf53ccc7f34d51d17a5d62432d413dfaf91740e",
+    "data/velocity_holdout_review/sync_training_review_20261015/reviewed_events.json": "df6f080432ee405f72ea3ce7eb376da4a995d23bf31e1140486961df586bbb59",
+    "data/velocity_holdout_review/sync_training_review_20261015/training_catalog/associations.csv": "64161c85df4811daec073916234ea08f1e1603f4d98d9abc0d42431cc28ced4c",
+    "data/velocity_holdout_review/sync_training_review_20261015/training_catalog/initial_events.csv": "0cd8c744ec0c58e381fdb314db390388c22c68d949ca7ab08172eb5fdd37f301",
+    "data/velocity_holdout_review/sync_training_review_20261015/training_catalog/picks.csv": "48462807a63a90e7111d87f4cbdc410db0cc0986def9d1afe99294ee00a41aca",
+    "data/velocity_holdout_review/sync_training_review_20261015/training_catalog/stations.csv": "83f3bd10a60529750a7ad3c9e7baa155cae39d33d1372554ee0cab0eb72960a7",
+    "data/velocity_holdout_review/sync_training_review_20261015/fits/training_cap5.cnv": "52e668de5794f6c442f6ed8936c700a3b093c81c91d7670ed738e30a5ee68311",
+    "data/velocity_holdout_review/sync_training_review_20261015/fits/training_cap5.csv": "e4518a5b3471adf62ab7f55a87a8790dd87f808a883b85a93fbf4e3feeabd880",
+    "data/velocity_holdout_review/sync_training_review_20261015/fits/training_cap8.cnv": "6d1e68ef52c72bad21133cd9e3d7155936dee2de6025b2a45c56b6e76f2f3bed",
+    "data/velocity_holdout_review/sync_training_review_20261015/fits/training_cap8.csv": "72086613f49d2744db4f10674e2ec47827852992ed5ef36a0717b58388e8a474"
+  },
+  "review_focus": "Previously flagged training ambiguities in current selected events; new target-station window."
+}

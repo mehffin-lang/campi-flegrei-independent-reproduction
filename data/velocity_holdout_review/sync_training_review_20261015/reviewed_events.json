@@ -1,0 +1,10 @@
+[
+  {
+    "event_index": 1532,
+    "time": "2024-05-20T21:27:18.615",
+    "decision": "uncertain_excluded_from_new_training",
+    "reason": "Assigned P markers at CAAM, CBAC, CFB3, CNIS, COLB and CSTH lie within an earlier coherent decaying packet. A distinct new event with this phase set is not established. Not asserted to be a false event.",
+    "evidence": "data/velocity_holdout_review/sync_training_review_20261015/review/inherited_network/event_1532_0.png; event_1532_1.png; event_1532_2.png",
+    "reviewer": "Codex waveform review; not human scientific validation"
+  }
+]
