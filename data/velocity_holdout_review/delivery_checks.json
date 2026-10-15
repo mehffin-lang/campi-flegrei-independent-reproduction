@@ -1,0 +1,73 @@
+{
+  "utc": "2026-10-15T18:29:02.045905+00:00",
+  "accepted": false,
+  "fits": 18,
+  "additional_training_exclusion_fits": 1,
+  "holdout_events": 62,
+  "holdout_hash_unchanged": true,
+  "precision_input_checks": {
+    "four_regularized": {
+      "input.cnv": true,
+      "input.mod": true,
+      "input.sta": true,
+      "velest.cmn": true
+    },
+    "three_regularized": {
+      "input.cnv": true,
+      "input.mod": true,
+      "input.sta": true,
+      "velest.cmn": true
+    },
+    "three_zero_delays": {
+      "input.cnv": true,
+      "input.mod": true,
+      "input.sta": true,
+      "velest.cmn": true
+    }
+  },
+  "station_metadata_rows_verified": 26,
+  "report_pages": 69,
+  "comparison_pages": 19,
+  "panels": 63,
+  "visual_review": [
+    "figures/velocity_holdout_diagnostic.png",
+    "figures/velocity_ray_coverage.png",
+    "report/report.pdf pages 25\u201326",
+    "report/comparison.pdf page 10",
+    "24 arrival windows and four network gathers"
+  ],
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "obspy": "1.5.1"
+  },
+  "documents": {
+    "report/report.pdf": "b3894f384e1aa687a721903454a602497203b4099db10d888ed9669eb56697c8",
+    "report/comparison.pdf": "ce864edf076521582798e7ca8b5e519a85a94bfe1d0d2aea39099b2454bdaa5e"
+  },
+  "archive_restore_checks": {
+    "checks": [
+      {
+        "archive": "data/availability_extension/velocity_december_run_evidence.tar.gz",
+        "files_verified": 583,
+        "restored_bytes_match": true
+      },
+      {
+        "archive": "data/velocity_holdout_review/solver_evidence.tar.gz",
+        "files_verified": 2506,
+        "restored_bytes_match": true
+      }
+    ],
+    "initial_failure": "Prior archive also contains own catalog_december location run evidence; parent directory scope is required. No numerical failure.",
+    "passed": true
+  },
+  "code_sha256": {
+    "scripts/test_velocity_parameterizations.py": "8315d43f9b6140046b95bc609ddf9372b40a89fb9e991159e15bfa2f4bb65a9b",
+    "scripts/analyze_velocity_holdout.py": "e5c56b2a3bd6a24414e9b5f8d28606f85900e65210968e8a77a9f5778eab55d3",
+    "scripts/check_velocity_review_exclusion.py": "e33d4668343865125a335b67613188731edef7026cb9ef4cecdd57a6135d002d",
+    "scripts/present_velocity_holdout.py": "ce7521bdc156ba644c5330109659160bacf47109785ca12d4478efe7936b1d91",
+    "scripts/rebuild_velocity_holdout.py": "f08022bebfa8ca0871ffe6112ca64efc3723f17ae58b0f53f3d3ac9a1b8677bb"
+  },
+  "format_check": "Handwritten source/docs pass git diff --check. Native CNV/STA final blank records preserved intentionally, including unchanged holdout bytes."
+}

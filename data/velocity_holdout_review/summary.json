@@ -1,0 +1,4740 @@
+{
+  "accepted": false,
+  "plan_sha256": "842fbf42c22ed26c661ab6b106d5aa62ff7e65125c12526b87e4b13a75b0ee2b",
+  "runs": {
+    "four_regularized_base": {
+      "family": "four_regularized",
+      "variant": "base",
+      "training_events": 52,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "four_regularized_base_prelocation",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21663128784419639,
+          "event_rms_s": 0.2319731416813991,
+          "depth_min_km": 0.16,
+          "depth_max_km": 5.54,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_base_prelocation",
+          "wall_seconds": 0.4214875460602343,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "four_regularized_base_velocity_only",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21312135843694138,
+          "event_rms_s": 0.22445660879281149,
+          "depth_min_km": 0.18,
+          "depth_max_km": 5.9,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_base_velocity_only",
+          "wall_seconds": 0.5130578330717981,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 691.040660436843,
+            "max_depth_km": 0.92,
+            "max_origin_s": 0.14,
+            "max_rms_s": 0.07
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.08000000000000007
+        },
+        {
+          "name": "four_regularized_base_joint1",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1790274681186983,
+          "event_rms_s": 0.19168784721319912,
+          "depth_min_km": 0.2,
+          "depth_max_km": 6.18,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_base_joint1",
+          "wall_seconds": 0.43382999999448657,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1339.5591379720577,
+            "max_depth_km": 1.2399999999999993,
+            "max_origin_s": 0.28,
+            "max_rms_s": 0.10999999999999999
+          },
+          "station_change_s": 0.39,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "four_regularized_base_joint2",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17704360061163818,
+          "event_rms_s": 0.1906567596493762,
+          "depth_min_km": 0.19,
+          "depth_max_km": 6.58,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_base_joint2",
+          "wall_seconds": 0.38980705197900534,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 458.528877061092,
+            "max_depth_km": 0.41999999999999993,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.13999999999999996,
+          "max_velocity_change_km_s": 0.08000000000000007
+        },
+        {
+          "name": "four_regularized_base_joint3",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17652272051643889,
+          "event_rms_s": 0.19002024183673777,
+          "depth_min_km": 0.17,
+          "depth_max_km": 6.82,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_base_joint3",
+          "wall_seconds": 0.4448996459832415,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 229.26038765643517,
+            "max_depth_km": 0.3199999999999994,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.07000000000000006,
+          "max_velocity_change_km_s": 0.04999999999999982
+        },
+        {
+          "name": "four_regularized_base_joint4",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17639583935077954,
+          "event_rms_s": 0.18986331115588634,
+          "depth_min_km": 0.15,
+          "depth_max_km": 6.98,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_base_joint4",
+          "wall_seconds": 0.8434141000034288,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 382.8523984625612,
+            "max_depth_km": 0.27000000000000046,
+            "max_origin_s": 0.05,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.04999999999999993,
+          "max_velocity_change_km_s": 0.03000000000000025
+        },
+        {
+          "name": "four_regularized_base_joint5",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1777741151963843,
+          "event_rms_s": 0.18725240062135795,
+          "depth_min_km": 0.13,
+          "depth_max_km": 7.12,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_base_joint5",
+          "wall_seconds": 0.56265288090799,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 467.43017967205515,
+            "max_depth_km": 0.43999999999999995,
+            "max_origin_s": 0.22,
+            "max_rms_s": 0.03
+          },
+          "station_change_s": 0.06000000000000005,
+          "max_velocity_change_km_s": 0.030000000000000027
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 490.8891400715034,
+          "max_depth_km": 0.5700000000000003,
+          "max_origin_s": 0.18,
+          "max_rms_s": 0.03
+        },
+        "station_s": 0.10999999999999999,
+        "velocity_km_s": 0.050000000000000266
+      },
+      "training_rays": {
+        "arrivals": 827,
+        "ray_count": 827,
+        "vertices_resolution_km": 0.01,
+        "interpretation": "Actual native ray vertices rounded to 0.01 km. Layer intersections are independently summed; horizontal segments are not automatically identified as head waves."
+      },
+      "holdout": {
+        "initialization": {
+          "name": "four_regularized_base_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24062050459187168,
+          "event_rms_s": 0.25778523194017844,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_base_holdout_initialization",
+          "wall_seconds": 1.102342902100645,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "four_regularized_base_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23881704746442287,
+          "event_rms_s": 0.25882800367014186,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_base_holdout_initialization_extra",
+          "wall_seconds": 1.0638285810127854,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 793.1686948286849,
+            "max_depth_km": 0.30000000000000027,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "four_regularized_base_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2416102009474723,
+          "event_rms_s": 0.2602604154898853,
+          "depth_min_km": 0.38,
+          "depth_max_km": 7.95,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_base_holdout_fitted",
+          "wall_seconds": 0.8563721349928528,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "four_regularized_base_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2413216893411756,
+          "event_rms_s": 0.260040319454379,
+          "depth_min_km": 0.38,
+          "depth_max_km": 7.95,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_base_holdout_fitted_extra",
+          "wall_seconds": 1.0001874039880931,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 362.93783866569,
+            "max_depth_km": 0.19999999999999996,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_rays": {
+        "arrivals": 1065,
+        "ray_count": 1065,
+        "vertices_resolution_km": 0.01,
+        "interpretation": "Actual native ray vertices rounded to 0.01 km. Layer intersections are independently summed; horizontal segments are not automatically identified as head waves."
+      },
+      "holdout_improvement_s": -0.0009896963556006166,
+      "improves_common_initialization": false,
+      "holdout_location_converged": false
+    },
+    "four_regularized_slow": {
+      "family": "four_regularized",
+      "variant": "slow",
+      "training_events": 52,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "four_regularized_slow_prelocation",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.22388655304331137,
+          "event_rms_s": 0.2384807684553975,
+          "depth_min_km": 0.28,
+          "depth_max_km": 5.41,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_slow_prelocation",
+          "wall_seconds": 0.4269571090117097,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "four_regularized_slow_velocity_only",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21420976790863855,
+          "event_rms_s": 0.22384317999610623,
+          "depth_min_km": 0.25,
+          "depth_max_km": 6.03,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_slow_velocity_only",
+          "wall_seconds": 0.516004606964998,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 476.707880593331,
+            "max_depth_km": 0.8500000000000001,
+            "max_origin_s": 0.16,
+            "max_rms_s": 0.09999999999999998
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "four_regularized_slow_joint1",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17907113554126664,
+          "event_rms_s": 0.19173800233250982,
+          "depth_min_km": 0.23,
+          "depth_max_km": 6.19,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_slow_joint1",
+          "wall_seconds": 0.4169814200140536,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1194.5218641742147,
+            "max_depth_km": 1.1700000000000008,
+            "max_origin_s": 0.27,
+            "max_rms_s": 0.09000000000000002
+          },
+          "station_change_s": 0.36,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "four_regularized_slow_joint2",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1768979853442751,
+          "event_rms_s": 0.19039937782703775,
+          "depth_min_km": 0.21,
+          "depth_max_km": 6.59,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_slow_joint2",
+          "wall_seconds": 0.5742981369839981,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 443.49050242188804,
+            "max_depth_km": 0.3999999999999999,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.14,
+          "max_velocity_change_km_s": 0.06999999999999984
+        },
+        {
+          "name": "four_regularized_slow_joint3",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1769693167100781,
+          "event_rms_s": 0.18945265290385271,
+          "depth_min_km": 0.2,
+          "depth_max_km": 6.83,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_slow_joint3",
+          "wall_seconds": 0.46878292108885944,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 275.7462696587344,
+            "max_depth_km": 0.25,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.06,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "four_regularized_slow_joint4",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17708078891881876,
+          "event_rms_s": 0.1890360161043799,
+          "depth_min_km": 0.19,
+          "depth_max_km": 6.96,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_slow_joint4",
+          "wall_seconds": 0.5574421820929274,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 178.55201821038875,
+            "max_depth_km": 0.19999999999999996,
+            "max_origin_s": 0.13,
+            "max_rms_s": 0.019999999999999962
+          },
+          "station_change_s": 0.030000000000000027,
+          "max_velocity_change_km_s": 0.030000000000000027
+        },
+        {
+          "name": "four_regularized_slow_joint5",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17674648634501436,
+          "event_rms_s": 0.18783687685779996,
+          "depth_min_km": 0.18,
+          "depth_max_km": 7.07,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_slow_joint5",
+          "wall_seconds": 0.48820366302970797,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 268.1915459058195,
+            "max_depth_km": 0.5,
+            "max_origin_s": 0.05,
+            "max_rms_s": 0.04000000000000001
+          },
+          "station_change_s": 0.049999999999999996,
+          "max_velocity_change_km_s": 0.040000000000000036
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 396.9189015942852,
+          "max_depth_km": 0.6099999999999999,
+          "max_origin_s": 0.15,
+          "max_rms_s": 0.04000000000000001
+        },
+        "station_s": 0.08,
+        "velocity_km_s": 0.07000000000000006
+      },
+      "holdout": {
+        "initialization": {
+          "name": "four_regularized_slow_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.25489902078690313,
+          "event_rms_s": 0.2690574947550634,
+          "depth_min_km": 0.72,
+          "depth_max_km": 5.89,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_slow_holdout_initialization",
+          "wall_seconds": 1.4599778220290318,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "four_regularized_slow_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2512258060665799,
+          "event_rms_s": 0.2707933386515712,
+          "depth_min_km": 0.73,
+          "depth_max_km": 5.89,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_slow_holdout_initialization_extra",
+          "wall_seconds": 1.911264133057557,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 434.3524134384759,
+            "max_depth_km": 0.17999999999999994,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.030000000000000027
+          }
+        },
+        "fitted": {
+          "name": "four_regularized_slow_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24049920890424584,
+          "event_rms_s": 0.25722464137215206,
+          "depth_min_km": 0.4,
+          "depth_max_km": 7.92,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_slow_holdout_fitted",
+          "wall_seconds": 0.8409147519851103,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "four_regularized_slow_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24033948993566415,
+          "event_rms_s": 0.2566973867944447,
+          "depth_min_km": 0.4,
+          "depth_max_km": 7.92,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_slow_holdout_fitted_extra",
+          "wall_seconds": 0.8567798269214109,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 606.8063184818055,
+            "max_depth_km": 0.56,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.020000000000000018
+          }
+        }
+      },
+      "holdout_improvement_s": 0.014399811882657293,
+      "improves_common_initialization": true,
+      "holdout_location_converged": false
+    },
+    "four_regularized_fast": {
+      "family": "four_regularized",
+      "variant": "fast",
+      "training_events": 52,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "four_regularized_fast_prelocation",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21299577914762477,
+          "event_rms_s": 0.22884324497181638,
+          "depth_min_km": 0.06,
+          "depth_max_km": 5.64,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_fast_prelocation",
+          "wall_seconds": 0.39632631291169673,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "four_regularized_fast_velocity_only",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21161232263431456,
+          "event_rms_s": 0.22643134466357312,
+          "depth_min_km": 0.14,
+          "depth_max_km": 5.8,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_fast_velocity_only",
+          "wall_seconds": 0.4915857979794964,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 163.13192202391923,
+            "max_depth_km": 0.3700000000000001,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.019999999999999962
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.08999999999999986
+        },
+        {
+          "name": "four_regularized_fast_joint1",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17891351527823166,
+          "event_rms_s": 0.19311714260839397,
+          "depth_min_km": 0.16,
+          "depth_max_km": 6.11,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_fast_joint1",
+          "wall_seconds": 0.4607735349563882,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1310.444029525953,
+            "max_depth_km": 1.2300000000000004,
+            "max_origin_s": 0.2,
+            "max_rms_s": 0.12
+          },
+          "station_change_s": 0.44,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "four_regularized_fast_joint2",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17793898999267432,
+          "event_rms_s": 0.19135146880905987,
+          "depth_min_km": 0.15,
+          "depth_max_km": 6.53,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_fast_joint2",
+          "wall_seconds": 0.3841769789578393,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 537.4747105111892,
+            "max_depth_km": 0.4800000000000004,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.019999999999999962
+          },
+          "station_change_s": 0.14999999999999997,
+          "max_velocity_change_km_s": 0.08000000000000007
+        },
+        {
+          "name": "four_regularized_fast_joint3",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1775344781474184,
+          "event_rms_s": 0.18981266067848623,
+          "depth_min_km": 0.15,
+          "depth_max_km": 6.78,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_fast_joint3",
+          "wall_seconds": 0.6533591010374948,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 504.17364792784576,
+            "max_depth_km": 0.7300000000000001,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.07000000000000006,
+          "max_velocity_change_km_s": 0.050000000000000044
+        },
+        {
+          "name": "four_regularized_fast_joint4",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17845495030000708,
+          "event_rms_s": 0.18857257325659896,
+          "depth_min_km": 0.14,
+          "depth_max_km": 6.91,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_fast_joint4",
+          "wall_seconds": 0.6537135229445994,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 191.77738520411174,
+            "max_depth_km": 0.22999999999999998,
+            "max_origin_s": 0.13,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.03999999999999998,
+          "max_velocity_change_km_s": 0.030000000000000027
+        },
+        {
+          "name": "four_regularized_fast_joint5",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17764479932700616,
+          "event_rms_s": 0.18897496781727058,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.03,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_fast_joint5",
+          "wall_seconds": 0.6326099520083517,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 122.03710592217712,
+            "max_depth_km": 0.2200000000000002,
+            "max_origin_s": 0.03,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.030000000000000027,
+          "max_velocity_change_km_s": 0.030000000000000027
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 289.224108698368,
+          "max_depth_km": 0.4500000000000002,
+          "max_origin_s": 0.1,
+          "max_rms_s": 0.030000000000000027
+        },
+        "station_s": 0.06,
+        "velocity_km_s": 0.06000000000000005
+      },
+      "holdout": {
+        "initialization": {
+          "name": "four_regularized_fast_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23330617011576119,
+          "event_rms_s": 0.25188963276954096,
+          "depth_min_km": 0.23,
+          "depth_max_km": 6.77,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_fast_holdout_initialization",
+          "wall_seconds": 0.8481371100060642,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "four_regularized_fast_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23285328149765325,
+          "event_rms_s": 0.2525642684098829,
+          "depth_min_km": 0.23,
+          "depth_max_km": 6.77,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_fast_holdout_initialization_extra",
+          "wall_seconds": 0.8651085710152984,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 349.6079225176016,
+            "max_depth_km": 0.18999999999999995,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.010000000000000009
+          }
+        },
+        "fitted": {
+          "name": "four_regularized_fast_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24182166633670185,
+          "event_rms_s": 0.2607742813362768,
+          "depth_min_km": 0.28,
+          "depth_max_km": 8.01,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_fast_holdout_fitted",
+          "wall_seconds": 0.8478248699102551,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "four_regularized_fast_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24196603959904958,
+          "event_rms_s": 0.2607742813362768,
+          "depth_min_km": 0.28,
+          "depth_max_km": 8.02,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_fast_holdout_fitted_extra",
+          "wall_seconds": 1.296095704077743,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 87.97757759787572,
+            "max_depth_km": 0.18000000000000005,
+            "max_origin_s": 0.05,
+            "max_rms_s": 0.0
+          }
+        }
+      },
+      "holdout_improvement_s": -0.008515496220940666,
+      "improves_common_initialization": false,
+      "holdout_location_converged": false
+    },
+    "four_regularized_selection": {
+      "family": "four_regularized",
+      "variant": "selection",
+      "training_events": 62,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "four_regularized_selection_prelocation",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.22042193239972352,
+          "event_rms_s": 0.23628509297306574,
+          "depth_min_km": 0.16,
+          "depth_max_km": 5.54,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_selection_prelocation",
+          "wall_seconds": 0.740160214016214,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "four_regularized_selection_velocity_only",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.21509396349343032,
+          "event_rms_s": 0.2291147057416803,
+          "depth_min_km": 0.15,
+          "depth_max_km": 5.96,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_selection_velocity_only",
+          "wall_seconds": 0.6532319530379027,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 611.3016364312036,
+            "max_depth_km": 0.87,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.07
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.15000000000000036
+        },
+        {
+          "name": "four_regularized_selection_joint1",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.18248091916303427,
+          "event_rms_s": 0.1978146737764677,
+          "depth_min_km": 0.09,
+          "depth_max_km": 6.4,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_selection_joint1",
+          "wall_seconds": 0.5984873939305544,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1199.0599154763545,
+            "max_depth_km": 1.3800000000000008,
+            "max_origin_s": 0.3,
+            "max_rms_s": 0.12
+          },
+          "station_change_s": 0.42,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "four_regularized_selection_joint2",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.18157965667213855,
+          "event_rms_s": 0.19558431891757483,
+          "depth_min_km": 0.01,
+          "depth_max_km": 6.97,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_selection_joint2",
+          "wall_seconds": 0.4966887569753453,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 518.1936601630732,
+            "max_depth_km": 0.5699999999999994,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.11000000000000004,
+          "max_velocity_change_km_s": 0.08999999999999986
+        },
+        {
+          "name": "four_regularized_selection_joint3",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.18095151982023397,
+          "event_rms_s": 0.19494829752956916,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.25,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_selection_joint3",
+          "wall_seconds": 0.8513144860044122,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 230.19091822216578,
+            "max_depth_km": 0.28000000000000025,
+            "max_origin_s": 0.05,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.040000000000000036,
+          "max_velocity_change_km_s": 0.050000000000000266
+        },
+        {
+          "name": "four_regularized_selection_joint4",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.18298636312826455,
+          "event_rms_s": 0.19406517029745612,
+          "depth_min_km": 0.13,
+          "depth_max_km": 7.42,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_selection_joint4",
+          "wall_seconds": 0.8033763830317184,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 190.06325977627296,
+            "max_depth_km": 0.16999999999999993,
+            "max_origin_s": 0.13,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.040000000000000036,
+          "max_velocity_change_km_s": 0.03000000000000025
+        },
+        {
+          "name": "four_regularized_selection_joint5",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.1825930757535217,
+          "event_rms_s": 0.19381151468838598,
+          "depth_min_km": 0.14,
+          "depth_max_km": 7.56,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_selection_joint5",
+          "wall_seconds": 0.8051838019164279,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 244.89314937759931,
+            "max_depth_km": 0.13999999999999968,
+            "max_origin_s": 0.05,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.020000000000000018,
+          "max_velocity_change_km_s": 0.03000000000000025
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 270.85840790756964,
+          "max_depth_km": 0.3099999999999996,
+          "max_origin_s": 0.1,
+          "max_rms_s": 0.020000000000000018
+        },
+        "station_s": 0.060000000000000026,
+        "velocity_km_s": 0.06000000000000005
+      },
+      "holdout": {
+        "initialization": {
+          "name": "four_regularized_selection_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24062050459187168,
+          "event_rms_s": 0.25778523194017844,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_selection_holdout_initialization",
+          "wall_seconds": 1.0858116019517183,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "four_regularized_selection_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23881704746442287,
+          "event_rms_s": 0.25882800367014186,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_selection_holdout_initialization_extra",
+          "wall_seconds": 1.0549529480049387,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 793.1686948286849,
+            "max_depth_km": 0.30000000000000027,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "four_regularized_selection_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23892314555849978,
+          "event_rms_s": 0.25316703653338596,
+          "depth_min_km": 0.43,
+          "depth_max_km": 9.14,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_selection_holdout_fitted",
+          "wall_seconds": 0.8501399660017341,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "four_regularized_selection_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23873201232536911,
+          "event_rms_s": 0.25271748857619264,
+          "depth_min_km": 0.43,
+          "depth_max_km": 9.19,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_selection_holdout_fitted_extra",
+          "wall_seconds": 0.8855519799981266,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1291.1315351079868,
+            "max_depth_km": 0.7999999999999998,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.020000000000000018
+          }
+        }
+      },
+      "holdout_improvement_s": 0.001697359033371898,
+      "improves_common_initialization": true,
+      "holdout_location_converged": false
+    },
+    "four_regularized_damping": {
+      "family": "four_regularized",
+      "variant": "damping",
+      "training_events": 52,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "four_regularized_damping_prelocation",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21663128784419639,
+          "event_rms_s": 0.2319731416813991,
+          "depth_min_km": 0.16,
+          "depth_max_km": 5.54,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_damping_prelocation",
+          "wall_seconds": 0.4352529509924352,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "four_regularized_damping_velocity_only",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.2142846539963404,
+          "event_rms_s": 0.22534588798282792,
+          "depth_min_km": 0.12,
+          "depth_max_km": 5.78,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_damping_velocity_only",
+          "wall_seconds": 0.4373933819588274,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 737.7721547584795,
+            "max_depth_km": 0.91,
+            "max_origin_s": 0.16,
+            "max_rms_s": 0.06
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "four_regularized_damping_joint1",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.18179602758838423,
+          "event_rms_s": 0.19550231161332554,
+          "depth_min_km": 0.09,
+          "depth_max_km": 5.8,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_damping_joint1",
+          "wall_seconds": 0.5751953150611371,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1084.8445642952738,
+            "max_depth_km": 1.04,
+            "max_origin_s": 0.19,
+            "max_rms_s": 0.09000000000000002
+          },
+          "station_change_s": 0.42,
+          "max_velocity_change_km_s": 0.020000000000000018
+        },
+        {
+          "name": "four_regularized_damping_joint2",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.18053336268491108,
+          "event_rms_s": 0.1926335700434696,
+          "depth_min_km": 0.06,
+          "depth_max_km": 6.1,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_damping_joint2",
+          "wall_seconds": 0.6331333400448784,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 356.7185753813817,
+            "max_depth_km": 0.34000000000000075,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.12,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "four_regularized_damping_joint3",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.18144857799683567,
+          "event_rms_s": 0.19202363636562278,
+          "depth_min_km": 0.04,
+          "depth_max_km": 6.29,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_damping_joint3",
+          "wall_seconds": 0.5316785820759833,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 229.26259725898683,
+            "max_depth_km": 0.2699999999999996,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.07,
+          "max_velocity_change_km_s": 0.010000000000000009
+        },
+        {
+          "name": "four_regularized_damping_joint4",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1786624494921213,
+          "event_rms_s": 0.1936640628272815,
+          "depth_min_km": 0.02,
+          "depth_max_km": 6.43,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_damping_joint4",
+          "wall_seconds": 0.4289419249398634,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 181.36835389443303,
+            "max_depth_km": 0.23000000000000043,
+            "max_origin_s": 0.18,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.06,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "four_regularized_damping_joint5",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1784152764835696,
+          "event_rms_s": 0.19236383795777767,
+          "depth_min_km": 0.02,
+          "depth_max_km": 6.6,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_damping_joint5",
+          "wall_seconds": 0.38970392697956413,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 264.7153014735692,
+            "max_depth_km": 0.30000000000000027,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.01999999999999999
+          },
+          "station_change_s": 0.050000000000000044,
+          "max_velocity_change_km_s": 0.010000000000000009
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 379.3275689450958,
+          "max_depth_km": 0.48,
+          "max_origin_s": 0.16,
+          "max_rms_s": 0.010000000000000009
+        },
+        "station_s": 0.11000000000000004,
+        "velocity_km_s": 0.020000000000000018
+      },
+      "holdout": {
+        "initialization": {
+          "name": "four_regularized_damping_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24062050459187168,
+          "event_rms_s": 0.25778523194017844,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_damping_holdout_initialization",
+          "wall_seconds": 1.0714184910757467,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "four_regularized_damping_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23881704746442287,
+          "event_rms_s": 0.25882800367014186,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_damping_holdout_initialization_extra",
+          "wall_seconds": 1.2641925199422985,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 793.1686948286849,
+            "max_depth_km": 0.30000000000000027,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "four_regularized_damping_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24890920908274403,
+          "event_rms_s": 0.2702060145936442,
+          "depth_min_km": 0.02,
+          "depth_max_km": 7.88,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_damping_holdout_fitted",
+          "wall_seconds": 0.8497943130787462,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "four_regularized_damping_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24902377283428126,
+          "event_rms_s": 0.270053758089134,
+          "depth_min_km": 0.1,
+          "depth_max_km": 7.88,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_damping_holdout_fitted_extra",
+          "wall_seconds": 0.8676180039765313,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 23.758764007622112,
+            "max_depth_km": 0.10999999999999999,
+            "max_origin_s": 0.02,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improvement_s": -0.00828870449087235,
+      "improves_common_initialization": false,
+      "holdout_location_converged": false
+    },
+    "four_regularized_precision32": {
+      "family": "four_regularized",
+      "variant": "precision32",
+      "training_events": 52,
+      "bits": 32,
+      "runs": [
+        {
+          "name": "four_regularized_precision32_prelocation",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.2166369700294828,
+          "event_rms_s": 0.2319731416813991,
+          "depth_min_km": 0.16,
+          "depth_max_km": 5.54,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_precision32_prelocation",
+          "wall_seconds": 0.4013303959509358,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+        },
+        {
+          "name": "four_regularized_precision32_velocity_only",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.2131453767558806,
+          "event_rms_s": 0.22445660879281149,
+          "depth_min_km": 0.18,
+          "depth_max_km": 5.9,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_precision32_velocity_only",
+          "wall_seconds": 0.5055025049950927,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 691.040660436843,
+            "max_depth_km": 0.92,
+            "max_origin_s": 0.14,
+            "max_rms_s": 0.07
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.08000000000000007
+        },
+        {
+          "name": "four_regularized_precision32_joint1",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1786534647284853,
+          "event_rms_s": 0.19183326093250877,
+          "depth_min_km": 0.2,
+          "depth_max_km": 6.15,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_precision32_joint1",
+          "wall_seconds": 0.43616668903268874,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 1305.8894652898036,
+            "max_depth_km": 1.21,
+            "max_origin_s": 0.28,
+            "max_rms_s": 0.10999999999999999
+          },
+          "station_change_s": 0.39,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "four_regularized_precision32_joint2",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1795548640778818,
+          "event_rms_s": 0.19062649747205013,
+          "depth_min_km": 0.19,
+          "depth_max_km": 6.5,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_precision32_joint2",
+          "wall_seconds": 0.4521530889905989,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 418.1444286702353,
+            "max_depth_km": 0.39000000000000057,
+            "max_origin_s": 0.19,
+            "max_rms_s": 0.040000000000000036
+          },
+          "station_change_s": 0.13,
+          "max_velocity_change_km_s": 0.06999999999999984
+        },
+        {
+          "name": "four_regularized_precision32_joint3",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17867334227754508,
+          "event_rms_s": 0.18929525167761685,
+          "depth_min_km": 0.17,
+          "depth_max_km": 6.77,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_precision32_joint3",
+          "wall_seconds": 0.43733683496247977,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 255.55937393009174,
+            "max_depth_km": 0.33999999999999986,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.07,
+          "max_velocity_change_km_s": 0.050000000000000266
+        },
+        {
+          "name": "four_regularized_precision32_joint4",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17768051093505635,
+          "event_rms_s": 0.18942727445563987,
+          "depth_min_km": 0.15,
+          "depth_max_km": 6.93,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_precision32_joint4",
+          "wall_seconds": 0.5406003999523818,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 130.53327604096336,
+            "max_depth_km": 0.22999999999999954,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.04,
+          "max_velocity_change_km_s": 0.03000000000000025
+        },
+        {
+          "name": "four_regularized_precision32_joint5",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17629882499689034,
+          "event_rms_s": 0.1892596913482392,
+          "depth_min_km": 0.13,
+          "depth_max_km": 7.09,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_precision32_joint5",
+          "wall_seconds": 0.5332078699721023,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 411.4227921355402,
+            "max_depth_km": 0.25,
+            "max_origin_s": 0.19,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.06000000000000005,
+          "max_velocity_change_km_s": 0.03000000000000025
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 490.6469111022683,
+          "max_depth_km": 0.47999999999999954,
+          "max_origin_s": 0.26,
+          "max_rms_s": 0.019999999999999962
+        },
+        "station_s": 0.09999999999999998,
+        "velocity_km_s": 0.06000000000000005
+      },
+      "holdout": {
+        "initialization": {
+          "name": "four_regularized_precision32_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24062050459187168,
+          "event_rms_s": 0.25778523194017844,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_precision32_holdout_initialization",
+          "wall_seconds": 1.0795760659966618,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "four_regularized_precision32_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23881704746442287,
+          "event_rms_s": 0.25882800367014186,
+          "depth_min_km": 0.44,
+          "depth_max_km": 6.33,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_precision32_holdout_initialization_extra",
+          "wall_seconds": 1.0652240430936217,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 793.1686948286849,
+            "max_depth_km": 0.30000000000000027,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "four_regularized_precision32_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2420208600794878,
+          "event_rms_s": 0.26048651751377,
+          "depth_min_km": 0.25,
+          "depth_max_km": 8.01,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_precision32_holdout_fitted",
+          "wall_seconds": 0.8712269179522991,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "four_regularized_precision32_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24181888422940226,
+          "event_rms_s": 0.26008373341502306,
+          "depth_min_km": 0.25,
+          "depth_max_km": 8.02,
+          "workdir": "tmp/velocity_holdout_review/runs/four_regularized_precision32_holdout_fitted_extra",
+          "wall_seconds": 0.9241890349658206,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 362.7975915797914,
+            "max_depth_km": 0.19999999999999996,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.020000000000000018
+          }
+        }
+      },
+      "holdout_improvement_s": -0.001400355487616134,
+      "improves_common_initialization": false,
+      "holdout_location_converged": false
+    },
+    "three_regularized_base": {
+      "family": "three_regularized",
+      "variant": "base",
+      "training_events": 52,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_regularized_base_prelocation",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.2169294097233062,
+          "event_rms_s": 0.23315148591552098,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_base_prelocation",
+          "wall_seconds": 0.3559294129954651,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_regularized_base_velocity_only",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21479404099827257,
+          "event_rms_s": 0.22379162698298682,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.91,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_base_velocity_only",
+          "wall_seconds": 0.4385958600323647,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 770.0005994272583,
+            "max_depth_km": 0.91,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.08000000000000002
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.09000000000000008
+        },
+        {
+          "name": "three_regularized_base_joint1",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17982231590170203,
+          "event_rms_s": 0.19249375614249453,
+          "depth_min_km": 0.33,
+          "depth_max_km": 6.14,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_base_joint1",
+          "wall_seconds": 0.37630821799393743,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1271.404367588378,
+            "max_depth_km": 1.2199999999999998,
+            "max_origin_s": 0.31,
+            "max_rms_s": 0.10999999999999999
+          },
+          "station_change_s": 0.39,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "three_regularized_base_joint2",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1776831718328997,
+          "event_rms_s": 0.19114533335014605,
+          "depth_min_km": 0.33,
+          "depth_max_km": 6.5,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_base_joint2",
+          "wall_seconds": 0.37530264200177044,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 397.9540831611498,
+            "max_depth_km": 0.40000000000000036,
+            "max_origin_s": 0.04,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.12999999999999995,
+          "max_velocity_change_km_s": 0.06999999999999984
+        },
+        {
+          "name": "three_regularized_base_joint3",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17812009046247518,
+          "event_rms_s": 0.19011130343119448,
+          "depth_min_km": 0.31,
+          "depth_max_km": 6.68,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_base_joint3",
+          "wall_seconds": 0.44583197101019323,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 290.15744416195895,
+            "max_depth_km": 0.2699999999999996,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.06000000000000005,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_regularized_base_joint4",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.18052634317575683,
+          "event_rms_s": 0.19007083699748123,
+          "depth_min_km": 0.3,
+          "depth_max_km": 6.82,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_base_joint4",
+          "wall_seconds": 0.5672210979973897,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 490.4970810208336,
+            "max_depth_km": 0.2599999999999999,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.039999999999999925,
+          "max_velocity_change_km_s": 0.03000000000000025
+        },
+        {
+          "name": "three_regularized_base_joint5",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.18007921473396626,
+          "event_rms_s": 0.188791704511368,
+          "depth_min_km": 0.29,
+          "depth_max_km": 6.96,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_base_joint5",
+          "wall_seconds": 0.5231438929913566,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 376.72673801227825,
+            "max_depth_km": 0.25000000000000044,
+            "max_origin_s": 0.18,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.06000000000000005,
+          "max_velocity_change_km_s": 0.020000000000000018
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 470.1992722625231,
+          "max_depth_km": 0.4500000000000006,
+          "max_origin_s": 0.14,
+          "max_rms_s": 0.02999999999999997
+        },
+        "station_s": 0.09999999999999998,
+        "velocity_km_s": 0.050000000000000266
+      },
+      "training_rays": {
+        "arrivals": 827,
+        "ray_count": 827,
+        "vertices_resolution_km": 0.01,
+        "interpretation": "Actual native ray vertices rounded to 0.01 km. Layer intersections are independently summed; horizontal segments are not automatically identified as head waves."
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_regularized_base_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_base_holdout_initialization",
+          "wall_seconds": 0.8834430009592324,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_regularized_base_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_base_holdout_initialization_extra",
+          "wall_seconds": 1.0773174460045993,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_regularized_base_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2412725710086556,
+          "event_rms_s": 0.2595653935877953,
+          "depth_min_km": 0.25,
+          "depth_max_km": 7.82,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_base_holdout_fitted",
+          "wall_seconds": 0.747727147070691,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_regularized_base_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24183754101489588,
+          "event_rms_s": 0.25987590090458124,
+          "depth_min_km": 0.25,
+          "depth_max_km": 7.82,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_base_holdout_fitted_extra",
+          "wall_seconds": 0.7813400540035218,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 71.06196150016169,
+            "max_depth_km": 0.20999999999999996,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.020000000000000018
+          }
+        }
+      },
+      "holdout_rays": {
+        "arrivals": 1065,
+        "ray_count": 1065,
+        "vertices_resolution_km": 0.01,
+        "interpretation": "Actual native ray vertices rounded to 0.01 km. Layer intersections are independently summed; horizontal segments are not automatically identified as head waves."
+      },
+      "holdout_improvement_s": 0.0019687898336426535,
+      "improves_common_initialization": false,
+      "holdout_location_converged": false
+    },
+    "three_regularized_slow": {
+      "family": "three_regularized",
+      "variant": "slow",
+      "training_events": 52,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_regularized_slow_prelocation",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.22673371551427215,
+          "event_rms_s": 0.2398036055416374,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.38,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_slow_prelocation",
+          "wall_seconds": 0.3570960140787065,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_regularized_slow_velocity_only",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21645650179769554,
+          "event_rms_s": 0.22372287115295808,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.02,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_slow_velocity_only",
+          "wall_seconds": 0.48500126192811877,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 484.18900198473415,
+            "max_depth_km": 1.0500000000000003,
+            "max_origin_s": 0.19,
+            "max_rms_s": 0.10999999999999999
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "three_regularized_slow_joint1",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17899610555571102,
+          "event_rms_s": 0.193112163501701,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.14,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_slow_joint1",
+          "wall_seconds": 0.3925675780046731,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1179.5635977900647,
+            "max_depth_km": 1.1499999999999995,
+            "max_origin_s": 0.3,
+            "max_rms_s": 0.09000000000000002
+          },
+          "station_change_s": 0.34,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "three_regularized_slow_joint2",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17763414979365352,
+          "event_rms_s": 0.19095911765449855,
+          "depth_min_km": 0.38,
+          "depth_max_km": 6.52,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_slow_joint2",
+          "wall_seconds": 0.44413672597147524,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 436.75168434971664,
+            "max_depth_km": 0.3799999999999999,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.15000000000000002,
+          "max_velocity_change_km_s": 0.08000000000000007
+        },
+        {
+          "name": "three_regularized_slow_joint3",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.18071612884886204,
+          "event_rms_s": 0.18882226074763048,
+          "depth_min_km": 0.38,
+          "depth_max_km": 6.7,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_slow_joint3",
+          "wall_seconds": 0.4953036600491032,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 433.18031172127667,
+            "max_depth_km": 0.1899999999999995,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.060000000000000026,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_regularized_slow_joint4",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1810429612245337,
+          "event_rms_s": 0.18767299711507207,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.87,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_slow_joint4",
+          "wall_seconds": 0.49375891394447535,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 350.80689017238734,
+            "max_depth_km": 0.20000000000000007,
+            "max_origin_s": 0.27,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.040000000000000036,
+          "max_velocity_change_km_s": 0.03000000000000025
+        },
+        {
+          "name": "three_regularized_slow_joint5",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17991278956778048,
+          "event_rms_s": 0.18733967504550084,
+          "depth_min_km": 0.38,
+          "depth_max_km": 6.99,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_slow_joint5",
+          "wall_seconds": 0.4804231870220974,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 662.2699910095121,
+            "max_depth_km": 0.3599999999999999,
+            "max_origin_s": 0.13,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.04999999999999993,
+          "max_velocity_change_km_s": 0.030000000000000027
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 672.1584231046053,
+          "max_depth_km": 0.3599999999999999,
+          "max_origin_s": 0.14,
+          "max_rms_s": 0.02999999999999997
+        },
+        "station_s": 0.08999999999999997,
+        "velocity_km_s": 0.06000000000000005
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_regularized_slow_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2556391162292635,
+          "event_rms_s": 0.27278728567476607,
+          "depth_min_km": 0.75,
+          "depth_max_km": 5.84,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_slow_holdout_initialization",
+          "wall_seconds": 1.2271069580456242,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_regularized_slow_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.25709515236754665,
+          "event_rms_s": 0.27141207808244694,
+          "depth_min_km": 0.75,
+          "depth_max_km": 5.84,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_slow_holdout_initialization_extra",
+          "wall_seconds": 1.1286357520148158,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 481.3640400005888,
+            "max_depth_km": 0.19999999999999973,
+            "max_origin_s": 0.16,
+            "max_rms_s": 0.02999999999999997
+          }
+        },
+        "fitted": {
+          "name": "three_regularized_slow_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24034593612974714,
+          "event_rms_s": 0.25783840901093524,
+          "depth_min_km": 0.39,
+          "depth_max_km": 7.82,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_slow_holdout_fitted",
+          "wall_seconds": 0.7468417850323021,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_regularized_slow_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24020189278141554,
+          "event_rms_s": 0.2576976222554819,
+          "depth_min_km": 0.39,
+          "depth_max_km": 7.82,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_slow_holdout_fitted_extra",
+          "wall_seconds": 1.0024438940454274,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 376.2842922700405,
+            "max_depth_km": 0.21999999999999997,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improvement_s": 0.015293180099516357,
+      "improves_common_initialization": true,
+      "holdout_location_converged": false
+    },
+    "three_regularized_fast": {
+      "family": "three_regularized",
+      "variant": "fast",
+      "training_events": 52,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_regularized_fast_prelocation",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21299130273868377,
+          "event_rms_s": 0.22932593533088363,
+          "depth_min_km": 0.3,
+          "depth_max_km": 5.62,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_fast_prelocation",
+          "wall_seconds": 0.35277140396647155,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_regularized_fast_velocity_only",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21141465700059578,
+          "event_rms_s": 0.22618491414021266,
+          "depth_min_km": 0.3,
+          "depth_max_km": 5.8,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_fast_velocity_only",
+          "wall_seconds": 0.42187905206810683,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 190.68896313528347,
+            "max_depth_km": 0.41999999999999993,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.10000000000000009
+        },
+        {
+          "name": "three_regularized_fast_joint1",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.18064838883018236,
+          "event_rms_s": 0.19407571876817722,
+          "depth_min_km": 0.34,
+          "depth_max_km": 6.12,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_fast_joint1",
+          "wall_seconds": 0.389658656087704,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1338.7469462034962,
+            "max_depth_km": 1.25,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.12
+          },
+          "station_change_s": 0.44,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "three_regularized_fast_joint2",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17939950553907963,
+          "event_rms_s": 0.19263357004346957,
+          "depth_min_km": 0.31,
+          "depth_max_km": 6.53,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_fast_joint2",
+          "wall_seconds": 0.34480894007720053,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 504.19288199046565,
+            "max_depth_km": 0.4900000000000002,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.14999999999999997,
+          "max_velocity_change_km_s": 0.08000000000000007
+        },
+        {
+          "name": "three_regularized_fast_joint3",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.18182421716925945,
+          "event_rms_s": 0.1901365905787812,
+          "depth_min_km": 0.33,
+          "depth_max_km": 6.7,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_fast_joint3",
+          "wall_seconds": 0.4647520990110934,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 329.70636546935845,
+            "max_depth_km": 0.28000000000000014,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.06000000000000005,
+          "max_velocity_change_km_s": 0.04999999999999982
+        },
+        {
+          "name": "three_regularized_fast_joint4",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.18121052044701252,
+          "event_rms_s": 0.19005060054951356,
+          "depth_min_km": 0.35,
+          "depth_max_km": 6.81,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_fast_joint4",
+          "wall_seconds": 0.5949876540107653,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 156.38348503705126,
+            "max_depth_km": 0.1900000000000004,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.03,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_regularized_fast_joint5",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1805702876409025,
+          "event_rms_s": 0.18925461075574274,
+          "depth_min_km": 0.35,
+          "depth_max_km": 6.92,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_fast_joint5",
+          "wall_seconds": 0.7377949840156361,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 391.4936188810346,
+            "max_depth_km": 0.25,
+            "max_origin_s": 0.14,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.050000000000000044,
+          "max_velocity_change_km_s": 0.040000000000000036
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 430.4353554639726,
+          "max_depth_km": 0.4400000000000004,
+          "max_origin_s": 0.06,
+          "max_rms_s": 0.020000000000000018
+        },
+        "station_s": 0.07999999999999996,
+        "velocity_km_s": 0.08000000000000007
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_regularized_fast_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23456570598136295,
+          "event_rms_s": 0.253272134656674,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.71,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_fast_holdout_initialization",
+          "wall_seconds": 0.7950277320342138,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_regularized_fast_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2347293196878625,
+          "event_rms_s": 0.25326258208403185,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.71,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_fast_holdout_initialization_extra",
+          "wall_seconds": 0.7784135729307309,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 329.5285504578954,
+            "max_depth_km": 0.15000000000000002,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.010000000000000009
+          }
+        },
+        "fitted": {
+          "name": "three_regularized_fast_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2408702570911853,
+          "event_rms_s": 0.25837582030083434,
+          "depth_min_km": 0.18,
+          "depth_max_km": 7.9,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_fast_holdout_fitted",
+          "wall_seconds": 0.7508433050243184,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_regularized_fast_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2410032181812287,
+          "event_rms_s": 0.2587158112055426,
+          "depth_min_km": 0.18,
+          "depth_max_km": 7.9,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_fast_holdout_fitted_extra",
+          "wall_seconds": 0.7717519560828805,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 53.74843357011725,
+            "max_depth_km": 0.27,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improvement_s": -0.006304551109822365,
+      "improves_common_initialization": false,
+      "holdout_location_converged": false
+    },
+    "three_regularized_selection": {
+      "family": "three_regularized",
+      "variant": "selection",
+      "training_events": 62,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_regularized_selection_prelocation",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.22169662818702263,
+          "event_rms_s": 0.23701435916756794,
+          "depth_min_km": 0.03,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_selection_prelocation",
+          "wall_seconds": 0.5413425110746175,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_regularized_selection_velocity_only",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.21664559571201567,
+          "event_rms_s": 0.2292132406241388,
+          "depth_min_km": 0.02,
+          "depth_max_km": 5.97,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_selection_velocity_only",
+          "wall_seconds": 0.6948570549720898,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 702.1057214049944,
+            "max_depth_km": 0.8500000000000001,
+            "max_origin_s": 0.14,
+            "max_rms_s": 0.08000000000000002
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.15000000000000036
+        },
+        {
+          "name": "three_regularized_selection_joint1",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.1833670795387925,
+          "event_rms_s": 0.1980509872441617,
+          "depth_min_km": 0.26,
+          "depth_max_km": 6.41,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_selection_joint1",
+          "wall_seconds": 0.4886497730622068,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1206.744515806976,
+            "max_depth_km": 1.4000000000000004,
+            "max_origin_s": 0.32,
+            "max_rms_s": 0.12
+          },
+          "station_change_s": 0.42,
+          "max_velocity_change_km_s": 0.14000000000000012
+        },
+        {
+          "name": "three_regularized_selection_joint2",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.18360522813356867,
+          "event_rms_s": 0.19607437693467902,
+          "depth_min_km": 0.28,
+          "depth_max_km": 6.91,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_selection_joint2",
+          "wall_seconds": 0.49167350702919066,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 770.4713847874506,
+            "max_depth_km": 0.5,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.11000000000000004,
+          "max_velocity_change_km_s": 0.09999999999999964
+        },
+        {
+          "name": "three_regularized_selection_joint3",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.18401771708729625,
+          "event_rms_s": 0.19565440235601733,
+          "depth_min_km": 0.28,
+          "depth_max_km": 7.14,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_selection_joint3",
+          "wall_seconds": 0.661606717039831,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 234.71691416142255,
+            "max_depth_km": 0.22999999999999954,
+            "max_origin_s": 0.17,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.04000000000000001,
+          "max_velocity_change_km_s": 0.050000000000000266
+        },
+        {
+          "name": "three_regularized_selection_joint4",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.18240992519071106,
+          "event_rms_s": 0.1949607073729341,
+          "depth_min_km": 0.28,
+          "depth_max_km": 7.34,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_selection_joint4",
+          "wall_seconds": 0.6012403359636664,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 126.73414772820078,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.27,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.020000000000000018,
+          "max_velocity_change_km_s": 0.04999999999999982
+        },
+        {
+          "name": "three_regularized_selection_joint5",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.18351534215994258,
+          "event_rms_s": 0.19387391978859236,
+          "depth_min_km": 0.29,
+          "depth_max_km": 7.5,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_selection_joint5",
+          "wall_seconds": 0.6378056990215555,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 153.7647587757974,
+            "max_depth_km": 0.16000000000000014,
+            "max_origin_s": 0.26,
+            "max_rms_s": 0.040000000000000036
+          },
+          "station_change_s": 0.020000000000000018,
+          "max_velocity_change_km_s": 0.040000000000000036
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 256.66098147248124,
+          "max_depth_km": 0.3600000000000003,
+          "max_origin_s": 0.09,
+          "max_rms_s": 0.010000000000000009
+        },
+        "station_s": 0.04000000000000001,
+        "velocity_km_s": 0.08000000000000007
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_regularized_selection_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_selection_holdout_initialization",
+          "wall_seconds": 0.8879240109818056,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_regularized_selection_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_selection_holdout_initialization_extra",
+          "wall_seconds": 1.133408349007368,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_regularized_selection_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2383574464967887,
+          "event_rms_s": 0.2522031950886095,
+          "depth_min_km": 0.38,
+          "depth_max_km": 9.09,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_selection_holdout_fitted",
+          "wall_seconds": 0.7508598431013525,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_regularized_selection_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23736582174637808,
+          "event_rms_s": 0.2513736455506411,
+          "depth_min_km": 0.38,
+          "depth_max_km": 9.14,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_selection_holdout_fitted_extra",
+          "wall_seconds": 0.7861947510391474,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1265.6212839040243,
+            "max_depth_km": 0.8599999999999999,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.030000000000000027
+          }
+        }
+      },
+      "holdout_improvement_s": 0.004883914345509555,
+      "improves_common_initialization": true,
+      "holdout_location_converged": false
+    },
+    "three_regularized_damping": {
+      "family": "three_regularized",
+      "variant": "damping",
+      "training_events": 52,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_regularized_damping_prelocation",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.2169294097233062,
+          "event_rms_s": 0.23315148591552098,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_damping_prelocation",
+          "wall_seconds": 0.35569865303114057,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_regularized_damping_velocity_only",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21235482842635223,
+          "event_rms_s": 0.22725790161434178,
+          "depth_min_km": 0.31,
+          "depth_max_km": 5.8,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_damping_velocity_only",
+          "wall_seconds": 0.35021178098395467,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 646.7941179689632,
+            "max_depth_km": 0.81,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.03999999999999998
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_regularized_damping_joint1",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.18108443319842718,
+          "event_rms_s": 0.19618476377757152,
+          "depth_min_km": 0.32,
+          "depth_max_km": 5.79,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_damping_joint1",
+          "wall_seconds": 0.5193230910226703,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 1093.551219749857,
+            "max_depth_km": 1.0200000000000005,
+            "max_origin_s": 0.19,
+            "max_rms_s": 0.09999999999999998
+          },
+          "station_change_s": 0.43,
+          "max_velocity_change_km_s": 0.020000000000000018
+        },
+        {
+          "name": "three_regularized_damping_joint2",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17945090910529893,
+          "event_rms_s": 0.1941401159353332,
+          "depth_min_km": 0.24,
+          "depth_max_km": 6.08,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_damping_joint2",
+          "wall_seconds": 0.5312164679635316,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 343.08781177469274,
+            "max_depth_km": 0.3100000000000005,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.019999999999999962
+          },
+          "station_change_s": 0.10999999999999999,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "three_regularized_damping_joint3",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1790076906875011,
+          "event_rms_s": 0.19489642219552256,
+          "depth_min_km": 0.2,
+          "depth_max_km": 6.26,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_damping_joint3",
+          "wall_seconds": 0.5022105029784143,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 215.17450907334418,
+            "max_depth_km": 0.2699999999999996,
+            "max_origin_s": 0.03,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.07,
+          "max_velocity_change_km_s": 0.010000000000000009
+        },
+        {
+          "name": "three_regularized_damping_joint4",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17965094127593684,
+          "event_rms_s": 0.19354486659329248,
+          "depth_min_km": 0.27,
+          "depth_max_km": 6.43,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_damping_joint4",
+          "wall_seconds": 0.376714693964459,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 236.43664555745482,
+            "max_depth_km": 0.2600000000000007,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.01999999999999999
+          },
+          "station_change_s": 0.07,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "three_regularized_damping_joint5",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17924641392360965,
+          "event_rms_s": 0.19380799380195457,
+          "depth_min_km": 0.26,
+          "depth_max_km": 6.6,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_damping_joint5",
+          "wall_seconds": 0.34394580393563956,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 345.14905999277255,
+            "max_depth_km": 0.3099999999999996,
+            "max_origin_s": 0.14,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.050000000000000044,
+          "max_velocity_change_km_s": 0.010000000000000009
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 405.2568383839656,
+          "max_depth_km": 0.5700000000000003,
+          "max_origin_s": 0.15,
+          "max_rms_s": 0.030000000000000027
+        },
+        "station_s": 0.12000000000000005,
+        "velocity_km_s": 0.020000000000000018
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_regularized_damping_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_damping_holdout_initialization",
+          "wall_seconds": 0.8704433869570494,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_regularized_damping_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_damping_holdout_initialization_extra",
+          "wall_seconds": 1.065379046020098,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_regularized_damping_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24852273585075024,
+          "event_rms_s": 0.26947679294418636,
+          "depth_min_km": 0.17,
+          "depth_max_km": 7.79,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_damping_holdout_fitted",
+          "wall_seconds": 0.760512269102037,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_regularized_damping_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24840302705435227,
+          "event_rms_s": 0.2696293752542553,
+          "depth_min_km": 0.17,
+          "depth_max_km": 7.79,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_damping_holdout_fitted_extra",
+          "wall_seconds": 0.8204880049452186,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 134.1242455286015,
+            "max_depth_km": 0.17999999999999972,
+            "max_origin_s": 0.03,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improvement_s": -0.005281375008451994,
+      "improves_common_initialization": false,
+      "holdout_location_converged": false
+    },
+    "three_regularized_precision32": {
+      "family": "three_regularized",
+      "variant": "precision32",
+      "training_events": 52,
+      "bits": 32,
+      "runs": [
+        {
+          "name": "three_regularized_precision32_prelocation",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.2169667725969222,
+          "event_rms_s": 0.2328915231142206,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_precision32_prelocation",
+          "wall_seconds": 0.35284404701087624,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+        },
+        {
+          "name": "three_regularized_precision32_velocity_only",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21480962016201116,
+          "event_rms_s": 0.22379162698298682,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.9,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_precision32_velocity_only",
+          "wall_seconds": 0.4408435629447922,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 770.0005994272583,
+            "max_depth_km": 0.91,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.08000000000000002
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.09000000000000008
+        },
+        {
+          "name": "three_regularized_precision32_joint1",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17951894606186625,
+          "event_rms_s": 0.19298764408435784,
+          "depth_min_km": 0.33,
+          "depth_max_km": 6.11,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_precision32_joint1",
+          "wall_seconds": 0.5646633598953485,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 1244.9412351928975,
+            "max_depth_km": 1.1900000000000004,
+            "max_origin_s": 0.3,
+            "max_rms_s": 0.10999999999999999
+          },
+          "station_change_s": 0.39,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "three_regularized_precision32_joint2",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.1794091875854875,
+          "event_rms_s": 0.19059118552545917,
+          "depth_min_km": 0.32,
+          "depth_max_km": 6.47,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_precision32_joint2",
+          "wall_seconds": 0.37186587194446474,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 414.15302306638165,
+            "max_depth_km": 0.41000000000000014,
+            "max_origin_s": 0.13,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.13999999999999996,
+          "max_velocity_change_km_s": 0.06000000000000005
+        },
+        {
+          "name": "three_regularized_precision32_joint3",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.18126302146445428,
+          "event_rms_s": 0.18971131915461611,
+          "depth_min_km": 0.3,
+          "depth_max_km": 6.68,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_precision32_joint3",
+          "wall_seconds": 0.41458702890668064,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 469.42751375327543,
+            "max_depth_km": 0.2999999999999998,
+            "max_origin_s": 0.22,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.07000000000000006,
+          "max_velocity_change_km_s": 0.04999999999999982
+        },
+        {
+          "name": "three_regularized_precision32_joint4",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.18101006739456846,
+          "event_rms_s": 0.18924953002685266,
+          "depth_min_km": 0.36,
+          "depth_max_km": 6.83,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_precision32_joint4",
+          "wall_seconds": 0.4791230319533497,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 397.72265097361515,
+            "max_depth_km": 0.20000000000000007,
+            "max_origin_s": 0.27,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.04999999999999999,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_regularized_precision32_joint5",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.17948596156533425,
+          "event_rms_s": 0.18929525167761685,
+          "depth_min_km": 0.3,
+          "depth_max_km": 6.97,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_precision32_joint5",
+          "wall_seconds": 0.5107524369377643,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 383.1863475775426,
+            "max_depth_km": 0.25,
+            "max_origin_s": 0.33,
+            "max_rms_s": 0.019999999999999962
+          },
+          "station_change_s": 0.07000000000000006,
+          "max_velocity_change_km_s": 0.040000000000000036
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 542.5665380240756,
+          "max_depth_km": 0.41999999999999993,
+          "max_origin_s": 0.14,
+          "max_rms_s": 0.020000000000000018
+        },
+        "station_s": 0.10999999999999999,
+        "velocity_km_s": 0.08000000000000007
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_regularized_precision32_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_precision32_holdout_initialization",
+          "wall_seconds": 0.8823548610089347,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_regularized_precision32_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_precision32_holdout_initialization_extra",
+          "wall_seconds": 1.0764518959913403,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_regularized_precision32_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24234906536557568,
+          "event_rms_s": 0.25951878544721957,
+          "depth_min_km": 0.27,
+          "depth_max_km": 7.75,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_precision32_holdout_fitted",
+          "wall_seconds": 0.7515422530705109,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_regularized_precision32_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24246629115697266,
+          "event_rms_s": 0.25951878544721957,
+          "depth_min_km": 0.27,
+          "depth_max_km": 7.76,
+          "workdir": "tmp/velocity_holdout_review/runs/three_regularized_precision32_holdout_fitted_extra",
+          "wall_seconds": 0.7635388389462605,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 47.67045281918897,
+            "max_depth_km": 0.16000000000000014,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.0
+          }
+        }
+      },
+      "holdout_improvement_s": 0.0008922954767225655,
+      "improves_common_initialization": false,
+      "holdout_location_converged": false
+    },
+    "three_zero_delays_base": {
+      "family": "three_zero_delays",
+      "variant": "base",
+      "training_events": 52,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_zero_delays_base_prelocation",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.2169294097233062,
+          "event_rms_s": 0.23315148591552098,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_base_prelocation",
+          "wall_seconds": 0.35207206499762833,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_zero_delays_base_velocity_only",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21479404099827257,
+          "event_rms_s": 0.22379162698298682,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.91,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_base_velocity_only",
+          "wall_seconds": 0.44757688394747674,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 770.0005994272583,
+            "max_depth_km": 0.91,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.08000000000000002
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.09000000000000008
+        },
+        {
+          "name": "three_zero_delays_base_joint1",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21190011564051667,
+          "event_rms_s": 0.22604458375761594,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.98,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_base_joint1",
+          "wall_seconds": 0.4873572220094502,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 396.0206857036765,
+            "max_depth_km": 0.29000000000000004,
+            "max_origin_s": 0.18,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_zero_delays_base_joint2",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21063833425977804,
+          "event_rms_s": 0.224448040929127,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.04,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_base_joint2",
+          "wall_seconds": 0.4603453839663416,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 384.37005366120576,
+            "max_depth_km": 0.6599999999999999,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.03000000000000025
+        },
+        {
+          "name": "three_zero_delays_base_joint3",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.212443821438118,
+          "event_rms_s": 0.22285300432900054,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.07,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_base_joint3",
+          "wall_seconds": 0.5141109509859234,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 300.2412198912672,
+            "max_depth_km": 0.16999999999999993,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.019999999999999574
+        },
+        {
+          "name": "three_zero_delays_base_joint4",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21115423567966982,
+          "event_rms_s": 0.2233529459432726,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.1,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_base_joint4",
+          "wall_seconds": 0.4665702939964831,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 311.6899972948508,
+            "max_depth_km": 0.16999999999999993,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        },
+        {
+          "name": "three_zero_delays_base_joint5",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21179119499666094,
+          "event_rms_s": 0.22215725546073473,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.13,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_base_joint5",
+          "wall_seconds": 0.509162359056063,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 412.3952352421253,
+            "max_depth_km": 0.20000000000000007,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000231
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 408.5827211074585,
+          "max_depth_km": 0.18000000000000005,
+          "max_origin_s": 0.07,
+          "max_rms_s": 0.010000000000000009
+        },
+        "station_s": 0.0,
+        "velocity_km_s": 0.03000000000000025
+      },
+      "training_rays": {
+        "arrivals": 827,
+        "ray_count": 827,
+        "vertices_resolution_km": 0.01,
+        "interpretation": "Actual native ray vertices rounded to 0.01 km. Layer intersections are independently summed; horizontal segments are not automatically identified as head waves."
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_zero_delays_base_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_base_holdout_initialization",
+          "wall_seconds": 0.8861450559925288,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_zero_delays_base_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_base_holdout_initialization_extra",
+          "wall_seconds": 1.0739706699969247,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_zero_delays_base_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22738663068044826,
+          "event_rms_s": 0.24504114203603156,
+          "depth_min_km": 0.45,
+          "depth_max_km": 7.53,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_base_holdout_fitted",
+          "wall_seconds": 0.8207864740397781,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_zero_delays_base_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22725908566827277,
+          "event_rms_s": 0.24435893747227794,
+          "depth_min_km": 0.45,
+          "depth_max_km": 7.53,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_base_holdout_fitted_extra",
+          "wall_seconds": 0.8363138359272853,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 780.2758235801462,
+            "max_depth_km": 0.8199999999999998,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.030000000000000027
+          }
+        }
+      },
+      "holdout_rays": {
+        "arrivals": 1065,
+        "ray_count": 1065,
+        "vertices_resolution_km": 0.01,
+        "interpretation": "Actual native ray vertices rounded to 0.01 km. Layer intersections are independently summed; horizontal segments are not automatically identified as head waves."
+      },
+      "holdout_improvement_s": 0.01585473016184999,
+      "improves_common_initialization": true,
+      "holdout_location_converged": false
+    },
+    "three_zero_delays_slow": {
+      "family": "three_zero_delays",
+      "variant": "slow",
+      "training_events": 52,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_zero_delays_slow_prelocation",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.22673371551427215,
+          "event_rms_s": 0.2398036055416374,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.38,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_slow_prelocation",
+          "wall_seconds": 0.35716441203840077,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_zero_delays_slow_velocity_only",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21645650179769554,
+          "event_rms_s": 0.22372287115295808,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.02,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_slow_velocity_only",
+          "wall_seconds": 0.48829877795651555,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 484.18900198473415,
+            "max_depth_km": 1.0500000000000003,
+            "max_origin_s": 0.19,
+            "max_rms_s": 0.10999999999999999
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.10999999999999988
+        },
+        {
+          "name": "three_zero_delays_slow_joint1",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21317707838151673,
+          "event_rms_s": 0.2245936501602565,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.13,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_slow_joint1",
+          "wall_seconds": 0.47377638099715114,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 305.5944427082231,
+            "max_depth_km": 0.29999999999999993,
+            "max_origin_s": 0.19,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.06000000000000005
+        },
+        {
+          "name": "three_zero_delays_slow_joint2",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21285520281159712,
+          "event_rms_s": 0.22442661983888562,
+          "depth_min_km": 0.4,
+          "depth_max_km": 6.2,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_slow_joint2",
+          "wall_seconds": 0.49372890300583094,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 92.37378593059772,
+            "max_depth_km": 0.10999999999999943,
+            "max_origin_s": 0.03,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_zero_delays_slow_joint3",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21221452550840947,
+          "event_rms_s": 0.2247562782557689,
+          "depth_min_km": 0.4,
+          "depth_max_km": 6.26,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_slow_joint3",
+          "wall_seconds": 0.5173510760068893,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 194.01717827437994,
+            "max_depth_km": 0.1499999999999999,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.029999999999999805
+        },
+        {
+          "name": "three_zero_delays_slow_joint4",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21269493797091701,
+          "event_rms_s": 0.22443947273836862,
+          "depth_min_km": 0.41,
+          "depth_max_km": 6.3,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_slow_joint4",
+          "wall_seconds": 0.5178020499879494,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 194.3345856674386,
+            "max_depth_km": 0.14000000000000012,
+            "max_origin_s": 0.03,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.03000000000000025
+        },
+        {
+          "name": "three_zero_delays_slow_joint5",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21436212566352358,
+          "event_rms_s": 0.22350357078544883,
+          "depth_min_km": 0.41,
+          "depth_max_km": 6.35,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_slow_joint5",
+          "wall_seconds": 0.5191755730193108,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 354.9437924203886,
+            "max_depth_km": 0.18999999999999995,
+            "max_origin_s": 0.17,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 284.17553756785185,
+          "max_depth_km": 0.16999999999999993,
+          "max_origin_s": 0.16,
+          "max_rms_s": 0.02999999999999997
+        },
+        "station_s": 0.0,
+        "velocity_km_s": 0.050000000000000266
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_zero_delays_slow_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2556391162292635,
+          "event_rms_s": 0.27278728567476607,
+          "depth_min_km": 0.75,
+          "depth_max_km": 5.84,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_slow_holdout_initialization",
+          "wall_seconds": 1.7262435239972547,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_zero_delays_slow_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.25709515236754665,
+          "event_rms_s": 0.27141207808244694,
+          "depth_min_km": 0.75,
+          "depth_max_km": 5.84,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_slow_holdout_initialization_extra",
+          "wall_seconds": 1.630539411911741,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 481.3640400005888,
+            "max_depth_km": 0.19999999999999973,
+            "max_origin_s": 0.16,
+            "max_rms_s": 0.02999999999999997
+          }
+        },
+        "fitted": {
+          "name": "three_zero_delays_slow_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22898801862991947,
+          "event_rms_s": 0.241947741624962,
+          "depth_min_km": 0.61,
+          "depth_max_km": 7.58,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_slow_holdout_fitted",
+          "wall_seconds": 1.1773499180562794,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_zero_delays_slow_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22906169085196773,
+          "event_rms_s": 0.24175100493502977,
+          "depth_min_km": 0.61,
+          "depth_max_km": 7.6,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_slow_holdout_fitted_extra",
+          "wall_seconds": 1.256500296993181,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 352.53622490245493,
+            "max_depth_km": 0.27,
+            "max_origin_s": 0.02,
+            "max_rms_s": 0.010000000000000009
+          }
+        }
+      },
+      "holdout_improvement_s": 0.02665109759934403,
+      "improves_common_initialization": true,
+      "holdout_location_converged": false
+    },
+    "three_zero_delays_fast": {
+      "family": "three_zero_delays",
+      "variant": "fast",
+      "training_events": 52,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_zero_delays_fast_prelocation",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21299130273868377,
+          "event_rms_s": 0.22932593533088363,
+          "depth_min_km": 0.3,
+          "depth_max_km": 5.62,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_fast_prelocation",
+          "wall_seconds": 0.35321482201106846,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_zero_delays_fast_velocity_only",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21141465700059578,
+          "event_rms_s": 0.22618491414021266,
+          "depth_min_km": 0.3,
+          "depth_max_km": 5.8,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_fast_velocity_only",
+          "wall_seconds": 0.41930852795485407,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 190.68896313528347,
+            "max_depth_km": 0.41999999999999993,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.10000000000000009
+        },
+        {
+          "name": "three_zero_delays_fast_joint1",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21102389877091846,
+          "event_rms_s": 0.2252562643199621,
+          "depth_min_km": 0.31,
+          "depth_max_km": 5.86,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_fast_joint1",
+          "wall_seconds": 0.4790200099814683,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 147.22770526500787,
+            "max_depth_km": 0.3999999999999999,
+            "max_origin_s": 0.11,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.04999999999999982
+        },
+        {
+          "name": "three_zero_delays_fast_joint2",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21173563859908542,
+          "event_rms_s": 0.22408360390368043,
+          "depth_min_km": 0.32,
+          "depth_max_km": 5.9,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_fast_joint2",
+          "wall_seconds": 0.4937283690087497,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 472.54977436200306,
+            "max_depth_km": 0.65,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.029999999999999805
+        },
+        {
+          "name": "three_zero_delays_fast_joint3",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21159733667975061,
+          "event_rms_s": 0.2226846683956072,
+          "depth_min_km": 0.33,
+          "depth_max_km": 5.95,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_fast_joint3",
+          "wall_seconds": 0.48335298302117735,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 279.66920376970035,
+            "max_depth_km": 0.10000000000000009,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        },
+        {
+          "name": "three_zero_delays_fast_joint4",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21008907824555112,
+          "event_rms_s": 0.22478622322964137,
+          "depth_min_km": 0.33,
+          "depth_max_km": 5.98,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_fast_joint4",
+          "wall_seconds": 0.4781290120445192,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 123.31515329774177,
+            "max_depth_km": 0.10000000000000009,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "three_zero_delays_fast_joint5",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21007374475308146,
+          "event_rms_s": 0.22441376620327566,
+          "depth_min_km": 0.34,
+          "depth_max_km": 6.0,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_fast_joint5",
+          "wall_seconds": 0.4548138560494408,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 68.39409408965848,
+            "max_depth_km": 0.07999999999999996,
+            "max_origin_s": 0.01,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000009
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": true,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 112.32479621672893,
+          "max_depth_km": 0.10000000000000009,
+          "max_origin_s": 0.16,
+          "max_rms_s": 0.020000000000000018
+        },
+        "station_s": 0.0,
+        "velocity_km_s": 0.020000000000000018
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_zero_delays_fast_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23456570598136295,
+          "event_rms_s": 0.253272134656674,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.71,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_fast_holdout_initialization",
+          "wall_seconds": 0.7684066339861602,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_zero_delays_fast_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2347293196878625,
+          "event_rms_s": 0.25326258208403185,
+          "depth_min_km": 0.39,
+          "depth_max_km": 6.71,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_fast_holdout_initialization_extra",
+          "wall_seconds": 0.7683045229641721,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 329.5285504578954,
+            "max_depth_km": 0.15000000000000002,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.010000000000000009
+          }
+        },
+        "fitted": {
+          "name": "three_zero_delays_fast_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2262206575790393,
+          "event_rms_s": 0.24402538207484523,
+          "depth_min_km": 0.39,
+          "depth_max_km": 7.52,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_fast_holdout_fitted",
+          "wall_seconds": 0.751449270057492,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_zero_delays_fast_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2259468756374574,
+          "event_rms_s": 0.24326077869564777,
+          "depth_min_km": 0.39,
+          "depth_max_km": 7.52,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_fast_holdout_fitted_extra",
+          "wall_seconds": 0.7870589579688385,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 879.2807209567029,
+            "max_depth_km": 0.9199999999999999,
+            "max_origin_s": 0.09,
+            "max_rms_s": 0.030000000000000027
+          }
+        }
+      },
+      "holdout_improvement_s": 0.00834504840232364,
+      "improves_common_initialization": true,
+      "holdout_location_converged": false
+    },
+    "three_zero_delays_selection": {
+      "family": "three_zero_delays",
+      "variant": "selection",
+      "training_events": 62,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_zero_delays_selection_prelocation",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.22169662818702263,
+          "event_rms_s": 0.23701435916756794,
+          "depth_min_km": 0.03,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_selection_prelocation",
+          "wall_seconds": 0.4922612339723855,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_zero_delays_selection_velocity_only",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.21664559571201567,
+          "event_rms_s": 0.2292132406241388,
+          "depth_min_km": 0.02,
+          "depth_max_km": 5.97,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_selection_velocity_only",
+          "wall_seconds": 0.5513014589669183,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 702.1057214049944,
+            "max_depth_km": 0.8500000000000001,
+            "max_origin_s": 0.14,
+            "max_rms_s": 0.08000000000000002
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.15000000000000036
+        },
+        {
+          "name": "three_zero_delays_selection_joint1",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.214299222036984,
+          "event_rms_s": 0.22923434973139212,
+          "depth_min_km": 0.05,
+          "depth_max_km": 6.13,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_selection_joint1",
+          "wall_seconds": 0.5722039180109277,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 294.4287788007866,
+            "max_depth_km": 0.25,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.08999999999999986
+        },
+        {
+          "name": "three_zero_delays_selection_joint2",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.2140000826017022,
+          "event_rms_s": 0.22848378215899134,
+          "depth_min_km": 0.08,
+          "depth_max_km": 6.25,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_selection_joint2",
+          "wall_seconds": 0.5945006009424105,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 268.19262050149206,
+            "max_depth_km": 0.1900000000000004,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.06999999999999984
+        },
+        {
+          "name": "three_zero_delays_selection_joint3",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.21366425801129013,
+          "event_rms_s": 0.22836727634060403,
+          "depth_min_km": 0.09,
+          "depth_max_km": 6.36,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_selection_joint3",
+          "wall_seconds": 0.5927679429296404,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 316.38983210041334,
+            "max_depth_km": 0.16999999999999993,
+            "max_origin_s": 0.06,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.050000000000000266
+        },
+        {
+          "name": "three_zero_delays_selection_joint4",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.21531024362556697,
+          "event_rms_s": 0.2272734604093747,
+          "depth_min_km": 0.11,
+          "depth_max_km": 6.49,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_selection_joint4",
+          "wall_seconds": 0.44484448502771556,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 236.63102365919642,
+            "max_depth_km": 0.33000000000000007,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.019999999999999962
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.06999999999999984
+        },
+        {
+          "name": "three_zero_delays_selection_joint5",
+          "bits": 64,
+          "events": 62,
+          "picks": 990,
+          "returncode": 0,
+          "residual_rms_s": 0.21301785859595923,
+          "event_rms_s": 0.22659470711012336,
+          "depth_min_km": 0.12,
+          "depth_max_km": 6.6,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_selection_joint5",
+          "wall_seconds": 0.48676736489869654,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 199.0363851654054,
+            "max_depth_km": 0.17999999999999972,
+            "max_origin_s": 0.21,
+            "max_rms_s": 0.019999999999999962
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.04999999999999982
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 434.2874095032404,
+          "max_depth_km": 0.3899999999999997,
+          "max_origin_s": 0.12,
+          "max_rms_s": 0.010000000000000009
+        },
+        "station_s": 0.0,
+        "velocity_km_s": 0.11999999999999966
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_zero_delays_selection_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_selection_holdout_initialization",
+          "wall_seconds": 0.8852536920458078,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_zero_delays_selection_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_selection_holdout_initialization_extra",
+          "wall_seconds": 1.0733786569908261,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_zero_delays_selection_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.2252031216688385,
+          "event_rms_s": 0.24001344048386794,
+          "depth_min_km": 0.56,
+          "depth_max_km": 8.52,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_selection_holdout_fitted",
+          "wall_seconds": 0.8506390589755028,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_zero_delays_selection_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22623603113570914,
+          "event_rms_s": 0.24005375742031806,
+          "depth_min_km": 0.56,
+          "depth_max_km": 8.56,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_selection_holdout_fitted_extra",
+          "wall_seconds": 0.8365554150659591,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 502.7057565187214,
+            "max_depth_km": 0.28000000000000025,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.020000000000000018
+          }
+        }
+      },
+      "holdout_improvement_s": 0.018038239173459758,
+      "improves_common_initialization": true,
+      "holdout_location_converged": false
+    },
+    "three_zero_delays_damping": {
+      "family": "three_zero_delays",
+      "variant": "damping",
+      "training_events": 52,
+      "bits": 64,
+      "runs": [
+        {
+          "name": "three_zero_delays_damping_prelocation",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.2169294097233062,
+          "event_rms_s": 0.23315148591552098,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_damping_prelocation",
+          "wall_seconds": 0.35246097994968295,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        {
+          "name": "three_zero_delays_damping_velocity_only",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21235482842635223,
+          "event_rms_s": 0.22725790161434178,
+          "depth_min_km": 0.31,
+          "depth_max_km": 5.8,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_damping_velocity_only",
+          "wall_seconds": 0.34928518801461905,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 646.7941179689632,
+            "max_depth_km": 0.81,
+            "max_origin_s": 0.12,
+            "max_rms_s": 0.03999999999999998
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_zero_delays_damping_joint1",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21181671995781642,
+          "event_rms_s": 0.22806459948545618,
+          "depth_min_km": 0.36,
+          "depth_max_km": 5.85,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_damping_joint1",
+          "wall_seconds": 0.47776309703476727,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 229.81834085748318,
+            "max_depth_km": 0.23000000000000004,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "three_zero_delays_damping_joint2",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21424140233955902,
+          "event_rms_s": 0.22614239897768976,
+          "depth_min_km": 0.36,
+          "depth_max_km": 5.86,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_damping_joint2",
+          "wall_seconds": 0.49331744108349085,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 343.0250820368901,
+            "max_depth_km": 0.16999999999999993,
+            "max_origin_s": 0.17,
+            "max_rms_s": 0.030000000000000027
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "three_zero_delays_damping_joint3",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.2138898421401484,
+          "event_rms_s": 0.22565715997094762,
+          "depth_min_km": 0.36,
+          "depth_max_km": 5.87,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_damping_joint3",
+          "wall_seconds": 0.4787973960628733,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 264.2509001913775,
+            "max_depth_km": 0.1200000000000001,
+            "max_origin_s": 0.07,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "three_zero_delays_damping_joint4",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21317819580828942,
+          "event_rms_s": 0.22538002095605955,
+          "depth_min_km": 0.35,
+          "depth_max_km": 5.88,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_damping_joint4",
+          "wall_seconds": 0.4802290020743385,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 251.0098701237276,
+            "max_depth_km": 0.12,
+            "max_origin_s": 0.03,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000231
+        },
+        {
+          "name": "three_zero_delays_damping_joint5",
+          "bits": 64,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21284774945913482,
+          "event_rms_s": 0.22535015488721613,
+          "depth_min_km": 0.36,
+          "depth_max_km": 5.89,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_damping_joint5",
+          "wall_seconds": 0.47764088003896177,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 109.66204810260663,
+            "max_depth_km": 0.08000000000000007,
+            "max_origin_s": 0.02,
+            "max_rms_s": 0.010000000000000009
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000231
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 251.0098701237276,
+          "max_depth_km": 0.15000000000000002,
+          "max_origin_s": 0.04,
+          "max_rms_s": 0.010000000000000009
+        },
+        "station_s": 0.0,
+        "velocity_km_s": 0.020000000000000018
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_zero_delays_damping_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_damping_holdout_initialization",
+          "wall_seconds": 0.8708827779628336,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_zero_delays_damping_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_damping_holdout_initialization_extra",
+          "wall_seconds": 1.0648882990935817,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_zero_delays_damping_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23093422432034907,
+          "event_rms_s": 0.24946394141141146,
+          "depth_min_km": 0.47,
+          "depth_max_km": 6.97,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_damping_holdout_fitted",
+          "wall_seconds": 0.7475307009881362,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_zero_delays_damping_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.23023688148566496,
+          "event_rms_s": 0.2501386712180059,
+          "depth_min_km": 0.47,
+          "depth_max_km": 6.97,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_damping_holdout_fitted_extra",
+          "wall_seconds": 0.7691078060306609,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 295.6055437805396,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.019999999999999962
+          }
+        }
+      },
+      "holdout_improvement_s": 0.012307136521949175,
+      "improves_common_initialization": true,
+      "holdout_location_converged": false
+    },
+    "three_zero_delays_precision32": {
+      "family": "three_zero_delays",
+      "variant": "precision32",
+      "training_events": 52,
+      "bits": 32,
+      "runs": [
+        {
+          "name": "three_zero_delays_precision32_prelocation",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.2169667725969222,
+          "event_rms_s": 0.2328915231142206,
+          "depth_min_km": 0.4,
+          "depth_max_km": 5.51,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_precision32_prelocation",
+          "wall_seconds": 0.3478068880503997,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621"
+        },
+        {
+          "name": "three_zero_delays_precision32_velocity_only",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21480962016201116,
+          "event_rms_s": 0.22379162698298682,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.9,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_precision32_velocity_only",
+          "wall_seconds": 0.44725217402447015,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 770.0005994272583,
+            "max_depth_km": 0.91,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.08000000000000002
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.09000000000000008
+        },
+        {
+          "name": "three_zero_delays_precision32_joint1",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21188051890776544,
+          "event_rms_s": 0.22604458375761594,
+          "depth_min_km": 0.37,
+          "depth_max_km": 5.98,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_precision32_joint1",
+          "wall_seconds": 0.47799896902870387,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 396.0206857036765,
+            "max_depth_km": 0.29000000000000004,
+            "max_origin_s": 0.18,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.040000000000000036
+        },
+        {
+          "name": "three_zero_delays_precision32_joint2",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21063916664473487,
+          "event_rms_s": 0.224448040929127,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.04,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_precision32_joint2",
+          "wall_seconds": 0.44925926404539496,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 384.37005366120576,
+            "max_depth_km": 0.6599999999999999,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.03000000000000025
+        },
+        {
+          "name": "three_zero_delays_precision32_joint3",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.2124364105723882,
+          "event_rms_s": 0.22285300432900054,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.07,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_precision32_joint3",
+          "wall_seconds": 0.4937484789406881,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 300.2412198912672,
+            "max_depth_km": 0.16999999999999993,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.019999999999999574
+        },
+        {
+          "name": "three_zero_delays_precision32_joint4",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.2111465304370369,
+          "event_rms_s": 0.2233529459432726,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.1,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_precision32_joint4",
+          "wall_seconds": 0.4640464090043679,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 311.6899972948508,
+            "max_depth_km": 0.16999999999999993,
+            "max_origin_s": 0.15,
+            "max_rms_s": 0.02999999999999997
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.020000000000000018
+        },
+        {
+          "name": "three_zero_delays_precision32_joint5",
+          "bits": 32,
+          "events": 52,
+          "picks": 827,
+          "returncode": 0,
+          "residual_rms_s": 0.21179444644594586,
+          "event_rms_s": 0.22215725546073473,
+          "depth_min_km": 0.37,
+          "depth_max_km": 6.13,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_precision32_joint5",
+          "wall_seconds": 0.49441179097630084,
+          "timeout_seconds": 300,
+          "binary_sha256": "62114ae42dd178b6d3b19811f0e236da4c37b414d3a7c4b981762869896e6621",
+          "location_change": {
+            "max_horizontal_m": 412.3952352421253,
+            "max_depth_km": 0.20000000000000007,
+            "max_origin_s": 0.08,
+            "max_rms_s": 0.020000000000000018
+          },
+          "station_change_s": 0.0,
+          "max_velocity_change_km_s": 0.010000000000000231
+        }
+      ],
+      "accepted": false,
+      "finished": true,
+      "last_change_gate": false,
+      "positive_bulk_modulus": true,
+      "monotonic": true,
+      "extra_iteration_changes": {
+        "locations": {
+          "max_horizontal_m": 408.5827211074585,
+          "max_depth_km": 0.18000000000000005,
+          "max_origin_s": 0.07,
+          "max_rms_s": 0.010000000000000009
+        },
+        "station_s": 0.0,
+        "velocity_km_s": 0.03000000000000025
+      },
+      "holdout": {
+        "initialization": {
+          "name": "three_zero_delays_precision32_holdout_initialization",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24324136084229825,
+          "event_rms_s": 0.2594037828957881,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_precision32_holdout_initialization",
+          "wall_seconds": 0.8763056049356237,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "initialization_extra": {
+          "name": "three_zero_delays_precision32_holdout_initialization_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.24375327709365616,
+          "event_rms_s": 0.2596244185543367,
+          "depth_min_km": 0.57,
+          "depth_max_km": 6.27,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_precision32_holdout_initialization_extra",
+          "wall_seconds": 1.063402479980141,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 772.800762429206,
+            "max_depth_km": 0.20000000000000018,
+            "max_origin_s": 0.23,
+            "max_rms_s": 0.020000000000000018
+          }
+        },
+        "fitted": {
+          "name": "three_zero_delays_precision32_holdout_fitted",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22738663068044826,
+          "event_rms_s": 0.24504114203603156,
+          "depth_min_km": 0.45,
+          "depth_max_km": 7.53,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_precision32_holdout_fitted",
+          "wall_seconds": 0.766942954971455,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+        },
+        "fitted_extra": {
+          "name": "three_zero_delays_precision32_holdout_fitted_extra",
+          "bits": 64,
+          "events": 62,
+          "picks": 1065,
+          "returncode": 0,
+          "residual_rms_s": 0.22725908566827277,
+          "event_rms_s": 0.24435893747227794,
+          "depth_min_km": 0.45,
+          "depth_max_km": 7.53,
+          "workdir": "tmp/velocity_holdout_review/runs/three_zero_delays_precision32_holdout_fitted_extra",
+          "wall_seconds": 0.8247974920086563,
+          "timeout_seconds": 300,
+          "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+          "location_change": {
+            "max_horizontal_m": 780.2758235801462,
+            "max_depth_km": 0.8199999999999998,
+            "max_origin_s": 0.1,
+            "max_rms_s": 0.030000000000000027
+          }
+        }
+      },
+      "holdout_improvement_s": 0.01585473016184999,
+      "improves_common_initialization": true,
+      "holdout_location_converged": false
+    }
+  },
+  "comparisons": {
+    "four_regularized": {
+      "four_regularized_slow": {
+        "locations": {
+          "max_horizontal_m": 432.49708619164073,
+          "max_depth_km": 0.71,
+          "max_origin_s": 0.14,
+          "max_rms_s": 0.020000000000000018
+        },
+        "velocity_km_s": 0.27000000000000046
+      },
+      "four_regularized_fast": {
+        "locations": {
+          "max_horizontal_m": 443.69151674273365,
+          "max_depth_km": 0.79,
+          "max_origin_s": 0.21,
+          "max_rms_s": 0.02999999999999997
+        },
+        "velocity_km_s": 0.2599999999999998
+      },
+      "four_regularized_selection": {
+        "locations": {
+          "max_horizontal_m": 1322.284519130035,
+          "max_depth_km": 1.1900000000000004,
+          "max_origin_s": 0.35,
+          "max_rms_s": 0.04999999999999999
+        },
+        "velocity_km_s": 0.16999999999999993
+      },
+      "four_regularized_damping": {
+        "locations": {
+          "max_horizontal_m": 490.4411913403845,
+          "max_depth_km": 0.7699999999999996,
+          "max_origin_s": 0.24,
+          "max_rms_s": 0.07
+        },
+        "velocity_km_s": 0.30000000000000027
+      },
+      "four_regularized_precision32": {
+        "locations": {
+          "max_horizontal_m": 160.30178126381497,
+          "max_depth_km": 0.14000000000000012,
+          "max_origin_s": 0.14,
+          "max_rms_s": 0.01999999999999999
+        },
+        "velocity_km_s": 0.020000000000000018
+      }
+    },
+    "three_regularized": {
+      "three_regularized_slow": {
+        "locations": {
+          "max_horizontal_m": 356.12069552219924,
+          "max_depth_km": 0.5799999999999996,
+          "max_origin_s": 0.17,
+          "max_rms_s": 0.02999999999999997
+        },
+        "velocity_km_s": 0.27000000000000046
+      },
+      "three_regularized_fast": {
+        "locations": {
+          "max_horizontal_m": 563.928732595841,
+          "max_depth_km": 0.7000000000000002,
+          "max_origin_s": 0.23,
+          "max_rms_s": 0.020000000000000018
+        },
+        "velocity_km_s": 0.2599999999999998
+      },
+      "three_regularized_selection": {
+        "locations": {
+          "max_horizontal_m": 1132.5033543591983,
+          "max_depth_km": 1.2699999999999996,
+          "max_origin_s": 0.37,
+          "max_rms_s": 0.06
+        },
+        "velocity_km_s": 0.1900000000000004
+      },
+      "three_regularized_damping": {
+        "locations": {
+          "max_horizontal_m": 589.1095184748654,
+          "max_depth_km": 0.8200000000000003,
+          "max_origin_s": 0.28,
+          "max_rms_s": 0.08000000000000002
+        },
+        "velocity_km_s": 0.28000000000000025
+      },
+      "three_regularized_precision32": {
+        "locations": {
+          "max_horizontal_m": 163.50447775272195,
+          "max_depth_km": 0.22999999999999998,
+          "max_origin_s": 0.03,
+          "max_rms_s": 0.010000000000000009
+        },
+        "velocity_km_s": 0.029999999999999805
+      }
+    },
+    "three_zero_delays": {
+      "three_zero_delays_slow": {
+        "locations": {
+          "max_horizontal_m": 637.1673109551783,
+          "max_depth_km": 1.55,
+          "max_origin_s": 0.26,
+          "max_rms_s": 0.03
+        },
+        "velocity_km_s": 0.25
+      },
+      "three_zero_delays_fast": {
+        "locations": {
+          "max_horizontal_m": 481.94950007371943,
+          "max_depth_km": 0.4700000000000002,
+          "max_origin_s": 0.13,
+          "max_rms_s": 0.020000000000000018
+        },
+        "velocity_km_s": 0.28000000000000025
+      },
+      "three_zero_delays_selection": {
+        "locations": {
+          "max_horizontal_m": 800.3086129402967,
+          "max_depth_km": 1.47,
+          "max_origin_s": 0.31,
+          "max_rms_s": 0.030000000000000027
+        },
+        "velocity_km_s": 0.2799999999999998
+      },
+      "three_zero_delays_damping": {
+        "locations": {
+          "max_horizontal_m": 618.540139698398,
+          "max_depth_km": 1.5799999999999998,
+          "max_origin_s": 0.13,
+          "max_rms_s": 0.03
+        },
+        "velocity_km_s": 0.1299999999999999
+      },
+      "three_zero_delays_precision32": {
+        "locations": {
+          "max_horizontal_m": 0.0,
+          "max_depth_km": 0.0,
+          "max_origin_s": 0.0,
+          "max_rms_s": 0.0
+        },
+        "velocity_km_s": 0.0
+      }
+    }
+  },
+  "original_holdout_rms_s": 0.24062050459187168
+}

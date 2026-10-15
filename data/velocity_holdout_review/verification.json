@@ -1,0 +1,84 @@
+{
+  "holdout_hash_unchanged": true,
+  "fit_event_overlap_with_holdout": 0,
+  "all_plan_input_hashes_verified": true,
+  "completed_trials": 18,
+  "accepted_models": false,
+  "raw_review_windows": 24,
+  "reviewed_channel_epochs": 72,
+  "metadata_sources": {
+    "inputs/extended/responses/IV_CSOB.xml": "9bcf0f71988ed8ec010da9585a8a509b6baab9970e1e90886fc99a5388fbcb14",
+    "inputs/extended/responses/IV_CMTS.xml": "8ff93edce456858fe98a0aa9cbddabc5940245e8d51f256caf5fb76fe9231b72",
+    "inputs/extended/responses/IV_CBAG.xml": "82fe7b868c3c0913d06c6380b407b2f1834e738ee7472f1bbe2e858cfe325fdd",
+    "inputs/extended/responses/IV_CMIS.xml": "21ebaedf08623e7e45dfe7325dca53baf2500a236f24d6c42d99b6fad7177d85",
+    "inputs/extended/responses/IV_COLB.xml": "d28df33d89027523424d77b48d7bc8806e6ad3b242048e70a9342dde069a0320",
+    "inputs/extended/responses/2I_CREM.xml": "05ac773ac0b086e90bdf1d9effe431caa9bf83a00797d3792d0d563948530f3d",
+    "inputs/extended/responses/IV_CRUS.xml": "6f249ae88e5fcc5355c1978309c098d1db5b87bf01d7774541ffb6a374552e3b",
+    "inputs/extended/responses/IV_CSFT.xml": "2ca40ab7e9683ebe044f208eecb313fb4ef0551ce068a03bfda6e43bc74ffa8e",
+    "inputs/extended/responses/IV_CPIS.xml": "01e866c48fcca9d5a61ceab3a6afba01e27a7b4b468e79a1eda481fdf24b560c",
+    "inputs/extended/responses/IV_CNIS.xml": "c5e025919c219795b76b6c3e8b372403c88321bc471e3a5bfde65cd33e1af81d",
+    "inputs/extended/responses/IV_CAAM.xml": "a28b304d85707fa19b1bf9c13b93d7a2ae10c3919cc2b61b82112954b19f9962",
+    "inputs/extended/responses/IV_CSTH.xml": "5b33fff4e6f8e80476e060cdf957d8e76d103e0c4f76ca87a8fac955a425a98b",
+    "inputs/extended/responses/IV_CFMN.xml": "7bb1a7c16f0b245637574f5cadd88a5b2fd55baab69fd0c63989a1ccdff396ee",
+    "inputs/extended/responses/IV_CMSN.xml": "3958b09159bc4ed9c1109b1856953f33eb9f7cd16ef86f59c955acbee5cd4915",
+    "inputs/extended/responses/IV_CAWE.xml": "b3fb943fbb984880932af15dffb05aa8935c2f606e28d2fd2a93454b468981c2",
+    "inputs/extended/responses/IV_CPOZ.xml": "0f27c2136dfa338daca52ad0f5c8cee5b7ef530da0a46a98e2217420912d7fa0"
+  },
+  "ray_checks": [
+    {
+      "trial": "four_regularized_base",
+      "role": "training",
+      "arrivals": 827,
+      "max_ray_vs_output_depth_km": 0.0,
+      "travel_time_check_rms_s": 0.005151181831227671,
+      "travel_time_check_max_abs_s": 0.018936151407562274,
+      "note": "Vertices and output CNV are rounded to 0.01 km and 0.01 s; this is a consistency check, not additional measured arrivals."
+    },
+    {
+      "trial": "four_regularized_base",
+      "role": "holdout",
+      "arrivals": 1065,
+      "max_ray_vs_output_depth_km": 0.0,
+      "travel_time_check_rms_s": 0.004417884542457592,
+      "travel_time_check_max_abs_s": 0.012731065029303545,
+      "note": "Vertices and output CNV are rounded to 0.01 km and 0.01 s; this is a consistency check, not additional measured arrivals."
+    },
+    {
+      "trial": "three_regularized_base",
+      "role": "training",
+      "arrivals": 827,
+      "max_ray_vs_output_depth_km": 0.0,
+      "travel_time_check_rms_s": 0.0074536824994233895,
+      "travel_time_check_max_abs_s": 0.022946888807193422,
+      "note": "Vertices and output CNV are rounded to 0.01 km and 0.01 s; this is a consistency check, not additional measured arrivals."
+    },
+    {
+      "trial": "three_regularized_base",
+      "role": "holdout",
+      "arrivals": 1065,
+      "max_ray_vs_output_depth_km": 0.0,
+      "travel_time_check_rms_s": 0.0040781665791251006,
+      "travel_time_check_max_abs_s": 0.01270366825866226,
+      "note": "Vertices and output CNV are rounded to 0.01 km and 0.01 s; this is a consistency check, not additional measured arrivals."
+    },
+    {
+      "trial": "three_zero_delays_base",
+      "role": "training",
+      "arrivals": 827,
+      "max_ray_vs_output_depth_km": 0.0,
+      "travel_time_check_rms_s": 0.00707897189701815,
+      "travel_time_check_max_abs_s": 0.022920727842200894,
+      "note": "Vertices and output CNV are rounded to 0.01 km and 0.01 s; this is a consistency check, not additional measured arrivals."
+    },
+    {
+      "trial": "three_zero_delays_base",
+      "role": "holdout",
+      "arrivals": 1065,
+      "max_ray_vs_output_depth_km": 0.0,
+      "travel_time_check_rms_s": 0.0037701243609269343,
+      "travel_time_check_max_abs_s": 0.014001072807056175,
+      "note": "Vertices and output CNV are rounded to 0.01 km and 0.01 s; this is a consistency check, not additional measured arrivals."
+    }
+  ],
+  "notes": "Phase identity is not validated by residual consistency. Model sensitivity is not a statistical confidence interval. Background downloads/picks are excluded from this frozen experiment."
+}

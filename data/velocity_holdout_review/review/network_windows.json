@@ -1,0 +1,756 @@
+[
+  {
+    "event_index": 2403,
+    "role": "holdout",
+    "origin": "2025-03-18T18:18:56.436000Z",
+    "source_files": [
+      "inputs/continuation/waveforms/2I_CGAU_20250318T180000_20250319T000000.mseed",
+      "inputs/continuation/waveforms/2I_CREM_20250318T180000_20250319T000000.mseed",
+      "inputs/continuation/waveforms/IV_CAAM_20250318T180000_20250319T000000.mseed",
+      "inputs/continuation/waveforms/IV_CBAC_20250318T180000_20250319T000000.mseed",
+      "inputs/continuation/waveforms/IV_CFMN_20250318T180000_20250319T000000.mseed",
+      "inputs/continuation/waveforms/IV_CMIS_20250318T180000_20250319T000000.mseed",
+      "inputs/continuation/waveforms/IV_CNIS_20250318T180000_20250319T000000.mseed",
+      "inputs/continuation/waveforms/IV_COLB_20250318T180000_20250319T000000.mseed",
+      "inputs/continuation/waveforms/IV_CPOZ_20250318T180000_20250319T000000.mseed",
+      "inputs/continuation/waveforms/IV_CRUS_20250318T180000_20250319T000000.mseed",
+      "inputs/continuation/waveforms/IV_CSFT_20250318T180000_20250319T000000.mseed",
+      "inputs/continuation/waveforms/IV_CSOB_20250318T180000_20250319T000000.mseed",
+      "inputs/continuation/waveforms/IV_CSTH_20250318T180000_20250319T000000.mseed"
+    ],
+    "trace_ids": [
+      "2I.CGAU..HHZ",
+      "2I.CGAU..HHN",
+      "2I.CGAU..HHE",
+      "2I.CREM..HHE",
+      "2I.CREM..HHN",
+      "2I.CREM..HHZ",
+      "IV.CAAM..HHE",
+      "IV.CAAM..HHN",
+      "IV.CAAM..HHZ",
+      "IV.CBAC..HHE",
+      "IV.CBAC..HHN",
+      "IV.CBAC..HHZ",
+      "IV.CFMN..HHE",
+      "IV.CFMN..HHN",
+      "IV.CFMN..HHZ",
+      "IV.CMIS..HHE",
+      "IV.CMIS..HHN",
+      "IV.CMIS..HHZ",
+      "IV.CNIS..HHE",
+      "IV.CNIS..HHN",
+      "IV.CNIS..HHZ",
+      "IV.COLB..HHE",
+      "IV.COLB..HHN",
+      "IV.COLB..HHZ",
+      "IV.CPOZ..HHE",
+      "IV.CPOZ..HHN",
+      "IV.CPOZ..HHZ",
+      "IV.CRUS..EHZ",
+      "IV.CRUS..EHN",
+      "IV.CRUS..EHE",
+      "IV.CSFT..HHE",
+      "IV.CSFT..HHN",
+      "IV.CSFT..HHZ",
+      "IV.CSOB..HHE",
+      "IV.CSOB..HHN",
+      "IV.CSOB..HHZ",
+      "IV.CSTH..HHE",
+      "IV.CSTH..HHN",
+      "IV.CSTH..HHZ"
+    ],
+    "picks": [
+      {
+        "pick_index": 173258,
+        "trace_id": "2I.CGAU.",
+        "phase": "S",
+        "time": "2025-03-18T18:19:00.270000Z",
+        "probability": 0.7880823016166687
+      },
+      {
+        "pick_index": 173240,
+        "trace_id": "2I.CREM.",
+        "phase": "P",
+        "time": "2025-03-18T18:18:57.960000Z",
+        "probability": 0.5965193510055542
+      },
+      {
+        "pick_index": 173254,
+        "trace_id": "2I.CREM.",
+        "phase": "S",
+        "time": "2025-03-18T18:18:59.690000Z",
+        "probability": 0.9819501638412476
+      },
+      {
+        "pick_index": 173243,
+        "trace_id": "IV.CAAM.",
+        "phase": "P",
+        "time": "2025-03-18T18:18:58.160000Z",
+        "probability": 0.6517074704170227
+      },
+      {
+        "pick_index": 173255,
+        "trace_id": "IV.CAAM.",
+        "phase": "S",
+        "time": "2025-03-18T18:18:59.750000Z",
+        "probability": 0.9758298397064208
+      },
+      {
+        "pick_index": 173241,
+        "trace_id": "IV.CBAC.",
+        "phase": "P",
+        "time": "2025-03-18T18:18:57.980000Z",
+        "probability": 0.6458554267883301
+      },
+      {
+        "pick_index": 173250,
+        "trace_id": "IV.CBAC.",
+        "phase": "S",
+        "time": "2025-03-18T18:18:59.470000Z",
+        "probability": 0.9896913170814514
+      },
+      {
+        "pick_index": 173257,
+        "trace_id": "IV.CFMN.",
+        "phase": "S",
+        "time": "2025-03-18T18:19:00.230000Z",
+        "probability": 0.5250333547592163
+      },
+      {
+        "pick_index": 173233,
+        "trace_id": "IV.CMIS.",
+        "phase": "P",
+        "time": "2025-03-18T18:18:57.600000Z",
+        "probability": 0.449968934059143
+      },
+      {
+        "pick_index": 173248,
+        "trace_id": "IV.CMIS.",
+        "phase": "S",
+        "time": "2025-03-18T18:18:59.270000Z",
+        "probability": 0.8839386701583862
+      },
+      {
+        "pick_index": 173245,
+        "trace_id": "IV.CNIS.",
+        "phase": "P",
+        "time": "2025-03-18T18:18:58.730000Z",
+        "probability": 0.5671928524971008
+      },
+      {
+        "pick_index": 173247,
+        "trace_id": "IV.CNIS.",
+        "phase": "S",
+        "time": "2025-03-18T18:18:59.030000Z",
+        "probability": 0.3356472253799438
+      },
+      {
+        "pick_index": 173246,
+        "trace_id": "IV.COLB.",
+        "phase": "P",
+        "time": "2025-03-18T18:18:58.950000Z",
+        "probability": 0.541785478591919
+      },
+      {
+        "pick_index": 173251,
+        "trace_id": "IV.COLB.",
+        "phase": "S",
+        "time": "2025-03-18T18:18:59.470000Z",
+        "probability": 0.8894965648651123
+      },
+      {
+        "pick_index": 173238,
+        "trace_id": "IV.CPOZ.",
+        "phase": "P",
+        "time": "2025-03-18T18:18:57.930000Z",
+        "probability": 0.60834139585495
+      },
+      {
+        "pick_index": 173249,
+        "trace_id": "IV.CPOZ.",
+        "phase": "S",
+        "time": "2025-03-18T18:18:59.350000Z",
+        "probability": 0.9953534603118896
+      },
+      {
+        "pick_index": 173267,
+        "trace_id": "IV.CRUS.",
+        "phase": "S",
+        "time": "2025-03-18T18:19:01.870000Z",
+        "probability": 0.9843294620513916
+      },
+      {
+        "pick_index": 173259,
+        "trace_id": "IV.CSFT.",
+        "phase": "S",
+        "time": "2025-03-18T18:19:00.280000Z",
+        "probability": 0.3936764001846313
+      },
+      {
+        "pick_index": 173253,
+        "trace_id": "IV.CSOB.",
+        "phase": "S",
+        "time": "2025-03-18T18:18:59.550000Z",
+        "probability": 0.4956587553024292
+      },
+      {
+        "pick_index": 173256,
+        "trace_id": "IV.CSTH.",
+        "phase": "S",
+        "time": "2025-03-18T18:19:00.210000Z",
+        "probability": 0.4767372906208038
+      }
+    ]
+  },
+  {
+    "event_index": 1532,
+    "role": "training",
+    "origin": "2024-05-20T21:27:18.615000Z",
+    "source_files": [
+      "inputs/continuation/waveforms/IV_CAAM_20240520T180000_20240521T000000.mseed",
+      "inputs/continuation/waveforms/IV_CAWE_20240520T180000_20240521T000000.mseed",
+      "inputs/continuation/waveforms/IV_CBAC_20240520T180000_20240521T000000.mseed",
+      "inputs/continuation/waveforms/IV_CBAG_20240520T180000_20240521T000000.mseed",
+      "inputs/continuation/waveforms/IV_CCAP_20240520T180000_20240521T000000.mseed",
+      "inputs/continuation/waveforms/IV_CFB3_20240520T180000_20240521T000000.mseed",
+      "inputs/continuation/waveforms/IV_CFMN_20240520T180000_20240521T000000.mseed",
+      "inputs/continuation/waveforms/IV_CNIS_20240520T180000_20240521T000000.mseed",
+      "inputs/continuation/waveforms/IV_COLB_20240520T180000_20240521T000000.mseed",
+      "inputs/continuation/waveforms/IV_CPIS_20240520T180000_20240521T000000.mseed",
+      "inputs/continuation/waveforms/IV_CSFT_20240520T180000_20240521T000000.mseed",
+      "inputs/continuation/waveforms/IV_CSOB_20240520T180000_20240521T000000.mseed",
+      "inputs/continuation/waveforms/IV_CSTH_20240520T180000_20240521T000000.mseed"
+    ],
+    "trace_ids": [
+      "IV.CAAM..HHE",
+      "IV.CAAM..HHN",
+      "IV.CAAM..HHZ",
+      "IV.CAWE..EHE",
+      "IV.CAWE..EHN",
+      "IV.CAWE..EHZ",
+      "IV.CBAC..HHE",
+      "IV.CBAC..HHN",
+      "IV.CBAC..HHZ",
+      "IV.CBAG..HHE",
+      "IV.CBAG..HHN",
+      "IV.CBAG..HHZ",
+      "IV.CCAP..EHE",
+      "IV.CCAP..EHN",
+      "IV.CCAP..EHZ",
+      "IV.CFB3..HHZ",
+      "IV.CFMN..HHE",
+      "IV.CFMN..HHN",
+      "IV.CFMN..HHZ",
+      "IV.CNIS..HHE",
+      "IV.CNIS..HHN",
+      "IV.CNIS..HHZ",
+      "IV.COLB..HHE",
+      "IV.COLB..HHN",
+      "IV.COLB..HHZ",
+      "IV.CPIS..HHE",
+      "IV.CPIS..HHN",
+      "IV.CPIS..HHZ",
+      "IV.CSFT..HHE",
+      "IV.CSFT..HHN",
+      "IV.CSFT..HHZ",
+      "IV.CSOB..HHE",
+      "IV.CSOB..HHN",
+      "IV.CSOB..HHZ",
+      "IV.CSTH..HHE",
+      "IV.CSTH..HHN",
+      "IV.CSTH..HHZ"
+    ],
+    "picks": [
+      {
+        "pick_index": 110903,
+        "trace_id": "IV.CAAM.",
+        "phase": "P",
+        "time": "2024-05-20T21:27:20.180000Z",
+        "probability": 0.7265588045120239
+      },
+      {
+        "pick_index": 110898,
+        "trace_id": "IV.CAWE.",
+        "phase": "S",
+        "time": "2024-05-20T21:27:19.960000Z",
+        "probability": 0.723300576210022
+      },
+      {
+        "pick_index": 110905,
+        "trace_id": "IV.CBAC.",
+        "phase": "P",
+        "time": "2024-05-20T21:27:20.260000Z",
+        "probability": 0.6537262201309204
+      },
+      {
+        "pick_index": 110916,
+        "trace_id": "IV.CBAC.",
+        "phase": "S",
+        "time": "2024-05-20T21:27:21.810000Z",
+        "probability": 0.6116670370101929
+      },
+      {
+        "pick_index": 110919,
+        "trace_id": "IV.CBAG.",
+        "phase": "S",
+        "time": "2024-05-20T21:27:22.230000Z",
+        "probability": 0.6246662735939026
+      },
+      {
+        "pick_index": 110920,
+        "trace_id": "IV.CCAP.",
+        "phase": "S",
+        "time": "2024-05-20T21:27:22.430000Z",
+        "probability": 0.6135705709457397
+      },
+      {
+        "pick_index": 110910,
+        "trace_id": "IV.CFB3.",
+        "phase": "P",
+        "time": "2024-05-20T21:27:20.628393Z",
+        "probability": 0.5617032051086426
+      },
+      {
+        "pick_index": 110911,
+        "trace_id": "IV.CFMN.",
+        "phase": "P",
+        "time": "2024-05-20T21:27:20.650000Z",
+        "probability": 0.7355403900146484
+      },
+      {
+        "pick_index": 110914,
+        "trace_id": "IV.CFMN.",
+        "phase": "S",
+        "time": "2024-05-20T21:27:20.980000Z",
+        "probability": 0.375970721244812
+      },
+      {
+        "pick_index": 110907,
+        "trace_id": "IV.CNIS.",
+        "phase": "P",
+        "time": "2024-05-20T21:27:20.340000Z",
+        "probability": 0.532005250453949
+      },
+      {
+        "pick_index": 110904,
+        "trace_id": "IV.COLB.",
+        "phase": "P",
+        "time": "2024-05-20T21:27:20.260000Z",
+        "probability": 0.7120656967163086
+      },
+      {
+        "pick_index": 110900,
+        "trace_id": "IV.CPIS.",
+        "phase": "S",
+        "time": "2024-05-20T21:27:19.960000Z",
+        "probability": 0.3017842769622803
+      },
+      {
+        "pick_index": 110899,
+        "trace_id": "IV.CSFT.",
+        "phase": "S",
+        "time": "2024-05-20T21:27:19.960000Z",
+        "probability": 0.6068385243415833
+      },
+      {
+        "pick_index": 110909,
+        "trace_id": "IV.CSOB.",
+        "phase": "S",
+        "time": "2024-05-20T21:27:20.440000Z",
+        "probability": 0.3260695934295654
+      },
+      {
+        "pick_index": 110902,
+        "trace_id": "IV.CSTH.",
+        "phase": "P",
+        "time": "2024-05-20T21:27:20.050000Z",
+        "probability": 0.8842154145240784
+      }
+    ]
+  },
+  {
+    "event_index": 225,
+    "role": "training",
+    "origin": "2023-03-01T04:50:09.223000Z",
+    "source_files": [
+      "inputs/continuation/waveforms/IV_CBAC_20230301T000000_20230301T060000.mseed",
+      "inputs/continuation/waveforms/IV_CFMN_20230301T000000_20230301T060000.mseed",
+      "inputs/continuation/waveforms/IV_CNIS_20230301T000000_20230301T060000.mseed",
+      "inputs/continuation/waveforms/IV_COLB_20230301T000000_20230301T060000.mseed",
+      "inputs/continuation/waveforms/IV_CSFT_20230301T000000_20230301T060000.mseed",
+      "inputs/continuation/waveforms/IV_CSOB_20230301T000000_20230301T060000.mseed",
+      "inputs/continuation/waveforms/IV_CSTH_20230301T000000_20230301T060000.mseed"
+    ],
+    "trace_ids": [
+      "IV.CBAC..HHE",
+      "IV.CBAC..HHN",
+      "IV.CBAC..HHZ",
+      "IV.CFMN..HHE",
+      "IV.CFMN..HHN",
+      "IV.CFMN..HHZ",
+      "IV.CNIS..HHE",
+      "IV.CNIS..HHN",
+      "IV.CNIS..HHZ",
+      "IV.COLB..HHE",
+      "IV.COLB..HHN",
+      "IV.COLB..HHZ",
+      "IV.CSFT..HHE",
+      "IV.CSFT..HHN",
+      "IV.CSFT..HHZ",
+      "IV.CSOB..HHE",
+      "IV.CSOB..HHN",
+      "IV.CSOB..HHZ",
+      "IV.CSTH..HHE",
+      "IV.CSTH..HHN",
+      "IV.CSTH..HHZ"
+    ],
+    "picks": [
+      {
+        "pick_index": 72798,
+        "trace_id": "IV.CBAC.",
+        "phase": "P",
+        "time": "2023-03-01T04:50:11.200000Z",
+        "probability": 0.7197723388671875
+      },
+      {
+        "pick_index": 72802,
+        "trace_id": "IV.CBAC.",
+        "phase": "S",
+        "time": "2023-03-01T04:50:13.070000Z",
+        "probability": 0.3473824858665466
+      },
+      {
+        "pick_index": 72801,
+        "trace_id": "IV.CFMN.",
+        "phase": "S",
+        "time": "2023-03-01T04:50:12.920000Z",
+        "probability": 0.6920983791351318
+      },
+      {
+        "pick_index": 72796,
+        "trace_id": "IV.CNIS.",
+        "phase": "P",
+        "time": "2023-03-01T04:50:11.030000Z",
+        "probability": 0.8192108273506165
+      },
+      {
+        "pick_index": 72800,
+        "trace_id": "IV.CNIS.",
+        "phase": "S",
+        "time": "2023-03-01T04:50:12.550000Z",
+        "probability": 0.4189891815185547
+      },
+      {
+        "pick_index": 72797,
+        "trace_id": "IV.COLB.",
+        "phase": "S",
+        "time": "2023-03-01T04:50:11.080000Z",
+        "probability": 0.9726666212081908
+      },
+      {
+        "pick_index": 72795,
+        "trace_id": "IV.CSFT.",
+        "phase": "S",
+        "time": "2023-03-01T04:50:10.950000Z",
+        "probability": 0.74271559715271
+      },
+      {
+        "pick_index": 72792,
+        "trace_id": "IV.CSOB.",
+        "phase": "P",
+        "time": "2023-03-01T04:50:10.360000Z",
+        "probability": 0.6523069739341736
+      },
+      {
+        "pick_index": 72794,
+        "trace_id": "IV.CSOB.",
+        "phase": "S",
+        "time": "2023-03-01T04:50:10.940000Z",
+        "probability": 0.7269218564033508
+      },
+      {
+        "pick_index": 72793,
+        "trace_id": "IV.CSTH.",
+        "phase": "P",
+        "time": "2023-03-01T04:50:10.410000Z",
+        "probability": 0.6752404570579529
+      },
+      {
+        "pick_index": 72799,
+        "trace_id": "IV.CSTH.",
+        "phase": "S",
+        "time": "2023-03-01T04:50:11.240000Z",
+        "probability": 0.9871509075164796
+      }
+    ]
+  },
+  {
+    "event_index": 2642,
+    "role": "holdout",
+    "origin": "2025-03-19T17:59:15.837000Z",
+    "source_files": [
+      "inputs/continuation/waveforms/2I_CGAU_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/2I_CREM_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/2I_CSOC_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_CAAM_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_CBAC_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_CBAG_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_CFB3_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_CFMN_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_CMIS_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_CMTS_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_CNIS_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_COLB_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_CPOZ_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_CSFT_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_CSOB_20250319T120000_20250319T180000.mseed",
+      "inputs/continuation/waveforms/IV_CSTH_20250319T120000_20250319T180000.mseed"
+    ],
+    "trace_ids": [
+      "2I.CGAU..HHZ",
+      "2I.CGAU..HHN",
+      "2I.CGAU..HHE",
+      "2I.CREM..HHE",
+      "2I.CREM..HHN",
+      "2I.CREM..HHZ",
+      "2I.CSOC..EHE",
+      "2I.CSOC..EHN",
+      "2I.CSOC..EHZ",
+      "IV.CAAM..HHE",
+      "IV.CAAM..HHN",
+      "IV.CAAM..HHZ",
+      "IV.CBAC..HHE",
+      "IV.CBAC..HHN",
+      "IV.CBAC..HHZ",
+      "IV.CBAG..HHE",
+      "IV.CBAG..HHN",
+      "IV.CBAG..HHZ",
+      "IV.CFB3..HHZ",
+      "IV.CFMN..HHE",
+      "IV.CFMN..HHN",
+      "IV.CFMN..HHZ",
+      "IV.CMIS..HHE",
+      "IV.CMIS..HHN",
+      "IV.CMIS..HHZ",
+      "IV.CMTS..EHE",
+      "IV.CMTS..EHN",
+      "IV.CMTS..EHZ",
+      "IV.CNIS..HHE",
+      "IV.CNIS..HHN",
+      "IV.CNIS..HHZ",
+      "IV.COLB..HHE",
+      "IV.COLB..HHN",
+      "IV.COLB..HHZ",
+      "IV.CPOZ..HHE",
+      "IV.CPOZ..HHN",
+      "IV.CPOZ..HHZ",
+      "IV.CSFT..HHE",
+      "IV.CSFT..HHN",
+      "IV.CSFT..HHZ",
+      "IV.CSOB..HHE",
+      "IV.CSOB..HHN",
+      "IV.CSOB..HHZ",
+      "IV.CSTH..HHE",
+      "IV.CSTH..HHN",
+      "IV.CSTH..HHZ"
+    ],
+    "picks": [
+      {
+        "pick_index": 204525,
+        "trace_id": "2I.CGAU.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:18.690000Z",
+        "probability": 0.3761101961135864
+      },
+      {
+        "pick_index": 204532,
+        "trace_id": "2I.CGAU.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:19.290000Z",
+        "probability": 0.6672959327697754
+      },
+      {
+        "pick_index": 204509,
+        "trace_id": "2I.CREM.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:17.360000Z",
+        "probability": 0.821277916431427
+      },
+      {
+        "pick_index": 204530,
+        "trace_id": "2I.CREM.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:18.890000Z",
+        "probability": 0.97197163105011
+      },
+      {
+        "pick_index": 204539,
+        "trace_id": "2I.CSOC.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:20.530000Z",
+        "probability": 0.3247029483318329
+      },
+      {
+        "pick_index": 204512,
+        "trace_id": "IV.CAAM.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:17.490000Z",
+        "probability": 0.4873248934745788
+      },
+      {
+        "pick_index": 204534,
+        "trace_id": "IV.CAAM.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:19.470000Z",
+        "probability": 0.7058209776878357
+      },
+      {
+        "pick_index": 204508,
+        "trace_id": "IV.CBAC.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:17.190000Z",
+        "probability": 0.7524519562721252
+      },
+      {
+        "pick_index": 204520,
+        "trace_id": "IV.CBAC.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:18.420000Z",
+        "probability": 0.9862399697303772
+      },
+      {
+        "pick_index": 204528,
+        "trace_id": "IV.CBAG.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:18.820000Z",
+        "probability": 0.5442136526107788
+      },
+      {
+        "pick_index": 204536,
+        "trace_id": "IV.CBAG.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:19.750000Z",
+        "probability": 0.7737212181091309
+      },
+      {
+        "pick_index": 204511,
+        "trace_id": "IV.CFB3.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:17.398393Z",
+        "probability": 0.9136348962783812
+      },
+      {
+        "pick_index": 204515,
+        "trace_id": "IV.CFMN.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:17.760000Z",
+        "probability": 0.7448880076408386
+      },
+      {
+        "pick_index": 204526,
+        "trace_id": "IV.CFMN.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:18.760000Z",
+        "probability": 0.9105015993118286
+      },
+      {
+        "pick_index": 204510,
+        "trace_id": "IV.CMIS.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:17.360000Z",
+        "probability": 0.941100001335144
+      },
+      {
+        "pick_index": 204521,
+        "trace_id": "IV.CMIS.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:18.470000Z",
+        "probability": 0.9520086646080016
+      },
+      {
+        "pick_index": 204514,
+        "trace_id": "IV.CMTS.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:17.720000Z",
+        "probability": 0.319204717874527
+      },
+      {
+        "pick_index": 204516,
+        "trace_id": "IV.CNIS.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:17.780000Z",
+        "probability": 0.8781951665878296
+      },
+      {
+        "pick_index": 204533,
+        "trace_id": "IV.CNIS.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:19.290000Z",
+        "probability": 0.7695749998092651
+      },
+      {
+        "pick_index": 204519,
+        "trace_id": "IV.COLB.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:18.230000Z",
+        "probability": 0.5777284502983093
+      },
+      {
+        "pick_index": 204529,
+        "trace_id": "IV.COLB.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:18.840000Z",
+        "probability": 0.9646340012550354
+      },
+      {
+        "pick_index": 204523,
+        "trace_id": "IV.CPOZ.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:18.560000Z",
+        "probability": 0.9988387227058412
+      },
+      {
+        "pick_index": 204518,
+        "trace_id": "IV.CSFT.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:18.130000Z",
+        "probability": 0.3120104670524597
+      },
+      {
+        "pick_index": 204524,
+        "trace_id": "IV.CSFT.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:18.660000Z",
+        "probability": 0.4692972600460052
+      },
+      {
+        "pick_index": 204522,
+        "trace_id": "IV.CSOB.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:18.480000Z",
+        "probability": 0.7124362587928772
+      },
+      {
+        "pick_index": 204535,
+        "trace_id": "IV.CSOB.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:19.640000Z",
+        "probability": 0.9751947522163392
+      },
+      {
+        "pick_index": 204517,
+        "trace_id": "IV.CSTH.",
+        "phase": "P",
+        "time": "2025-03-19T17:59:18.040000Z",
+        "probability": 0.7069901823997498
+      },
+      {
+        "pick_index": 204531,
+        "trace_id": "IV.CSTH.",
+        "phase": "S",
+        "time": "2025-03-19T17:59:18.920000Z",
+        "probability": 0.9844266176223756
+      }
+    ]
+  }
+]

@@ -273,11 +273,11 @@
       "figures/figure_S6_availability_extension.pdf"
     ],
     "missing": "",
-    "caption": "1,414 own five-pass locations pass numerical filters. Independent alternative-initialized profile; failed calendar holdout, provisional only. This calculation is separate from the prior grid-initialized TomoDD checkpoint. Depth color limits 0\u20135 km, integer ticks, jet_r, magenta over-range; no depth clipping. Uniform point area is a display choice.",
+    "caption": "1,414 own five-pass locations pass numerical filters. Independent alternative-initialized profile; failed calendar holdout, provisional only. This calculation is separate from the prior grid-initialized TomoDD checkpoint. Depth color limits 0\u20135 km, integer ticks, jet_r, magenta over-range; no depth clipping. Uniform point area is a display choice. Subsequent three-layer velocity trials improve holdout prediction but fail stability; this displayed earlier checkpoint is unchanged.",
     "file_labels": [
       "S6; current provisional independent calculation"
     ],
-    "comparison_caption": "1,414 own five-pass locations pass numerical filters. Independent alternative-initialized profile; failed calendar holdout, provisional only. This calculation is separate from the prior grid-initialized TomoDD checkpoint. Depth color limits 0\u20135 km, integer ticks, jet_r, magenta over-range; no depth clipping. Uniform point area is a display choice."
+    "comparison_caption": "1,414 own five-pass locations pass numerical filters. Independent alternative-initialized profile; failed calendar holdout, provisional only. This calculation is separate from the prior grid-initialized TomoDD checkpoint. Depth color limits 0\u20135 km, integer ticks, jet_r, magenta over-range; no depth clipping. Uniform point area is a display choice. Subsequent three-layer velocity trials improve holdout prediction but fail stability; this displayed earlier checkpoint is unchanged."
   },
   {
     "figure": "S7",

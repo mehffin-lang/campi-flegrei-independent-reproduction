@@ -1,0 +1,16 @@
+{
+  "checks": [
+    {
+      "archive": "data/availability_extension/velocity_december_run_evidence.tar.gz",
+      "files_verified": 583,
+      "restored_bytes_match": true
+    },
+    {
+      "archive": "data/velocity_holdout_review/solver_evidence.tar.gz",
+      "files_verified": 2506,
+      "restored_bytes_match": true
+    }
+  ],
+  "initial_failure": "Prior archive also contains own catalog_december location run evidence; parent directory scope is required. No numerical failure.",
+  "passed": true
+}

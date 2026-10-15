@@ -196,3 +196,15 @@ The watcher records its local process and attempts a new, distinct numerical
 checkpoint after the collector stops under its documented storage/service rules.
 Future completion is not asserted. See `docs/AVAILABILITY_EXTENSION.md` and the
 executed rebuild logs for actual results and failures.
+
+## Calendar-holdout profile tests, 15 October 2026
+
+Updated the existing main report PDF/source, comparison PDF/caption, main-text
+velocity statement, supplement checkpoint labels, panel-record validation links
+and README. Added `report/velocity_holdout_review.tex`, two diagnostic figures,
+new observational model trials and raw-window review records. No previous
+empirical figure data, picks, associations, locations, model or solver evidence
+was deleted. S6 still displays its explicitly identified earlier failed-profile
+calculation. Background collection/picking files were preserved separately and
+are not inputs to this frozen study. The old automatic model/report watcher
+was stopped to prevent conflicting updates; collector and picker were retained.

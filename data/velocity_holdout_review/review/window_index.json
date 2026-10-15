@@ -1,0 +1,762 @@
+[
+  {
+    "event_ordinal": 61,
+    "alias": "S022",
+    "phase": "P",
+    "residual_s": 0.897,
+    "event_index": 3202,
+    "station": "IV.CSOB.",
+    "pick_index": 251749,
+    "score": 0.0046976583577355,
+    "source": "inputs/continuation/waveforms/IV_CSOB_20250320T180000_20250321T000000.mseed",
+    "time": "2025-03-20T21:44:42.580000Z",
+    "probability": 0.3290049433708191,
+    "role": "holdout",
+    "abs_residual": 0.897,
+    "review_id": 0,
+    "associated_phase_offsets_s": {
+      "P": 0.0,
+      "S": 0.94
+    },
+    "trace_ids": [
+      "IV.CSOB..HHE",
+      "IV.CSOB..HHN",
+      "IV.CSOB..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 40,
+    "alias": "S014",
+    "phase": "P",
+    "residual_s": -0.843,
+    "event_index": 2642,
+    "station": "IV.CMTS.",
+    "pick_index": 204514,
+    "score": 0.2427564165224311,
+    "source": "inputs/continuation/waveforms/IV_CMTS_20250319T120000_20250319T180000.mseed",
+    "time": "2025-03-19T17:59:17.720000Z",
+    "probability": 0.319204717874527,
+    "role": "holdout",
+    "abs_residual": 0.843,
+    "review_id": 1,
+    "associated_phase_offsets_s": {
+      "P": 0.0
+    },
+    "trace_ids": [
+      "IV.CMTS..EHE",
+      "IV.CMTS..EHN",
+      "IV.CMTS..EHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 36,
+    "alias": "S007",
+    "phase": "P",
+    "residual_s": -0.792,
+    "event_index": 2581,
+    "station": "IV.CBAG.",
+    "pick_index": 196838,
+    "score": 0.0034365124016602,
+    "source": "inputs/continuation/waveforms/IV_CBAG_20250319T060000_20250319T120000.mseed",
+    "time": "2025-03-19T11:55:03.670000Z",
+    "probability": 0.8014110326766968,
+    "role": "holdout",
+    "abs_residual": 0.792,
+    "review_id": 2,
+    "associated_phase_offsets_s": {
+      "P": 0.0
+    },
+    "trace_ids": [
+      "IV.CBAG..HHE",
+      "IV.CBAG..HHN",
+      "IV.CBAG..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 40,
+    "alias": "S007",
+    "phase": "P",
+    "residual_s": 0.74,
+    "event_index": 2642,
+    "station": "IV.CBAG.",
+    "pick_index": 204528,
+    "score": 0.0524184892582079,
+    "source": "inputs/continuation/waveforms/IV_CBAG_20250319T120000_20250319T180000.mseed",
+    "time": "2025-03-19T17:59:18.820000Z",
+    "probability": 0.5442136526107788,
+    "role": "holdout",
+    "abs_residual": 0.74,
+    "review_id": 3,
+    "associated_phase_offsets_s": {
+      "P": 0.0,
+      "S": 0.93
+    },
+    "trace_ids": [
+      "IV.CBAG..HHE",
+      "IV.CBAG..HHN",
+      "IV.CBAG..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 15,
+    "alias": "S012",
+    "phase": "P",
+    "residual_s": -0.719,
+    "event_index": 2304,
+    "station": "IV.CMIS.",
+    "pick_index": 158809,
+    "score": 0.0004845302710413,
+    "source": "inputs/continuation/waveforms/IV_CMIS_20250318T060000_20250318T120000.mseed",
+    "time": "2025-03-18T07:35:51.370000Z",
+    "probability": 0.4297708570957184,
+    "role": "holdout",
+    "abs_residual": 0.719,
+    "review_id": 4,
+    "associated_phase_offsets_s": {
+      "P": 0.0,
+      "S": 2.53
+    },
+    "trace_ids": [
+      "IV.CMIS..HHE",
+      "IV.CMIS..HHN",
+      "IV.CMIS..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 24,
+    "alias": "S016",
+    "phase": "P",
+    "residual_s": 0.691,
+    "event_index": 2403,
+    "station": "IV.COLB.",
+    "pick_index": 173246,
+    "score": 0.2607675687767847,
+    "source": "inputs/continuation/waveforms/IV_COLB_20250318T180000_20250319T000000.mseed",
+    "time": "2025-03-18T18:18:58.950000Z",
+    "probability": 0.541785478591919,
+    "role": "holdout",
+    "abs_residual": 0.691,
+    "review_id": 5,
+    "associated_phase_offsets_s": {
+      "P": 0.0,
+      "S": 0.52
+    },
+    "trace_ids": [
+      "IV.COLB..HHE",
+      "IV.COLB..HHN",
+      "IV.COLB..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 36,
+    "alias": "S002",
+    "phase": "S",
+    "residual_s": 1.112,
+    "event_index": 2581,
+    "station": "2I.CREM.",
+    "pick_index": 196874,
+    "score": 0.2075893839098496,
+    "source": "inputs/continuation/waveforms/2I_CREM_20250319T060000_20250319T120000.mseed",
+    "time": "2025-03-19T11:55:06.250000Z",
+    "probability": 0.5915632247924805,
+    "role": "holdout",
+    "abs_residual": 1.112,
+    "review_id": 6,
+    "associated_phase_offsets_s": {
+      "S": 0.0
+    },
+    "trace_ids": [
+      "2I.CREM..HHE",
+      "2I.CREM..HHN",
+      "2I.CREM..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 24,
+    "alias": "S020",
+    "phase": "S",
+    "residual_s": 1.05,
+    "event_index": 2403,
+    "station": "IV.CRUS.",
+    "pick_index": 173267,
+    "score": 0.2262286435779858,
+    "source": "inputs/continuation/waveforms/IV_CRUS_20250318T180000_20250319T000000.mseed",
+    "time": "2025-03-18T18:19:01.870000Z",
+    "probability": 0.9843294620513916,
+    "role": "holdout",
+    "abs_residual": 1.05,
+    "review_id": 7,
+    "associated_phase_offsets_s": {
+      "S": 0.0
+    },
+    "trace_ids": [
+      "IV.CRUS..EHZ",
+      "IV.CRUS..EHN",
+      "IV.CRUS..EHE"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 35,
+    "alias": "S021",
+    "phase": "S",
+    "residual_s": 0.95,
+    "event_index": 2580,
+    "station": "IV.CSFT.",
+    "pick_index": 196853,
+    "score": 0.0844831758847193,
+    "source": "inputs/continuation/waveforms/IV_CSFT_20250319T060000_20250319T120000.mseed",
+    "time": "2025-03-19T11:55:04.480000Z",
+    "probability": 0.5571888089179993,
+    "role": "holdout",
+    "abs_residual": 0.95,
+    "review_id": 8,
+    "associated_phase_offsets_s": {
+      "P": -2.29,
+      "S": 0.0
+    },
+    "trace_ids": [
+      "IV.CSFT..HHE",
+      "IV.CSFT..HHN",
+      "IV.CSFT..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 45,
+    "alias": "S007",
+    "phase": "S",
+    "residual_s": -0.947,
+    "event_index": 2792,
+    "station": "IV.CBAG.",
+    "pick_index": 215780,
+    "score": 0.0069768425139802,
+    "source": "inputs/continuation/waveforms/IV_CBAG_20250320T000000_20250320T060000.mseed",
+    "time": "2025-03-20T00:11:30.610000Z",
+    "probability": 0.96255761384964,
+    "role": "holdout",
+    "abs_residual": 0.947,
+    "review_id": 9,
+    "associated_phase_offsets_s": {
+      "P": -0.96,
+      "S": 0.0
+    },
+    "trace_ids": [
+      "IV.CBAG..HHE",
+      "IV.CBAG..HHN",
+      "IV.CBAG..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 15,
+    "alias": "S017",
+    "phase": "S",
+    "residual_s": -0.917,
+    "event_index": 2304,
+    "station": "IV.CPIS.",
+    "pick_index": 158816,
+    "score": 0.0062117682182161,
+    "source": "inputs/continuation/waveforms/IV_CPIS_20250318T060000_20250318T120000.mseed",
+    "time": "2025-03-18T07:35:52.890000Z",
+    "probability": 0.6890215277671814,
+    "role": "holdout",
+    "abs_residual": 0.917,
+    "review_id": 10,
+    "associated_phase_offsets_s": {
+      "S": 0.0
+    },
+    "trace_ids": [
+      "IV.CPIS..HHE",
+      "IV.CPIS..HHN",
+      "IV.CPIS..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 24,
+    "alias": "S015",
+    "phase": "S",
+    "residual_s": -0.907,
+    "event_index": 2403,
+    "station": "IV.CNIS.",
+    "pick_index": 173247,
+    "score": 0.2300379175775879,
+    "source": "inputs/continuation/waveforms/IV_CNIS_20250318T180000_20250319T000000.mseed",
+    "time": "2025-03-18T18:18:59.030000Z",
+    "probability": 0.3356472253799438,
+    "role": "holdout",
+    "abs_residual": 0.907,
+    "review_id": 11,
+    "associated_phase_offsets_s": {
+      "P": -0.3,
+      "S": 0.0
+    },
+    "trace_ids": [
+      "IV.CNIS..HHE",
+      "IV.CNIS..HHN",
+      "IV.CNIS..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 28,
+    "alias": "S004",
+    "phase": "P",
+    "residual_s": -0.689,
+    "event_index": 476,
+    "station": "IV.CAAM.",
+    "pick_index": 93188,
+    "score": 0.0114569743774276,
+    "source": "inputs/continuation/waveforms/IV_CAAM_20240520T180000_20240521T000000.mseed",
+    "time": "2024-05-20T18:23:07.740000Z",
+    "probability": 0.4124403297901153,
+    "role": "training",
+    "abs_residual": 0.689,
+    "review_id": 12,
+    "associated_phase_offsets_s": {
+      "P": 0.0,
+      "S": 2.29
+    },
+    "trace_ids": [
+      "IV.CAAM..HHE",
+      "IV.CAAM..HHN",
+      "IV.CAAM..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 26,
+    "alias": "S022",
+    "phase": "P",
+    "residual_s": -0.665,
+    "event_index": 304,
+    "station": "IV.CSOB.",
+    "pick_index": 90480,
+    "score": 0.0243300571010122,
+    "source": "inputs/continuation/waveforms/IV_CSOB_20240520T180000_20240521T000000.mseed",
+    "time": "2024-05-20T18:00:47.620000Z",
+    "probability": 0.5683572292327881,
+    "role": "training",
+    "abs_residual": 0.665,
+    "review_id": 13,
+    "associated_phase_offsets_s": {
+      "P": 0.0,
+      "S": 1.34
+    },
+    "trace_ids": [
+      "IV.CSOB..HHE",
+      "IV.CSOB..HHN",
+      "IV.CSOB..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 28,
+    "alias": "S023",
+    "phase": "P",
+    "residual_s": 0.578,
+    "event_index": 476,
+    "station": "IV.CSTH.",
+    "pick_index": 93197,
+    "score": 0.0129305992612245,
+    "source": "inputs/continuation/waveforms/IV_CSTH_20240520T180000_20240521T000000.mseed",
+    "time": "2024-05-20T18:23:09.160000Z",
+    "probability": 0.4300935566425323,
+    "role": "training",
+    "abs_residual": 0.578,
+    "review_id": 14,
+    "associated_phase_offsets_s": {
+      "P": 0.0,
+      "S": 0.59
+    },
+    "trace_ids": [
+      "IV.CSTH..HHE",
+      "IV.CSTH..HHN",
+      "IV.CSTH..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 6,
+    "alias": "S011",
+    "phase": "P",
+    "residual_s": 0.551,
+    "event_index": 159,
+    "station": "IV.CFMN.",
+    "pick_index": 50705,
+    "score": 0.1730234577015076,
+    "source": "inputs/continuation/waveforms/IV_CFMN_20220128T120000_20220128T180000.mseed",
+    "time": "2022-01-28T16:11:44.610000Z",
+    "probability": 0.4065819978713989,
+    "role": "training",
+    "abs_residual": 0.551,
+    "review_id": 15,
+    "associated_phase_offsets_s": {
+      "P": 0.0,
+      "S": 0.51
+    },
+    "trace_ids": [
+      "IV.CFMN..HHE",
+      "IV.CFMN..HHN",
+      "IV.CFMN..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 34,
+    "alias": "S017",
+    "phase": "P",
+    "residual_s": 0.463,
+    "event_index": 996,
+    "station": "IV.CPIS.",
+    "pick_index": 101554,
+    "score": 0.0237644936906623,
+    "source": "inputs/continuation/waveforms/IV_CPIS_20240520T180000_20240521T000000.mseed",
+    "time": "2024-05-20T19:51:30.630000Z",
+    "probability": 0.3853442966938019,
+    "role": "training",
+    "abs_residual": 0.463,
+    "review_id": 16,
+    "associated_phase_offsets_s": {
+      "P": 0.0,
+      "S": 0.2
+    },
+    "trace_ids": [
+      "IV.CPIS..HHE",
+      "IV.CPIS..HHN",
+      "IV.CPIS..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 35,
+    "alias": "S021",
+    "phase": "P",
+    "residual_s": 0.461,
+    "event_index": 1055,
+    "station": "IV.CSFT.",
+    "pick_index": 102469,
+    "score": 0.0478322845593199,
+    "source": "inputs/continuation/waveforms/IV_CSFT_20240520T180000_20240521T000000.mseed",
+    "time": "2024-05-20T19:57:02.650000Z",
+    "probability": 0.915156364440918,
+    "role": "training",
+    "abs_residual": 0.461,
+    "review_id": 17,
+    "associated_phase_offsets_s": {
+      "P": 0.0
+    },
+    "trace_ids": [
+      "IV.CSFT..HHE",
+      "IV.CSFT..HHN",
+      "IV.CSFT..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 19,
+    "alias": "S013",
+    "phase": "S",
+    "residual_s": -0.713,
+    "event_index": 265,
+    "station": "IV.CMSN.",
+    "pick_index": 82814,
+    "score": 0.0586085662365672,
+    "source": "inputs/continuation/waveforms/IV_CMSN_20240201T000000_20240201T060000.mseed",
+    "time": "2024-02-01T02:16:54.430000Z",
+    "probability": 0.3043224215507507,
+    "role": "training",
+    "abs_residual": 0.713,
+    "review_id": 18,
+    "associated_phase_offsets_s": {
+      "S": 0.0
+    },
+    "trace_ids": [
+      "IV.CMSN..HHE",
+      "IV.CMSN..HHN",
+      "IV.CMSN..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 18,
+    "alias": "S011",
+    "phase": "S",
+    "residual_s": 0.703,
+    "event_index": 264,
+    "station": "IV.CFMN.",
+    "pick_index": 82762,
+    "score": 0.1565381632759951,
+    "source": "inputs/continuation/waveforms/IV_CFMN_20240201T000000_20240201T060000.mseed",
+    "time": "2024-02-01T02:14:27.930000Z",
+    "probability": 0.6957358121871948,
+    "role": "training",
+    "abs_residual": 0.703,
+    "review_id": 19,
+    "associated_phase_offsets_s": {
+      "P": -2.62,
+      "S": 0.0
+    },
+    "trace_ids": [
+      "IV.CFMN..HHE",
+      "IV.CFMN..HHN",
+      "IV.CFMN..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 27,
+    "alias": "S005",
+    "phase": "S",
+    "residual_s": -0.627,
+    "event_index": 393,
+    "station": "IV.CAWE.",
+    "pick_index": 91984,
+    "score": 0.0326383368374958,
+    "source": "inputs/continuation/waveforms/IV_CAWE_20240520T180000_20240521T000000.mseed",
+    "time": "2024-05-20T18:16:05.970000Z",
+    "probability": 0.7898153066635132,
+    "role": "training",
+    "abs_residual": 0.627,
+    "review_id": 20,
+    "associated_phase_offsets_s": {
+      "S": 0.0
+    },
+    "trace_ids": [
+      "IV.CAWE..EHE",
+      "IV.CAWE..EHN",
+      "IV.CAWE..EHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 35,
+    "alias": "S018",
+    "phase": "S",
+    "residual_s": -0.612,
+    "event_index": 1055,
+    "station": "IV.CPOZ.",
+    "pick_index": 102477,
+    "score": 0.0246896533353575,
+    "source": "inputs/continuation/waveforms/IV_CPOZ_20240520T180000_20240521T000000.mseed",
+    "time": "2024-05-20T19:57:03.270000Z",
+    "probability": 0.5770021080970764,
+    "role": "training",
+    "abs_residual": 0.612,
+    "review_id": 21,
+    "associated_phase_offsets_s": {
+      "P": -0.62,
+      "S": 0.0
+    },
+    "trace_ids": [
+      "IV.CPOZ..HHE",
+      "IV.CPOZ..HHN",
+      "IV.CPOZ..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 3,
+    "alias": "S018",
+    "phase": "S",
+    "residual_s": -0.604,
+    "event_index": 103,
+    "station": "IV.CPOZ.",
+    "pick_index": 31043,
+    "score": 0.0233330778707165,
+    "source": "inputs/continuation/waveforms/IV_CPOZ_20220125T180000_20220126T000000.mseed",
+    "time": "2022-01-25T22:46:57.420000Z",
+    "probability": 0.975600004196167,
+    "role": "training",
+    "abs_residual": 0.604,
+    "review_id": 22,
+    "associated_phase_offsets_s": {
+      "P": -1.31,
+      "S": 0.0
+    },
+    "trace_ids": [
+      "IV.CPOZ..HHE",
+      "IV.CPOZ..HHN",
+      "IV.CPOZ..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  },
+  {
+    "event_ordinal": 35,
+    "alias": "S011",
+    "phase": "S",
+    "residual_s": -0.56,
+    "event_index": 1055,
+    "station": "IV.CFMN.",
+    "pick_index": 102485,
+    "score": 0.0305708875200261,
+    "source": "inputs/continuation/waveforms/IV_CFMN_20240520T180000_20240521T000000.mseed",
+    "time": "2024-05-20T19:57:04.370000Z",
+    "probability": 0.7653636932373047,
+    "role": "training",
+    "abs_residual": 0.56,
+    "review_id": 23,
+    "associated_phase_offsets_s": {
+      "P": -0.76,
+      "S": 0.0
+    },
+    "trace_ids": [
+      "IV.CFMN..HHE",
+      "IV.CFMN..HHN",
+      "IV.CFMN..HHZ"
+    ],
+    "sampling_hz": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "gaps": [],
+    "window_available": true
+  }
+]

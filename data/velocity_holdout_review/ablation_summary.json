@@ -1,0 +1,32 @@
+[
+  {
+    "name": "old_velocity_zero_delays",
+    "bits": 64,
+    "events": 62,
+    "picks": 1065,
+    "returncode": 0,
+    "residual_rms_s": 0.26419310941247665,
+    "event_rms_s": 0.2689915456160346,
+    "depth_min_km": 0.1,
+    "depth_max_km": 10.21,
+    "workdir": "tmp/velocity_holdout_review/ablations/old_velocity_zero_delays",
+    "wall_seconds": 0.3476333939470351,
+    "timeout_seconds": 300,
+    "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+  },
+  {
+    "name": "initial_velocity_old_delays",
+    "bits": 64,
+    "events": 62,
+    "picks": 1065,
+    "returncode": 0,
+    "residual_rms_s": 0.36044301770749354,
+    "event_rms_s": 0.3544577867400365,
+    "depth_min_km": 0.34,
+    "depth_max_km": 4.9,
+    "workdir": "tmp/velocity_holdout_review/ablations/initial_velocity_old_delays",
+    "wall_seconds": 0.6814883440965787,
+    "timeout_seconds": 300,
+    "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+  }
+]

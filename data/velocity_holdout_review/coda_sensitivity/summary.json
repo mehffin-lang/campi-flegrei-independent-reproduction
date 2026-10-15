@@ -1,0 +1,201 @@
+{
+  "reason": "One training-only sensitivity: omit a visually ambiguous coda association.\n\nEvent 1532 is not declared false. This tests its leverage without editing any\narrival or dropping any 2025 holdout event. It cannot override the failed\ninitialization/selection stability tests of the registered model family.\n",
+  "excluded_training_event": 1532,
+  "review": "data/velocity_holdout_review/review/event_1532.png",
+  "training_events": 51,
+  "holdout_sha256": "39500ad38df90e4c07cdce2da047116cd2441996f11a5f752501798a3599b2b9",
+  "accepted": false,
+  "runs": [
+    {
+      "name": "prelocation",
+      "bits": 64,
+      "events": 51,
+      "picks": 812,
+      "returncode": 0,
+      "residual_rms_s": 0.21059663660598596,
+      "event_rms_s": 0.2256276648313653,
+      "depth_min_km": 0.4,
+      "depth_max_km": 5.51,
+      "workdir": "tmp/velocity_holdout_review/coda_sensitivity/prelocation",
+      "wall_seconds": 0.3556319180643186,
+      "timeout_seconds": 300,
+      "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+    },
+    {
+      "name": "velocity_only",
+      "bits": 64,
+      "events": 51,
+      "picks": 812,
+      "returncode": 0,
+      "residual_rms_s": 0.20545692200076776,
+      "event_rms_s": 0.21827307954693348,
+      "depth_min_km": 0.35,
+      "depth_max_km": 5.88,
+      "workdir": "tmp/velocity_holdout_review/coda_sensitivity/velocity_only",
+      "wall_seconds": 0.4299409140367061,
+      "timeout_seconds": 300,
+      "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+      "location_change": {
+        "max_horizontal_m": 678.7197563835499,
+        "max_depth_km": 0.8500000000000001,
+        "max_origin_s": 0.11,
+        "max_rms_s": 0.04999999999999999
+      }
+    },
+    {
+      "name": "joint1",
+      "bits": 64,
+      "events": 51,
+      "picks": 812,
+      "returncode": 0,
+      "residual_rms_s": 0.2047935642076838,
+      "event_rms_s": 0.21715179474456184,
+      "depth_min_km": 0.38,
+      "depth_max_km": 5.96,
+      "workdir": "tmp/velocity_holdout_review/coda_sensitivity/joint1",
+      "wall_seconds": 0.47458127001300454,
+      "timeout_seconds": 300,
+      "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+      "location_change": {
+        "max_horizontal_m": 228.02969403868562,
+        "max_depth_km": 0.56,
+        "max_origin_s": 0.14,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "joint2",
+      "bits": 64,
+      "events": 51,
+      "picks": 812,
+      "returncode": 0,
+      "residual_rms_s": 0.2044273540978513,
+      "event_rms_s": 0.21624242024571746,
+      "depth_min_km": 0.39,
+      "depth_max_km": 6.03,
+      "workdir": "tmp/velocity_holdout_review/coda_sensitivity/joint2",
+      "wall_seconds": 0.575895681977272,
+      "timeout_seconds": 300,
+      "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+      "location_change": {
+        "max_horizontal_m": 170.17127270226192,
+        "max_depth_km": 0.47,
+        "max_origin_s": 0.05,
+        "max_rms_s": 0.01999999999999999
+      }
+    },
+    {
+      "name": "joint3",
+      "bits": 64,
+      "events": 51,
+      "picks": 812,
+      "returncode": 0,
+      "residual_rms_s": 0.2045049049720702,
+      "event_rms_s": 0.21580219701220402,
+      "depth_min_km": 0.4,
+      "depth_max_km": 6.07,
+      "workdir": "tmp/velocity_holdout_review/coda_sensitivity/joint3",
+      "wall_seconds": 0.47319490602239966,
+      "timeout_seconds": 300,
+      "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+      "location_change": {
+        "max_horizontal_m": 395.4982253800784,
+        "max_depth_km": 0.21999999999999975,
+        "max_origin_s": 0.04,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "joint4",
+      "bits": 64,
+      "events": 51,
+      "picks": 812,
+      "returncode": 0,
+      "residual_rms_s": 0.20441712461884995,
+      "event_rms_s": 0.21597930184054537,
+      "depth_min_km": 0.4,
+      "depth_max_km": 6.1,
+      "workdir": "tmp/velocity_holdout_review/coda_sensitivity/joint4",
+      "wall_seconds": 0.4794568420620635,
+      "timeout_seconds": 300,
+      "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+      "location_change": {
+        "max_horizontal_m": 414.8502067763516,
+        "max_depth_km": 0.22999999999999998,
+        "max_origin_s": 0.05,
+        "max_rms_s": 0.010000000000000009
+      }
+    },
+    {
+      "name": "joint5",
+      "bits": 64,
+      "events": 51,
+      "picks": 812,
+      "returncode": 0,
+      "residual_rms_s": 0.2043248946202502,
+      "event_rms_s": 0.215333758270691,
+      "depth_min_km": 0.4,
+      "depth_max_km": 6.13,
+      "workdir": "tmp/velocity_holdout_review/coda_sensitivity/joint5",
+      "wall_seconds": 0.48168931202962995,
+      "timeout_seconds": 300,
+      "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+      "location_change": {
+        "max_horizontal_m": 928.8839126226815,
+        "max_depth_km": 0.43999999999999995,
+        "max_origin_s": 0.04,
+        "max_rms_s": 0.020000000000000018
+      }
+    }
+  ],
+  "inputs": {
+    "data/velocity_holdout_review/training_cap5.csv": "5c002819899c125ec6b551e591fff757759123c884c122c0b0ad00b0a2dd47d3",
+    "data/velocity_holdout_review/frozen_holdout.cnv": "39500ad38df90e4c07cdce2da047116cd2441996f11a5f752501798a3599b2b9",
+    "data/availability_extension/catalog_december/picks.csv": "6cef48bfbb171f1010284f4f3ed61f066c3befc10b693e8f06f67d967e378574",
+    "data/availability_extension/catalog_december/associations.csv": "fd984d304166afb1371584ea064d4eeaa3064e128cca0dc0a45fd20372e3e50a",
+    "scripts/check_velocity_review_exclusion.py": "e33d4668343865125a335b67613188731edef7026cb9ef4cecdd57a6135d002d"
+  },
+  "holdout": {
+    "name": "holdout",
+    "bits": 64,
+    "events": 62,
+    "picks": 1065,
+    "returncode": 0,
+    "residual_rms_s": 0.22871907035824518,
+    "event_rms_s": 0.24383362916069928,
+    "depth_min_km": 0.53,
+    "depth_max_km": 7.46,
+    "workdir": "tmp/velocity_holdout_review/coda_sensitivity/holdout",
+    "wall_seconds": 1.1090198089368641,
+    "timeout_seconds": 300,
+    "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471"
+  },
+  "holdout_extra": {
+    "name": "holdout_extra",
+    "bits": 64,
+    "events": 62,
+    "picks": 1065,
+    "returncode": 0,
+    "residual_rms_s": 0.22850467783707892,
+    "event_rms_s": 0.24285267005910952,
+    "depth_min_km": 0.53,
+    "depth_max_km": 7.47,
+    "workdir": "tmp/velocity_holdout_review/coda_sensitivity/holdout_extra",
+    "wall_seconds": 1.1094963329378515,
+    "timeout_seconds": 300,
+    "binary_sha256": "42d2e352ff8feae5e60502ecda448562139e3d920bd61601347b27fa17e22471",
+    "location_change": {
+      "max_horizontal_m": 245.4530262674052,
+      "max_depth_km": 0.5700000000000001,
+      "max_origin_s": 0.07,
+      "max_rms_s": 0.040000000000000036
+    }
+  },
+  "difference_from_all_training": {
+    "max_horizontal_m": 661.069872987847,
+    "max_depth_km": 1.53,
+    "max_origin_s": 0.19,
+    "max_rms_s": 0.03
+  },
+  "holdout_unchanged": true
+}

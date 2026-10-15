@@ -1,0 +1,34 @@
+[
+  {
+    "event_index": 1532,
+    "role": "training",
+    "finding": "Most assigned P markers fall within a decaying packet already visible across the network; a distinct additional onset is not established. Suspected coda association, not confirmed false.",
+    "action": "Retained in registered tests; omitted only in separately labeled training sensitivity.",
+    "reviewer": "Codex visual inspection; not human seismologist review",
+    "figure": "data/velocity_holdout_review/review/event_1532.png"
+  },
+  {
+    "event_index": 225,
+    "role": "training",
+    "finding": "Several stations show a coherent P/S packet. Some distant or low-SNR phases are ambiguous, but this display does not justify rejecting the event.",
+    "action": "Retained unchanged.",
+    "reviewer": "Codex visual inspection; not human seismologist review",
+    "figure": "data/velocity_holdout_review/review/event_225.png"
+  },
+  {
+    "event_index": 2403,
+    "role": "holdout",
+    "finding": "A coherent packet is visible, but several P markers and delayed CRUS S need review. The fitted depth crosses the 3-km interface during additional iterations.",
+    "action": "Holdout retained unchanged; no arrival correction or exclusion.",
+    "reviewer": "Codex visual inspection; not human seismologist review",
+    "figure": "data/velocity_holdout_review/review/event_2403.png"
+  },
+  {
+    "event_index": 2642,
+    "role": "holdout",
+    "finding": "Coherent network packet with ambiguous CMTS/CBAG onsets. Depth moves across the 3-km interface, so the large residual is not sufficient to classify the whole association as false.",
+    "action": "Holdout retained unchanged; no arrival correction or exclusion.",
+    "reviewer": "Codex visual inspection; not human seismologist review",
+    "figure": "data/velocity_holdout_review/review/event_2642.png"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "files": [
+      "figures/velocity_holdout_diagnostic.pdf",
+      "figures/velocity_holdout_diagnostic.png"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "Own observational fit trials; no publication figure or synthetic input. All sensitivities shown. No family accepted.",
+    "inputs": {
+      "data/velocity_holdout_review/summary.json": "064dfcc705800aed449fa9a2eef6883614460a3da8ff77170be7d038fc899694",
+      "data/velocity_holdout_review/experiment_results.csv": "16b003ebee417e89806cdeb9cc60900c6695db5661631a7f240c029b1694107a",
+      "data/velocity_holdout_review/holdout_support.csv": "2145b11d6d4de9dfadd0ac95397ebb0bde88f9283b9832de64b0de26d9dca1a9",
+      "data/velocity_holdout_review/all_profiles.csv": "6564712e58dd3a920504862d2e368fd726b29f1bf64972cc4fb7befafecf1118"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/velocity_holdout_diagnostic.pdf": "d385649928fc2e1efde00db5a0fbeca7a3ca7f31038c2c4ebd6d18ebedb63270",
+      "figures/velocity_holdout_diagnostic.png": "fd0685d3b7fc4e3186707a4f1ac2d43553fe022a80e7a827e59b65ebae574b42"
+    }
+  },
+  {
+    "files": [
+      "figures/velocity_ray_coverage.pdf",
+      "figures/velocity_ray_coverage.png"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "Native per-ray vertices; counted phase by phase. Geometry depends on provisional locations and model; no claim of independently known source depths.",
+    "inputs": {
+      "data/velocity_holdout_review/ray_coverage.csv": "2083f79e3ff4ed9734a961d3c99dd4cc8e862ecabb3417d5a05be4db2965d884"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/velocity_ray_coverage.pdf": "5b18cacf08fff438fc0a563c952d23d7728c8c72def8f96b21d89d8eebc4e9df",
+      "figures/velocity_ray_coverage.png": "4e9dc157d03ae5c69dbce3a53a5b223b0a7a29984081d50696a2ee5bf2b6072a"
+    }
+  }
+]

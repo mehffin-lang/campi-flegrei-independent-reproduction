@@ -1,0 +1,125 @@
+{
+  "families": {
+    "four_regularized": {
+      "tops": [
+        -0.5,
+        0.5,
+        1.0,
+        3.0
+      ],
+      "vp": [
+        1.7,
+        2.0,
+        3.0,
+        5.5
+      ],
+      "station_fit": true
+    },
+    "three_regularized": {
+      "tops": [
+        -0.5,
+        1.0,
+        3.0
+      ],
+      "vp": [
+        1.8,
+        3.0,
+        5.5
+      ],
+      "station_fit": true
+    },
+    "three_zero_delays": {
+      "tops": [
+        -0.5,
+        1.0,
+        3.0
+      ],
+      "vp": [
+        1.8,
+        3.0,
+        5.5
+      ],
+      "station_fit": false
+    }
+  },
+  "variants": [
+    [
+      "base",
+      1.0,
+      5,
+      1.0,
+      64
+    ],
+    [
+      "slow",
+      0.95,
+      5,
+      1.0,
+      64
+    ],
+    [
+      "fast",
+      1.05,
+      5,
+      1.0,
+      64
+    ],
+    [
+      "selection",
+      1.0,
+      8,
+      1.0,
+      64
+    ],
+    [
+      "damping",
+      1.0,
+      5,
+      10.0,
+      64
+    ],
+    [
+      "precision32",
+      1.0,
+      5,
+      1.0,
+      32
+    ]
+  ],
+  "holdout_events": 62,
+  "holdout_arrivals": 1065,
+  "holdout_sha256": "39500ad38df90e4c07cdce2da047116cd2441996f11a5f752501798a3599b2b9",
+  "holdout_baseline_source": "tmp/availability_extension/velocity_december/base_holdout_initialization/input.cnv",
+  "initial_ratio": 1.78,
+  "layer_damping": 10,
+  "station_damping": 10,
+  "initial_station_corrections_s": 0,
+  "reference_station": "IV.CSOB.",
+  "weights": {
+    "P": 1,
+    "S": 0.5
+  },
+  "selection": "Pre-2025 only; at most five (sensitivity eight) chronologically spaced events per day and 1-km provisional depth bin; supplement rare training station/phase pairs to three events where possible.",
+  "rationale": "Merge shallow layers with similar initial speeds to reduce tradeoffs; increase station damping to limit unsupported station-specific extrapolation; test zero delays as a restricted alternative. Three predeclared families, no holdout-driven search. Depths and delays are nuisance parameters; this is conditional arrival validation.",
+  "iteration_schedule": "21 fixed prelocation, 14 velocity-only, then five joint 14-iteration blocks; compare blocks 3 and 5 for extra-iteration sensitivity. Holdout 35 fixed-model iterations then another 35 solely to check nuisance-location convergence.",
+  "gates": {
+    "holdout_rms_improves": true,
+    "max_horizontal_m": 100,
+    "max_depth_km": 0.1,
+    "max_velocity_km_s": 0.05,
+    "max_station_s": 0.02,
+    "positive_bulk_modulus": true,
+    "monotonic_velocities": true
+  },
+  "inputs": {
+    "data/availability_extension/catalog_december/picks.csv": "6cef48bfbb171f1010284f4f3ed61f066c3befc10b693e8f06f67d967e378574",
+    "data/availability_extension/catalog_december/associations.csv": "fd984d304166afb1371584ea064d4eeaa3064e128cca0dc0a45fd20372e3e50a",
+    "data/availability_extension/catalog_december/stations.csv": "83f3bd10a60529750a7ad3c9e7baa155cae39d33d1372554ee0cab0eb72960a7",
+    "data/availability_extension/velocity_december/event_roles.csv": "b675088f398e4d8e5d4a72a256cdf2499353fdcca92154349032f92a7ddd5778",
+    "data/availability_extension/velocity_december/station_aliases.csv": "c1c0308bab6519b34ee06d0222ad13464f4cc1ee5fd0535a9edddae88105f37c",
+    "tmp/availability_extension/velocity_december/base_holdout_initialization/input.cnv": "39500ad38df90e4c07cdce2da047116cd2441996f11a5f752501798a3599b2b9",
+    "inputs/extended/velest_guide.pdf": "06cea94a27ff916ab45bcabfdd29459167ebb623f1bec9e4cef8eac16b24204e",
+    "scripts/test_velocity_parameterizations.py": "8315d43f9b6140046b95bc609ddf9372b40a89fb9e991159e15bfa2f4bb65a9b"
+  },
+  "holdout_exposure": "Prior failure diagnostics were inspected, so this is a previously examined validation set, not a pristine final test set. No holdout arrivals, residuals, or locations fit velocity or delays; all registered families and outcomes are reported."
+}

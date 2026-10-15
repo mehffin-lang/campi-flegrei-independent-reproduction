@@ -1,0 +1,56 @@
+[
+  {
+    "trial": "four_regularized_base",
+    "role": "training",
+    "arrivals": 827,
+    "max_ray_vs_output_depth_km": 0.0,
+    "travel_time_check_rms_s": 0.005151181831227671,
+    "travel_time_check_max_abs_s": 0.018936151407562274,
+    "note": "Vertices and output CNV are rounded to 0.01 km and 0.01 s; this is a consistency check, not additional measured arrivals."
+  },
+  {
+    "trial": "four_regularized_base",
+    "role": "holdout",
+    "arrivals": 1065,
+    "max_ray_vs_output_depth_km": 0.0,
+    "travel_time_check_rms_s": 0.004417884542457592,
+    "travel_time_check_max_abs_s": 0.012731065029303545,
+    "note": "Vertices and output CNV are rounded to 0.01 km and 0.01 s; this is a consistency check, not additional measured arrivals."
+  },
+  {
+    "trial": "three_regularized_base",
+    "role": "training",
+    "arrivals": 827,
+    "max_ray_vs_output_depth_km": 0.0,
+    "travel_time_check_rms_s": 0.0074536824994233895,
+    "travel_time_check_max_abs_s": 0.022946888807193422,
+    "note": "Vertices and output CNV are rounded to 0.01 km and 0.01 s; this is a consistency check, not additional measured arrivals."
+  },
+  {
+    "trial": "three_regularized_base",
+    "role": "holdout",
+    "arrivals": 1065,
+    "max_ray_vs_output_depth_km": 0.0,
+    "travel_time_check_rms_s": 0.0040781665791251006,
+    "travel_time_check_max_abs_s": 0.01270366825866226,
+    "note": "Vertices and output CNV are rounded to 0.01 km and 0.01 s; this is a consistency check, not additional measured arrivals."
+  },
+  {
+    "trial": "three_zero_delays_base",
+    "role": "training",
+    "arrivals": 827,
+    "max_ray_vs_output_depth_km": 0.0,
+    "travel_time_check_rms_s": 0.00707897189701815,
+    "travel_time_check_max_abs_s": 0.022920727842200894,
+    "note": "Vertices and output CNV are rounded to 0.01 km and 0.01 s; this is a consistency check, not additional measured arrivals."
+  },
+  {
+    "trial": "three_zero_delays_base",
+    "role": "holdout",
+    "arrivals": 1065,
+    "max_ray_vs_output_depth_km": 0.0,
+    "travel_time_check_rms_s": 0.0037701243609269343,
+    "travel_time_check_max_abs_s": 0.014001072807056175,
+    "note": "Vertices and output CNV are rounded to 0.01 km and 0.01 s; this is a consistency check, not additional measured arrivals."
+  }
+]

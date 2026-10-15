@@ -1,7 +1,11 @@
 # Independent Campi Flegrei reproduction
 
+<!-- holdout-review -->
+The latest [velocity tests](docs/VELOCITY_HOLDOUT_REVIEW.md) ran three parameterizations and 18 sensitivity fits against the unchanged 62-event 2025 holdout. A zero-delay three-layer trial improves holdout RMS **0.2432 → 0.2274 s**, but depth sensitivity reaches **1.58 km**. **No velocity profile is validated.** The [report](report/report.pdf) contains the full diagnosis; existing empirical panel checkpoints are preserved. Rebuild this assessment with `.venv/bin/python scripts/rebuild_velocity_holdout.py`.
+<!-- /holdout-review -->
+
 <!-- availability-current -->
-The availability-led extension is the current **provisional** checkpoint.
+The following is the **preserved catalog-generation checkpoint**. Its fitted model remains the disclosed input behind Figure S6; the later velocity tests above do not promote a replacement.
 It processes **1,327 eligible files, 14,080.521 channel-hours,
 256,720 picks and 3,296 associations**.
 The new independent 1D velocity fit uses 46 balanced pre-2025 training

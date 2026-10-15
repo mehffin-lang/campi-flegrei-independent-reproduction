@@ -1,0 +1,38 @@
+{
+  "inputs": {
+    "data/availability_extension/catalog_december/picks.csv": "6cef48bfbb171f1010284f4f3ed61f066c3befc10b693e8f06f67d967e378574",
+    "data/availability_extension/catalog_december/associations.csv": "fd984d304166afb1371584ea064d4eeaa3064e128cca0dc0a45fd20372e3e50a",
+    "data/availability_extension/catalog_december/stations.csv": "83f3bd10a60529750a7ad3c9e7baa155cae39d33d1372554ee0cab0eb72960a7",
+    "data/availability_extension/velocity_december/event_roles.csv": "b675088f398e4d8e5d4a72a256cdf2499353fdcca92154349032f92a7ddd5778",
+    "data/availability_extension/velocity_december/summary.json": "cd81ec88c58b4cd77e73955695a21ab4ab866533a559438a9c14684cd985287d"
+  },
+  "waveforms": {
+    "inputs/continuation/waveforms/IV_CSOB_20250320T180000_20250321T000000.mseed": "c6dbe83230cb65444663ab31e9cba4fbaf0897fcc5e8d4214df0c238dbb0e444",
+    "inputs/continuation/waveforms/IV_CMTS_20250319T120000_20250319T180000.mseed": "9090b66d3e4e7c312a45b777683cbba46d823737b9c6d10da0cbbfbdb770ed0a",
+    "inputs/continuation/waveforms/IV_CBAG_20250319T060000_20250319T120000.mseed": "52fd3a9fb8cadfea41b70af6feef38186fcbcfc35446996c25ec9f92e6c762c3",
+    "inputs/continuation/waveforms/IV_CBAG_20250319T120000_20250319T180000.mseed": "8f0c9b993436b65d620f51c5b842d8dedee38bbc1ba4b12aae87ec94b970a223",
+    "inputs/continuation/waveforms/IV_CMIS_20250318T060000_20250318T120000.mseed": "89ce53147e7805392025bce0c7e22d78fb55a47a580a901f19077125a418334a",
+    "inputs/continuation/waveforms/IV_COLB_20250318T180000_20250319T000000.mseed": "f0d017aee078fa5ce977058f7024819272376b29b0c3790936ac6447698ffc0f",
+    "inputs/continuation/waveforms/2I_CREM_20250319T060000_20250319T120000.mseed": "af1bfcc79cfd8dd5431783e0abb0e15499045ef1bcfec9d6c979139d75a9ab88",
+    "inputs/continuation/waveforms/IV_CRUS_20250318T180000_20250319T000000.mseed": "54599f22dd09d00e6f5e853b5f355ff350eb545902e5a2bae7aa6aeece5e383b",
+    "inputs/continuation/waveforms/IV_CSFT_20250319T060000_20250319T120000.mseed": "50a119decc714c9d2db38b82de855cc26b27828a209d04b85117862226071995",
+    "inputs/continuation/waveforms/IV_CBAG_20250320T000000_20250320T060000.mseed": "c3ca8404368aef706047234f1fbe9fd58d96f572561cda24b3fa2796de60bc41",
+    "inputs/continuation/waveforms/IV_CPIS_20250318T060000_20250318T120000.mseed": "94bcde1a4f9bc45ea986c8a053048c4df24710ec7c09132013f17782d4f15f4b",
+    "inputs/continuation/waveforms/IV_CNIS_20250318T180000_20250319T000000.mseed": "fe149112e9483eb53ef4b336f4b318aa41e1e79caf088dc5ee4357b30bca8fed",
+    "inputs/continuation/waveforms/IV_CAAM_20240520T180000_20240521T000000.mseed": "03e389b9c4b03919a663164e0930d564386a61dabce32f1c4fb53d5b18fd2fb4",
+    "inputs/continuation/waveforms/IV_CSOB_20240520T180000_20240521T000000.mseed": "01285b86cc27f2d8b0258d719f4b018ffc67cb01d352bb91b9a5e3dd11f79b04",
+    "inputs/continuation/waveforms/IV_CSTH_20240520T180000_20240521T000000.mseed": "b71f0556a4c78045d06a587d0cb4c3f27c3c366c8b25526fb6899728819ac7f3",
+    "inputs/continuation/waveforms/IV_CFMN_20220128T120000_20220128T180000.mseed": "31a789c5c9ecc36bb7439cac06e2c4f772257726af708af221c7f0274de5493a",
+    "inputs/continuation/waveforms/IV_CPIS_20240520T180000_20240521T000000.mseed": "a3970352afb8c4ae8a7c4bb144f2bb37e5208992d757fb3e6b19b70cf416d43b",
+    "inputs/continuation/waveforms/IV_CSFT_20240520T180000_20240521T000000.mseed": "60cdb0a15ef45c20abde1298b7ed78d11fa92158f383bc7593fc3ccf94c6b058",
+    "inputs/continuation/waveforms/IV_CMSN_20240201T000000_20240201T060000.mseed": "ca17e056c412db568cbfc3e23dcf527da7656ca22d699aa93dceca1e97406ba1",
+    "inputs/continuation/waveforms/IV_CFMN_20240201T000000_20240201T060000.mseed": "b5aa89ff177c94ba798f2af8dfb6649092b11352c69fd02ef8746e5ef1638e40",
+    "inputs/continuation/waveforms/IV_CAWE_20240520T180000_20240521T000000.mseed": "675d1fb677bac7be85fb797c490f0eda1ef4c25520445a42e8e9f058d56e7d89",
+    "inputs/continuation/waveforms/IV_CPOZ_20240520T180000_20240521T000000.mseed": "8c83da515b16269a1684f882d2f53c89354e90dd826bf62c35e75a3b50f64639",
+    "inputs/continuation/waveforms/IV_CPOZ_20220125T180000_20220126T000000.mseed": "bf188c0219b17c973a701377a1ebe1331042b3561c5b7c6e2d5fb04ea260cc24",
+    "inputs/continuation/waveforms/IV_CFMN_20240520T180000_20240521T000000.mseed": "ccc6d1509fb3d78fe723db60f978fb25590865c2013b208abfe28c2a81fb3a88"
+  },
+  "review_count": 24,
+  "holdout_unchanged": true,
+  "background_coordination": "Stopped automatic model/report watcher PID 3325726 to prevent competing report writes. Existing waveform collector and incremental picker remain active; no new files enter this frozen experiment."
+}

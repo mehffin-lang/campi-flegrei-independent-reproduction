@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/mehffin/campi-flegrei-independent-reproduction/scripts/test_velocity_parameterizations.py", line 178, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/mehffin/campi-flegrei-independent-reproduction/scripts/test_velocity_parameterizations.py", line 109, in main
+    assert json.loads((D/'experiment_plan.json').read_text())==plan,'Experiment changed after registration'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Experiment changed after registration

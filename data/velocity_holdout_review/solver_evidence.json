@@ -1,0 +1,6 @@
+{
+  "file": "data/velocity_holdout_review/solver_evidence.tar.gz",
+  "bytes": 13334446,
+  "sha256": "9ba255f68a070da633dab305f31b2f477873f79dea3498045fb4f9b28c1ecfb8",
+  "role": "Own numerical run evidence. Extract only inside the project root."
+}

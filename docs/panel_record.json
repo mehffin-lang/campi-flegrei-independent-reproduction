@@ -170,6 +170,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/panels/weekly_counts.csv; data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_2_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -238,6 +243,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/panels/weekly_counts.csv; data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_2_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -303,6 +313,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_3_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -368,6 +383,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_3_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -433,6 +453,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_3_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -476,6 +501,11 @@
     "previous_checkpoint": {
       "saved_data": "data/mechanism_followup/gcap/solutions.csv; data/mechanism_followup/gcap_1_5/solutions.csv; data/mechanism_followup/candidate_requirements.csv",
       "generated_figure": "figures/figure_4_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -519,6 +549,11 @@
     "previous_checkpoint": {
       "saved_data": "data/mechanism_followup/gcap/solutions.csv; data/mechanism_followup/gcap_1_5/solutions.csv; data/mechanism_followup/candidate_requirements.csv",
       "generated_figure": "figures/figure_4_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -934,6 +969,11 @@
       "limitation": "New observational profile fails time-separated holdout; no accepted location catalog.",
       "independently_generated": true,
       "agreement_with_publication": "Not established"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -1019,6 +1059,11 @@
       "limitation": "New observational profile fails time-separated holdout; no accepted location catalog.",
       "independently_generated": true,
       "agreement_with_publication": "Not established"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -1104,6 +1149,11 @@
       "limitation": "New observational profile fails time-separated holdout; no accepted location catalog.",
       "independently_generated": true,
       "agreement_with_publication": "Not established"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -1169,6 +1219,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/uncertainty/regional_svd.csv; data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_S7_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -1234,6 +1289,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/uncertainty/regional_svd.csv; data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_S7_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -1299,6 +1359,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/uncertainty/regional_svd.csv; data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_S7_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -1364,6 +1429,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/uncertainty/regional_svd.csv; data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_S7_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -1429,6 +1499,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/uncertainty/regional_svd.csv; data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_S7_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -1494,6 +1569,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/uncertainty/regional_svd.csv; data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_S7_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -1559,6 +1639,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/uncertainty/regional_svd.csv; data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_S7_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {
@@ -1624,6 +1709,11 @@
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/uncertainty/regional_svd.csv; data/local_extension/calibration/merged4/panels/relocated.csv",
       "generated_figure": "figures/figure_S7_local_followup.pdf"
+    },
+    "additional_velocity_validation": {
+      "data": "data/velocity_holdout_review/experiment_results.csv",
+      "accepted": false,
+      "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
     }
   },
   {

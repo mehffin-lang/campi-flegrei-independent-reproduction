@@ -54,3 +54,16 @@ weights, station reference and solver controls are recorded in model summaries.
 acquisition. Older TomoDD, magnitude and mechanism outputs retain their original
 model/cohort identity. Published images remain comparison-only; no pixels or
 published event tables enter the new calculation. Synthetic fixtures remain tests.
+
+## Calendar-separated velocity review (15 October 2026)
+
+The frozen December own-arrival cohort supports three new parameterizations,
+18 registered sensitivity fits, two delay/velocity ablations, and a training-only
+leave-one-event-out sensitivity. All 62 holdout events / 1,065 arrivals remain
+unchanged. No profile passes all validation gates. The zero-delay three-layer
+trial improves conditional prediction but remains unstable. Exact input roles,
+source hashes, native run archive, raw-window reviews, ray coverage and commands
+are in `docs/VELOCITY_HOLDOUT_REVIEW.md` and `data/velocity_holdout_review/`.
+New diagnostics appear only after the supplement. They are not publication
+panels, reference-image extractions, or synthetic observations. No new fitted
+profile is substituted into existing empirical catalog panels.
