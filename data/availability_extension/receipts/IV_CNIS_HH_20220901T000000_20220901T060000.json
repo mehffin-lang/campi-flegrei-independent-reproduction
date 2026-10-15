@@ -1,0 +1,39 @@
+{
+  "request": "IV_CNIS_HH_20220901T000000_20220901T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CNIS",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2022-08-31T23:59:30.000000Z",
+    "end": "2022-09-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T17:55:01.883135+00:00",
+  "status": "downloaded",
+  "bytes": 12199424,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CNIS&loc=%2A&cha=HH%3F&start=2022-08-31T23%3A59%3A30.000000Z&end=2022-09-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CNIS_HH_20220901T000000_20220901T060000.mseed",
+  "sha256": "f3094fe0249bc866f894a09d33c31737cc806d3ed0416e9e28550f7e5c5a84b0",
+  "segments": [
+    {
+      "channel": "IV.CNIS..HHE",
+      "start": 1661990368.3100002,
+      "end": 1662012030.97,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CNIS..HHN",
+      "start": 1661990366.14,
+      "end": 1662012030.8400002,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CNIS..HHZ",
+      "start": 1661990366.29,
+      "end": 1662012031.67,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 108.1436042439891
+}

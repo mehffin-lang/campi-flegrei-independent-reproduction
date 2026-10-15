@@ -1,9 +1,5 @@
 {
   "pid": 3323387,
-  "verified_cached_files": 77,
-  "batch_files": 0,
-  "downloaded_files": 77,
-  "pending_before_batch": 0,
-  "failed_files": [],
-  "running": true
+  "running": false,
+  "reason": "explicit stop sentinel"
 }

@@ -1,0 +1,57 @@
+{
+  "request": "IV_COLB_HH_20221201T000000_20221201T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "COLB",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2022-11-30T23:59:30.000000Z",
+    "end": "2022-12-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T18:31:52.610133+00:00",
+  "status": "downloaded",
+  "bytes": 13999104,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-11-30T23%3A59%3A30.000000Z&end=2022-12-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_COLB_HH_20221201T000000_20221201T060000.mseed",
+  "sha256": "cdd4a905892b3672b8607e53a630b206ab21f857714b0c10a083d64771a4ca68",
+  "segments": [
+    {
+      "channel": "IV.COLB..HHE",
+      "start": 1669852768.2,
+      "end": 1669871031.33,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.COLB..HHE",
+      "start": 1669871040.0,
+      "end": 1669874431.49,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.COLB..HHN",
+      "start": 1669852769.36,
+      "end": 1669871031.33,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.COLB..HHN",
+      "start": 1669871040.0,
+      "end": 1669874431.0800002,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.COLB..HHZ",
+      "start": 1669852767.84,
+      "end": 1669871031.33,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.COLB..HHZ",
+      "start": 1669871040.0,
+      "end": 1669874430.69,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 135.62507621292025
+}

@@ -1,0 +1,57 @@
+{
+  "request": "IV_CCAP_EH_20230401T000000_20230401T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CCAP",
+    "loc": "*",
+    "cha": "EH?",
+    "start": "2023-03-31T23:59:30.000000Z",
+    "end": "2023-04-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T18:42:02.845661+00:00",
+  "status": "downloaded",
+  "bytes": 14257152,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2023-03-31T23%3A59%3A30.000000Z&end=2023-04-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CCAP_EH_20230401T000000_20230401T060000.mseed",
+  "sha256": "a6a54db840353db222649a9a24f9671d971dbbea9877eb51cf56accc1f105b4c",
+  "segments": [
+    {
+      "channel": "IV.CCAP..EHE",
+      "start": 1680307168.0300002,
+      "end": 1680310408.0,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CCAP..EHE",
+      "start": 1680310897.0,
+      "end": 1680328830.79,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CCAP..EHN",
+      "start": 1680307168.53,
+      "end": 1680310408.0,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CCAP..EHN",
+      "start": 1680310897.0,
+      "end": 1680328831.67,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CCAP..EHZ",
+      "start": 1680307168.84,
+      "end": 1680310408.0,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CCAP..EHZ",
+      "start": 1680310897.0,
+      "end": 1680328830.23,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 88.56408530496992
+}

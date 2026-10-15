@@ -208,3 +208,19 @@ was deleted. S6 still displays its explicitly identified earlier failed-profile
 calculation. Background collection/picking files were preserved separately and
 are not inputs to this frozen study. The old automatic model/report watcher
 was stopped to prevent conflicting updates; collector and picker were retained.
+
+## Targeted training extension, 15 October 2026
+
+Added a versioned record under
+`data/velocity_holdout_review/training_extension_20261015/`, including original
+request receipts, reviewed training arrivals, all 18 new fits, residuals, ray
+coverage and sensitivities. The old 602 velocity-trial files were not overwritten.
+No publication-panel data or empirical plot was replaced because no new model
+passed validation. `report/velocity_training_extension.tex` is included before
+the explicitly preserved older velocity experiment, after the supplement.
+`report/report.pdf` and `report/comparison.pdf` are rebuilt; older PDFs remain in
+Git history. README, provenance, commands and supporting panel metadata identify
+the new failed-model checkpoint. Existing background-acquisition changes were
+preserved, the broad collector was stopped, and twelve successful targeted
+requests were recorded in its ledger to prevent duplicate retrieval. No source
+waveform, unrelated work or Git history was deleted.

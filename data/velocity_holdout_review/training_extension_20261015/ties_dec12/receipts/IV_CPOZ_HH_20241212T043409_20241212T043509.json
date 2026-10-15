@@ -1,0 +1,39 @@
+{
+  "request": "IV_CPOZ_HH_20241212T043409_20241212T043509",
+  "parameters": {
+    "net": "IV",
+    "sta": "CPOZ",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2024-12-12T04:33:39.926000Z",
+    "end": "2024-12-12T04:35:39.926000Z"
+  },
+  "utc": "2026-10-15T18:57:16.118266+00:00",
+  "status": "downloaded",
+  "bytes": 85504,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2024-12-12T04%3A33%3A39.926000Z&end=2024-12-12T04%3A35%3A39.926000Z",
+  "file": "inputs/velocity_holdout_review/training_extension_20261015/ties_dec12/waveforms/IV_CPOZ_HH_20241212T043409_20241212T043509.mseed",
+  "sha256": "e14b92404f3f0c52878627e226555e2b99d3d78de7ce03f5414a76a44dd8aee5",
+  "segments": [
+    {
+      "channel": "IV.CPOZ..HHE",
+      "start": 1733978019.78,
+      "end": 1733978141.86,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CPOZ..HHN",
+      "start": 1733978017.64,
+      "end": 1733978140.54,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CPOZ..HHZ",
+      "start": 1733978018.14,
+      "end": 1733978142.06,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 4.872251717024483
+}

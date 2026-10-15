@@ -1,0 +1,19 @@
+{
+  "accepted_events": 1,
+  "reviewed_input_arrivals": 20,
+  "manual_P_onsets": 1,
+  "reassigned_existing_S": 1,
+  "holdout_used": false,
+  "original_waveform_window_evidence": "review/ties_dec12/windows.npz and onset_zoom.png; original miniSEED checksums in receipts",
+  "independent_human_review": false,
+  "uncertainty": "Manual onset reading interval is not a statistical confidence interval; admitted event/location remains provisional.",
+  "final_event_gate": "Unchanged pre-inversion quality screen; passing it does not validate the velocity model.",
+  "inputs": {
+    "data/velocity_holdout_review/training_extension_20261015/catalog_ties_dec12/picks.csv": "bbe6f72a6ec20430fc739ef187865080fdcb2fc0e1e95ddb137720e06d40133a",
+    "data/velocity_holdout_review/training_extension_20261015/catalog_ties_dec12/associations.csv": "776bac0f354ea812439ee44c58d35acda6bc6c18bfa80567d211136d447da0b2",
+    "data/velocity_holdout_review/training_extension_20261015/catalog_ties_dec12/initial_events.csv": "e6fe029372df65eb1430d11b9e79b071ca618061f6ccc9a2b1284419ebcc9225",
+    "data/velocity_holdout_review/training_extension_20261015/review/ties_dec12/windows.npz": "a8b1657786ef8af4cad471765b83cbbea373bd60c388c6a44f1e239d2d2df6ac",
+    "data/velocity_holdout_review/training_extension_20261015/review/ties_dec12/metadata.csv": "36edf987b9f3084cc27224185b698be5f0ccb1030b8ab2cf77e1ce9e3bbb4df0",
+    "scripts/prepare_reviewed_training.py": "a5d57091838ffed69d4d2b413f0daa9bc4df76dd63208cba3cda1ee90f30da33"
+  }
+}

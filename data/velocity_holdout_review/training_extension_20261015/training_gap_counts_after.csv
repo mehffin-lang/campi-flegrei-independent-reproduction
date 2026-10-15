@@ -1,0 +1,12 @@
+station,phase,training_arrivals,training_events,added_training_arrivals,after_training_arrivals
+2I.CGAU.,P,0,0,1,1
+2I.CGAU.,S,0,0,1,1
+2I.CLAC.,S,0,0,1,1
+2I.CREM.,P,0,0,1,1
+2I.CREM.,S,0,0,1,1
+2I.CSOC.,P,0,0,0,0
+2I.CSOC.,S,0,0,0,0
+IV.CRUS.,P,0,0,1,1
+IV.CRUS.,S,0,0,1,1
+IV.CUMA.,P,0,0,0,0
+IV.CUMA.,S,0,0,0,0

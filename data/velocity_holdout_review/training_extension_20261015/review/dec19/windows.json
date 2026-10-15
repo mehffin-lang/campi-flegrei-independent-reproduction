@@ -1,0 +1,110 @@
+[
+  {
+    "event_index": 0,
+    "origin": "2024-12-19T03:16:24.741000Z",
+    "station": "2I.CGAU.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CGAU_HH_20241219T000000_20241219T060000.mseed",
+    "source_sha256": "4eaae7bc66ffc7b05b6fd828ce08da6d25a4e58260f15a21b2cc980d5b1e2cba",
+    "picks": [
+      {
+        "pick_index": 1902,
+        "phase": "S",
+        "time": "2024-12-19T03:16:24.840000Z",
+        "probability": 0.6360824108123779,
+        "assigned": true
+      },
+      {
+        "pick_index": 1903,
+        "phase": "P",
+        "time": "2024-12-19T03:16:25.540000Z",
+        "probability": 0.3785240948200226,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 0,
+    "origin": "2024-12-19T03:16:24.741000Z",
+    "station": "2I.CLAC.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CLAC_HH_20241219T000000_20241219T060000.mseed",
+    "source_sha256": "8c3c6d379c7a9d8d209673977432db42cb68c4897487b3126eb7499a2afc81b0",
+    "picks": [
+      {
+        "pick_index": 1908,
+        "phase": "S",
+        "time": "2024-12-19T03:16:29.510000Z",
+        "probability": 0.5701761841773987,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 0,
+    "origin": "2024-12-19T03:16:24.741000Z",
+    "station": "2I.CREM.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CREM_HH_20241219T000000_20241219T060000.mseed",
+    "source_sha256": "4e4ca43bbeae263e73faac0dc69305b3fd0b5b1a088e6d04aacc1c2dd65c063d",
+    "picks": []
+  },
+  {
+    "event_index": 0,
+    "origin": "2024-12-19T03:16:24.741000Z",
+    "station": "2I.CSOC.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CSOC_EH_20241219T000000_20241219T060000.mseed",
+    "source_sha256": "4539883baf9e0ae8ed2d771f0ed3cd46470c9a883cea593f22e6667f766a2c42",
+    "picks": [
+      {
+        "pick_index": 1909,
+        "phase": "S",
+        "time": "2024-12-19T03:16:31.590000Z",
+        "probability": 0.5545296669006348,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 0,
+    "origin": "2024-12-19T03:16:24.741000Z",
+    "station": "IV.CRUS.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/IV_CRUS_EH_20241219T000000_20241219T060000.mseed",
+    "source_sha256": "4d0a6eaa5c83374bd8e19afb8974ac02e63377262637e23ae8206bf8c71b4d87",
+    "picks": [
+      {
+        "pick_index": 1904,
+        "phase": "S",
+        "time": "2024-12-19T03:16:26.170000Z",
+        "probability": 0.8030785918235779,
+        "assigned": false
+      },
+      {
+        "pick_index": 1905,
+        "phase": "P",
+        "time": "2024-12-19T03:16:27.050000Z",
+        "probability": 0.3710606098175049,
+        "assigned": true
+      },
+      {
+        "pick_index": 1906,
+        "phase": "S",
+        "time": "2024-12-19T03:16:27.090000Z",
+        "probability": 0.675861120223999,
+        "assigned": true
+      },
+      {
+        "pick_index": 1907,
+        "phase": "S",
+        "time": "2024-12-19T03:16:28.040000Z",
+        "probability": 0.4525015652179718,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 0,
+    "origin": "2024-12-19T03:16:24.741000Z",
+    "station": "IV.CUMA.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/IV_CUMA_HH_20241219T000000_20241219T060000.mseed",
+    "source_sha256": "95ca08b9f0421badc9613c12799d554b237d284ff525f8bf0e7811ad734cf54f",
+    "picks": []
+  }
+]

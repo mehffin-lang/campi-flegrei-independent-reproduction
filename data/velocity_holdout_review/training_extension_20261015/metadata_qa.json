@@ -1,0 +1,14 @@
+{
+  "unique_epoch": true,
+  "responses": true,
+  "epochs_cover_core": true,
+  "sample_rates": true,
+  "coordinate_max_difference_m": 0.0,
+  "elevation_max_difference_m": 0.0,
+  "metadata_sources": {
+    "inputs/continuation/2I_responses.xml": "91c213556e69c7934686d80a497d25f43f8281ffe2411b6d39a5df4e77b9a784",
+    "inputs/continuation/IV_responses.xml": "07545b22de0f7b9030f2064467b52ce428365b213c136477b05a5768c4dd62a3"
+  },
+  "absolute_clock_verified": false,
+  "note": "Header/epoch/response consistency does not establish absolute timing accuracy."
+}

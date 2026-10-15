@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "net": "IV",
+    "sta": "COLB",
+    "cha": "HH?",
+    "start": "2024-12-12T04:34:09.926000Z",
+    "end": "2024-12-12T04:35:09.926000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "status": "available",
+  "utc": "2026-10-15T18:56:27.711722Z",
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=COLB&cha=HH%3F&start=2024-12-12T04%3A34%3A09.926000Z&end=2024-12-12T04%3A35%3A09.926000Z&format=text&show=latestupdate",
+  "file": "inputs/velocity_holdout_review/training_extension_20261015/ties_dec12/IV_COLB_HH_20241212T043409_20241212T043509_availability.txt",
+  "sha256": "708c70e5ce0bfd29988c941a30abf9536f31911d8929145b005e102a5ee99d41",
+  "segments": [
+    {
+      "channel": "IV.COLB..HHE",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.COLB..HHN",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.COLB..HHZ",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "sample_rate": 100.0
+    }
+  ]
+}

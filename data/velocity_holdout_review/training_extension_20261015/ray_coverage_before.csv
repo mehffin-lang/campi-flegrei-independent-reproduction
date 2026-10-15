@@ -1,0 +1,7 @@
+stage,phase,layer_top_km,arrivals,rays_intersecting,events_intersecting,total_path_km
+preserved_training_fit,P,-0.5,366,366,52,471.0814584004177
+preserved_training_fit,P,1.0,366,323,52,699.77271641202
+preserved_training_fit,P,3.0,366,80,23,238.57785822681794
+preserved_training_fit,S,-0.5,461,461,52,570.7943634228601
+preserved_training_fit,S,1.0,461,415,52,889.1241246965868
+preserved_training_fit,S,3.0,461,115,25,310.90434699753087

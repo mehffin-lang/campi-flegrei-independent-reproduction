@@ -1,0 +1,466 @@
+[
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "2I.CGAU.",
+    "source": "inputs/availability_extension/waveforms/2I_CGAU_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "0a6975f43cfcd1455e9722ea606dd7ed172f7247abf48a9a7cf203ec8e6df21f",
+    "picks": [
+      {
+        "pick_index": 120979,
+        "phase": "S",
+        "time": "2024-12-01T01:32:00.590000Z",
+        "probability": 0.8632793426513672,
+        "assigned": true
+      },
+      {
+        "pick_index": 120983,
+        "phase": "P",
+        "time": "2024-12-01T01:32:01.490000Z",
+        "probability": 0.4097327589988708,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "2I.CLAC.",
+    "source": "inputs/availability_extension/waveforms/2I_CLAC_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "82282a97e18a606e9346b53ff93dafc5ef6e74479a4ff183b7619bccb9e1c570",
+    "picks": []
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "2I.CREM.",
+    "source": "inputs/availability_extension/waveforms/2I_CREM_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "10a5b47cf7e65e2fbe6f3815ff7345136a89a161e0e90658bf646edf41504354",
+    "picks": []
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "2I.CSOC.",
+    "source": "inputs/availability_extension/waveforms/2I_CSOC_EH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "c1b93acd0c66363df9a399567a6fd7893edd8372539989d3351456834f9de330",
+    "picks": []
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "IV.CAAM.",
+    "source": "inputs/availability_extension/waveforms/IV_CAAM_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "9e0a6a843b2c20ba7462b490f36df22b8a2609316940da467da2fc889142aa38",
+    "picks": [
+      {
+        "pick_index": 120970,
+        "phase": "P",
+        "time": "2024-12-01T01:31:58.970000Z",
+        "probability": 0.3994185626506805,
+        "assigned": true
+      },
+      {
+        "pick_index": 120977,
+        "phase": "S",
+        "time": "2024-12-01T01:31:59.890000Z",
+        "probability": 0.7741961479187012,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "IV.CBAG.",
+    "source": "inputs/availability_extension/waveforms/IV_CBAG_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "5d098732f5659a3dc603baf6180e1bb63b906d05b376bdb09ab3e39ebe9adf89",
+    "picks": [
+      {
+        "pick_index": 120981,
+        "phase": "S",
+        "time": "2024-12-01T01:32:00.690000Z",
+        "probability": 0.9801644682884216,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "IV.CMIS.",
+    "source": "inputs/availability_extension/waveforms/IV_CMIS_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "9acca679b9ac2369035ddde47f433c3c1defb27ad953015acc4acb4b4b80ab89",
+    "picks": [
+      {
+        "pick_index": 120984,
+        "phase": "P",
+        "time": "2024-12-01T01:32:05.000000Z",
+        "probability": 0.3489876687526703,
+        "assigned": false
+      },
+      {
+        "pick_index": 120985,
+        "phase": "S",
+        "time": "2024-12-01T01:32:05.850000Z",
+        "probability": 0.9541631937026978,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "IV.COLB.",
+    "source": "inputs/availability_extension/waveforms/IV_COLB_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "80c301690615f2628af89bc2e950e3557e4e9c73abafc4e27b9a443335bf4ec3",
+    "picks": [
+      {
+        "pick_index": 120976,
+        "phase": "S",
+        "time": "2024-12-01T01:31:59.850000Z",
+        "probability": 0.8988780975341797,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "IV.CPIS.",
+    "source": "inputs/availability_extension/waveforms/IV_CPIS_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "75650aa7c83b5b90efcb730ca0a6e499bd15b700f8f10cb45dcbc12fb4e6336f",
+    "picks": [
+      {
+        "pick_index": 120971,
+        "phase": "S",
+        "time": "2024-12-01T01:31:59.200000Z",
+        "probability": 0.9482846856117249,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "IV.CPOZ.",
+    "source": "inputs/availability_extension/waveforms/IV_CPOZ_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "f98f7d03ed8fd25ad2a81fc6d74f2e4cb32f0f358febb0210cd92c56752210d1",
+    "picks": [
+      {
+        "pick_index": 120972,
+        "phase": "P",
+        "time": "2024-12-01T01:31:59.200000Z",
+        "probability": 0.9445151090621948,
+        "assigned": true
+      },
+      {
+        "pick_index": 120980,
+        "phase": "S",
+        "time": "2024-12-01T01:32:00.670000Z",
+        "probability": 0.9004590511322021,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "IV.CSFT.",
+    "source": "inputs/availability_extension/waveforms/IV_CSFT_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "994d7c34dd0674da6c51f270f236122db038b7bbd2cccbade496b1ad253354f6",
+    "picks": [
+      {
+        "pick_index": 120968,
+        "phase": "P",
+        "time": "2024-12-01T01:31:58.650000Z",
+        "probability": 0.3728203475475311,
+        "assigned": true
+      },
+      {
+        "pick_index": 120974,
+        "phase": "S",
+        "time": "2024-12-01T01:31:59.310000Z",
+        "probability": 0.7904093265533447,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "IV.CSOB.",
+    "source": "inputs/availability_extension/waveforms/IV_CSOB_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "494bd183ced915f0c95ecb0a6c38e69b5bda920acbff26bf4f9847a84c693e96",
+    "picks": [
+      {
+        "pick_index": 120969,
+        "phase": "P",
+        "time": "2024-12-01T01:31:58.730000Z",
+        "probability": 0.677722692489624,
+        "assigned": true
+      },
+      {
+        "pick_index": 120975,
+        "phase": "S",
+        "time": "2024-12-01T01:31:59.390000Z",
+        "probability": 0.994425654411316,
+        "assigned": true
+      },
+      {
+        "pick_index": 120978,
+        "phase": "S",
+        "time": "2024-12-01T01:32:00.470000Z",
+        "probability": 0.3658955693244934,
+        "assigned": false
+      },
+      {
+        "pick_index": 120982,
+        "phase": "S",
+        "time": "2024-12-01T01:32:00.870000Z",
+        "probability": 0.3270502686500549,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "IV.CSTH.",
+    "source": "inputs/availability_extension/waveforms/IV_CSTH_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "69cd520ce81b1b90c8a1759a872d21037d6369b0ffbad531d689983bf347abf3",
+    "picks": [
+      {
+        "pick_index": 120967,
+        "phase": "P",
+        "time": "2024-12-01T01:31:58.490000Z",
+        "probability": 0.7116764783859253,
+        "assigned": true
+      },
+      {
+        "pick_index": 120973,
+        "phase": "S",
+        "time": "2024-12-01T01:31:59.230000Z",
+        "probability": 0.9907633662223816,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1952,
+    "origin": "2024-12-01T01:31:57.677000Z",
+    "station": "IV.CUMA.",
+    "source": "inputs/availability_extension/waveforms/IV_CUMA_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "2e36a9aea3994198924732444837d249fe1108b2b39ab7774700cf01990bb804",
+    "picks": []
+  },
+  {
+    "event_index": 1961,
+    "origin": "2024-12-01T04:50:28.184000Z",
+    "station": "2I.CGAU.",
+    "source": "inputs/availability_extension/waveforms/2I_CGAU_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "0a6975f43cfcd1455e9722ea606dd7ed172f7247abf48a9a7cf203ec8e6df21f",
+    "picks": []
+  },
+  {
+    "event_index": 1961,
+    "origin": "2024-12-01T04:50:28.184000Z",
+    "station": "2I.CLAC.",
+    "source": "inputs/availability_extension/waveforms/2I_CLAC_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "82282a97e18a606e9346b53ff93dafc5ef6e74479a4ff183b7619bccb9e1c570",
+    "picks": []
+  },
+  {
+    "event_index": 1961,
+    "origin": "2024-12-01T04:50:28.184000Z",
+    "station": "2I.CREM.",
+    "source": "inputs/availability_extension/waveforms/2I_CREM_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "10a5b47cf7e65e2fbe6f3815ff7345136a89a161e0e90658bf646edf41504354",
+    "picks": [
+      {
+        "pick_index": 124164,
+        "phase": "P",
+        "time": "2024-12-01T04:50:30.000000Z",
+        "probability": 0.3382660150527954,
+        "assigned": true
+      },
+      {
+        "pick_index": 124169,
+        "phase": "S",
+        "time": "2024-12-01T04:50:31.550000Z",
+        "probability": 0.322325736284256,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1961,
+    "origin": "2024-12-01T04:50:28.184000Z",
+    "station": "2I.CSOC.",
+    "source": "inputs/availability_extension/waveforms/2I_CSOC_EH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "c1b93acd0c66363df9a399567a6fd7893edd8372539989d3351456834f9de330",
+    "picks": []
+  },
+  {
+    "event_index": 1961,
+    "origin": "2024-12-01T04:50:28.184000Z",
+    "station": "IV.CBAC.",
+    "source": "inputs/availability_extension/waveforms/IV_CBAC_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "2e90b6443d817720ee5d724d162934bec084fb07c27f0e5de447a0481a5805c3",
+    "picks": [
+      {
+        "pick_index": 124161,
+        "phase": "P",
+        "time": "2024-12-01T04:50:29.650000Z",
+        "probability": 0.8993644714355469,
+        "assigned": true
+      },
+      {
+        "pick_index": 124166,
+        "phase": "S",
+        "time": "2024-12-01T04:50:30.770000Z",
+        "probability": 0.9829938411712646,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1961,
+    "origin": "2024-12-01T04:50:28.184000Z",
+    "station": "IV.CCAP.",
+    "source": "inputs/availability_extension/waveforms/IV_CCAP_EH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "3195927c24611b834697de05fef353a63ec486d34df7ca004240a93a5307e41f",
+    "picks": [
+      {
+        "pick_index": 124171,
+        "phase": "S",
+        "time": "2024-12-01T04:50:36.680000Z",
+        "probability": 0.3168363571166992,
+        "assigned": false
+      },
+      {
+        "pick_index": 124172,
+        "phase": "S",
+        "time": "2024-12-01T04:50:38.790000Z",
+        "probability": 0.5883373022079468,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 1961,
+    "origin": "2024-12-01T04:50:28.184000Z",
+    "station": "IV.CFMN.",
+    "source": "inputs/availability_extension/waveforms/IV_CFMN_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "5e81f6ae3680618333722c5fc92ddb3540039839a2ff5841f1f4f161483f61bd",
+    "picks": [
+      {
+        "pick_index": 124163,
+        "phase": "P",
+        "time": "2024-12-01T04:50:29.830000Z",
+        "probability": 0.8834983110427856,
+        "assigned": true
+      },
+      {
+        "pick_index": 124167,
+        "phase": "S",
+        "time": "2024-12-01T04:50:30.790000Z",
+        "probability": 0.6845279335975647,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1961,
+    "origin": "2024-12-01T04:50:28.184000Z",
+    "station": "IV.CMIS.",
+    "source": "inputs/availability_extension/waveforms/IV_CMIS_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "9acca679b9ac2369035ddde47f433c3c1defb27ad953015acc4acb4b4b80ab89",
+    "picks": [
+      {
+        "pick_index": 124173,
+        "phase": "P",
+        "time": "2024-12-01T04:50:39.330000Z",
+        "probability": 0.5765957832336426,
+        "assigned": false
+      },
+      {
+        "pick_index": 124174,
+        "phase": "S",
+        "time": "2024-12-01T04:50:40.450000Z",
+        "probability": 0.9264012575149536,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 1961,
+    "origin": "2024-12-01T04:50:28.184000Z",
+    "station": "IV.COLB.",
+    "source": "inputs/availability_extension/waveforms/IV_COLB_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "80c301690615f2628af89bc2e950e3557e4e9c73abafc4e27b9a443335bf4ec3",
+    "picks": [
+      {
+        "pick_index": 124165,
+        "phase": "P",
+        "time": "2024-12-01T04:50:30.090000Z",
+        "probability": 0.7638896703720093,
+        "assigned": true
+      },
+      {
+        "pick_index": 124170,
+        "phase": "S",
+        "time": "2024-12-01T04:50:31.650000Z",
+        "probability": 0.704043984413147,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1961,
+    "origin": "2024-12-01T04:50:28.184000Z",
+    "station": "IV.CPOZ.",
+    "source": "inputs/availability_extension/waveforms/IV_CPOZ_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "f98f7d03ed8fd25ad2a81fc6d74f2e4cb32f0f358febb0210cd92c56752210d1",
+    "picks": [
+      {
+        "pick_index": 124162,
+        "phase": "P",
+        "time": "2024-12-01T04:50:29.770000Z",
+        "probability": 0.9289661645889282,
+        "assigned": true
+      },
+      {
+        "pick_index": 124168,
+        "phase": "S",
+        "time": "2024-12-01T04:50:31.130000Z",
+        "probability": 0.962727189064026,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1961,
+    "origin": "2024-12-01T04:50:28.184000Z",
+    "station": "IV.CSOB.",
+    "source": "inputs/availability_extension/waveforms/IV_CSOB_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "494bd183ced915f0c95ecb0a6c38e69b5bda920acbff26bf4f9847a84c693e96",
+    "picks": [
+      {
+        "pick_index": 124160,
+        "phase": "S",
+        "time": "2024-12-01T04:50:28.080000Z",
+        "probability": 0.442477136850357,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 1961,
+    "origin": "2024-12-01T04:50:28.184000Z",
+    "station": "IV.CUMA.",
+    "source": "inputs/availability_extension/waveforms/IV_CUMA_HH_20241201T000000_20241201T060000.mseed",
+    "source_sha256": "2e36a9aea3994198924732444837d249fe1108b2b39ab7774700cf01990bb804",
+    "picks": []
+  }
+]

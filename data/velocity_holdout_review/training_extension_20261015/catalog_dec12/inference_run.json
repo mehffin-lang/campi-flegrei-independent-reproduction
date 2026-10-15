@@ -1,0 +1,22 @@
+[
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CREM_HH_20241212T000000_20241212T060000.mseed",
+    "picks": 239,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CSOC_EH_20241212T000000_20241212T060000.mseed",
+    "picks": 561,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/IV_CRUS_EH_20241212T000000_20241212T060000.mseed",
+    "picks": 1661,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/IV_CUMA_HH_20241212T000000_20241212T060000.mseed",
+    "picks": 14,
+    "status": "processed"
+  }
+]

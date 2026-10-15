@@ -67,3 +67,19 @@ are in `docs/VELOCITY_HOLDOUT_REVIEW.md` and `data/velocity_holdout_review/`.
 New diagnostics appear only after the supplement. They are not publication
 panels, reference-image extractions, or synthetic observations. No new fitted
 profile is substituted into existing empirical catalog panels.
+
+## Targeted pre-2025 training extension, 15 October 2026
+
+See `docs/TARGETED_VELOCITY_TRAINING.md` and the versioned
+`data/velocity_holdout_review/training_extension_20261015/` record. The new inputs
+are original EIDA continuous waveforms (12 files, 216 core channel-hours) and seven
+explicitly event-selected calibration clips. PhaseNet weights and generic method
+software are permitted resources. One CGAU P time is a disclosed Codex reading
+of raw samples; its association weight is not a network probability. An earlier
+project-picked CRUS S replaces a later coda pick. Uncertain CUMA/CSOC phases are
+not supplied by inference or by author results. The updated 53-event training
+set uses project observations only. All 18 fits were frozen before the identical
+2025 set was evaluated; no model passed all unchanged criteria. Conditional
+holdout location/origin fitting with fixed velocities/delays remains the same
+previously disclosed validation procedure, not independent known-hypocenter truth.
+The previous 602 velocity-trial files and empirical figures are preserved.

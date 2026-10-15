@@ -1,0 +1,206 @@
+[
+  {
+    "request": "2I_CGAU_HH_20241212T000000_20241212T060000",
+    "previous": {
+      "id": "2I_CGAU_HH_20241212T000000_20241212T060000",
+      "net": "2I",
+      "sta": "CGAU",
+      "band": "HH",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "missing_s": 64800.0,
+      "status": "pending",
+      "receipt": null
+    },
+    "new_status": "downloaded",
+    "receipt": "data/velocity_holdout_review/training_extension_20261015/receipts/2I_CGAU_HH_20241212T000000_20241212T060000.json",
+    "purpose": "Prevent future broad collector from repeating this successfully retrieved interval. No broad requests launched."
+  },
+  {
+    "request": "2I_CGAU_HH_20241219T000000_20241219T060000",
+    "previous": {
+      "id": "2I_CGAU_HH_20241219T000000_20241219T060000",
+      "net": "2I",
+      "sta": "CGAU",
+      "band": "HH",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "missing_s": 64800.0,
+      "status": "pending",
+      "receipt": null
+    },
+    "new_status": "downloaded",
+    "receipt": "data/velocity_holdout_review/training_extension_20261015/receipts/2I_CGAU_HH_20241219T000000_20241219T060000.json",
+    "purpose": "Prevent future broad collector from repeating this successfully retrieved interval. No broad requests launched."
+  },
+  {
+    "request": "2I_CLAC_HH_20241212T000000_20241212T060000",
+    "previous": {
+      "id": "2I_CLAC_HH_20241212T000000_20241212T060000",
+      "net": "2I",
+      "sta": "CLAC",
+      "band": "HH",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "missing_s": 64800.0,
+      "status": "pending",
+      "receipt": null
+    },
+    "new_status": "downloaded",
+    "receipt": "data/velocity_holdout_review/training_extension_20261015/receipts/2I_CLAC_HH_20241212T000000_20241212T060000.json",
+    "purpose": "Prevent future broad collector from repeating this successfully retrieved interval. No broad requests launched."
+  },
+  {
+    "request": "2I_CLAC_HH_20241219T000000_20241219T060000",
+    "previous": {
+      "id": "2I_CLAC_HH_20241219T000000_20241219T060000",
+      "net": "2I",
+      "sta": "CLAC",
+      "band": "HH",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "missing_s": 64800.0,
+      "status": "pending",
+      "receipt": null
+    },
+    "new_status": "downloaded",
+    "receipt": "data/velocity_holdout_review/training_extension_20261015/receipts/2I_CLAC_HH_20241219T000000_20241219T060000.json",
+    "purpose": "Prevent future broad collector from repeating this successfully retrieved interval. No broad requests launched."
+  },
+  {
+    "request": "2I_CREM_HH_20241212T000000_20241212T060000",
+    "previous": {
+      "id": "2I_CREM_HH_20241212T000000_20241212T060000",
+      "net": "2I",
+      "sta": "CREM",
+      "band": "HH",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "missing_s": 64800.0,
+      "status": "pending",
+      "receipt": null
+    },
+    "new_status": "downloaded",
+    "receipt": "data/velocity_holdout_review/training_extension_20261015/receipts/2I_CREM_HH_20241212T000000_20241212T060000.json",
+    "purpose": "Prevent future broad collector from repeating this successfully retrieved interval. No broad requests launched."
+  },
+  {
+    "request": "2I_CREM_HH_20241219T000000_20241219T060000",
+    "previous": {
+      "id": "2I_CREM_HH_20241219T000000_20241219T060000",
+      "net": "2I",
+      "sta": "CREM",
+      "band": "HH",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "missing_s": 64800.0,
+      "status": "pending",
+      "receipt": null
+    },
+    "new_status": "downloaded",
+    "receipt": "data/velocity_holdout_review/training_extension_20261015/receipts/2I_CREM_HH_20241219T000000_20241219T060000.json",
+    "purpose": "Prevent future broad collector from repeating this successfully retrieved interval. No broad requests launched."
+  },
+  {
+    "request": "2I_CSOC_EH_20241212T000000_20241212T060000",
+    "previous": {
+      "id": "2I_CSOC_EH_20241212T000000_20241212T060000",
+      "net": "2I",
+      "sta": "CSOC",
+      "band": "EH",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "missing_s": 64800.0,
+      "status": "pending",
+      "receipt": null
+    },
+    "new_status": "downloaded",
+    "receipt": "data/velocity_holdout_review/training_extension_20261015/receipts/2I_CSOC_EH_20241212T000000_20241212T060000.json",
+    "purpose": "Prevent future broad collector from repeating this successfully retrieved interval. No broad requests launched."
+  },
+  {
+    "request": "2I_CSOC_EH_20241219T000000_20241219T060000",
+    "previous": {
+      "id": "2I_CSOC_EH_20241219T000000_20241219T060000",
+      "net": "2I",
+      "sta": "CSOC",
+      "band": "EH",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "missing_s": 64800.0,
+      "status": "pending",
+      "receipt": null
+    },
+    "new_status": "downloaded",
+    "receipt": "data/velocity_holdout_review/training_extension_20261015/receipts/2I_CSOC_EH_20241219T000000_20241219T060000.json",
+    "purpose": "Prevent future broad collector from repeating this successfully retrieved interval. No broad requests launched."
+  },
+  {
+    "request": "IV_CRUS_EH_20241212T000000_20241212T060000",
+    "previous": {
+      "id": "IV_CRUS_EH_20241212T000000_20241212T060000",
+      "net": "IV",
+      "sta": "CRUS",
+      "band": "EH",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "missing_s": 64800.0,
+      "status": "pending",
+      "receipt": null
+    },
+    "new_status": "downloaded",
+    "receipt": "data/velocity_holdout_review/training_extension_20261015/receipts/IV_CRUS_EH_20241212T000000_20241212T060000.json",
+    "purpose": "Prevent future broad collector from repeating this successfully retrieved interval. No broad requests launched."
+  },
+  {
+    "request": "IV_CRUS_EH_20241219T000000_20241219T060000",
+    "previous": {
+      "id": "IV_CRUS_EH_20241219T000000_20241219T060000",
+      "net": "IV",
+      "sta": "CRUS",
+      "band": "EH",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "missing_s": 64800.0,
+      "status": "pending",
+      "receipt": null
+    },
+    "new_status": "downloaded",
+    "receipt": "data/velocity_holdout_review/training_extension_20261015/receipts/IV_CRUS_EH_20241219T000000_20241219T060000.json",
+    "purpose": "Prevent future broad collector from repeating this successfully retrieved interval. No broad requests launched."
+  },
+  {
+    "request": "IV_CUMA_HH_20241212T000000_20241212T060000",
+    "previous": {
+      "id": "IV_CUMA_HH_20241212T000000_20241212T060000",
+      "net": "IV",
+      "sta": "CUMA",
+      "band": "HH",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "missing_s": 64800.0,
+      "status": "pending",
+      "receipt": null
+    },
+    "new_status": "downloaded",
+    "receipt": "data/velocity_holdout_review/training_extension_20261015/receipts/IV_CUMA_HH_20241212T000000_20241212T060000.json",
+    "purpose": "Prevent future broad collector from repeating this successfully retrieved interval. No broad requests launched."
+  },
+  {
+    "request": "IV_CUMA_HH_20241219T000000_20241219T060000",
+    "previous": {
+      "id": "IV_CUMA_HH_20241219T000000_20241219T060000",
+      "net": "IV",
+      "sta": "CUMA",
+      "band": "HH",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "missing_s": 64800.0,
+      "status": "pending",
+      "receipt": null
+    },
+    "new_status": "downloaded",
+    "receipt": "data/velocity_holdout_review/training_extension_20261015/receipts/IV_CUMA_HH_20241219T000000_20241219T060000.json",
+    "purpose": "Prevent future broad collector from repeating this successfully retrieved interval. No broad requests launched."
+  }
+]

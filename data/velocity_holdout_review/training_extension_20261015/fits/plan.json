@@ -1,0 +1,125 @@
+{
+  "families": {
+    "four_regularized": {
+      "tops": [
+        -0.5,
+        0.5,
+        1.0,
+        3.0
+      ],
+      "vp": [
+        1.7,
+        2.0,
+        3.0,
+        5.5
+      ],
+      "station_fit": true
+    },
+    "three_regularized": {
+      "tops": [
+        -0.5,
+        1.0,
+        3.0
+      ],
+      "vp": [
+        1.8,
+        3.0,
+        5.5
+      ],
+      "station_fit": true
+    },
+    "three_zero_delays": {
+      "tops": [
+        -0.5,
+        1.0,
+        3.0
+      ],
+      "vp": [
+        1.8,
+        3.0,
+        5.5
+      ],
+      "station_fit": false
+    }
+  },
+  "variants": [
+    [
+      "base",
+      1.0,
+      5,
+      1.0,
+      64
+    ],
+    [
+      "slow",
+      0.95,
+      5,
+      1.0,
+      64
+    ],
+    [
+      "fast",
+      1.05,
+      5,
+      1.0,
+      64
+    ],
+    [
+      "selection",
+      1.0,
+      8,
+      1.0,
+      64
+    ],
+    [
+      "damping",
+      1.0,
+      5,
+      10.0,
+      64
+    ],
+    [
+      "precision32",
+      1.0,
+      5,
+      1.0,
+      32
+    ]
+  ],
+  "initial_ratio": 1.78,
+  "layer_damping": 10,
+  "station_damping": 10,
+  "reference_station": "IV.CSOB.",
+  "weights": {
+    "P": 1,
+    "S": 0.5
+  },
+  "iteration_schedule": "21 fixed prelocation, 14 velocity-only, then five joint 14-iteration blocks; compare blocks 3 and 5 for extra-iteration sensitivity. Holdout 35 fixed-model iterations then another 35 solely to check nuisance-location convergence.",
+  "gates": {
+    "holdout_rms_improves": true,
+    "max_horizontal_m": 100,
+    "max_depth_km": 0.1,
+    "max_velocity_km_s": 0.05,
+    "max_station_s": 0.02,
+    "positive_bulk_modulus": true,
+    "monotonic_velocities": true
+  },
+  "training_rule": "Add only pre-2025 events/arrivals supported by visual and metadata review and passing the unchanged causality, >=4 P, >=2 S, >10 phases, <180 degree gap, 0.001<depth<7.999 km screen. Reuse previous cap5/cap8 selections and add reviewed eligible late-2024 events; no holdout-driven subset selection.",
+  "comparison": "All three previously declared families, all six sensitivities; no family selected using 2025 scores.",
+  "holdout": "Hash-locked. All training fits and sensitivity outputs must be frozen before final 2025 evaluation. Never repick, reassociate, reweight or remove its arrivals.",
+  "gate_on_refitting": "Do not refit if zero quality-controlled training additions. Preserve previous failed profiles.",
+  "source_plan_sha256": "842fbf42c22ed26c661ab6b106d5aa62ff7e65125c12526b87e4b13a75b0ee2b",
+  "registered_before_new_association_and_review": true,
+  "inference_at_registration": "Two of twelve target files had already been picked; no new batch association or waveform review had occurred.",
+  "added_events": 1,
+  "inputs": {
+    "data/velocity_holdout_review/training_extension_20261015/qc/accepted_events.csv": "4a458a132f0bfbdef3301a56e682d063b8ac7326873179e8c8453ffe6c0a84e2",
+    "data/velocity_holdout_review/training_extension_20261015/qc/picks.csv": "f19eca85b7b5ceb81c17d7a35a22737922e70de5b2e26ef0ab08e723de5e3887",
+    "data/velocity_holdout_review/training_extension_20261015/qc/associations.csv": "82825af2dd5602dee942fb2b0ea6d9928b6fa03cca7ac4aafe42d7f1fc8c5ceb",
+    "data/velocity_holdout_review/training_extension_20261015/qc/reviewed_arrivals.csv": "e3bdc285a9fdfe6bc2eefd739eae3170e7f80a6ce622bfeb2143ecafc3924154",
+    "data/velocity_holdout_review/training_extension_20261015/fits/training_cap5.csv": "b33cc83699f01ba2f21ec385ef718bdbd114829f71623c329458b15af41b1358",
+    "data/velocity_holdout_review/training_extension_20261015/fits/training_cap5.cnv": "b87f93f94130687daba5bbdc0f6e9cf4dbf6d711ac2544699778caec111cdfd8",
+    "data/velocity_holdout_review/training_extension_20261015/fits/training_cap8.csv": "865a83df086d365c958a0d00dc65f35efe6aaee95e442f80a749c88574a60b92",
+    "data/velocity_holdout_review/training_extension_20261015/fits/training_cap8.cnv": "5e049d27c17ab9efde5c5a455008656165fdaf4f161b012a1630ac71a1d2cf42"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "accepted": false,
+  "all_18_training_fits_finished": true,
+  "training_frozen_before_validation": true,
+  "training_hashes_unchanged": true,
+  "prior_results_unchanged": 602,
+  "holdout_hash_unchanged": true,
+  "holdout_sha256": "39500ad38df90e4c07cdce2da047116cd2441996f11a5f752501798a3599b2b9",
+  "acceptance_thresholds_unchanged": true,
+  "added_training_events": 1,
+  "added_arrivals": 20,
+  "primary_training_events": 53,
+  "primary_training_arrivals": 847,
+  "continuous_files": 12,
+  "continuous_bytes": 123535872,
+  "continuous_core_channel_hours": 216.0,
+  "new_continuous_picks": 7337,
+  "new_continuous_P": 1205,
+  "new_continuous_S": 6132,
+  "raw_target_associations": 3,
+  "supplemental_tie_files": 7,
+  "supplemental_tie_bytes": 615936,
+  "remaining_unrepresented": [
+    "2I.CSOC.P",
+    "2I.CSOC.S",
+    "IV.CUMA.P",
+    "IV.CUMA.S"
+  ],
+  "depth_range_new_event_km": [
+    2.7,
+    3.04
+  ],
+  "scope": "Targeted pre-2025 calibration experiment. Existing catalog and empirical publication panels are not replaced by these unvalidated models. Event-selected tie clips are excluded from continuous exposure."
+}

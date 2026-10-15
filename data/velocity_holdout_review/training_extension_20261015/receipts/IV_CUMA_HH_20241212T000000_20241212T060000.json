@@ -1,0 +1,39 @@
+{
+  "request": "IV_CUMA_HH_20241212T000000_20241212T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CUMA",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2024-12-11T23:59:30.000000Z",
+    "end": "2024-12-12T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T18:51:37.743192+00:00",
+  "status": "downloaded",
+  "bytes": 7789568,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CUMA&loc=%2A&cha=HH%3F&start=2024-12-11T23%3A59%3A30.000000Z&end=2024-12-12T06%3A00%3A30.000000Z",
+  "file": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/IV_CUMA_HH_20241212T000000_20241212T060000.mseed",
+  "sha256": "9d9c7193f39421bad65e7213ae5fd70b52192d56d16c33d0ccfb7f4a525f507f",
+  "segments": [
+    {
+      "channel": "IV.CUMA..HHE",
+      "start": 1733961566.7,
+      "end": 1733983231.3600001,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CUMA..HHN",
+      "start": 1733961566.2499998,
+      "end": 1733983232.82,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CUMA..HHZ",
+      "start": 1733961567.02,
+      "end": 1733983233.09,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 62.094176489976235
+}

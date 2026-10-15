@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "net": "IV",
+    "sta": "CRUS",
+    "cha": "EH?",
+    "start": "2024-12-19T00:00:00.000000Z",
+    "end": "2024-12-19T06:00:00.000000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "status": "available",
+  "utc": "2026-10-15T18:47:32.835600Z",
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=CRUS&cha=EH%3F&start=2024-12-19T00%3A00%3A00.000000Z&end=2024-12-19T06%3A00%3A00.000000Z&format=text&show=latestupdate",
+  "file": "inputs/velocity_holdout_review/training_extension_20261015/IV_CRUS_EH_20241219T000000_20241219T060000_availability.txt",
+  "sha256": "f43b0b7631b63026f4cc8c5a0893a5341dbbbcacf2b74b3c6c9916ab7bdbe698",
+  "segments": [
+    {
+      "channel": "IV.CRUS..EHE",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CRUS..EHN",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CRUS..EHZ",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "sample_rate": 100.0
+    }
+  ]
+}

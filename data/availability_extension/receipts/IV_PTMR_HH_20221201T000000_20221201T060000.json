@@ -1,0 +1,39 @@
+{
+  "request": "IV_PTMR_HH_20221201T000000_20221201T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "PTMR",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2022-11-30T23:59:30.000000Z",
+    "end": "2022-12-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T18:37:11.936388+00:00",
+  "status": "downloaded",
+  "bytes": 10441728,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=PTMR&loc=%2A&cha=HH%3F&start=2022-11-30T23%3A59%3A30.000000Z&end=2022-12-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_PTMR_HH_20221201T000000_20221201T060000.mseed",
+  "sha256": "722e11523d31f8b06b2f82ad907cda47eb196190b4cca391a196f75f1e1e1565",
+  "segments": [
+    {
+      "channel": "IV.PTMR..HHE",
+      "start": 1669852769.04,
+      "end": 1669874432.8400002,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.PTMR..HHN",
+      "start": 1669852767.16,
+      "end": 1669874431.44,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.PTMR..HHZ",
+      "start": 1669852767.92,
+      "end": 1669874431.8400002,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 110.88105733401608
+}

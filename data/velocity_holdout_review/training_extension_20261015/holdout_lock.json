@@ -1,0 +1,11 @@
+{
+  "file": "data/velocity_holdout_review/frozen_holdout.cnv",
+  "sha256": "39500ad38df90e4c07cdce2da047116cd2441996f11a5f752501798a3599b2b9",
+  "forbidden_uses": [
+    "fitting",
+    "repicking",
+    "reassociation",
+    "model selection"
+  ],
+  "permitted_use": "One final unchanged validation evaluation after all training decisions are frozen; no holdout waveform review in this run."
+}

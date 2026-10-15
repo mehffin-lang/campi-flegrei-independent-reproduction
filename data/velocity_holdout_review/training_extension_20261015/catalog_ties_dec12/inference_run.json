@@ -1,0 +1,37 @@
+[
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/ties_dec12/waveforms/IV_CAAM_HH_20241212T043409_20241212T043509.mseed",
+    "picks": 6,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/ties_dec12/waveforms/IV_CBAC_HH_20241212T043409_20241212T043509.mseed",
+    "picks": 9,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/ties_dec12/waveforms/IV_CFMN_HH_20241212T043409_20241212T043509.mseed",
+    "picks": 10,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/ties_dec12/waveforms/IV_COLB_HH_20241212T043409_20241212T043509.mseed",
+    "picks": 5,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/ties_dec12/waveforms/IV_CPOZ_HH_20241212T043409_20241212T043509.mseed",
+    "picks": 2,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/ties_dec12/waveforms/IV_CSOB_HH_20241212T043409_20241212T043509.mseed",
+    "picks": 7,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/ties_dec12/waveforms/IV_CSTH_HH_20241212T043409_20241212T043509.mseed",
+    "picks": 4,
+    "status": "processed"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "request": "IV_CFB3_HH_20221201T000000_20221201T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CFB3",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2022-11-30T23:59:30.000000Z",
+    "end": "2022-12-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T18:27:59.914571+00:00",
+  "status": "downloaded",
+  "bytes": 3296768,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB3&loc=%2A&cha=HH%3F&start=2022-11-30T23%3A59%3A30.000000Z&end=2022-12-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CFB3_HH_20221201T000000_20221201T060000.mseed",
+  "sha256": "b6768fb0e858898a35cec67aa591acd5f631b62c28d04b7f818194d698169fa3",
+  "segments": [
+    {
+      "channel": "IV.CFB3..HHZ",
+      "start": 1669852767.5383942,
+      "end": 1669874430.208394,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 28.239840439055115
+}

@@ -1,0 +1,39 @@
+{
+  "request": "IV_CSOB_HH_20241212T043409_20241212T043509",
+  "parameters": {
+    "net": "IV",
+    "sta": "CSOB",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2024-12-12T04:33:39.926000Z",
+    "end": "2024-12-12T04:35:39.926000Z"
+  },
+  "utc": "2026-10-15T18:57:16.120934+00:00",
+  "status": "downloaded",
+  "bytes": 92160,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2024-12-12T04%3A33%3A39.926000Z&end=2024-12-12T04%3A35%3A39.926000Z",
+  "file": "inputs/velocity_holdout_review/training_extension_20261015/ties_dec12/waveforms/IV_CSOB_HH_20241212T043409_20241212T043509.mseed",
+  "sha256": "c460a5f3612346e86961a88234ab530b079b2e5322427911eef512d1393837d1",
+  "segments": [
+    {
+      "channel": "IV.CSOB..HHE",
+      "start": 1733978018.6,
+      "end": 1733978140.92,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CSOB..HHN",
+      "start": 1733978018.15,
+      "end": 1733978141.05,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CSOB..HHZ",
+      "start": 1733978018.6,
+      "end": 1733978141.69,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 4.869336390052922
+}

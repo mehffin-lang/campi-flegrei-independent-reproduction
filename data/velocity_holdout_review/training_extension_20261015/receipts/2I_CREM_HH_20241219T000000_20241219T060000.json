@@ -1,0 +1,39 @@
+{
+  "request": "2I_CREM_HH_20241219T000000_20241219T060000",
+  "parameters": {
+    "net": "2I",
+    "sta": "CREM",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2024-12-18T23:59:30.000000Z",
+    "end": "2024-12-19T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T18:54:28.794581+00:00",
+  "status": "downloaded",
+  "bytes": 9862656,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CREM&loc=%2A&cha=HH%3F&start=2024-12-18T23%3A59%3A30.000000Z&end=2024-12-19T06%3A00%3A30.000000Z",
+  "file": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CREM_HH_20241219T000000_20241219T060000.mseed",
+  "sha256": "4e4ca43bbeae263e73faac0dc69305b3fd0b5b1a088e6d04aacc1c2dd65c063d",
+  "segments": [
+    {
+      "channel": "2I.CREM..HHE",
+      "start": 1734566368.06,
+      "end": 1734588032.15,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "2I.CREM..HHN",
+      "start": 1734566368.58,
+      "end": 1734588032.8999999,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "2I.CREM..HHZ",
+      "start": 1734566367.0,
+      "end": 1734588032.93,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 81.33689279097598
+}

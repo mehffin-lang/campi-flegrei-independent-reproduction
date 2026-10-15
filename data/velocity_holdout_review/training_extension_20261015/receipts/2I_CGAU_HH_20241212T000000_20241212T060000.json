@@ -1,0 +1,39 @@
+{
+  "request": "2I_CGAU_HH_20241212T000000_20241212T060000",
+  "parameters": {
+    "net": "2I",
+    "sta": "CGAU",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2024-12-11T23:59:30.000000Z",
+    "end": "2024-12-12T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T18:48:04.251746+00:00",
+  "status": "downloaded",
+  "bytes": 11129856,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CGAU&loc=%2A&cha=HH%3F&start=2024-12-11T23%3A59%3A30.000000Z&end=2024-12-12T06%3A00%3A30.000000Z",
+  "file": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CGAU_HH_20241212T000000_20241212T060000.mseed",
+  "sha256": "9929e10fd09057bb37354deff2b9e033bb2aa0772207caf0027fd32a66c15007",
+  "segments": [
+    {
+      "channel": "2I.CGAU..HHZ",
+      "start": 1733961569.66,
+      "end": 1733983232.1200001,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "2I.CGAU..HHN",
+      "start": 1733961568.1100001,
+      "end": 1733983232.03,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "2I.CGAU..HHE",
+      "start": 1733961568.91,
+      "end": 1733983230.96,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 115.63304471003357
+}

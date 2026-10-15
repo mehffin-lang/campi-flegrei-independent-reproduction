@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "net": "IV",
+    "sta": "CFMN",
+    "cha": "HH?",
+    "start": "2024-12-12T04:34:09.926000Z",
+    "end": "2024-12-12T04:35:09.926000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "status": "available",
+  "utc": "2026-10-15T18:56:26.541760Z",
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=CFMN&cha=HH%3F&start=2024-12-12T04%3A34%3A09.926000Z&end=2024-12-12T04%3A35%3A09.926000Z&format=text&show=latestupdate",
+  "file": "inputs/velocity_holdout_review/training_extension_20261015/ties_dec12/IV_CFMN_HH_20241212T043409_20241212T043509_availability.txt",
+  "sha256": "f875940c79b2ee40a9f0afc4b00d0facf7ffa26cf0a491a056cfc69ce6330cbd",
+  "segments": [
+    {
+      "channel": "IV.CFMN..HHE",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CFMN..HHN",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CFMN..HHZ",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "sample_rate": 100.0
+    }
+  ]
+}

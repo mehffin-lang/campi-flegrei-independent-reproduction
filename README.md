@@ -1,7 +1,7 @@
 # Independent Campi Flegrei reproduction
 
 <!-- holdout-review -->
-The latest [velocity tests](docs/VELOCITY_HOLDOUT_REVIEW.md) ran three parameterizations and 18 sensitivity fits against the unchanged 62-event 2025 holdout. A zero-delay three-layer trial improves holdout RMS **0.2432 → 0.2274 s**, but depth sensitivity reaches **1.58 km**. **No velocity profile is validated.** The [report](report/report.pdf) contains the full diagnosis; existing empirical panel checkpoints are preserved. Rebuild this assessment with `.venv/bin/python scripts/rebuild_velocity_holdout.py`.
+The latest [targeted training extension](docs/TARGETED_VELOCITY_TRAINING.md) added 216 continuous channel-hours and one reviewed event (20 arrivals), raising training to 53 events/847 arrivals. Seven targeted station/phase gaps gain one observation each; CSOC P/S and CUMA P/S remain unsupported. All 18 predeclared fits ran before the unchanged 2025 holdout was evaluated. The zero-delay trial improves RMS **0.2432 → 0.2272 s**, but depth sensitivity is **1.57 km**; **no profile is validated**. Earlier [52-event tests](docs/VELOCITY_HOLDOUT_REVIEW.md) and empirical panel checkpoints are preserved. Rebuild the [report](report/report.pdf) from saved results with `.venv/bin/python scripts/summarize_training_extension.py` followed by `.venv/bin/python scripts/build_documents.py --clean`.
 <!-- /holdout-review -->
 
 <!-- availability-current -->

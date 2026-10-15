@@ -1,0 +1,39 @@
+{
+  "request": "2I_CSOC_EH_20241219T000000_20241219T060000",
+  "parameters": {
+    "net": "2I",
+    "sta": "CSOC",
+    "loc": "*",
+    "cha": "EH?",
+    "start": "2024-12-18T23:59:30.000000Z",
+    "end": "2024-12-19T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T18:54:28.799221+00:00",
+  "status": "downloaded",
+  "bytes": 12163584,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CSOC&loc=%2A&cha=EH%3F&start=2024-12-18T23%3A59%3A30.000000Z&end=2024-12-19T06%3A00%3A30.000000Z",
+  "file": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CSOC_EH_20241219T000000_20241219T060000.mseed",
+  "sha256": "4539883baf9e0ae8ed2d771f0ed3cd46470c9a883cea593f22e6667f766a2c42",
+  "segments": [
+    {
+      "channel": "2I.CSOC..EHE",
+      "start": 1734566369.22,
+      "end": 1734588030.33,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "2I.CSOC..EHN",
+      "start": 1734566367.56,
+      "end": 1734588031.1799998,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "2I.CSOC..EHZ",
+      "start": 1734566369.26,
+      "end": 1734588031.6299999,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 97.62325957394205
+}

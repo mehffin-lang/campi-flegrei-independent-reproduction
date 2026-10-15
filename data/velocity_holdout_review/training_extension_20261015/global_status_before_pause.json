@@ -1,0 +1,32 @@
+{
+  "pid": 3325726,
+  "collector_pid": 3323386,
+  "collector_running": true,
+  "request_states_now": {
+    "downloaded": 108,
+    "pending": 73522,
+    "prior_failed": 2,
+    "prior_no_data": 34,
+    "prior_success_unverified_gaps": 88
+  },
+  "coverage": {
+    "utc": "2026-10-15T18:07:37.431450+00:00",
+    "states": {
+      "downloaded": 107,
+      "pending": 73523,
+      "prior_failed": 2,
+      "prior_no_data": 34,
+      "prior_success_unverified_gaps": 88
+    },
+    "downloaded_bytes": 1293344768,
+    "new_union_channel_hours": 1617.214266667631,
+    "union_channel_hours": 15102.291969439917,
+    "remaining_available_channel_hours": 1209701.94393699,
+    "measured_bytes_per_new_channel_second": 222.14894028596336,
+    "estimated_remaining_bytes": 967442417666.9,
+    "free_bytes": 144127209472,
+    "estimate_note": "Measured compressed bytes per incremental channel second; includes transfer context and overlaps; station/epoch variability is not a confidence interval.",
+    "scope": "Original continuous EIDA observations; availability gaps and unavailable station epochs remain excluded."
+  },
+  "next": "After the collector stops, freeze all completed observations, process them, refit and validate a new model, locate events, and rebuild the existing documents. No success claimed in advance."
+}

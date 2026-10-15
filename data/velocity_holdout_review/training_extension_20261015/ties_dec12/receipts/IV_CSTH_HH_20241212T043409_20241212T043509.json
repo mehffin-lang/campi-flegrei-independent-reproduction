@@ -1,0 +1,39 @@
+{
+  "request": "IV_CSTH_HH_20241212T043409_20241212T043509",
+  "parameters": {
+    "net": "IV",
+    "sta": "CSTH",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2024-12-12T04:33:39.926000Z",
+    "end": "2024-12-12T04:35:39.926000Z"
+  },
+  "utc": "2026-10-15T18:57:21.014537+00:00",
+  "status": "downloaded",
+  "bytes": 92672,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2024-12-12T04%3A33%3A39.926000Z&end=2024-12-12T04%3A35%3A39.926000Z",
+  "file": "inputs/velocity_holdout_review/training_extension_20261015/ties_dec12/waveforms/IV_CSTH_HH_20241212T043409_20241212T043509.mseed",
+  "sha256": "8324a8baa1f6e0587c3c065bf8f9dee06cf712337c207117dd860028ef40dcdc",
+  "segments": [
+    {
+      "channel": "IV.CSTH..HHE",
+      "start": 1733978019.2499998,
+      "end": 1733978140.9799998,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CSTH..HHN",
+      "start": 1733978018.1299999,
+      "end": 1733978141.43,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CSTH..HHZ",
+      "start": 1733978019.02,
+      "end": 1733978140.88,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 5.560587450047024
+}

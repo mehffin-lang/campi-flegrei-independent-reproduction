@@ -1,0 +1,109 @@
+{
+  "requests": [
+    {
+      "id": "IV_CAAM_HH_20241212T043409_20241212T043509",
+      "net": "IV",
+      "sta": "CAAM",
+      "band": "HH",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "candidate_ids": [
+        0,
+        1
+      ],
+      "missing_channel_s": 180.0,
+      "estimated_bytes": 108000.0
+    },
+    {
+      "id": "IV_CBAC_HH_20241212T043409_20241212T043509",
+      "net": "IV",
+      "sta": "CBAC",
+      "band": "HH",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "candidate_ids": [
+        0,
+        1
+      ],
+      "missing_channel_s": 180.0,
+      "estimated_bytes": 108000.0
+    },
+    {
+      "id": "IV_CFMN_HH_20241212T043409_20241212T043509",
+      "net": "IV",
+      "sta": "CFMN",
+      "band": "HH",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "candidate_ids": [
+        0,
+        1
+      ],
+      "missing_channel_s": 180.0,
+      "estimated_bytes": 108000.0
+    },
+    {
+      "id": "IV_COLB_HH_20241212T043409_20241212T043509",
+      "net": "IV",
+      "sta": "COLB",
+      "band": "HH",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "candidate_ids": [
+        0,
+        1
+      ],
+      "missing_channel_s": 180.0,
+      "estimated_bytes": 108000.0
+    },
+    {
+      "id": "IV_CPOZ_HH_20241212T043409_20241212T043509",
+      "net": "IV",
+      "sta": "CPOZ",
+      "band": "HH",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "candidate_ids": [
+        0,
+        1
+      ],
+      "missing_channel_s": 180.0,
+      "estimated_bytes": 108000.0
+    },
+    {
+      "id": "IV_CSOB_HH_20241212T043409_20241212T043509",
+      "net": "IV",
+      "sta": "CSOB",
+      "band": "HH",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "candidate_ids": [
+        0,
+        1
+      ],
+      "missing_channel_s": 180.0,
+      "estimated_bytes": 108000.0
+    },
+    {
+      "id": "IV_CSTH_HH_20241212T043409_20241212T043509",
+      "net": "IV",
+      "sta": "CSTH",
+      "band": "HH",
+      "start": 1733978049.926,
+      "end": 1733978109.926,
+      "candidate_ids": [
+        0,
+        1
+      ],
+      "missing_channel_s": 180.0,
+      "estimated_bytes": 108000.0
+    }
+  ],
+  "estimated_bytes": 756000.0,
+  "rate_bytes_per_channel_second": 300,
+  "role": "Event-selected calibration tie windows, never continuous exposure.",
+  "candidate_source": "data/velocity_holdout_review/training_extension_20261015/catalog_dec12",
+  "candidate_sha256": "a60107b0cca49890ccb264bbb22e75d66476636b6c78b37ad8750feb1cc59244",
+  "selection": "Causal own association >=3P and >=2S; at most four chronological windows, merge adjacent detections; final training criteria are unchanged.",
+  "reason": "Connect newly deployed target stations to stations represented in the pre-2025 calibration set; check whether nearby associations split one waveform packet."
+}

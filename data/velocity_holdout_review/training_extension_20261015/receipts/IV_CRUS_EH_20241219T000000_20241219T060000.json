@@ -1,0 +1,39 @@
+{
+  "request": "IV_CRUS_EH_20241219T000000_20241219T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CRUS",
+    "loc": "*",
+    "cha": "EH?",
+    "start": "2024-12-18T23:59:30.000000Z",
+    "end": "2024-12-19T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T18:56:06.452576+00:00",
+  "status": "downloaded",
+  "bytes": 9784320,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CRUS&loc=%2A&cha=EH%3F&start=2024-12-18T23%3A59%3A30.000000Z&end=2024-12-19T06%3A00%3A30.000000Z",
+  "file": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/IV_CRUS_EH_20241219T000000_20241219T060000.mseed",
+  "sha256": "4d0a6eaa5c83374bd8e19afb8974ac02e63377262637e23ae8206bf8c71b4d87",
+  "segments": [
+    {
+      "channel": "IV.CRUS..EHZ",
+      "start": 1734566368.74,
+      "end": 1734588030.1,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CRUS..EHN",
+      "start": 1734566369.36,
+      "end": 1734588030.65,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CRUS..EHE",
+      "start": 1734566369.18,
+      "end": 1734588031.8400002,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 61.692369033931755
+}

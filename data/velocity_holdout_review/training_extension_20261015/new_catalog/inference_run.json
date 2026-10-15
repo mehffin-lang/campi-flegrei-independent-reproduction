@@ -1,0 +1,12 @@
+[
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CGAU_HH_20241212T000000_20241212T060000.mseed",
+    "picks": 901,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CLAC_HH_20241212T000000_20241212T060000.mseed",
+    "picks": 269,
+    "status": "processed"
+  }
+]

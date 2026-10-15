@@ -1,0 +1,39 @@
+{
+  "request": "IV_CSTH_HH_20220801T000000_20220801T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CSTH",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2022-07-31T23:59:30.000000Z",
+    "end": "2022-08-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T17:47:50.485728+00:00",
+  "status": "downloaded",
+  "bytes": 16123392,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2022-07-31T23%3A59%3A30.000000Z&end=2022-08-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CSTH_HH_20220801T000000_20220801T060000.mseed",
+  "sha256": "43f5deccfb5876ecde2e4ed3182de8ee323f1f168488353fd2348104c140a883",
+  "segments": [
+    {
+      "channel": "IV.CSTH..HHE",
+      "start": 1659311968.7299998,
+      "end": 1659333630.19,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CSTH..HHN",
+      "start": 1659311969.34,
+      "end": 1659333631.4999998,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CSTH..HHZ",
+      "start": 1659311969.78,
+      "end": 1659333630.9399998,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 123.65926007996313
+}

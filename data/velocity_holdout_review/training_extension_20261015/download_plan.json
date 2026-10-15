@@ -1,0 +1,131 @@
+{
+  "requests": [
+    {
+      "id": "2I_CGAU_HH_20241212T000000_20241212T060000",
+      "net": "2I",
+      "sta": "CGAU",
+      "band": "HH",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "missing_channel_s": 64800.0,
+      "estimated_bytes": 10259715.335165793
+    },
+    {
+      "id": "2I_CLAC_HH_20241212T000000_20241212T060000",
+      "net": "2I",
+      "sta": "CLAC",
+      "band": "HH",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "missing_channel_s": 64800.0,
+      "estimated_bytes": 10259715.335165793
+    },
+    {
+      "id": "2I_CREM_HH_20241212T000000_20241212T060000",
+      "net": "2I",
+      "sta": "CREM",
+      "band": "HH",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "missing_channel_s": 64800.0,
+      "estimated_bytes": 10259715.335165793
+    },
+    {
+      "id": "2I_CSOC_EH_20241212T000000_20241212T060000",
+      "net": "2I",
+      "sta": "CSOC",
+      "band": "EH",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "missing_channel_s": 64800.0,
+      "estimated_bytes": 10259715.335165793
+    },
+    {
+      "id": "IV_CRUS_EH_20241212T000000_20241212T060000",
+      "net": "IV",
+      "sta": "CRUS",
+      "band": "EH",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "missing_channel_s": 64800.0,
+      "estimated_bytes": 10259715.335165793
+    },
+    {
+      "id": "IV_CUMA_HH_20241212T000000_20241212T060000",
+      "net": "IV",
+      "sta": "CUMA",
+      "band": "HH",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "missing_channel_s": 64800.0,
+      "estimated_bytes": 10259715.335165793
+    },
+    {
+      "id": "2I_CGAU_HH_20241219T000000_20241219T060000",
+      "net": "2I",
+      "sta": "CGAU",
+      "band": "HH",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "missing_channel_s": 64800.0,
+      "estimated_bytes": 10259715.335165793
+    },
+    {
+      "id": "2I_CLAC_HH_20241219T000000_20241219T060000",
+      "net": "2I",
+      "sta": "CLAC",
+      "band": "HH",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "missing_channel_s": 64800.0,
+      "estimated_bytes": 10259715.335165793
+    },
+    {
+      "id": "2I_CREM_HH_20241219T000000_20241219T060000",
+      "net": "2I",
+      "sta": "CREM",
+      "band": "HH",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "missing_channel_s": 64800.0,
+      "estimated_bytes": 10259715.335165793
+    },
+    {
+      "id": "2I_CSOC_EH_20241219T000000_20241219T060000",
+      "net": "2I",
+      "sta": "CSOC",
+      "band": "EH",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "missing_channel_s": 64800.0,
+      "estimated_bytes": 10259715.335165793
+    },
+    {
+      "id": "IV_CRUS_EH_20241219T000000_20241219T060000",
+      "net": "IV",
+      "sta": "CRUS",
+      "band": "EH",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "missing_channel_s": 64800.0,
+      "estimated_bytes": 10259715.335165793
+    },
+    {
+      "id": "IV_CUMA_HH_20241219T000000_20241219T060000",
+      "net": "IV",
+      "sta": "CUMA",
+      "band": "HH",
+      "start": 1734566400.0,
+      "end": 1734588000.0,
+      "missing_channel_s": 64800.0,
+      "estimated_bytes": 10259715.335165793
+    }
+  ],
+  "measured_bytes_per_channel_s": 158.3289403574968,
+  "estimated_bytes": 123116584.02198954,
+  "free_bytes": 141598830592,
+  "protected_bytes": 51539607552,
+  "estimated_size_uncertainty": "Compressed rate varies by station; allow twice the measured estimate before retrieval.",
+  "selection": "First complete day after simultaneous advertised six-station deployment, then one week later; 00:00\u201306:00 UTC; no 2025 information.",
+  "authorization": "Only targeted pre-2025 training gaps; broad queue stopped."
+}

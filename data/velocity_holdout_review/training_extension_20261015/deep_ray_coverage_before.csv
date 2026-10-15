@@ -1,0 +1,3 @@
+phase,arrivals,layer3_nonzero_path,deepest_vertex_gt3,deepest_vertex_eq3,source_gt3,events_source_gt3,note
+P,366,80,48,33,48,9,Layer starting at3 km includes rays along the interface; strict below3 requires a deeper native vertex; precision0.01 km.
+S,461,115,76,42,76,9,Layer starting at3 km includes rays along the interface; strict below3 requires a deeper native vertex; precision0.01 km.

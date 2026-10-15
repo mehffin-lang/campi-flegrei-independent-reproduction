@@ -175,6 +175,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -248,6 +253,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -318,6 +328,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -388,6 +403,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -458,6 +478,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -506,6 +531,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -554,6 +584,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -974,6 +1009,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -1064,6 +1104,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -1154,6 +1199,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -1224,6 +1274,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -1294,6 +1349,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -1364,6 +1424,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -1434,6 +1499,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -1504,6 +1574,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -1574,6 +1649,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -1644,6 +1724,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {
@@ -1714,6 +1799,11 @@
       "data": "data/velocity_holdout_review/experiment_results.csv",
       "accepted": false,
       "effect": "No plotted numerical output replaced; all three registered model families fail stability. A zero-delay alternative improves conditional holdout prediction."
+    },
+    "targeted_training_validation": {
+      "record": "data/velocity_holdout_review/training_extension_20261015/verification.json",
+      "results": "data/velocity_holdout_review/training_extension_20261015/experiment_results.csv",
+      "status": "No candidate accepted; panel numerical data remain at their preserved checkpoint. New training: 53 events, 847 arrivals; CSOC/CUMA P/S still unsupported."
     }
   },
   {

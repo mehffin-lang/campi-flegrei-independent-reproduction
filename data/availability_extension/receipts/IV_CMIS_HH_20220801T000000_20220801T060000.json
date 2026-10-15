@@ -1,0 +1,39 @@
+{
+  "request": "IV_CMIS_HH_20220801T000000_20220801T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CMIS",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2022-07-31T23:59:30.000000Z",
+    "end": "2022-08-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T17:41:12.894734+00:00",
+  "status": "downloaded",
+  "bytes": 15591424,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMIS&loc=%2A&cha=HH%3F&start=2022-07-31T23%3A59%3A30.000000Z&end=2022-08-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CMIS_HH_20220801T000000_20220801T060000.mseed",
+  "sha256": "bf1f597d1ca0915afb212a2c017b61b4aa1dbae002ebb7c733efb260654f75ce",
+  "segments": [
+    {
+      "channel": "IV.CMIS..HHE",
+      "start": 1659311969.4899998,
+      "end": 1659333630.73,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CMIS..HHN",
+      "start": 1659311968.26,
+      "end": 1659333631.72,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CMIS..HHZ",
+      "start": 1659311969.67,
+      "end": 1659333630.83,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 134.67522193305194
+}

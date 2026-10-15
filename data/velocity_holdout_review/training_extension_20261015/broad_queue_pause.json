@@ -1,0 +1,28 @@
+{
+  "reason": "Latest user requested only targeted pre-2025 gaps, not the broad queue.",
+  "processes_stopped": [
+    3323386,
+    3323387
+  ],
+  "states_at_pause": {
+    "downloaded": 144,
+    "pending": 73486,
+    "prior_failed": 2,
+    "prior_no_data": 34,
+    "prior_success_unverified_gaps": 88
+  },
+  "partial_files": [
+    {
+      "file": "inputs/availability_extension/waveforms/IV_CMIS_HH_20230401T000000_20230401T060000.part",
+      "bytes": 6405632,
+      "used": false
+    },
+    {
+      "file": "inputs/availability_extension/waveforms/IV_CFMN_HH_20230401T000000_20230401T060000.part",
+      "bytes": 6402560,
+      "used": false
+    }
+  ],
+  "partial_policy": "Preserved; excluded from all coverage and inference.",
+  "disk_free": 141249019904
+}

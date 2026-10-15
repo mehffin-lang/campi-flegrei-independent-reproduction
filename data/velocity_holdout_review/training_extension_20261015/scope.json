@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-15T18:44:47.044680+00:00",
+  "broad_collector": "SIGTERM sent",
+  "picker": "stop sentinel set; finish any active batch",
+  "scope": "pre-2025 CGAU P/S, CLAC S, CREM P/S, CSOC P/S, CRUS P/S, CUMA P/S; no holdout review or selection",
+  "holdout_sha256": "39500ad38df90e4c07cdce2da047116cd2441996f11a5f752501798a3599b2b9"
+}

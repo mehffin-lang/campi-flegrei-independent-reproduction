@@ -1,0 +1,2 @@
+time,sigma_time,sigma_amp,cov_time_amp,gamma_score,num_picks,num_p_picks,num_s_picks,event_index,x(km),y(km),z(km),longitude,latitude
+2024-12-19T03:16:24.741,0.667581543683085,0,0,8.0,6,2,4,0,-2.893436183857271,3.656521020619194,0.0,14.105685842379273,40.85292147584182

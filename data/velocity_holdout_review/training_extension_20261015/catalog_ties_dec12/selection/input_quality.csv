@@ -1,0 +1,4 @@
+event_index,P,S,picks,gap_deg,causal,invalid_sp,calibration
+0,10,12,22,165.91403909436002,True,0,True
+1,4,8,12,143.36952975202396,True,0,True
+2,1,5,6,170.24712635877808,True,0,False

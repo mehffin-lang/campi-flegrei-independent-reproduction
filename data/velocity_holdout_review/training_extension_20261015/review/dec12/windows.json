@@ -1,0 +1,486 @@
+[
+  {
+    "event_index": 0,
+    "origin": "2024-12-12T04:34:24.926000Z",
+    "station": "2I.CGAU.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CGAU_HH_20241212T000000_20241212T060000.mseed",
+    "source_sha256": "9929e10fd09057bb37354deff2b9e033bb2aa0772207caf0027fd32a66c15007",
+    "picks": [
+      {
+        "pick_index": 2462,
+        "phase": "S",
+        "time": "2024-12-12T04:34:27.120000Z",
+        "probability": 0.7999681234359741,
+        "assigned": true
+      },
+      {
+        "pick_index": 2466,
+        "phase": "S",
+        "time": "2024-12-12T04:34:27.810000Z",
+        "probability": 0.7610988616943359,
+        "assigned": false
+      },
+      {
+        "pick_index": 2467,
+        "phase": "P",
+        "time": "2024-12-12T04:34:27.870000Z",
+        "probability": 0.5281418561935425,
+        "assigned": false
+      },
+      {
+        "pick_index": 2468,
+        "phase": "P",
+        "time": "2024-12-12T04:34:28.000000Z",
+        "probability": 0.3417292237281799,
+        "assigned": false
+      },
+      {
+        "pick_index": 2476,
+        "phase": "S",
+        "time": "2024-12-12T04:34:29.790000Z",
+        "probability": 0.5276511311531067,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 0,
+    "origin": "2024-12-12T04:34:24.926000Z",
+    "station": "2I.CLAC.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CLAC_HH_20241212T000000_20241212T060000.mseed",
+    "source_sha256": "065e3aae7353df8c226bf23d2c49d37a4d5e4633436a4263b0dca33fa8bdcef5",
+    "picks": [
+      {
+        "pick_index": 2463,
+        "phase": "P",
+        "time": "2024-12-12T04:34:27.210000Z",
+        "probability": 0.7032318711280823,
+        "assigned": true
+      },
+      {
+        "pick_index": 2473,
+        "phase": "S",
+        "time": "2024-12-12T04:34:29.200000Z",
+        "probability": 0.985105037689209,
+        "assigned": true
+      },
+      {
+        "pick_index": 2477,
+        "phase": "P",
+        "time": "2024-12-12T04:34:30.300000Z",
+        "probability": 0.4298642873764038,
+        "assigned": false
+      },
+      {
+        "pick_index": 2479,
+        "phase": "S",
+        "time": "2024-12-12T04:34:32.390000Z",
+        "probability": 0.6546816825866699,
+        "assigned": false
+      },
+      {
+        "pick_index": 2480,
+        "phase": "S",
+        "time": "2024-12-12T04:34:32.680000Z",
+        "probability": 0.356935054063797,
+        "assigned": false
+      },
+      {
+        "pick_index": 2481,
+        "phase": "P",
+        "time": "2024-12-12T04:34:32.760000Z",
+        "probability": 0.7970426082611084,
+        "assigned": false
+      },
+      {
+        "pick_index": 2482,
+        "phase": "S",
+        "time": "2024-12-12T04:34:32.810000Z",
+        "probability": 0.3459971845149994,
+        "assigned": false
+      },
+      {
+        "pick_index": 2485,
+        "phase": "S",
+        "time": "2024-12-12T04:34:35.200000Z",
+        "probability": 0.8706570863723755,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 0,
+    "origin": "2024-12-12T04:34:24.926000Z",
+    "station": "2I.CREM.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CREM_HH_20241212T000000_20241212T060000.mseed",
+    "source_sha256": "18a164dd5dacff4724fc0485516616cbb0973612d41c2a63303b27f16cb25c1d",
+    "picks": [
+      {
+        "pick_index": 2459,
+        "phase": "P",
+        "time": "2024-12-12T04:34:26.270000Z",
+        "probability": 0.9400911331176758,
+        "assigned": true
+      },
+      {
+        "pick_index": 2465,
+        "phase": "S",
+        "time": "2024-12-12T04:34:27.550000Z",
+        "probability": 0.9712860584259032,
+        "assigned": true
+      },
+      {
+        "pick_index": 2484,
+        "phase": "S",
+        "time": "2024-12-12T04:34:33.760000Z",
+        "probability": 0.3928228914737701,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 0,
+    "origin": "2024-12-12T04:34:24.926000Z",
+    "station": "2I.CSOC.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CSOC_EH_20241212T000000_20241212T060000.mseed",
+    "source_sha256": "982651f90b8620cffe9bcf5561d2f57f69e7d87dbe7c2846c9be4d5c77ec3ffa",
+    "picks": []
+  },
+  {
+    "event_index": 0,
+    "origin": "2024-12-12T04:34:24.926000Z",
+    "station": "IV.CRUS.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/IV_CRUS_EH_20241212T000000_20241212T060000.mseed",
+    "source_sha256": "3c1d3a0b61dd88ecba183bd20e5f077738d8192d8a92dc19132055c59b0292dd",
+    "picks": [
+      {
+        "pick_index": 2460,
+        "phase": "P",
+        "time": "2024-12-12T04:34:26.640000Z",
+        "probability": 0.8194402456283569,
+        "assigned": true
+      },
+      {
+        "pick_index": 2464,
+        "phase": "S",
+        "time": "2024-12-12T04:34:27.440000Z",
+        "probability": 0.9752007722854614,
+        "assigned": false
+      },
+      {
+        "pick_index": 2470,
+        "phase": "S",
+        "time": "2024-12-12T04:34:28.310000Z",
+        "probability": 0.9924512505531312,
+        "assigned": true
+      },
+      {
+        "pick_index": 2471,
+        "phase": "S",
+        "time": "2024-12-12T04:34:28.830000Z",
+        "probability": 0.3995348215103149,
+        "assigned": false
+      },
+      {
+        "pick_index": 2472,
+        "phase": "S",
+        "time": "2024-12-12T04:34:29.040000Z",
+        "probability": 0.3549415469169616,
+        "assigned": false
+      },
+      {
+        "pick_index": 2483,
+        "phase": "P",
+        "time": "2024-12-12T04:34:33.700000Z",
+        "probability": 0.3772796094417572,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 0,
+    "origin": "2024-12-12T04:34:24.926000Z",
+    "station": "IV.CUMA.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/IV_CUMA_HH_20241212T000000_20241212T060000.mseed",
+    "source_sha256": "9d9c7193f39421bad65e7213ae5fd70b52192d56d16c33d0ccfb7f4a525f507f",
+    "picks": [
+      {
+        "pick_index": 2461,
+        "phase": "P",
+        "time": "2024-12-12T04:34:26.940000Z",
+        "probability": 0.5426404476165771,
+        "assigned": true
+      },
+      {
+        "pick_index": 2469,
+        "phase": "S",
+        "time": "2024-12-12T04:34:28.190000Z",
+        "probability": 0.7622717022895813,
+        "assigned": true
+      },
+      {
+        "pick_index": 2474,
+        "phase": "S",
+        "time": "2024-12-12T04:34:29.580000Z",
+        "probability": 0.3113435208797455,
+        "assigned": false
+      },
+      {
+        "pick_index": 2475,
+        "phase": "P",
+        "time": "2024-12-12T04:34:29.670000Z",
+        "probability": 0.6125022172927856,
+        "assigned": false
+      },
+      {
+        "pick_index": 2478,
+        "phase": "S",
+        "time": "2024-12-12T04:34:30.730000Z",
+        "probability": 0.4415214359760284,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 1,
+    "origin": "2024-12-12T04:34:26.439000Z",
+    "station": "2I.CGAU.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CGAU_HH_20241212T000000_20241212T060000.mseed",
+    "source_sha256": "9929e10fd09057bb37354deff2b9e033bb2aa0772207caf0027fd32a66c15007",
+    "picks": [
+      {
+        "pick_index": 2462,
+        "phase": "S",
+        "time": "2024-12-12T04:34:27.120000Z",
+        "probability": 0.7999681234359741,
+        "assigned": false
+      },
+      {
+        "pick_index": 2466,
+        "phase": "S",
+        "time": "2024-12-12T04:34:27.810000Z",
+        "probability": 0.7610988616943359,
+        "assigned": false
+      },
+      {
+        "pick_index": 2467,
+        "phase": "P",
+        "time": "2024-12-12T04:34:27.870000Z",
+        "probability": 0.5281418561935425,
+        "assigned": false
+      },
+      {
+        "pick_index": 2468,
+        "phase": "P",
+        "time": "2024-12-12T04:34:28.000000Z",
+        "probability": 0.3417292237281799,
+        "assigned": true
+      },
+      {
+        "pick_index": 2476,
+        "phase": "S",
+        "time": "2024-12-12T04:34:29.790000Z",
+        "probability": 0.5276511311531067,
+        "assigned": true
+      }
+    ]
+  },
+  {
+    "event_index": 1,
+    "origin": "2024-12-12T04:34:26.439000Z",
+    "station": "2I.CLAC.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CLAC_HH_20241212T000000_20241212T060000.mseed",
+    "source_sha256": "065e3aae7353df8c226bf23d2c49d37a4d5e4633436a4263b0dca33fa8bdcef5",
+    "picks": [
+      {
+        "pick_index": 2463,
+        "phase": "P",
+        "time": "2024-12-12T04:34:27.210000Z",
+        "probability": 0.7032318711280823,
+        "assigned": false
+      },
+      {
+        "pick_index": 2473,
+        "phase": "S",
+        "time": "2024-12-12T04:34:29.200000Z",
+        "probability": 0.985105037689209,
+        "assigned": false
+      },
+      {
+        "pick_index": 2477,
+        "phase": "P",
+        "time": "2024-12-12T04:34:30.300000Z",
+        "probability": 0.4298642873764038,
+        "assigned": true
+      },
+      {
+        "pick_index": 2479,
+        "phase": "S",
+        "time": "2024-12-12T04:34:32.390000Z",
+        "probability": 0.6546816825866699,
+        "assigned": true
+      },
+      {
+        "pick_index": 2480,
+        "phase": "S",
+        "time": "2024-12-12T04:34:32.680000Z",
+        "probability": 0.356935054063797,
+        "assigned": false
+      },
+      {
+        "pick_index": 2481,
+        "phase": "P",
+        "time": "2024-12-12T04:34:32.760000Z",
+        "probability": 0.7970426082611084,
+        "assigned": false
+      },
+      {
+        "pick_index": 2482,
+        "phase": "S",
+        "time": "2024-12-12T04:34:32.810000Z",
+        "probability": 0.3459971845149994,
+        "assigned": false
+      },
+      {
+        "pick_index": 2485,
+        "phase": "S",
+        "time": "2024-12-12T04:34:35.200000Z",
+        "probability": 0.8706570863723755,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 1,
+    "origin": "2024-12-12T04:34:26.439000Z",
+    "station": "2I.CREM.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CREM_HH_20241212T000000_20241212T060000.mseed",
+    "source_sha256": "18a164dd5dacff4724fc0485516616cbb0973612d41c2a63303b27f16cb25c1d",
+    "picks": [
+      {
+        "pick_index": 2459,
+        "phase": "P",
+        "time": "2024-12-12T04:34:26.270000Z",
+        "probability": 0.9400911331176758,
+        "assigned": false
+      },
+      {
+        "pick_index": 2465,
+        "phase": "S",
+        "time": "2024-12-12T04:34:27.550000Z",
+        "probability": 0.9712860584259032,
+        "assigned": false
+      },
+      {
+        "pick_index": 2484,
+        "phase": "S",
+        "time": "2024-12-12T04:34:33.760000Z",
+        "probability": 0.3928228914737701,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 1,
+    "origin": "2024-12-12T04:34:26.439000Z",
+    "station": "2I.CSOC.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/2I_CSOC_EH_20241212T000000_20241212T060000.mseed",
+    "source_sha256": "982651f90b8620cffe9bcf5561d2f57f69e7d87dbe7c2846c9be4d5c77ec3ffa",
+    "picks": []
+  },
+  {
+    "event_index": 1,
+    "origin": "2024-12-12T04:34:26.439000Z",
+    "station": "IV.CRUS.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/IV_CRUS_EH_20241212T000000_20241212T060000.mseed",
+    "source_sha256": "3c1d3a0b61dd88ecba183bd20e5f077738d8192d8a92dc19132055c59b0292dd",
+    "picks": [
+      {
+        "pick_index": 2460,
+        "phase": "P",
+        "time": "2024-12-12T04:34:26.640000Z",
+        "probability": 0.8194402456283569,
+        "assigned": false
+      },
+      {
+        "pick_index": 2464,
+        "phase": "S",
+        "time": "2024-12-12T04:34:27.440000Z",
+        "probability": 0.9752007722854614,
+        "assigned": false
+      },
+      {
+        "pick_index": 2470,
+        "phase": "S",
+        "time": "2024-12-12T04:34:28.310000Z",
+        "probability": 0.9924512505531312,
+        "assigned": false
+      },
+      {
+        "pick_index": 2471,
+        "phase": "S",
+        "time": "2024-12-12T04:34:28.830000Z",
+        "probability": 0.3995348215103149,
+        "assigned": false
+      },
+      {
+        "pick_index": 2472,
+        "phase": "S",
+        "time": "2024-12-12T04:34:29.040000Z",
+        "probability": 0.3549415469169616,
+        "assigned": false
+      },
+      {
+        "pick_index": 2483,
+        "phase": "P",
+        "time": "2024-12-12T04:34:33.700000Z",
+        "probability": 0.3772796094417572,
+        "assigned": false
+      }
+    ]
+  },
+  {
+    "event_index": 1,
+    "origin": "2024-12-12T04:34:26.439000Z",
+    "station": "IV.CUMA.",
+    "source": "inputs/velocity_holdout_review/training_extension_20261015/waveforms/IV_CUMA_HH_20241212T000000_20241212T060000.mseed",
+    "source_sha256": "9d9c7193f39421bad65e7213ae5fd70b52192d56d16c33d0ccfb7f4a525f507f",
+    "picks": [
+      {
+        "pick_index": 2461,
+        "phase": "P",
+        "time": "2024-12-12T04:34:26.940000Z",
+        "probability": 0.5426404476165771,
+        "assigned": false
+      },
+      {
+        "pick_index": 2469,
+        "phase": "S",
+        "time": "2024-12-12T04:34:28.190000Z",
+        "probability": 0.7622717022895813,
+        "assigned": false
+      },
+      {
+        "pick_index": 2474,
+        "phase": "S",
+        "time": "2024-12-12T04:34:29.580000Z",
+        "probability": 0.3113435208797455,
+        "assigned": false
+      },
+      {
+        "pick_index": 2475,
+        "phase": "P",
+        "time": "2024-12-12T04:34:29.670000Z",
+        "probability": 0.6125022172927856,
+        "assigned": true
+      },
+      {
+        "pick_index": 2478,
+        "phase": "S",
+        "time": "2024-12-12T04:34:30.730000Z",
+        "probability": 0.4415214359760284,
+        "assigned": true
+      }
+    ]
+  }
+]

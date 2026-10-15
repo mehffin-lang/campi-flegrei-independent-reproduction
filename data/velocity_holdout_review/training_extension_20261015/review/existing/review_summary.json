@@ -1,0 +1,17 @@
+{
+  "events": 2,
+  "station_windows": 26,
+  "traces": 78,
+  "metadata_epoch_checks": 78,
+  "valid_epoch": true,
+  "responses_present": true,
+  "sample_rates_match": true,
+  "gapped_windows": 0,
+  "absolute_clock_verified": false,
+  "training_additions": 0,
+  "unchanged_failures": {
+    "1952": "14 phases, gap216.069671 degrees >=180; no usable extra station onset established",
+    "1961": "10 phases, required >10; no reliable extra onset established"
+  },
+  "review": "Visual review of gray demeaned raw and black 1\u201320 Hz traces, matching StationXML epochs. No pick or association modified. No 2025 waveform loaded."
+}

@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "net": "2I",
+    "sta": "CREM",
+    "cha": "HH?",
+    "start": "2024-12-12T00:00:00.000000Z",
+    "end": "2024-12-12T06:00:00.000000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "status": "available",
+  "utc": "2026-10-15T18:47:27.086461Z",
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=2I&sta=CREM&cha=HH%3F&start=2024-12-12T00%3A00%3A00.000000Z&end=2024-12-12T06%3A00%3A00.000000Z&format=text&show=latestupdate",
+  "file": "inputs/velocity_holdout_review/training_extension_20261015/2I_CREM_HH_20241212T000000_20241212T060000_availability.txt",
+  "sha256": "00ceaf221d6a7ce902a96a1038c27a51ca3386239369d0327901ab428589d680",
+  "segments": [
+    {
+      "channel": "2I.CREM..HHE",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "2I.CREM..HHN",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "2I.CREM..HHZ",
+      "start": 1733961600.0,
+      "end": 1733983200.0,
+      "sample_rate": 100.0
+    }
+  ]
+}
