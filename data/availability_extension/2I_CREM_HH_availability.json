@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "net": "2I",
+    "sta": "CREM",
+    "cha": "HH?",
+    "start": "2022-01-21T00:00:00.000000Z",
+    "end": "2025-03-21T00:00:00.000000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "utc": "2026-10-15T16:32:38.505524+00:00",
+  "file": "inputs/availability_extension/2I_CREM_HH.txt",
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=2I&sta=CREM&cha=HH%3F&start=2022-01-21T00%3A00%3A00.000000Z&end=2025-03-21T00%3A00%3A00.000000Z&format=text&show=latestupdate",
+  "http": 200,
+  "bytes": 17680,
+  "sha256": "c639609e3b27fea74ebe48922fc026e9462ba8b0f1548bd1fe5c1dbd0c9d1cf4"
+}

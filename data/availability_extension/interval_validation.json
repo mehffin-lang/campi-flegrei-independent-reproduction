@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "cases": [
+    "overlap union",
+    "multiple interior gaps",
+    "gap across disjoint advertised spans",
+    "complete existing coverage"
+  ],
+  "note": "Artificial interval arithmetic assertions only; no synthetic waveform or empirical input."
+}

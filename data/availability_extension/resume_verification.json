@@ -1,0 +1,257 @@
+[
+  {
+    "file": "inputs/availability_extension/waveforms/2I_CGAU_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "0a6975f43cfcd1455e9722ea606dd7ed172f7247abf48a9a7cf203ec8e6df21f"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/2I_CLAC_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "82282a97e18a606e9346b53ff93dafc5ef6e74479a4ff183b7619bccb9e1c570"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/2I_CREM_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "10a5b47cf7e65e2fbe6f3815ff7345136a89a161e0e90658bf646edf41504354"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/2I_CSOC_EH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "c1b93acd0c66363df9a399567a6fd7893edd8372539989d3351456834f9de330"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CAAM_HH_20220129T180000_20220130T000000.mseed",
+    "valid": true,
+    "sha256": "223e94aa9d88525b35208307e0d7e416a094bc1e1d0c4b664cb816ad4510b20f"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CAAM_HH_20220501T000000_20220501T060000.mseed",
+    "valid": true,
+    "sha256": "4580ed4ecffa9ccbc1d5dc996039cc4121a9f6f1c6cb968873231b1d4db2cb0a"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CAAM_HH_20230101T000000_20230101T060000.mseed",
+    "valid": true,
+    "sha256": "f4f1cb9339eea1006ba85b684d76a556d4680d670cb4c306bd15029e6d896f61"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CAAM_HH_20240102T000000_20240102T060000.mseed",
+    "valid": true,
+    "sha256": "62e37d4096d27a30b0e49d123bf214d6a77860d777640f021d48d78db5f12fed"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CAAM_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "9e0a6a843b2c20ba7462b490f36df22b8a2609316940da467da2fc889142aa38"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CAAM_HH_20250101T060000_20250101T120000.mseed",
+    "valid": true,
+    "sha256": "9afb9403e64d8fcef691e029ce11d306784a6b72a99d85749c29783580de0597"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CAWE_EH_20231117T060000_20231117T120000.mseed",
+    "valid": true,
+    "sha256": "e9d568b51af7c46496e87863b094dd17ab9d58963d3ab7161ab5e0046345db84"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CAWE_EH_20240101T060000_20240101T120000.mseed",
+    "valid": true,
+    "sha256": "647c5b4efa1a51ed1c247aff2ec583ed74a4a9f0fe50911449f07d518812f9c6"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CBAC_HH_20220401T000000_20220401T060000.mseed",
+    "valid": true,
+    "sha256": "3292e015bb1c76649965f2a689db8ee1f8fb20bc11e505e48306a43cf5d99162"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CBAC_HH_20220501T000000_20220501T060000.mseed",
+    "valid": true,
+    "sha256": "57663f39c31e5b34eaa8b4f3cd3b4aa22242f96d02a176e6362085ce0484ce18"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CBAC_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "2e90b6443d817720ee5d724d162934bec084fb07c27f0e5de447a0481a5805c3"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CBAG_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "5d098732f5659a3dc603baf6180e1bb63b906d05b376bdb09ab3e39ebe9adf89"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CCAP_EH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "3195927c24611b834697de05fef353a63ec486d34df7ca004240a93a5307e41f"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CCAP_EH_20250101T060000_20250101T120000.mseed",
+    "valid": true,
+    "sha256": "4a908a3f6714715d09106ec2ede3c8e0bc667bb8dc3a8e83df388a04121f427d"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CFB1_HH_20220401T000000_20220401T060000.mseed",
+    "valid": true,
+    "sha256": "eacaf0881d37fad94ebbec0611a9b8848e59c896428683b5e881b875ecda5333"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CFB1_HH_20220501T000000_20220501T060000.mseed",
+    "valid": true,
+    "sha256": "4d9f74c86adcea3519039f7122f5f06c29ff484a79f6a52283d54c3d525b6dad"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CFB3_HH_20220401T000000_20220401T060000.mseed",
+    "valid": true,
+    "sha256": "2e1c6d6b094b520419b2cf56709cc50ca4498a7dc1ee6980de34b71cc04de3a5"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CFB3_HH_20220501T000000_20220501T060000.mseed",
+    "valid": true,
+    "sha256": "c5e75f25873308517f68a6e4e9588657d21380853b1edd891c38771fe0ba2a8f"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CFMN_HH_20220401T000000_20220401T060000.mseed",
+    "valid": true,
+    "sha256": "23ac675b095f4d1e962dee8e0ceacf5b1c9563c03f96a996e9956b8a6975a30d"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CFMN_HH_20220501T000000_20220501T060000.mseed",
+    "valid": true,
+    "sha256": "8a28f702ad2e96297e9433ef0efafa53dd4e2a1f15f6fbafaafd7364d7432e42"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CFMN_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "5e81f6ae3680618333722c5fc92ddb3540039839a2ff5841f1f4f161483f61bd"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CMIS_HH_20220401T000000_20220401T060000.mseed",
+    "valid": true,
+    "sha256": "5ba35082c46c60e4ae2e61a6bf4ce5dfbc01841dc47a5c95e5f3db2e9069fbbe"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CMIS_HH_20220501T000000_20220501T060000.mseed",
+    "valid": true,
+    "sha256": "b6c0bbc2f0205d94a9e0910a858e7092930ca2ddd93f7f31d75c928c9a9e7333"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CMIS_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "9acca679b9ac2369035ddde47f433c3c1defb27ad953015acc4acb4b4b80ab89"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CMSN_HH_20220401T000000_20220401T060000.mseed",
+    "valid": true,
+    "sha256": "795e8b00c5c9883740ddaebe5f40c1d622830d331b9e760df2daba6833c20e19"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CMSN_HH_20220501T000000_20220501T060000.mseed",
+    "valid": true,
+    "sha256": "6023771b817e315d41d061e3aa4ca25cb0bf02d1a1f1c2fc71c09620163c2bee"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CMSN_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "c16309043cae1e1261563160a4babde52618078d0bfead86fa1923d7b7ebffc5"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CNIS_HH_20220401T000000_20220401T060000.mseed",
+    "valid": true,
+    "sha256": "8e952421390684e58d0dff654e099e9e071d8eff2569a0f0eef0061e90897fe9"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CNIS_HH_20220501T000000_20220501T060000.mseed",
+    "valid": true,
+    "sha256": "56a060aa587760a83f14ce05c2011394777f911dd7a371fbc48a43347dbe6956"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CNIS_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "c54351201869addc2c283cf1644a2dbb08ba1f8802608a50d9d29eede9e69c65"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_COLB_HH_20220201T000000_20220201T060000.mseed",
+    "valid": true,
+    "sha256": "ed475d80c2e92a0c10ec88ab94aeb83c6396f91fa6962ad2ea66f7f7f1001f02"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_COLB_HH_20220301T000000_20220301T060000.mseed",
+    "valid": true,
+    "sha256": "516fed3a47321e70b1aab3ffbdb9c0ef553a90dccad2a283272cb3fd17dcffaf"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_COLB_HH_20220401T000000_20220401T060000.mseed",
+    "valid": true,
+    "sha256": "be660c3c280108dcde4ce489d849000029a6bb70d4dcc7ea6be520da6ebecaaf"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_COLB_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "80c301690615f2628af89bc2e950e3557e4e9c73abafc4e27b9a443335bf4ec3"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CPIS_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "75650aa7c83b5b90efcb730ca0a6e499bd15b700f8f10cb45dcbc12fb4e6336f"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CPOZ_HH_20220201T000000_20220201T060000.mseed",
+    "valid": true,
+    "sha256": "dd6e251cd3660c50e17623714b7f30f02120085bac637eb2fca876aa02a3fcd6"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CPOZ_HH_20220301T000000_20220301T060000.mseed",
+    "valid": true,
+    "sha256": "2e26a5941936cf4cd065441c0b2feef66e510a47fc78d7b61a420b7bb663a26e"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CPOZ_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "f98f7d03ed8fd25ad2a81fc6d74f2e4cb32f0f358febb0210cd92c56752210d1"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CQUE_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "11ab93b9ddf6a94f2f1b2a80d3b0f93639b7c72ec6ff5b3de5b30e6447fd07e7"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CSFT_HH_20220401T000000_20220401T060000.mseed",
+    "valid": true,
+    "sha256": "23175209137625edade507e1e8f19451f7c9f5f76463338a21427560181aba25"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CSFT_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "994d7c34dd0674da6c51f270f236122db038b7bbd2cccbade496b1ad253354f6"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CSOB_HH_20220401T000000_20220401T060000.mseed",
+    "valid": true,
+    "sha256": "e928937af6d307f217c81aa2b945440154e844fb3d742401ab9c3e07b832c941"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CSOB_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "494bd183ced915f0c95ecb0a6c38e69b5bda920acbff26bf4f9847a84c693e96"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CSTH_HH_20220401T000000_20220401T060000.mseed",
+    "valid": true,
+    "sha256": "8ce3a1e368f126425c669b183445e929eb863cc4aea1ab760a691eeac97e8005"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CSTH_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "69cd520ce81b1b90c8a1759a872d21037d6369b0ffbad531d689983bf347abf3"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CUMA_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "2e36a9aea3994198924732444837d249fe1108b2b39ab7774700cf01990bb804"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_PTMR_HH_20241201T000000_20241201T060000.mseed",
+    "valid": true,
+    "sha256": "908ff81b2ad880671ff47b23d927bfb4adaa556ee2ee36681f6543cda20c662b"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "request": "IV_CPIS_HH_20241201T000000_20241201T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CPIS",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2024-11-30T23:59:30.000000Z",
+    "end": "2024-12-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T16:59:54.062299+00:00",
+  "status": "downloaded",
+  "bytes": 24132608,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPIS&loc=%2A&cha=HH%3F&start=2024-11-30T23%3A59%3A30.000000Z&end=2024-12-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CPIS_HH_20241201T000000_20241201T060000.mseed",
+  "sha256": "75650aa7c83b5b90efcb730ca0a6e499bd15b700f8f10cb45dcbc12fb4e6336f",
+  "segments": [
+    {
+      "channel": "IV.CPIS..HHE",
+      "start": 1733011169.3100002,
+      "end": 1733032830.69,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CPIS..HHN",
+      "start": 1733011169.52,
+      "end": 1733032831.34,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CPIS..HHZ",
+      "start": 1733011169.06,
+      "end": 1733032830.07,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 173.16397499700543
+}

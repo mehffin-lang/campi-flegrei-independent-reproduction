@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "net": "IV",
+    "sta": "CROS",
+    "cha": "HH?",
+    "start": "2022-01-21T00:00:00.000000Z",
+    "end": "2025-03-21T00:00:00.000000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "utc": "2026-10-15T16:32:13.376002+00:00",
+  "file": "inputs/availability_extension/IV_CROS_HH.txt",
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=CROS&cha=HH%3F&start=2022-01-21T00%3A00%3A00.000000Z&end=2025-03-21T00%3A00%3A00.000000Z&format=text&show=latestupdate",
+  "http": 204,
+  "bytes": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

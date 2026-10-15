@@ -1,0 +1,10 @@
+{
+  "request": "IV_CMTS_EH_20250318T000000_20250318T060000",
+  "status": "prior_success_unverified_gaps",
+  "previous_request": "IV_CMTS_20250318T000000_20250318T060000",
+  "previous_file": "inputs/continuation/waveforms/IV_CMTS_20250318T000000_20250318T060000.mseed",
+  "previous_sha256": "6ec8fcb70fa54bf693420a7f0f147b86163177815f686e0ec4eb8a4a25b2ffa4",
+  "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2025-03-17T23%3A59%3A30.000000Z&end=2025-03-18T06%3A00%3A30.000000Z",
+  "advertised_missing_channel_seconds": 0.029999732971191406,
+  "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+}

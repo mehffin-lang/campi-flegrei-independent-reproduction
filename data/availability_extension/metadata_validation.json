@@ -1,0 +1,7 @@
+{
+  "channels_checked": 83,
+  "response_gap_channels": [],
+  "invalid_coordinates": [],
+  "sample_rate_mismatches": [],
+  "limitations": "Checks epoch support and reported sample rates, not response deconvolution accuracy or pole/zero calibration. Static station coordinates in existing inversion differ slightly between some epochs; range table retains this approximation."
+}

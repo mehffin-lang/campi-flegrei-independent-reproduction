@@ -1,0 +1,15 @@
+{
+  "files": 1327,
+  "whole_file_duplicate_rows": 10,
+  "trace_rows": 61623,
+  "identical_trace_interval_rows": 7142,
+  "raw_channel_hours": 14502.361638432742,
+  "union_channel_hours": 14098.788661107355,
+  "overlapping_channel_hours": 403.5729773253865,
+  "interpretation": "Hashes identify repeated complete files; channel/time/sample-rate keys identify repeated trace segments. All interval overlaps count once. Context overlaps are expected. This does not certify equality of every overlapping waveform sample or equate raw trace time with finite inference-score exposure.",
+  "inputs": [
+    "data/availability_extension/catalog_december/all_observation_inputs.json",
+    "data/availability_extension/baseline_trace_intervals.csv",
+    "data/availability_extension/receipts/"
+  ]
+}

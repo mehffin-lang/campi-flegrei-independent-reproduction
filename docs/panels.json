@@ -526,21 +526,20 @@
     "scope": "supplement",
     "quantity": "Station data-availability timeline",
     "documentation": "Supplement S12 caption; S2 methods",
-    "parameters": "1285 continuous-observation files, 26 station names, 13467.933 union channel-hours. All 14 known event-selected snippets excluded. 13467.933 response-covered channel-hours; requested, failed and empty spans never count as observed.",
+    "parameters": "Actual processed interval unions; fixed study-period axes; no requested or event-selected coverage.",
     "status": "partially reproduced",
-    "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
-    "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
-    "blocker": "Partial/provisional: sparse observations, alternative association profile, unreviewed phases and unresolved model/location accuracy. Numerical generation is not agreement with the publication.",
+    "data_command": "CF_AVAIL_CATALOG=data/availability_extension/catalog_december .venv/bin/python scripts/process_availability_extension.py --workers 4",
+    "plot_command": ".venv/bin/python scripts/plot_observational_profile.py",
+    "blocker": "Large waveform gaps; incomplete instrument membership and no RAN observations.",
     "attempt": "1285 continuous-observation files, 26 station names, 13467.933 union channel-hours. All 14 known event-selected snippets excluded. 13467.933 response-covered channel-hours; requested, failed and empty spans never count as observed.",
     "notes": "",
     "input_observation_files": [
-      "data/eida_continuation/all_observation_inputs.json",
-      "data/eida_continuation/input_jobs.json"
+      "data/availability_extension/catalog_december/all_observation_inputs.json"
     ],
-    "generated_figure": "figures/coverage_eida_followup.pdf",
-    "saved_data": "data/eida_continuation/processed_coverage.csv",
-    "report_figure": "figures/coverage_eida_followup.pdf",
-    "style_record": "data/eida_continuation/plot_inventory.json",
+    "generated_figure": "figures/coverage_availability_extension.pdf",
+    "saved_data": "data/availability_extension/catalog_december/processed_coverage_union.json",
+    "report_figure": "figures/coverage_availability_extension.pdf",
+    "style_record": "data/availability_extension/plot_inventory.json",
     "historical_evidence": {
       "input_files": [
         "data/coverage_extension/processed_coverage_union.json"
@@ -554,21 +553,30 @@
       "output": "figures/coverage_extension.pdf"
     },
     "input_files": [
-      "data/eida_continuation/processed_coverage.csv"
+      "data/availability_extension/catalog_december/processed_coverage_union.json",
+      "data/availability_extension/catalog_december/analysis_summary.json"
     ],
     "output_files": [
-      "figures/coverage_eida_followup.pdf"
+      "figures/coverage_availability_extension.pdf"
     ],
     "independent_data_generation": true,
     "agreement_with_publication": "Not established; provisional sparse subset and unresolved validation.",
-    "provenance": "data/eida_continuation/eligibility.json; data/eida_continuation/processing_checkpoint.json; data/mechanism_eida/review_transfer.json",
+    "provenance": "data/availability_extension/catalog_december/processing_checkpoint.json",
     "previous_checkpoint": {
       "saved_data": "data/local_extension/processed_coverage.csv; data/local_extension/processed_coverage_union.json; data/local_extension/short_window_inputs.json",
       "generated_figure": "figures/coverage_local_followup.pdf"
     },
     "independent_generation": true,
     "agreement": "Not quantitatively established.",
-    "input_role": "Eligible continuous original EIDA observations, public metadata, permitted trained weights and starting grid; own numerical results. Routine Md only downstream calibration. Focal candidates retain explicitly frozen own identities."
+    "input_role": "Eligible continuous original EIDA observations, public metadata, permitted trained weights and starting grid; own numerical results. Routine Md only downstream calibration. Focal candidates retain explicitly frozen own identities.",
+    "availability_previous_checkpoint": {
+      "saved_data": "data/eida_continuation/processed_coverage.csv",
+      "generated_figure": "figures/coverage_eida_followup.pdf",
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "parameters": "1285 continuous-observation files, 26 station names, 13467.933 union channel-hours. All 14 known event-selected snippets excluded. 13467.933 response-covered channel-hours; requested, failed and empty spans never count as observed.",
+      "blocker": "Partial/provisional: sparse observations, alternative association profile, unreviewed phases and unresolved model/location accuracy. Numerical generation is not agreement with the publication."
+    }
   },
   {
     "panel": "S2",
@@ -848,25 +856,25 @@
     "scope": "supplement",
     "quantity": "Initial-location spatial views; map",
     "documentation": "Supplement S17 caption",
-    "parameters": "1435 own VELEST locations pass numerical pick/RMS/gap filters. Full precision paths differ by up to 0.850 km in depth; regional starts by 1.520 km. Uniform velocity-layer damping 100 is a disclosed alternative after the unconstrained fit failed the positive-bulk-modulus check. No scientifically accepted catalog.",
+    "parameters": "1414 numerically filtered own locations; four-layer observational fit; five fixed-model passes, 0.4/0.3 s phase rejection, >=6 picks, RMS<=0.25 s, gap<=300 degrees.",
     "status": "partially reproduced",
-    "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
-    "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
-    "blocker": "Partial/provisional: sparse observations, alternative association profile, unreviewed phases and unresolved model/location accuracy. Numerical generation is not agreement with the publication.",
-    "attempt": "1435 own VELEST locations pass numerical pick/RMS/gap filters. Full precision paths differ by up to 0.850 km in depth; regional starts by 1.520 km. Uniform velocity-layer damping 100 is a disclosed alternative after the unconstrained fit failed the positive-bulk-modulus check. No scientifically accepted catalog.",
+    "data_command": ".venv/bin/python scripts/locate_observational_profile.py --observations data/availability_extension/catalog_december --profile data/availability_extension/velocity_december --result-name locations_canonical",
+    "plot_command": ".venv/bin/python scripts/plot_observational_profile.py",
+    "blocker": "Calendar-separated holdout and model sensitivity fail. Neither the fitted profile nor absolute locations are accepted.",
+    "attempt": "Executed provisional location experiment with the new own profile.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
     "input_observation_files": [
-      "data/eida_continuation/all_observation_inputs.json",
-      "data/eida_continuation/input_jobs.json"
+      "data/availability_extension/catalog_december/all_observation_inputs.json",
+      "data/availability_extension/catalog_december/input_jobs.json"
     ],
-    "generated_figure": "figures/figure_S6_eida_followup.pdf",
-    "saved_data": "data/eida_continuation/calibration/merged4/panels/velest.csv",
-    "report_figure": "figures/figure_S6_eida_followup.pdf",
+    "generated_figure": "figures/figure_S6_availability_extension.pdf",
+    "saved_data": "data/availability_extension/catalog_december/locations_canonical/panels/velest.csv",
+    "report_figure": "figures/figure_S6_availability_extension.pdf",
     "independent_data_generation": true,
     "agreement_with_publication": "Not established; provisional sparse subset and unresolved validation.",
-    "provenance": "data/eida_continuation/eligibility.json; data/eida_continuation/processing_checkpoint.json; data/mechanism_eida/review_transfer.json",
-    "style_record": "data/eida_continuation/plot_inventory.json",
-    "input_role": "Eligible continuous original EIDA observations, public metadata, permitted trained weights and starting grid; own numerical results. Routine Md only downstream calibration. Focal candidates retain explicitly frozen own identities.",
+    "provenance": "data/availability_extension/catalog_december/processing_checkpoint.json; data/availability_extension/velocity_december/summary.json",
+    "style_record": "data/availability_extension/plot_inventory.json",
+    "input_role": "Original continuous EIDA observations; permitted trained weights; public station metadata; published alternative initialization; own fitted profile and locations. No author-fitted model or event solution.",
     "agreement": "Not quantitatively established.",
     "independent_generation": true,
     "historical_independent_results": [
@@ -898,14 +906,34 @@
       "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py"
     },
     "input_files": [
-      "data/eida_continuation/calibration/merged4/panels/velest.csv"
+      "data/availability_extension/catalog_december/locations_canonical/panels/velest.csv"
     ],
     "output_files": [
-      "figures/figure_S6_eida_followup.pdf"
+      "figures/figure_S6_availability_extension.pdf"
     ],
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/panels/velest.csv",
       "generated_figure": "figures/figure_S6_local_followup.pdf"
+    },
+    "availability_previous_checkpoint": {
+      "saved_data": "data/eida_continuation/calibration/merged4/panels/velest.csv",
+      "generated_figure": "figures/figure_S6_eida_followup.pdf",
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "parameters": "1435 own VELEST locations pass numerical pick/RMS/gap filters. Full precision paths differ by up to 0.850 km in depth; regional starts by 1.520 km. Uniform velocity-layer damping 100 is a disclosed alternative after the unconstrained fit failed the positive-bulk-modulus check. No scientifically accepted catalog.",
+      "blocker": "Partial/provisional: sparse observations, alternative association profile, unreviewed phases and unresolved model/location accuracy. Numerical generation is not agreement with the publication."
+    },
+    "latest_evidence": {
+      "inputs": [
+        "data/availability_extension/catalog_december/picks.csv",
+        "data/availability_extension/catalog_december/associations.csv",
+        "data/availability_extension/velocity_december/base_fitted.mod"
+      ],
+      "data": "data/availability_extension/catalog_december/locations_canonical/filtered_events.csv",
+      "figure": "figures/figure_S6_availability_extension.pdf",
+      "limitation": "New observational profile fails time-separated holdout; no accepted location catalog.",
+      "independently_generated": true,
+      "agreement_with_publication": "Not established"
     }
   },
   {
@@ -913,25 +941,25 @@
     "scope": "supplement",
     "quantity": "Initial-location spatial views; northing-depth",
     "documentation": "Supplement S17 caption",
-    "parameters": "1435 own VELEST locations pass numerical pick/RMS/gap filters. Full precision paths differ by up to 0.850 km in depth; regional starts by 1.520 km. Uniform velocity-layer damping 100 is a disclosed alternative after the unconstrained fit failed the positive-bulk-modulus check. No scientifically accepted catalog.",
+    "parameters": "1414 numerically filtered own locations; four-layer observational fit; five fixed-model passes, 0.4/0.3 s phase rejection, >=6 picks, RMS<=0.25 s, gap<=300 degrees.",
     "status": "partially reproduced",
-    "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
-    "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
-    "blocker": "Partial/provisional: sparse observations, alternative association profile, unreviewed phases and unresolved model/location accuracy. Numerical generation is not agreement with the publication.",
-    "attempt": "1435 own VELEST locations pass numerical pick/RMS/gap filters. Full precision paths differ by up to 0.850 km in depth; regional starts by 1.520 km. Uniform velocity-layer damping 100 is a disclosed alternative after the unconstrained fit failed the positive-bulk-modulus check. No scientifically accepted catalog.",
+    "data_command": ".venv/bin/python scripts/locate_observational_profile.py --observations data/availability_extension/catalog_december --profile data/availability_extension/velocity_december --result-name locations_canonical",
+    "plot_command": ".venv/bin/python scripts/plot_observational_profile.py",
+    "blocker": "Calendar-separated holdout and model sensitivity fail. Neither the fitted profile nor absolute locations are accepted.",
+    "attempt": "Executed provisional location experiment with the new own profile.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
     "input_observation_files": [
-      "data/eida_continuation/all_observation_inputs.json",
-      "data/eida_continuation/input_jobs.json"
+      "data/availability_extension/catalog_december/all_observation_inputs.json",
+      "data/availability_extension/catalog_december/input_jobs.json"
     ],
-    "generated_figure": "figures/figure_S6_eida_followup.pdf",
-    "saved_data": "data/eida_continuation/calibration/merged4/panels/velest.csv",
-    "report_figure": "figures/figure_S6_eida_followup.pdf",
+    "generated_figure": "figures/figure_S6_availability_extension.pdf",
+    "saved_data": "data/availability_extension/catalog_december/locations_canonical/panels/velest.csv",
+    "report_figure": "figures/figure_S6_availability_extension.pdf",
     "independent_data_generation": true,
     "agreement_with_publication": "Not established; provisional sparse subset and unresolved validation.",
-    "provenance": "data/eida_continuation/eligibility.json; data/eida_continuation/processing_checkpoint.json; data/mechanism_eida/review_transfer.json",
-    "style_record": "data/eida_continuation/plot_inventory.json",
-    "input_role": "Eligible continuous original EIDA observations, public metadata, permitted trained weights and starting grid; own numerical results. Routine Md only downstream calibration. Focal candidates retain explicitly frozen own identities.",
+    "provenance": "data/availability_extension/catalog_december/processing_checkpoint.json; data/availability_extension/velocity_december/summary.json",
+    "style_record": "data/availability_extension/plot_inventory.json",
+    "input_role": "Original continuous EIDA observations; permitted trained weights; public station metadata; published alternative initialization; own fitted profile and locations. No author-fitted model or event solution.",
     "agreement": "Not quantitatively established.",
     "independent_generation": true,
     "historical_independent_results": [
@@ -963,14 +991,34 @@
       "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py"
     },
     "input_files": [
-      "data/eida_continuation/calibration/merged4/panels/velest.csv"
+      "data/availability_extension/catalog_december/locations_canonical/panels/velest.csv"
     ],
     "output_files": [
-      "figures/figure_S6_eida_followup.pdf"
+      "figures/figure_S6_availability_extension.pdf"
     ],
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/panels/velest.csv",
       "generated_figure": "figures/figure_S6_local_followup.pdf"
+    },
+    "availability_previous_checkpoint": {
+      "saved_data": "data/eida_continuation/calibration/merged4/panels/velest.csv",
+      "generated_figure": "figures/figure_S6_eida_followup.pdf",
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "parameters": "1435 own VELEST locations pass numerical pick/RMS/gap filters. Full precision paths differ by up to 0.850 km in depth; regional starts by 1.520 km. Uniform velocity-layer damping 100 is a disclosed alternative after the unconstrained fit failed the positive-bulk-modulus check. No scientifically accepted catalog.",
+      "blocker": "Partial/provisional: sparse observations, alternative association profile, unreviewed phases and unresolved model/location accuracy. Numerical generation is not agreement with the publication."
+    },
+    "latest_evidence": {
+      "inputs": [
+        "data/availability_extension/catalog_december/picks.csv",
+        "data/availability_extension/catalog_december/associations.csv",
+        "data/availability_extension/velocity_december/base_fitted.mod"
+      ],
+      "data": "data/availability_extension/catalog_december/locations_canonical/filtered_events.csv",
+      "figure": "figures/figure_S6_availability_extension.pdf",
+      "limitation": "New observational profile fails time-separated holdout; no accepted location catalog.",
+      "independently_generated": true,
+      "agreement_with_publication": "Not established"
     }
   },
   {
@@ -978,25 +1026,25 @@
     "scope": "supplement",
     "quantity": "Initial-location spatial views; easting-depth",
     "documentation": "Supplement S17 caption",
-    "parameters": "1435 own VELEST locations pass numerical pick/RMS/gap filters. Full precision paths differ by up to 0.850 km in depth; regional starts by 1.520 km. Uniform velocity-layer damping 100 is a disclosed alternative after the unconstrained fit failed the positive-bulk-modulus check. No scientifically accepted catalog.",
+    "parameters": "1414 numerically filtered own locations; four-layer observational fit; five fixed-model passes, 0.4/0.3 s phase rejection, >=6 picks, RMS<=0.25 s, gap<=300 degrees.",
     "status": "partially reproduced",
-    "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
-    "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
-    "blocker": "Partial/provisional: sparse observations, alternative association profile, unreviewed phases and unresolved model/location accuracy. Numerical generation is not agreement with the publication.",
-    "attempt": "1435 own VELEST locations pass numerical pick/RMS/gap filters. Full precision paths differ by up to 0.850 km in depth; regional starts by 1.520 km. Uniform velocity-layer damping 100 is a disclosed alternative after the unconstrained fit failed the positive-bulk-modulus check. No scientifically accepted catalog.",
+    "data_command": ".venv/bin/python scripts/locate_observational_profile.py --observations data/availability_extension/catalog_december --profile data/availability_extension/velocity_december --result-name locations_canonical",
+    "plot_command": ".venv/bin/python scripts/plot_observational_profile.py",
+    "blocker": "Calendar-separated holdout and model sensitivity fail. Neither the fitted profile nor absolute locations are accepted.",
+    "attempt": "Executed provisional location experiment with the new own profile.",
     "notes": "Unlettered spatial view. Published reference used only to check correspondence with the written caption; no numerical values digitized.",
     "input_observation_files": [
-      "data/eida_continuation/all_observation_inputs.json",
-      "data/eida_continuation/input_jobs.json"
+      "data/availability_extension/catalog_december/all_observation_inputs.json",
+      "data/availability_extension/catalog_december/input_jobs.json"
     ],
-    "generated_figure": "figures/figure_S6_eida_followup.pdf",
-    "saved_data": "data/eida_continuation/calibration/merged4/panels/velest.csv",
-    "report_figure": "figures/figure_S6_eida_followup.pdf",
+    "generated_figure": "figures/figure_S6_availability_extension.pdf",
+    "saved_data": "data/availability_extension/catalog_december/locations_canonical/panels/velest.csv",
+    "report_figure": "figures/figure_S6_availability_extension.pdf",
     "independent_data_generation": true,
     "agreement_with_publication": "Not established; provisional sparse subset and unresolved validation.",
-    "provenance": "data/eida_continuation/eligibility.json; data/eida_continuation/processing_checkpoint.json; data/mechanism_eida/review_transfer.json",
-    "style_record": "data/eida_continuation/plot_inventory.json",
-    "input_role": "Eligible continuous original EIDA observations, public metadata, permitted trained weights and starting grid; own numerical results. Routine Md only downstream calibration. Focal candidates retain explicitly frozen own identities.",
+    "provenance": "data/availability_extension/catalog_december/processing_checkpoint.json; data/availability_extension/velocity_december/summary.json",
+    "style_record": "data/availability_extension/plot_inventory.json",
+    "input_role": "Original continuous EIDA observations; permitted trained weights; public station metadata; published alternative initialization; own fitted profile and locations. No author-fitted model or event solution.",
     "agreement": "Not quantitatively established.",
     "independent_generation": true,
     "historical_independent_results": [
@@ -1028,14 +1076,34 @@
       "related_data_command": ".venv/bin/python scripts/rebuild_grid_workflow.py"
     },
     "input_files": [
-      "data/eida_continuation/calibration/merged4/panels/velest.csv"
+      "data/availability_extension/catalog_december/locations_canonical/panels/velest.csv"
     ],
     "output_files": [
-      "figures/figure_S6_eida_followup.pdf"
+      "figures/figure_S6_availability_extension.pdf"
     ],
     "previous_checkpoint": {
       "saved_data": "data/local_extension/calibration/merged4/panels/velest.csv",
       "generated_figure": "figures/figure_S6_local_followup.pdf"
+    },
+    "availability_previous_checkpoint": {
+      "saved_data": "data/eida_continuation/calibration/merged4/panels/velest.csv",
+      "generated_figure": "figures/figure_S6_eida_followup.pdf",
+      "data_command": ".venv/bin/python scripts/rebuild_eida_followup.py --analysis",
+      "plot_command": ".venv/bin/python scripts/plot_eida_followup.py",
+      "parameters": "1435 own VELEST locations pass numerical pick/RMS/gap filters. Full precision paths differ by up to 0.850 km in depth; regional starts by 1.520 km. Uniform velocity-layer damping 100 is a disclosed alternative after the unconstrained fit failed the positive-bulk-modulus check. No scientifically accepted catalog.",
+      "blocker": "Partial/provisional: sparse observations, alternative association profile, unreviewed phases and unresolved model/location accuracy. Numerical generation is not agreement with the publication."
+    },
+    "latest_evidence": {
+      "inputs": [
+        "data/availability_extension/catalog_december/picks.csv",
+        "data/availability_extension/catalog_december/associations.csv",
+        "data/availability_extension/velocity_december/base_fitted.mod"
+      ],
+      "data": "data/availability_extension/catalog_december/locations_canonical/filtered_events.csv",
+      "figure": "figures/figure_S6_availability_extension.pdf",
+      "limitation": "New observational profile fails time-separated holdout; no accepted location catalog.",
+      "independently_generated": true,
+      "agreement_with_publication": "Not established"
     }
   },
   {

@@ -1,0 +1,10 @@
+{
+  "request": "IV_CAAM_HH_20250320T060000_20250320T120000",
+  "status": "prior_success_unverified_gaps",
+  "previous_request": "IV_CAAM_20250320T060000_20250320T120000",
+  "previous_file": "inputs/continuation/waveforms/IV_CAAM_20250320T060000_20250320T120000.mseed",
+  "previous_sha256": "05e0b0fed3204fb9348e96db1afdc882dbb8240636bac76e069f83deeebc9ecb",
+  "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=%2A&cha=HH%3F&start=2025-03-20T05%3A59%3A30.000000Z&end=2025-03-20T12%3A00%3A30.000000Z",
+  "advertised_missing_channel_seconds": 0.029999971389770508,
+  "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+}

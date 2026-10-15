@@ -1,0 +1,17 @@
+{
+  "event_index": 1065,
+  "event_ordinal": 251,
+  "phase_ordinal": 17,
+  "phase": "S",
+  "station": "IV.CBAG.",
+  "first_large_divergence_iteration": 4,
+  "branch_difference_iteration": 3,
+  "branch32": 6,
+  "branch64": 7,
+  "depth_before32_km": 2.92240143,
+  "depth_before64_km": 2.92236082906116,
+  "depth_step32_km": -0.49642542,
+  "depth_step64_km": 0.00597206199602585,
+  "source": "build/velest-sparse.f RAYPATH, lines 8480\u20138503: tref<tdir selects refraction (6); direct otherwise (7).",
+  "interpretation": "A direct/head-wave crossover amplifies small geometric/arithmetic differences through the travel-time derivative. Same inputs and unchanged diagnostic arithmetic reproduce saved files exactly. This identifies one first large path divergence; it does not prove every later discrepancy has this sole cause. No arbitrary branch tie-break or relaxed acceptance gate was adopted."
+}

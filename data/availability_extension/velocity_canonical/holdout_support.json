@@ -1,0 +1,86 @@
+{
+  "base": {
+    "seen_in_training": {
+      "phases": 879,
+      "station_phase_pairs": 31,
+      "initial_rms_s": 0.23305210665022305,
+      "fitted_rms_s": 0.24539289617388121
+    },
+    "unseen_in_training": {
+      "phases": 186,
+      "station_phase_pairs": 15,
+      "initial_rms_s": 0.27356895496068184,
+      "fitted_rms_s": 0.39661662510770773
+    }
+  },
+  "slow": {
+    "seen_in_training": {
+      "phases": 879,
+      "station_phase_pairs": 31,
+      "initial_rms_s": 0.26207435613890195,
+      "fitted_rms_s": 0.24560590258718443
+    },
+    "unseen_in_training": {
+      "phases": 186,
+      "station_phase_pairs": 15,
+      "initial_rms_s": 0.30551128483460366,
+      "fitted_rms_s": 0.36361949123857784
+    }
+  },
+  "fast": {
+    "seen_in_training": {
+      "phases": 879,
+      "station_phase_pairs": 31,
+      "initial_rms_s": 0.2245780495535949,
+      "fitted_rms_s": 0.24730759980078734
+    },
+    "unseen_in_training": {
+      "phases": 186,
+      "station_phase_pairs": 15,
+      "initial_rms_s": 0.25687030742907924,
+      "fitted_rms_s": 0.3849931503370568
+    }
+  },
+  "precision32": {
+    "seen_in_training": {
+      "phases": 879,
+      "station_phase_pairs": 31,
+      "initial_rms_s": 0.23305210665022305,
+      "fitted_rms_s": 0.24754585422324724
+    },
+    "unseen_in_training": {
+      "phases": 186,
+      "station_phase_pairs": 15,
+      "initial_rms_s": 0.27356895496068184,
+      "fitted_rms_s": 0.40228410358849626
+    }
+  },
+  "all_training": {
+    "seen_in_training": {
+      "phases": 893,
+      "station_phase_pairs": 35,
+      "initial_rms_s": 0.23486318239708984,
+      "fitted_rms_s": 0.22689547494595796
+    },
+    "unseen_in_training": {
+      "phases": 172,
+      "station_phase_pairs": 11,
+      "initial_rms_s": 0.268534935581773,
+      "fitted_rms_s": 0.4396736963957767
+    }
+  },
+  "smaller_step": {
+    "seen_in_training": {
+      "phases": 879,
+      "station_phase_pairs": 31,
+      "initial_rms_s": 0.23766680149407324,
+      "fitted_rms_s": 0.24647731794099365
+    },
+    "unseen_in_training": {
+      "phases": 186,
+      "station_phase_pairs": 15,
+      "initial_rms_s": 0.2861153049767444,
+      "fitted_rms_s": 0.39141062095138446
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "net": "IV",
+    "sta": "CBAG",
+    "cha": "HH?",
+    "start": "2022-01-21T00:00:00.000000Z",
+    "end": "2025-03-21T00:00:00.000000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "utc": "2026-10-15T16:31:53.110787+00:00",
+  "file": "inputs/availability_extension/IV_CBAG_HH.txt",
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=CBAG&cha=HH%3F&start=2022-01-21T00%3A00%3A00.000000Z&end=2025-03-21T00%3A00%3A00.000000Z&format=text&show=latestupdate",
+  "http": 200,
+  "bytes": 2161510,
+  "sha256": "a10e5130c9f8ca6efadb835ac4c395ddd28e99efe30ec02ab2b3ab838cbcf1f0"
+}

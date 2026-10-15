@@ -1,0 +1,27 @@
+{
+  "canonical_inputs_identical": true,
+  "canonical_sha256": [
+    "a05764da160e7babbfc2ddf0d70adfd7db608a2555fa6dbb38df3da86aa898cb",
+    "a05764da160e7babbfc2ddf0d70adfd7db608a2555fa6dbb38df3da86aa898cb"
+  ],
+  "events": 552,
+  "change": "Sort observations by event, station, phase and time before CNV serialization. Arrival values, associations and weights unchanged.",
+  "precanonical": {
+    "base_prelocation": {
+      "identical": false,
+      "different_lines": 15,
+      "sources": [
+        "tmp/availability_extension/velocity_existing/base_prelocation/input.cnv",
+        "tmp/availability_extension/velocity_expanded/base_prelocation/input.cnv"
+      ]
+    },
+    "all_training_prelocation": {
+      "identical": false,
+      "different_lines": 265,
+      "sources": [
+        "tmp/availability_extension/velocity_existing/all_training_prelocation/input.cnv",
+        "tmp/availability_extension/velocity_expanded/all_training_prelocation/input.cnv"
+      ]
+    }
+  }
+}

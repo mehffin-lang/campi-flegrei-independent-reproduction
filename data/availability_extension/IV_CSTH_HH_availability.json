@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "net": "IV",
+    "sta": "CSTH",
+    "cha": "HH?",
+    "start": "2022-01-21T00:00:00.000000Z",
+    "end": "2025-03-21T00:00:00.000000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "utc": "2026-10-15T16:32:04.821852+00:00",
+  "file": "inputs/availability_extension/IV_CSTH_HH.txt",
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=CSTH&cha=HH%3F&start=2022-01-21T00%3A00%3A00.000000Z&end=2025-03-21T00%3A00%3A00.000000Z&format=text&show=latestupdate",
+  "http": 200,
+  "bytes": 136240,
+  "sha256": "43766667d2eae2de7635c855f313064688626b6ae6237bf69b689f53a48de296"
+}

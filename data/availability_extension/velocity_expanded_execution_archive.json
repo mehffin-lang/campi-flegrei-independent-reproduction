@@ -1,0 +1,6 @@
+{
+  "file": "data/availability_extension/velocity_expanded_execution_archive.tar.gz",
+  "bytes": 4277650,
+  "sha256": "93c6755808cd0ce223a0c20f907c8d31d80bc618bf69ed812bfa72d1193eaa75",
+  "role": "Preserved own execution inputs, iteration/residual logs and outputs; historical, not a newly accepted fit."
+}

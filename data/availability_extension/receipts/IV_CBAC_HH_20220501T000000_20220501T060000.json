@@ -1,0 +1,39 @@
+{
+  "request": "IV_CBAC_HH_20220501T000000_20220501T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CBAC",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2022-04-30T23:59:30.000000Z",
+    "end": "2022-05-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T17:10:42.739475+00:00",
+  "status": "downloaded",
+  "bytes": 13221888,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAC&loc=%2A&cha=HH%3F&start=2022-04-30T23%3A59%3A30.000000Z&end=2022-05-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CBAC_HH_20220501T000000_20220501T060000.mseed",
+  "sha256": "57663f39c31e5b34eaa8b4f3cd3b4aa22242f96d02a176e6362085ce0484ce18",
+  "segments": [
+    {
+      "channel": "IV.CBAC..HHE",
+      "start": 1651363168.06,
+      "end": 1651384830.0400002,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CBAC..HHN",
+      "start": 1651363167.92,
+      "end": 1651384830.31,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CBAC..HHZ",
+      "start": 1651363169.4499998,
+      "end": 1651384831.45,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 82.30444613506552
+}

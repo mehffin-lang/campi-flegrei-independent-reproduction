@@ -1,0 +1,39 @@
+{
+  "request": "IV_CSOB_HH_20220501T000000_20220501T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CSOB",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2022-04-30T23:59:30.000000Z",
+    "end": "2022-05-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T17:15:05.899549+00:00",
+  "status": "downloaded",
+  "bytes": 16067072,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSOB&loc=%2A&cha=HH%3F&start=2022-04-30T23%3A59%3A30.000000Z&end=2022-05-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CSOB_HH_20220501T000000_20220501T060000.mseed",
+  "sha256": "ef086cb6a8744e13f35fbb0c61d62db13e5eba21077f0deb69e01ebd135b5ee6",
+  "segments": [
+    {
+      "channel": "IV.CSOB..HHE",
+      "start": 1651363169.62,
+      "end": 1651384830.3200002,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CSOB..HHN",
+      "start": 1651363168.34,
+      "end": 1651384831.8400002,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CSOB..HHZ",
+      "start": 1651363169.09,
+      "end": 1651384831.39,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 101.07311259105336
+}

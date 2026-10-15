@@ -1,0 +1,22 @@
+[
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CPOZ_HH_20220201T000000_20220201T060000.mseed",
+    "picks": 97,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CAAM_HH_20250101T060000_20250101T120000.mseed",
+    "picks": 249,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_CCAP_EH_20250101T060000_20250101T120000.mseed",
+    "picks": 789,
+    "status": "processed"
+  },
+  {
+    "file": "inputs/availability_extension/waveforms/IV_COLB_HH_20220201T000000_20220201T060000.mseed",
+    "picks": 114,
+    "status": "processed"
+  }
+]

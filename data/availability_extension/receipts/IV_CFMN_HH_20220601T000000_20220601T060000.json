@@ -1,0 +1,39 @@
+{
+  "request": "IV_CFMN_HH_20220601T000000_20220601T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CFMN",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2022-05-31T23:59:30.000000Z",
+    "end": "2022-06-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T17:20:53.681315+00:00",
+  "status": "downloaded",
+  "bytes": 16140288,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-05-31T23%3A59%3A30.000000Z&end=2022-06-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CFMN_HH_20220601T000000_20220601T060000.mseed",
+  "sha256": "897464e69b3d42c1ebb232647090408afd03c0ba119b20405f2d32f93f04cdfb",
+  "segments": [
+    {
+      "channel": "IV.CFMN..HHE",
+      "start": 1654041568.02,
+      "end": 1654063231.54,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CFMN..HHN",
+      "start": 1654041569.99,
+      "end": 1654063231.3200002,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CFMN..HHZ",
+      "start": 1654041569.26,
+      "end": 1654063231.54,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 117.45127528102603
+}

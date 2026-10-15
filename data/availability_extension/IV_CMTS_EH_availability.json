@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "net": "IV",
+    "sta": "CMTS",
+    "cha": "EH?",
+    "start": "2022-01-21T00:00:00.000000Z",
+    "end": "2025-03-21T00:00:00.000000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "utc": "2026-10-15T16:32:24.957822+00:00",
+  "file": "inputs/availability_extension/IV_CMTS_EH.txt",
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=CMTS&cha=EH%3F&start=2022-01-21T00%3A00%3A00.000000Z&end=2025-03-21T00%3A00%3A00.000000Z&format=text&show=latestupdate",
+  "http": 200,
+  "bytes": 191750,
+  "sha256": "c4915387797f1f5617b33b45625b14f4dc28a859fca73658205613fcff47fa56"
+}

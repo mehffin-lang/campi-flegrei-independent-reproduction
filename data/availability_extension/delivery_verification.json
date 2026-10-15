@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-15T17:37:46.787847+00:00",
+  "build_passed": true,
+  "report_pages": 66,
+  "comparison_pages": 19,
+  "panel_views": 63,
+  "partial": 53,
+  "unreproduced": 10,
+  "visually_inspected": [
+    "figures/coverage_availability_extension.png",
+    "figures/figure_S6_availability_extension.png",
+    "figures/observational_velocity_diagnostic.png",
+    "report/report.pdf page 14",
+    "report/report.pdf page 26",
+    "report/comparison.pdf page 10"
+  ],
+  "findings": "Labels, fixed color scale, retained depth outliers, captions and diagnostic provenance are legible. Published reference and own map remain visibly separate. Narrow file-reference text was reduced after visual inspection. Automated order, panel count and reference-image separation checks passed.",
+  "files": {
+    "report/report.pdf": "91d8ee48313836b84de02e7d0fde0913f52864104a90ecb0771a1d0339b94f22",
+    "report/comparison.pdf": "aa155e45a80b6803e4c6bb666fcb2f1bce59ba01edf6769b78f6ea3a11c2e663"
+  },
+  "scientific_profile_accepted": false
+}

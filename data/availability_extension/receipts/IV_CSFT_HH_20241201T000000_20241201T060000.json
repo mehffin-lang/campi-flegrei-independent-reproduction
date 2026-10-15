@@ -1,0 +1,39 @@
+{
+  "request": "IV_CSFT_HH_20241201T000000_20241201T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CSFT",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2024-11-30T23:59:30.000000Z",
+    "end": "2024-12-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T17:04:40.224744+00:00",
+  "status": "downloaded",
+  "bytes": 15557120,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2024-11-30T23%3A59%3A30.000000Z&end=2024-12-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CSFT_HH_20241201T000000_20241201T060000.mseed",
+  "sha256": "994d7c34dd0674da6c51f270f236122db038b7bbd2cccbade496b1ad253354f6",
+  "segments": [
+    {
+      "channel": "IV.CSFT..HHE",
+      "start": 1733011168.32,
+      "end": 1733032830.4599998,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CSFT..HHN",
+      "start": 1733011168.84,
+      "end": 1733032831.1,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CSFT..HHZ",
+      "start": 1733011169.76,
+      "end": 1733032830.62,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 131.67781732592266
+}

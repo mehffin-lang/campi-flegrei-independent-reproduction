@@ -1,0 +1,10 @@
+{
+  "request": "IV_CPOZ_HH_20220128T060000_20220128T120000",
+  "status": "prior_success_unverified_gaps",
+  "previous_request": "IV_CPOZ_20220128T060000_20220128T120000",
+  "previous_file": "inputs/continuation/waveforms/IV_CPOZ_20220128T060000_20220128T120000.mseed",
+  "previous_sha256": "a7b000ef68b8600e05437e549af90fb503596ca1c7677007a3677617ade1e6ae",
+  "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-28T05%3A59%3A30.000000Z&end=2022-01-28T12%3A00%3A30.000000Z",
+  "advertised_missing_channel_seconds": 0.029999971389770508,
+  "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+}

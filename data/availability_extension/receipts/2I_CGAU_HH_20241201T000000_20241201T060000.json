@@ -1,0 +1,39 @@
+{
+  "request": "2I_CGAU_HH_20241201T000000_20241201T060000",
+  "parameters": {
+    "net": "2I",
+    "sta": "CGAU",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2024-11-30T23:59:30.000000Z",
+    "end": "2024-12-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T16:52:31.629129+00:00",
+  "status": "downloaded",
+  "bytes": 11231232,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CGAU&loc=%2A&cha=HH%3F&start=2024-11-30T23%3A59%3A30.000000Z&end=2024-12-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/2I_CGAU_HH_20241201T000000_20241201T060000.mseed",
+  "sha256": "0a6975f43cfcd1455e9722ea606dd7ed172f7247abf48a9a7cf203ec8e6df21f",
+  "segments": [
+    {
+      "channel": "2I.CGAU..HHZ",
+      "start": 1733011169.78,
+      "end": 1733032830.44,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "2I.CGAU..HHN",
+      "start": 1733011169.09,
+      "end": 1733032830.41,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "2I.CGAU..HHE",
+      "start": 1733011168.52,
+      "end": 1733032832.16,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 85.11745060503017
+}

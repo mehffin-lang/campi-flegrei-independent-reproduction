@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "net": "IV",
+    "sta": "CQUE",
+    "cha": "HH?",
+    "start": "2022-01-21T00:00:00.000000Z",
+    "end": "2025-03-21T00:00:00.000000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "utc": "2026-10-15T16:32:01.629634+00:00",
+  "file": "inputs/availability_extension/IV_CQUE_HH.txt",
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=CQUE&cha=HH%3F&start=2022-01-21T00%3A00%3A00.000000Z&end=2025-03-21T00%3A00%3A00.000000Z&format=text&show=latestupdate",
+  "http": 200,
+  "bytes": 40820,
+  "sha256": "712eeb4e8372c6901aee282e73f6ea72f90d41295c6e688645f50d7eccffe1f8"
+}

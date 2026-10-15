@@ -1,0 +1,10 @@
+{
+  "request": "IV_CMSN_HH_20240301T000000_20240301T060000",
+  "status": "prior_success_unverified_gaps",
+  "previous_request": "IV_CMSN_20240301T000000_20240301T060000",
+  "previous_file": "inputs/continuation/waveforms/IV_CMSN_20240301T000000_20240301T060000.mseed",
+  "previous_sha256": "cd9d71d49abbe593c07a22d2510eb2a8f1f99afda3b4d21b3bd9226dbedf2730",
+  "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2024-02-29T23%3A59%3A30.000000Z&end=2024-03-01T06%3A00%3A30.000000Z",
+  "advertised_missing_channel_seconds": 0.03000020980834961,
+  "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+}

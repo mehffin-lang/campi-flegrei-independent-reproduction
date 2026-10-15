@@ -1,0 +1,5 @@
+{
+  "catalog": "data/availability_extension/catalog_december",
+  "profile": "data/availability_extension/velocity_december",
+  "locations": "locations_canonical"
+}

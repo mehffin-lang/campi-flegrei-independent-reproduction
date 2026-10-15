@@ -1,0 +1,103 @@
+[
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/process_availability_extension.py",
+      "--freeze",
+      "--workers",
+      "4"
+    ],
+    "returncode": 0,
+    "log": "tmp/availability_extension/rebuild_catalog_december_process_availability_extension.py.log",
+    "started_utc": "2026-10-15T17:10:20.643000+00:00",
+    "finished_utc": "2026-10-15T17:17:45.712392+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/prepare_observational_selection.py",
+      "--observations",
+      "data/availability_extension/catalog_december"
+    ],
+    "returncode": 0,
+    "log": "tmp/availability_extension/rebuild_catalog_december_prepare_observational_selection.py.log",
+    "started_utc": "2026-10-15T17:17:45.713168+00:00",
+    "finished_utc": "2026-10-15T17:18:44.455883+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/estimate_observational_profile.py",
+      "--observations",
+      "data/availability_extension/catalog_december",
+      "--selection",
+      "data/availability_extension/catalog_december/selection",
+      "--output",
+      "data/availability_extension/velocity_december"
+    ],
+    "returncode": 0,
+    "log": "tmp/availability_extension/rebuild_catalog_december_estimate_observational_profile.py.log",
+    "started_utc": "2026-10-15T17:18:44.456687+00:00",
+    "finished_utc": "2026-10-15T17:19:55.959969+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/validate_observational_profile.py",
+      "--profile",
+      "data/availability_extension/velocity_december"
+    ],
+    "returncode": 0,
+    "log": "tmp/availability_extension/rebuild_catalog_december_validate_observational_profile.py.log",
+    "started_utc": "2026-10-15T17:19:55.960871+00:00",
+    "finished_utc": "2026-10-15T17:19:57.765626+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/locate_observational_profile.py",
+      "--observations",
+      "data/availability_extension/catalog_december",
+      "--profile",
+      "data/availability_extension/velocity_december",
+      "--result-name",
+      "locations_canonical"
+    ],
+    "returncode": 0,
+    "log": "tmp/availability_extension/rebuild_catalog_december_locate_observational_profile.py.log",
+    "started_utc": "2026-10-15T17:19:57.766485+00:00",
+    "finished_utc": "2026-10-15T17:23:34.283297+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/plot_observational_profile.py"
+    ],
+    "returncode": 0,
+    "log": "tmp/availability_extension/rebuild_catalog_december_plot_observational_profile.py.log",
+    "started_utc": "2026-10-15T17:24:06.185896+00:00",
+    "finished_utc": "2026-10-15T17:24:16.850573+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/availability_report.py"
+    ],
+    "returncode": 0,
+    "log": "tmp/availability_extension/rebuild_catalog_december_availability_report.py.log",
+    "started_utc": "2026-10-15T17:24:16.851578+00:00",
+    "finished_utc": "2026-10-15T17:24:17.828915+00:00"
+  },
+  {
+    "command": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/build_documents.py",
+      "--clean",
+      "--live-acquisition"
+    ],
+    "returncode": 1,
+    "log": "tmp/availability_extension/rebuild_catalog_december_build_documents.py.log",
+    "started_utc": "2026-10-15T17:24:17.829794+00:00",
+    "finished_utc": "2026-10-15T17:25:25.277207+00:00"
+  }
+]

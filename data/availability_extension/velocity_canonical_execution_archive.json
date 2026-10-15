@@ -1,0 +1,6 @@
+{
+  "file": "data/availability_extension/velocity_canonical_execution_archive.tar.gz",
+  "bytes": 4151194,
+  "sha256": "127dd54e607ddf400171923299a77cddf4316db1c2f575ff9f09cf5db5f100f3",
+  "role": "Preserved own execution inputs, iteration/residual logs and outputs; historical, not a newly accepted fit."
+}

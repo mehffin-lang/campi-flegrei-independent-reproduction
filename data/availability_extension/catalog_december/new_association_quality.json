@@ -1,0 +1,13 @@
+{
+  "new_associations": 25,
+  "causal": 22,
+  "calibration_eligible": 0,
+  "criteria_failed_counts": {
+    "fewer_than_four_P": 21,
+    "fewer_than_two_S": 0,
+    "ten_or_fewer_total_phases": 23,
+    "azimuth_gap_at_least_180": 18,
+    "noncausal": 3
+  },
+  "note": "Criteria overlap. No threshold relaxed; these are project-selected quality screens, not manual review."
+}

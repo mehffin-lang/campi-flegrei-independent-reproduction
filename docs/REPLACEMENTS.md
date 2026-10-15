@@ -162,3 +162,37 @@ No RAN acquisition, Calò–Tramelli search, author contact, synthetic empirical
 data, or author-derived event substitution was performed. See
 [EIDA_CONTINUATION.md](EIDA_CONTINUATION.md) and the executed rebuild receipt for
 current counts, commands, failed scientific checks and remaining work.
+
+
+## 15 October 2026 UTC: availability-led retrieval and observational 1D fitting
+
+The earlier `data/eida_continuation` cohort and every earlier model remain intact.
+New acquisition receipts, detailed advertised/actual intervals, station crosswalk,
+metadata QA, and storage estimates are under `data/availability_extension`.
+Request counts are no longer treated as a file or coverage target. New raw inputs
+remain under ignored `inputs/availability_extension`, with exact restore receipts.
+No existing original observations, paper PDFs, archives, weights or reference grid
+were replaced.
+
+`velocity_existing`, `velocity_expanded`, and `velocity_canonical` preserve the
+initial experiments, input-order sensitivity, and corrected canonical-order
+experiments. `current_analysis.json` selects the subsequent frozen cohort and
+profile used in the documents. The 32/64-bit precision diagnostic identifies an
+actual direct/refracted ray-path switch; its unchanged arithmetic reproduces the
+old saved outputs. Historical solver inputs/logs are compressed in execution
+archives. Provisional fitted values never replace initialization in provenance.
+
+The existing report and comparison PDFs, their generated sources, Table S1,
+Figures S1/S6 selections, panel records, and README are updated. The earlier Figure S6
+image remains under its previous filename; the new image is
+`figures/figure_S6_availability_extension.pdf`. A new observed-fit/residual
+validation diagnostic appears only in post-supplement documentation. Figures
+2–4 and other prior relocation/magnitude/mechanism panels retain explicit earlier
+checkpoint identities; they are not relabeled as calculations with the new fit.
+No panel is promoted to a validated reproduction.
+
+Live retrieval and picking continue separately from the frozen report checkpoint.
+The watcher records its local process and attempts a new, distinct numerical
+checkpoint after the collector stops under its documented storage/service rules.
+Future completion is not asserted. See `docs/AVAILABILITY_EXTENSION.md` and the
+executed rebuild logs for actual results and failures.

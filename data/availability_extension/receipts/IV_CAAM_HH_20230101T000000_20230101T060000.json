@@ -1,0 +1,79 @@
+{
+  "request": "IV_CAAM_HH_20230101T000000_20230101T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CAAM",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2022-12-31T23:59:30.000000Z",
+    "end": "2023-01-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T16:35:39.908093+00:00",
+  "status": "downloaded",
+  "bytes": 15944704,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=%2A&cha=HH%3F&start=2022-12-31T23%3A59%3A30.000000Z&end=2023-01-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CAAM_HH_20230101T000000_20230101T060000.mseed",
+  "sha256": "f4f1cb9339eea1006ba85b684d76a556d4680d670cb4c306bd15029e6d896f61",
+  "segments": [
+    {
+      "channel": "IV.CAAM..HHE",
+      "start": 1672531169.9299998,
+      "end": 1672533842.1200001,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHE",
+      "start": 1672533851.0,
+      "end": 1672550642.06,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHE",
+      "start": 1672550651.0,
+      "end": 1672552832.06,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHN",
+      "start": 1672531168.5100002,
+      "end": 1672533842.1200001,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHN",
+      "start": 1672533851.0,
+      "end": 1672550642.06,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHN",
+      "start": 1672550651.0,
+      "end": 1672552830.1799998,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHZ",
+      "start": 1672531167.88,
+      "end": 1672533842.1200001,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHZ",
+      "start": 1672533851.0,
+      "end": 1672550642.06,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHZ",
+      "start": 1672550651.0,
+      "end": 1672552830.5200002,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 95.19135828898288,
+  "duplicate_of": [
+    "inputs/continuation/waveforms/IV_CAAM_20230101T000000_20230101T060000.mseed"
+  ],
+  "new_raw_coverage": false
+}

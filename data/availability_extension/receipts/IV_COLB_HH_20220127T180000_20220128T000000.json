@@ -1,0 +1,10 @@
+{
+  "request": "IV_COLB_HH_20220127T180000_20220128T000000",
+  "status": "prior_success_unverified_gaps",
+  "previous_request": "IV_COLB_20220127T180000_20220128T000000",
+  "previous_file": "inputs/continuation/waveforms/IV_COLB_20220127T180000_20220128T000000.mseed",
+  "previous_sha256": "57ef29af604705d83ee352ebc11027ba307a9478e4a503225c04615a408d866c",
+  "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-27T17%3A59%3A30.000000Z&end=2022-01-28T00%3A00%3A30.000000Z",
+  "advertised_missing_channel_seconds": 17.84998321533203,
+  "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-15T17:36:23.677216+00:00",
+  "states": {
+    "downloaded": 75,
+    "pending": 73555,
+    "prior_failed": 2,
+    "prior_no_data": 34,
+    "prior_success_unverified_gaps": 88
+  },
+  "downloaded_bytes": 893450240,
+  "new_union_channel_hours": 1125.2961361128755,
+  "union_channel_hours": 14610.373838885162,
+  "remaining_available_channel_hours": 1210193.8620675453,
+  "measured_bytes_per_new_channel_second": 220.5469424959688,
+  "estimated_remaining_bytes": 960856401982.987,
+  "free_bytes": 144609132544,
+  "estimate_note": "Measured compressed bytes per incremental channel second; includes transfer context and overlaps; station/epoch variability is not a confidence interval.",
+  "scope": "Original continuous EIDA observations; availability gaps and unavailable station epochs remain excluded."
+}

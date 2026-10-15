@@ -137,14 +137,14 @@
       "S1"
     ],
     "independent_files": [
-      "figures/coverage_eida_followup.pdf"
+      "figures/coverage_availability_extension.pdf"
     ],
     "missing": "",
-    "caption": "1285 continuous-observation files, 26 station names, 13467.933 union channel-hours. All 14 known event-selected snippets excluded. 13467.933 response-covered channel-hours; requested, failed and empty spans never count as observed. Partial/provisional: sparse observations, alternative association profile, unreviewed phases and unresolved model/location accuracy. Numerical generation is not agreement with the publication.",
+    "caption": "1,327 eligible continuous files, 14,080.521 processed channel-hours, 26 stations. Actual merged intervals only; ticks identify starts, not duration. Failed and pending requests and event-selected snippets are excluded. Large temporal/network gaps remain.",
     "file_labels": [
       "S1; current provisional independent calculation"
     ],
-    "comparison_caption": "1285 continuous-observation files, 26 station names, 13467.933 union channel-hours. All 14 known event-selected snippets excluded. 13467.933 response-covered channel-hours; requested, failed and empty spans never count as observed."
+    "comparison_caption": "1,327 eligible continuous files, 14,080.521 processed channel-hours, 26 stations. Actual merged intervals only; ticks identify starts, not duration. Failed and pending requests and event-selected snippets are excluded. Large temporal/network gaps remain."
   },
   {
     "figure": "S2",
@@ -270,14 +270,14 @@
       "S6/easting-depth"
     ],
     "independent_files": [
-      "figures/figure_S6_eida_followup.pdf"
+      "figures/figure_S6_availability_extension.pdf"
     ],
     "missing": "",
-    "caption": "1435 own VELEST locations pass numerical pick/RMS/gap filters. Full precision paths differ by up to 0.850 km in depth; regional starts by 1.520 km. Uniform velocity-layer damping 100 is a disclosed alternative after the unconstrained fit failed the positive-bulk-modulus check. No scientifically accepted catalog. Partial/provisional: sparse observations, alternative association profile, unreviewed phases and unresolved model/location accuracy. Numerical generation is not agreement with the publication.",
+    "caption": "1,414 own five-pass locations pass numerical filters. Independent alternative-initialized profile; failed calendar holdout, provisional only. This calculation is separate from the prior grid-initialized TomoDD checkpoint. Depth color limits 0\u20135 km, integer ticks, jet_r, magenta over-range; no depth clipping. Uniform point area is a display choice.",
     "file_labels": [
       "S6; current provisional independent calculation"
     ],
-    "comparison_caption": "1435 own VELEST locations pass numerical pick/RMS/gap filters. Full precision paths differ by up to 0.850 km in depth; regional starts by 1.520 km. Uniform velocity-layer damping 100 is a disclosed alternative after the unconstrained fit failed the positive-bulk-modulus check. No scientifically accepted catalog."
+    "comparison_caption": "1,414 own five-pass locations pass numerical filters. Independent alternative-initialized profile; failed calendar holdout, provisional only. This calculation is separate from the prior grid-initialized TomoDD checkpoint. Depth color limits 0\u20135 km, integer ticks, jet_r, magenta over-range; no depth clipping. Uniform point area is a display choice."
   },
   {
     "figure": "S7",

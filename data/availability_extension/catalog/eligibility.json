@@ -1,0 +1,22 @@
+{
+  "excluded_files": [
+    "inputs/local_inspection/20220121T014220_IV_CFB1_HHZ.mseed",
+    "inputs/local_inspection/20220121T032217_IV_CROS_EHE.mseed",
+    "inputs/local_inspection/20220316T101444_IV_CFB3_HHZ.mseed",
+    "inputs/local_inspection/20230714T110024_IV_V0102_EHE.mseed",
+    "inputs/local_inspection/20240314T162713_IV_V0105_EHE.mseed",
+    "inputs/local_inspection/20240513T131843_IV_CRUS_EHE.mseed",
+    "inputs/local_inspection/20250313T100251_IV_CMDP_HHE.mseed",
+    "inputs/resumption/S4_CSOB_20240520.mseed",
+    "inputs/waveforms/E1_CAAM.mseed",
+    "inputs/waveforms/E1_COLB.mseed",
+    "inputs/waveforms/E2_CAAM.mseed",
+    "inputs/waveforms/E2_COLB.mseed",
+    "inputs/waveforms/E3_CAAM.mseed",
+    "inputs/waveforms/E3_COLB.mseed"
+  ],
+  "baseline_picks_contain_excluded_files": false,
+  "current_picks_contain_excluded_files": false,
+  "excluded_coverage_rows": 18,
+  "rule": "Continuous-file checkpoint; excludes every known event-selected snippet.\n\nPrior own daily associations are reused only for exact numerical input, station\ntable and configuration matches. Inference caches also verify waveform/model/\nimplementation hashes. No paper result or external event catalog is read.\n"
+}

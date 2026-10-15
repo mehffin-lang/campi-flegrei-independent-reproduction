@@ -1,0 +1,10 @@
+{
+  "request": "IV_CCAP_EH_20240101T000000_20240101T060000",
+  "status": "prior_success_unverified_gaps",
+  "previous_request": "IV_CCAP_20240101T000000_20240101T060000",
+  "previous_file": "inputs/continuation/waveforms/IV_CCAP_20240101T000000_20240101T060000.mseed",
+  "previous_sha256": "45762ad1eecad9df9b7070187cb85988d71a34ac57a5e27d0e8e875f2cf8e1cc",
+  "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2023-12-31T23%3A59%3A30.000000Z&end=2024-01-01T06%3A00%3A30.000000Z",
+  "advertised_missing_channel_seconds": 0.059999942779541016,
+  "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+}

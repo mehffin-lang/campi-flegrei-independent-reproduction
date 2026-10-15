@@ -1,0 +1,6 @@
+{
+  "file": "data/availability_extension/velocity_existing_execution_archive.tar.gz",
+  "bytes": 4135268,
+  "sha256": "1f5821d49aa4d5c14de58ace2258b028f780c617c88f30936bd70d9f0c42dcf4",
+  "role": "Preserved own execution inputs, iteration/residual logs and outputs; historical, not a newly accepted fit."
+}

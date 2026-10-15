@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-15T17:14:58.127941+00:00",
+  "reason": "Transfer collection, picking and coverage tracking to detached local sessions that persist after the interactive command exits. This is a continuation, not a service failure or completion.",
+  "old_pids": {
+    "watcher": 3317291,
+    "picker": 3304599,
+    "collector": 3307849
+  },
+  "new_pids": {
+    "collector": 3323386,
+    "picker": 3323387,
+    "watcher": 3325726
+  },
+  "commands": {
+    "collector": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/availability_extension.py",
+      "retrieve"
+    ],
+    "picker": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/pick_available_eida.py"
+    ],
+    "watcher": [
+      "/home/mehffin/campi-flegrei-independent-reproduction/.venv/bin/python",
+      "scripts/watch_available_eida.py",
+      "--collector-pid",
+      "3323386"
+    ]
+  },
+  "recovered_completed": [],
+  "incomplete_unprocessed": [
+    {
+      "file": "inputs/availability_extension/waveforms/IV_CSFT_HH_20220501T000000_20220501T060000.part",
+      "bytes": 5663721,
+      "sha256": "59ac1a2abeac48034bc538acc08bd248ff839b178e85580f5dbfc14cfe9914d3"
+    },
+    {
+      "file": "inputs/availability_extension/waveforms/IV_CSOB_HH_20220501T000000_20220501T060000.part",
+      "bytes": 3480553,
+      "sha256": "4ccf1879e20143618bd5f9742ad0b0876870cb42df84aff06b1c79eb6b6e869a"
+    }
+  ],
+  "protected_reserve_bytes": 42949672960,
+  "additional_processing_headroom_bytes": 8589934592,
+  "collector_sha256": "4e39d72e9c3a77418ff8fca004a1c40c63634a8274864bf19ff397eab5a44186",
+  "watcher_restart": {
+    "old_pid": 3323388,
+    "new_pid": 3325726,
+    "utc": "2026-10-15T17:16:54.140100+00:00",
+    "reason": "Collector now writes coverage after each batch; watcher reads those snapshots to avoid concurrent table writers. Collector and scientific processing were not interrupted."
+  }
+}

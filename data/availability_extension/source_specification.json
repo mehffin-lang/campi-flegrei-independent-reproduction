@@ -1,0 +1,27 @@
+{
+  "period": [
+    "2022-01-21T00:00:00Z",
+    "2025-03-21T00:00:00Z"
+  ],
+  "end_convention": "exclusive; includes March 20",
+  "paper": "tanmodel.pdf",
+  "supplement": "tanmodelsupp.pdf",
+  "paper_sha256": "9651e54e369eed320504ffe9b7a04807c90f687d0b479f806799e4608ded9740",
+  "supplement_sha256": "47f878daf47fef12d3ed76f09bfb796db5a578869d7d3323f357998159bdb1aa",
+  "written_counts": {
+    "broadband": 23,
+    "short_period": 9,
+    "accelerometer": 16
+  },
+  "candidate_source": "inputs/models/stations.csv",
+  "candidate_sha256": "46fd31e02a13a2a4d493cc6cdd7fb0e97487a498cfdebdfc4b0c4e8bf85aeb7a",
+  "classes": {
+    "waveforms": "original observations",
+    "StationXML": "public metadata",
+    "released station list": "permitted metadata; membership uncertainty retained"
+  },
+  "baseline_files": 1285,
+  "baseline_bytes": 10283341312,
+  "raw_s": 49653978.30834079,
+  "union_s": 48546279.72998023
+}

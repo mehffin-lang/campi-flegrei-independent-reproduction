@@ -1,6 +1,36 @@
 # Independent Campi Flegrei reproduction
 
-The current EIDA checkpoint contains **1,285 eligible continuous files, 26 station names, 13,467.933 union channel-hours, 246,668 picks and 3,271 provisional GaMMA associations**. All 14 known event-selected snippets are excluded from detection and exposure. The continuation made 276 new requests: **275 downloads (3.481 GB), one HTTP 204, and no new failures or duplicate requests**. There are **73,641 pending requests**; full-period retrieval is unfinished, not demonstrated inaccessible. RAN and the exact Calò–Tramelli profile remain deferred as instructed.
+<!-- availability-current -->
+The availability-led extension is the current **provisional** checkpoint.
+It processes **1,327 eligible files, 14,080.521 channel-hours,
+256,720 picks and 3,296 associations**.
+The new independent 1D velocity fit uses 46 balanced pre-2025 training
+events and 62 separate 2025 holdout events. Training RMS decreases
+from 0.2082 to 0.1759 s;
+holdout RMS changes from 0.2406 to
+0.2778 s. **The model is not accepted.**
+Figure S1 shows expanded coverage; Figure S6 and Table S1 show the new provisional fit/location experiment;
+the other relocated, magnitude and mechanism panels retain their older checkpoint.
+
+Public retrieval continues separately with a fixed 40 GiB free-space reserve.
+At the recorded snapshot, 71 new files add
+1,059.305 raw union channel-hours. Later receipts and picking
+are not automatically counted as associated or calibrated observations. Remaining
+advertised coverage is approximately 1,210,260
+channel-hours (0.96 TB at the measured compression rate).
+No full-period coverage or accepted structural result is claimed.
+
+- [Current input/model pointer](data/availability_extension/current_analysis.json),
+  [source and resume procedure](docs/AVAILABILITY_EXTENSION.md),
+  [coverage and gaps](data/availability_extension/coverage_summary.json).
+- Current verified-output rebuild: `.venv/bin/python scripts/rebuild_availability_extension.py`.
+- For a new cohort and complete numerical rerun, use that command with
+  `--run-analysis --catalog NEW_PATH --profile NEW_PATH`; preserve earlier versions.
+
+The following paragraphs describe the **preserved earlier EIDA checkpoint**.
+<!-- /availability-current -->
+
+The preserved 14 October EIDA checkpoint contains **1,285 eligible continuous files, 26 station names, 13,467.933 union channel-hours, 246,668 picks and 3,271 provisional GaMMA associations**. All 14 known event-selected snippets are excluded from detection and exposure. The continuation made 276 new requests: **275 downloads (3.481 GB), one HTTP 204, and no new failures or duplicate requests**. There are **73,641 pending requests**; full-period retrieval is unfinished, not demonstrated inaccessible. RAN and the exact Calò–Tramelli profile remain deferred as instructed.
 
 Independent calibration selected 552 events; 1,435 whole-catalog locations pass the numerical filters. Both fixed-grid TomoDD rounds ran and retain **1,050 provisional events**, compared with 123 previously. There are **352 conditional regional SVD estimates and 868 provisional amplitude-inversion magnitudes**. No calibrated structural result is scientifically accepted: identical-input precision paths differ by up to 0.85 km in depth, regional starts by 1.52 km, and the iteration-stability gate fails. Held-out RMS falls from 0.2403 to 0.2081 s, but this same-swarm check does not validate absolute depths. The new trial has 16 events deeper than 5 km; none is hidden by fixed plot colors. Numerical growth is not demonstrated improvement in location accuracy.
 
@@ -18,7 +48,7 @@ The CAAM/COLB scan covers 140.656 common hours and returns 1,843 unconfirmed thr
 
 Previous numerical cohorts, figures and assessment remain preserved. Their counts are not additive. The current starting grid is the explicitly authorized Tan-distributed, Battaglia-attributed resource; its original bytes, source and dimensional discrepancy are recorded. It is not Tan's fitted model. The failed negative-bulk-modulus calibration and generic solver failures are preserved in hashed archives.
 
-## Rebuild
+## Rebuild the preserved 14 October checkpoint
 
 Use the repository's Python environments and generic method dependencies described in [EIDA_CONTINUATION.md](docs/EIDA_CONTINUATION.md), [CONTINUATION.md](docs/CONTINUATION.md) and [GRID_WORKFLOW.md](docs/GRID_WORKFLOW.md). From the project root:
 

@@ -1,0 +1,61 @@
+{
+  "request": "IV_CPOZ_HH_20220201T000000_20220201T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CPOZ",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2022-01-31T23:59:30.000000Z",
+    "end": "2022-02-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T16:41:31.278702+00:00",
+  "status": "downloaded",
+  "bytes": 8194560,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-31T23%3A59%3A30.000000Z&end=2022-02-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CPOZ_HH_20220201T000000_20220201T060000.mseed",
+  "sha256": "dd6e251cd3660c50e17623714b7f30f02120085bac637eb2fca876aa02a3fcd6",
+  "segments": [
+    {
+      "channel": "IV.CPOZ..HHE",
+      "start": 1643673569.8,
+      "end": 1643692706.0,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CPOZ..HHE",
+      "start": 1643692711.0,
+      "end": 1643695230.25,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CPOZ..HHN",
+      "start": 1643673569.5,
+      "end": 1643692706.0,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CPOZ..HHN",
+      "start": 1643692711.0,
+      "end": 1643695231.6000001,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CPOZ..HHZ",
+      "start": 1643673569.43,
+      "end": 1643692706.0,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CPOZ..HHZ",
+      "start": 1643692711.0,
+      "end": 1643695230.2599998,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 69.44514331698883,
+  "duplicate_of": [
+    "inputs/continuation/waveforms/IV_CPOZ_20220201T000000_20220201T060000.mseed"
+  ],
+  "new_raw_coverage": false
+}

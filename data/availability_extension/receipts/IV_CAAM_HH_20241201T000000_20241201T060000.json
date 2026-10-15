@@ -1,0 +1,93 @@
+{
+  "request": "IV_CAAM_HH_20241201T000000_20241201T060000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CAAM",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2024-11-30T23:59:30.000000Z",
+    "end": "2024-12-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T16:55:23.071716+00:00",
+  "status": "downloaded",
+  "bytes": 15771136,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=%2A&cha=HH%3F&start=2024-11-30T23%3A59%3A30.000000Z&end=2024-12-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CAAM_HH_20241201T000000_20241201T060000.mseed",
+  "sha256": "9e0a6a843b2c20ba7462b490f36df22b8a2609316940da467da2fc889142aa38",
+  "segments": [
+    {
+      "channel": "IV.CAAM..HHE",
+      "start": 1733011169.0,
+      "end": 1733017171.86,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHE",
+      "start": 1733017181.0,
+      "end": 1733019871.4599998,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHE",
+      "start": 1733019881.0,
+      "end": 1733029109.4599998,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHE",
+      "start": 1733029118.0,
+      "end": 1733032831.95,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHN",
+      "start": 1733011168.76,
+      "end": 1733017171.86,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHN",
+      "start": 1733017181.0,
+      "end": 1733019871.4599998,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHN",
+      "start": 1733019881.0,
+      "end": 1733029109.4599998,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHN",
+      "start": 1733029118.0,
+      "end": 1733032831.47,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHZ",
+      "start": 1733011168.18,
+      "end": 1733017171.86,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHZ",
+      "start": 1733017181.0,
+      "end": 1733019871.4599998,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHZ",
+      "start": 1733019881.0,
+      "end": 1733029109.2800002,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHZ",
+      "start": 1733029118.0,
+      "end": 1733032830.15,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 72.13537149701733
+}

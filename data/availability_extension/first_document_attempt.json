@@ -1,0 +1,6 @@
+{
+  "outcome": "PDF compilation succeeded but protected-file check rejected the build.",
+  "reason": "The S1 coverage plot and report generator were updated while this first document build was running. The input/model computation was already complete. Finish those edits, regenerate from saved numerical outputs, and rerun the document checks without editing protected files.",
+  "record": "numerical_execution_december.json",
+  "scientific_computation_repeated": false
+}

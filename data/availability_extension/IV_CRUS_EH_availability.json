@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "net": "IV",
+    "sta": "CRUS",
+    "cha": "EH?",
+    "start": "2022-01-21T00:00:00.000000Z",
+    "end": "2025-03-21T00:00:00.000000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "utc": "2026-10-15T16:32:34.376474+00:00",
+  "file": "inputs/availability_extension/IV_CRUS_EH.txt",
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=CRUS&cha=EH%3F&start=2022-01-21T00%3A00%3A00.000000Z&end=2025-03-21T00%3A00%3A00.000000Z&format=text&show=latestupdate",
+  "http": 200,
+  "bytes": 5460,
+  "sha256": "8bb6779c4708fbe4b53477c304bbd6e16b61c0e9b1fb0febd2c28c332ea255bf"
+}

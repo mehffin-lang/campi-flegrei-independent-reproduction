@@ -1,0 +1,40 @@
+{
+  "window": [
+    "2024-12-01T00:00:00Z",
+    "2024-12-01T06:00:00Z"
+  ],
+  "processed_channels": 63,
+  "processed_station_count": 21,
+  "processed_channel_hours": 377.97726666635936,
+  "advertised_stations": [
+    "2I.CGAU",
+    "2I.CLAC",
+    "2I.CREM",
+    "2I.CSOC",
+    "IV.CAAM",
+    "IV.CBAC",
+    "IV.CBAG",
+    "IV.CCAP",
+    "IV.CFMN",
+    "IV.CMIS",
+    "IV.CMSN",
+    "IV.CNIS",
+    "IV.COLB",
+    "IV.CPIS",
+    "IV.CPOZ",
+    "IV.CQUE",
+    "IV.CSFT",
+    "IV.CSOB",
+    "IV.CSTH",
+    "IV.CUMA",
+    "IV.PTMR"
+  ],
+  "stations_without_advertised_records_in_window": [
+    "IV.CAWE",
+    "IV.CFB1",
+    "IV.CFB3",
+    "IV.CMTS",
+    "IV.CRUS"
+  ],
+  "source": "Original public continuous observations; calendar/metadata-selected window, not earthquake-catalog selection."
+}

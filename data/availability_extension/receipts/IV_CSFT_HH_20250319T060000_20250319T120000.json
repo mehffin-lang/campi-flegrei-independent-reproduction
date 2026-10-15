@@ -1,0 +1,10 @@
+{
+  "request": "IV_CSFT_HH_20250319T060000_20250319T120000",
+  "status": "prior_success_unverified_gaps",
+  "previous_request": "IV_CSFT_20250319T060000_20250319T120000",
+  "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250319T060000_20250319T120000.mseed",
+  "previous_sha256": "50a119decc714c9d2db38b82de855cc26b27828a209d04b85117862226071995",
+  "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-19T05%3A59%3A30.000000Z&end=2025-03-19T12%3A00%3A30.000000Z",
+  "advertised_missing_channel_seconds": 0.3299996852874756,
+  "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+}

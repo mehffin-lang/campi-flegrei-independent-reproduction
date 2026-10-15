@@ -1,0 +1,27 @@
+{
+  "classification": "Own sparse continuous-observation inference and alternative-profile association; all known event-selected snippets excluded.",
+  "command": ".venv/bin/python scripts/process_availability_extension.py --freeze --workers 4",
+  "inference": "Compatible per-file caches are reused only after input/settings/model/implementation hash checks.",
+  "files": {
+    "data/availability_extension/catalog_december/input_jobs.json": "e5316809f4e9d0cfcd47a82a327e77c3471618bb758393954b006cb6e27da38a",
+    "data/availability_extension/catalog_december/picks.csv": "6cef48bfbb171f1010284f4f3ed61f066c3befc10b693e8f06f67d967e378574",
+    "data/availability_extension/catalog_december/initial_events.csv": "a68c63b47e720616109298642f9a156860d75df8226a2c19f00d2d52eb132c01",
+    "data/availability_extension/catalog_december/associations.csv": "fd984d304166afb1371584ea064d4eeaa3064e128cca0dc0a45fd20372e3e50a",
+    "data/availability_extension/catalog_december/analysis_summary.json": "d01574adab7489d2ecc8e5e1265d7857dba30f5ccc7f912dc774b39def0177e1",
+    "data/availability_extension/catalog_december/processed_coverage.csv": "d25b5f0c76bcc404ae5de147815fadf93b84af4c82dfcfc56bff50e49ee043df",
+    "data/availability_extension/catalog_december/processed_coverage_union.json": "59a94faaf93ea18ab4ce64a265a7814fb58c5dde25187c818efee78758168593",
+    "data/availability_extension/catalog_december/stations.csv": "83f3bd10a60529750a7ad3c9e7baa155cae39d33d1372554ee0cab0eb72960a7",
+    "data/availability_extension/catalog_december/alternative_starting_profile.csv": "3f65a13dd484418370b4bbd85302c3f434107464277c305c2a34c937b64eaaab",
+    "scripts/process_continuous.py": "9a07ce7f14d510f1496b53421b24d25d2bd4cb7efc88f63f208b033ea7c4b538",
+    "scripts/gamma_reproducibility.py": "e8a54c9848b11664184dc9893163cccbd83a519aae174b070873eed8fc527ff5",
+    "config/continuation_association.json": "b6f2be8b8e5e4e4026664ff149b49666eec946d352780ac5deb59689c1b26c01",
+    "data/extended/picks.csv": "c46e3fefcb07e559b8d2677cfe72bc0db503399bd6ad1b1f5ea75d3a17868919",
+    "inputs/models/phasenet_retrained.pt": "7f2b2d4345b82232ded67ea554794f7ff148bee235d50b1772f3516833500059",
+    "inputs/models/phasenet_retrained.json": "75cd9e14d6f2927d84ec684b44d815abffc6649f6d7751488ae9b1a35da45958",
+    "scripts/extend_calibration_observations.py": "bb94fcfc2a9cb732e294676fb895b56a7af154e4d3be53c32ba5a869e6d12ea7",
+    "scripts/reuse_own_associations.py": "0a49e3b188956250935a1148a98e9ead69936b35e3669804bafd09723ea74ce2",
+    "scripts/process_eida_followup.py": "8bef7cf271d2f1e4d75962b27b0dff25ee609fc44df49fbc4095448c307c1b8a",
+    "data/availability_extension/catalog_december/all_observation_inputs.json": "047b494112b6eb9c2ab5b840c032c917896eb9e92500fde171d7fe0ae94fa6e9",
+    "data/availability_extension/catalog_december/eligibility.json": "5f7744a8b9d01c7e9aae34023e151ddb1caa928c858831f8445a5f8695d7275b"
+  }
+}

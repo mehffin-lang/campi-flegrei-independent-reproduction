@@ -1,0 +1,23 @@
+{
+  "reason": "Controlled restart to prioritize coincident late-2024 public observations at newly deployed stations; no source declared inaccessible.",
+  "recovered_completed": [],
+  "incomplete_unprocessed": [
+    {
+      "file": "inputs/availability_extension/waveforms/IV_CSTH_HH_20220401T000000_20220401T060000.part",
+      "bytes": 13622784,
+      "sha256": "9feb1ac427a86be6d4bb7baab04ea7723e10fa0b66d9f6b993effc69ecb704c9"
+    },
+    {
+      "file": "inputs/availability_extension/waveforms/IV_CAAM_HH_20220501T000000_20220501T060000.part",
+      "bytes": 11766249,
+      "sha256": "301696ab5837b7d998148482c2e5997c141467ad5f79e8847a3dc1aaf2143488"
+    }
+  ],
+  "priority_window": [
+    "2024-12-01T00:00:00Z",
+    "2024-12-01T06:00:00Z"
+  ],
+  "selection": "First full calendar month after deployment of the four 2I stations, before the fixed 2025 holdout. No earthquake time/catalog used.",
+  "prior_process": 3298563,
+  "utc": "2026-10-15T16:52:26.180751+00:00"
+}

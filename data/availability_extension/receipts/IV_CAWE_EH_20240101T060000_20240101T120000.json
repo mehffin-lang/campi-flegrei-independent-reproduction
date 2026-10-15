@@ -1,0 +1,39 @@
+{
+  "request": "IV_CAWE_EH_20240101T060000_20240101T120000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CAWE",
+    "loc": "*",
+    "cha": "EH?",
+    "start": "2024-01-01T05:59:30.000000Z",
+    "end": "2024-01-01T12:00:30.000000Z"
+  },
+  "utc": "2026-10-15T16:38:46.304890+00:00",
+  "status": "downloaded",
+  "bytes": 9360384,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAWE&loc=%2A&cha=EH%3F&start=2024-01-01T05%3A59%3A30.000000Z&end=2024-01-01T12%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CAWE_EH_20240101T060000_20240101T120000.mseed",
+  "sha256": "647c5b4efa1a51ed1c247aff2ec583ed74a4a9f0fe50911449f07d518812f9c6",
+  "segments": [
+    {
+      "channel": "IV.CAWE..EHE",
+      "start": 1704088768.01,
+      "end": 1704110433.1799998,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAWE..EHN",
+      "start": 1704088766.66,
+      "end": 1704110431.1799998,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAWE..EHZ",
+      "start": 1704088769.53,
+      "end": 1704110432.6299999,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 63.78821704094298
+}

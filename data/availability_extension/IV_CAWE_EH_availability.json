@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "net": "IV",
+    "sta": "CAWE",
+    "cha": "EH?",
+    "start": "2022-01-21T00:00:00.000000Z",
+    "end": "2025-03-21T00:00:00.000000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "utc": "2026-10-15T16:31:45.487997+00:00",
+  "file": "inputs/availability_extension/IV_CAWE_EH.txt",
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=CAWE&cha=EH%3F&start=2022-01-21T00%3A00%3A00.000000Z&end=2025-03-21T00%3A00%3A00.000000Z&format=text&show=latestupdate",
+  "http": 200,
+  "bytes": 170560,
+  "sha256": "49b0a1e0c7c2cb0199bcf0788816b67bab1a6af18262a4e8a78a5cf60d9e3f98"
+}

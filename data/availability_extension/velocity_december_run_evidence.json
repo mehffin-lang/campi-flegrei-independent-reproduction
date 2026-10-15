@@ -1,0 +1,6 @@
+{
+  "file": "data/availability_extension/velocity_december_run_evidence.tar.gz",
+  "sha256": "50a491779e679b2f2b879ac13be2be6198e03403c8654c955f1cb7e1fcfdf201",
+  "bytes": 10286246,
+  "role": "Own observed arrivals, solver inputs, residuals, and logs; no author event solutions."
+}

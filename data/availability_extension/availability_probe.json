@@ -1,0 +1,5 @@
+{
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=IV&sta=CAAM&cha=HH%3F&start=2022-01-21&end=2025-03-21&format=text&merge=quality%2Csamplerate&show=latestupdate",
+  "http": 200,
+  "bytes": 655455
+}

@@ -1,0 +1,46 @@
+{
+  "event_ordinal": 251,
+  "event_index": 1065,
+  "runs": [
+    {
+      "bits": 64,
+      "returncode": 0,
+      "output_identical_to_saved": true,
+      "command": [
+        "gfortran",
+        "-std=legacy",
+        "-O2",
+        "-fcheck=bounds",
+        "-mcmodel=medium",
+        "-I",
+        "/home/mehffin/campi-flegrei-independent-reproduction/build",
+        "-fdefault-real-8",
+        "-fdefault-double-8",
+        "/home/mehffin/campi-flegrei-independent-reproduction/tmp/availability_extension/precision/diagnostic.f",
+        "-o",
+        "/home/mehffin/campi-flegrei-independent-reproduction/tmp/availability_extension/precision/velest64"
+      ],
+      "workdir": "tmp/availability_extension/precision/64"
+    },
+    {
+      "bits": 32,
+      "returncode": 0,
+      "output_identical_to_saved": true,
+      "command": [
+        "gfortran",
+        "-std=legacy",
+        "-O2",
+        "-fcheck=bounds",
+        "-mcmodel=medium",
+        "-I",
+        "/home/mehffin/campi-flegrei-independent-reproduction/build",
+        "/home/mehffin/campi-flegrei-independent-reproduction/tmp/availability_extension/precision/diagnostic.f",
+        "-o",
+        "/home/mehffin/campi-flegrei-independent-reproduction/tmp/availability_extension/precision/velest32"
+      ],
+      "workdir": "tmp/availability_extension/precision/32"
+    }
+  ],
+  "source_sha256": "65bb2a6dedde049176a5c35bf51b05624861e5ab6900c5ec2c9003e97efb0faf",
+  "original_sha256": "2fb9c663d1b1322579338c4eb815cd62eda1898105f2083da252c37a9d50ac27"
+}

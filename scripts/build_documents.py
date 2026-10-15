@@ -173,6 +173,7 @@ def verify(layout):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--clean', action='store_true', help='Remove and regenerate document products only.')
+    parser.add_argument('--live-acquisition', action='store_true', help='Exclude explicitly named live retrieval indices; all frozen analysis, code and figures remain protected.')
     args = parser.parse_args()
     TMP.mkdir(parents=True, exist_ok=True)
     (REPORT / 'reference_assets').mkdir(exist_ok=True)
@@ -188,6 +189,11 @@ def main():
     protected=set(baseline_now)
     for directory in ['data','figures','scripts','config']:
         protected.update(str(p) for p in Path(directory).rglob('*') if p.is_file() and '__pycache__' not in p.parts)
+    live_excluded=[]
+    if args.live_acquisition:
+        names=['coverage_intervals.csv','remaining_available_intervals.csv','station_channel_month.csv','request_ledger.csv.gz','download_receipts.json','coverage_summary.json','retrieval_result.json','resume_verification.json','incremental_picking.jsonl','incremental_picking_status.json','continuation_status.json']
+        live_excluded=[str(Path('data/availability_extension')/n) for n in names]
+        protected.difference_update(live_excluded)
     before = {p: digest(p) for p in sorted(protected)}
     layout = json.loads((REPORT / 'figure_layout.json').read_text())
     assert [item['figure'] for item in layout] == ORDER
@@ -227,6 +233,7 @@ def main():
                if p.is_file() and p.suffix in ['.tex', '.pdf', '.png', '.json']
                and p.name not in ['document_build.json', 'document_build_log.json']}
     verification.update(build_passed=True, analysis_executed=False,
+                        live_acquisition_indices_excluded=live_excluded,
                         protected_files_checked=len(before), protected_files_unchanged=True,
                         matches_pre_edit_snapshot=historical_match,
                         removed_since_historical_baseline=removed_since_baseline,

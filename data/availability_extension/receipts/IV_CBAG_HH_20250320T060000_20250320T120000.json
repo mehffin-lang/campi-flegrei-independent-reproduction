@@ -1,0 +1,10 @@
+{
+  "request": "IV_CBAG_HH_20250320T060000_20250320T120000",
+  "status": "prior_success_unverified_gaps",
+  "previous_request": "IV_CBAG_20250320T060000_20250320T120000",
+  "previous_file": "inputs/continuation/waveforms/IV_CBAG_20250320T060000_20250320T120000.mseed",
+  "previous_sha256": "64a1ce6103dc9a8b4c00c3d5d1d99c70c933db55bc1a3ab5589ef5cf4911f035",
+  "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAG&loc=%2A&cha=HH%3F&start=2025-03-20T05%3A59%3A30.000000Z&end=2025-03-20T12%3A00%3A30.000000Z",
+  "advertised_missing_channel_seconds": 0.029999971389770508,
+  "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+}

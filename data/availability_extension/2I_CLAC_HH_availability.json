@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "net": "2I",
+    "sta": "CLAC",
+    "cha": "HH?",
+    "start": "2022-01-21T00:00:00.000000Z",
+    "end": "2025-03-21T00:00:00.000000Z",
+    "format": "text",
+    "show": "latestupdate"
+  },
+  "utc": "2026-10-15T16:32:36.825164+00:00",
+  "file": "inputs/availability_extension/2I_CLAC_HH.txt",
+  "url": "https://webservices.ingv.it/fdsnws/availability/1/query?net=2I&sta=CLAC&cha=HH%3F&start=2022-01-21T00%3A00%3A00.000000Z&end=2025-03-21T00%3A00%3A00.000000Z&format=text&show=latestupdate",
+  "http": 200,
+  "bytes": 431470,
+  "sha256": "fb005fbe58befcdbfb615fdb7d536077c46c52c5fd99b077443872c088a2191e"
+}

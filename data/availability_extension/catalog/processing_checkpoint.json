@@ -1,0 +1,27 @@
+{
+  "classification": "Own sparse continuous-observation inference and alternative-profile association; all known event-selected snippets excluded.",
+  "command": ".venv/bin/python scripts/process_availability_extension.py --freeze --workers 4",
+  "inference": "Compatible per-file caches are reused only after input/settings/model/implementation hash checks.",
+  "files": {
+    "data/availability_extension/catalog/input_jobs.json": "6dabf28b1e86998ba138cbb0712d77fa7252bab9d6c1b1402fe7faeada7a990e",
+    "data/availability_extension/catalog/picks.csv": "7ec915c962fa2ced245e3ae8222cf3572e1aeb767eaa18bfd3254902b9c27305",
+    "data/availability_extension/catalog/initial_events.csv": "712a6dc7309054bf67dfc7d4500bdaf21bec3104f80b3e9c6aa0dd71e7098d76",
+    "data/availability_extension/catalog/associations.csv": "ed30d7633e11ef3dcdc55dfa10451959b7dede119d12358371acd933f2ad1709",
+    "data/availability_extension/catalog/analysis_summary.json": "7ca1db0d63696f8c33f6ad48f3b206486aa499d30e36252c82860f711785c706",
+    "data/availability_extension/catalog/processed_coverage.csv": "6e51853ee30f9deea22786f80676fe9760771d0ce49ef087ff31018b04c1fcbb",
+    "data/availability_extension/catalog/processed_coverage_union.json": "3828139b61bfabe135890d719c917743a576d06a8278ccf844da576bc13d4d2a",
+    "data/availability_extension/catalog/stations.csv": "83f3bd10a60529750a7ad3c9e7baa155cae39d33d1372554ee0cab0eb72960a7",
+    "data/availability_extension/catalog/alternative_starting_profile.csv": "3f65a13dd484418370b4bbd85302c3f434107464277c305c2a34c937b64eaaab",
+    "scripts/process_continuous.py": "9a07ce7f14d510f1496b53421b24d25d2bd4cb7efc88f63f208b033ea7c4b538",
+    "scripts/gamma_reproducibility.py": "e8a54c9848b11664184dc9893163cccbd83a519aae174b070873eed8fc527ff5",
+    "config/continuation_association.json": "b6f2be8b8e5e4e4026664ff149b49666eec946d352780ac5deb59689c1b26c01",
+    "data/extended/picks.csv": "c46e3fefcb07e559b8d2677cfe72bc0db503399bd6ad1b1f5ea75d3a17868919",
+    "inputs/models/phasenet_retrained.pt": "7f2b2d4345b82232ded67ea554794f7ff148bee235d50b1772f3516833500059",
+    "inputs/models/phasenet_retrained.json": "75cd9e14d6f2927d84ec684b44d815abffc6649f6d7751488ae9b1a35da45958",
+    "scripts/extend_calibration_observations.py": "bb94fcfc2a9cb732e294676fb895b56a7af154e4d3be53c32ba5a869e6d12ea7",
+    "scripts/reuse_own_associations.py": "0a49e3b188956250935a1148a98e9ead69936b35e3669804bafd09723ea74ce2",
+    "scripts/process_eida_followup.py": "8bef7cf271d2f1e4d75962b27b0dff25ee609fc44df49fbc4095448c307c1b8a",
+    "data/availability_extension/catalog/all_observation_inputs.json": "6f8142970e96873ab820ed83685e42b05ccae5b0a8b402069c86088acac80456",
+    "data/availability_extension/catalog/eligibility.json": "5f7744a8b9d01c7e9aae34023e151ddb1caa928c858831f8445a5f8695d7275b"
+  }
+}

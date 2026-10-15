@@ -1,0 +1,15 @@
+{
+  "assigned_arrivals_numerically_identical": true,
+  "assigned_phase_count": 30915,
+  "old_picks": 246668,
+  "new_picks": 248008,
+  "new_unassociated_picks": 1340,
+  "input_files": {
+    "data/eida_continuation/initial_events.csv": "51b3950e92eebcf5abbff3bc7a6ad11c83cbcdb0baef9cdd570f2ddd7cddaea6",
+    "data/eida_continuation/picks.csv": "db6f60b9ba762642348d89fa2b7dda5bb843cd7c692985b66820180183570903",
+    "data/eida_continuation/associations.csv": "feb29d6ad8d6e8db065d9464262d27dfff46d17206522124d35813761e1c55f8",
+    "data/availability_extension/catalog/initial_events.csv": "712a6dc7309054bf67dfc7d4500bdaf21bec3104f80b3e9c6aa0dd71e7098d76",
+    "data/availability_extension/catalog/picks.csv": "7ec915c962fa2ced245e3ae8222cf3572e1aeb767eaa18bfd3254902b9c27305",
+    "data/availability_extension/catalog/associations.csv": "ed30d7633e11ef3dcdc55dfa10451959b7dede119d12358371acd933f2ad1709"
+  }
+}

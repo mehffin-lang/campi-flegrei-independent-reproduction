@@ -1,0 +1,12 @@
+{
+  "events": 3271,
+  "causal": 2996,
+  "calibration": 552,
+  "selection": "Same pre-inversion screen as prior checkpoint; necessary checks, not manual phase review.",
+  "inputs": {
+    "data/availability_extension/catalog/initial_events.csv": "712a6dc7309054bf67dfc7d4500bdaf21bec3104f80b3e9c6aa0dd71e7098d76",
+    "data/availability_extension/catalog/picks.csv": "7ec915c962fa2ced245e3ae8222cf3572e1aeb767eaa18bfd3254902b9c27305",
+    "data/availability_extension/catalog/associations.csv": "ed30d7633e11ef3dcdc55dfa10451959b7dede119d12358371acd933f2ad1709",
+    "data/availability_extension/catalog/stations.csv": "83f3bd10a60529750a7ad3c9e7baa155cae39d33d1372554ee0cab0eb72960a7"
+  }
+}

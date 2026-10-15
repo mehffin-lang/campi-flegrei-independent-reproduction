@@ -27,3 +27,30 @@ The final Data S1 comparison reads only event ID, time, latitude and longitude a
 A published S15 page was inspected only after our waveform/spectral figures had been generated. It was used to assess correspondence, not to select new data windows, extract plot values or change processing. The comparison led to downgrading A/B rather than substituting their published example times as inputs. The reference image remains an ignored local intermediate and is not embedded in the report.
 
 Published Figure 1B was visually inspected after the historical plot existed. It supports a qualitative comparison of episode timing and shape. The numerical datum offset of 3.464 m comes from the original leveling table, not the figure. No source data or plotted values changed as a result of that inspection.
+
+
+## Availability extension (15 October 2026 UTC)
+
+New miniSEED files are original continuous EIDA observations; request URLs,
+parameters, UTC times, bytes and SHA-256 checksums are in
+`data/availability_extension/receipts`. StationXML is public metadata. The
+released station list is permitted metadata, with its 51-identifier/48-instrument
+membership discrepancy retained. Event-selected local snippets remain excluded
+from continuous inference and exposure. Detailed FDSN availability is a retrieval
+planning input, not an observed waveform or successful download.
+
+The source chain for the new empirical output is identified by
+`data/availability_extension/current_analysis.json`: original waveform manifests
+→ generic PhaseNet with attributed released weights → own picks → alternative-
+initialized GaMMA → own selected arrivals → VELEST fit/holdout/location files →
+`scripts/plot_observational_profile.py` → Figure S6 and the explicitly labeled
+validation diagnostic. Model values are independently fitted, provisional results.
+The Tramelli (2021) Table 1 values are a published alternative initialization,
+not estimated observations. No Tan-fitted velocity or author event solution enters
+these fits. The first four interfaces, extension to −0.5 km, initial Vp/Vs=1.78,
+weights, station reference and solver controls are recorded in model summaries.
+
+`current_analysis.json` distinguishes the frozen scientific cohort from live
+acquisition. Older TomoDD, magnitude and mechanism outputs retain their original
+model/cohort identity. Published images remain comparison-only; no pixels or
+published event tables enter the new calculation. Synthetic fixtures remain tests.

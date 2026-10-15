@@ -1,0 +1,55 @@
+[
+  {
+    "files": [
+      "figures/observational_velocity_diagnostic.pdf",
+      "figures/observational_velocity_diagnostic.png"
+    ],
+    "corresponding_panel": "diagnostic",
+    "note": "Software-validation diagnostic, after supplement only. Initial velocities explicitly dashed; empirical residuals and fitted velocities from own arrivals. Sensitivity envelope is not a confidence interval.",
+    "inputs": {
+      "data/availability_extension/velocity_december/sensitivity_profiles.csv": "4303530321bcbd8b04f7a78e789622d0b070502391817d24bfe188d1b20b7bbe",
+      "data/availability_extension/velocity_december/initialization.csv": "dd53173c19b2174d8008d40893f8ea55d0bcb436b79d72c7e0543c2aaee77201",
+      "data/availability_extension/velocity_december/summary.json": "cd81ec88c58b4cd77e73955695a21ab4ab866533a559438a9c14684cd985287d",
+      "data/availability_extension/precision/updates.csv": "0fb2b5bff70fe3ee24223deeabe4e4d492acf713049d2461b175fe7350623f81"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/observational_velocity_diagnostic.pdf": "278478969cfdc6de15857c5c2e87c419645a5be722934df95be41fc9e5dac32b",
+      "figures/observational_velocity_diagnostic.png": "ea89a6c30bb965cb0c496aa3e9376e0f7922ad7333a1ec16f55f0ed511663828"
+    }
+  },
+  {
+    "files": [
+      "figures/coverage_availability_extension.pdf",
+      "figures/coverage_availability_extension.png"
+    ],
+    "corresponding_panel": "S1",
+    "note": "Actual processed intervals, merged within each station for display. Blue timeline; fixed study dates and half-year ticks. No pending request counted as data.",
+    "inputs": {
+      "data/availability_extension/catalog_december/processed_coverage_union.json": "59a94faaf93ea18ab4ce64a265a7814fb58c5dde25187c818efee78758168593",
+      "data/availability_extension/catalog_december/analysis_summary.json": "d01574adab7489d2ecc8e5e1265d7857dba30f5ccc7f912dc774b39def0177e1"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/coverage_availability_extension.pdf": "30db3c2e4a30b6faadbf816b8ca8b0d1a19d9938e8aea2318addbd48fb31ff39",
+      "figures/coverage_availability_extension.png": "36140b946f10a8750d60f2b7e0bafd00a725f13bade9c9fdf4d4b952f37b4334"
+    }
+  },
+  {
+    "files": [
+      "figures/figure_S6_availability_extension.pdf",
+      "figures/figure_S6_availability_extension.png"
+    ],
+    "corresponding_panel": "S6",
+    "note": "Separately frozen extended cohort; independent identifiers. Depth 0\u20135 km, integer ticks, jet_r; magenta above 5, white below 0. Full location axes. Uniform 3-point-squared symbols for S6; exact printed area unspecified. New observational-fit trial; failed holdout validation, not accepted.",
+    "inputs": {
+      "data/availability_extension/catalog_december/locations_canonical/panels/velest.csv": "bfb28c246933eeb99e5d201e7c7f88563dcd7b7c132323f17709bd1f10ccf095",
+      "inputs/continuation/coastline.zip": "bfa04cdbcbef07ef90dfca1dabb48062eca29900a113df0f389303e255484017"
+    },
+    "command": ".venv/bin/python scripts/publication_plots.py",
+    "outputs": {
+      "figures/figure_S6_availability_extension.pdf": "28e393fac09cf6b1e0f6b0309c141f6156af68f4d48183a8351fda11b49e6b5a",
+      "figures/figure_S6_availability_extension.png": "63a022b5e94192c14ce3c677f8b3355699c9615774ca17370270a3a32175fdd5"
+    }
+  }
+]

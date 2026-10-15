@@ -1,0 +1,6 @@
+{
+  "file": "data/availability_extension/precision_execution_archive.tar.gz",
+  "bytes": 1255678,
+  "sha256": "de0a89404ca0fbc9ead9d1be65d0b83dc628f7e473f1e0e41c62270066fdda5c",
+  "role": "Preserved own execution inputs, iteration/residual logs and outputs; historical, not a newly accepted fit."
+}

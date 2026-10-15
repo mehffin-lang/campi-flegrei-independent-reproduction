@@ -1,0 +1,39 @@
+{
+  "request": "2I_CLAC_HH_20241201T000000_20241201T060000",
+  "parameters": {
+    "net": "2I",
+    "sta": "CLAC",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2024-11-30T23:59:30.000000Z",
+    "end": "2024-12-01T06:00:30.000000Z"
+  },
+  "utc": "2026-10-15T16:52:31.630355+00:00",
+  "status": "downloaded",
+  "bytes": 9967616,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=2I&sta=CLAC&loc=%2A&cha=HH%3F&start=2024-11-30T23%3A59%3A30.000000Z&end=2024-12-01T06%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/2I_CLAC_HH_20241201T000000_20241201T060000.mseed",
+  "sha256": "82282a97e18a606e9346b53ff93dafc5ef6e74479a4ff183b7619bccb9e1c570",
+  "segments": [
+    {
+      "channel": "2I.CLAC..HHE",
+      "start": 1733011167.1699998,
+      "end": 1733032831.8400002,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "2I.CLAC..HHN",
+      "start": 1733011166.76,
+      "end": 1733032832.3,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "2I.CLAC..HHZ",
+      "start": 1733011167.14,
+      "end": 1733032830.3799999,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 79.83559044799767
+}

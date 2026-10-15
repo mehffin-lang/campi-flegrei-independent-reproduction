@@ -1,0 +1,930 @@
+{
+  "applied": true,
+  "reclassified_requests": 88,
+  "advertised_gap_channel_hours": 0.1405109832684199,
+  "duplicate_downloads": [
+    {
+      "request": "IV_CAAM_HH_20230101T000000_20230101T060000",
+      "file": "inputs/availability_extension/waveforms/IV_CAAM_HH_20230101T000000_20230101T060000.mseed",
+      "bytes": 15944704,
+      "identical_to": [
+        "inputs/continuation/waveforms/IV_CAAM_20230101T000000_20230101T060000.mseed"
+      ]
+    },
+    {
+      "request": "IV_COLB_HH_20220201T000000_20220201T060000",
+      "file": "inputs/availability_extension/waveforms/IV_COLB_HH_20220201T000000_20220201T060000.mseed",
+      "bytes": 7844352,
+      "identical_to": [
+        "inputs/continuation/waveforms/IV_COLB_20220201T000000_20220201T060000.mseed"
+      ]
+    },
+    {
+      "request": "IV_COLB_HH_20220301T000000_20220301T060000",
+      "file": "inputs/availability_extension/waveforms/IV_COLB_HH_20220301T000000_20220301T060000.mseed",
+      "bytes": 14003200,
+      "identical_to": [
+        "inputs/continuation/waveforms/IV_COLB_20220301T000000_20220301T060000.mseed"
+      ]
+    },
+    {
+      "request": "IV_CPOZ_HH_20220201T000000_20220201T060000",
+      "file": "inputs/availability_extension/waveforms/IV_CPOZ_HH_20220201T000000_20220201T060000.mseed",
+      "bytes": 8194560,
+      "identical_to": [
+        "inputs/continuation/waveforms/IV_CPOZ_20220201T000000_20220201T060000.mseed"
+      ]
+    },
+    {
+      "request": "IV_CPOZ_HH_20220301T000000_20220301T060000",
+      "file": "inputs/availability_extension/waveforms/IV_CPOZ_HH_20220301T000000_20220301T060000.mseed",
+      "bytes": 5009920,
+      "identical_to": [
+        "inputs/continuation/waveforms/IV_CPOZ_20220301T000000_20220301T060000.mseed"
+      ]
+    }
+  ],
+  "reclassified": [
+    {
+      "request": "IV_CAAM_HH_20250320T060000_20250320T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CAAM_20250320T060000_20250320T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_CAAM_20250320T060000_20250320T120000.mseed",
+      "previous_sha256": "05e0b0fed3204fb9348e96db1afdc882dbb8240636bac76e069f83deeebc9ecb",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=%2A&cha=HH%3F&start=2025-03-20T05%3A59%3A30.000000Z&end=2025-03-20T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CBAG_HH_20250320T060000_20250320T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CBAG_20250320T060000_20250320T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_CBAG_20250320T060000_20250320T120000.mseed",
+      "previous_sha256": "64a1ce6103dc9a8b4c00c3d5d1d99c70c933db55bc1a3ab5589ef5cf4911f035",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CBAG&loc=%2A&cha=HH%3F&start=2025-03-20T05%3A59%3A30.000000Z&end=2025-03-20T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CCAP_EH_20240101T000000_20240101T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CCAP_20240101T000000_20240101T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_CCAP_20240101T000000_20240101T060000.mseed",
+      "previous_sha256": "45762ad1eecad9df9b7070187cb85988d71a34ac57a5e27d0e8e875f2cf8e1cc",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2023-12-31T23%3A59%3A30.000000Z&end=2024-01-01T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.059999942779541016,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CCAP_EH_20240201T000000_20240201T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CCAP_20240201T000000_20240201T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_CCAP_20240201T000000_20240201T060000.mseed",
+      "previous_sha256": "2d9eb00fe960304355f20c96a6b54db829871676c255ab1b947851adab27bca1",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2024-01-31T23%3A59%3A30.000000Z&end=2024-02-01T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CCAP_EH_20240301T000000_20240301T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CCAP_20240301T000000_20240301T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_CCAP_20240301T000000_20240301T060000.mseed",
+      "previous_sha256": "f14450b63a9fda5df9eb482e0f6d4141979d935ead97ccebb227a95b0d523b5a",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2024-02-29T23%3A59%3A30.000000Z&end=2024-03-01T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CCAP_EH_20240520T180000_20240521T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CCAP_20240520T180000_20240521T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_CCAP_20240520T180000_20240521T000000.mseed",
+      "previous_sha256": "4559da8651661ec93b7043e9492fccde43a3de390ffae2fab928fa5fa431e936",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2024-05-20T17%3A59%3A30.000000Z&end=2024-05-21T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.059999942779541016,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CCAP_EH_20250318T120000_20250318T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CCAP_20250318T120000_20250318T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CCAP_20250318T120000_20250318T180000.mseed",
+      "previous_sha256": "b75902290d1c7de644154d43fe8e9e3d73365d5af3c611957f6985f821aaaadf",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2025-03-18T11%3A59%3A30.000000Z&end=2025-03-18T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CCAP_EH_20250319T180000_20250320T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CCAP_20250319T180000_20250320T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_CCAP_20250319T180000_20250320T000000.mseed",
+      "previous_sha256": "a08acf448ecb2385373336ee5cd2ff8724552f1991fba298223578a40d1563e8",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CCAP&loc=%2A&cha=EH%3F&start=2025-03-19T17%3A59%3A30.000000Z&end=2025-03-20T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CFB1_HH_20220124T060000_20220124T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CFB1_20220124T060000_20220124T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_CFB1_20220124T060000_20220124T120000.mseed",
+      "previous_sha256": "7cab27239b8d452b3f1f18a9d17ed9778011db7e9a2bad52bdf0ccb39ae5881a",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.009999990463256836,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CFB1_HH_20220125T060000_20220125T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CFB1_20220125T060000_20220125T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_CFB1_20220125T060000_20220125T120000.mseed",
+      "previous_sha256": "3edeb3917d66ec80bf58816e7814c1ae1b59f366ce5315d5648d315534e5be28",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.009607076644897461,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CFB1_HH_20220125T120000_20220125T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CFB1_20220125T120000_20220125T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CFB1_20220125T120000_20220125T180000.mseed",
+      "previous_sha256": "7ef062d04055f4f3b86d5575af7d61c6c1713eb691166795e34e16f2f6a97bbc",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-25T11%3A59%3A30.000000Z&end=2022-01-25T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.000392913818359375,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CFMN_HH_20220129T120000_20220129T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CFMN_20220129T120000_20220129T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CFMN_20220129T120000_20220129T180000.mseed",
+      "previous_sha256": "28955efaf355ac99095e1c5571abff8918a5966f1608f5ec1b7485fd06a7d592",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFMN&loc=%2A&cha=HH%3F&start=2022-01-29T11%3A59%3A30.000000Z&end=2022-01-29T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.03000044822692871,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CMSN_HH_20220124T120000_20220124T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CMSN_20220124T120000_20220124T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CMSN_20220124T120000_20220124T180000.mseed",
+      "previous_sha256": "fab8d6c80b08ee8bf302e5fda62c3ef686d96a9f6b8a1ff1c48594c1082811a1",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.08999991416931152,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CMSN_HH_20220128T120000_20220128T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CMSN_20220128T120000_20220128T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CMSN_20220128T120000_20220128T180000.mseed",
+      "previous_sha256": "b8aa0cab4dd24f6b21607127d3a08904e3a06cb7dbc886e28175432a21aff170",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2022-01-28T11%3A59%3A30.000000Z&end=2022-01-28T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CMSN_HH_20240201T000000_20240201T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CMSN_20240201T000000_20240201T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_CMSN_20240201T000000_20240201T060000.mseed",
+      "previous_sha256": "ca17e056c412db568cbfc3e23dcf527da7656ca22d699aa93dceca1e97406ba1",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2024-01-31T23%3A59%3A30.000000Z&end=2024-02-01T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.03000020980834961,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CMSN_HH_20240301T000000_20240301T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CMSN_20240301T000000_20240301T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_CMSN_20240301T000000_20240301T060000.mseed",
+      "previous_sha256": "cd9d71d49abbe593c07a22d2510eb2a8f1f99afda3b4d21b3bd9226dbedf2730",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMSN&loc=%2A&cha=HH%3F&start=2024-02-29T23%3A59%3A30.000000Z&end=2024-03-01T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.03000020980834961,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CMTS_EH_20240201T000000_20240201T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CMTS_20240201T000000_20240201T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_CMTS_20240201T000000_20240201T060000.mseed",
+      "previous_sha256": "2168174c6ee5bb9f1a7fbfbfcebb1f3c871459c08469bc1befd2438761b7e171",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2024-01-31T23%3A59%3A30.000000Z&end=2024-02-01T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.3299996852874756,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CMTS_EH_20250318T000000_20250318T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CMTS_20250318T000000_20250318T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_CMTS_20250318T000000_20250318T060000.mseed",
+      "previous_sha256": "6ec8fcb70fa54bf693420a7f0f147b86163177815f686e0ec4eb8a4a25b2ffa4",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2025-03-17T23%3A59%3A30.000000Z&end=2025-03-18T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999732971191406,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CMTS_EH_20250319T120000_20250319T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CMTS_20250319T120000_20250319T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CMTS_20250319T120000_20250319T180000.mseed",
+      "previous_sha256": "9090b66d3e4e7c312a45b777683cbba46d823737b9c6d10da0cbbfbdb770ed0a",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2025-03-19T11%3A59%3A30.000000Z&end=2025-03-19T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.059999942779541016,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CMTS_EH_20250320T120000_20250320T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CMTS_20250320T120000_20250320T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CMTS_20250320T120000_20250320T180000.mseed",
+      "previous_sha256": "f7b0249349126c01b73652348988e26207a3ae1e971e56d88075fd1ea16c51e3",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2025-03-20T11%3A59%3A30.000000Z&end=2025-03-20T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CMTS_EH_20250320T180000_20250321T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CMTS_20250320T180000_20250321T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_CMTS_20250320T180000_20250321T000000.mseed",
+      "previous_sha256": "73756b970c47d9afe928bf2a2d3748108f962ed41e6c7562737a27c17d021655",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CMTS&loc=%2A&cha=EH%3F&start=2025-03-20T17%3A59%3A30.000000Z&end=2025-03-21T00%3A00%3A00.000000Z",
+      "advertised_missing_channel_seconds": 0.029999494552612305,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220121T000000_20220121T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220121T000000_20220121T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220121T000000_20220121T060000.mseed",
+      "previous_sha256": "3656e0db92fa1f1979b55cc330214d269e4e0a7f14a304fd4367f16c4dc5d89b",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-21T00%3A00%3A00.000000Z&end=2022-01-21T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 15.779984951019287,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220121T060000_20220121T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220121T060000_20220121T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220121T060000_20220121T120000.mseed",
+      "previous_sha256": "0220dbb990c8d3a939f3faf9035a86f5b1a80958d64c50bb3cd442cab2b0c4d0",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-21T05%3A59%3A30.000000Z&end=2022-01-21T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 4.409996032714844,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220121T120000_20220121T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220121T120000_20220121T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220121T120000_20220121T180000.mseed",
+      "previous_sha256": "03853df0bf5931aa0d2045e17214ab417fd2ab0e6760f8d8af3a5bb228d921d0",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-21T11%3A59%3A30.000000Z&end=2022-01-21T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 10.049990892410278,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220121T180000_20220122T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220121T180000_20220122T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220121T180000_20220122T000000.mseed",
+      "previous_sha256": "3bf5474c6fd004a72b7e77f6738434b53794bf313fd0d76a2642c3b543d8217d",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-21T17%3A59%3A30.000000Z&end=2022-01-22T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 7.859992504119873,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220122T000000_20220122T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220122T000000_20220122T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220122T000000_20220122T060000.mseed",
+      "previous_sha256": "a3d0feff687e408357afc33c4884aac269c571b427c3fd0cbd82b8af3e84a176",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-21T23%3A59%3A30.000000Z&end=2022-01-22T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 1.2299985885620117,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220122T060000_20220122T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220122T060000_20220122T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220122T060000_20220122T120000.mseed",
+      "previous_sha256": "4dea116cc79663932e3c341cc124be2d97647ee7cf072efa34278ceee14b0d92",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-22T05%3A59%3A30.000000Z&end=2022-01-22T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 13.949987411499023,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220122T120000_20220122T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220122T120000_20220122T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220122T120000_20220122T180000.mseed",
+      "previous_sha256": "90ce4de3c91cc715b4949943f81c785fb1525f7254d19005f9158ed2fc7867bb",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-22T11%3A59%3A30.000000Z&end=2022-01-22T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 12.749988794326782,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220122T180000_20220123T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220122T180000_20220123T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220122T180000_20220123T000000.mseed",
+      "previous_sha256": "e92eb3fa484c016fd49cb74a43e14a4df48456e11c8812718a0646b6870afa4c",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-22T17%3A59%3A30.000000Z&end=2022-01-23T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 16.799984455108643,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220123T000000_20220123T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220123T000000_20220123T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220123T000000_20220123T060000.mseed",
+      "previous_sha256": "cd6b966fcc8680ac1f4f45b0e30ac9672c5b827cc63cace87ae701779389568d",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-22T23%3A59%3A30.000000Z&end=2022-01-23T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 15.989984512329102,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220123T060000_20220123T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220123T060000_20220123T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220123T060000_20220123T120000.mseed",
+      "previous_sha256": "2e055bde1b130853732194801b86a559acef496834604a169e2242a34f095f49",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-23T05%3A59%3A30.000000Z&end=2022-01-23T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 12.59998869895935,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220123T120000_20220123T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220123T120000_20220123T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220123T120000_20220123T180000.mseed",
+      "previous_sha256": "993243db38c30cfac3a03b7bca2536737b3ab7f5c891faeb9fbe35e0cb52711e",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 9.119991540908813,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220123T180000_20220124T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220123T180000_20220124T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220123T180000_20220124T000000.mseed",
+      "previous_sha256": "e6c2c7a56124a49f0587460283c82cc2b9e9e619aa912a8f46912b1fdc97619c",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-23T17%3A59%3A30.000000Z&end=2022-01-24T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 17.159985542297363,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220124T000000_20220124T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220124T000000_20220124T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220124T000000_20220124T060000.mseed",
+      "previous_sha256": "f018c5f2ad2602b3bf4ab495108d400b65ff940881b97c291bbd2dec7a4d81a3",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-23T23%3A59%3A30.000000Z&end=2022-01-24T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 16.469984531402588,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220124T060000_20220124T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220124T060000_20220124T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220124T060000_20220124T120000.mseed",
+      "previous_sha256": "b60244d5a511305cb5dd3fb77e722b2903ac59eac9fb3853acf9c88dd812c25e",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 9.419991493225098,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220124T120000_20220124T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220124T120000_20220124T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220124T120000_20220124T180000.mseed",
+      "previous_sha256": "38b7587a85d8ad87a8cb0a0a3c81c6cbc9a38d6c8de77bb5407d308623dbbf48",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-24T11%3A59%3A30.000000Z&end=2022-01-24T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 13.169989109039307,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220124T180000_20220125T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220124T180000_20220125T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220124T180000_20220125T000000.mseed",
+      "previous_sha256": "15471c319dd979a7287fd8bb8ce39535456096e17f3f6ea377be89b07b3bccbd",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 17.459983110427856,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220125T000000_20220125T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220125T000000_20220125T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220125T000000_20220125T060000.mseed",
+      "previous_sha256": "df17de1d7d4c08fe5c42ffc590778957ebe8a1b91f2ebd749dbc9868146ccec3",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-24T23%3A59%3A30.000000Z&end=2022-01-25T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 17.609983205795288,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220125T060000_20220125T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220125T060000_20220125T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220125T060000_20220125T120000.mseed",
+      "previous_sha256": "720c99ab5c4f53eb2510346923717749f37ef685175b11d1b8bb38309ab04742",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-25T05%3A59%3A30.000000Z&end=2022-01-25T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 16.739986181259155,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220125T120000_20220125T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220125T120000_20220125T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220125T120000_20220125T180000.mseed",
+      "previous_sha256": "1ef5e1e29cba7d2c61e274fa26ffdb319a14ff45859074a80e3c76fb04b0558a",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-25T11%3A59%3A30.000000Z&end=2022-01-25T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 15.959985256195068,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220125T180000_20220126T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220125T180000_20220126T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220125T180000_20220126T000000.mseed",
+      "previous_sha256": "90393d71016cb844efe9d1163c1091894cb37417fd8013d96f2c62c908134e90",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-25T17%3A59%3A30.000000Z&end=2022-01-26T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 19.319981575012207,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220126T000000_20220126T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220126T000000_20220126T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220126T000000_20220126T060000.mseed",
+      "previous_sha256": "e420085fab63c3ad345c363ed5904d50a4595dbd91e80d4a3041ca30e47f1092",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-25T23%3A59%3A30.000000Z&end=2022-01-26T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 16.469985008239746,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220126T060000_20220126T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220126T060000_20220126T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220126T060000_20220126T120000.mseed",
+      "previous_sha256": "682d62784520eec611fd4956496f60e5b28c57ba36e213a8e3a466f68f455aed",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-26T05%3A59%3A30.000000Z&end=2022-01-26T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 17.189985513687134,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220126T120000_20220126T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220126T120000_20220126T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220126T120000_20220126T180000.mseed",
+      "previous_sha256": "164e34cb6f500efb0e25beeceafcd64c366963c04dbc6a6bd663050a0927ce2c",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-26T11%3A59%3A30.000000Z&end=2022-01-26T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 16.529985189437866,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220126T180000_20220127T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220126T180000_20220127T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220126T180000_20220127T000000.mseed",
+      "previous_sha256": "90720af2ae9e543ccc7757c4de55d0c7c5ad96abc3ca1e446d4e4556aafbfea0",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-26T17%3A59%3A30.000000Z&end=2022-01-27T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 17.129985094070435,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220127T000000_20220127T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220127T000000_20220127T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220127T000000_20220127T060000.mseed",
+      "previous_sha256": "9ad9272725253e0b7602b93cfe071852ae932c9fc9cff60d3c1fefe85c4ae0f1",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-26T23%3A59%3A30.000000Z&end=2022-01-27T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 15.929983854293823,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220127T060000_20220127T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220127T060000_20220127T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220127T060000_20220127T120000.mseed",
+      "previous_sha256": "357bfe3f129cf5bd90610538131cda3f72499b15d4e7a42dd730652452d2300f",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-27T05%3A59%3A30.000000Z&end=2022-01-27T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 15.359985828399658,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220127T120000_20220127T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220127T120000_20220127T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220127T120000_20220127T180000.mseed",
+      "previous_sha256": "e731260722887b74cd474f1180988a86490dc90375a40efe16ff5a63d064fea1",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-27T11%3A59%3A30.000000Z&end=2022-01-27T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 16.55998468399048,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220127T180000_20220128T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220127T180000_20220128T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220127T180000_20220128T000000.mseed",
+      "previous_sha256": "57ef29af604705d83ee352ebc11027ba307a9478e4a503225c04615a408d866c",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-27T17%3A59%3A30.000000Z&end=2022-01-28T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 17.84998321533203,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220128T000000_20220128T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220128T000000_20220128T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220128T000000_20220128T060000.mseed",
+      "previous_sha256": "6faaf7e5eacd7ddf0d65de657f85390d4cb5b904aaa3dd7f90e3f632ffd41bd2",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-27T23%3A59%3A30.000000Z&end=2022-01-28T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 17.1899836063385,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220128T060000_20220128T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220128T060000_20220128T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220128T060000_20220128T120000.mseed",
+      "previous_sha256": "133952137aa1d80682b48046e88373cb2b9c5c2741fd8323b9a62dd7208eb3ee",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-28T05%3A59%3A30.000000Z&end=2022-01-28T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 16.229985237121582,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220128T120000_20220128T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220128T120000_20220128T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220128T120000_20220128T180000.mseed",
+      "previous_sha256": "0ddfc574ae6f2c6651c47ef32ecb19787d849dad182641fcfcdce0934b4d7f51",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-28T11%3A59%3A30.000000Z&end=2022-01-28T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 17.36998438835144,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220128T180000_20220129T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220128T180000_20220129T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220128T180000_20220129T000000.mseed",
+      "previous_sha256": "e5b53a7a4c6b811788f1a1b8940a359535ab0b7b96cfc145cf9b5d5f686e96ed",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-28T17%3A59%3A30.000000Z&end=2022-01-29T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 18.359984874725342,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220129T060000_20220129T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220129T060000_20220129T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220129T060000_20220129T120000.mseed",
+      "previous_sha256": "6c5200d6337d2f80fbab561afd7e235473f21d7e4a664475358870551eb31f14",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-29T05%3A59%3A30.000000Z&end=2022-01-29T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 17.33998394012451,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20220129T120000_20220129T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20220129T120000_20220129T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20220129T120000_20220129T180000.mseed",
+      "previous_sha256": "3e606b7b528910280d444dc40ca8c61216ffcb7b84f061a6cfedf71ad505a059",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-01-29T11%3A59%3A30.000000Z&end=2022-01-29T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 16.499984741210938,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20230101T000000_20230101T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20230101T000000_20230101T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20230101T000000_20230101T060000.mseed",
+      "previous_sha256": "daf53281cebd31982b2b46a7f6fe572a15c0b94e1c40a4997fafadad111462ee",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2022-12-31T23%3A59%3A30.000000Z&end=2023-01-01T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.09000039100646973,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20230201T000000_20230201T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20230201T000000_20230201T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20230201T000000_20230201T060000.mseed",
+      "previous_sha256": "87ae92c4a25ceea0812fcf11362a44d6d3890ca483047c5a11c72cf9ae2720eb",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2023-01-31T23%3A59%3A30.000000Z&end=2023-02-01T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.059999942779541016,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20230301T000000_20230301T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20230301T000000_20230301T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20230301T000000_20230301T060000.mseed",
+      "previous_sha256": "ea6788b0f6ba7b6cb6213d8977ca6651ff5622e345b71d4e4fb249734796451c",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2023-02-28T23%3A59%3A30.000000Z&end=2023-03-01T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_COLB_HH_20250101T000000_20250101T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_COLB_20250101T000000_20250101T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_COLB_20250101T000000_20250101T060000.mseed",
+      "previous_sha256": "eaff77194309c6f88f89e5fd09feaf59704879147ac5f46e8760b6295caa3d0e",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=COLB&loc=%2A&cha=HH%3F&start=2024-12-31T23%3A59%3A30.000000Z&end=2025-01-01T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999256134033203,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CPOZ_HH_20220121T120000_20220121T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CPOZ_20220121T120000_20220121T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CPOZ_20220121T120000_20220121T180000.mseed",
+      "previous_sha256": "4b2d96f9bacb3bc87dd2281c20375959aa1c5680d448cd13c11d9bb029980cb8",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-21T11%3A59%3A30.000000Z&end=2022-01-21T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.06000018119812012,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CPOZ_HH_20220123T120000_20220123T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CPOZ_20220123T120000_20220123T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CPOZ_20220123T120000_20220123T180000.mseed",
+      "previous_sha256": "f2d4338e3af99a1ae415c44f869a922e208698a6f9099eb055299f59721477a1",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-23T11%3A59%3A30.000000Z&end=2022-01-23T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.09000015258789062,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CPOZ_HH_20220124T180000_20220125T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CPOZ_20220124T180000_20220125T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_CPOZ_20220124T180000_20220125T000000.mseed",
+      "previous_sha256": "4b6d743db05c9ddd4c0e1bb2b794129c2e0c5450a3226706b996d09832608f31",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-24T17%3A59%3A30.000000Z&end=2022-01-25T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999732971191406,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CPOZ_HH_20220125T120000_20220125T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CPOZ_20220125T120000_20220125T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CPOZ_20220125T120000_20220125T180000.mseed",
+      "previous_sha256": "f9b3a734bccda1cb0b8f029762e3391894a9ab5d40604d1f9902d3a1100d9bbc",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-25T11%3A59%3A30.000000Z&end=2022-01-25T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.07999968528747559,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CPOZ_HH_20220125T180000_20220126T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CPOZ_20220125T180000_20220126T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_CPOZ_20220125T180000_20220126T000000.mseed",
+      "previous_sha256": "bf188c0219b17c973a701377a1ebe1331042b3561c5b7c6e2d5fb04ea260cc24",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-25T17%3A59%3A30.000000Z&end=2022-01-26T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.059999942779541016,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CPOZ_HH_20220127T060000_20220127T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CPOZ_20220127T060000_20220127T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_CPOZ_20220127T060000_20220127T120000.mseed",
+      "previous_sha256": "1cb6cb1d9c6f36fee7a383ec22f11a04e4bc256bc615b841ee5d767c2ec1f896",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-27T05%3A59%3A30.000000Z&end=2022-01-27T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999256134033203,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CPOZ_HH_20220127T180000_20220128T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CPOZ_20220127T180000_20220128T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_CPOZ_20220127T180000_20220128T000000.mseed",
+      "previous_sha256": "4f83dcd6002d274162e74c65ff47eb65d4dbda098ae94d753e1984050c0c0247",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-27T17%3A59%3A30.000000Z&end=2022-01-28T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CPOZ_HH_20220128T060000_20220128T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CPOZ_20220128T060000_20220128T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_CPOZ_20220128T060000_20220128T120000.mseed",
+      "previous_sha256": "a7b000ef68b8600e05437e549af90fb503596ca1c7677007a3677617ade1e6ae",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-28T05%3A59%3A30.000000Z&end=2022-01-28T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CPOZ_HH_20220128T120000_20220128T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CPOZ_20220128T120000_20220128T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CPOZ_20220128T120000_20220128T180000.mseed",
+      "previous_sha256": "219d41c1d84e202c2ce32f598448e2bdb0879bef9d242ca0a2ef54978b1796cc",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-28T11%3A59%3A30.000000Z&end=2022-01-28T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.059999942779541016,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CPOZ_HH_20220128T180000_20220129T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CPOZ_20220128T180000_20220129T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_CPOZ_20220128T180000_20220129T000000.mseed",
+      "previous_sha256": "9aad37e09235b02f0b8aefb3b73af6dc4fda91ff4552bd85bf141bbf7ca091d1",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-28T17%3A59%3A30.000000Z&end=2022-01-29T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.030000686645507812,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CPOZ_HH_20220129T060000_20220129T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CPOZ_20220129T060000_20220129T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_CPOZ_20220129T060000_20220129T120000.mseed",
+      "previous_sha256": "0171324b460782bed3ddbdd09c067479e0930d6d787b0c061f2c2d1d29332e35",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CPOZ&loc=%2A&cha=HH%3F&start=2022-01-29T05%3A59%3A30.000000Z&end=2022-01-29T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.06000089645385742,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20220128T120000_20220128T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20220128T120000_20220128T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20220128T120000_20220128T180000.mseed",
+      "previous_sha256": "36e7e345c8c58b57a1c92796ff5b05e2d5340fa412040498b13662cc31ea0feb",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2022-01-28T11%3A59%3A30.000000Z&end=2022-01-28T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20250318T000000_20250318T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20250318T000000_20250318T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250318T000000_20250318T060000.mseed",
+      "previous_sha256": "c5c2a84c4bc56373b4b22e798e205084ed9b25a268db3db1e2e032a188e8023d",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-17T23%3A59%3A30.000000Z&end=2025-03-18T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.7199993133544922,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20250318T060000_20250318T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20250318T060000_20250318T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250318T060000_20250318T120000.mseed",
+      "previous_sha256": "850aaf03896cc1cf13a6e24ec4bfe6aa83253dede08e335ff285c0eecc683c29",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-18T05%3A59%3A30.000000Z&end=2025-03-18T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.26999974250793457,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20250318T120000_20250318T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20250318T120000_20250318T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250318T120000_20250318T180000.mseed",
+      "previous_sha256": "09be24ffa3362d445d90dc7cf405a5eb228788b0daa7613ac4fe612d84be88ed",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-18T11%3A59%3A30.000000Z&end=2025-03-18T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.4799995422363281,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20250318T180000_20250319T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20250318T180000_20250319T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250318T180000_20250319T000000.mseed",
+      "previous_sha256": "47d38c73c975dabc48a7d6e2abfaff6a4595ba2175e2cd516b9c65baf3d604d3",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-18T17%3A59%3A30.000000Z&end=2025-03-19T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.7799992561340332,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20250319T000000_20250319T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20250319T000000_20250319T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250319T000000_20250319T060000.mseed",
+      "previous_sha256": "84956dfef2b9c4665029c94e71c01c885f053c82469100a3922901923cd4210d",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-18T23%3A59%3A30.000000Z&end=2025-03-19T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.3899996280670166,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20250319T060000_20250319T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20250319T060000_20250319T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250319T060000_20250319T120000.mseed",
+      "previous_sha256": "50a119decc714c9d2db38b82de855cc26b27828a209d04b85117862226071995",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-19T05%3A59%3A30.000000Z&end=2025-03-19T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.3299996852874756,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20250319T120000_20250319T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20250319T120000_20250319T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250319T120000_20250319T180000.mseed",
+      "previous_sha256": "57f8f447b6dfee7d29c71bdd75f7d269b24eb565d75a8d27a733c15bf8c6f0ef",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-19T11%3A59%3A30.000000Z&end=2025-03-19T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.08999991416931152,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20250319T180000_20250320T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20250319T180000_20250320T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250319T180000_20250320T000000.mseed",
+      "previous_sha256": "8ebb0f2203946c01ce17768b8f77f637229d5054d5ffa7cb5538426a7f205932",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-19T17%3A59%3A30.000000Z&end=2025-03-20T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.2999997138977051,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20250320T000000_20250320T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20250320T000000_20250320T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250320T000000_20250320T060000.mseed",
+      "previous_sha256": "9c7876cae69686506dcc1cd9ffdb9ce4610a41681a63494519b34788f40fe03e",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-19T23%3A59%3A30.000000Z&end=2025-03-20T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.20999979972839355,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20250320T060000_20250320T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20250320T060000_20250320T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250320T060000_20250320T120000.mseed",
+      "previous_sha256": "28fe88d3007f9ebd3f648aabe9694c275f21f64b276d3cf96a5fa6dbf3a94981",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-20T05%3A59%3A30.000000Z&end=2025-03-20T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.059999942779541016,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20250320T120000_20250320T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20250320T120000_20250320T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250320T120000_20250320T180000.mseed",
+      "previous_sha256": "0e31b6bac6beda57c2e387045760b9c5735c8af4d49083adcdecfa1903c3dc0f",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-20T11%3A59%3A30.000000Z&end=2025-03-20T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.08999991416931152,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSFT_HH_20250320T180000_20250321T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSFT_20250320T180000_20250321T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSFT_20250320T180000_20250321T000000.mseed",
+      "previous_sha256": "367b2991a6d077218f0fdc7ee31b890552e571bce29c1ef46f37a9b1d1e7e7b5",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSFT&loc=%2A&cha=HH%3F&start=2025-03-20T17%3A59%3A30.000000Z&end=2025-03-21T00%3A00%3A00.000000Z",
+      "advertised_missing_channel_seconds": 0.23999977111816406,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSTH_HH_20250318T180000_20250319T000000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSTH_20250318T180000_20250319T000000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSTH_20250318T180000_20250319T000000.mseed",
+      "previous_sha256": "05eb5fb7b62967ed8aa00c9e6789810c4792f693d19eaed4aa487760dc5ea62e",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2025-03-18T17%3A59%3A30.000000Z&end=2025-03-19T00%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.030000686645507812,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSTH_HH_20250319T000000_20250319T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSTH_20250319T000000_20250319T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSTH_20250319T000000_20250319T060000.mseed",
+      "previous_sha256": "74c6a24d617a6e00146f54ac9df835bfbb5b81649ab028b5948d6d6668924ee7",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2025-03-18T23%3A59%3A30.000000Z&end=2025-03-19T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.06000065803527832,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSTH_HH_20250319T120000_20250319T180000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSTH_20250319T120000_20250319T180000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSTH_20250319T120000_20250319T180000.mseed",
+      "previous_sha256": "b5cc109c9d8d6d7cd41cb80823af88e1fde1e65b66b1ca429e52c7415563a21a",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2025-03-19T11%3A59%3A30.000000Z&end=2025-03-19T18%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSTH_HH_20250320T000000_20250320T060000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSTH_20250320T000000_20250320T060000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSTH_20250320T000000_20250320T060000.mseed",
+      "previous_sha256": "8b1272ea3d40a0e6d1b83c7a62700b42b383effe421640d1368bfb77a8b02e7c",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2025-03-19T23%3A59%3A30.000000Z&end=2025-03-20T06%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.05999946594238281,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    },
+    {
+      "request": "IV_CSTH_HH_20250320T060000_20250320T120000",
+      "status": "prior_success_unverified_gaps",
+      "previous_request": "IV_CSTH_20250320T060000_20250320T120000",
+      "previous_file": "inputs/continuation/waveforms/IV_CSTH_20250320T060000_20250320T120000.mseed",
+      "previous_sha256": "ba75382af882bfc88b12a73d9902ceb5271d0aa386554492cbfc57217706cd79",
+      "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CSTH&loc=%2A&cha=HH%3F&start=2025-03-20T05%3A59%3A30.000000Z&end=2025-03-20T12%3A00%3A30.000000Z",
+      "advertised_missing_channel_seconds": 0.029999971389770508,
+      "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+    }
+  ],
+  "scope": "Remaining gaps are unverified. Their advertised intervals remain in remaining_available_intervals.csv; no claim that they are absent or retrieved. Collector rechecks pending status before each batch."
+}

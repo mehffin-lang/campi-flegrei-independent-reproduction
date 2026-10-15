@@ -1,0 +1,39 @@
+{
+  "request": "IV_CAAM_HH_20250101T060000_20250101T120000",
+  "parameters": {
+    "net": "IV",
+    "sta": "CAAM",
+    "loc": "*",
+    "cha": "HH?",
+    "start": "2025-01-01T05:59:30.000000Z",
+    "end": "2025-01-01T12:00:30.000000Z"
+  },
+  "utc": "2026-10-15T16:38:46.310435+00:00",
+  "status": "downloaded",
+  "bytes": 15916032,
+  "http": 200,
+  "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CAAM&loc=%2A&cha=HH%3F&start=2025-01-01T05%3A59%3A30.000000Z&end=2025-01-01T12%3A00%3A30.000000Z",
+  "file": "inputs/availability_extension/waveforms/IV_CAAM_HH_20250101T060000_20250101T120000.mseed",
+  "sha256": "9afb9403e64d8fcef691e029ce11d306784a6b72a99d85749c29783580de0597",
+  "segments": [
+    {
+      "channel": "IV.CAAM..HHE",
+      "start": 1735711169.77,
+      "end": 1735732831.15,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHN",
+      "start": 1735711169.12,
+      "end": 1735732830.8000002,
+      "sample_rate": 100.0
+    },
+    {
+      "channel": "IV.CAAM..HHZ",
+      "start": 1735711168.1100001,
+      "end": 1735732830.95,
+      "sample_rate": 100.0
+    }
+  ],
+  "elapsed_s": 108.98654321301728
+}

@@ -1,0 +1,10 @@
+{
+  "request": "IV_CFB1_HH_20220124T060000_20220124T120000",
+  "status": "prior_success_unverified_gaps",
+  "previous_request": "IV_CFB1_20220124T060000_20220124T120000",
+  "previous_file": "inputs/continuation/waveforms/IV_CFB1_20220124T060000_20220124T120000.mseed",
+  "previous_sha256": "7cab27239b8d452b3f1f18a9d17ed9778011db7e9a2bad52bdf0ccb39ae5881a",
+  "previous_url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?net=IV&sta=CFB1&loc=%2A&cha=HH%3F&start=2022-01-24T05%3A59%3A30.000000Z&end=2022-01-24T12%3A00%3A30.000000Z",
+  "advertised_missing_channel_seconds": 0.009999990463256836,
+  "reason": "This exact station/band/core request already succeeded. Repeating the full window can return identical bytes; remaining advertised gaps require targeted checks, not another whole-window download."
+}
